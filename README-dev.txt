@@ -6,7 +6,7 @@ zsh: pip install -e .\[dev\]
 
 1. Repository Structure
 
-This is an exmpale of how this repo can be organised.
+This is an example of how this repo can be organised.
 
 root/
 │
@@ -47,13 +47,13 @@ Modular Code: Write modular code with functions and classes in the tools directo
 in Jupyter notebooks—keep notebooks focused on using and combining functions for analysis.
 
 Dependencies: add all the dependencies to the requirements.txt file. When choosing not a standard package, 
-make sure that it is maintained and doesn't have weird dependencies itself. 
+make sure that it is maintained and doesn't have weird dependencies. 
 
 3. Version Control Best Practices
 Branching Strategy:
 
 Main Branch: The main branch should always be stable and ready for production. Only well-tested code should be merged here.
-Feature Branches: For new features or bug fixes, create a separate branch (feature/feature-name or bugfix/bug-description) and submit a pull request for review.
+Feature Branches: For new features or bug fixes, create a separate branch (feature/feature-name or bugfix/bug-description) and submit a pull request for review. After the work on the feature branch is done, merge-squash the branch to dev.
 Pull Requests (PRs): Before merging a PR, ensure it is reviewed by at least one other team member. Use descriptive titles and include a summary of changes.
 
 Commit Messages:
