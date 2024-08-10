@@ -4,6 +4,19 @@ To install the package as a developer, run:
 bash: pip install -e .[dev]
 zsh: pip install -e .\[dev\]  
 
+      Quick summary of important info below:
+      When you start working on this repo
+      1. create your own branch from the dev
+      2. write unit tests for new code
+      3. check that all your unit tests cover your code and run locally
+      4. when you want to commit to your branch, run locally pre-commit:
+        pre-commit run --all-files
+      3. if it fails, fix the errors 
+      (to remove emails, run python 
+      remove_emails.py -f ./data/processed/test_fail.csv)
+      4. when pre-commit passed all tests, push the changes to the remote feature branch
+      5. merge-squash to the dev branch
+
 1. Repository Structure
 
 This is an example of how this repo can be organised.
