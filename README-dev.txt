@@ -7,15 +7,19 @@ zsh: pip install -e .\[dev\]
       Quick summary of important info below:
       When you start working on this repo
       1. create your own branch from the dev
-      2. write unit tests for new code
-      3. check that all your unit tests cover your code and run locally
-      4. when you want to commit to your branch, run locally pre-commit:
+      2. put raw data in data/raw and processed data in data/processed
+      3. put your exploration notebooks in notebooks/exploration, 
+            final notebooks in notebooks/reports 
+            and pdfs'of final notebooks in  notebooks/pdfs
+      4. write unit tests for new code
+      5. check that all your unit tests cover your code and run locally
+      6. when you want to commit to your branch, run locally pre-commit:
         pre-commit run --all-files
-      3. if it fails, fix the errors 
+      7. if it fails, fix the errors 
       (to remove emails, run python 
       remove_emails.py -f ./data/processed/test_fail.csv)
-      4. when pre-commit passed all tests, push the changes to the remote feature branch
-      5. merge-squash to the dev branch
+      8. when pre-commit passed all tests, push the changes to the remote feature branch
+      9. merge-squash to the dev branch
 
 1. Repository Structure
 
@@ -25,6 +29,7 @@ root/
 │
 ├── notebooks/              # Contains Jupyter notebooks for analysis
 │   ├── exploration/        # Notebooks for initial data exploration and experiments
+│   ├── pdfs/               # Pdfs'of the final notebooks
 │   └── reports/            # Finalized analysis reports, cleaned and well-documented
 │
 ├── daemon_analysis_tools/  # Python scripts and modules containing reusable functions
