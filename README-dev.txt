@@ -8,16 +8,17 @@ zsh: pip install -e .\[dev\]
       When you start working on this repo
       1. create your own branch from the dev
       2. put raw data in data/raw and processed data in data/processed
-      3. put your exploration notebooks in notebooks/exploration, 
-            final notebooks in notebooks/reports 
-            and pdfs'of final notebooks in  notebooks/pdfs
+      3. put your exploration notebooks in notebooks/exploration, final notebooks in notebooks/reports 
+      and pdfs of final notebooks in  notebooks/pdfs
       4. write unit tests for new code
       5. check that all your unit tests cover your code and run locally
       6. when you want to commit to your branch, run locally pre-commit:
-        pre-commit run --all-files
+            pre-commit run --all-files
+      pre-commit automatically triggers style & linting tools, which adjust the style of the code
       7. if it fails, fix the errors 
       (to remove emails, run python 
-      remove_emails.py -f ./data/processed/test_fail.csv)
+            remove_emails.py -f ./data/processed/test_fail.csv
+      )
       8. when pre-commit passed all tests, push the changes to the remote feature branch
       9. merge-squash to the dev branch
 
@@ -80,12 +81,12 @@ Use clear and concise commit messages.
 Follow the format: Type: Short description (fixes #issue-number)
 
 4. Documentation
-
 Notebooks:
 
 Each notebook should start with a markdown cell that outlines its purpose, data sources, and any relevant background information.
 Use markdown cells within notebooks to explain the steps and logic used in the analysis.
 Avoid duplicating code in notebooks—use functions from the tools directory.
+Notebooks should not contain definitions of the functions.
 
 In-Line Comments:
 
@@ -98,10 +99,9 @@ Write unit tests for all functions in the tools directory. Store tests in the te
 Use pytest for testing and ensure that tests cover a range of possible inputs, including edge cases.
 Run tests locally before pushing changes to ensure nothing is broken.
 
-6. Pre-Commit 
-Email Detection and Removal:
-This repository is configured with a pre-commit hook that automatically checks for the presence of emails
-in csv files before every commit. To manually run the pre-commit checks on all files, you can use the following command:
+6. Pre-Commit
+Code Style and Data Security: 
+This repository is configured with a pre-commit hook that enforces code style and data security. Before every commit, the hooks run isort for import sorting, black for code formatting, flake8 for linting, and detect_emails.py to check for emails in CSV files and that CSV files are readable. To manually run the pre-commit checks on all files, you can use the following command:
 
 pre-commit run --all-files
 
