@@ -1,0 +1,35 @@
+# .pre-commit-config.yaml
+
+repos:
+  - repo: https://github.com/psf/black
+    rev: 23.9.1  # Use the latest stable version of black
+    hooks:
+      - id: black
+        files: '.*\.pyi?$'
+        language_version: python3.9  # or your project's Python version
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0  # Use the latest stable version of flake8
+    hooks:
+      - id: flake8
+        files: '.*\.pyi?$'
+        additional_dependencies: []
+        args: ['--max-line-length=88']  # Ensure compatibility with black's default line length
+        language_version: python3.9  # or your project's Python version
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2  # Use the latest stable version of isort
+    hooks:
+      - id: isort
+        files: '.*\.pyi?$'
+        args: ['--profile', 'black']  # Ensure compatibility with black
+        language_version: python3.9  # or your project's Python version
+
+  - repo: local
+    hooks:
+      - id: detect-emails
+        name: Detect Emails in Files
+        entry: python3 detect_emails.py  # Ensure the script uses the correct Python version
+        language: python
+        additional_dependencies:
+          - pandas
