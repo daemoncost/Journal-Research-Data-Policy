@@ -1,4 +1,4 @@
-from .file_handling import normalize_series
+from .data_processing import normalize_series
 
 # Function to check if all elements in a series are the same and return differences if any
 def all_equal(series):
