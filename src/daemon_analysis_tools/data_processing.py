@@ -1,45 +1,54 @@
 import pandas as pd
 
+
 def load_and_process_data(file_path):
     data = pd.read_csv(file_path)
-    data.drop(['Zeitstempel', 'E-Mail-Adresse', 'Punkte'], axis=1, inplace=True)
+    data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
     data.drop([0, 1, 2], axis=0, inplace=True)
-    
+
     keys = data.keys()
-    keys = [key for key in keys if 'Please add the text from the RDP that supports your answer below:' in key]
+    keys = [
+        key
+        for key in keys
+        if "Please add the text from the RDP that supports your answer below:" in key
+    ]
     data.drop(keys, axis=1, inplace=True)
-    
-    data.rename(columns={
-        'Journal name or names, in case these replies apply to multiple journals (please separate the names by comma):': 'journal'
-    }, inplace=True)
-    
-    data['journal'] = data['journal'].str.split('\s*,\s*')
-    data_duplicated = data.explode('journal').reset_index(drop=True)
-    
+
+    data.rename(
+        columns={
+            "Journal name or names, in case these replies apply to multiple journals (please separate the names by comma):": "journal"
+        },
+        inplace=True,
+    )
+
+    data["journal"] = data["journal"].str.split("\s*,\s*")
+    data_duplicated = data.explode("journal").reset_index(drop=True)
+
     # Normalize the publisher names
-    data_duplicated['Publisher Name'] = data_duplicated['Publisher Name'].apply(normalize_publisher)
- 
+    data_duplicated["Publisher Name"] = data_duplicated["Publisher Name"].apply(
+        normalize_publisher
+    )
+
     return data_duplicated
+
 
 def clean_question_text(question_text):
     return question_text.strip()
 
+
 # Normalize text
 def normalize_text(text):
-    replacements = {
-        "not available": "na",
-        "no text": "na",
-        "n/a": "na",
-        "na": "na"
-    }
+    replacements = {"not available": "na", "no text": "na", "n/a": "na", "na": "na"}
     if isinstance(text, str):
         text = text.strip().lower()
         return replacements.get(text, text)
     return text
 
+
 # Normalize series
 def normalize_series(series):
     return series.apply(normalize_text)
+
 
 # Normalize publisher names
 def normalize_publisher(name):
@@ -66,7 +75,7 @@ def normalize_publisher(name):
         "springer nature": "Springer Nature",
         "taylor & francis": "Taylor & Francis",
         "taylor and francis": "Taylor & Francis",
-        "wiley": "Wiley"
+        "wiley": "Wiley",
     }
     name = name.strip().lower()
     return normalization_dict.get(name, name)
