@@ -6,7 +6,7 @@ def load_and_process_data(file_path):
     try:
         data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
         data.drop([0, 1, 2], axis=0, inplace=True)
-        print(f'Warning: E-mail addresses found in {file_path}.')
+        print(f"Warning: E-mail addresses found in {file_path}.")
     except KeyError:
         pass
         # Already preprocessed to remove E-mail addresses
