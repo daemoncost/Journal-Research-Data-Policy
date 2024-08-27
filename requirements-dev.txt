@@ -1,3 +1,6 @@
 pre-commit
 pytest
 pytest-mock
+pandas
+seaborn
+pyyaml
