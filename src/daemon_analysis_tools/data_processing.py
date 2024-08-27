@@ -3,8 +3,13 @@ import pandas as pd
 
 def load_and_process_data(file_path):
     data = pd.read_csv(file_path)
-    data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
-    data.drop([0, 1, 2], axis=0, inplace=True)
+    try:
+        data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
+        data.drop([0, 1, 2], axis=0, inplace=True)
+        print(f'Warning: E-mail addresses found in {file_path}.')
+    except KeyError:
+        pass
+        # Already preprocessed to remove E-mail addresses
 
     keys = data.keys()
     keys = [
