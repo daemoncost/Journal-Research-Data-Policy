@@ -1,0 +1,4 @@
+*.pyc
+*egg*
+*__pycache__*
+*yaml
