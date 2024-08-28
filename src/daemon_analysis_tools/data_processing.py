@@ -21,7 +21,10 @@ def load_and_process_data(file_path):
 
     data.rename(
         columns={
-            "Journal name or names, in case these replies apply to multiple journals (please separate the names by comma):": "journal"
+            (
+                "Journal name or names, in case these replies apply "
+                "to multiple journals (please separate the names by comma):"
+            ): "journal"
         },
         inplace=True,
     )
