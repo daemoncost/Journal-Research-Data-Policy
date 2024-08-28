@@ -30,7 +30,6 @@ readme = {file = "README.rst", content-type = "text/x-rst"}
 
 [tool.setuptools.dynamic.optional-dependencies]
 dev = {file = "requirements-dev.txt"}
-score = {file = "requirements-score.txt"}
 
 [tool.bumpver]
 current_version = "0.0.0"
