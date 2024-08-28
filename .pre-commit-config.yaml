@@ -6,7 +6,7 @@ repos:
     hooks:
       - id: black
         files: '.*\.pyi?$'
-        language_version: python3.9  # or your project's Python version
+        language_version: python3  # or your project's Python version
 
   - repo: https://github.com/PyCQA/flake8
     rev: 6.1.0  # Use the latest stable version of flake8
@@ -15,7 +15,7 @@ repos:
         files: '.*\.pyi?$'
         additional_dependencies: []
         args: ['--max-line-length=88']  # Ensure compatibility with black's default line length
-        language_version: python3.9  # or your project's Python version
+        language_version: python3  # or your project's Python version
 
   - repo: https://github.com/PyCQA/isort
     rev: 5.13.2  # Use the latest stable version of isort
@@ -23,7 +23,7 @@ repos:
       - id: isort
         files: '.*\.pyi?$'
         args: ['--profile', 'black']  # Ensure compatibility with black
-        language_version: python3.9  # or your project's Python version
+        language_version: python3  # or your project's Python version
 
   - repo: local
     hooks:
