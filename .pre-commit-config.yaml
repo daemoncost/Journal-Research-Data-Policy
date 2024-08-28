@@ -9,7 +9,7 @@ repos:
         language_version: python3.9  # or your project's Python version
         
   - repo: https://github.com/PyCQA/autoflake
-    rev: 2.3.1  # Use the latest stable version of flake8
+    rev: v2.3.1  # Use the latest stable version of flake8
     hooks:
       - id: autoflake
         files: '.*\.pyi?$'
