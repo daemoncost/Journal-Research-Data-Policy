@@ -1,7 +1,7 @@
 from .data_processing import normalize_series
 
 
-# Function to check if all elements in a series are the same and return differences if any
+# Function to check if all elements in a series are the same and return differences
 def all_equal(series):
     series = normalize_series(series)
     unique_values = series.dropna().unique()
@@ -13,8 +13,10 @@ def all_equal(series):
         return False, differing_indices, differing_values
 
 
-# Function to compute Jaccard similarity between two strings
 def jaccard_similarity(str1, str2):
+    """
+    Compute the Jaccard similarity score between two strings.
+    """
     set1, set2 = set(str1.split()), set(str2.split())
     intersection = len(set1 & set2)
     union = len(set1 | set2)
@@ -23,6 +25,10 @@ def jaccard_similarity(str1, str2):
 
 # Function to check if all open text answers are similar above a threshold
 def all_similar(series, threshold=0.8):
+    """
+    Check if all open-text answers are similar above a threshold.
+    """
+
     series = normalize_series(series)
     texts = series.dropna().unique()
     differing_indices = []
