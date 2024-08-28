@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 
 def load_and_process_data(file_path):
@@ -62,13 +63,16 @@ def normalize_series(series):
 def normalize_publisher(name):
     normalization_dict = {
         "acs": "ACS",
-        "acs ": "ACS",
         "aip publishing": "AIP",
+        "aip": "AIP",
         "american chemical society (acs)": "ACS",
+        "aps": "APS",
         "american physical society (aps)": "APS",
         "bentham science publishers": "Bentham Science",
+        "bentham science": "Bentham Science",
         "edp sciences": "EDP Sciences",
         "elsevier": "Elsevier",
+        "keai      *no clear link to elsevier policies": "Elsevier",
         "frontiers": "Frontiers",
         "ieee": "IEEE",
         "iop": "IOP",
@@ -78,6 +82,9 @@ def normalize_publisher(name):
         "mdpi all mdpi have the same instructions for authors": "MDPI",
         "mdpi all mdpi have the same  instructions for authors": "MDPI",
         "optica publishing group": "Optica",
+        "optica": "Optica",
+        "pleiades publishing": "Pleiades Publishing",
+        "rsc": "RSC",
         "royal society of chemistry": "RSC",
         "royal society of chemistry (rsc)": "RSC",
         "springer nature": "Springer Nature",
@@ -87,3 +94,12 @@ def normalize_publisher(name):
     }
     name = name.strip().lower()
     return normalization_dict.get(name, name)
+
+
+# Function to clean journal names for file naming
+def clean_journal_name(journal_name):
+    journal_name = journal_name.replace("&", "and")
+    journal_name = re.sub(r"[.?:]", "", journal_name)
+    journal_name = journal_name.replace(" ", "_")
+    journal_name = journal_name.lower()
+    return journal_name

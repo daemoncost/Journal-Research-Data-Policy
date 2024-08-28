@@ -1,47 +1,6 @@
 import os
-import re
-
 import yaml
-
-
-# Function to clean journal names for file naming
-def clean_journal_name(journal_name):
-    journal_name = journal_name.replace("&", "and")
-    journal_name = re.sub(r"[.?]", "", journal_name)
-    journal_name = journal_name.replace(" ", "_")
-    journal_name = journal_name.lower()
-    return journal_name
-
-
-# Function to normalize publisher names
-def normalize_publisher(name):
-    normalization_dict = {
-        "acs": "ACS",
-        "acs ": "ACS",
-        "aip publishing": "AIP",
-        "american chemical society (acs)": "ACS",
-        "american physical society (aps)": "APS",
-        "bentham science publishers": "Bentham Science",
-        "edp sciences": "EDP Sciences",
-        "elsevier": "Elsevier",
-        "frontiers": "Frontiers",
-        "ieee": "IEEE",
-        "iop": "IOP",
-        "iop publishing": "IOP",
-        "iucr": "IUCr",
-        "mdpi": "MDPI",
-        "mdpi all mdpi have the same instructions for authors": "MDPI",
-        "mdpi all mdpi have the same  instructions for authors": "MDPI",
-        "optica publishing group": "Optica",
-        "royal society of chemistry": "RSC",
-        "royal society of chemistry (rsc)": "RSC",
-        "springer nature": "Springer Nature",
-        "taylor & francis": "Taylor & Francis",
-        "taylor and francis": "Taylor & Francis",
-        "wiley": "Wiley",
-    }
-    name = name.strip().lower()
-    return normalization_dict.get(name, name)
+from daemon_analysis_tools.data_processing import clean_journal_name
 
 
 # Function to save answers to YAML files grouped by question
