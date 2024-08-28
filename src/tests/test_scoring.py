@@ -1,10 +1,6 @@
 import unittest
 
-from daemon_analysis_tools.scoring import (
-    assign_score,
-    calculate_scores,
-    normalize_scores,
-)
+from daemon_analysis_tools.scoring import assign_score
 
 
 class TestScoring(unittest.TestCase):

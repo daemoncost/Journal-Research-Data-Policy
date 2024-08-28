@@ -26,7 +26,7 @@ def load_and_process_data(file_path):
         inplace=True,
     )
 
-    data["journal"] = data["journal"].str.split("\s*,\s*")
+    data["journal"] = data["journal"].str.split(r"\s*,\s*")
     data_duplicated = data.explode("journal").reset_index(drop=True)
 
     # Normalize the publisher names

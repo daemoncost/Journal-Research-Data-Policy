@@ -1,7 +1,5 @@
 import unittest
 
-from daemon_analysis_tools.data_processing import load_and_process_data
-
 
 class TestDataProcessing(unittest.TestCase):
     def test_load_and_process_data(self):
