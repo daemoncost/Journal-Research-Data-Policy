@@ -4,3 +4,5 @@
 *egg*
 *__pycache__*
 *yaml
+.coverage
+*test_coverage_html_report
