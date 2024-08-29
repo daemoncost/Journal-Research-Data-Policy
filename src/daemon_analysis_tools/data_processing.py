@@ -1,5 +1,6 @@
-import pandas as pd
 import re
+
+import pandas as pd
 
 
 def load_and_process_data(file_path):
