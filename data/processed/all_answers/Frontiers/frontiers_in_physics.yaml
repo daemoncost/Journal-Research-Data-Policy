@@ -1,0 +1,293 @@
+1:
+  text: 1. Existence of research data policy
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: We strongly encourage sharing the maximal amount of data; however
+      where ethical, legal or privacy issues are present the data should not be shared.
+      In cases where some or all data cannot be shared for legal, ethical or privacy
+      restrictions, the authors should make these limitations clear in the Data Availability
+      Statement at the time of submission. In situations where access is restricted
+      to protect confidential or proprietary information, authors are required to
+      explain the restrictions on the dataset and make the data available upon request
+      with permission of the third party. The Data Availability Statement should include
+      all necessary contact information to request access to the dataset.
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: Frontiers is committed to open science and open data; we require
+      that authors make available all data relevant to the conclusions of the manuscript.
+  correct_answer: null
+3:
+  text: 3. Data sharing requirements in RDP
+  has_discrepancies: true
+  0:
+    text: Public data sharing of all data required.
+    explanation: Frontiers requires that authors make the "minimal data set" underlying
+      the findings described and used to reach the conclusions of the manuscript,
+      available to any qualified researchers. However, exceptions are granted if data
+      cannot be made publicly available for legal or ethical reasons.
+  1:
+    text: Data sharing required but not publicly (e.g. available upon request is allowed).
+    explanation: Frontiers requires that authors make the "minimal data set" underlying
+      the findings described and used to reach the conclusions of the manuscript,
+      available to any qualified researchers.
+  correct_answer: 1
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "The data should be FAIR \u2013 findable, accessible, interoperable,\
+      \ and reusable \u2013 so that other researchers can locate and use the data. "
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "The data should be FAIR \u2013 findable, accessible, interoperable,\
+      \ and reusable \u2013 so that other researchers can locate and use the data.\
+      \ However, exceptions are granted if data cannot be made publicly available\
+      \ for legal or ethical reasons."
+  correct_answer: null
+2:
+  text: 2. Data availability statement
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: Data availability statements are required for all articles published
+      with Frontiers. During the submission process, authors will be asked to detail
+      the location of the raw data underlying the conclusions made in the manuscript,
+      and whether it will be made available to other researchers following publication.
+      Authors will also be asked for the details of any existing datasets that have
+      been analyzed in the manuscript.
+  1:
+    text: Required according to the RDP.
+    explanation: Data availability statements are required for all articles published
+      with Frontiers.
+  correct_answer: null
+5:
+  text: '5. Citability and findability of data '
+  has_discrepancies: true
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Authors are encouraged to cite all datasets generated or analyzed
+      in the study. Where datasets are cited, they should be included in the references
+      list to maximize future usability.
+
+
+      The following format should be used:
+
+      [DATASET] Author names. (year) Data Title. Repository name. Version. Persistent
+      identifier.'
+  1:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: 'Authors are encouraged to cite all datasets generated or analyzed
+      in the study. Where datasets are cited, they should be included in the references
+      list to maximize future usability.
+
+
+      The following format should be used:
+
+      [DATASET] Author names. (year) Data Title. Repository name. Version. Persistent
+      identifier'
+  correct_answer: 0
+7:
+  text: 7. Timing of data release
+  has_discrepancies: true
+  0:
+    text: Required data must be available after official publication.
+    explanation: To comply with best practice in their field of research, authors
+      are required to make certain types of data available to readers at the time
+      of publication in specific, stable, community-supported repositories such as
+      those listed below. Authors are encouraged to contact our data availability
+      office at datapolicy@frontiersin.org prior to submission with any queries concerning
+      data reporting.
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: 'Only for mandatory data:
+
+
+      "Authors are required to deposit the following mandatory data types in public,
+      community-supported repositories, such as those listed below, prior to publication
+      of an associated Frontiers manuscript."'
+  correct_answer: 0
+8:
+  text: 8. Recommended data sharing method
+  has_discrepancies: true
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: 'To comply with best practice in their field of research, authors
+      are required to make certain types of data available to readers at the time
+      of publication in specific, stable, community-supported repositories such as
+      those listed below. '
+  1:
+    text: No data sharing method recommended in RDP.
+    explanation: no text
+  correct_answer: 0
+9:
+  text: 9. Recommended/required licenses
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text
+  correct_answer: null
+10:
+  text: 10. Referee guidelines concerning research data
+  has_discrepancies: true
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text
+  1:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: Reviewers are subject experts and evaluate manuscripts by using the
+      quality assessment tool and designated review questionnaire that prioritize
+      scientific quality, rigor, and validity. They evaluate the methodology of a
+      study for solidity and rigor, and ensure the research provides valid conclusions
+      and is supported by sufficient data.
+  correct_answer: 1
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: true
+  0:
+    text: 'Authors are encouraged to consider deposition in public, community-supported
+      repositories of the data-types listed below.
+
+      Protein-protein interaction data; Metabolite and metabolome profiling data;
+      Small-molecule screening data; chemical compound data; Flow cytometry data;
+      Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data;
+      Enzymology and biocatalysis data'
+    explanation: ''
+  1:
+    text: Protein-protein interaction data; Metabolite and metabolome profiling data;
+      Small-molecule screening data; chemical compound data; Flow cytometry data;
+      Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data;
+      Enzymology and biocatalysis data
+    explanation: ''
+  correct_answer: null
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: true
+  0:
+    text: 'Authors are required to deposit the following mandatory data types in public,
+      community-supported repositories, such as those listed below, prior to publication
+      of an associated Frontiers manuscript.
+
+      Genetic and genomic sequence (DNA/RNA); Metagenomic sequence; DNA and RNA trace
+      or short-read sequencing data; Genetic polymorphism data, including SNP and
+      CNV data; Gene expression data; chromatin immunoprecipitation data (deep-sequencing
+      or microarray); Data linking genotype to phenotype; Protein sequence data; Proteome
+      profiling data; Small molecule, protein, protein complex data structural data;
+      Taxonomy data'
+    explanation: ''
+  1:
+    text: Genetic and genomic sequence (DNA/RNA); Metagenomic sequence; DNA and RNA
+      trace or short-read sequencing data; Genetic polymorphism data, including SNP
+      and CNV data; Gene expression data; chromatin immunoprecipitation data (deep-sequencing
+      or microarray); Data linking genotype to phenotype; Protein sequence data; Proteome
+      profiling data; Small molecule, protein, protein complex data structural data;
+      Taxonomy data
+    explanation: ''
+  correct_answer: null
+13:
+  text: 13. Code sharing requirements
+  has_discrepancies: true
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: We strongly encourage sharing original code where possible. In situations
+      where custom code is proprietary, an exception will be granted providing that
+      all relevant software needed to replicate the results of the study are available
+      commercially for researchers. Details of the proprietary software used should
+      be listed in the materials and methods section.
+  1:
+    text: Code sharing required.
+    explanation: Frontiers is committed to open science and open data; we require
+      that authors make available all code used to conduct their research available
+      to other researchers.
+  correct_answer: 0
+14:
+  text: 14. Code Reproducibility
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: no text
+  1:
+    text: No mention of dependencies for research code.
+    explanation: no text
+  correct_answer: null
+15:
+  text: 15. Versioning and persistent identifiers
+  has_discrepancies: true
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: Code necessary to enable the reproduction of an experiment should
+      be clearly indicated in the Materials and Methods section, and where possible
+      code should be uploaded to an online repository (such as github.com or code
+      ocean) providing a global persistent link/identifier.
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
+  correct_answer: 0
+16:
+  text: 16. Code Quality Standards
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: Our policies on code availability are informed by community-driven
+      standards, which Frontiers endorses, such as the Transparency and Openness (TOP)
+      guidelines and the joint declaration of data citation principles produced by
+      FORCE11.
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
+  correct_answer: 0
+17:
+  text: 17. Automatic Testing
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
+  correct_answer: null
+18:
+  text: 18. Code Documentation
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  correct_answer: null
+19:
+  text: 19. Linting Standards
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: no text
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text
+  correct_answer: null
+20:
+  text: 20. Code Development
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
+  correct_answer: null
