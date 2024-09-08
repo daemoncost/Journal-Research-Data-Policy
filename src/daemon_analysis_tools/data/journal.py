@@ -1,4 +1,5 @@
-from typing import Union, Dict
+from typing import Dict, Union
+
 import pandas as pd
 
 
@@ -17,14 +18,13 @@ class Journal:
         self.data_availability_statement = self._parse_data_availability_statement(data)
 
     def __repr__(self) -> None:
-        return f"""Journal(name={self.name}, 
-        has_rdp={self.has_rdp}, 
-        data_sharing_requirements={self.data_sharing_requirements}, 
-        fair_data_sharing={self.fair_data_sharing}, 
+        return f"""Journal(name={self.name},
+        has_rdp={self.has_rdp},
+        data_sharing_requirements={self.data_sharing_requirements},
+        fair_data_sharing={self.fair_data_sharing},
         data_availability_statement={self.data_availability_statement})"""
 
     def _parse_rdp(self, data: Union[pd.DataFrame, Dict]) -> bool:
-
         return (
             data.get("1. Existence of research data policy")
             == "Research Data Policy (RDP) exists."

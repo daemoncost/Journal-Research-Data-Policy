@@ -1,10 +1,12 @@
-from typing import Dict, Optional
 import os
-import yaml
 from glob import glob
+from typing import Dict, Optional
+
 import pandas as pd
-from daemon_analysis_tools.data_processing import normalize_journal, normalize_publisher
+import yaml
+
 from daemon_analysis_tools.data.question import Question
+from daemon_analysis_tools.data_processing import normalize_journal, normalize_publisher
 
 
 def load_and_process_csv(file_path: str) -> pd.DataFrame:
@@ -52,7 +54,6 @@ def save_answers_to_yaml(
     """
 
     for publisher_name, publisher in grouped_questions.items():
-
         publisher_dir = os.path.join(parent_folder, publisher_name)
         os.makedirs(publisher_dir, exist_ok=True)
 
@@ -92,12 +93,10 @@ def save_answers_to_yaml(
 
 
 def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
-
     grouped_questions = {}
 
     publisher_dirs = sorted(glob(f"{parent_folder}/*"))
     for publisher_dir in publisher_dirs:
-
         publisher_name = publisher_dir.split("/")[-1]
 
         grouped_questions[publisher_name] = {}
@@ -109,7 +108,6 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
             with open(journal_file, "r") as file:
                 _d = yaml.safe_load(file)
                 for question_number, question_dict in _d.items():
-
                     grouped_questions[publisher_name][journal_name][
                         question_number
                     ] = {}

@@ -1,4 +1,5 @@
-from typing import Union, Optional
+from typing import Optional, Union
+
 from daemon_analysis_tools.scoring import jaccard_similarity
 
 

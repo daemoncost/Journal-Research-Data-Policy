@@ -1,6 +1,7 @@
-from daemon_analysis_tools.data_processing import normalize_series
-from typing import Set, List
 import string
+from typing import List, Set
+
+from daemon_analysis_tools.data_processing import normalize_series
 
 
 # Function to check if all elements in a series are the same and return differences
@@ -16,7 +17,6 @@ def all_equal(series):
 
 
 def sentence_to_words(sentence: str) -> Set[str]:
-
     # Create a translation table that maps punctuation to None
     translator = str.maketrans("", "", string.punctuation)
 
