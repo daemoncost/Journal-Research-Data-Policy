@@ -1,6 +1,43 @@
 import os
 import yaml
-from daemon_analysis_tools.data_processing import normalize_journal
+import pandas as pd
+from daemon_analysis_tools.data_processing import normalize_journal, normalize_publisher
+
+
+def load_and_process_csv(file_path):
+    data = pd.read_csv(file_path)
+    try:
+        data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
+        data.drop([0, 1, 2], axis=0, inplace=True)
+        print(f"Warning: E-mail addresses found in {file_path}.")
+    except KeyError:
+        pass
+        # Already preprocessed to remove E-mail addresses
+
+    data.rename(
+        columns={
+            (
+                "Journal name or names, in case these replies apply "
+                "to multiple journals (please separate the names by comma):"
+            ): "journal"
+        },
+        inplace=True,
+    )
+
+    data["journal"] = data["journal"].str.split(r"\s*,\s*")
+    data_duplicated = data.explode("journal").reset_index(drop=True)
+
+    # Normalize the publisher names
+    data_duplicated["Publisher Name"] = data_duplicated["Publisher Name"].apply(
+        normalize_publisher
+    )
+
+    # Normalize the journal names
+    # with open("../data/journal_normalizer.yaml", "r") as file:
+    # normalizazion_dict = yaml.safe_load(file)
+    data_duplicated["journal"] = data_duplicated["journal"].apply(normalize_journal)
+
+    return data_duplicated
 
 
 # Function to save answers to YAML files grouped by question
