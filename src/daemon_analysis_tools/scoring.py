@@ -1,4 +1,6 @@
-from .data_processing import normalize_series
+from daemon_analysis_tools.data_processing import normalize_series
+from typing import Set, List
+import string
 
 
 # Function to check if all elements in a series are the same and return differences
@@ -13,14 +15,25 @@ def all_equal(series):
         return False, differing_indices, differing_values
 
 
-def jaccard_similarity(str1, str2):
+def sentence_to_words(sentence: str) -> Set[str]:
+
+    # Create a translation table that maps punctuation to None
+    translator = str.maketrans("", "", string.punctuation)
+
+    # Convert each string to a set of words after removing punctuation
+    set_of_words = set(sentence.lower().translate(translator).split())
+
+    return set_of_words
+
+
+def jaccard_similarity(sentences: List[str]) -> float:
     """
-    Compute the Jaccard similarity score between two strings.
+    Compute the Jaccard similarity coefficient between two sentences.
     """
-    set1, set2 = set(str1.split()), set(str2.split())
-    intersection = len(set1 & set2)
-    union = len(set1 | set2)
-    return intersection / union
+    word_sets = [sentence_to_words(s) for s in sentences]
+    intersection = set.intersection(*word_sets)
+    union = set.union(*word_sets)
+    return len(intersection) / len(union)
 
 
 # Function to check if all open text answers are similar above a threshold
