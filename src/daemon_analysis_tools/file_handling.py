@@ -2,7 +2,7 @@ import os
 
 import yaml
 
-from daemon_analysis_tools.data_processing import clean_journal_name
+from daemon_analysis_tools.data import clean_journal_name
 
 
 # Function to save answers to YAML files grouped by question
