@@ -1,8 +1,6 @@
 import os
-
 import yaml
-
-from daemon_analysis_tools.data import clean_journal_name
+from daemon_analysis_tools.data_processing import normalize_journal
 
 
 # Function to save answers to YAML files grouped by question
@@ -13,7 +11,7 @@ def save_answers_to_yaml(grouped_data, question_num_to_text, parent_folder="."):
         publisher_dir = os.path.join(parent_folder, publisher)
         os.makedirs(publisher_dir, exist_ok=True)
 
-        journal_file_name = clean_journal_name(journal)
+        journal_file_name = normalize_journal(journal)
 
         journal_data = {}
         for question_num, question_text in question_num_to_text.items():
