@@ -1,6 +1,6 @@
 import os
 from glob import glob
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 
 import pandas as pd
 import yaml
@@ -47,13 +47,20 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
 
 # Function to save answers to YAML files grouped by question
 def save_answers_to_yaml(
-    grouped_questions: Dict, parent_folder: Optional[str] = "."
+    grouped_questions: Dict,
+    parent_folder: Optional[str] = ".",
+    save_only: Optional[List[str]] = None,
 ) -> None:
     """
     Save answers to yaml file to facilitate discrepancy resolution.
     """
 
     for publisher_name, publisher in grouped_questions.items():
+
+        if save_only is not None:
+            if publisher_name not in save_only:
+                continue
+                
         publisher_dir = os.path.join(parent_folder, publisher_name)
         os.makedirs(publisher_dir, exist_ok=True)
 
