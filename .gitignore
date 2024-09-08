@@ -1,3 +1,5 @@
 *.pyc
 *egg*
 *__pycache__*
+.coverage
+ *test_coverage_html_report
