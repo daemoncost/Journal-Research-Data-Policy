@@ -191,7 +191,7 @@
       Gene expression data; Crystallographic data for small molecules; Proteomics
       data; Earth, space & environmental sciences
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 13:
   text: 13. Code sharing requirements
   has_discrepancies: false

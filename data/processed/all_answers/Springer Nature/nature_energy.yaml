@@ -178,7 +178,7 @@
   1:
     text: .nan
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 12:
   text: '12. Unique policies for data types
 
@@ -197,7 +197,7 @@
       Gene expression data (must be MIAME compliant); Crystallographic data for small
       molecules; Proteomics data; Earth, space & environmental sciences
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 13:
   text: 13. Code sharing requirements
   has_discrepancies: true
