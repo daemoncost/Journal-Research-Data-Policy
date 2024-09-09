@@ -56,11 +56,10 @@ def save_answers_to_yaml(
     """
 
     for publisher_name, publisher in grouped_questions.items():
-
         if save_only is not None:
             if publisher_name not in save_only:
                 continue
-                
+
         publisher_dir = os.path.join(parent_folder, publisher_name)
         os.makedirs(publisher_dir, exist_ok=True)
 
@@ -70,19 +69,20 @@ def save_answers_to_yaml(
             dict_to_dump = {}
             for question_number, question in journal.items():
                 answers = question.answers
-                if len(answers) > 1:
-                    dict_to_dump[question_number] = {}
-                    dict_to_dump[question_number]["text"] = question.text
-                    dict_to_dump[question_number][
-                        "has_discrepancies"
-                    ] = question.has_discrepancies()
-                    for respondent_number, answer in enumerate(answers):
-                        dict_to_dump[question_number][respondent_number] = {
-                            "text": answer.text,
-                            "explanation": answer.explanation,
-                        }
-                    # Add empty line to fill with the correct answer
-                    dict_to_dump[question_number]["correct_answer"] = None
+                # if len(answers) > 1:
+                dict_to_dump[question_number] = {}
+                dict_to_dump[question_number]["text"] = question.text
+                dict_to_dump[question_number]["N. encoders"] = len(answers)
+                dict_to_dump[question_number][
+                    "has_discrepancies"
+                ] = question.has_discrepancies()
+                for respondent_number, answer in enumerate(answers):
+                    dict_to_dump[question_number][respondent_number] = {
+                        "text": answer.text,
+                        "explanation": answer.explanation,
+                    }
+                # Add empty line to fill with the correct answer
+                dict_to_dump[question_number]["correct_answer"] = None
 
             try:
                 with open(journal_file, "x") as file:
