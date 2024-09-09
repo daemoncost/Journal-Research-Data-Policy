@@ -1,0 +1,203 @@
+1:
+  text: 1. Existence of research data policy
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) does not exists.
+    explanation: None (there is no reference to RDP of IOP, nor its requirements are
+      enforced in the journal)
+  1:
+    text: Research Data Policy (RDP) does not exists.
+    explanation: no text
+  correct_answer: null
+3:
+  text: 3. Data sharing requirements in RDP
+  has_discrepancies: false
+  0:
+    text: Data sharing only with editors and referees (no public sharing)
+    explanation: Actually, no mention about data sharing in the Author guidelines
+      https://publishingsupport.iopscience.iop.org/author-guidelines-for-conference-proceedings/
+  1:
+    text: Data sharing only with editors and referees (no public sharing)
+    explanation: no text
+  correct_answer: null
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: '[No mention]'
+  1:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: no text
+  correct_answer: null
+2:
+  text: 2. Data availability statement
+  has_discrepancies: false
+  0:
+    text: Not mentioned in the RDP.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: Not mentioned in the RDP.
+    explanation: no text
+  correct_answer: null
+5:
+  text: '5. Citability and findability of data '
+  has_discrepancies: false
+  0:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: no text
+  correct_answer: null
+7:
+  text: 7. Timing of data release
+  has_discrepancies: false
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: no text
+  correct_answer: null
+8:
+  text: 8. Recommended data sharing method
+  has_discrepancies: false
+  0:
+    text: No data sharing method recommended in RDP.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No data sharing method recommended in RDP.
+    explanation: no text
+  correct_answer: null
+9:
+  text: 9. Recommended/required licenses
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text
+  correct_answer: null
+10:
+  text: 10. Referee guidelines concerning research data
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text
+  correct_answer: null
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: true
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: null
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: true
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: null
+13:
+  text: 13. Code sharing requirements
+  has_discrepancies: false
+  0:
+    text: Code sharing not mentioned.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: Code sharing not mentioned.
+    explanation: no text
+  correct_answer: null
+14:
+  text: 14. Code Reproducibility
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of dependencies for research code.
+    explanation: no text
+  correct_answer: null
+15:
+  text: 15. Versioning and persistent identifiers
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
+  correct_answer: null
+16:
+  text: 16. Code Quality Standards
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
+  correct_answer: null
+17:
+  text: 17. Automatic Testing
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
+  correct_answer: null
+18:
+  text: 18. Code Documentation
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  correct_answer: null
+19:
+  text: 19. Linting Standards
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text
+  correct_answer: null
+20:
+  text: 20. Code Development
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: '[No RDP, no mention in Author guidelines]'
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
+  correct_answer: null
