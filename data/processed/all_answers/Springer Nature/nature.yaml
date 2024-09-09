@@ -1,0 +1,304 @@
+1:
+  text: 1. Existence of research data policy
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'At Springer Nature we advance discovery by publishing trusted research,
+      supporting the development of new ideas and championing open science. We also
+      aim to facilitate compliance with research funder and institution requirements
+      to share data.
+
+
+      To help accomplish this we have established a standard research data policy
+      for our journals, based on transparency around supporting data. This policy
+      applies to all datasets that are necessary to interpret and replicate the conclusions
+      reported in a research article.'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: Mandatory deposition of data is required for certain data types;
+      see table below with recommended repositories.
+  correct_answer: null
+3:
+  text: 3. Data sharing requirements in RDP
+  has_discrepancies: false
+  0:
+    text: Public data sharing required only for specific types of data.
+    explanation: 'We encourage authors to deposit their supporting data in publicly
+      available repositories, or failing this within the manuscript or additional
+      supporting files. See our repository guidance for more information.
+
+
+      For a number of data types, submission to a community-endorsed, public repository
+      is mandatory. See our list of mandated data types.'
+  1:
+    text: Public data sharing required only for specific types of data.
+    explanation: 'Nature backs the Enabling FAIR Data initiative and requires authors
+      to deposit data in community repositories. Announcement: FAIR data in Earth
+      science.'
+  correct_answer: null
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: "For the following data types submission to a community-endorsed,\
+      \ public repository is mandatory. Persistent identifiers (DOIs and accession\
+      \ numbers) assigned to the data by the repository must be appropriately cited\
+      \ and referenced in the published article.\n\nCrystallographic data for small\
+      \ molecules  \u2192 Cambridge Structural Database (CSD/CCDC)\n\n[Note: CCDC\
+      \ supports FAIR Data principles: see: \nhttps://www.ccdc.cam.ac.uk/solutions/about-the-csd/fair-data-principles/\n\
+      https://www.ccdc.cam.ac.uk/discover/blog/our-approach-to-the-fair-data-principles/]"
+  1:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: All published manuscripts reporting original research in Nature Portfolio
+      journals must include a data availability statement.
+  correct_answer: null
+2:
+  text: 2. Data availability statement
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: 1. All original articles must include a data availability statement
+  1:
+    text: Required according to the RDP.
+    explanation: 'Code should be deposited in a DOI-minting repository such as Zenodo
+      or Code Ocean and cited in the reference list following the guidelines described
+      here. '
+  correct_answer: null
+5:
+  text: '5. Citability and findability of data '
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "Code should be deposited in a DOI-minting repository such as Zenodo\
+      \ or Code Ocean and cited in the reference list following the guidelines described\
+      \ here. \n\n[Note: this is taken from here: https://www.nature.com/nature/editorial-policies/reporting-standards,\
+      \ which is not the Springer-Nature RDP but the additional document on reporting\
+      \ standards of Nature Portfolio. The Springer-Nature RDP is quite generic. Nonetheless,\
+      \ for specific data types, data publication in repository supporting DOI is\
+      \ mandatory]"
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: .nan
+  correct_answer: null
+7:
+  text: 7. Timing of data release
+  has_discrepancies: true
+  0:
+    text: Required data must be available prior to official publication.
+    explanation: 2. We strongly encourage that all datasets supporting the analysis
+      and conclusions of the paper are made publicly available at the time of publication,
+      and we mandate the sharing of community-endorsed data types
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: Providing large datasets in supplementary information is strongly
+      discouraged and the preferred approach is to make data available in repositories.
+  correct_answer: 0
+8:
+  text: 8. Recommended data sharing method
+  has_discrepancies: false
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: 'We encourage authors to deposit their supporting data in publicly
+      available repositories, or failing this within the manuscript or additional
+      supporting files. See our repository guidance for more information.
+
+
+      For a number of data types, submission to a community-endorsed, public repository
+      is mandatory. See our list of mandated data types.'
+  1:
+    text: Public online repositories recommended in RDP.
+    explanation: 'Authors are encouraged to manage subsequent code versions and to
+      use a license approved by the open source initiative. (MT NOTE: not required
+      but encouraged).'
+  correct_answer: null
+9:
+  text: 9. Recommended/required licenses
+  has_discrepancies: true
+  0:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'Authors are encouraged to manage subsequent code versions and to
+      use a license [link to: https://opensource.org/licenses] approved by the open
+      source initiative.
+
+
+      [Note: again, this is from the additional Nature Portfolio document, not from
+      the Springer-Nature RDP]'
+  1:
+    text: Open access license required for shared data.
+    explanation: .nan
+  correct_answer: 0
+10:
+  text: 10. Referee guidelines concerning research data
+  has_discrepancies: true
+  0:
+    text: Additional data or code referee (referee that solely confirms that code
+      and data are shared following the RDP).
+    explanation: 'Peer review of code/algorithm/software: A subset of Nature journals
+      (listed below) undertake peer review of custom code or mathematical algorithm,
+      and software, when it is central to the manuscript. For code/algorithm peer
+      review, we require release of code/algorithm during the peer review process,
+      verification by peer reviewers and release of code/algorithm at publication.
+
+
+      Nature
+
+      Nature Communications
+
+      Nature Energy
+
+
+      [among others]'
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: 'Mandatory deposition of data is required for certain data types;
+      see table below with recommended repositories. '
+  correct_answer: 0
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: false
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer: null
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: true
+  0:
+    text: DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence
+      data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular
+      structure data; Gene expression data; Crystallographic data for small molecules
+    explanation: ''
+  1:
+    text: Protein sequences; DNA and RNA sequences; DNA and RNA sequencing data; Genetic
+      polymorphisms; Linked genotype and phenotype data; Macromolecular structure;
+      Gene expression data; Crystallographic data for small molecules; Proteomics
+      data; Earth, space & environmental sciences
+    explanation: ''
+  correct_answer: null
+13:
+  text: 13. Code sharing requirements
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: "The focus of this policy framework is on data rather than software\
+      \ but the sharing of software alongside data is also important to support reproducibility\
+      \ and transparency. Many Springer Nature journals also support the use of Code\
+      \ Availability Statements. Please consult the journal\u2019s submission guidance\
+      \ or contact the journal directly for information on code sharing and code availability.\n\
+      [From Springer-Nature RDP]\n\n------------------------------\n\nFor all studies\
+      \ using custom code or mathematical algorithm that is deemed central to the\
+      \ conclusions, a statement must be included under the heading \"Code availability\"\
+      , indicating whether and how the code or algorithm can be accessed, including\
+      \ any restrictions to access. Code availability statements should be provided\
+      \ as a separate section after the data availability statement but before the\
+      \ references.\n\nUpon publication, Nature Portfolio journals consider it best\
+      \ practice to release custom computer code in a way that allows readers to repeat\
+      \ the published results.\n\nNature journals encourage researchers who submit\
+      \ papers that rely on bespoke software to provide the programs for peer review.\n\
+      \nPapers in Nature Portfolio journals should make computer code accessible where\
+      \ possible.\n\n[From Nature Portfolio additional policies: https://www.nature.com/nature/editorial-policies/reporting-standards]"
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: .nan
+  correct_answer: null
+14:
+  text: 14. Code Reproducibility
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: No explicit mention, but some rules are contained here https://www.nature.com/documents/nr-software-policy.pdf,
+      point 1.
+  1:
+    text: No mention of dependencies for research code.
+    explanation: Code should be deposited in a DOI-minting repository such as Zenodo
+      or Code Ocean and cited in the reference list following the guidelines described
+      here.
+  correct_answer: null
+15:
+  text: 15. Versioning and persistent identifiers
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: Code should be deposited in a DOI-minting repository such as Zenodo
+      or Code Ocean and cited in the reference list following the guidelines described
+      here. Authors are encouraged to manage subsequent code versions
+  1:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: .nan
+  correct_answer: null
+16:
+  text: 16. Code Quality Standards
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: '[For the listed journals] Authors must fill out a Code and Software
+      submission checklist [liks to https://www.nature.com/documents/nr-software-policy.pdf].   [Again,
+      in Nature Portfolio document, not in RDP]'
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: .nan
+  correct_answer: 0
+17:
+  text: 17. Automatic Testing
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: No explicit mention
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: .nan
+  correct_answer: null
+18:
+  text: 18. Code Documentation
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: Improving the integration of computational analysis into biology
+      will require better documentation, validation and accessibility of software
+      associated with papers
+  1:
+    text: No mention of standards for code documentation.
+    explanation: .nan
+  correct_answer: 0
+19:
+  text: 19. Linting Standards
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: '-'
+  1:
+    text: No mention of linting standards for code.
+    explanation: .nan
+  correct_answer: null
+20:
+  text: 20. Code Development
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: No explicit reference, although the use of https://codeocean.com/
+      is encouraged in the Nature Portfolio page https://www.nature.com/nature/editorial-policies/reporting-standards
+      "Code should be deposited in a DOI-minting repository such as Zenodo or Code
+      Ocean and cited in the reference list following the guidelines described here."
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: 'MT: there is no multiple choice question below.'
+  correct_answer: null
