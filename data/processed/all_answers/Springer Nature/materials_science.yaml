@@ -1,1 +1,230 @@
-{}
+1:
+  text: 1. Existence of research data policy
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'At Springer Nature we advance discovery by publishing trusted research,
+      supporting the
+
+      development of new ideas and championing open science. We also aim to facilitate
+
+      compliance with research funder and institution requirements to share data.
+
+
+      To help accomplish this we have established a standard research data policy
+      for our
+
+      journals, based on transparency around supporting data. This policy applies
+      to all datasets
+
+      that are necessary to interpret and replicate the conclusions reported in a
+      research article.'
+  correct_answer: null
+3:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public data sharing required only for specific types of data.
+    explanation: 'We encourage authors to deposit their supporting data in publicly
+      available repositories, or
+
+      failing this within the manuscript or additional supporting files. See our repository
+      guidance
+
+      for more information.
+
+
+      For a number of data types, submission to a community-endorsed, public repository
+      is
+
+      mandatory. See our list of mandated data types.'
+  correct_answer: null
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: "For the following data types submission to a community-endorsed,\
+      \ public repository is\nmandatory. Persistent identifiers (DOIs and accession\
+      \ numbers) assigned to the data by the\nrepository must be appropriately cited\
+      \ and referenced in the published article.\n\nCrystallographic data for small\
+      \ molecules \u2192 Cambridge Structural Database (CSD/CCDC)\n\n[Note: CCDC supports\
+      \ FAIR Data principles: see:\nhttps://www.ccdc.cam.ac.uk/solutions/about-the-csd/fair-data-principles/\n\
+      https://www.ccdc.cam.ac.uk/discover/blog/our-approach-to-the-fair-data-principles/]"
+  correct_answer: null
+2:
+  text: 2. Data availability statement
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: '1. All original articles must include a data availability statement
+
+
+      NONETHELESS, NEITHER IN "Nano-Micro Letters" NOR IN "Materials Science" THE
+      PRESENCE OF THE DATA AVAILABILITY STATEMENT IS ENFORCED IN PRACTICE!'
+  correct_answer: null
+5:
+  text: '5. Citability and findability of data '
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: '[Note: The Springer-Nature RDP is quite generic. Nonetheless, for
+
+      specific data types, data publication in repository supporting DOI is mandatory,
+      see e.g. https://www.springernature.com/gp/authors/research-data-policy/repositories-mandates/19540364'
+  correct_answer: null
+7:
+  text: 7. Timing of data release
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Required data must be available prior to official publication.
+    explanation: 2. We strongly encourage that all datasets supporting the analysis
+      and conclusions of the paper are made publicly available at the time of publication,
+      and we mandate the sharing of community-endorsed data types
+  correct_answer: null
+8:
+  text: 8. Recommended data sharing method
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: 'We encourage authors to deposit their supporting data in publicly
+      available repositories, or
+
+      failing this within the manuscript or additional supporting files. See our repository
+      guidance
+
+      for more information.
+
+
+      For a number of data types, submission to a community-endorsed, public repository
+      is
+
+      mandatory. See our list of mandated data types.'
+  correct_answer: null
+9:
+  text: 9. Recommended/required licenses
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: .nan
+  correct_answer: null
+10:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "3. Peer reviewers are entitled to request access to underlying data\
+      \ (and code) when needed to perform their evaluation of a manuscript. \n[from\
+      \ the Springer Nature general RDP]"
+  correct_answer: null
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: .nan
+    explanation: ''
+  correct_answer: null
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: 'DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence
+      data;
+
+      Proteomics data; Genetic variation data; Functional genomics data; Macromolecular
+
+      structure data; Gene expression data; Crystallographic data for small molecules'
+    explanation: ''
+  correct_answer: null
+13:
+  text: 13. Code sharing requirements
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: "The focus of this policy framework is on data rather than software\
+      \ but the sharing of software alongside data is also important to support reproducibility\
+      \ and transparency. Many Springer Nature journals also support the use of Code\
+      \ Availability Statements. Please consult the journal\u2019s submission guidance\
+      \ or contact the journal directly for information on code sharing and code availability.\n\
+      [from FAQs of Springer-Nature general RDP]"
+  correct_answer: null
+14:
+  text: 14. Code Reproducibility
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: No mention
+  correct_answer: null
+15:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: No mention
+  correct_answer: null
+16:
+  text: 16. Code Quality Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: No mention
+  correct_answer: null
+17:
+  text: 17. Automatic Testing
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: No mention
+  correct_answer: null
+18:
+  text: 18. Code Documentation
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: No mention
+  correct_answer: null
+19:
+  text: 19. Linting Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: No mention
+  correct_answer: null
+20:
+  text: 20. Code Development
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: No mention
+  correct_answer: null
