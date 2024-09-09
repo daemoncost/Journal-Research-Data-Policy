@@ -101,7 +101,7 @@
     explanation: "\"Authors must agree to make any data required to support or replicate\
       \ claims made in an article available privately to the journal\u2019s editors,\
       \ reviewers and readers without undue restriction or delay if requested.\""
-  correct_answer: null
+  correct_answer: 0
 8:
   text: 8. Recommended data sharing method
   has_discrepancies: false
@@ -177,7 +177,7 @@
   1:
     text: no text
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 12:
   text: '12. Unique policies for data types
 
@@ -191,7 +191,7 @@
   1:
     text: no text
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 13:
   text: 13. Code sharing requirements
   has_discrepancies: false
@@ -300,4 +300,4 @@
   1:
     text: No mention of standards for code development such as continuous integration.
     explanation: no text
-  correct_answer: null
+  correct_answer: 1

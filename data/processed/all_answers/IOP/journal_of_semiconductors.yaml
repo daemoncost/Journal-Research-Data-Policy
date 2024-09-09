@@ -147,14 +147,14 @@
   1:
     text: no text
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 12:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: true
+  has_discrepancies: 0
   0:
     text: .nan
     explanation: ''

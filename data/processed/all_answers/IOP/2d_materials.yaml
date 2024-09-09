@@ -177,7 +177,7 @@
   1:
     text: no text
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 12:
   text: '12. Unique policies for data types
 
@@ -191,7 +191,7 @@
   1:
     text: no text
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 13:
   text: 13. Code sharing requirements
   has_discrepancies: false
