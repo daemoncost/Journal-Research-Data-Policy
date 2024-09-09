@@ -56,7 +56,6 @@ def save_answers_to_yaml(
     """
 
     for publisher_name, publisher in grouped_questions.items():
-
         if save_only is not None:
             if publisher_name not in save_only:
                 continue
