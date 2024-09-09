@@ -168,7 +168,7 @@
       Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data;
       Enzymology and biocatalysis data
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 12:
   text: '12. Unique policies for data types
 
@@ -196,7 +196,7 @@
       profiling data; Small molecule, protein, protein complex data structural data;
       Taxonomy data
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 13:
   text: 13. Code sharing requirements
   has_discrepancies: true
