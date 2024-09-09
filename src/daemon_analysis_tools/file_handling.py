@@ -141,12 +141,16 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                             )
                             answer = question_dict[correct_answer_id]
                             question.add_answer(answer["text"], answer["explanation"])
+                            question.resolve_discrepancy(correct_answer=0)
+                            assert question.get_final_answer() is not None
                             grouped_questions[publisher_name][journal_name][
                                 question_number
                             ] = question
                     else:
                         answer = question_dict[0]
                         question.add_answer(answer["text"], answer["explanation"])
+                        question.resolve_discrepancy(correct_answer=0)
+                        assert question.get_final_answer() is not None
                         grouped_questions[publisher_name][journal_name][
                             question_number
                         ] = question
