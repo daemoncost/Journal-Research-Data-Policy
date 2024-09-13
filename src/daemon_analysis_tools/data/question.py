@@ -54,8 +54,9 @@ class Question:
             return jaccard_similarity(answer_texts) > 0.55
 
     def resolve_discrepancy(
-        self, correct_answer: Optional[Union[str, int]] = None,
-        discrepancy_reason: Optional[str] = None
+        self,
+        correct_answer: Optional[Union[str, int]] = None,
+        discrepancy_reason: Optional[str] = None,
     ) -> None:
         """
         Resolve the discrepancy by choosing the correct answer.
