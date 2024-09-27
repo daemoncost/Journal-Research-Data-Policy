@@ -81,6 +81,7 @@ def save_answers_to_yaml(
                         "text": answer.text,
                         "explanation": answer.explanation,
                     }
+                    
                 # Add empty line to fill with the correct answer
                 if question.correct_answer is None:
                     dict_to_dump[question_number]["correct_answer"] = None
@@ -89,6 +90,10 @@ def save_answers_to_yaml(
                         "text": question.correct_answer.text,
                         "explanation": question.correct_answer.explanation,
                     }
+            
+                dict_to_dump[question_number][
+                    "discrepancy_reason"
+                ] = question.discrepancy_reason
 
             try:
                 with open(journal_file, "x") as file:
