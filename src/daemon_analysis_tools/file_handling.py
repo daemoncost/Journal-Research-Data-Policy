@@ -92,7 +92,7 @@ def save_answers_to_yaml(
             
                 dict_to_dump[question_number][
                     "discrepancy_reason"
-                ] = question.discrepancy_reason()
+                ] = question.discrepancy_reason
 
             try:
                 with open(journal_file, "x") as file:
