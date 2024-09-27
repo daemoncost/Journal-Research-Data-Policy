@@ -81,7 +81,6 @@ def save_answers_to_yaml(
                         "text": answer.text,
                         "explanation": answer.explanation,
                     }
-                    
                 # Add empty line to fill with the correct answer
                 if question.correct_answer is None:
                     dict_to_dump[question_number]["correct_answer"] = None
