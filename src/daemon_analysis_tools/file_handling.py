@@ -127,7 +127,7 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                     question = Question(text=question_dict["text"])
                     correct_answer_id = question_dict["correct_answer"]
                     has_discrepancies = question_dict["has_discrepancies"]
-                    discrepancy_reason = question_dict["discrepancy_reason"]
+                    discrepancy_reason = question_dict.get("discrepancy_reason", None)
 
                     if has_discrepancies:
                         if correct_answer_id is None:
@@ -147,6 +147,10 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                             )
                             answer = question_dict[correct_answer_id]
                             question.add_answer(answer["text"], answer["explanation"])
+                            assert discrepancy_reason is not None, (
+                                "You must provide `discrepancy_reason` "
+                                "to resolve discrepancies."
+                            )
                             question.resolve_discrepancy(
                                 correct_answer=0, discrepancy_reason=discrepancy_reason
                             )
