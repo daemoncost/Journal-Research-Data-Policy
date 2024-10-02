@@ -38,6 +38,7 @@
     explanation: 'Mandatory deposition of data is required for certain data types;
       see table below with recommended repositories. '
   correct_answer: 0
+  discrepancy_reason: language understanding
 4:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
@@ -106,6 +107,7 @@
       and Dryad. Providing large datasets in supplementary information is strongly
       discouraged and the preferred approach is to make data available in repositories.  '
   correct_answer: 0
+  discrepancy_reason: language understanding
 8:
   text: 8. Recommended data sharing method
   has_discrepancies: false
@@ -165,6 +167,7 @@
     explanation: 'For the following types of data set, submission to a community-endorsed,
       public repository is mandatory. '
   correct_answer: 0
+  discrepancy_reason: language understanding
 11:
   text: '11. Unique policies for data types
 
@@ -185,7 +188,7 @@
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence
       data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular
@@ -225,7 +228,8 @@
     explanation: 'Authors must make available upon request, to editors and reviewers,
       any previously unreported custom computer code or algorithm used to generate
       results that are reported in the paper and central to its main claims. '
-  correct_answer: 0
+  correct_answer: 1
+  discrepancy_reason: difficulty in matching information and question
 14:
   text: 14. Code Reproducibility
   has_discrepancies: false
@@ -265,6 +269,7 @@
     text: The journal policies do not mention any code quality standards.
     explanation: .nan
   correct_answer: 0
+  discrepancy_reason: language understanding
 17:
   text: 17. Automatic Testing
   has_discrepancies: false
@@ -287,6 +292,7 @@
     text: No mention of standards for code documentation.
     explanation: .nan
   correct_answer: 0
+  discrepancy_reason: language understanding
 19:
   text: 19. Linting Standards
   has_discrepancies: false
