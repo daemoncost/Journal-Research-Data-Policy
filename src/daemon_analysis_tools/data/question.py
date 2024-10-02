@@ -30,6 +30,7 @@ class Question:
         self.answers = []
         self.is_open = is_open
         self.correct_answer = None
+        self.correct_answer_encoder_id = None
         self.discrepancy_reason = None
 
     def add_answer(self, answer: str, explanation: str = "") -> None:
@@ -80,19 +81,23 @@ class Question:
                         "If `correct_answer` in an `int`, it is must be the respondant "
                         "number as reported in `self.print_qa()`"
                     )
+                    self.correct_answer_encoder_id = correct_answer
                     self.correct_answer = self.answers[correct_answer]
             else:
                 raise ValueError(
                     "You must provide `correct_answer` to resolve discrepancies."
                 )
             if discrepancy_reason is not None:
+                print(discrepancy_reason)
                 self.discrepancy_reason = discrepancy_reason
             else:
                 raise ValueError(
                     "You must provide `discrepancy_reason` to resolve discrepancies."
                 )
         else:
+            self.correct_answer_encoder_id = 0
             self.correct_answer = self.answers[0]
+            self.discrepancy_reason = discrepancy_reason
 
     def get_final_answer(self) -> Union[Answer, None]:
         """

@@ -82,9 +82,10 @@ def save_answers_to_yaml(
                         "explanation": answer.explanation,
                     }
                 # Add empty line to fill with the correct answer
+
                 dict_to_dump[question_number][
                     "correct_answer"
-                ] = question.correct_answer
+                ] = question.correct_answer_encoder_id
                 dict_to_dump[question_number][
                     "discrepancy_reason"
                 ] = question.discrepancy_reason
@@ -126,6 +127,7 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                     question = Question(text=question_dict["text"])
                     correct_answer_id = question_dict["correct_answer"]
                     has_discrepancies = question_dict["has_discrepancies"]
+                    discrepancy_reason = question_dict["discrepancy_reason"]
 
                     if has_discrepancies:
                         if correct_answer_id is None:
@@ -145,7 +147,9 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                             )
                             answer = question_dict[correct_answer_id]
                             question.add_answer(answer["text"], answer["explanation"])
-                            question.resolve_discrepancy(correct_answer=0)
+                            question.resolve_discrepancy(
+                                correct_answer=0, discrepancy_reason=discrepancy_reason
+                            )
                             assert question.get_final_answer() is not None
                             grouped_questions[publisher_name][journal_name][
                                 question_number
