@@ -32,6 +32,7 @@
       the findings described and used to reach the conclusions of the manuscript,
       available to any qualified researchers.
   correct_answer: 1
+  discrepancy_reason: language understanding
 4:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
@@ -89,6 +90,7 @@
       [DATASET] Author names. (year) Data Title. Repository name. Version. Persistent
       identifier'
   correct_answer: 0
+  discrepancy_reason: language understanding
 7:
   text: 7. Timing of data release
   has_discrepancies: true
@@ -109,6 +111,7 @@
       community-supported repositories, such as those listed below, prior to publication
       of an associated Frontiers manuscript."'
   correct_answer: 0
+  discrepancy_reason: language understanding
 8:
   text: 8. Recommended data sharing method
   has_discrepancies: true
@@ -122,6 +125,7 @@
     text: No data sharing method recommended in RDP.
     explanation: no text
   correct_answer: 0
+  discrepancy_reason: difficulty in matching information and question
 9:
   text: 9. Recommended/required licenses
   has_discrepancies: false
@@ -146,13 +150,14 @@
       study for solidity and rigor, and ensure the research provides valid conclusions
       and is supported by sufficient data.
   correct_answer: 1
+  discrepancy_reason: difficulty in matching information and question
 11:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: 'Authors are encouraged to consider deposition in public, community-supported
       repositories of the data-types listed below.
@@ -175,7 +180,7 @@
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: 'Authors are required to deposit the following mandatory data types in public,
       community-supported repositories, such as those listed below, prior to publication
@@ -213,6 +218,7 @@
       that authors make available all code used to conduct their research available
       to other researchers.
   correct_answer: 0
+  discrepancy_reason: language understanding
 14:
   text: 14. Code Reproducibility
   has_discrepancies: false
@@ -238,6 +244,7 @@
       code.
     explanation: no text
   correct_answer: 0
+  discrepancy_reason: difficulty in matching information and question
 16:
   text: 16. Code Quality Standards
   has_discrepancies: true
@@ -251,6 +258,7 @@
     text: The journal policies do not mention any code quality standards.
     explanation: no text
   correct_answer: 0
+  discrepancy_reason: difficulty in matching information and question
 17:
   text: 17. Automatic Testing
   has_discrepancies: false
