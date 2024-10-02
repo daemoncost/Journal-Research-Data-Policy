@@ -48,11 +48,14 @@ class Question:
 
         :return: True if there are discrepancies, False otherwise.
         """
-        answer_texts = [answer.text for answer in self.answers]
-        if not self.is_open:
-            return len(set(answer_texts)) > 1
+        if self.discrepancy_reason is not None:
+            return True
         else:
-            return jaccard_similarity(answer_texts) > 0.55
+            answer_texts = [answer.text for answer in self.answers]
+            if not self.is_open:
+                return len(set(answer_texts)) > 1
+            else:
+                return jaccard_similarity(answer_texts) > 0.55
 
     def resolve_discrepancy(
         self,
