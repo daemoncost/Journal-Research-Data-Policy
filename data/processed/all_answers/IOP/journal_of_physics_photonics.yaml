@@ -102,6 +102,7 @@
       \ claims made in an article available privately to the journal\u2019s editors,\
       \ reviewers and readers without undue restriction or delay if requested.\""
   correct_answer: 0
+  discrepancy_reason: language understanding
 8:
   text: 8. Recommended data sharing method
   has_discrepancies: false
@@ -170,7 +171,7 @@
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: .nan
     explanation: ''
@@ -184,7 +185,7 @@
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: .nan
     explanation: ''
@@ -301,3 +302,4 @@
     text: No mention of standards for code development such as continuous integration.
     explanation: no text
   correct_answer: 1
+  discrepancy_reason: language understanding

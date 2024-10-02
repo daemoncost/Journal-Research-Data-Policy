@@ -140,7 +140,7 @@
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: .nan
     explanation: ''
@@ -154,14 +154,14 @@
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: 0
+  has_discrepancies: false
   0:
     text: .nan
     explanation: ''
   1:
     text: no text
     explanation: ''
-  correct_answer: null
+  correct_answer: 0
 13:
   text: 13. Code sharing requirements
   has_discrepancies: false
