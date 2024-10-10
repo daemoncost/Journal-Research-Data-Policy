@@ -1,0 +1,218 @@
+1:
+  text: 1. Existence of research data policy
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: In accordance with our Data Sharing Policy, all datasets supporting
+      the conclusion of your paper need to be available to readers.
+  correct_answer: null
+  discrepancy_reason: null
+3:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: AIP Publishing believes that all datasets underlying the conclusions
+      of the paper should be available to readers. We encourage authors to deposit
+      their datasets in publicly available repositories (where available and appropriate)
+      or present them in the main manuscript.
+  correct_answer: null
+  discrepancy_reason: null
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: Certified repositories can also be found through the Registry of
+      Research Data Repositories (re3data.org), FAIRsharing.org, or CoreTrustSeal.
+  correct_answer: null
+  discrepancy_reason: null
+2:
+  text: 2. Data availability statement
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: "If you\u2019re submitting your paper to an AIP Publishing journal,\
+      \ you\u2019ll be asked to provide a data availability statement with your submission,\
+      \ informing readers where the data can be found.\n\nTo inform readers of where\
+      \ your data can be found, all manuscripts need to contain a data availability\
+      \ statement."
+  correct_answer: null
+  discrepancy_reason: null
+5:
+  text: '5. Citability and findability of data '
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'We encourage datasets to be formally cited in references lists when
+      the dataset is hosted in a public repository that assigns Digital Object Identifier
+      (DOI) to datasets.
+
+
+      Identifier: DOIs should be displayed as linkable, permanent URLs, including
+      the https://doi.org prefix.'
+  correct_answer: null
+  discrepancy_reason: null
+7:
+  text: 7. Timing of data release
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Required data must be available after official publication.
+    explanation: 'It depends on the type of the data and their potential availability.
+
+
+      New crystal structures for Biological Macromolecules: Authors agree to immediately
+      release such data upon publication of their manuscript. Also, they need to include
+      the accession number(s) in the experimental section of the manuscript.'
+  correct_answer: null
+  discrepancy_reason: null
+8:
+  text: 8. Recommended data sharing method
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Some research communities are served by specific data repositories;\
+      \ your institutional librarian, funder, or journal editor may make a recommendation.\
+      \ Researchers can also use a general repository \u2013 such as Zenodo, figshare\
+      \ or Dryad \u2013 that accept data from all disciplines.\n\nAIP Publishing authors\
+      \ may host their data in their institutional or project specific repository.\n\
+      \nYou can either deposit your datasets in a publicly available repository (where\
+      \ available or appropriate) or you can present them in the manuscript.\n\nData\
+      \ tables and/or text that are too long or may be of limited interest to readers\
+      \ can be included as \u201Csupplementary material,\u201D which can aid the reviewer\
+      \ and be accessed by readers online after publication.\n\nCompulsory: Structural\
+      \ Data for Biological Macromolecules: Authors reporting new crystal structures\
+      \ need to deposit the atomic coordinates and related experimental data (i.e.,\
+      \ structure factor amplitudes/intensities, NMR restraints) in a member site\
+      \ of the Worldwide Protein Data Bank (wwPDB)."
+  correct_answer: null
+  discrepancy_reason: null
+9:
+  text: 9. Recommended/required licenses
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: No particular comment about this
+  correct_answer: null
+  discrepancy_reason: null
+10:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Structural Data for Biological Macromolecules: Authors reporting\
+      \ new crystal structures need to include the PDB validation reports as \u201C\
+      Additional Material for Reviewers\u201D at the time the manuscript is submitted.\
+      \ (These reports will be used for peer review purposes and will not be published\
+      \ along with the final manuscript.)"
+  correct_answer: null
+  discrepancy_reason: null
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: .nan
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Structural Data Biological Macromolecules
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+13:
+  text: 13. Code sharing requirements
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Code sharing not mentioned.
+    explanation: No specific instructions about this
+  correct_answer: null
+  discrepancy_reason: null
+14:
+  text: 14. Code Reproducibility
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: No comments about this
+  correct_answer: null
+  discrepancy_reason: null
+15:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: No comments about this
+  correct_answer: null
+  discrepancy_reason: null
+16:
+  text: 16. Code Quality Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: No comments about this
+  correct_answer: null
+  discrepancy_reason: null
+17:
+  text: 17. Automatic Testing
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: No comments about this
+  correct_answer: null
+  discrepancy_reason: null
+18:
+  text: 18. Code Documentation
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: No comments about this
+  correct_answer: null
+  discrepancy_reason: null
+19:
+  text: 19. Linting Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: No comments about this
+  correct_answer: null
+  discrepancy_reason: null
+20:
+  text: 20. Code Development
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: No comments about this
+  correct_answer: null
+  discrepancy_reason: null
