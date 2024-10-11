@@ -20,6 +20,7 @@ Usage instructions will be provided later. Please check back for updates.
 Contributions are welcome from anyone. The current contributors to this project are:
 - Jonathan Schmidt
 - Nataliya Lopanitsyna
+- Paolo Pegolo
 - Other
 - People
 - Add
