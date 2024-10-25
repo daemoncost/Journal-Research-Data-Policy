@@ -91,6 +91,7 @@ def save_answers_to_yaml(
                         "text": question.correct_answer.text,
                         "explanation": question.correct_answer.explanation,
                     }
+
                 dict_to_dump[question_number][
                     "discrepancy_reason"
                 ] = question.discrepancy_reason
@@ -133,6 +134,7 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                     question = Question(text=question_dict["text"])
                     correct_answer_id = question_dict["correct_answer"]
                     has_discrepancies = question_dict["has_discrepancies"]
+                    discrepancy_reason = question_dict.get("discrepancy_reason", None)
 
                     if has_discrepancies:
                         if correct_answer_id is None:
@@ -151,9 +153,16 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                                 "(the number of the correct respondent)"
                             )
                             answer = question_dict[correct_answer_id]
-                            question.add_answer(
-                                answer["text"], answer["explanation"])
-                            question.resolve_discrepancy(correct_answer=0)
+
+                            question.add_answer(answer["text"], answer["explanation"])
+                            assert discrepancy_reason is not None, (
+                                "You must provide `discrepancy_reason` "
+                                "to resolve discrepancies."
+                            )
+                            question.resolve_discrepancy(
+                                correct_answer=0, discrepancy_reason=discrepancy_reason
+                            )
+      
                             assert question.get_final_answer() is not None
                             grouped_questions[publisher_name][journal_name][
                                 question_number
