@@ -12,8 +12,7 @@ from daemon_analysis_tools.data_processing import normalize_journal, normalize_p
 def load_and_process_csv(file_path: str) -> pd.DataFrame:
     data = pd.read_csv(file_path)
     try:
-        data.drop(["Zeitstempel", "E-Mail-Adresse",
-                  "Punkte"], axis=1, inplace=True)
+        data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
         data.drop([0, 1, 2], axis=0, inplace=True)
         print(f"Warning: E-mail addresses found in {file_path}.")
     except KeyError:
@@ -41,8 +40,7 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
     # Normalize the journal names
     # with open("../data/journal_normalizer.yaml", "r") as file:
     # normalizazion_dict = yaml.safe_load(file)
-    data_duplicated["journal"] = data_duplicated["journal"].apply(
-        normalize_journal)
+    data_duplicated["journal"] = data_duplicated["journal"].apply(normalize_journal)
 
     return data_duplicated
 
@@ -102,9 +100,10 @@ def save_answers_to_yaml(
             except FileExistsError:
                 print(
                     (
-                        f"{publisher_name}/{journal_name}.yaml already exists. "
-                        "No data was written to prevent overwriting files modified "
-                        "by users. Manually delete these files if necessary."
+                        f"{publisher_name}/{journal_name}.yaml already exists "
+                        ". No data was written to prevent overwriting files "
+                        "modified by users. Manually delete these files if "
+                        "necessary."
                     )
                 )
             except Exception as e:
@@ -140,7 +139,8 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                         if correct_answer_id is None:
                             print(
                                 (
-                                    f"{publisher_name}/{journal_name}/{question_number}"
+                                    f"{publisher_name}/{journal_name}/"
+                                    f"{question_number}"
                                     " has inconsistencies: skipped"
                                 )
                             )
@@ -160,17 +160,17 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                                 "to resolve discrepancies."
                             )
                             question.resolve_discrepancy(
-                                correct_answer=0, discrepancy_reason=discrepancy_reason
+                                correct_answer=0,
+                                discrepancy_reason=discrepancy_reason,
                             )
-      
+
                             assert question.get_final_answer() is not None
                             grouped_questions[publisher_name][journal_name][
                                 question_number
                             ] = question
                     else:
                         answer = question_dict[0]
-                        question.add_answer(
-                            answer["text"], answer["explanation"])
+                        question.add_answer(answer["text"], answer["explanation"])
                         question.resolve_discrepancy(correct_answer=0)
                         assert question.get_final_answer() is not None
                         grouped_questions[publisher_name][journal_name][
