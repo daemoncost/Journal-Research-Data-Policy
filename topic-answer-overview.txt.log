@@ -1,0 +1,331 @@
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+pterodaktilis
++ pwd
+/home/saulius/writings/daemoncost/Journal-Research-Data-Policy
++ set +x
++ git remote -v
+origin	git@github.com:daemoncost/Journal-Research-Data-Policy.git (fetch)
+origin	git@github.com:daemoncost/Journal-Research-Data-Policy.git (push)
++ git branch -v
+  dev                 0bc7773 Fix Question.has_discrepancies
+  dev-markus          1c6836b Merge remote-tracking branch 'origin/dev' into dev-markus
+  fix-Bentham-Science 8690fde Add files via upload
+  fix-IOP             a2b75f3 Clean up example
+  fix-aps-tf          14ffafd Second try running pre-commits and making some manual changes
+  fix-frontiers       1f21353 Add discrepancy reason
+  fix-nature          9a3608f Add discrepancy reason
+  fix-optica          e18b34b Add files via upload
+  main                040573c Initial commit
+* saulius-merge-all   57f0932 [ahead 2] Generating an overview of the collected answers in the TSV format.
++ git status
+On branch saulius-merge-all
+Your branch is ahead of 'origin/saulius-merge-all' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	topic-answer-overview.txt
+	topic-answer-overview.txt.log
+
+nothing added to commit but untracked files present (use "git add" to track)
++ df -h .
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/vgmint-root  1,8T  984G  755G  57% /
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-21.2
++ uname -a
+Linux pterodaktilis 5.15.0-124-generic #134-Ubuntu SMP Fri Sep 27 20:20:17 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2024-11-08T14:06:04 EET
+++ seq 1 5
+++ seq 7 20
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .1.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."1" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .2.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."2" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .3.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."3" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .4.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."4" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .5.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."5" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .7.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."7" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .8.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."8" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .9.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."9" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .10.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."10" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .11.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."11" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .12.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."12" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .13.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."13" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .14.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."14" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .15.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."15" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .16.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."16" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .17.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."17" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .18.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."18" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .19.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."19" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
++ for i in $(seq 1 5) $(seq 7 20)
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o csv .20.text
++ sort
++ uniq -c
++ echo ''
++ find data/processed/ -name '*.yaml' -print0
++ xargs -0 yq -o yaml '."20" | [filename, .text, .[] | .text]'
++ yq -o csv .
++ csv2tab
++ awk '-F\t' '{OFS=FS; print $3}'
++ sort
++ uniq -c
++ perl -le 'print "\n", "=" x 80'
