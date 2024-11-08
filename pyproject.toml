@@ -41,9 +41,3 @@ push            = true
 
 [tool.bumpver.file_patterns]
 "pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
-
-# [tool.pytest]
-# addopts = "--cov=src/ --cov-report=html --cov-exclude=test_*"
-
-[tool.hatch.scripts]
-install-dev = "pip install -e .[dev]"
