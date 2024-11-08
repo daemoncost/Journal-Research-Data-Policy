@@ -1,0 +1,1 @@
+  672  find data/processed/ -name '*.yaml' -print0 | xargs -0 yq -o json eval '.[] | ([filename, .text, [.[] | (.text, .explanation) | to_tsv]])' | less -SR
