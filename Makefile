@@ -5,6 +5,9 @@ test:
 pretty:
 	black .
 
+lint:
+	flake8 .
+
  # Run test with code coverage report
 test-cov:
 	pytest --cov=src/daemon_analysis_tools/ --cov-report=html
