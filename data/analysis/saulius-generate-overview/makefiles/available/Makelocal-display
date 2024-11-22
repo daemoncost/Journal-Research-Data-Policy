@@ -1,0 +1,37 @@
+#--*- Makefile -*--
+
+#*
+# This is a snipped Makefile tha allows you to inspect arbitrary
+# variable value:
+#
+# USAGE:
+# make display VARIABLE=LD_LIBRARY_PATH
+# make display VARIABLE=YOUR_MAKE_VARIABLE_NAME
+#
+# The default displayed variable is PATH.
+#**
+
+MAX_DISPLAY ?= 1000
+
+# Allow to shorten 'make display VARIABLE=X' to 'make display VAR=X':
+VAR      ?= PATH
+VARIABLE ?= ${VAR}
+
+.PHONY: display display-all
+
+display:
+	@if [ $(words ${${VARIABLE}}) -gt ${MAX_DISPLAY} ]; then \
+		echo ${VARIABLE}=$(wordlist 1,${MAX_DISPLAY},${${VARIABLE}}); \
+		echo "make display: WARNING, there are $(words ${${VARIABLE}}) words in the" \
+		     "variable ${VARIABLE}."; \
+		echo " Only ${MAX_DISPLAY} first word(s) are displayed." \
+		     "Set 'make' parameter MAX_DISPLAY to different value to get more/less of them,"; \
+		echo " e.g 'make display VARIABLE=${VARIABLE} MAX_DISPLAY=2000'"; \
+	else \
+		echo ${VARIABLE}="${${VARIABLE}}"; \
+	fi
+
+display-all:
+	grep -h '^[A-Z].* =' [Mm]ake* \
+	| awk '{print $$1}' \
+	| xargs -i ${MAKE} --no-print display VARIABLE="{}"

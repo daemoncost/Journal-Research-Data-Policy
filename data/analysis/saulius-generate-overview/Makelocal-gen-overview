@@ -1,0 +1,24 @@
+#--*- Makefile -*--
+#*
+# Generate an overview of the collected Joutnal polycy files.
+#**
+
+INPUT_DIR  ?= inputs
+OUTPUT_DIR ?= outputs
+
+INPUT_YAMLS ?= $(shell find -L ${INPUT_DIR}/yaml/ -name '*.yaml')
+
+OUTPUT_TXT ?= ${OUTPUT_DIR}/topic-answer-overview.txt
+OUTPUT_CSV ?= ${OUTPUT_DIR}/topic-answer-overview.csv
+OUTPUT_TSV ?= ${OUTPUT_DIR}/topic-answer-overview.tsv
+
+.PHONY: all clean distclean mostlyclean cleanAll
+
+all:
+
+clean:
+	rm -f ${}
+
+mostlyclean: clean
+
+cleanAll distclean: mostlyclean
