@@ -2,6 +2,9 @@
 test:
 	python3 -m unittest discover src/tests/
 
+pretty:
+	black .
+
  # Run test with code coverage report
 test-cov:
 	pytest --cov=src/daemon_analysis_tools/ --cov-report=html
