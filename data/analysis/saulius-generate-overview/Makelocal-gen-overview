@@ -33,7 +33,7 @@ ${OUTPUT_TXT}: ${INPUT_YAMLS}
 
 ${OUTPUT_TSV}: ${INPUT_YAMLS}
 	date +"# %F %T %Z" > $@
-	echo -e "kind\tcount\ttext" >> $@
+	echo "kind\tcount\ttext" >> $@
 	for i in $$(seq 1 5) $$(seq 7 20); do \
 		yq -o csv ".$$i.text" $^ \
 		| sort | uniq -c \
