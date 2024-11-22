@@ -2,4 +2,7 @@ pre-commit
 pytest
 pytest-cov
 pytest-mock
-
+pandas
+seaborn
+pyyaml
+hatch
