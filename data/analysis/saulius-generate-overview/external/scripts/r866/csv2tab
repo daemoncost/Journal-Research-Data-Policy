@@ -1,0 +1,122 @@
+#!/bin/sh
+#!perl -w # --*- Perl -*--
+eval 'exec perl -x $0 ${1+"$@"}'
+    if 0;
+#------------------------------------------------------------------------------
+#$Author: saulius $
+#$Date: 2022-05-22 10:16:52 +0300 (Sun, 22 May 2022) $
+#$Revision: 799 $
+#$URL: svn://saulius.grazulis.lt/scripts/csv2tab $
+#------------------------------------------------------------------------------
+#*
+# Convert a CSV file [1,2], potentially with the new line symbols,
+# escaped quotes and commas in the values, into a TAB-separated table,
+# one line per record. TAB characters in records are replaced by
+# spaces.
+#
+# Refs.:
+#
+# 1. RFC 4180. Common Format and MIME Type for Comma-Separated Values
+#    (CSV) Files. https://www.ietf.org/rfc/rfc4180.txt [accessed:
+#    2022-04-05T11:49+03:00]
+# 
+# 2. Library of Congress. CSV, Comma Separated Values (RFC
+#    4180). https://www.loc.gov/preservation/digital/formats/fdd/fdd000323.shtml
+#    [accessed: 2022-04-05T11:50+03:00]
+#
+# Usage:
+#     $0 --options
+#     $0 --options input.csv* > output.tab
+#**
+
+use strict;
+use warnings;
+
+use Encode qw( decode );
+use File::Basename qw( basename );
+
+my $sep_char = ',';
+
+my @files;
+
+my $i = 0;
+while( $i <= $#ARGV ) {
+    local $_ = $ARGV[$i];
+    if( /^(-s|--separator|--separato|--separat|--separa|
+           --separ|--sepa|--sep|--se|--s)$/x ) {
+        if( $i >= $#ARGV ) {
+            die "Option '$ARGV[$i]' ('--separator') needs " .
+                "one character argument"
+        } else {
+            $i ++;
+            $sep_char = $ARGV[$i];
+            next;
+        }
+    }
+    if( /^(-h|--help|--hel|--he|--h)$/ ) {
+        open(SELF, $0) or die;
+        local $\ = "\n";
+        while( <SELF> ) {
+            s/\$0/$0/g;
+            print $1 if (/^\#\*/../^\#\*\*/) && /^\#\*?\*?(.*)$/;
+        }
+        close(SELF);
+        exit
+    }
+    if( /^(--options|--option|--optio|--opti|--opt|--op|--o)$/ ) {
+        print STDERR "$0: option '--options' is a placeholder, please use " .
+            "\"$0 --help\" to get a list of available options\n";
+        exit(2);
+    }
+    if( /^--$/ ) {
+        @files = (@files, @ARGV[$i+1..$#ARGV]);
+        last;
+    }
+    if( /^-/ ) {
+        die "unknwon option '$_'";
+    } else {
+        push( @files, $_ );
+    }
+} continue {
+    $i++;
+}
+
+@ARGV = @files;
+
+binmode(STDIN,"utf8");
+binmode(STDOUT,"utf8");
+binmode(STDERR,"utf8");
+
+use Text::CSV;
+
+push( @ARGV, '-' ) unless @ARGV;
+
+for my $file (@ARGV) {
+    my $csv = Text::CSV->new (
+        {
+            binary => 1, # should set binary attribute.
+            sep_char => $sep_char
+        })
+        or die "Cannot use CSV: " . Text::CSV->error_diag();
+
+    my $fh;
+    if( $file ne '-' ) {
+        open $fh, "<:encoding(utf8)", $file or 
+            die "can not open file '$file' for reading: $!";
+    } else {
+        $fh = \*STDIN;
+    }
+
+    while ( my $row = $csv->getline( $fh ) ) {
+        for (@$row) {
+            s/\n\r/ /g;
+            s/[\t\n\r]/ /g;
+        }
+        local $, = "\t";
+        local $\ = "\n";
+        print @$row;
+    }
+
+    $csv->eof or $csv->error_diag();
+    close $fh;
+}

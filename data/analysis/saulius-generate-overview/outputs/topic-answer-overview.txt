@@ -1,0 +1,150 @@
+# 2024-11-22 11:18:41 EET
+
+     66 1. Existence of research data policy
+
+      3 Research Data Policy (RDP) does not exists.
+     63 Research Data Policy (RDP) exists.
+
+================================================================================
+
+     66 2. Data availability statement
+
+     25 Mentioned in the RDP but optional.
+      3 Not mentioned in the RDP.
+     38 Required according to the RDP.
+
+================================================================================
+
+     66 3. Data sharing requirements in RDP
+
+     44 Data sharing encouraged but optional.
+      3 Data sharing only with editors and referees (no public sharing)
+      1 Data sharing required but not publicly (e.g. available upon request is allowed).
+      8 Public data sharing of all data required.
+     10 Public data sharing required only for specific types of data.
+
+================================================================================
+
+     66 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)
+
+     27 Public data sharing on a FAIR repository encouraged.
+     30 Public data sharing on a FAIR repository not mentioned in RDP.
+      9 Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data).
+
+================================================================================
+
+     66 5. Citability and findability of data 
+
+     57 DOIs or other persistent identifiers recommended for datasets or codes.
+      6 DOIs or other persistent identifiers required for datasets or codes.
+      3 No mention of DOIs or other persistent identifiers for datasets or codes.
+
+================================================================================
+
+     66 7. Timing of data release
+
+      7 Required data must be available after official publication.
+     36 Required data must be available prior to official publication.
+     19 Required data must be available prior to review process.
+      4 Timing of data availability not adressed in RDP.
+
+================================================================================
+
+     66 8. Recommended data sharing method
+
+      9 Data sharing in supplementary material or hosting by journal recommended in RDP.
+      3 No data sharing method recommended in RDP.
+     54 Public online repositories recommended in RDP.
+
+================================================================================
+
+     66 9. Recommended/required licenses
+
+     12 Explicit mention of a certain license/license type in RDP.
+     54 No mention of data/code licenses in RDP.
+
+================================================================================
+
+     66 10. Referee guidelines concerning research data
+
+      3 Additional data or code referee (referee that solely confirms that code and data are shared following the RDP).
+     14 Data sharing policy mentioned in refereeing guidelines.
+     49 Data sharing policy not mentioned in refereeing guidelines.
+
+================================================================================
+
+     66 11. Unique policies for data types
+     66 Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
+
+     18 .nan
+      7 Authors are encouraged to consider deposition in public, community-supported repositories of the data-types listed below. Protein-protein interaction data; Metabolite and metabolome profiling data; Small-molecule screening data; chemical compound data; Flow cytometry data; Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data; Enzymology and biocatalysis data
+     32 no text
+      9 no text.
+
+================================================================================
+
+     66 12. Unique policies for data types
+     66 Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
+
+      9 .nan
+      7 Authors are required to deposit the following mandatory data types in public, community-supported repositories, such as those listed below, prior to publication of an associated Frontiers manuscript. Genetic and genomic sequence (DNA/RNA); Metagenomic sequence; DNA and RNA trace or short-read sequencing data; Genetic polymorphism data, including SNP and CNV data; Gene expression data; chromatin immunoprecipitation data (deep-sequencing or microarray); Data linking genotype to phenotype; Protein sequence data; Proteome profiling data; Small molecule, protein, protein complex data structural data; Taxonomy data
+      9 DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
+     32 no text
+      9 no text.
+
+================================================================================
+
+     66 13. Code sharing requirements
+
+     53 Code sharing encouraged but optional.
+     12 Code sharing not mentioned.
+      1 Code sharing required.
+
+================================================================================
+
+     66 14. Code Reproducibility
+
+     66 No mention of dependencies for research code.
+
+================================================================================
+
+     66 15. Versioning and persistent identifiers
+
+     18 Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
+     48 No mention of a persistent identifier or specifying a version of developed code.
+
+================================================================================
+
+     66 16. Code Quality Standards
+
+     56 The journal policies do not mention any code quality standards.
+      7 The journal policies encourage/recommend certain standards for code.
+      3 The journal policies require code of articles to fulfill certain standards.
+
+================================================================================
+
+     66 17. Automatic Testing
+
+     66 No mention of automatic testing to verify code functionality.
+
+================================================================================
+
+     66 18. Code Documentation
+
+     63 No mention of standards for code documentation.
+      3 The journal policies encourage/recommend standards for code documentation.
+
+================================================================================
+
+     66 19. Linting Standards
+
+     66 No mention of linting standards for code.
+
+================================================================================
+
+     66 20. Code Development
+
+     59 No mention of standards for code development such as continuous integration.
+      7 The journal policies encourage/recommend standards for code development such as continuous integration.
+
+================================================================================

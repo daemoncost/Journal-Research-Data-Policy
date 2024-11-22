@@ -1,2 +1,11 @@
 #--*- Makefile -*--
 #*
+# Configure the executable paths to include local tools.
+#**
+
+CWD  := $(shell pwd)
+ARCH := $(shell uname -m)
+
+PATH := ${CWD}/scripts:${CWD}/bin/${ARCH}:${PATH}
+
+export PATH
