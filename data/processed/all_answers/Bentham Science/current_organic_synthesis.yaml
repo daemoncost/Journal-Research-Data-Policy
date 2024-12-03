@@ -1,6 +1,6 @@
 1:
   text: 1. Existence of research data policy
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Research Data Policy (RDP) exists.
@@ -8,38 +8,61 @@
       in support of the findings. Sharing research data is integral to its transparency
       and reproducibility. Data sharing involves the citation and availability of
       data that support the findings of the research.
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: https://www.eurekaselect.com/journal/45/ifa
   correct_answer: null
+  discrepancy_reason: null
 3:
   text: 3. Data sharing requirements in RDP
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Data sharing encouraged but optional.
     explanation: Bentham Science encourages authors to share the source of data and
       materials in the manuscript, in support of the findings.
-  correct_answer: null
+  1:
+    text: Public data sharing of all data required.
+    explanation: All datasets on which the paper's conclusions are based must be made
+      accessible to reviewers and readers, according to the journal's rules. Prior
+      to peer review, authors must either deposit their datasets in publicly accessible
+      repositories or provide them as supplementary materials with their submission.
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: Bentham Science encourages authors to share the source of data and
+      materials in the manuscript, in support of the findings.
+  discrepancy_reason: Selected answer is better interpretation of RDP.
 4:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public data sharing on a FAIR repository not mentioned in RDP.
     explanation: no text
+  1:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: https://www.eurekaselect.com/journal/45/ifa
   correct_answer: null
+  discrepancy_reason: null
 2:
   text: 2. Data availability statement
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Required according to the RDP.
     explanation: Data availability declarations are required under Bentham Science
       research data policy types.
+  1:
+    text: Required according to the RDP.
+    explanation: Data availability declarations are required under Bentham Science
+      research data policy types.
   correct_answer: null
+  discrepancy_reason: null
 5:
   text: '5. Citability and findability of data '
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: DOIs or other persistent identifiers required for datasets or codes.
     explanation: 'Whether the data was developed by the author(s) or researcher(s),
@@ -51,10 +74,32 @@
       Example: Name of author(s), the title of data set, data repository, document
       version (e.g., most recent updated version), Digital Object Identifier (DOI),
       and Bentham Science reference style should be included in data citations.'
-  correct_answer: null
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Whether the data was developed by the author(s) or researcher(s),
+      all publicly available data referenced in the preparation of an article should
+      be cited in the text and reference list. The references relating to the data
+      availability should be presented in the following format:
+
+
+      Example: Name of author(s), the title of data set, data repository, document
+      version (e.g., most recent updated version), Digital Object Identifier (DOI),
+      and Bentham Science reference style should be included in data citations.'
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Whether the data was developed by the author(s) or researcher(s),
+      all publicly available data referenced in the preparation of an article should
+      be cited in the text and reference list. The references relating to the data
+      availability should be presented in the following format:
+
+
+      Example: Name of author(s), the title of data set, data repository, document
+      version (e.g., most recent updated version), Digital Object Identifier (DOI),
+      and Bentham Science reference style should be included in data citations.'
+  discrepancy_reason: Selected answer is better interpretation of RDP.
 7:
   text: 7. Timing of data release
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Required data must be available prior to review process.
@@ -62,121 +107,198 @@
       accessible to reviewers and readers, according to the journal's rules. Prior
       to peer review, authors must either deposit their datasets in publicly accessible
       repositories or provide them as supplementary materials with their submission.
+  1:
+    text: Required data must be available prior to review process.
+    explanation: All datasets on which the paper's conclusions are based must be made
+      accessible to reviewers and readers, according to the journal's rules. Prior
+      to peer review, authors must either deposit their datasets in publicly accessible
+      repositories or provide them as supplementary materials with their submission.
   correct_answer: null
+  discrepancy_reason: null
 8:
   text: 8. Recommended data sharing method
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Public online repositories recommended in RDP.
     explanation: Wherever appropriate and possible, the journal encourages authors
       to publish data to support their research findings in a public repository.
-  correct_answer: null
+  1:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: All datasets on which the paper's conclusions are based must be made
+      accessible to reviewers and readers, according to the journal's rules. Prior
+      to peer review, authors must either deposit their datasets in publicly accessible
+      repositories or provide them as supplementary materials with their submission.
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: Wherever appropriate and possible, the journal encourages authors
+      to publish data to support their research findings in a public repository.
+  discrepancy_reason: Selected answer is better interpretation of RDP.
 9:
   text: 9. Recommended/required licenses
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of data/code licenses in RDP.
     explanation: no text
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 10:
   text: 10. Referee guidelines concerning research data
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Data sharing policy mentioned in refereeing guidelines.
     explanation: The manuscript should adhere to suitable reporting guidelines and
       community standards for data availability. Bentham Science seeks to disseminate
       research and therefore stipulates that the public deposition of data is as per
       the followed standards
-  correct_answer: null
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: none
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: The manuscript should adhere to suitable reporting guidelines and
+      community standards for data availability. Bentham Science seeks to disseminate
+      research and therefore stipulates that the public deposition of data is as per
+      the followed standards
+  discrepancy_reason: Missed text.
 11:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: no text
     explanation: ''
-  correct_answer: null
+  1:
+    text: none
+    explanation: ''
+  correct_answer:
+    text: none
+    explanation: ''
+  discrepancy_reason: Same answer but different wording.
 12:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: no text
     explanation: ''
-  correct_answer: null
+  1:
+    text: none
+    explanation: ''
+  correct_answer:
+    text: none
+    explanation: ''
+  discrepancy_reason: Same answer but different wording.
 13:
   text: 13. Code sharing requirements
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Code sharing not mentioned.
     explanation: no text
+  1:
+    text: Code sharing not mentioned.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 14:
   text: 14. Code Reproducibility
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of dependencies for research code.
     explanation: no text
+  1:
+    text: No mention of dependencies for research code.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 15:
   text: 15. Versioning and persistent identifiers
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: no text
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 16:
   text: 16. Code Quality Standards
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: The journal policies do not mention any code quality standards.
     explanation: no text
-  correct_answer: null
+  1:
+    text: Not mention any code quality standards.
+    explanation: none
+  correct_answer:
+    text: Not mention any code quality standards.
+    explanation: none
+  discrepancy_reason: Same answer but different wording.
 17:
   text: 17. Automatic Testing
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of automatic testing to verify code functionality.
     explanation: no text
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 18:
   text: 18. Code Documentation
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of standards for code documentation.
     explanation: no text
+  1:
+    text: No mention of standards for code documentation.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 19:
   text: 19. Linting Standards
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of linting standards for code.
     explanation: no text
+  1:
+    text: No mention of linting standards for code.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 20:
   text: 20. Code Development
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of standards for code development such as continuous integration.
     explanation: no text
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
