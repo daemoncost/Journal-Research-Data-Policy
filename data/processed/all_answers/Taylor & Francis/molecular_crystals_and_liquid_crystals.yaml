@@ -8,9 +8,8 @@
   1:
     text: Research Data Policy (RDP) does not exists.
     explanation: Some papers contain share upon request statements, some don't.
-  correct_answer:
-    text: Research Data Policy (RDP) does not exists.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 3:
   text: 3. Data sharing requirements in RDP
   N. encoders: 2
@@ -21,9 +20,8 @@
   1:
     text: Data sharing only with editors and referees (no public sharing)
     explanation: .nan
-  correct_answer:
-    text: Data sharing only with editors and referees (no public sharing)
-    explanation: no answer i do not find any recommendation
+  correct_answer: null
+  discrepancy_reason: null
 4:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
@@ -35,9 +33,8 @@
   1:
     text: Public data sharing on a FAIR repository not mentioned in RDP.
     explanation: .nan
-  correct_answer:
-    text: Public data sharing on a FAIR repository not mentioned in RDP.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 2:
   text: 2. Data availability statement
   N. encoders: 2
@@ -50,9 +47,8 @@
     explanation: 'Author instructions do not contain a data sharing policy: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=gmcl20
 
       The responses hereafter are based on looking through some papers in that journal.'
-  correct_answer:
-    text: Not mentioned in the RDP.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 5:
   text: '5. Citability and findability of data '
   N. encoders: 2
@@ -63,9 +59,8 @@
   1:
     text: No mention of DOIs or other persistent identifiers for datasets or codes.
     explanation: .nan
-  correct_answer:
-    text: No mention of DOIs or other persistent identifiers for datasets or codes.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 7:
   text: 7. Timing of data release
   N. encoders: 2
@@ -76,9 +71,8 @@
   1:
     text: Timing of data availability not adressed in RDP.
     explanation: .nan
-  correct_answer:
-    text: Timing of data availability not adressed in RDP.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 8:
   text: 8. Recommended data sharing method
   N. encoders: 2
@@ -89,9 +83,8 @@
   1:
     text: No data sharing method recommended in RDP.
     explanation: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=gmcl20
-  correct_answer:
-    text: No data sharing method recommended in RDP.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 9:
   text: 9. Recommended/required licenses
   N. encoders: 2
@@ -102,9 +95,8 @@
   1:
     text: No mention of data/code licenses in RDP.
     explanation: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=gmcl20
-  correct_answer:
-    text: No mention of data/code licenses in RDP.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 10:
   text: 10. Referee guidelines concerning research data
   N. encoders: 2
@@ -115,9 +107,8 @@
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: https://editorresources.taylorandfrancis.com/reviewer-guidelines/
-  correct_answer:
-    text: Data sharing policy not mentioned in refereeing guidelines.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 11:
   text: '11. Unique policies for data types
 
@@ -132,9 +123,8 @@
   1:
     text: no text
     explanation: ''
-  correct_answer:
-    text: no text
-    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
 12:
   text: '12. Unique policies for data types
 
@@ -149,9 +139,8 @@
   1:
     text: no text
     explanation: ''
-  correct_answer:
-    text: no text
-    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
 13:
   text: 13. Code sharing requirements
   N. encoders: 2
@@ -162,9 +151,8 @@
   1:
     text: Code sharing encouraged but optional.
     explanation: .nan
-  correct_answer:
-    text: Code sharing not mentioned.
-    explanation: no text
+  correct_answer: 0
+  discrepancy_reason: Language understanding
 14:
   text: 14. Code Reproducibility
   N. encoders: 2
@@ -179,9 +167,8 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of dependencies for research code.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 15:
   text: 15. Versioning and persistent identifiers
   N. encoders: 2
@@ -198,10 +185,8 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of a persistent identifier or specifying a version of developed
-      code.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 16:
   text: 16. Code Quality Standards
   N. encoders: 2
@@ -216,9 +201,8 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: The journal policies do not mention any code quality standards.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 17:
   text: 17. Automatic Testing
   N. encoders: 2
@@ -233,9 +217,8 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of automatic testing to verify code functionality.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 18:
   text: 18. Code Documentation
   N. encoders: 2
@@ -250,9 +233,8 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of standards for code documentation.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 19:
   text: 19. Linting Standards
   N. encoders: 2
@@ -267,9 +249,8 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of linting standards for code.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
 20:
   text: 20. Code Development
   N. encoders: 2
@@ -284,6 +265,5 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of standards for code development such as continuous integration.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
