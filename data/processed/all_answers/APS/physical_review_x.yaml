@@ -1,4 +1,4 @@
-1:
+rdp_exist:
   text: 1. Existence of research data policy
   N. encoders: 2
   has_discrepancies: false
@@ -32,7 +32,7 @@
       software, code, and other materials.'
   correct_answer: null
   discrepancy_reason: null
-3:
+data_sharing:
   text: 3. Data sharing requirements in RDP
   N. encoders: 2
   has_discrepancies: false
@@ -61,7 +61,7 @@
       software, code, and other materials.'
   correct_answer: null
   discrepancy_reason: null
-4:
+data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
   N. encoders: 2
@@ -89,7 +89,7 @@
       software, code, and other materials.'
   correct_answer: null
   discrepancy_reason: null
-2:
+data_availability:
   text: 2. Data availability statement
   N. encoders: 2
   has_discrepancies: false
@@ -125,7 +125,7 @@
       as well.'
   correct_answer: null
   discrepancy_reason: null
-5:
+data_citability:
   text: '5. Citability and findability of data '
   N. encoders: 2
   has_discrepancies: false
@@ -162,7 +162,7 @@
       as well.'
   correct_answer: null
   discrepancy_reason: null
-7:
+data_timing:
   text: 7. Timing of data release
   N. encoders: 2
   has_discrepancies: false
@@ -183,7 +183,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-8:
+data_sharing_method:
   text: 8. Recommended data sharing method
   N. encoders: 2
   has_discrepancies: false
@@ -210,7 +210,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-9:
+data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 2
   has_discrepancies: false
@@ -229,7 +229,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-10:
+data_referee:
   text: 10. Referee guidelines concerning research data
   N. encoders: 2
   has_discrepancies: false
@@ -301,7 +301,7 @@
       \ your recommendation, or other information you feel would be useful."
   correct_answer: null
   discrepancy_reason: null
-11:
+data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
@@ -317,7 +317,7 @@
     explanation: ''
   correct_answer: null
   discrepancy_reason: null
-12:
+data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
@@ -333,7 +333,7 @@
     explanation: ''
   correct_answer: null
   discrepancy_reason: null
-13:
+code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
   has_discrepancies: false
@@ -354,7 +354,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-14:
+code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 2
   has_discrepancies: false
@@ -373,7 +373,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-15:
+code_versioning:
   text: 15. Versioning and persistent identifiers
   N. encoders: 2
   has_discrepancies: false
@@ -394,7 +394,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-16:
+code_quality:
   text: 16. Code Quality Standards
   N. encoders: 2
   has_discrepancies: false
@@ -413,7 +413,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-17:
+code_autotest:
   text: 17. Automatic Testing
   N. encoders: 2
   has_discrepancies: false
@@ -432,7 +432,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-18:
+code_docs:
   text: 18. Code Documentation
   N. encoders: 2
   has_discrepancies: false
@@ -451,7 +451,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-19:
+code_linting:
   text: 19. Linting Standards
   N. encoders: 2
   has_discrepancies: false
@@ -470,7 +470,7 @@
       and code set by their funding agencies.
   correct_answer: null
   discrepancy_reason: null
-20:
+code_development:
   text: 20. Code Development
   N. encoders: 2
   has_discrepancies: false
