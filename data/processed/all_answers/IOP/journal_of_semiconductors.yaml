@@ -1,0 +1,260 @@
+1:
+  text: 1. Existence of research data policy
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: https://publishingsupport.iopscience.iop.org/iop-publishing-standard-data-policy/
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: This journal has adopted IOP Publishing's standard data policy. Please
+      check that your article complies with the policy before submission.
+  correct_answer: null
+3:
+  text: 3. Data sharing requirements in RDP
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: Authors are encouraged to share research data and encouraged to provide
+      data availability statements but are not required to.
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: Authors are encouraged to share research data and encouraged to provide
+      data availability statements but are not required to.
+  correct_answer: null
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: Please see www.FAIRsharing.org for more information on established
+      data sharing formats and standards.
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: The journal encourages authors to share research data using data
+      formats and standards recognised by their research community. Please see www.FAIRsharing.org
+      for more information on established data sharing formats and standards.
+  correct_answer: null
+2:
+  text: 2. Data availability statement
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: The journal encourages authors to include a data availability statement
+      in any articles that report results derived from research data. This is not
+      mandatory.
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: The journal encourages authors to include a data availability statement
+      in any articles that report results derived from research data. This is not
+      mandatory.
+  correct_answer: null
+5:
+  text: '5. Citability and findability of data '
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: The journal encourages authors to cite any publicly available research
+      data in their reference list. References to datasets (data citations) must include
+      a persistent identifier (such as a DOI).
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'The data that support the findings of this study are openly available
+      at the following URL/DOI: [insert web link or DOI to the data].'
+  correct_answer: null
+7:
+  text: 7. Timing of data release
+  has_discrepancies: false
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: Not addressed
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: no text
+  correct_answer: null
+8:
+  text: 8. Recommended data sharing method
+  has_discrepancies: false
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: 'Data repositories
+
+      The preferred mechanism for sharing research data is via data repositories.
+      Authors are encouraged to deposit their research data in a repository that has
+      been widely adopted within their research community but if none is available
+      may use a general data repository.
+
+
+      Examples of general data repositories include:
+
+
+      Figshare (www.figshare.com)
+
+      Dryad (www.datadryad.org)
+
+      Harvard Dataverse (http://dataverse.harvard.edu/)
+
+      Zenodo (www.zenodo.org)
+
+      Further repositories can be found via https://repositoryfinder.datacite.org.'
+  1:
+    text: Public online repositories recommended in RDP.
+    explanation: The preferred mechanism for sharing research data is via data repositories.
+      Authors are encouraged to deposit their research data in a repository that has
+      been widely adopted within their research community but if none is available
+      may use a general data repository.
+  correct_answer: null
+9:
+  text: 9. Recommended/required licenses
+  has_discrepancies: false
+  0:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'Data licensing
+
+      The journal encourages research data to be made available under open licences
+      that permit reuse freely. The journal does not enforce particular licenses for
+      research data, where research data are deposited in third party repositories.
+      The publisher of the journal does not claim copyright in research data.'
+  1:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: The journal encourages research data to be made available under open
+      licences that permit reuse freely. The journal does not enforce particular licenses
+      for research data, where research data are deposited in third party repositories.
+      The publisher of the journal does not claim copyright in research data.
+  correct_answer: null
+10:
+  text: 10. Referee guidelines concerning research data
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: '[I could not find anything apart from "The decision to accept an
+      article for publication will not be affected by whether or not authors share
+      their research data."]'
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text
+  correct_answer: null
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: false
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: 0
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  has_discrepancies: false
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: 0
+13:
+  text: 13. Code sharing requirements
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: 'Authors are encouraged to share research data and encouraged to
+      provide data availability statements but are not required to.
+
+      [...]
+
+      Research data includes any recorded factual material that are used to produce
+      the results in digital and non-digital form. This includes tabular data, code,
+      software, images, audio, documents, video, maps, raw and/or processed data.'
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: "Encouraged as for other types of data:\n\n\"This policy applies\
+      \ to the research data that would be required to verify the results of research\
+      \ reported in articles published in the journal. Research data include data\
+      \ produced by the authors (\u201Cprimary data\u201D) and data from other sources\
+      \ that are analysed by authors in their study (\u201Csecondary data\u201D).\
+      \ Research data includes any recorded factual material that are used to produce\
+      \ the results in digital and non-digital form. This includes tabular data, code,\
+      \ software, images, audio, documents, video, maps, raw and/or processed data.\""
+  correct_answer: null
+14:
+  text: 14. Code Reproducibility
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: '[No explicit mention]'
+  1:
+    text: No mention of dependencies for research code.
+    explanation: no text
+  correct_answer: null
+15:
+  text: 15. Versioning and persistent identifiers
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: '[No mention]'
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
+  correct_answer: null
+16:
+  text: 16. Code Quality Standards
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: '[No mention]'
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
+  correct_answer: null
+17:
+  text: 17. Automatic Testing
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: '[no mention]'
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
+  correct_answer: null
+18:
+  text: 18. Code Documentation
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: '[no mention]'
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  correct_answer: null
+19:
+  text: 19. Linting Standards
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: '[no mention]'
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text
+  correct_answer: null
+20:
+  text: 20. Code Development
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: '[no mention]'
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
+  correct_answer: null
