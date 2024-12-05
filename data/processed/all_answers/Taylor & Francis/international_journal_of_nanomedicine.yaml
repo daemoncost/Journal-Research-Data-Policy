@@ -1,0 +1,357 @@
+1:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: Please include a statement about where data supporting the results
+      reported in the manuscript can be found and about data sharing including, where
+      applicable, links to the publicly archived datasets.
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Data Sharing Policy\n\nAs part of the Taylor & Francis Group, Dove\
+      \ Medical Press applies the Basic Data Sharing Policy. Authors are encouraged\
+      \ to share or make open the data supporting the results or analyses presented\
+      \ in their paper where this does not violate the protection of human subjects\
+      \ or other valid privacy or security concerns.\n\nAuthors are encouraged to\
+      \ deposit the dataset(s) in a recognized data repository that can mint a persistent\
+      \ digital identifier, preferably a digital object identifier (DOI) and recognizes\
+      \ a long-term preservation plan. If you are uncertain about where to deposit\
+      \ your data, please see this information regarding repositories.\n\nAuthors\
+      \ are further encouraged to cite any data sets referenced in the article and\
+      \ provide a Data Availability Statement.\n\nWhere one or multiple data sets\
+      \ are associated with a manuscript, these are not formally peer reviewed as\
+      \ a part of the journal submission process. It is the author\u2019s responsibility\
+      \ to ensure the soundness of data. Any errors in the data rest solely with the\
+      \ producers of the data set(s)."
+  correct_answer: null
+  discrepancy_reason: null
+3:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing required only for specific types of data.
+    explanation: " Data Sharing Statement\n\nManuscripts submitted to Dove Medical\
+      \ Press journals from July 1st, 2018, reporting on clinical trial data must\
+      \ contain a data sharing statement indicating:\n\n    Whether the authors intend\
+      \ to share individual deidentified participant data;\n    What specific data\
+      \ they intend to share;\n    What other study-related documents will be made\
+      \ available;\n    How the data will be accessible;\n    When and for how long\
+      \ they will be made available.\n\nSee the ICMJE guidelines on data sharing and\
+      \ example given in the Table.\n\nClinical trials that begin enrolling participants\
+      \ on or after 1 January 2019 must include a data sharing plan in the trial\u2019\
+      s registration. Any deviations from this plan must be disclosed in the data\
+      \ sharing statement when published."
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: "Data Sharing Policy\n\nAs part of the Taylor & Francis Group, Dove\
+      \ Medical Press applies the Basic Data Sharing Policy. Authors are encouraged\
+      \ to share or make open the data supporting the results or analyses presented\
+      \ in their paper where this does not violate the protection of human subjects\
+      \ or other valid privacy or security concerns.\n\nAuthors are encouraged to\
+      \ deposit the dataset(s) in a recognized data repository that can mint a persistent\
+      \ digital identifier, preferably a digital object identifier (DOI) and recognizes\
+      \ a long-term preservation plan. If you are uncertain about where to deposit\
+      \ your data, please see this information regarding repositories.\n\nAuthors\
+      \ are further encouraged to cite any data sets referenced in the article and\
+      \ provide a Data Availability Statement.\n\nWhere one or multiple data sets\
+      \ are associated with a manuscript, these are not formally peer reviewed as\
+      \ a part of the journal submission process. It is the author\u2019s responsibility\
+      \ to ensure the soundness of data. Any errors in the data rest solely with the\
+      \ producers of the data set(s)."
+  correct_answer: 1
+  discrepancy_reason: Difficulty in matching information and question
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: no text
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "FAIR data \n\nWe encourage all researchers to consider the FAIR\
+      \ Data Principles when depositing data, to maximize its use. FAIR data is: \n\
+      \nFindable: includes rich metadata and a persistent identified (e.g. DOI) so\
+      \ that others can easily find and discover it.\n\nAccessible: the data and metadata\
+      \ are understandable, so machines and humans can read and process it. Data also\
+      \ needs to be located in a trustworthy repository which preserves them in perpetuity.\n\
+      \nInteroperable: the metadata are expressed in a formal, accessible, shared,\
+      \ and broadly applicable language, allowing sharing between different systems.\n\
+      \nReusable: data have a clear and accessible usage license that specifies reuse.\n\
+      \nFor more information on FAIR data read the FAIR data principles. "
+  correct_answer: 1
+  discrepancy_reason: Difficulty in matching information and question
+2:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: Depositing laboratory protocols on io is encouraged, where a DOI
+      can be assigned to the protocol
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: Where community-endorsed mandates exist for submission of data to
+      public repositories, authors should submit the datasets to the appropriate repositories
+      and provide the accession numbers (where available) in the paper. Authors should
+      include a statement in their manuscript about where the data can be found and
+      provide links to the publicly archived datasets. The statement of data availability
+      should explain which additional unpublished data from the study, if any, are
+      available, to whom, and how these can be obtained. These datasets can also be
+      cited in the reference list and this is particularly encouraged when the datasets
+      have a Digital Object Identifier (DOI). In cases where authors do not wish to
+      share their data or are unable to do so, they should state that data will not
+      be shared and the reasons why.
+  correct_answer: null
+  discrepancy_reason: null
+5:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: Depositing laboratory protocols on io is encouraged, where a DOI
+      can be assigned to the protocol.
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: Authors are encouraged to deposit the dataset(s) in a recognized
+      data repository that can mint a persistent digital identifier, preferably a
+      digital object identifier (DOI) and recognizes a long-term preservation plan.
+      If you are uncertain about where to deposit your data, please see this information
+      regarding repositories.
+  correct_answer: null
+  discrepancy_reason: null
+7:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Required data must be available prior to review process.
+    explanation: At the point of submission, you will be asked if there is a data
+      set associated with the paper. If you reply yes, you will be required to provide
+      the DOI, pre-registered DOI, hyperlink, or other persistent identifier associated
+      with the data set(s)
+  1:
+    text: Required data must be available prior to review process.
+    explanation: At the point of submission, you will be encouraged to provide the
+      DOI, pre-registered DOI, hyperlink, or other persistent identifier associated
+      with the data set(s). If you have selected to provide a pre-registered DOI,
+      please be prepared to share the reviewer URL associated with your data deposit,
+      upon request by reviewers.
+  correct_answer: null
+  discrepancy_reason: null
+8:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: Depositing laboratory protocols on io is encouraged, where a DOI
+      can be assigned to the protocol.
+  1:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "First we recommend speaking to your institutional librarian, funder\
+      \ or colleagues at your institution for guidance on choosing a repository that\
+      \ is relevant to your discipline. You can also use FAIRsharing and re3data.org\
+      \ to search for a suitable repository \u2013 both provide a list of certified\
+      \ data repositories.\n\nFor cases where there is no subject-specific repository,\
+      \ you may wish to consider some of the generalist data repository types below.\n\
+      \n4TU.ResearchData\n\nANDS contributing repositories\n\nDryad Digital Repository\n\
+      \nFigshare\n\nHarvard Dataverse\n\nMendeley Data\n\nOpen Science Framework\n\
+      \nScience Data Bank\n\nZenodo\n\nCode Ocean (with code)\n\nWe encourage authors\
+      \ to select a data repository that issues a persistent identifier, preferably\
+      \ a Digital Object Identifier (DOI), and has established a robust preservation\
+      \ plan to ensure the data is preserved in perpetuity. Additionally, we highly\
+      \ encourage researchers to consider the FAIR Data Principles when depositing\
+      \ data."
+  correct_answer: 1
+  discrepancy_reason: Difficulty in matching information and question
+9:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: https://authorservices.taylorandfrancis.com/data-sharing-policies/basic/
+  correct_answer: null
+  discrepancy_reason: null
+10:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: https://www.dovepress.com/peer-review-guidelines/writing-peer-reviews
+  correct_answer: null
+  discrepancy_reason: null
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: no text
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: no text
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+13:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Code sharing not mentioned.
+    explanation: no text
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: 1
+  discrepancy_reason: Difficulty in matching information and question
+14:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: no text
+  1:
+    text: No mention of dependencies for research code.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: null
+  discrepancy_reason: null
+15:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: null
+  discrepancy_reason: null
+16:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: null
+  discrepancy_reason: null
+17:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: null
+  discrepancy_reason: null
+18:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  1:
+    text: No mention of standards for code documentation.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: null
+  discrepancy_reason: null
+19:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: no text
+  1:
+    text: No mention of linting standards for code.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: null
+  discrepancy_reason: null
+20:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
+  correct_answer: null
+  discrepancy_reason: null

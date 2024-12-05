@@ -1,0 +1,517 @@
+1:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies. '
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Data Availability
+
+
+      Sharing data supports new research and the independent verification of findings.
+      The Physical Review journals strongly encourage authors to share relevant data,
+      code, software, and other materials that support their reported results by depositing
+      them in open data repositories at the time of publication. Delays in sharing
+      these materials may be appropriate in certain circumstances in order to respect
+      privacy, trade secrets, or national security. In addition to these recommendations,
+      authors should follow requirements for sharing data and code set by their funding
+      agencies.
+
+
+      Authors should, when possible, include a Data Availability Statement in the
+      paragraph before the Acknowledgments that indicates the availability of data,
+      software, code, and other materials.'
+  correct_answer: null
+  discrepancy_reason: null
+3:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: 'Data Availability
+
+
+      Sharing data supports new research and the independent verification of findings.
+      The Physical Review journals strongly encourage authors to share relevant data,
+      code, software, and other materials that support their reported results by depositing
+      them in open data repositories at the time of publication. Delays in sharing
+      these materials may be appropriate in certain circumstances in order to respect
+      privacy, trade secrets, or national security. In addition to these recommendations,
+      authors should follow requirements for sharing data and code set by their funding
+      agencies.
+
+
+      Authors should, when possible, include a Data Availability Statement in the
+      paragraph before the Acknowledgments that indicates the availability of data,
+      software, code, and other materials.'
+  correct_answer: null
+  discrepancy_reason: null
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: no text
+  1:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: 'Data Availability
+
+
+      Sharing data supports new research and the independent verification of findings.
+      The Physical Review journals strongly encourage authors to share relevant data,
+      code, software, and other materials that support their reported results by depositing
+      them in open data repositories at the time of publication. Delays in sharing
+      these materials may be appropriate in certain circumstances in order to respect
+      privacy, trade secrets, or national security. In addition to these recommendations,
+      authors should follow requirements for sharing data and code set by their funding
+      agencies.
+
+
+      Authors should, when possible, include a Data Availability Statement in the
+      paragraph before the Acknowledgments that indicates the availability of data,
+      software, code, and other materials.'
+  correct_answer: null
+  discrepancy_reason: null
+2:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: 'Authors should, when possible, include a Data Availability Statement
+      in the paragraph before the Acknowledgments that indicates the availability
+      of data, software, code, and other materials. The statement should reference
+      relevant data policies from funders and institutions. '
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: Authors should, when possible, include a Data Availability Statement
+      in the paragraph before the Acknowledgments that indicates the availability
+      of data, software, code, and other materials.
+  correct_answer: null
+  discrepancy_reason: null
+5:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: It should also provide a reference to the data, which includes the
+      authors (creators) of the data, the year, any version number, the name of the
+      repository (if applicable), and a persistent identifier, preferably a DOI. If
+      the data have a corresponding article published in a data journal, then the
+      reference to the journal data should be included as well.
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Data Availability Statements
+
+
+      Sharing data supports new research and the independent verification of findings.
+      The Physical Review journals strongly encourage authors to share relevant data,
+      code, software, and other materials that support their reported results by depositing
+      them in open data repositories at the time of publication. Delays in sharing
+      these materials may be appropriate in certain circumstances in order to respect
+      privacy, trade secrets, or national security. In addition to these recommendations,
+      authors should follow requirements for sharing data and code set by their funding
+      agencies.
+
+
+      Authors should, when possible, include a Data Availability Statement in the
+      paragraph before the Acknowledgments that indicates the availability of data,
+      software, code, and other materials. The statement should reference relevant
+      data policies from funders and institutions. It should also provide a reference
+      to the data, which includes the authors (creators) of the data, the year, any
+      version number, the name of the repository (if applicable), and a persistent
+      identifier, preferably a DOI. If the data have a corresponding article published
+      in a data journal, then the reference to the journal data should be included
+      as well.'
+  correct_answer: null
+  discrepancy_reason: null
+7:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Required data must be available prior to official publication.
+    explanation: The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: 'Data Availability Statements
+
+
+      Sharing data supports new research and the independent verification of findings.
+      The Physical Review journals strongly encourage authors to share relevant data,
+      code, software, and other materials that support their reported results by depositing
+      them in open data repositories at the time of publication. Delays in sharing
+      these materials may be appropriate in certain circumstances in order to respect
+      privacy, trade secrets, or national security. In addition to these recommendations,
+      authors should follow requirements for sharing data and code set by their funding
+      agencies.
+
+
+      Authors should, when possible, include a Data Availability Statement in the
+      paragraph before the Acknowledgments that indicates the availability of data,
+      software, code, and other materials. The statement should reference relevant
+      data policies from funders and institutions. It should also provide a reference
+      to the data, which includes the authors (creators) of the data, the year, any
+      version number, the name of the repository (if applicable), and a persistent
+      identifier, preferably a DOI. If the data have a corresponding article published
+      in a data journal, then the reference to the journal data should be included
+      as well.'
+  correct_answer: null
+  discrepancy_reason: null
+8:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: "Here are some suggested options and formats:\n\nData are provided\
+      \ in a published format. \tIn accordance with the [NAME] policy framework on\
+      \ research data, access to the data is available in [REF]. \t[REF] AUTHOR NAMES,\
+      \ YEAR, DOI.\n\nData are available on an open archive, \tThe supporting data\
+      \ for this article are openly available from the [NAME ARCHIVE] [REF]. \t[REF]\
+      \ AUTHOR NAMES, YEAR, ARCHIVE NAME, DOI.\n\nNo data are available because of\
+      \ the nature of the research. \tIn compliance with [POLICY NAME] on research\
+      \ data, this publication is theoretical work that does not require supporting\
+      \ research data. \tNo reference needed"
+  1:
+    text: Public online repositories recommended in RDP.
+    explanation: 'Data Availability Statements
+
+
+      Sharing data supports new research and the independent verification of findings.
+      The Physical Review journals strongly encourage authors to share relevant data,
+      code, software, and other materials that support their reported results by depositing
+      them in open data repositories at the time of publication. Delays in sharing
+      these materials may be appropriate in certain circumstances in order to respect
+      privacy, trade secrets, or national security. In addition to these recommendations,
+      authors should follow requirements for sharing data and code set by their funding
+      agencies.
+
+
+      Authors should, when possible, include a Data Availability Statement in the
+      paragraph before the Acknowledgments that indicates the availability of data,
+      software, code, and other materials. The statement should reference relevant
+      data policies from funders and institutions. It should also provide a reference
+      to the data, which includes the authors (creators) of the data, the year, any
+      version number, the name of the repository (if applicable), and a persistent
+      identifier, preferably a DOI. If the data have a corresponding article published
+      in a data journal, then the reference to the journal data should be included
+      as well.'
+  correct_answer: null
+  discrepancy_reason: null
+9:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: 'Data Availability Statements
+
+
+      Sharing data supports new research and the independent verification of findings.
+      The Physical Review journals strongly encourage authors to share relevant data,
+      code, software, and other materials that support their reported results by depositing
+      them in open data repositories at the time of publication. Delays in sharing
+      these materials may be appropriate in certain circumstances in order to respect
+      privacy, trade secrets, or national security. In addition to these recommendations,
+      authors should follow requirements for sharing data and code set by their funding
+      agencies.
+
+
+      Authors should, when possible, include a Data Availability Statement in the
+      paragraph before the Acknowledgments that indicates the availability of data,
+      software, code, and other materials. The statement should reference relevant
+      data policies from funders and institutions. It should also provide a reference
+      to the data, which includes the authors (creators) of the data, the year, any
+      version number, the name of the repository (if applicable), and a persistent
+      identifier, preferably a DOI. If the data have a corresponding article published
+      in a data journal, then the reference to the journal data should be included
+      as well.'
+  correct_answer: null
+  discrepancy_reason: null
+10:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: "Guidelines for Referees\n\nReferees play a crucial role in evaluating\
+      \ manuscripts submitted to the Physical Review journals. Physical Review editors\
+      \ work closely with referees to apply the acceptance criteria stringently and\
+      \ to act promptly in accepting or rejecting manuscripts. Your active collaboration\
+      \ as a referee is central to the success of the journals.\nInvitation to Review\n\
+      \nThe email invitation to review includes links to accept or decline. Before\
+      \ you accept, please ensure that the manuscript content is close enough to your\
+      \ area of expertise to allow you to provide useful input and a prompt review.\
+      \ If that is not the case, please decline; your suggestions for alternate reviewers\
+      \ are welcomed.\n\nConfidentiality\n\nAll materials associated with the review\
+      \ process are confidential, including the manuscript, Supplemental Material,\
+      \ author-provided material, referee reports, and other correspondence. These\
+      \ materials must remain confidential when you consult with colleagues or invite\
+      \ them to write a joint report. We ask that you include the names and contact\
+      \ information of any colleagues who help in writing the report. When you are\
+      \ reviewing a manuscript, please do not initiate discussions with the author(s);\
+      \ instead, please contact the editors with your inquiry.\n\nIt is vitally important\
+      \ for reviewers to disclose any conflicts of interest to the editors. Please\
+      \ let them know if you have a direct competitive, collaborative, or other relationship\
+      \ with an author that could preclude your objective evaluation of the manuscript.\
+      \ It is unethical for you to use the content of a manuscript sent to you for\
+      \ review for your own scientific purposes. The Physical Review journals are\
+      \ members of the Committee on Publication Ethics and follow its guidelines.\
+      \ See also Appropriate Use of AI-Based Writing Tools.\n\nReviewing the Manuscript\
+      \ and Writing the Report\n\nThe following guidelines are an aid to help when\
+      \ reviewing the manuscript. Read the referral letter carefully; there may be\
+      \ editor comments and questions, and/or reference material and previous correspondence\
+      \ sent with the referral. When writing your report, use clear, simple wording\
+      \ and avoid overly negative or polemical comments.\n\nWe suggest dividing your\
+      \ review into three parts: (I) Comments intended for both the author(s) and\
+      \ the editors; (II) Recommendation; (III) Comments to the editors only.\n\n\
+      Comments intended for both the author(s) and the editors:\n\nBriefly summarize\
+      \ the manuscript. The summary could include a statement on the key results and\
+      \ how they add to the field.\nAssess the originality and significance of the\
+      \ results.\nAssess the technical quality and scientific rigor of the manuscript.\n\
+      Is the work well executed and technically correct?\nAre the models or approximations\
+      \ used sufficiently justified?\nAre the main conclusions or claims well supported?\n\
+      Is the section for which this manuscript is being considered (Regular Article,\
+      \ Letter, or Comment) the right venue for this work? Be aware that some sections\
+      \ have length limits.\nIf submitted as a Letter, does the work\u2019s quality\
+      \ and importance justify being featured in this special section?\nAssess the\
+      \ manuscript\u2019s presentation.\nAre the title and abstract informative, concise,\
+      \ and clear?\nIs the manuscript well organized and clearly written?\nIs the\
+      \ description of the technical content sufficiently comprehensive?\nAre the\
+      \ references to the literature appropriate and adequate?\nDoes the content of\
+      \ the manuscript justify its length? Please be specific as to how and where\
+      \ the manuscript could be expanded or shortened.\nAre the figures and tables\
+      \ clear, useful, and suitably summarized in the captions? Is there duplication\
+      \ from previous publications?\nAssess the content and quality of the Supplemental\
+      \ Material. Is the information included supplemental or essential for understanding\
+      \ the manuscript? Should any of it be included in the main text?\nWhen writing\
+      \ your report, please formulate it in gender-neutral terms. If unavoidable,\
+      \ please use the singular \u201Cthey/them/theirs\u201D in place of gender-specific\
+      \ pronouns.\n\nRecommendation: Your report should include a recommendation to\
+      \ accept, revise and reconsider, or reject the manuscript. Please provide reasons\
+      \ for your recommendation.\n\nComments intended for the Editors only: When submitting\
+      \ your report, you will be presented with a table of checkboxes where you can\
+      \ summarize your overall view of the manuscript for the editors. Here you can\
+      \ indicate your recommendation on accepting or rejecting the manuscript, and,\
+      \ if appropriate, suggest that the paper be transferred to another Physical\
+      \ Review journal or submitted elsewhere. This section is where you may include\
+      \ confidential remarks for the editor. These comments may include your thoughts\
+      \ on why the paper is right or wrong for the particular journal, reasons behind\
+      \ your recommendation, or other information you feel would be useful."
+  correct_answer: null
+  discrepancy_reason: null
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: no text
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: no text
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+13:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: Authors should, when possible, include a Data Availability Statement
+      in the paragraph before the Acknowledgments that indicates the availability
+      of data, software, code, and other materials
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
+14:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: no text
+  1:
+    text: No mention of dependencies for research code.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
+15:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
+16:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
+17:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
+18:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  1:
+    text: No mention of standards for code documentation.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
+19:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: no text
+  1:
+    text: No mention of linting standards for code.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
+20:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: Sharing data supports new research and the independent verification
+      of findings. The Physical Review journals strongly encourage authors to share
+      relevant data, code, software, and other materials that support their reported
+      results by depositing them in open data repositories at the time of publication.
+      Delays in sharing these materials may be appropriate in certain circumstances
+      in order to respect privacy, trade secrets, or national security. In addition
+      to these recommendations, authors should follow requirements for sharing data
+      and code set by their funding agencies.
+  correct_answer: null
+  discrepancy_reason: null
