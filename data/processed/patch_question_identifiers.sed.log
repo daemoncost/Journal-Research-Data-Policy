@@ -1,0 +1,38 @@
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+pterodaktilis
++ pwd
+/home/saulius/writings/Journal-Research-Data-Policy/data/processed
++ set +x
++ git remote -v
+origin	git@github.com:daemoncost/Journal-Research-Data-Policy.git (fetch)
+origin	git@github.com:daemoncost/Journal-Research-Data-Policy.git (push)
++ git branch -v
+  Correct-RCS       8ab112e Merge branch 'Correct-RCS' of github.com:daemoncost/Journal-Research-Data-Policy into Correct-RCS
+  dev               2f4e27c Remove yaml files from gitignore
+* saulius-merge-all d25a6b7 Fixing two typos.
++ git status
+On branch saulius-merge-all
+Your branch is up to date with 'origin/saulius-merge-all'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	patch_question_identifiers.sed
+	patch_question_identifiers.sed.log
+
+nothing added to commit but untracked files present (use "git add" to track)
++ df -h .
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/vgmint-root  1,8T 1022G  717G  59% /
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-21.2
++ uname -a
+Linux pterodaktilis 5.15.0-126-generic #136-Ubuntu SMP Wed Nov 6 10:38:22 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2024-12-06T13:41:32 EET
++ grep -P '^  *\d+:' patch_question_identifiers.py
++ sed 's/^  */s\/\^/; s/ "/\//; s/", *$/:\//'
