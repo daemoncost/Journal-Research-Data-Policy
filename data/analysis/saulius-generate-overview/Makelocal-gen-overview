@@ -37,8 +37,8 @@ ${OUTPUT_TSV}: ${INPUT_YAMLS}
 	date +"# %F %T %Z" > $@
 	echo "kind\tcount\tkey\ttext" >> $@
 	for i in $$(yq 'keys[]' $<); do \
-		yq -o csv "\"$$i\" + \"${TAB_CHAR}\" + .$$i.text" $^ \
-		| head -1 \
+		yq -o csv ".$$i.text" $^ \
+		| awk '{print "'"$$i"'" "\t" $$0}' \
 		| sort | uniq -c \
 		| sed 's/^ *\([0-9][0-9]*\) */\1\t/' \
 		| awk -F'\t' '{print "topics\t" $$0}'; \
