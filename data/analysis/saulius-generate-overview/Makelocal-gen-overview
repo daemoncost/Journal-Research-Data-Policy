@@ -1,6 +1,6 @@
 #--*- Makefile -*--
 #*
-# Generate an overview of the collected Joutnal polycy files.
+# Generate an overview of the collected Journal policy files.
 #**
 
 INPUT_DIR  ?= inputs
