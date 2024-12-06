@@ -1,0 +1,27 @@
+rdp_exist: "1. Existence of research data policy1. Existence of research data policy"
+data_sharing: "3. Data sharing requirements in RDP"
+data_fair: "4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition"
+data_availability: "2. Data availability statement"
+data_citability: "5. Citability and findability of data "
+data_timing: "7. Timing of data release"
+data_sharing_method: "8. Recommended data sharing method"
+data_licenses: "9. Recommended/required licenses"
+data_referee: "10. Referee guidelines concerning research data"
+data_recommended: "11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)"
+data_required: "12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)"
+code_required: "13. Code sharing requirements"
+code_reproducibility: "14. Code Reproducibility"
+code_versioning: "15. Versioning and persistent identifiers"
+code_quality: "16. Code Quality Standards"
+code_autotest: "17. Automatic Testing"
+code_docs: "18. Code Documentation"
+code_linting: "19. Linting Standards"
+code_development: "20. Code Development"
