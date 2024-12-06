@@ -1,0 +1,1 @@
+  846  ( set -x; directory-metadata; find all_answers/ -name '*.yaml' -type f -print0 | sort -z | xargs -n1 -t -0 sed -i -f patch_question_identifiers.sed ) 2>&1 | tee find-sed-patch-yaml.log 

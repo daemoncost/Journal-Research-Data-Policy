@@ -1,0 +1,105 @@
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+pterodaktilis
++ pwd
+/home/saulius/writings/Journal-Research-Data-Policy/data/processed
++ set +x
++ git remote -v
+origin	git@github.com:daemoncost/Journal-Research-Data-Policy.git (fetch)
+origin	git@github.com:daemoncost/Journal-Research-Data-Policy.git (push)
++ git branch -v
+  Correct-RCS       8ab112e Merge branch 'Correct-RCS' of github.com:daemoncost/Journal-Research-Data-Policy into Correct-RCS
+  dev               2f4e27c Remove yaml files from gitignore
+* saulius-merge-all 6ebe384 [ahead 1] Generating a 'sed' script from the Python input to change numbers to keywords in the YAML files.
++ git status
+On branch saulius-merge-all
+Your branch is ahead of 'origin/saulius-merge-all' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	find-sed-patch-yaml.log
+
+nothing added to commit but untracked files present (use "git add" to track)
++ df -h .
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/vgmint-root  1,8T 1022G  717G  59% /
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-21.2
++ uname -a
+Linux pterodaktilis 5.15.0-126-generic #136-Ubuntu SMP Wed Nov 6 10:38:22 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2024-12-06T13:51:42 EET
++ find all_answers/ -name '*.yaml' -type f -print0
++ sort -z
++ xargs -n1 -t -0 sed -i -f patch_question_identifiers.sed
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_a.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_applied.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_b.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_c.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_d.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_e.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_letters.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_materials.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_research.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/physical_review_x.yaml
+sed -i -f patch_question_identifiers.sed all_answers/APS/prx_quantum.yaml
+sed -i -f patch_question_identifiers.sed 'all_answers/Bentham Science/current_nanoscience.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Bentham Science/current_organic_chemistry.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Bentham Science/current_organic_synthesis.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Bentham Science/current_organocatalysis.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Bentham Science/letters_in_organic_chemistry.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Bentham Science/mini-reviews_in_organic_chemistry.yaml'
+sed -i -f patch_question_identifiers.sed all_answers/Frontiers/frontiers_in_bioengineering_and_biotechnology.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Frontiers/frontiers_in_chemical_engineering.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Frontiers/frontiers_in_chemistry.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Frontiers/frontiers_in_energy_research.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Frontiers/frontiers_in_materials.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Frontiers/frontiers_in_nanotechnology.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Frontiers/frontiers_in_physics.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/2d_materials.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/iop_conference_series_materials_science_and_engineering.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/journal_of_physics_condensed_matter.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/journal_of_physics_energy.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/journal_of_physics_photonics.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/journal_of_semiconductors.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/nanotechnology.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/quantum_science_and_technology.yaml
+sed -i -f patch_question_identifiers.sed all_answers/IOP/smart_materials_and_structures.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/applied_optics.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/biomedical_optics_express.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/journal_of_the_optical_society_of_america_b.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/optica.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/optical_materials_express.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/optics_continuum.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/optics_express.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/optics_letters.yaml
+sed -i -f patch_question_identifiers.sed all_answers/Optica/photonics_research.yaml
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/biomedical_microdevices.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/journal_of_materials_science_materials_in_electronics.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/materials_science.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/medicinal_chemistry_research.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/nano-micro_letters.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/nature.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/nature_communications.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/nature_energy.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Springer Nature/scientific_reports.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/advanced_composite_materials.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/analytical_letters.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/ferroelectrics.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/green_chemistry_letters_and_reviews.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/international_journal_of_nanomedicine.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/journal_of_asian_ceramic_societies.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/journal_of_macromolecular_science_part_b.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/liquid_crystals.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/materials_research_letters.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/molecular_crystals_and_liquid_crystals.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/molecular_physics.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/nanotoxicology.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/polycyclic_aromatic_compounds.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/science_and_technology_of_advanced_materials.yaml'
+sed -i -f patch_question_identifiers.sed 'all_answers/Taylor & Francis/waves_in_random_and_complex_media.yaml'
