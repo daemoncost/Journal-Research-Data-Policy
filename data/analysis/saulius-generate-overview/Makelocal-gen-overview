@@ -20,7 +20,7 @@ ${OUTPUT_TXT}: ${INPUT_YAMLS}
 	date +"# %F %T %Z" > $@
 	for i in $$(yq 'keys[]' $<); do \
 		echo ""; \
-		yq -o csv ".$$i.text" $^ \
+		yq -o csv "\".$$i: \" + .$$i.text" $^ \
 		| sort | uniq -c; \
 		echo ""; \
 		yq -o yaml '."'$$i'" | [filename, .text, .[] | .text]' $^ \

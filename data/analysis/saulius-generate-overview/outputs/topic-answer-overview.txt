@@ -1,13 +1,13 @@
-# 2024-12-06 14:10:40 EET
+# 2024-12-06 14:20:23 EET
 
-     66 1. Existence of research data policy
+     66 .rdp_exist: 1. Existence of research data policy
 
       3 Research Data Policy (RDP) does not exists.
      63 Research Data Policy (RDP) exists.
 
 ================================================================================
 
-     66 3. Data sharing requirements in RDP
+     66 .data_sharing: 3. Data sharing requirements in RDP
 
      44 Data sharing encouraged but optional.
       3 Data sharing only with editors and referees (no public sharing)
@@ -17,7 +17,7 @@
 
 ================================================================================
 
-     66 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)
+     66 .data_fair: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)
 
      27 Public data sharing on a FAIR repository encouraged.
      30 Public data sharing on a FAIR repository not mentioned in RDP.
@@ -25,7 +25,7 @@
 
 ================================================================================
 
-     66 2. Data availability statement
+     66 .data_availability: 2. Data availability statement
 
      25 Mentioned in the RDP but optional.
       3 Not mentioned in the RDP.
@@ -33,7 +33,7 @@
 
 ================================================================================
 
-     66 5. Citability and findability of data 
+     66 .data_citability: 5. Citability and findability of data 
 
      57 DOIs or other persistent identifiers recommended for datasets or codes.
       6 DOIs or other persistent identifiers required for datasets or codes.
@@ -41,7 +41,7 @@
 
 ================================================================================
 
-     66 7. Timing of data release
+     66 .data_timing: 7. Timing of data release
 
       7 Required data must be available after official publication.
      36 Required data must be available prior to official publication.
@@ -50,7 +50,7 @@
 
 ================================================================================
 
-     66 8. Recommended data sharing method
+     66 .data_sharing_method: 8. Recommended data sharing method
 
       9 Data sharing in supplementary material or hosting by journal recommended in RDP.
       3 No data sharing method recommended in RDP.
@@ -58,14 +58,14 @@
 
 ================================================================================
 
-     66 9. Recommended/required licenses
+     66 .data_licenses: 9. Recommended/required licenses
 
      12 Explicit mention of a certain license/license type in RDP.
      54 No mention of data/code licenses in RDP.
 
 ================================================================================
 
-     66 10. Referee guidelines concerning research data
+     66 .data_referee: 10. Referee guidelines concerning research data
 
       3 Additional data or code referee (referee that solely confirms that code and data are shared following the RDP).
      14 Data sharing policy mentioned in refereeing guidelines.
@@ -73,7 +73,7 @@
 
 ================================================================================
 
-     66 11. Unique policies for data types
+     66 .data_recommended: 11. Unique policies for data types
      66 Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
 
      18 .nan
@@ -83,7 +83,7 @@
 
 ================================================================================
 
-     66 12. Unique policies for data types
+     66 .data_required: 12. Unique policies for data types
      66 Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
 
       9 .nan
@@ -94,7 +94,7 @@
 
 ================================================================================
 
-     66 13. Code sharing requirements
+     66 .code_required: 13. Code sharing requirements
 
      53 Code sharing encouraged but optional.
      12 Code sharing not mentioned.
@@ -102,20 +102,20 @@
 
 ================================================================================
 
-     66 14. Code Reproducibility
+     66 .code_reproducibility: 14. Code Reproducibility
 
      66 No mention of dependencies for research code.
 
 ================================================================================
 
-     66 15. Versioning and persistent identifiers
+     66 .code_versioning: 15. Versioning and persistent identifiers
 
      18 Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
      48 No mention of a persistent identifier or specifying a version of developed code.
 
 ================================================================================
 
-     66 16. Code Quality Standards
+     66 .code_quality: 16. Code Quality Standards
 
      56 The journal policies do not mention any code quality standards.
       7 The journal policies encourage/recommend certain standards for code.
@@ -123,26 +123,26 @@
 
 ================================================================================
 
-     66 17. Automatic Testing
+     66 .code_autotest: 17. Automatic Testing
 
      66 No mention of automatic testing to verify code functionality.
 
 ================================================================================
 
-     66 18. Code Documentation
+     66 .code_docs: 18. Code Documentation
 
      63 No mention of standards for code documentation.
       3 The journal policies encourage/recommend standards for code documentation.
 
 ================================================================================
 
-     66 19. Linting Standards
+     66 .code_linting: 19. Linting Standards
 
      66 No mention of linting standards for code.
 
 ================================================================================
 
-     66 20. Code Development
+     66 .code_development: 20. Code Development
 
      59 No mention of standards for code development such as continuous integration.
       7 The journal policies encourage/recommend standards for code development such as continuous integration.
