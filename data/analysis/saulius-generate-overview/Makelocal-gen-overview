@@ -18,7 +18,7 @@ all: ${OUTPUT_TXT} ${OUTPUT_CSV} ${OUTPUT_TSV}
 
 ${OUTPUT_TXT}: ${INPUT_YAMLS}
 	date +"# %F %T %Z" > $@
-	for i in $$(seq 1 5) $$(seq 7 20); do \
+	for i in $$(yq 'keys[]' $<); do \
 		echo ""; \
 		yq -o csv ".$$i.text" $^ \
 		| sort | uniq -c; \
@@ -34,7 +34,7 @@ ${OUTPUT_TXT}: ${INPUT_YAMLS}
 ${OUTPUT_TSV}: ${INPUT_YAMLS}
 	date +"# %F %T %Z" > $@
 	echo "kind\tcount\ttext" >> $@
-	for i in $$(seq 1 5) $$(seq 7 20); do \
+	for i in $$(yq 'keys[]' $<); do \
 		yq -o csv ".$$i.text" $^ \
 		| sort | uniq -c \
 		| sed 's/^ *\([0-9][0-9]*\) */\1\t/' \

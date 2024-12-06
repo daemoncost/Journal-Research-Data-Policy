@@ -1,12 +1,8 @@
-# 2024-11-22 11:28:45 EET
+# 2024-12-06 14:10:43 EET
 kind,count,text
 topics,66,"1. Existence of research data policy"
 answers,3,"Research Data Policy (RDP) does not exists."
 answers,63,"Research Data Policy (RDP) exists."
-topics,66,"2. Data availability statement"
-answers,25,"Mentioned in the RDP but optional."
-answers,3,"Not mentioned in the RDP."
-answers,38,"Required according to the RDP."
 topics,66,"3. Data sharing requirements in RDP"
 answers,44,"Data sharing encouraged but optional."
 answers,3,"Data sharing only with editors and referees (no public sharing)"
@@ -17,6 +13,10 @@ topics,66,"4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ fo
 answers,27,"Public data sharing on a FAIR repository encouraged."
 answers,30,"Public data sharing on a FAIR repository not mentioned in RDP."
 answers,9,"Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data)."
+topics,66,"2. Data availability statement"
+answers,25,"Mentioned in the RDP but optional."
+answers,3,"Not mentioned in the RDP."
+answers,38,"Required according to the RDP."
 topics,66,"5. Citability and findability of data "
 answers,57,"DOIs or other persistent identifiers recommended for datasets or codes."
 answers,6,"DOIs or other persistent identifiers required for datasets or codes."
