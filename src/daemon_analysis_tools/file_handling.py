@@ -12,9 +12,11 @@ from daemon_analysis_tools.data_processing import normalize_journal, normalize_p
 def load_and_process_csv(file_path: str) -> pd.DataFrame:
     data = pd.read_csv(file_path)
     try:
+        emails_are_nan = data["E-Mail-Adresse"].isna().all()
+        if not emails_are_nan:
+            print(f"Warning: E-mail addresses found in {file_path}.")
         data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
         data.drop([0, 1, 2], axis=0, inplace=True)
-        print(f"Warning: E-mail addresses found in {file_path}.")
     except KeyError:
         pass
         # Already preprocessed to remove E-mail addresses
@@ -41,7 +43,9 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
     # with open("../data/journal_normalizer.yaml", "r") as file:
     # normalizazion_dict = yaml.safe_load(file)
     data_duplicated["journal"] = data_duplicated["journal"].apply(normalize_journal)
-
+    data_duplicated = data_duplicated.loc[
+        :, ~data_duplicated.columns.str.contains("^Unnamed:")
+    ]
     return data_duplicated
 
 

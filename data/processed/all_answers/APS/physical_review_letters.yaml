@@ -1,4 +1,4 @@
-1:
+rdp_exist:
   text: 1. Existence of research data policy
   N. encoders: 2
   has_discrepancies: false
@@ -30,17 +30,9 @@
       Authors should, when possible, include a Data Availability Statement in the
       paragraph before the Acknowledgments that indicates the availability of data,
       software, code, and other materials.'
-  correct_answer:
-    text: Research Data Policy (RDP) exists.
-    explanation: 'Sharing data supports new research and the independent verification
-      of findings. The Physical Review journals strongly encourage authors to share
-      relevant data, code, software, and other materials that support their reported
-      results by depositing them in open data repositories at the time of publication.
-      Delays in sharing these materials may be appropriate in certain circumstances
-      in order to respect privacy, trade secrets, or national security. In addition
-      to these recommendations, authors should follow requirements for sharing data
-      and code set by their funding agencies. '
-3:
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
   text: 3. Data sharing requirements in RDP
   N. encoders: 2
   has_discrepancies: false
@@ -67,12 +59,9 @@
       Authors should, when possible, include a Data Availability Statement in the
       paragraph before the Acknowledgments that indicates the availability of data,
       software, code, and other materials.'
-  correct_answer:
-    text: Data sharing encouraged but optional.
-    explanation: The Physical Review journals strongly encourage authors to share
-      relevant data, code, software, and other materials that support their reported
-      results by depositing them in open data repositories at the time of publication.
-4:
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
   N. encoders: 2
@@ -98,10 +87,9 @@
       Authors should, when possible, include a Data Availability Statement in the
       paragraph before the Acknowledgments that indicates the availability of data,
       software, code, and other materials.'
-  correct_answer:
-    text: Public data sharing on a FAIR repository not mentioned in RDP.
-    explanation: no text
-2:
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
   text: 2. Data availability statement
   N. encoders: 2
   has_discrepancies: false
@@ -116,13 +104,9 @@
     explanation: Authors should, when possible, include a Data Availability Statement
       in the paragraph before the Acknowledgments that indicates the availability
       of data, software, code, and other materials.
-  correct_answer:
-    text: Mentioned in the RDP but optional.
-    explanation: 'Authors should, when possible, include a Data Availability Statement
-      in the paragraph before the Acknowledgments that indicates the availability
-      of data, software, code, and other materials. The statement should reference
-      relevant data policies from funders and institutions. '
-5:
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
   text: '5. Citability and findability of data '
   N. encoders: 2
   has_discrepancies: false
@@ -157,14 +141,9 @@
       identifier, preferably a DOI. If the data have a corresponding article published
       in a data journal, then the reference to the journal data should be included
       as well.'
-  correct_answer:
-    text: DOIs or other persistent identifiers recommended for datasets or codes.
-    explanation: It should also provide a reference to the data, which includes the
-      authors (creators) of the data, the year, any version number, the name of the
-      repository (if applicable), and a persistent identifier, preferably a DOI. If
-      the data have a corresponding article published in a data journal, then the
-      reference to the journal data should be included as well.
-7:
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
   text: 7. Timing of data release
   N. encoders: 2
   has_discrepancies: false
@@ -197,12 +176,9 @@
       identifier, preferably a DOI. If the data have a corresponding article published
       in a data journal, then the reference to the journal data should be included
       as well.'
-  correct_answer:
-    text: Required data must be available prior to official publication.
-    explanation: The Physical Review journals strongly encourage authors to share
-      relevant data, code, software, and other materials that support their reported
-      results by depositing them in open data repositories at the time of publication.
-8:
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
   text: 8. Recommended data sharing method
   N. encoders: 2
   has_discrepancies: false
@@ -241,18 +217,9 @@
       identifier, preferably a DOI. If the data have a corresponding article published
       in a data journal, then the reference to the journal data should be included
       as well.'
-  correct_answer:
-    text: Public online repositories recommended in RDP.
-    explanation: "Here are some suggested options and formats:\n\nData are provided\
-      \ in a published format. \tIn accordance with the [NAME] policy framework on\
-      \ research data, access to the data is available in [REF]. \t[REF] AUTHOR NAMES,\
-      \ YEAR, DOI.\n\nData are available on an open archive, \tThe supporting data\
-      \ for this article are openly available from the [NAME ARCHIVE] [REF]. \t[REF]\
-      \ AUTHOR NAMES, YEAR, ARCHIVE NAME, DOI.\n\nNo data are available because of\
-      \ the nature of the research. \tIn compliance with [POLICY NAME] on research\
-      \ data, this publication is theoretical work that does not require supporting\
-      \ research data. \tNo reference needed"
-9:
+  correct_answer: null
+  discrepancy_reason: null
+data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 2
   has_discrepancies: false
@@ -283,10 +250,9 @@
       identifier, preferably a DOI. If the data have a corresponding article published
       in a data journal, then the reference to the journal data should be included
       as well.'
-  correct_answer:
-    text: No mention of data/code licenses in RDP.
-    explanation: no text
-10:
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
   text: 10. Referee guidelines concerning research data
   N. encoders: 2
   has_discrepancies: false
@@ -355,10 +321,9 @@
       \ may include your thoughts on why the paper is right or wrong for the particular\
       \ journal, reasons behind your recommendation, or other information you feel\
       \ would be useful."
-  correct_answer:
-    text: Data sharing policy not mentioned in refereeing guidelines.
-    explanation: no text
-11:
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
@@ -372,10 +337,9 @@
   1:
     text: no text
     explanation: ''
-  correct_answer:
-    text: no text
-    explanation: ''
-12:
+  correct_answer: null
+  discrepancy_reason: null
+data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
@@ -389,10 +353,9 @@
   1:
     text: no text
     explanation: ''
-  correct_answer:
-    text: no text
-    explanation: ''
-13:
+  correct_answer: null
+  discrepancy_reason: null
+code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
   has_discrepancies: true
@@ -419,12 +382,9 @@
       Authors should, when possible, include a Data Availability Statement in the
       paragraph before the Acknowledgments that indicates the availability of data,
       software, code, and other materials.'
-  correct_answer:
-    text: Code sharing encouraged but optional.
-    explanation: Authors should, when possible, include a Data Availability Statement
-      in the paragraph before the Acknowledgments that indicates the availability
-      of data, software, code, and other materials
-14:
+  correct_answer: 0
+  discrepancy_reason: Language understanding
+code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 2
   has_discrepancies: false
@@ -443,10 +403,9 @@
       sharing data and code set by their funding agencies. Authors should, when possible,
       include a Data Availability Statement in the paragraph before the Acknowledgments
       that indicates the availability of data, software, code, and other materials.
-  correct_answer:
-    text: No mention of dependencies for research code.
-    explanation: no text
-15:
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
   text: 15. Versioning and persistent identifiers
   N. encoders: 2
   has_discrepancies: false
@@ -467,11 +426,9 @@
       sharing data and code set by their funding agencies. Authors should, when possible,
       include a Data Availability Statement in the paragraph before the Acknowledgments
       that indicates the availability of data, software, code, and other materials.
-  correct_answer:
-    text: No mention of a persistent identifier or specifying a version of developed
-      code.
-    explanation: no text
-16:
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
   text: 16. Code Quality Standards
   N. encoders: 2
   has_discrepancies: false
@@ -490,10 +447,9 @@
       sharing data and code set by their funding agencies. Authors should, when possible,
       include a Data Availability Statement in the paragraph before the Acknowledgments
       that indicates the availability of data, software, code, and other materials.
-  correct_answer:
-    text: The journal policies do not mention any code quality standards.
-    explanation: no text
-17:
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
   text: 17. Automatic Testing
   N. encoders: 2
   has_discrepancies: false
@@ -512,10 +468,9 @@
       sharing data and code set by their funding agencies. Authors should, when possible,
       include a Data Availability Statement in the paragraph before the Acknowledgments
       that indicates the availability of data, software, code, and other materials.
-  correct_answer:
-    text: No mention of automatic testing to verify code functionality.
-    explanation: no text
-18:
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
   text: 18. Code Documentation
   N. encoders: 2
   has_discrepancies: false
@@ -534,10 +489,9 @@
       sharing data and code set by their funding agencies. Authors should, when possible,
       include a Data Availability Statement in the paragraph before the Acknowledgments
       that indicates the availability of data, software, code, and other materials.
-  correct_answer:
-    text: No mention of standards for code documentation.
-    explanation: no text
-19:
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
   text: 19. Linting Standards
   N. encoders: 2
   has_discrepancies: false
@@ -556,10 +510,9 @@
       sharing data and code set by their funding agencies. Authors should, when possible,
       include a Data Availability Statement in the paragraph before the Acknowledgments
       that indicates the availability of data, software, code, and other materials.
-  correct_answer:
-    text: No mention of linting standards for code.
-    explanation: no text
-20:
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
   text: 20. Code Development
   N. encoders: 2
   has_discrepancies: false
@@ -578,6 +531,5 @@
       sharing data and code set by their funding agencies. Authors should, when possible,
       include a Data Availability Statement in the paragraph before the Acknowledgments
       that indicates the availability of data, software, code, and other materials.
-  correct_answer:
-    text: No mention of standards for code development such as continuous integration.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null

@@ -1,4 +1,4 @@
-1:
+rdp_exist:
   text: 1. Existence of research data policy
   N. encoders: 2
   has_discrepancies: false
@@ -32,11 +32,9 @@
       not formally peer reviewed as a part of the journal submission process. It is
       the author''s responsibility to ensure the soundness of data. Any errors in
       the data rest solely with the producers of the data set(s).'
-  correct_answer:
-    text: Research Data Policy (RDP) exists.
-    explanation: This journal applies the Taylor & Francis share upon reasonable request
-      data sharing policy
-3:
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
   text: 3. Data sharing requirements in RDP
   N. encoders: 2
   has_discrepancies: false
@@ -64,12 +62,9 @@
       We highly encourage researchers to consider the FAIR Data Principles when depositing
       data. We further advise researchers to use FAIRsharing and re3data.org to search
       for a suitable repository. These both provide a list of certified data repositories.'
-  correct_answer:
-    text: Data sharing required but not publicly (e.g. available upon request is allowed).
-    explanation: Authors agree to make data and materials supporting the results or
-      analyses presented in their paper available upon reasonable request. It is up
-      to the author to determine whether a request is reasonable.
-4:
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
   N. encoders: 2
@@ -86,13 +81,9 @@
       when depositing data. We further advise researchers to use FAIRsharing and re3data.org
       to search for a suitable repository. These both provide a list of certified
       data repositories.
-  correct_answer:
-    text: Public data sharing on a FAIR repository encouraged.
-    explanation: We highly encourage researchers to consider the FAIR Data Principles
-      when depositing data. We further advise researchers to use FAIRsharing and re3data.org
-      to search for a suitable repository. These both provide a list of certified
-      data repositories.
-2:
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
   text: 2. Data availability statement
   N. encoders: 2
   has_discrepancies: false
@@ -110,11 +101,9 @@
       Availability Statement. Please note that data should only be shared if it is
       ethically correct to do so, where this does not violate the protection of human
       subjects, or other valid ethical, privacy, or security concerns.
-  correct_answer:
-    text: Required according to the RDP.
-    explanation: Authors are required to provide a data availability statement, detailing
-      where data associated with a paper can be found and how it can be accessed
-5:
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
   text: '5. Citability and findability of data '
   N. encoders: 2
   has_discrepancies: false
@@ -129,11 +118,9 @@
       (which could be months or years after publication). We recommend choosing a
       repository that can mint a persistent digital identifier, such as a digital
       object identifier (DOI). It should also recognise a long-term preservation plan.
-  correct_answer:
-    text: DOIs or other persistent identifiers recommended for datasets or codes.
-    explanation: We recommend choosing a repository that can mint a persistent digital
-      identifier, such as a digital object identifier (DOI)
-7:
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
   text: 7. Timing of data release
   N. encoders: 2
   has_discrepancies: false
@@ -150,12 +137,9 @@
       with the data set(s). If you have selected to provide a pre-registered DOI,
       please be prepared to share the reviewer URL associated with your data deposit,
       upon request by reviewers.
-  correct_answer:
-    text: Required data must be available prior to review process.
-    explanation: At the point of submission, you will be asked to provide the DOI,
-      pre-registered DOI, hyperlink, or other persistent identifier associated with
-      the data set(s)
-8:
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
   text: 8. Recommended data sharing method
   N. encoders: 2
   has_discrepancies: true
@@ -173,17 +157,9 @@
       Availability Statement. Please note that data should only be shared if it is
       ethically correct to do so, where this does not violate the protection of human
       subjects, or other valid ethical, privacy, or security concerns.
-  correct_answer:
-    text: Data is shared upon request to authors in RDP.
-    explanation: This journal applies the Taylor & Francis share upon reasonable request
-      data sharing policy. Authors agree to make data and materials supporting the
-      results or analyses presented in their paper available upon reasonable request.
-      It is up to the author to determine whether a request is reasonable. Authors
-      are required to cite any data sets referenced in the article and provide a Data
-      Availability Statement. Please note that data should only be shared if it is
-      ethically correct to do so, where this does not violate the protection of human
-      subjects, or other valid ethical, privacy, or security concerns.
-9:
+  correct_answer: 1
+  discrepancy_reason: Difficulty in matching information and question
+data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 2
   has_discrepancies: false
@@ -193,10 +169,9 @@
   1:
     text: No mention of data/code licenses in RDP.
     explanation: https://authorservices.taylorandfrancis.com/data-sharing-policies/share-upon-reasonable-request/
-  correct_answer:
-    text: No mention of data/code licenses in RDP.
-    explanation: no text
-10:
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
   text: 10. Referee guidelines concerning research data
   N. encoders: 2
   has_discrepancies: true
@@ -208,12 +183,9 @@
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: https://editorresources.taylorandfrancis.com/reviewer-guidelines/
-  correct_answer:
-    text: Data sharing policy mentioned in refereeing guidelines.
-    explanation: "Peer reviewers and editors will be considering a manuscript\u2019\
-      s data availability statement and whether the authors have complied with the\
-      \ journal\u2019s data sharing policy."
-11:
+  correct_answer: 0
+  discrepancy_reason: Difficulty in matching information and question
+data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
@@ -227,10 +199,9 @@
   1:
     text: no text
     explanation: ''
-  correct_answer:
-    text: no text
-    explanation: ''
-12:
+  correct_answer: null
+  discrepancy_reason: null
+data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
@@ -244,10 +215,9 @@
   1:
     text: no text
     explanation: ''
-  correct_answer:
-    text: no text
-    explanation: ''
-13:
+  correct_answer: null
+  discrepancy_reason: null
+code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
   has_discrepancies: true
@@ -261,14 +231,9 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: Code sharing encouraged but optional.
-    explanation: "You may have created new code during your research; perhaps as a\
-      \ direct output of your work or as a tool to help you analyze the data you\u2019\
-      ve collected. You should also consider including this in your data sharing plan,\
-      \ especially if the code you\u2019ve created is required for others to validate\
-      \ your results."
-14:
+  correct_answer: 1
+  discrepancy_reason: Difficulty in matching information and question
+code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 2
   has_discrepancies: false
@@ -282,10 +247,9 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of dependencies for research code.
-    explanation: no text
-15:
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
   text: 15. Versioning and persistent identifiers
   N. encoders: 2
   has_discrepancies: false
@@ -301,11 +265,9 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of a persistent identifier or specifying a version of developed
-      code.
-    explanation: no text
-16:
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
   text: 16. Code Quality Standards
   N. encoders: 2
   has_discrepancies: false
@@ -319,10 +281,9 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: The journal policies do not mention any code quality standards.
-    explanation: no text
-17:
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
   text: 17. Automatic Testing
   N. encoders: 2
   has_discrepancies: false
@@ -336,10 +297,9 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of automatic testing to verify code functionality.
-    explanation: no text
-18:
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
   text: 18. Code Documentation
   N. encoders: 2
   has_discrepancies: false
@@ -353,10 +313,9 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of standards for code documentation.
-    explanation: no text
-19:
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
   text: 19. Linting Standards
   N. encoders: 2
   has_discrepancies: false
@@ -370,10 +329,9 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of linting standards for code.
-    explanation: no text
-20:
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
   text: 20. Code Development
   N. encoders: 2
   has_discrepancies: false
@@ -387,6 +345,5 @@
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer:
-    text: No mention of standards for code development such as continuous integration.
-    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
