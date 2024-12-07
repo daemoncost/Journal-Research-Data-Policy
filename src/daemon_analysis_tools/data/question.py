@@ -124,3 +124,66 @@ class Question:
 
     def __repr__(self):
         return f"Question(text={self.text}, answers={self.answers})"
+
+def resolve_discrepancy_with_input(
+    self,
+    correct_answer: Optional[Union[str, int]] = None,
+    discrepancy_reason: Optional[str] = None,
+) -> None:
+    """
+    Resolve the discrepancy by choosing the correct answer.
+
+    :param correct_answer: The correct answer to resolve the discrepancy.
+    :param discrepancy_reason: The reason for the discrepancy, if any.
+    Select one of Text missing
+                Language understanding
+                Difficulty in matching information and question
+                Other: free text
+    """
+    if self.has_discrepancies():
+        if correct_answer is not None:
+            if isinstance(correct_answer, str):
+                for answer in self.answers:
+                    if answer.text == correct_answer:
+                        self.correct_answer = answer
+                        break
+                else:  # No match found
+                    print(f"No match found for the provided correct answer: '{correct_answer}'.")
+                    correct_answer = None  # Reset to require manual input
+
+            elif isinstance(correct_answer, int):
+                assert 0 <= correct_answer <= len(self.answers) - 1, (
+                    "If `correct_answer` is an `int`, it must be the respondent "
+                    "number as reported in `self.print_qa()`"
+                )
+                self.correct_answer_encoder_id = correct_answer
+                self.correct_answer = self.answers[correct_answer]
+            else:
+                raise ValueError(
+                    "Invalid type for `correct_answer`. Provide a valid string or integer."
+                )
+
+        if correct_answer is None:  # Ask for manual input
+            print("The following answers have discrepancies:")
+            self.print_qa()
+            correct_answer = int(input("Enter the respondent number (0-based index) for the correct answer: "))
+            discrepancy_reason = input(
+                "Enter the discrepancy reason (Text missing/Language understanding/"
+                "Difficulty in matching information and question/Other: free text): "
+            )
+            assert 0 <= correct_answer <= len(self.answers) - 1, (
+                "Respondent number must be valid as per the printed options."
+            )
+            self.correct_answer_encoder_id = correct_answer
+            self.correct_answer = self.answers[correct_answer]
+
+        if discrepancy_reason:
+            self.discrepancy_reason = discrepancy_reason
+        else:
+            raise ValueError(
+                "You must provide `discrepancy_reason` to resolve discrepancies."
+            )
+    else:
+        self.correct_answer_encoder_id = 0
+        self.correct_answer = self.answers[0]
+        self.discrepancy_reason = discrepancy_reason
