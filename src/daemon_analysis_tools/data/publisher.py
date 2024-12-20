@@ -42,9 +42,9 @@ class Publisher:
             for question_text, question in questions.items():
                 answer = question.get_final_answer()
                 if answer:
-                    final_data[
-                        question_text
-                    ] = answer.text  # We are only passing the text to Journal
+                    final_data[question_text] = (
+                        answer.text
+                    )  # We are only passing the text to Journal
                     # final_data["explanation"] = answer.explanation
                 else:
                     final_data[question_text] = "Unknown"
