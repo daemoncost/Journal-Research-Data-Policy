@@ -1,6 +1,7 @@
-from glob import glob
-import yaml
 import shutil
+from glob import glob
+
+import yaml
 
 question_number_to_question_id = {
     1: "rdp_exist",
