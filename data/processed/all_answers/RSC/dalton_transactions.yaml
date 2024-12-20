@@ -1,0 +1,524 @@
+1:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: "\nOur data sharing policy\n\nThe Royal Society of Chemistry believes\
+      \ that where possible, all data associated with the research in a manuscript\
+      \ should be Findable, Accessible, Interoperable and Reusable (FAIR), enabling\
+      \ other researchers to replicate and build on that research.\n\nWe strongly\
+      \ encourage authors to deposit the data underpinning their research in appropriate\
+      \ repositories.\n\nFor all submissions to Royal Society of Chemistry journals,\
+      \ any data required to understand and verify the research in an article must\
+      \ be made available on submission. To comply, we suggest authors deposit their\
+      \ data in an appropriate repository. Where this isn\u2019t possible, we ask\
+      \ authors to include the data as part of the article Supplementary Information.\n\
+      \nSome journals may have additional subject requirements for both sharing and/or\
+      \ publishing supporting data, so please ensure you check the journal specific\
+      \ guidelines."
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: "We want our authors and readers to trust the research that is published\
+      \ in our journals. To that end, we support the entire community to achieve best\
+      \ practice, in both the sharing and archiving of research data.\n\nSee our Data\
+      \ sharing guidance for more details on specific data types and recommended repositories\
+      \ and the requirement to include a data availability statement (DAS) in all\
+      \ articles. \n\nPlease refer to our Experimental reporting requirements for\
+      \ further guidance on the experimental details and observations you should include\
+      \ in your manuscript or Supplementary Information."
+  correct_answer: null
+  discrepancy_reason: null
+3:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing required only for specific types of data.
+    explanation: 'Where deposition in a particular repository is required for submission,
+      this is indicated in the table below.  Crystal structure (organic / organometallic
+      / metal organic)
+
+      Required for all RSC journals, All papers in this category are expected to have
+      detailed characterization of the nanomaterials and, if applicable, the matrix
+      that they are used in.
+
+      Where the compound is molecular, authors must provide data to unequivocally
+      establish its homogeneity, purity and identification'
+  1:
+    text: Public data sharing of all data required.
+    explanation: 'We strongly encourage authors to deposit the data underpinning their
+      research in appropriate repositories.
+
+
+      For all submissions to Royal Society of Chemistry journals, any data required
+      to understand and verify the research in an article must be made available on
+      submission. '
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: Public data sharing required only for specific types of data.
+    explanation: 'Where deposition in a particular repository is required for submission,
+      this is indicated in the table below.  Crystal structure (organic / organometallic
+      / metal organic)
+
+      Required for all RSC journals, All papers in this category are expected to have
+      detailed characterization of the nanomaterials and, if applicable, the matrix
+      that they are used in.
+
+      Where the compound is molecular, authors must provide data to unequivocally
+      establish its homogeneity, purity and identification'
+  discrepancy_reason: Text missing and language understanding
+4:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: "Where deposition in a particular repository is required for submission,\
+      \ this is indicated in the table below. Crystal structure (organic / organometallic\
+      \ / metal organic)\nRequired for all RSC journals\nCambridge Structural Database\
+      \ (CSD) \u2013 managed by the Cambridge Crystallographic Data Centre (CCDC)\
+      \ (confirmed as fair)"
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: The Royal Society of Chemistry believes that where possible, all
+      data associated with the research in a manuscript should be Findable, Accessible,
+      Interoperable and Reusable (FAIR), enabling other researchers to replicate and
+      build on that research.
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: "Where deposition in a particular repository is required for submission,\
+      \ this is indicated in the table below. Crystal structure (organic / organometallic\
+      \ / metal organic)\nRequired for all RSC journals\nCambridge Structural Database\
+      \ (CSD) \u2013 managed by the Cambridge Crystallographic Data Centre (CCDC)\
+      \ (confirmed as fair)"
+  discrepancy_reason: Text missing
+2:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: "To maintain high standards of transparency, research reproducibility,\
+      \ and to promote the reuse of new findings, a data availability statement (DAS)\
+      \ is required to be submitted alongside all articles. The following statement\
+      \ is generally not acceptable \u201CData are available upon request from the\
+      \ authors\".\n"
+  1:
+    text: Required according to the RDP.
+    explanation: To maintain high standards of transparency, research reproducibility,
+      and to promote the reuse of new findings, a data availability statement (DAS)
+      is required to be submitted alongside all articles.
+  correct_answer: null
+  discrepancy_reason: null
+5:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'We strongly encourage the use of repositories offering persistent
+      identifiers, such as DOIs, for deposited datasets.
+
+      '
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: We strongly encourage the use of repositories offering persistent
+      identifiers, such as DOIs, for deposited datasets.
+  correct_answer: null
+  discrepancy_reason: null
+7:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Required data must be available prior to review process.
+    explanation: "Where deposition in a particular repository is required for submission,\
+      \ this is indicated in the table below. Crystal structure (organic / organometallic\
+      \ / metal organic) Required for all RSC journals. Also For all submissions to\
+      \ Royal Society of Chemistry journals, any data required to understand and verify\
+      \ the research in an article must be made available on submission. \n"
+  1:
+    text: Required data must be available prior to review process.
+    explanation: 'For all submissions to Royal Society of Chemistry journals, any
+      data required to understand and verify the research in an article must be made
+      available on submission. '
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: Required data must be available prior to review process.
+    explanation: "Where deposition in a particular repository is required for submission,\
+      \ this is indicated in the table below. Crystal structure (organic / organometallic\
+      \ / metal organic) Required for all RSC journals. Also For all submissions to\
+      \ Royal Society of Chemistry journals, any data required to understand and verify\
+      \ the research in an article must be made available on submission. \n"
+  discrepancy_reason: null
+8:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Authors and referees should note the following guidelines for articles\
+      \ reporting electrochemical data and setup of batteries. It is the authors\u2019\
+      \ responsibility to ensure that the following information is provided in the\
+      \ main manuscript or Supplementary Information as appropriate. We strongly encourage\
+      \ the use of repositories offering persistent identifiers, such as DOIs, for\
+      \ deposited datasets."
+  1:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Data should be submitted to a discipline-specific, community-recognised\
+      \ repository where possible, or alternatively to an institutional repository,\
+      \ or a generalist repository if no subject discipline repository is available\
+      \ for the given data type.\n\nThe Royal Society of Chemistry supports the TRUST\
+      \ principles for digital repositories \u2013 Transparency, Responsibility, User\
+      \ focus, Sustainability and Technology \u2013 for repository selection.\n\n\
+      Where this isn\u2019t possible, we ask authors to include the data as part of\
+      \ the article Supplementary Information.\n"
+  correct_answer: null
+  discrepancy_reason: null
+9:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: n.a.
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+10:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Please inform the editor if: You wish to see any supporting data\
+      \ not submitted for publication, or any previous unpublished paper,\nAlso:\n\
+      Supplementary information (SI) +\n\nReviewers are asked to assess any ESI that\
+      \ is submitted alongside a manuscript. ESI is classed as any Electronic Supplementary\
+      \ Information that provides additional or supporting information, as well as\
+      \ other file/media types, including large data sets, movies etc. Please check\
+      \ that appropriate material is published as ESI rather than being included in\
+      \ the article. Any ESI supplied upon submission must be reviewed thoroughly,\
+      \ and to the same standard as the article.\n\nReviewers should refer to the\
+      \ Royal Society of Chemistry ESI guidelines, which explain in more detail our\
+      \ requirements for publication.\n \nAuthentication of new compounds +\n\nNot\
+      \ all papers will contain Spectroscopic Information, and even among those journals\
+      \ that do, guidelines can vary significantly. It is therefore very important\
+      \ to refer to the individual journal specific guidelines, which explain in more\
+      \ detail our requirements for publication. Spectroscopic information can often\
+      \ be located in the ESI that has been submitted with the manuscript. Please\
+      \ make sure that the ESI is checked thoroughly so as not to miss important data.\n\
+      \nSpectroscopic information necessary for the assignment of a structure should\
+      \ normally be given. How complete this information must be depends upon the\
+      \ circumstances; the structure of a compound obtained from an unusual reaction\
+      \ or isolated from a natural source needs much stronger supporting evidence\
+      \ than one derived by a standard reaction from a precursor with an undisputed\
+      \ structure.\n\nReviewers are asked to assess the evidence in support of the\
+      \ homogeneity and structure of all new compounds. No hard and fast rules can\
+      \ be laid down to cover all types of compounds. For example, an accurate mass\
+      \ measurement of a molecular ion does not provide evidence of purity of a compound\
+      \ and must be accompanied by independent evidence of homogeneity (for example,\
+      \ HPLC).\n \nX-ray crystallographic work +\n\nNot all papers will contain X-ray\
+      \ crystallographic work, so it is important to refer to the individual journal\
+      \ specific guidelines and X-ray crystallography guidelines which explain in\
+      \ more detail our requirements for publication. Papers containing X-ray crystallographic\
+      \ work will be reviewed for their chemical interest. When reviewing manuscripts\
+      \ containing crystal structures, reviewers are not usually expected to fully\
+      \ check the crystal data for accuracy, but should pay attention to the quality\
+      \ of the experimental crystallographic work. The editor may also choose to send\
+      \ the manuscript to a specialist crystallographer for specific crystallographic\
+      \ review.\n\nIn a Communication a structure must usually be fully refined. For\
+      \ a Full paper, partial refinement may be sufficient if only being used to establish\
+      \ connectivity, confirm a trend or if the full structure has previously been\
+      \ published as a Communication, at the editor\u2019s discretion. These Full\
+      \ papers must reference the original Communication and relevant CCDC/ICSD numbers.\
+      \ If the crystallography is discussed again at length in the Full paper, the\
+      \ data should be presented in full and, where necessary, redeposited with the\
+      \ CCDC.\n\nIn some Full papers where the results of a crystal structure determination\
+      \ are discussed but details or extensive discussion are considered unnecessary,\
+      \ the data relating to the crystal structure determination may be included as\
+      \ electronic supplementary information (ESI), rather than discussed in detail\
+      \ in the manuscript. This is acceptable if there is enough data in the ESI to\
+      \ allow reviewers/crystallographers to confirm the reported results, and if\
+      \ it does not lead to unnecessary fragmentation of the work.\n"
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: No guidelines mentioned in the RDP
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Please inform the editor if: You wish to see any supporting data\
+      \ not submitted for publication, or any previous unpublished paper,\nAlso:\n\
+      Supplementary information (SI) +\n\nReviewers are asked to assess any ESI that\
+      \ is submitted alongside a manuscript. ESI is classed as any Electronic Supplementary\
+      \ Information that provides additional or supporting information, as well as\
+      \ other file/media types, including large data sets, movies etc. Please check\
+      \ that appropriate material is published as ESI rather than being included in\
+      \ the article. Any ESI supplied upon submission must be reviewed thoroughly,\
+      \ and to the same standard as the article.\n\nReviewers should refer to the\
+      \ Royal Society of Chemistry ESI guidelines, which explain in more detail our\
+      \ requirements for publication.\n \nAuthentication of new compounds +\n\nNot\
+      \ all papers will contain Spectroscopic Information, and even among those journals\
+      \ that do, guidelines can vary significantly. It is therefore very important\
+      \ to refer to the individual journal specific guidelines, which explain in more\
+      \ detail our requirements for publication. Spectroscopic information can often\
+      \ be located in the ESI that has been submitted with the manuscript. Please\
+      \ make sure that the ESI is checked thoroughly so as not to miss important data.\n\
+      \nSpectroscopic information necessary for the assignment of a structure should\
+      \ normally be given. How complete this information must be depends upon the\
+      \ circumstances; the structure of a compound obtained from an unusual reaction\
+      \ or isolated from a natural source needs much stronger supporting evidence\
+      \ than one derived by a standard reaction from a precursor with an undisputed\
+      \ structure.\n\nReviewers are asked to assess the evidence in support of the\
+      \ homogeneity and structure of all new compounds. No hard and fast rules can\
+      \ be laid down to cover all types of compounds. For example, an accurate mass\
+      \ measurement of a molecular ion does not provide evidence of purity of a compound\
+      \ and must be accompanied by independent evidence of homogeneity (for example,\
+      \ HPLC).\n \nX-ray crystallographic work +\n\nNot all papers will contain X-ray\
+      \ crystallographic work, so it is important to refer to the individual journal\
+      \ specific guidelines and X-ray crystallography guidelines which explain in\
+      \ more detail our requirements for publication. Papers containing X-ray crystallographic\
+      \ work will be reviewed for their chemical interest. When reviewing manuscripts\
+      \ containing crystal structures, reviewers are not usually expected to fully\
+      \ check the crystal data for accuracy, but should pay attention to the quality\
+      \ of the experimental crystallographic work. The editor may also choose to send\
+      \ the manuscript to a specialist crystallographer for specific crystallographic\
+      \ review.\n\nIn a Communication a structure must usually be fully refined. For\
+      \ a Full paper, partial refinement may be sufficient if only being used to establish\
+      \ connectivity, confirm a trend or if the full structure has previously been\
+      \ published as a Communication, at the editor\u2019s discretion. These Full\
+      \ papers must reference the original Communication and relevant CCDC/ICSD numbers.\
+      \ If the crystallography is discussed again at length in the Full paper, the\
+      \ data should be presented in full and, where necessary, redeposited with the\
+      \ CCDC.\n\nIn some Full papers where the results of a crystal structure determination\
+      \ are discussed but details or extensive discussion are considered unnecessary,\
+      \ the data relating to the crystal structure determination may be included as\
+      \ electronic supplementary information (ESI), rather than discussed in detail\
+      \ in the manuscript. This is acceptable if there is enough data in the ESI to\
+      \ allow reviewers/crystallographers to confirm the reported results, and if\
+      \ it does not lead to unnecessary fragmentation of the work.\n"
+  discrepancy_reason: Text missing
+11:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Crystal structure (organic / organometallic / metal organic); Crystal structure
+      (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM;
+      bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates;
+      Input/configuration files and program output; Materials simulation data including
+      electronic structure and molecular dynamics; Computational materials science;
+      Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral
+      data for small chemical molecules, metabolomics, exposomics; Electrophoretic
+      gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages,
+      multidimensional life sciences image data (cell and tissue); Materials (Various);
+      Materials simulation data including electronic structure and molecular dynamics;
+      Computational materials science; All proteomics data; Proteomics mass spectrometry;
+      Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp),
+      e.g.single-base nucleotide substitutions, small-scale deletion or insertions;
+      Human genomic structural variation data (>50bp), e.g. insertions, deletions,
+      translocations; Gene expression data, array- and sequence-based; High-throughput
+      functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions;
+      miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence
+      data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric
+      and earth observation research, environmental data; Environmental and ecological
+      data; Geochemical, geochronological, and petrological data; Climate or Earth
+      system research, climate model data; Functional enzymology data (kinetic and
+      experimental data); Flow cytometry data; Protein circular dichroism and protein
+      synchrotron radiation circular dichroism ; Intermolecular and supramolecular
+      interactions of molecular systems, binding, assembly, and interaction phenomena;
+      Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials;
+      Computational studies and modelling; Electrophoretic gels and blots;Fluorescence
+      sensors; Inorganic and organometallic compounds; Macromolecular structure and
+      sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers
+      and macromolecules; Synthetic procedures; System models
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: Crystal structure (organic / organometallic / metal organic); Crystal structure
+      (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM;
+      bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates;
+      Input/configuration files and program output; Materials simulation data including
+      electronic structure and molecular dynamics; Computational materials science;
+      Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral
+      data for small chemical molecules, metabolomics, exposomics; Electrophoretic
+      gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages,
+      multidimensional life sciences image data (cell and tissue); Materials (Various);
+      Materials simulation data including electronic structure and molecular dynamics;
+      Computational materials science; All proteomics data; Proteomics mass spectrometry;
+      Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp),
+      e.g.single-base nucleotide substitutions, small-scale deletion or insertions;
+      Human genomic structural variation data (>50bp), e.g. insertions, deletions,
+      translocations; Gene expression data, array- and sequence-based; High-throughput
+      functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions;
+      miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence
+      data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric
+      and earth observation research, environmental data; Environmental and ecological
+      data; Geochemical, geochronological, and petrological data; Climate or Earth
+      system research, climate model data; Functional enzymology data (kinetic and
+      experimental data); Flow cytometry data; Protein circular dichroism and protein
+      synchrotron radiation circular dichroism ; Intermolecular and supramolecular
+      interactions of molecular systems, binding, assembly, and interaction phenomena;
+      Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials;
+      Computational studies and modelling; Electrophoretic gels and blots;Fluorescence
+      sensors; Inorganic and organometallic compounds; Macromolecular structure and
+      sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers
+      and macromolecules; Synthetic procedures; System models
+    explanation: ''
+  discrepancy_reason: Text missing
+12:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Batteries.Crystal structure (organic / organometallic / metal organic),
+      Inorganic and organometallic compounds
+    explanation: ''
+  1:
+    text: Small molecule crystal data
+    explanation: ''
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: Batteries.Crystal structure (organic / organometallic / metal organic),
+      Inorganic and organometallic compounds
+    explanation: ''
+  discrepancy_reason: Text missing
+13:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: "Research data generally refers to the results of observations or\
+      \ experiments that validate your research findings. It forms part of a wider\
+      \ group of useful materials associated with your research project, including\
+      \ but not limited to:\n\n    raw or processed data and metadata files, e.g.\
+      \ spectra, images, structure files\n    software and code, including software\
+      \ settings\nWe strongly encourage authors to deposit the data underpinning their\
+      \ research in appropriate repositories."
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: We encourage authors to add formal bibliographic references for software
+      and code associated with their articles in Data Availability Statements and/or
+      to directly credit use of other software and code by adding citations to the
+      main text of their article at the relevant point.
+  correct_answer: null
+  discrepancy_reason: null
+14:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: n.a.
+  1:
+    text: No mention of dependencies for research code.
+    explanation: No comments for code reproducibility
+  correct_answer: null
+  discrepancy_reason: null
+15:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: "Please cite the specific release where possible \u2013 find out\
+      \ more about releases on GitHub.[Name of code creators, format: A. Name, B.\
+      \ Name and C. Name], [Year], [Name of code repository / type of code], [DOI,\
+      \ or URL if not available \u2013 in the instance where code has been deposited\
+      \ in GitHub and Zenodo, as per the guidelines above, the Zenodo DOI is preferred\
+      \ for bibliographic references]"
+  1:
+    text: Journal policies require a persistent identifier or specifying a version
+      of developed code.
+    explanation: Authors are asked to provide the names of all code creators in the
+      reference, the name of the repository, and a DOI, although a URL can be provided
+      if a DOI is not available. Please cite the specific release where possible.
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: "Please cite the specific release where possible \u2013 find out\
+      \ more about releases on GitHub.[Name of code creators, format: A. Name, B.\
+      \ Name and C. Name], [Year], [Name of code repository / type of code], [DOI,\
+      \ or URL if not available \u2013 in the instance where code has been deposited\
+      \ in GitHub and Zenodo, as per the guidelines above, the Zenodo DOI is preferred\
+      \ for bibliographic references]"
+  discrepancy_reason: Text missing
+16:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: n.a.
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: No comments for code quality standards
+  correct_answer: null
+  discrepancy_reason: null
+17:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: n.a.
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: No comments about automatic testing for code
+  correct_answer: null
+  discrepancy_reason: null
+18:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: No mention of standards for code documentation.
+    explanation: n.a.
+  1:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: "Find out how to cite GitHub-deposited code.  Please cite the specific\
+      \ release where possible \u2013 find out more about releases on GitHub."
+  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
+    text: No mention of standards for code documentation.
+    explanation: n.a.
+  discrepancy_reason: Difficulty in matching information and question
+19:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: n.a.
+  1:
+    text: No mention of linting standards for code.
+    explanation: No comments about linting standards
+  correct_answer: null
+  discrepancy_reason: null
+20:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: n.a.
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: No comments about code development
+  correct_answer: null
+  discrepancy_reason: null
