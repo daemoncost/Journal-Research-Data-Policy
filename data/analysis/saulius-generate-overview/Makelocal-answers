@@ -1,0 +1,51 @@
+#--*- Makefile -*--
+#*
+# Generate an overview of the collected Journal policy files.
+#**
+
+INPUT_DIR  ?= inputs
+OUTPUT_DIR ?= outputs
+
+INPUT_YAMLS ?= $(shell find -L ${INPUT_DIR}/yaml/ -name '*.yaml')
+
+OUTPUT_ALL_ANSWERS_CSV ?= ${OUTPUT_DIR}/all-answers.csv
+OUTPUT_ALL_ANSWERS_TSV ?= ${OUTPUT_DIR}/all-answers.tsv
+
+.PHONY: all clean distclean mostlyclean cleanAll
+
+all: ${OUTPUT_ALL_ANSWERS_CSV} ${OUTPUT_ALL_ANSWERS_TSV}
+
+${OUTPUT_ALL_ANSWERS_TSV}: $(sort ${INPUT_YAMLS})
+	date +"# %F %T %Z" > $@
+	echo "NAnsw,File,Key,Quest,Discrepancies?,IdxCorrect,AnsKeys,Answers..." \
+	| csv2tab >> $@
+	yq -o csv ".[] \
+	| [ \
+		filename, \
+		key + \":\", \
+		.text, \
+		.has_discrepancies, \
+		(.correct_answer | (with (select (. == null); . = \"\"))), \
+		[.[] | select (key == \"?\" or key == \"??\") | key + \":\"] | join (\",\"), \
+		(.[] | select (key == \"?\" or key == \"??\") | .text) \
+	]" \
+	$^ \
+	| csv2tab \
+	| awk -F'\t' '{OFS=FS; print NF-6, $$0}' \
+	>> $@
+
+%.csv: %.tsv
+	date +"# %F %T %Z" > $@
+	tail -n +2 $< | tab2csv >> $@
+
+.PHONY: answers-clean
+
+answers-clean:
+	rm -f ${OUTPUT_ALL_ANSWERS_CSV}
+	rm -f ${OUTPUT_ALL_ANSWERS_TSV}
+
+clean: answers-clean
+
+mostlyclean: clean
+
+cleanAll distclean: mostlyclean
