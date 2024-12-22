@@ -17,7 +17,7 @@ all: ${OUTPUT_ALL_ANSWERS_CSV} ${OUTPUT_ALL_ANSWERS_TSV}
 
 ${OUTPUT_ALL_ANSWERS_TSV}: $(sort ${INPUT_YAMLS})
 	date +"# %F %T %Z" > $@
-	echo "NAnsw,File,Key,Quest,Discrepancies?,IdxCorrect,AnsKeys,Answers..." \
+	echo "NAnsw,File,Key,Quest,Discrepancies?,IdxCorrect,AnsKeys,Answer1,Answer2,Answer3,Other Answers..." \
 	| csv2tab >> $@
 	yq -o csv ".[] \
 	| [ \
