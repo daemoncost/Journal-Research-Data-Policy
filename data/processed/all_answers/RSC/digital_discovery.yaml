@@ -49,13 +49,7 @@
       For all submissions to Royal Society of Chemistry journals, any data required
       to understand and verify the research in an article must be made available on
       submission. '
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Public data sharing required only for specific types of data.
-    explanation: 'Where deposition in a particular repository is required for submission,
-      this is indicated in the table below.  Crystal structure (organic / organometallic
-      / metal organic)
-
-      Required for all RSC journals,'
+  correct_answer: 0
   discrepancy_reason: Text missing and language understanding
 4:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -79,17 +73,7 @@
       data associated with the research in a manuscript should be Findable, Accessible,
       Interoperable and Reusable (FAIR), enabling other researchers to replicate and
       build on that research.
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Public data sharing on a FAIR repository required only for specific types
-      of data (e.g. genetic data has to be shared on a FAIR repository but no other
-      data).
-    explanation: 'Where deposition in a particular repository is required for submission,
-      this is indicated in the table below.  Crystal structure (organic / organometallic
-      / metal organic)
-
-      Required for all RSC journals, (nearly all Authors are expected to submit both
-      their code and data supporting their manuscript to community-recognized data
-      repositories or a general repository if no community resource is available)'
+  correct_answer: 0
   discrepancy_reason: Text missing
 2:
   text: 2. Data availability statement
@@ -169,13 +153,7 @@
     explanation: 'For all submissions to Royal Society of Chemistry journals, any
       data required to understand and verify the research in an article must be made
       available on submission. '
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Required data must be available prior to review process.
-    explanation: 'Where deposition in a particular repository is required for submission,
-      this is indicated in the table below. Crystal structure (organic / organometallic
-      / metal organic) Required for all RSC journals. Also For all submissions to
-      Royal Society of Chemistry journals, any data required to understand and verify
-      the research in an article must be made available on submission. '
+  correct_answer: null
   discrepancy_reason: null
 8:
   text: 8. Recommended data sharing method
@@ -281,65 +259,7 @@
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: No guidelines mentioned in the RDP
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Additional data or code referee (referee that solely confirms that code
-      and data are shared following the RDP).
-    explanation: "The code and/or data central to the main findings of the study once\
-      \ deposited or shared confidentially with reviewers are being reviewed to ensure\
-      \ their reproducibility and reusability. On Digital Discovery we invite a data\
-      \ reviewer (in addition to the regular two reviewers) who verifies that the\
-      \ code is functional and reproduces the reported findings. They also check if\
-      \ the data and/or code are appropriately presented and documented.\n\nPlease\
-      \ inform the editor if: You wish to see any supporting data not submitted for\
-      \ publication, or any previous unpublished paper,\nAlso:\nSupplementary information\
-      \ (SI) +\n\nReviewers are asked to assess any ESI that is submitted alongside\
-      \ a manuscript. ESI is classed as any Electronic Supplementary Information that\
-      \ provides additional or supporting information, as well as other file/media\
-      \ types, including large data sets, movies etc. Please check that appropriate\
-      \ material is published as ESI rather than being included in the article. Any\
-      \ ESI supplied upon submission must be reviewed thoroughly, and to the same\
-      \ standard as the article.\n\nReviewers should refer to the Royal Society of\
-      \ Chemistry ESI guidelines, which explain in more detail our requirements for\
-      \ publication.\n \nAuthentication of new compounds +\n\nNot all papers will\
-      \ contain Spectroscopic Information, and even among those journals that do,\
-      \ guidelines can vary significantly. It is therefore very important to refer\
-      \ to the individual journal specific guidelines, which explain in more detail\
-      \ our requirements for publication. Spectroscopic information can often be located\
-      \ in the ESI that has been submitted with the manuscript. Please make sure that\
-      \ the ESI is checked thoroughly so as not to miss important data.\n\nSpectroscopic\
-      \ information necessary for the assignment of a structure should normally be\
-      \ given. How complete this information must be depends upon the circumstances;\
-      \ the structure of a compound obtained from an unusual reaction or isolated\
-      \ from a natural source needs much stronger supporting evidence than one derived\
-      \ by a standard reaction from a precursor with an undisputed structure.\n\n\
-      Reviewers are asked to assess the evidence in support of the homogeneity and\
-      \ structure of all new compounds. No hard and fast rules can be laid down to\
-      \ cover all types of compounds. For example, an accurate mass measurement of\
-      \ a molecular ion does not provide evidence of purity of a compound and must\
-      \ be accompanied by independent evidence of homogeneity (for example, HPLC).\n\
-      \ \nX-ray crystallographic work +\n\nNot all papers will contain X-ray crystallographic\
-      \ work, so it is important to refer to the individual journal specific guidelines\
-      \ and X-ray crystallography guidelines which explain in more detail our requirements\
-      \ for publication. Papers containing X-ray crystallographic work will be reviewed\
-      \ for their chemical interest. When reviewing manuscripts containing crystal\
-      \ structures, reviewers are not usually expected to fully check the crystal\
-      \ data for accuracy, but should pay attention to the quality of the experimental\
-      \ crystallographic work. The editor may also choose to send the manuscript to\
-      \ a specialist crystallographer for specific crystallographic review.\n\nIn\
-      \ a Communication a structure must usually be fully refined. For a Full paper,\
-      \ partial refinement may be sufficient if only being used to establish connectivity,\
-      \ confirm a trend or if the full structure has previously been published as\
-      \ a Communication, at the editor\u2019s discretion. These Full papers must reference\
-      \ the original Communication and relevant CCDC/ICSD numbers. If the crystallography\
-      \ is discussed again at length in the Full paper, the data should be presented\
-      \ in full and, where necessary, redeposited with the CCDC.\n\nIn some Full papers\
-      \ where the results of a crystal structure determination are discussed but details\
-      \ or extensive discussion are considered unnecessary, the data relating to the\
-      \ crystal structure determination may be included as electronic supplementary\
-      \ information (ESI), rather than discussed in detail in the manuscript. This\
-      \ is acceptable if there is enough data in the ESI to allow reviewers/crystallographers\
-      \ to confirm the reported results, and if it does not lead to unnecessary fragmentation\
-      \ of the work.\n"
+  correct_answer: 0
   discrepancy_reason: Text missing
 11:
   text: '11. Unique policies for data types
@@ -350,7 +270,7 @@
   N. encoders: 2
   has_discrepancies: true
   0:
-    text: 'Crystal structure (organic / organometallic / metal organic); Crystal structure
+    text: Crystal structure (organic / organometallic / metal organic); Crystal structure
       (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM;
       bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates;
       Input/configuration files and program output; Materials simulation data including
@@ -378,46 +298,12 @@
       Computational studies and modelling; Electrophoretic gels and blots;Fluorescence
       sensors; Inorganic and organometallic compounds; Macromolecular structure and
       sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers
-      and macromolecules; Synthetic procedures; System models
-
-      '
+      and macromolecules; Synthetic procedures; System models;Batteries
     explanation: ''
   1:
     text: .nan
     explanation: ''
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: 'Crystal structure (organic / organometallic / metal organic); Crystal structure
-      (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM;
-      bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates;
-      Input/configuration files and program output; Materials simulation data including
-      electronic structure and molecular dynamics; Computational materials science;
-      Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral
-      data for small chemical molecules, metabolomics, exposomics; Electrophoretic
-      gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages,
-      multidimensional life sciences image data (cell and tissue); Materials (Various);
-      Materials simulation data including electronic structure and molecular dynamics;
-      Computational materials science; All proteomics data; Proteomics mass spectrometry;
-      Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp),
-      e.g.single-base nucleotide substitutions, small-scale deletion or insertions;
-      Human genomic structural variation data (>50bp), e.g. insertions, deletions,
-      translocations; Gene expression data, array- and sequence-based; High-throughput
-      functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions;
-      miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence
-      data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric
-      and earth observation research, environmental data; Environmental and ecological
-      data; Geochemical, geochronological, and petrological data; Climate or Earth
-      system research, climate model data; Functional enzymology data (kinetic and
-      experimental data); Flow cytometry data; Protein circular dichroism and protein
-      synchrotron radiation circular dichroism ; Intermolecular and supramolecular
-      interactions of molecular systems, binding, assembly, and interaction phenomena;
-      Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials;
-      Computational studies and modelling; Electrophoretic gels and blots;Fluorescence
-      sensors; Inorganic and organometallic compounds; Macromolecular structure and
-      sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers
-      and macromolecules; Synthetic procedures; System models
-
-      '
-    explanation: ''
+  correct_answer: 0
   discrepancy_reason: Text missing
 12:
   text: '12. Unique policies for data types
@@ -428,23 +314,19 @@
   N. encoders: 2
   has_discrepancies: true
   0:
-    text: Batteries; Crystal structure (organic / organometallic / metal organic);
-      code; hardware
+    text: ' Crystal structure (organic / organometallic / metal organic); code; hardware'
     explanation: ''
   1:
     text: Small molecule crystal data
     explanation: ''
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Batteries; Crystal structure (organic / organometallic / metal organic);
-      code; hardware
-    explanation: ''
+  correct_answer: 0
   discrepancy_reason: Text missing
 13:
   text: 13. Code sharing requirements
   N. encoders: 2
-  has_discrepancies: false
+  has_discrepancies: true
   0:
-    text: Code sharing encouraged but optional.
+    text: ' Code sharing encouraged but optional.'
     explanation: If authors are unable to publicly share their code and data due to
       employer policies or previous arrangements they still need to release as much
       data and tools as possible (datasets, analysis scripts, etc.) and detail the
@@ -458,8 +340,8 @@
       and code associated with their articles in Data Availability Statements and/or
       to directly credit use of other software and code by adding citations to the
       main text of their article at the relevant point.
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Text missing and Language understanding
 14:
   text: 14. Code Reproducibility
   N. encoders: 2
@@ -487,11 +369,7 @@
     explanation: Authors are asked to provide the names of all code creators in the
       reference, the name of the repository, and a DOI, although a URL can be provided
       if a DOI is not available. Please cite the specific release where possible.
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Journal policies encourage/recommend a persistent identifier or specifying
-      a version of developed code.
-    explanation: In case of code deposition, the exact version and date of access
-      to a repository have to be described for future reproducibility
+  correct_answer: 0
   discrepancy_reason: Text missing
 16:
   text: 16. Code Quality Standards
@@ -528,10 +406,8 @@
     text: The journal policies encourage/recommend standards for code documentation.
     explanation: "Find out how to cite GitHub-deposited code.  Please cite the specific\
       \ release where possible \u2013 find out more about releases on GitHub."
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: No mention of standards for code documentation.
-    explanation: n.a.
-  discrepancy_reason: Difficulty in matching information and question
+  correct_answer: 0
+  discrepancy_reason: Language understanding
 19:
   text: 19. Linting Standards
   N. encoders: 2
