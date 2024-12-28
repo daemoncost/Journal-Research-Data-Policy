@@ -152,117 +152,8 @@
       For all submissions to Royal Society of Chemistry journals, any data required
       to understand and verify the research in an article must be made available on
       submission. '
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Public data sharing required only for specific types of data.
-    explanation: "Where deposition in a particular repository is required for submission,\
-      \ this is indicated in the table below.  Crystal structure (organic / organometallic\
-      \ / metal organic)\nRequired for all RSC journals\n\nOrganic compounds\n\nAuthors\
-      \ are required to provide unequivocal support for the purity and assigned structure\
-      \ of all compounds using a combination of the following characterisation techniques.\n\
-      \nAnalytical\nElemental analysis (within \xB10.4% of the calculated value) is\
-      \ required to confirm 95% sample purity and corroborate isomeric purity. Authors\
-      \ are also requested to provide copies of 1H,13C NMR spectra and/or GC/HPLC\
-      \ traces; however, if satisfactory elemental analysis cannot be obtained, copies\
-      \ of these spectra and/or traces must be provided. For libraries of compounds,\
-      \ HPLC traces should be submitted as proof of purity. The determination of enantiomeric\
-      \ excess of nonracemic, chiral substances should be supported with either GC/HPLC\
-      \ traces with retention times for both enantiomers and separation conditions\
-      \ (that is, chiral support, solvent and flow rate) or for Mosher Ester/Chiral\
-      \ Shift Reagent analysis, copies of the spectra.\n\nPhysical\nImportant physical\
-      \ properties - for example, boiling or melting point, specific rotation, refractive\
-      \ index - including conditions and a comparison to the literature for known\
-      \ compounds should be provided. For crystalline compounds, the method used for\
-      \ recrystallisation should also be documented (that is, solvent etc).\n\nSpectroscopic\n\
-      Mass spectra and a complete numerical listing of 1H,13C NMR peaks in support\
-      \ of the assigned structure, including relevant 2D NMR and related experiments\
-      \ (that is, NOE, etc) is required. As noted in 'Analytical', authors are requested\
-      \ to provide copies of these spectra. Infrared spectra that support functional\
-      \ group modifications, including other diagnostic assignments, should be included.\
-      \ High-resolution mass spectra are acceptable as proof of the molecular weight\
-      \ providing the purity of the sample has been accurately determined as outlined\
-      \ above.\nPolymers\n\nFor all soluble polymers, an estimation of molecular weight\
-      \ must be provided by a suitable method - for example, size exclusion chromatography,\
-      \ including details of columns, eluents and calibration standards, intrinsic\
-      \ viscosity, MALDI TOF, etc. In addition, full NMR characterisation (1H,13C)\
-      \ as for organic compound characterisation (see 'Organic compounds' in this\
-      \ section) should be included. Small molecules on the route to the polymers\
-      \ should be characterised as above and NMR data should be tabulated.\nInorganic\
-      \ and organometallic compounds\n\nA new chemical substance (molecule or extended\
-      \ solid) should have a homogeneous composition and structure. Where the compound\
-      \ is molecular, authors must provide data to unequivocally establish its homogeneity,\
-      \ purity and identification. In general, this should include elemental analyses\
-      \ that agree to within \xB10.4% of the calculated values. In cases where elemental\
-      \ analyses cannot be obtained (for example, for thermally unstable compounds),\
-      \ justification for the omission of this data should be provided. Note that\
-      \ an X-ray crystal structure is not sufficient for the characterisation of a\
-      \ new material, since the crystal used in this analysis does not necessarily\
-      \ represent the bulk sample.\n\nIn rare cases, it may be possible to substitute\
-      \ elemental analyses with high-resolution mass spectrometric molecular weights.\
-      \ This is appropriate, for example, with trivial derivatives of thoroughly characterised\
-      \ substances or routine synthetic intermediates. In all cases, relevant spectroscopic\
-      \ data (NMR, IR, UV-vis, etc) should be provided in tabulated form or as reproduced\
-      \ spectra. These may be relegated to the electronic supplementary information\
-      \ (ESI) to conserve journal space. However, it should be noted that, in general,\
-      \ mass spectrometric and spectroscopic data do not constitute proof of purity,\
-      \ and, in the absence of elemental analyses, additional evidence of purity should\
-      \ be provided (melting points, PXRD data, etc).\n\nWhere the compound is an\
-      \ extended solid, it is important to unequivocally establish the chemical structure\
-      \ and bulk composition. Single crystal diffraction does not determine the bulk\
-      \ structure. Referees will normally look to see evidence of bulk homogeneity.\
-      \ A fully indexed powder diffraction pattern that agrees with single crystal\
-      \ data may be used as evidence of a bulk homogeneous structure, and chemical\
-      \ analysis may be used to establish purity and homogeneous composition.\nMagnetic\
-      \ measurements\n\nIf data from magnetic measurements are presented, the manuscript\
-      \ must provide a thorough description of the experimental details pertaining\
-      \ to how the sample was measured (in a gelatin capsule, Teflon capsule, as a\
-      \ powder, etc). If the data have been corrected for sample or sample-holder\
-      \ diamagnetism, the diamagnetic correction term must be provided and the manner\
-      \ in which it was determined (for example, calculated using Pascal\u2019s constants,\
-      \ measured) must be stated.\n\nAny fit of magnetic data [for example, \u03C7\
-      (T), \u03C7(1/T), \u03C7T(T), \u03BC(T), M(H), etc] to an analytical expression\
-      \ must be accompanied by the Hamiltonian from which the analytical expression\
-      \ is derived, the analytical expression itself, and the fitting parameters.\
-      \ If the expression is lengthy, it may be included in the electronic supplementary\
-      \ information instead of within the main manuscript text. Its inclusion as supplementary\
-      \ information should be noted in the electronic supplementary information paragraph\
-      \ at the end of the manuscript. When an exchange coupling constant (J) is quoted\
-      \ in the abstract, the form of the Hamiltonian must also be included in the\
-      \ abstract.\nNano-sized materials (such as quantum dots, nanoparticles, nanotubes,\
-      \ nanowires)\n\nIt is essential that the authors not only provide detailed characterisation\
-      \ on individual objects (see 'Inorganic and organometallic compounds') but also\
-      \ a comprehensive characterisation of the bulk composition. Characterisation\
-      \ of the bulk of the sample could require determination of the chemical composition\
-      \ and size distribution over large portions of the sample.\nBiomolecules (for\
-      \ example, enzymes, proteins, DNA/RNA, oligosaccharides, oligonucleotides)\n\
-      \nAuthors should provide rigorous evidence for the identity and purity of the\
-      \ biomolecules described. The techniques that may be employed to substantiate\
-      \ identity include the following.\n\n    Mass spectrometry\n    LC-MS\n    Sequencing\
-      \ data (for proteins and oligonucleotides)\n    High field 1H,13C NMR spectroscopy\n\
-      \    X-ray crystallography\n\nPurity must be established by one or more of the\
-      \ following.\n\n    HPLC\n    Gel electrophoresis\n    Capillary electrophoresis\n\
-      \    High field 1H,13C NMR spectroscopy\n\nSequence verification also needs\
-      \ to be carried out for nucleic acid cases involving molecular biology including\
-      \ all mutants; for new protein or gene sequences, the entire sequence must be\
-      \ provided. For organic synthesis involving DNA, RNA oligonucleotides, their\
-      \ derivatives or mimics, purity must be established using HPLC and mass spectrometry\
-      \ as a minimum.\n\nFor new derivatives comprising modified monomers, the usual\
-      \ organic chemistry analytical requirements for the novel monomer must be provided\
-      \ (see 'Organic compounds'). However, it is not necessary to provide this level\
-      \ of characterisation for the oligonucleotide into which the novel monomer is\
-      \ incorporated.\nComputational results\n\nAuthors must provide sufficient information\
-      \ to enable readers to reproduce any computational results. If software was\
-      \ used for calculations and is generally available, it must be properly cited\
-      \ in the notes and references. References to the methods upon which the software\
-      \ is based must also be provided. Equations, data, geometric parameters/coordinates,\
-      \ or other numerical parameters essential to reproduction of the computational\
-      \ results (or adequate references when available in the open literature) must\
-      \ be provided. Authors who report the results of electronic structure calculations\
-      \ in relative energies should also include in electronic supplementary information\
-      \ the absolute energies obtained directly from the computational output files.\
-      \ Computational results obtained using methods, parameters, or input data that\
-      \ are not adequately described in the manuscript or in the referenced literature\
-      \ are not acceptable for publication."
-  discrepancy_reason: Text missing
+  correct_answer: 0
+  discrepancy_reason: Text missing and language understanding
 4:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
@@ -283,15 +174,7 @@
       data associated with the research in a manuscript should be Findable, Accessible,
       Interoperable and Reusable (FAIR), enabling other researchers to replicate and
       build on that research.
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Public data sharing on a FAIR repository required only for specific types
-      of data (e.g. genetic data has to be shared on a FAIR repository but no other
-      data).
-    explanation: "Where deposition in a particular repository is required for submission,\
-      \ this is indicated in the table below. Crystal structure (organic / organometallic\
-      \ / metal organic)\nRequired for all RSC journals\nCambridge Structural Database\
-      \ (CSD) \u2013 managed by the Cambridge Crystallographic Data Centre (CCDC)\
-      \ (confirmed as fair)"
+  correct_answer: 0
   discrepancy_reason: Text missing
 2:
   text: 2. Data availability statement
@@ -341,13 +224,7 @@
     explanation: 'For all submissions to Royal Society of Chemistry journals, any
       data required to understand and verify the research in an article must be made
       available on submission. '
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Required data must be available prior to review process.
-    explanation: "Where deposition in a particular repository is required for submission,\
-      \ this is indicated in the table below. Crystal structure (organic / organometallic\
-      \ / metal organic) Required for all RSC journals. Also For all submissions to\
-      \ Royal Society of Chemistry journals, any data required to understand and verify\
-      \ the research in an article must be made available on submission. \n"
+  correct_answer: null
   discrepancy_reason: null
 8:
   text: 8. Recommended data sharing method
@@ -488,58 +365,7 @@
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: No guidelines mentioned in the RDP
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Data sharing policy mentioned in refereeing guidelines.
-    explanation: "Please inform the editor if: You wish to see any supporting data\
-      \ not submitted for publication, or any previous unpublished paper,\nAlso:\n\
-      Supplementary information (SI) +\n\nReviewers are asked to assess any ESI that\
-      \ is submitted alongside a manuscript. ESI is classed as any Electronic Supplementary\
-      \ Information that provides additional or supporting information, as well as\
-      \ other file/media types, including large data sets, movies etc. Please check\
-      \ that appropriate material is published as ESI rather than being included in\
-      \ the article. Any ESI supplied upon submission must be reviewed thoroughly,\
-      \ and to the same standard as the article.\n\nReviewers should refer to the\
-      \ Royal Society of Chemistry ESI guidelines, which explain in more detail our\
-      \ requirements for publication.\n \nAuthentication of new compounds +\n\nNot\
-      \ all papers will contain Spectroscopic Information, and even among those journals\
-      \ that do, guidelines can vary significantly. It is therefore very important\
-      \ to refer to the individual journal specific guidelines, which explain in more\
-      \ detail our requirements for publication. Spectroscopic information can often\
-      \ be located in the ESI that has been submitted with the manuscript. Please\
-      \ make sure that the ESI is checked thoroughly so as not to miss important data.\n\
-      \nSpectroscopic information necessary for the assignment of a structure should\
-      \ normally be given. How complete this information must be depends upon the\
-      \ circumstances; the structure of a compound obtained from an unusual reaction\
-      \ or isolated from a natural source needs much stronger supporting evidence\
-      \ than one derived by a standard reaction from a precursor with an undisputed\
-      \ structure.\n\nReviewers are asked to assess the evidence in support of the\
-      \ homogeneity and structure of all new compounds. No hard and fast rules can\
-      \ be laid down to cover all types of compounds. For example, an accurate mass\
-      \ measurement of a molecular ion does not provide evidence of purity of a compound\
-      \ and must be accompanied by independent evidence of homogeneity (for example,\
-      \ HPLC).\n \nX-ray crystallographic work +\n\nNot all papers will contain X-ray\
-      \ crystallographic work, so it is important to refer to the individual journal\
-      \ specific guidelines and X-ray crystallography guidelines which explain in\
-      \ more detail our requirements for publication. Papers containing X-ray crystallographic\
-      \ work will be reviewed for their chemical interest. When reviewing manuscripts\
-      \ containing crystal structures, reviewers are not usually expected to fully\
-      \ check the crystal data for accuracy, but should pay attention to the quality\
-      \ of the experimental crystallographic work. The editor may also choose to send\
-      \ the manuscript to a specialist crystallographer for specific crystallographic\
-      \ review.\n\nIn a Communication a structure must usually be fully refined. For\
-      \ a Full paper, partial refinement may be sufficient if only being used to establish\
-      \ connectivity, confirm a trend or if the full structure has previously been\
-      \ published as a Communication, at the editor\u2019s discretion. These Full\
-      \ papers must reference the original Communication and relevant CCDC/ICSD numbers.\
-      \ If the crystallography is discussed again at length in the Full paper, the\
-      \ data should be presented in full and, where necessary, redeposited with the\
-      \ CCDC.\n\nIn some Full papers where the results of a crystal structure determination\
-      \ are discussed but details or extensive discussion are considered unnecessary,\
-      \ the data relating to the crystal structure determination may be included as\
-      \ electronic supplementary information (ESI), rather than discussed in detail\
-      \ in the manuscript. This is acceptable if there is enough data in the ESI to\
-      \ allow reviewers/crystallographers to confirm the reported results, and if\
-      \ it does not lead to unnecessary fragmentation of the work."
+  correct_answer: 0
   discrepancy_reason: Text missing
 11:
   text: '11. Unique policies for data types
@@ -583,37 +409,7 @@
   1:
     text: .nan
     explanation: ''
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Crystal structure (organic / organometallic / metal organic); Crystal structure
-      (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM;
-      bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates;
-      Input/configuration files and program output; Materials simulation data including
-      electronic structure and molecular dynamics; Computational materials science;
-      Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral
-      data for small chemical molecules, metabolomics, exposomics; Electrophoretic
-      gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages,
-      multidimensional life sciences image data (cell and tissue); Materials (Various);
-      Materials simulation data including electronic structure and molecular dynamics;
-      Computational materials science; All proteomics data; Proteomics mass spectrometry;
-      Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp),
-      e.g.single-base nucleotide substitutions, small-scale deletion or insertions;
-      Human genomic structural variation data (>50bp), e.g. insertions, deletions,
-      translocations; Gene expression data, array- and sequence-based; High-throughput
-      functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions;
-      miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence
-      data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric
-      and earth observation research, environmental data; Environmental and ecological
-      data; Geochemical, geochronological, and petrological data; Climate or Earth
-      system research, climate model data; Functional enzymology data (kinetic and
-      experimental data); Flow cytometry data; Protein circular dichroism and protein
-      synchrotron radiation circular dichroism ; Intermolecular and supramolecular
-      interactions of molecular systems, binding, assembly, and interaction phenomena;
-      Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials;
-      Computational studies and modelling; Electrophoretic gels and blots;Fluorescence
-      sensors; Inorganic and organometallic compounds; Macromolecular structure and
-      sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers
-      and macromolecules; Synthetic procedures; System models
-    explanation: ''
+  correct_answer: 0
   discrepancy_reason: Text missing
 12:
   text: '12. Unique policies for data types
@@ -633,13 +429,7 @@
   1:
     text: Small molecule crystal data
     explanation: ''
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: 'Batteries; Crystal structure (organic / organometallic / metal organic);
-      Computational results; Biomolecules (for example, enzymes, proteins, DNA/RNA,
-      oligosaccharides, oligonucleotides); Nano-sized materials (such as quantum dots,
-      nanoparticles, nanotubes, nanowires); Magnetic measurements; Inorganic and organometallic
-      compounds; Polymers; Organic compounds '
-    explanation: ''
+  correct_answer: 0
   discrepancy_reason: Text missing
 13:
   text: 13. Code sharing requirements
@@ -693,15 +483,7 @@
     explanation: Authors are asked to provide the names of all code creators in the
       reference, the name of the repository, and a DOI, although a URL can be provided
       if a DOI is not available. Please cite the specific release where possible.
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: Journal policies encourage/recommend a persistent identifier or specifying
-      a version of developed code.
-    explanation: "Please cite the specific release where possible \u2013 find out\
-      \ more about releases on GitHub.[Name of code creators, format: A. Name, B.\
-      \ Name and C. Name], [Year], [Name of code repository / type of code], [DOI,\
-      \ or URL if not available \u2013 in the instance where code has been deposited\
-      \ in GitHub and Zenodo, as per the guidelines above, the Zenodo DOI is preferred\
-      \ for bibliographic references]"
+  correct_answer: 0
   discrepancy_reason: Text missing
 16:
   text: 16. Code Quality Standards
@@ -738,10 +520,8 @@
     text: The journal policies encourage/recommend standards for code documentation.
     explanation: "Find out how to cite GitHub-deposited code.  Please cite the specific\
       \ release where possible \u2013 find out more about releases on GitHub."
-  correct_answer: !!python/object:daemon_analysis_tools.data.question.Answer
-    text: No mention of standards for code documentation.
-    explanation: n.a.
-  discrepancy_reason: Difficulty in matching information and question
+  correct_answer: 0
+  discrepancy_reason: Text missing and  language understanding
 19:
   text: 19. Linting Standards
   N. encoders: 2
