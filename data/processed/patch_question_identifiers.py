@@ -33,6 +33,14 @@ for pub in all_pubs:
         j_backup = j + "_backup"
         shutil.copy(j, j_backup)
         y = yaml.safe_load(open(j))
-        new_y = {question_number_to_question_id[i]: values for i, values in y.items()}
-        with open(j, "w") as f:
-            yaml.dump(new_y, f, sort_keys=False)
+
+        new_y = {}
+        update = False
+        for i, values in y.items():
+            if i in question_number_to_question_id:
+                update = True
+                new_y[question_number_to_question_id[i]] = values
+
+        if update:
+            with open(j, "w") as f:
+                yaml.dump(new_y, f, sort_keys=False)
