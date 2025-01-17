@@ -1,4 +1,4 @@
-1:
+rdp_exist:
   text: 1. Existence of research data policy
   has_discrepancies: false
   0:
@@ -21,7 +21,7 @@
       \ dataset may be provided through deposition in public community/discipline-specific\
       \ repositories"
   correct_answer: null
-3:
+data_sharing:
   text: 3. Data sharing requirements in RDP
   has_discrepancies: true
   0:
@@ -39,7 +39,7 @@
       see table below with recommended repositories. '
   correct_answer: 0
   discrepancy_reason: language understanding
-4:
+data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
   has_discrepancies: false
@@ -61,7 +61,7 @@
     explanation: All published manuscripts reporting original research in Nature Portfolio
       journals must include a data availability statement.
   correct_answer: null
-2:
+data_availability:
   text: 2. Data availability statement
   has_discrepancies: false
   0:
@@ -73,7 +73,7 @@
       or Code Ocean and cited in the reference list following the guidelines described
       here.
   correct_answer: null
-5:
+data_citability:
   text: '5. Citability and findability of data '
   has_discrepancies: false
   0:
@@ -91,7 +91,7 @@
       to release custom computer code in a way that allows readers to repeat the published
       results. '
   correct_answer: null
-7:
+data_timing:
   text: 7. Timing of data release
   has_discrepancies: true
   0:
@@ -108,7 +108,7 @@
       discouraged and the preferred approach is to make data available in repositories.  '
   correct_answer: 0
   discrepancy_reason: language understanding
-8:
+data_sharing_method:
   text: 8. Recommended data sharing method
   has_discrepancies: false
   0:
@@ -125,7 +125,7 @@
     explanation: 'Authors are encouraged to manage subsequent code versions and to
       use a license approved by the open source initiative. '
   correct_answer: null
-9:
+data_licenses:
   text: 9. Recommended/required licenses
   has_discrepancies: false
   0:
@@ -141,7 +141,7 @@
     text: Explicit mention of a certain license/license type in RDP.
     explanation: .nan
   correct_answer: null
-10:
+data_referee:
   text: 10. Referee guidelines concerning research data
   has_discrepancies: true
   0:
@@ -168,7 +168,7 @@
       public repository is mandatory. '
   correct_answer: 0
   discrepancy_reason: language understanding
-11:
+data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
@@ -182,7 +182,7 @@
     text: .nan
     explanation: ''
   correct_answer: 0
-12:
+data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
@@ -201,7 +201,7 @@
       molecules; Proteomics data; Earth, space & environmental sciences
     explanation: ''
   correct_answer: 0
-13:
+code_required:
   text: 13. Code sharing requirements
   has_discrepancies: true
   0:
@@ -230,7 +230,7 @@
       results that are reported in the paper and central to its main claims. '
   correct_answer: 1
   discrepancy_reason: difficulty in matching information and question
-14:
+code_reproducibility:
   text: 14. Code Reproducibility
   has_discrepancies: false
   0:
@@ -243,7 +243,7 @@
       or Code Ocean and cited in the reference list following the guidelines described
       here. '
   correct_answer: null
-15:
+code_versioning:
   text: 15. Versioning and persistent identifiers
   has_discrepancies: false
   0:
@@ -257,7 +257,7 @@
       a version of developed code.
     explanation: .nan
   correct_answer: null
-16:
+code_quality:
   text: 16. Code Quality Standards
   has_discrepancies: true
   0:
@@ -270,7 +270,7 @@
     explanation: .nan
   correct_answer: 0
   discrepancy_reason: language understanding
-17:
+code_autotest:
   text: 17. Automatic Testing
   has_discrepancies: false
   0:
@@ -280,7 +280,7 @@
     text: No mention of automatic testing to verify code functionality.
     explanation: .nan
   correct_answer: null
-18:
+code_docs:
   text: 18. Code Documentation
   has_discrepancies: true
   0:
@@ -293,7 +293,7 @@
     explanation: .nan
   correct_answer: 0
   discrepancy_reason: language understanding
-19:
+code_linting:
   text: 19. Linting Standards
   has_discrepancies: false
   0:
@@ -303,7 +303,7 @@
     text: No mention of linting standards for code.
     explanation: .nan
   correct_answer: null
-20:
+code_development:
   text: 20. Code Development
   has_discrepancies: false
   0:

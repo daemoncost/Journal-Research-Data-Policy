@@ -1,3 +1,4 @@
+import os
 import shutil
 from glob import glob
 
@@ -31,7 +32,12 @@ for pub in all_pubs:
     for j in all_journals:
         # create a backup copy of the original file
         j_backup = j + "_backup"
-        shutil.copy(j, j_backup)
+
+        if not os.path.isfile(j_backup):
+            shutil.copy(j, j_backup)
+        else:
+            raise "Backup files already exist."
+
         y = yaml.safe_load(open(j))
 
         new_y = {}
