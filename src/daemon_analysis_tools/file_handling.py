@@ -137,8 +137,8 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                         if correct_answer_id is None:
                             print(
                                 (
-                                    f"{publisher_name}/{journal_name}/{question_number}"
-                                    " has inconsistencies: skipped"
+                                    f"{publisher_name}/{journal_name}/{question_number} "
+                                    "has inconsistencies: skipped"
                                 )
                             )
                             del grouped_questions[publisher_name][journal_name][
@@ -146,12 +146,14 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                             ]
                         else:
                             assert isinstance(correct_answer_id, int), (
+                                f"{publisher_name}/{journal_name}/{question_number} "
                                 "`correct_answer` must be an integer "
                                 "(the number of the correct respondent)"
                             )
                             answer = question_dict[correct_answer_id]
                             question.add_answer(answer["text"], answer["explanation"])
                             assert discrepancy_reason is not None, (
+                                f"{publisher_name}/{journal_name}/{question_number} "
                                 "You must provide `discrepancy_reason` "
                                 "to resolve discrepancies."
                             )
