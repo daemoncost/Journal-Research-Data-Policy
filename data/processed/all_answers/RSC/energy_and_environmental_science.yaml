@@ -49,8 +49,8 @@ data_sharing:
       For all submissions to Royal Society of Chemistry journals, any data required
       to understand and verify the research in an article must be made available on
       submission. '
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Text missing and language understanding
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
@@ -71,8 +71,8 @@ data_fair:
       data associated with the research in a manuscript should be Findable, Accessible,
       Interoperable and Reusable (FAIR), enabling other researchers to replicate and
       build on that research.
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Text missing and language understanding
 data_availability:
   text: 2. Data availability statement
   N. encoders: 2
@@ -215,8 +215,8 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: No guidelines mentioned in the RDP
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Text missing
 data_recommended:
   text: '11. Unique policies for data types
 
@@ -259,8 +259,8 @@ data_recommended:
   1:
     text: .nan
     explanation: ''
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Text missing
 data_required:
   text: '12. Unique policies for data types
 
@@ -277,8 +277,8 @@ data_required:
   1:
     text: Small molecule crystal data
     explanation: ''
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Text missing
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
@@ -331,8 +331,8 @@ code_versioning:
     explanation: Authors are asked to provide the names of all code creators in the
       reference, the name of the repository, and a DOI, although a URL can be provided
       if a DOI is not available. Please cite the specific release where possible.
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Text missing
 code_quality:
   text: 16. Code Quality Standards
   N. encoders: 2
@@ -368,8 +368,8 @@ code_docs:
     text: The journal policies encourage/recommend standards for code documentation.
     explanation: "Find out how to cite GitHub-deposited code.  Please cite the specific\
       \ release where possible \u2013 find out more about releases on GitHub."
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 0
+  discrepancy_reason: Language understanding
 code_linting:
   text: 19. Linting Standards
   N. encoders: 2

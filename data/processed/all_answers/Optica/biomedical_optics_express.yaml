@@ -60,6 +60,7 @@ data_availability:
       Data Availability Statement (DAS) and, where possible, datasets should be cited
       in the reference list.'
   correct_answer: 0
+  discrepancy_reason: Selected answer is better interpretation of RDP.
 data_citability:
   text: '5. Citability and findability of data '
   N. encoders: 2
@@ -114,6 +115,7 @@ data_sharing_method:
       3. Citations to Large Datasets: Datasets can be uploaded to the OSA figshare
       platform or be placed in an appropriate external repository.'
   correct_answer: 1
+  discrepancy_reason: Selected answer is better interpretation of RDP.
 data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 2
@@ -151,6 +153,7 @@ data_recommended:
     text: none
     explanation: ''
   correct_answer: 0
+  discrepancy_reason: Inconsistent formatting.
 data_required:
   text: '12. Unique policies for data types
 
@@ -166,6 +169,7 @@ data_required:
     text: none
     explanation: ''
   correct_answer: 0
+  discrepancy_reason: Inconsistent formatting.
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
