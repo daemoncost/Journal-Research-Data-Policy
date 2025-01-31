@@ -1,0 +1,452 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Wiley\u2019s Data Sharing Policies\n\nWiley is committed to a more\
+      \ open research landscape, facilitating faster and more effective research discovery\
+      \ by enabling reproducibility and verification of data, methodology and reporting\
+      \ standards. We encourage authors of articles published in our journals to share\
+      \ their research data including, but not limited to: raw data, processed data,\
+      \ software, algorithms, protocols, methods, materials.\n\nRefer to the table\
+      \ below to understand the various standardized data sharing policy categories:\n\
+      \n\t\n\nData availability statement is published1\n\t\n\nData has been shared2\n\
+      \t\n\nData has been peer reviewed3\n\t\n\nExample Wiley journals\n\nEncourages\
+      \ Data Sharing\n\t\n\nOptional\n\t\n\nOptional\n\t\n\nOptional\n\t\n\nExpects\
+      \ Data Sharing\n\t\n\nRequired\n\t\n\nOptional\n\t\n\nOptional\n\t\n\nBritish\
+      \ Journal of Social Psychology\n\nMandates Data Sharing\n\t\n\nRequired\n\t\n\
+      \nRequired\n\t\n\nOptional\n\t\n\nEcology and Evolution\n\nMandates Data Sharing\
+      \ and Peer Reviews Data\n\t\n\nRequired\n\t\n\nRequired\n\t\n\nRequired\n\t\n\
+      \nGeoscience Data Journal\nAmerican Journal of Political Science\n\n1 A data\
+      \ availability statement confirms the presence or absence of shared data.\n\n\
+      2 Links to data in data availability statements are checked to ensure they link\
+      \ to the data that the authors intended. If data have been shared in a data\
+      \ repository, the data availability statement includes a permanent link to the\
+      \ data. Shared data is also cited.\n\n3 Quality and/or replicability of linked\
+      \ data are peer reviewed. Depending on the journal, this may be to peer review\
+      \ the quality of the data by ensuring that the results in the paper and the\
+      \ data in the repository align (for example, sample sizes and variables match),\
+      \ or it may be to peer review the replicability of the data to ensure that the\
+      \ claims presented in the journal article are valid and can be reproduced.\n\
+      \nEncourages Data Sharing\n\nThe journal encourages authors to share the data\
+      \ and other artefacts supporting the results in the paper by archiving it in\
+      \ an appropriate public repository. Authors may provide a data availability\
+      \ statement, including a link to the repository they have used, in order that\
+      \ this statement can be published in their paper. Shared data should be cited.\
+      \ All accepted manuscripts may elect to publish a data availability statement\
+      \ to confirm the presence or absence of shared data. For authors who have shared\
+      \ data: this statement will describe how the data can be accessed, and include\
+      \ a persistent identifier (e.g., a DOI for the data, or an accession number)\
+      \ from the repository where you shared the data. You may use the Standard Templates\
+      \ for Author Use or draft your own.\n\nExpects Data Sharing\n\nThe journal expects\
+      \ that data supporting the results in the paper will be archived in an appropriate\
+      \ public repository. Authors are required to provide a data availability statement\
+      \ to describe the availability or the absence of shared data. When data have\
+      \ been shared, authors are required to include in their data availability statement\
+      \ a link to the repository they have used, and to cite the data they have shared.\
+      \ Whenever possible the scripts and other artefacts used to generate the analyses\
+      \ presented in the paper should also be publicly archived. If sharing data compromises\
+      \ ethical standards or legal requirements then authors are not expected to share\
+      \ it.\n\nSee the Standard Templates for Author Use section below to select an\
+      \ appropriate data availability statement for your dataset.\n\nMandates Data\
+      \ Sharing\n\nThe journal requires, as a condition for publication, that the\
+      \ data supporting the results in the paper will be archived in an appropriate\
+      \ public repository. Authors are required to provide a data availability statement,\
+      \ including a link to the repository they have used, and to cite the data they\
+      \ have shared. Whenever possible the scripts and other artefacts used to generate\
+      \ the analyses presented in the paper should also be publicly archived. Exceptions\
+      \ may be granted at the discretion of the editor, for example, if sharing data\
+      \ compromises privacy of human data, ethical standards or legal requirements.\
+      \ If authors are unable to share data (for example, if sharing data compromises\
+      \ ethical standards or legal requirements) then authors are not required to\
+      \ share it and must describe restrictions in their data availability statement.\n\
+      \nSee the Standard Templates for Author Use section below to select an appropriate\
+      \ data availability statement for your dataset.\n\nMandates Data Sharing and\
+      \ Peer Reviews Data\n\nThe journal requires, as a condition for publication,\
+      \ that the data supporting the results in the paper will be peer reviewed and\
+      \ archived in an appropriate public repository. Authors are required to provide\
+      \ a data availability statement, including a link to the repository they have\
+      \ used, and to cite the data they have shared. Whenever possible the scripts\
+      \ and other artefacts used to generate the analyses presented in the paper should\
+      \ also be publicly archived. Exceptions may be granted at the discretion of\
+      \ the editor. If sharing data compromises ethical standards or legal requirements\
+      \ then authors are not required to share it.\n\nAnd:\n\nPeer review of empirical\
+      \ data will be conducted to confirm the quality of the shared data, for example,\
+      \ that sample sizes match, that the variables described in the article are present\
+      \ as fields in the data repository, that data is complete; that data is properly\
+      \ labelled and described; and that it has the appropriate metadata for the kind\
+      \ of data being shared.\n\nOr:\n\nPeer review of empirical data will be conducted\
+      \ to confirm that the data reproduce the analytic results reported in the paper.\n\
+      \nStandard Templates for Author Use\n\nBelow is a list of standard templates\
+      \ for the text that will appear in the \"Data Availability Statement\" portion\
+      \ of your article.. These statements adhere to guidelines set forth to comply\
+      \ with journals that have an \"Expects Data\" or \"Mandates Data\" policy.\n\
+      \nAvailability of data \tTemplate for data availability statement\nData openly\
+      \ available in a public repository that issues datasets with DOIs \tThe data\
+      \ that support the findings of this study are openly available in [repository\
+      \ name e.g \u201Cfigshare\u201D] at http://doi.org/[doi], reference number [reference\
+      \ number].\nData openly available in a public repository that does not issue\
+      \ DOIs \tThe data that support the findings of this study are openly available\
+      \ in [repository name] at [URL], reference number [reference number].\nData\
+      \ derived from public domain resources \tThe data that support the findings\
+      \ of this study are available in [repository name] at [URL/DOI], reference number\
+      \ [reference number]. These data were derived from the following resources available\
+      \ in the public domain: [list resources and URLs]\nEmbargo on data due to commercial\
+      \ restrictions \tThe data that support the findings will be available in [repository\
+      \ name] at [URL / DOI link] following an embargo from the date of publication\
+      \ to allow for commercialization of research findings.\nData available on request\
+      \ due to privacy/ethical restrictions \tThe data that support the findings of\
+      \ this study are available on request from the corresponding author. The data\
+      \ are not publicly available due to privacy or ethical restrictions.\nData subject\
+      \ to third party restrictions \tThe data that support the findings of this study\
+      \ are available from [third party]. Restrictions apply to the availability of\
+      \ these data, which were used under license for this study. Data are available\
+      \ [from the authors / at URL] with the permission of [third party].\nData available\
+      \ on request from the authors \tThe data that support the findings of this study\
+      \ are available from the corresponding author upon reasonable request.\nData\
+      \ sharing not applicable \u2013 no new data generated \tData sharing is not\
+      \ applicable to this article as no new data were created or analyzed in this\
+      \ study.\nAuthor elects to not share data \tResearch data are not shared.\n\
+      Data available in article supplementary material \tThe data that supports the\
+      \ findings of this study are available in the supplementary material of this\
+      \ article\nData sharing not applicable \u2013 no new data generated, or the\
+      \ article describes entirely theoretical research \tData sharing not applicable\
+      \ to this article as no datasets were generated or analysed during the current\
+      \ study\n\nWhen data is available and linked, authors will need to provide a\
+      \ citation of the data in their reference list.\n\nData citation:\n\n[dataset]Authors;\
+      \ Year; Dataset title; Data repository or archive; Version (if any); Persistent\
+      \ identifier (e.g. DOI)\n\nThe term [Dataset] will be removed before publication.\n\
+      \nHow to choose an appropriate data repository\n\nSee below for Wiley\u2019\
+      s recommended methods of choosing an appropriate data repository for your research:\n\
+      \n    Visit our Author Compliance Tool to check the data sharing policy of your\
+      \ chosen journal and/or funder before submitting your work\n    Visit re3data.org\
+      \ or fairsharing.org to help identify registered and certified data repositories\
+      \ relevant to your subject area\n\n\nFrequently Asked Questions\n\nFor more\
+      \ information about Wiley's Data Sharing Policies, visit our Frequently Asked\
+      \ Questions page."
+  1:
+    text: Research Data Policy (RDP) does not exists.
+    explanation: .nan
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: 'The journal encourages authors to share the data and other artefacts
+      supporting the results in the paper by archiving it in an appropriate public
+      repository. Authors may provide a data availability statement, including a link
+      to the repository they have used, in order that this statement can be published
+      in their paper. Shared data should be cited. All accepted manuscripts may elect
+      to publish a data availability statement to confirm the presence or absence
+      of shared data. For authors who have shared data: this statement will describe
+      how the data can be accessed, and include a persistent identifier (e.g., a DOI
+      for the data, or an accession number) from the repository where you shared the
+      data. You may use the Standard Templates for Author Use or draft your own.'
+  1:
+    text: Data sharing only with editors and referees (no public sharing)
+    explanation: .nan
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "The journal encourages authors to share the data and other artefacts\
+      \ supporting the results in the paper by archiving it in an appropriate public\
+      \ repository. Authors may provide a data availability statement, including a\
+      \ link to the repository they have used, in order that this statement can be\
+      \ published in their paper. Shared data should be cited. All accepted manuscripts\
+      \ may elect to publish a data availability statement to confirm the presence\
+      \ or absence of shared data. For authors who have shared data: this statement\
+      \ will describe how the data can be accessed, and include a persistent identifier\
+      \ (e.g., a DOI for the data, or an accession number) from the repository where\
+      \ you shared the data. You may use the Standard Templates for Author Use or\
+      \ draft your own.\nHow to choose an appropriate data repository\n\nSee below\
+      \ for Wiley\u2019s recommended methods of choosing an appropriate data repository\
+      \ for your research:\n\n    Visit our Author Compliance Tool to check the data\
+      \ sharing policy of your chosen journal and/or funder before submitting your\
+      \ work\n    Visit re3data.org or fairsharing.org to help identify registered\
+      \ and certified data repositories relevant to your subject area\n"
+  1:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: .nan
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: "Standard Templates for Author Use\n\nBelow is a list of standard\
+      \ templates for the text that will appear in the \"Data Availability Statement\"\
+      \ portion of your article.. These statements adhere to guidelines set forth\
+      \ to comply with journals that have an \"Expects Data\" or \"Mandates Data\"\
+      \ policy.\n\nAvailability of data \tTemplate for data availability statement\n\
+      Data openly available in a public repository that issues datasets with DOIs\
+      \ \tThe data that support the findings of this study are openly available in\
+      \ [repository name e.g \u201Cfigshare\u201D] at http://doi.org/[doi], reference\
+      \ number [reference number].\nData openly available in a public repository that\
+      \ does not issue DOIs \tThe data that support the findings of this study are\
+      \ openly available in [repository name] at [URL], reference number [reference\
+      \ number].\nData derived from public domain resources \tThe data that support\
+      \ the findings of this study are available in [repository name] at [URL/DOI],\
+      \ reference number [reference number]. These data were derived from the following\
+      \ resources available in the public domain: [list resources and URLs]\nEmbargo\
+      \ on data due to commercial restrictions \tThe data that support the findings\
+      \ will be available in [repository name] at [URL / DOI link] following an embargo\
+      \ from the date of publication to allow for commercialization of research findings.\n\
+      Data available on request due to privacy/ethical restrictions \tThe data that\
+      \ support the findings of this study are available on request from the corresponding\
+      \ author. The data are not publicly available due to privacy or ethical restrictions.\n\
+      Data subject to third party restrictions \tThe data that support the findings\
+      \ of this study are available from [third party]. Restrictions apply to the\
+      \ availability of these data, which were used under license for this study.\
+      \ Data are available [from the authors / at URL] with the permission of [third\
+      \ party].\nData available on request from the authors \tThe data that support\
+      \ the findings of this study are available from the corresponding author upon\
+      \ reasonable request.\nData sharing not applicable \u2013 no new data generated\
+      \ \tData sharing is not applicable to this article as no new data were created\
+      \ or analyzed in this study.\nAuthor elects to not share data \tResearch data\
+      \ are not shared.\nData available in article supplementary material \tThe data\
+      \ that supports the findings of this study are available in the supplementary\
+      \ material of this article\nData sharing not applicable \u2013 no new data generated,\
+      \ or the article describes entirely theoretical research \tData sharing not\
+      \ applicable to this article as no datasets were generated or analysed during\
+      \ the current study\n"
+  1:
+    text: Not mentioned in the RDP.
+    explanation: .nan
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "When data is available and linked, authors will need to provide\
+      \ a citation of the data in their reference list.\n\nData citation:\n\n[dataset]Authors;\
+      \ Year; Dataset title; Data repository or archive; Version (if any); Persistent\
+      \ identifier (e.g. DOI)\nWiley\u2019s Data Citation Policy\n\nIn recognition\
+      \ of the significance of data as an output of research effort, Wiley has endorsed\
+      \ the FORCE11 Data Citation Principles. Data must be cited in the same way as\
+      \ article, book, and web citations and authors are required to include data\
+      \ citations as part of their reference list.\n\nData citation is appropriate\
+      \ for data held within institutional, subject focused, or more general data\
+      \ repositories. It is not intended to take the place of community standards\
+      \ such as in-line citation of GenBank accession codes. When citing or making\
+      \ claims based on data, authors should refer to the data at the relevant place\
+      \ in the manuscript text and in addition provide a formal citation in the reference\
+      \ list. We recommend the format proposed by the Joint Declaration of Data Citation\
+      \ Principles:\n\n[dataset] Authors; Year; Dataset title; Data repository or\
+      \ archive; Version (if any); Persistent identifier (e.g. DOI)\n\nAdd [dataset]\
+      \ immediately before the reference so we can properly identify it as a data\
+      \ reference. The [dataset] identifier will not appear in your published article.\n\
+      \nFor more information about Wiley's Data Citation Policy, visit our Frequently\
+      \ Asked Questions page."
+  1:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: .nan
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: not addressed
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Wiley\u2019s Data Citation Policy\n\nIn recognition of the significance\
+      \ of data as an output of research effort, Wiley has endorsed the FORCE11 Data\
+      \ Citation Principles. Data must be cited in the same way as article, book,\
+      \ and web citations and authors are required to include data citations as part\
+      \ of their reference list.\n\nData citation is appropriate for data held within\
+      \ institutional, subject focused, or more general data repositories. It is not\
+      \ intended to take the place of community standards such as in-line citation\
+      \ of GenBank accession codes. When citing or making claims based on data, authors\
+      \ should refer to the data at the relevant place in the manuscript text and\
+      \ in addition provide a formal citation in the reference list. We recommend\
+      \ the format proposed by the Joint Declaration of Data Citation Principles:\n\
+      \n[dataset] Authors; Year; Dataset title; Data repository or archive; Version\
+      \ (if any); Persistent identifier (e.g. DOI)\n\nAdd [dataset] immediately before\
+      \ the reference so we can properly identify it as a data reference. The [dataset]\
+      \ identifier will not appear in your published article.\n\nFor more information\
+      \ about Wiley's Data Citation Policy, visit our Frequently Asked Questions page."
+  1:
+    text: No data sharing method recommended in RDP.
+    explanation: .nan
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: .nan
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: not mentioned in any guideline
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: not mentioned
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: not mentioned
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer: 0
+  discrepancy_reason: Text not found
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing not mentioned.
+    explanation: not mentioned
+  1:
+    text: Code sharing not mentioned.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: not mentioned
+  1:
+    text: No mention of dependencies for research code.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: not mentioned
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: not mentioned
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: not mentioned
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: not mentioned
+  1:
+    text: No mention of standards for code documentation.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: not mentioned
+  1:
+    text: No mention of linting standards for code.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: not mentioned
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
