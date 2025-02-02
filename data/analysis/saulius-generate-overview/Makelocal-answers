@@ -11,9 +11,23 @@ INPUT_YAMLS ?= $(shell find -L ${INPUT_DIR}/yaml/ -name '*.yaml')
 OUTPUT_ALL_ANSWERS_CSV ?= ${OUTPUT_DIR}/all-answers.csv
 OUTPUT_ALL_ANSWERS_TSV ?= ${OUTPUT_DIR}/all-answers.tsv
 
+OUTPUT_SELECTED_ANSWER_CSV ?= ${OUTPUT_DIR}/selected-answer.csv
+OUTPUT_SELECTED_ANSWER_TSV ?= ${OUTPUT_DIR}/selected-answer.tsv
+
 .PHONY: all clean distclean mostlyclean cleanAll
 
-all: ${OUTPUT_ALL_ANSWERS_CSV} ${OUTPUT_ALL_ANSWERS_TSV}
+all: \
+   ${OUTPUT_ALL_ANSWERS_CSV} ${OUTPUT_ALL_ANSWERS_TSV} \
+   ${OUTPUT_SELECTED_ANSWER_CSV} ${OUTPUT_SELECTED_ANSWER_TSV}
+
+# Collect all answers from the Yaml files into one flat TSV
+# table. NB. This table MAY have variable number of columns if some
+# questions have more than three answers (represented by the "Other
+# Answers" header), so strictly speeking it is not a correct TSV, but
+# the subsequent processing will index the trailing columns using the
+# "IdxCorrect" value, and there will be a number of provided answers
+# in the first column, so that variable column count should not cause
+# problems in downstream processing:
 
 ${OUTPUT_ALL_ANSWERS_TSV}: $(sort ${INPUT_YAMLS})
 	date +"# %F %T %Z" > $@
@@ -34,18 +48,46 @@ ${OUTPUT_ALL_ANSWERS_TSV}: $(sort ${INPUT_YAMLS})
 	| awk -F'\t' '{OFS=FS; print NF-6, $$0}' \
 	>> $@
 
+# Select the answer that was marked as "correct" in the "all-answers"
+# table:
+
+${OUTPUT_SELECTED_ANSWER_TSV}: ${OUTPUT_ALL_ANSWERS_TSV}
+	date +"# %F %T %Z" > $@
+	tail -n +2 $< \
+	| awk -F'\t' ' \
+	    BEGIN { \
+		OFS=FS; \
+	    } \
+	    NR == 1 { \
+		print $$1, $$2, $$3, $$4, $$5, $$6, $$7, \
+		      "Selected", $$8, $$9, $$10 \
+	    } \
+	    NR > 1 { \
+		idx_correct = ($$6 == "" ? 0 : $$6); \
+		\
+		print $$1, $$2, $$3, $$4, $$5, $$6, $$7, \
+		      $$(8 + idx_correct), \
+		      $$8, $$9, $$10 \
+	    } \
+	' \
+	>> $@
+
+# Convert the generated tables to CSV for wider compatibility:
+
 %.csv: %.tsv
 	date +"# %F %T %Z" > $@
 	tail -n +2 $< | tab2csv >> $@
 
-.PHONY: answers-clean
+.PHONY: answers-clean answers-distclean
 
 answers-clean:
-	rm -f ${OUTPUT_ALL_ANSWERS_CSV}
-	rm -f ${OUTPUT_ALL_ANSWERS_TSV}
+	rm -f ${OUTPUT_SELECTED_ANSWER_CSV} ${OUTPUT_SELECTED_ANSWER_TSV}
+
+answers-distclean:
+	rm -f ${OUTPUT_ALL_ANSWERS_CSV} ${OUTPUT_ALL_ANSWERS_TSV}
 
 clean: answers-clean
 
-mostlyclean: clean
+cleanAll distclean: answers-distclean 
 
-cleanAll distclean: mostlyclean
+mostlyclean: clean
