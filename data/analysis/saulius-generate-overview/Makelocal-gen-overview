@@ -55,9 +55,11 @@ ${OUTPUT_TSV}: ${INPUT_YAMLS}
 	date +"# %F %T %Z" > $@
 	tail -n +2 $< | tab2csv >> $@
 
-.PHONY: gen-answers-clean
+.PHONY: gen-answers-clean gen-answers-distclean
 
 gen-answers-clean:
+
+gen-answers-distclean:
 	rm -f ${OUTPUT_TXT}
 	rm -f ${OUTPUT_CSV}
 	rm -f ${OUTPUT_TSV}
@@ -66,4 +68,4 @@ clean: gen-answers-clean
 
 mostlyclean: clean
 
-cleanAll distclean: mostlyclean
+cleanAll distclean: gen-answers-distclean
