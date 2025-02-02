@@ -1,4 +1,4 @@
--- Pull new data from the 'fix-Bentham-Science' to may branch;
+-- Pull new data from the 'fix-Bentham-Science' to my branch;
 
 -- update the generated overview files;
 
