@@ -1,4 +1,4 @@
-1:
+rdp_exist:
   text: 1. Existence of research data policy
   N. encoders: 2
   has_discrepancies: false
@@ -29,7 +29,7 @@
       \ in your manuscript or Supplementary Information."
   correct_answer: null
   discrepancy_reason: null
-3:
+data_sharing:
   text: 3. Data sharing requirements in RDP
   N. encoders: 2
   has_discrepancies: true
@@ -154,7 +154,7 @@
       submission. '
   correct_answer: 0
   discrepancy_reason: Text missing and language understanding
-4:
+data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
   N. encoders: 2
@@ -176,7 +176,7 @@
       build on that research.
   correct_answer: 0
   discrepancy_reason: Text missing
-2:
+data_availability:
   text: 2. Data availability statement
   N. encoders: 2
   has_discrepancies: false
@@ -194,7 +194,7 @@
       is required to be submitted alongside all articles.
   correct_answer: null
   discrepancy_reason: null
-5:
+data_citability:
   text: '5. Citability and findability of data '
   N. encoders: 2
   has_discrepancies: false
@@ -208,7 +208,7 @@
       identifiers, such as DOIs, for deposited datasets.
   correct_answer: null
   discrepancy_reason: null
-7:
+data_timing:
   text: 7. Timing of data release
   N. encoders: 2
   has_discrepancies: false
@@ -226,7 +226,7 @@
       available on submission. '
   correct_answer: null
   discrepancy_reason: null
-8:
+data_sharing_method:
   text: 8. Recommended data sharing method
   N. encoders: 2
   has_discrepancies: false
@@ -294,7 +294,7 @@
       \ the article Supplementary Information.\n"
   correct_answer: null
   discrepancy_reason: null
-9:
+data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 2
   has_discrepancies: false
@@ -306,7 +306,7 @@
     explanation: .nan
   correct_answer: null
   discrepancy_reason: null
-10:
+data_referee:
   text: 10. Referee guidelines concerning research data
   N. encoders: 2
   has_discrepancies: true
@@ -367,7 +367,7 @@
     explanation: No guidelines mentioned in the RDP
   correct_answer: 0
   discrepancy_reason: Text missing
-11:
+data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
@@ -411,7 +411,7 @@
     explanation: ''
   correct_answer: 0
   discrepancy_reason: Text missing
-12:
+data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
@@ -431,7 +431,7 @@
     explanation: ''
   correct_answer: 0
   discrepancy_reason: Text missing
-13:
+code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
   has_discrepancies: false
@@ -452,7 +452,7 @@
       main text of their article at the relevant point.
   correct_answer: null
   discrepancy_reason: null
-14:
+code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 2
   has_discrepancies: false
@@ -464,7 +464,7 @@
     explanation: No comments for code reproducibility
   correct_answer: null
   discrepancy_reason: null
-15:
+code_versioning:
   text: 15. Versioning and persistent identifiers
   N. encoders: 2
   has_discrepancies: true
@@ -485,7 +485,7 @@
       if a DOI is not available. Please cite the specific release where possible.
   correct_answer: 0
   discrepancy_reason: Text missing
-16:
+code_quality:
   text: 16. Code Quality Standards
   N. encoders: 2
   has_discrepancies: false
@@ -497,7 +497,7 @@
     explanation: No comments for code quality standards
   correct_answer: null
   discrepancy_reason: null
-17:
+code_autotest:
   text: 17. Automatic Testing
   N. encoders: 2
   has_discrepancies: false
@@ -509,7 +509,7 @@
     explanation: No comments about automatic testing for code
   correct_answer: null
   discrepancy_reason: null
-18:
+code_docs:
   text: 18. Code Documentation
   N. encoders: 2
   has_discrepancies: true
@@ -522,7 +522,7 @@
       \ release where possible \u2013 find out more about releases on GitHub."
   correct_answer: 0
   discrepancy_reason: Text missing and  language understanding
-19:
+code_linting:
   text: 19. Linting Standards
   N. encoders: 2
   has_discrepancies: false
@@ -534,7 +534,7 @@
     explanation: No comments about linting standards
   correct_answer: null
   discrepancy_reason: null
-20:
+code_development:
   text: 20. Code Development
   N. encoders: 2
   has_discrepancies: false
