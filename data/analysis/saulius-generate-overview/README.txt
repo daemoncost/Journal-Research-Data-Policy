@@ -5,9 +5,9 @@ This directory contains information extracted from the YAML encoded
 files, regularised, summarised and presented as a set of TSV and CSV
 [1-3] outputs.
 
-In the "outputs/" directory, the CSV and TSV files conatain the first
+In the "outputs/" directory, the CSV and TSV files contain the first
 line with a time stamp. Below the first line, a regular TSV or CSV
-stream follows as specified in the correspinding format descriptions
+stream follows as specified in the corresponding format descriptions
 [1-3]. Strictly speaking, these files should have '.ttsv' and 'tcsv'
 extensions, for "time-stamped TSV" and "time-stamped CSV",
 correspondingly.
@@ -75,7 +75,7 @@ The prerequisite programs are:
   For the convenience of the users, a compiled binary ELF version of
   the 'yq' for Intel x86_64 in the directory 'bin/x86_64/', and the
   Unix PATH used by the Makefile is set to include this directory, so
-  for Intel x86_64 Linux users installation of 'yq' could be skippted
+  for Intel x86_64 Linux users installation of 'yq' could be skipped
   and the 'yq' part should work out of the box.
 
 - GNU awk, any recent version. Usually comes with most GNU/Linux
