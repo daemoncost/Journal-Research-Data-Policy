@@ -1,4 +1,4 @@
-1:
+rdp_exist:
   text: 1. Existence of research data policy
   N. encoders: 1
   has_discrepancies: false
@@ -15,7 +15,7 @@
       applies to all datasets that are necessary to interpret and replicate the conclusions
       reported in a research article.'
   correct_answer: null
-3:
+data_sharing:
   text: 3. Data sharing requirements in RDP
   N. encoders: 1
   has_discrepancies: false
@@ -29,7 +29,7 @@
       For a number of data types, submission to a community-endorsed, public repository
       is mandatory. See our list of mandated data types.'
   correct_answer: null
-4:
+data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
   N. encoders: 1
@@ -46,7 +46,7 @@
       \ supports FAIR Data principles: see: \nhttps://www.ccdc.cam.ac.uk/solutions/about-the-csd/fair-data-principles/\n\
       https://www.ccdc.cam.ac.uk/discover/blog/our-approach-to-the-fair-data-principles/]"
   correct_answer: null
-2:
+data_availability:
   text: 2. Data availability statement
   N. encoders: 1
   has_discrepancies: false
@@ -54,7 +54,7 @@
     text: Required according to the RDP.
     explanation: 1. All original articles must include a data availability statement
   correct_answer: null
-5:
+data_citability:
   text: '5. Citability and findability of data '
   N. encoders: 1
   has_discrepancies: false
@@ -68,7 +68,7 @@
       \ for specific data types, data publication in repository supporting DOI is\
       \ mandatory]"
   correct_answer: null
-7:
+data_timing:
   text: 7. Timing of data release
   N. encoders: 1
   has_discrepancies: false
@@ -78,7 +78,7 @@
       and conclusions of the paper are made publicly available at the time of publication,
       and we mandate the sharing of community-endorsed data types
   correct_answer: null
-8:
+data_sharing_method:
   text: 8. Recommended data sharing method
   N. encoders: 1
   has_discrepancies: false
@@ -92,7 +92,7 @@
       For a number of data types, submission to a community-endorsed, public repository
       is mandatory. See our list of mandated data types.'
   correct_answer: null
-9:
+data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 1
   has_discrepancies: false
@@ -106,7 +106,7 @@
       [Note: again, this is from the additional Nature Portfolio document, not from
       the Springer-Nature RDP]'
   correct_answer: null
-10:
+data_referee:
   text: 10. Referee guidelines concerning research data
   N. encoders: 1
   has_discrepancies: false
@@ -129,7 +129,7 @@
 
       [among others]'
   correct_answer: null
-11:
+data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
@@ -141,7 +141,7 @@
     text: .nan
     explanation: ''
   correct_answer: null
-12:
+data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
@@ -155,7 +155,7 @@
       structure data; Gene expression data; Crystallographic data for small molecules
     explanation: ''
   correct_answer: null
-13:
+code_required:
   text: 13. Code sharing requirements
   N. encoders: 1
   has_discrepancies: false
@@ -179,7 +179,7 @@
       \nPapers in Nature Portfolio journals should make computer code accessible where\
       \ possible.\n\n[From Nature Portfolio additional policies: https://www.nature.com/nature/editorial-policies/reporting-standards]"
   correct_answer: null
-14:
+code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 1
   has_discrepancies: false
@@ -188,7 +188,7 @@
     explanation: No explicit mention, but some rules are contained here https://www.nature.com/documents/nr-software-policy.pdf,
       point 1.
   correct_answer: null
-15:
+code_versioning:
   text: 15. Versioning and persistent identifiers
   N. encoders: 1
   has_discrepancies: false
@@ -199,7 +199,7 @@
       or Code Ocean and cited in the reference list following the guidelines described
       here. Authors are encouraged to manage subsequent code versions
   correct_answer: null
-16:
+code_quality:
   text: 16. Code Quality Standards
   N. encoders: 1
   has_discrepancies: false
@@ -209,7 +209,7 @@
       submission checklist [liks to https://www.nature.com/documents/nr-software-policy.pdf].   [Again,
       in Nature Portfolio document, not in RDP]'
   correct_answer: null
-17:
+code_autotest:
   text: 17. Automatic Testing
   N. encoders: 1
   has_discrepancies: false
@@ -217,7 +217,7 @@
     text: No mention of automatic testing to verify code functionality.
     explanation: No explicit mention
   correct_answer: null
-18:
+code_docs:
   text: 18. Code Documentation
   N. encoders: 1
   has_discrepancies: false
@@ -227,7 +227,7 @@
       will require better documentation, validation and accessibility of software
       associated with papers
   correct_answer: null
-19:
+code_linting:
   text: 19. Linting Standards
   N. encoders: 1
   has_discrepancies: false
@@ -235,7 +235,7 @@
     text: No mention of linting standards for code.
     explanation: '-'
   correct_answer: null
-20:
+code_development:
   text: 20. Code Development
   N. encoders: 1
   has_discrepancies: false
