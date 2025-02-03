@@ -8,5 +8,5 @@ nr	column_name	column_number	type	description	explanation
 7	AnsKeys	7	string	YAML/JSON keys of the answers	Lists what keys did the answers have, separated by commas. The software that produced this file may assume that the keys were all numbers, placed in order, so the AnsKeys for a question with 2 answers should be “0:,1:” and so on. The result MIGHT be incorrect of the keys do not follow this convention
 8	Selected	8	string	The selected “correct” answer	The answer which was selected as correct in for this particular question. Its column is indicated by the value in IdxCorrect
 9	Answer1	9	string	The first answer	The first encoded answer from the YAML file
-10	Answer2	10	string	The seconf answer	The seconf encoded answer from the YAML file
+10	Answer2	10	string	The second answer	The second encoded answer from the YAML file
 11	Answer3	11	string	The third answer	The third encoded answer from the YAML file
