@@ -166,6 +166,9 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                                     f"Question {question_number} in {journal_name}"
                                     f"{publisher_name}"
                                 )
+                                del grouped_questions[publisher_name][journal_name][
+                                    question_number
+                                ]
                             else:
                                 question.resolve_discrepancy(
                                     correct_answer=0,
@@ -176,9 +179,7 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                                 grouped_questions[publisher_name][journal_name][
                                     question_number
                                 ] = question
-                                del grouped_questions[publisher_name][journal_name][
-                                    question_number
-                                ]
+
                     else:
                         answer = question_dict[0]
                         question.add_answer(answer["text"], answer["explanation"])
