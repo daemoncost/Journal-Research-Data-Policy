@@ -41,7 +41,7 @@ ${OUTPUT_TSV}: ${INPUT_YAMLS}
 		| awk '{print "'"$$i"'" "\t" $$0}' \
 		| sort | uniq -c \
 		| sed 's/^ *\([0-9][0-9]*\) */\1\t/' \
-		| awk -F'\t' '{print "topics\t" $$0}'; \
+		| awk -F'\t' '{print "topic\t" $$0}'; \
 		yq -o yaml '."'$$i'" | [filename, .text, .[] | .text]' $^ \
 		| yq -o csv . \
 		| csv2tab \

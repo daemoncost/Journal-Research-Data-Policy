@@ -1,4 +1,4 @@
-# 2024-12-06 14:20:23 EET
+# 2025-02-03 09:31:28 EET
 
      66 .rdp_exist: 1. Existence of research data policy
 
