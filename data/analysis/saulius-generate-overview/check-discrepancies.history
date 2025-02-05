@@ -1,0 +1,1 @@
+  659  awk -F'\t' '$5 == "false" && $8 != ".nan" && $8 != "none" && $8 != "no text" && (($1 == 2 && $9 != $10) || ($1 == 3 && ($9 != $10 || $10 != $11 || $9 != $11)))' outputs/selected-answer.tsv | sed 's/\n/\n\n/; s/\t/\n/g' | less -S

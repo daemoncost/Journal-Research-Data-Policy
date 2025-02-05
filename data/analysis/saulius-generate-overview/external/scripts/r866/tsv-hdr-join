@@ -1,0 +1,268 @@
+#!/bin/bash
+#------------------------------------------------------------------------------
+#$Author: saulius $
+#$Date: 2024-09-12 07:51:47 +0300 (Thu, 12 Sep 2024) $
+#$Revision: 860 $
+#$URL: svn://saulius.grazulis.lt/scripts/tsv-hdr-join $
+#------------------------------------------------------------------------------
+#*
+# Join two TSV format [1] files with headers (column name lists) on
+# their first lines. The JOIN'ed output (with adjusted headers) goes
+# to STDOUT. One of the files, but not both, can be read from STDIN;
+# the file that is taken from the STDIN is denoted as "-" (the lone
+# hyphen, without the quotes).
+#
+# USAGE:
+#     $0 file1.tsv file2.tsv
+#     $0 file1.tsv - < file2.tsv
+#     $0 - file2.tsv < file1.tsv
+#
+# Refs.:
+#
+# [1] Library of Congress. TSV, Tab-Separated
+#     Values. https://www.loc.gov/preservation/digital/formats/fdd/fdd000533.shtml
+#     [accessed: 2022-04-05T11:51+03:00]
+#**
+
+TMP_DIR="${TMPDIR}"
+
+set -ue
+## set -x
+
+script() { echo "# $*"; cat; }
+setvar() { eval $1="'$3'"; }
+
+setvar Id = '$Id: tsv-hdr-join 860 2024-09-12 04:51:47Z saulius $'
+
+setvar FILES = ""
+
+setvar BASENAME = "$(basename $0)"
+
+setvar COLUMN_1 = 1 # Column on which to join from the first file
+setvar COLUMN_2 = 1 # Column on which to join from the second file
+
+setvar COLNAME_1 = ""
+setvar COLNAME_2 = ""
+
+setvar ALL_LINES_FROM_FILE = ""
+
+USE_SCRATCH=true
+
+#** OPTIONS:
+#**  -c, --column-name id
+#**                      Specify column name for both files on with the files
+#**                      should be joined (alternatively, specify individual
+#**                      column names using options --first-column-name and
+#**                      --second-column-name, see below).
+#**
+#**  -s, --use-scratch   Input files are pipes -- copy them to scratch for
+#**                      processing (default)
+#**
+#**  -s-, --no-scratch   Do not use scratch, read from the suplied files
+#**                      multiple times
+#**
+#**  -a 1                Print all lines from file 1 (specify 2 for file 2),
+#**                      even if those lines are unpairable
+#**
+#**  -1 10 -2 12         Specify on which columns to join (as in 'join')
+#**                      (default is to join on the first column from each file)
+#**
+#**  --first-column-name  id1
+#**                      Altenatively, specify name of the first join column...
+#**
+#**  --second-column-name id2
+#**                      ... and the name of the second column
+#**
+#**  --help              Print short help message (this message) and exit
+while [ $# -gt 0 ]
+do
+    case $1 in
+        -s|--use-scratch|--use-scratc|--use-scrat|--use-scra|--use-scr|\
+        --use-sc|--use-s)
+            USE_SCRATCH=true
+            ;;
+        -s-|--no-scratch|--no-scratc|--no-scrat|--no-scra|--no-scr|\
+        --no-sc|--no-s)
+            USE_SCRATCH=false
+            ;;
+        -a)
+            ALL_LINES_FROM_FILE="-a $2"
+            shift
+            ;;
+        -1)
+            COLUMN_1="$2"
+            COLNAME_1=""
+            shift
+            ;;
+        -2)
+            COLUMN_2="$2"
+            COLNAME_2=""
+            shift
+            ;;
+        -c|--column-name|--column-nam|--column-na|--column-n|\
+        --column|--colum|--colu|--col|--co|--c)
+            COLNAME_1="$2"
+            COLNAME_2="$2"
+            shift
+            ;;
+        --first-column-name|--first-column-nam|--first-column-na|\
+        --first-column-n|--first-column|--first-colum|--first-colu|\
+        --first-col|--first-co|--first-c|--first|--firs|--fir|--fi|--f)
+            COLNAME_1="$2"
+            shift
+            ;;
+        --second-column-name|--second-column-nam|--second-column-na|\
+        --second-column-n|--second-column|--second-colum|--second-colu|\
+        --second-col|--second-co|--second-c|--second|--secon|--seco|\
+        --sec|--se|--s)
+            COLNAME_2="$2"
+            shift
+            ;;
+        --version|--versio|--versi|--vers|--ver|--ve|--v)
+            echo $Id
+            exit
+            ;;
+        --help|--hel|--he|--h)
+            awk '/#\*/,/#\*\*/ {
+                    sub("^ *#[*]?[*]?", ""); \
+                    gsub("\\$0","'$0'"); \
+                    print $0
+                }' $0
+	    exit
+	    ;;
+        --options|--option)
+            echo "$0: '--options' is a place-holder; please" \
+                 "use '$0 --help' to get the list of available options." \
+                 >&2
+            exit 1
+            ;;
+        -)  FILES="$FILES '$1'" ;;
+        -*) echo "$0: unknown option '$1'" >&2 ; exit 1 ;;
+        *)  FILES="$FILES '$1'" ;;
+    esac
+    shift
+done
+
+eval set -- "${FILES}"
+
+if [ $# -ne 2 ]
+then
+    echo "$0: this script requires exacly two files on the command line," \
+         "but $# files were found: $@" >&2
+    exit 2
+fi
+
+FILE1="$1"
+FILE2="$2"
+
+test -z "${TMP_DIR}" && TMP_DIR="/tmp"
+TMP_DIR="${TMP_DIR}/tmp-${BASENAME}-$$"
+mkdir "${TMP_DIR}"
+
+TMP_INPUT_FILE1="${TMP_DIR}/input1.tsv"
+TMP_INPUT_FILE2="${TMP_DIR}/input2.tsv"
+
+## trap "rm -rf '${TMP_DIR}'" 1 2 3 15
+trap "rm -rf '${TMP_DIR}'" HUP INT QUIT TERM
+
+if [ "${FILE1}" = "-" -a "${FILE2}" = "-" ]
+then
+    echo "$0: only one of the files can be designated as STDIN (\"-\")," \
+         "but not both" >&2
+    exit 3
+fi
+
+# At most one input file is designated as STDIN ("-"):
+
+if [ "${FILE1}" = "-" -o ${USE_SCRATCH} = true ]
+then
+    cat "${FILE1}" > "${TMP_INPUT_FILE1}"
+    FILE1="${TMP_INPUT_FILE1}"
+fi
+
+if [ "${FILE2}" = "-" -o ${USE_SCRATCH} = true ]
+then
+    cat "${FILE2}" > "${TMP_INPUT_FILE2}"
+    FILE2="${TMP_INPUT_FILE2}"
+fi
+
+# Determine join column numbers from their names if necessary:
+
+if [ "${COLNAME_1}" != "" ]
+then
+    COLUMN_1=$(head -n1 "${FILE1}" \
+                   | tr "\t" "\n" \
+                   | cat -n \
+                   | awk \
+                         -v name=${COLNAME_1} \
+                         '{if($2 == name) print $1}')
+
+    if [ -z "${COLUMN_1}" ]
+    then
+        echo "$0: file '${FILE1}' does not have column '${COLNAME_1}'" >&2
+        exit 4
+    fi
+fi
+
+if [ "${COLNAME_2}" != "" ]
+then
+    COLUMN_2=$(head -n1 "${FILE2}" \
+                   | tr "\t" "\n" \
+                   | cat -n \
+                   | awk \
+                         -v name=${COLNAME_2} \
+                         '{if($2 == name) print $1}')
+
+    if [ -z "${COLUMN_2}" ]
+    then
+        echo "$0: file '${FILE2}' does not have column '${COLNAME_2}'" >&2
+        exit 4
+    fi
+fi
+
+# Build a new header for the joined file:
+
+JOIN_COL="$(head -1 ${FILE1} \
+               | awk -F"\t" -v column=${COLUMN_1} '{print $column}')"
+
+HEADER_1="$(head -1 ${FILE1} \
+               | awk -F"\t" \
+                     -v column=${COLUMN_1} \
+                     '{
+                       ORS="\t";
+                       for( i=1; i<=NF; i++ ) {
+                           if( i != column )
+                               print $i
+                       }
+                      }')"
+
+HEADER_2="$(head -1 ${FILE2} \
+               | awk -F"\t" \
+                     -v column=${COLUMN_2} \
+                     '{
+                       ORS="\t";
+                       for( i=1; i<=NF; i++ ) {
+                           if( i != column )
+                               print $i
+                       }
+                      }')"
+
+echo -e "${JOIN_COL}\t${HEADER_1}${HEADER_2}" | sed 's/\t$//'
+
+N_COLUMNS=$(echo -e "${JOIN_COL}\t${HEADER_1}${HEADER_2}" \
+                | awk -F"\t" '{print NF-1}')
+
+join \
+     -t $'\t' \
+     -1 ${COLUMN_1} -2 ${COLUMN_2} \
+     ${ALL_LINES_FROM_FILE} \
+     <(tail -n +2 "${FILE1}" \
+           | sort -t $'\t' -k${COLUMN_1},${COLUMN_1}) \
+     <(tail -n +2 "${FILE2}" \
+           | sort -t $'\t' -k${COLUMN_2},${COLUMN_2}) \
+    | awk \
+          -v ncol=${N_COLUMNS} \
+          -F"\t" \
+          '{printf "%s",$0; for(i=NF;i<ncol;i++){printf "%s","\t"} print ""}'
+
+rm -rf "${TMP_DIR}"

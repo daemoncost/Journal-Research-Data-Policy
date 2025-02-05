@@ -152,18 +152,27 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                             )
                             answer = question_dict[correct_answer_id]
                             question.add_answer(answer["text"], answer["explanation"])
-                            assert discrepancy_reason is not None, (
-                                f"{publisher_name}/{journal_name}/{question_number} "
-                                "You must provide `discrepancy_reason` "
-                                "to resolve discrepancies."
-                            )
-                            question.resolve_discrepancy(
-                                correct_answer=0, discrepancy_reason=discrepancy_reason
-                            )
-                            assert question.get_final_answer() is not None
-                            grouped_questions[publisher_name][journal_name][
-                                question_number
-                            ] = question
+                            if discrepancy_reason is None:
+                                Warning(
+                                    f"You must provide `discrepancy_reason` "
+                                    f"to resolve discrepancies."
+                                    f"Question {question_number} in {journal_name}"
+                                    f"{publisher_name}"
+                                )
+                                del grouped_questions[publisher_name][journal_name][
+                                    question_number
+                                ]
+                            else:
+                                question.resolve_discrepancy(
+                                    correct_answer=0,
+                                    discrepancy_reason=discrepancy_reason,
+                                )
+
+                                assert question.get_final_answer() is not None
+                                grouped_questions[publisher_name][journal_name][
+                                    question_number
+                                ] = question
+
                     else:
                         answer = question_dict[0]
                         question.add_answer(answer["text"], answer["explanation"])
