@@ -1,21 +1,21 @@
-# 2025-02-05 11:19:09 EET
+# 2025-02-05 13:41:53 EET
 NAnsw	File	Key	Quest	Discrepancies?	IdxCorrect	AnsKeys	Answer1	Answer2	Answer3	Other Answers...
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	rdp_exist:	1. Existence of research data policy	false		0:	Research Data Policy (RDP) exists.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_sharing:	3. Data sharing requirements in RDP	false		0:	Public data sharing required only for specific types of data.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_fair:	4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)	false		0:	Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data).
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_availability:	2. Data availability statement	false		0:	Required according to the RDP.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_citability:	5. Citability and findability of data 	false		0:	DOIs or other persistent identifiers recommended for datasets or codes.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_timing:	7. Timing of data release	false		0:	Required data must be available prior to official publication.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_sharing_method:	8. Recommended data sharing method	false		0:	Public online repositories recommended in RDP.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_licenses:	9. Recommended/required licenses	false		0:	Explicit mention of a certain license/license type in RDP.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_referee:	10. Referee guidelines concerning research data	false		0:	Additional data or code referee (referee that solely confirms that code and data are shared following the RDP).
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_recommended:	11. Unique policies for data types Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:	.nan
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	data_required:	12. Unique policies for data types Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:	DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_required:	13. Code sharing requirements	false		0:	Code sharing encouraged but optional.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_reproducibility:	14. Code Reproducibility	false		0:	No mention of dependencies for research code.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_versioning:	15. Versioning and persistent identifiers	false		0:	Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_quality:	16. Code Quality Standards	false		0:	The journal policies require code of articles to fulfill certain standards.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_autotest:	17. Automatic Testing	false		0:	No mention of automatic testing to verify code functionality.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_docs:	18. Code Documentation	false		0:	The journal policies encourage/recommend standards for code documentation.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_linting:	19. Linting Standards	false		0:	No mention of linting standards for code.
-1	outputs/intermediate-tsv//yaml/nature_communications.yaml	code_development:	20. Code Development	false		0:	No mention of standards for code development such as continuous integration.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	rdp_exist:	1. Existence of research data policy	false		0:	Research Data Policy (RDP) exists.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_sharing:	3. Data sharing requirements in RDP	false		0:	Public data sharing required only for specific types of data.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_fair:	4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)	false		0:	Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data).
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_availability:	2. Data availability statement	false		0:	Required according to the RDP.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_citability:	5. Citability and findability of data 	false		0:	DOIs or other persistent identifiers recommended for datasets or codes.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_timing:	7. Timing of data release	false		0:	Required data must be available prior to official publication.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_sharing_method:	8. Recommended data sharing method	false		0:	Public online repositories recommended in RDP.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_licenses:	9. Recommended/required licenses	false		0:	Explicit mention of a certain license/license type in RDP.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_referee:	10. Referee guidelines concerning research data	false		0:	Additional data or code referee (referee that solely confirms that code and data are shared following the RDP).
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_recommended:	11. Unique policies for data types Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:	.nan
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	data_required:	12. Unique policies for data types Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:	DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_required:	13. Code sharing requirements	false		0:	Code sharing encouraged but optional.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_reproducibility:	14. Code Reproducibility	false		0:	No mention of dependencies for research code.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_versioning:	15. Versioning and persistent identifiers	false		0:	Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_quality:	16. Code Quality Standards	false		0:	The journal policies require code of articles to fulfill certain standards.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_autotest:	17. Automatic Testing	false		0:	No mention of automatic testing to verify code functionality.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_docs:	18. Code Documentation	false		0:	The journal policies encourage/recommend standards for code documentation.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_linting:	19. Linting Standards	false		0:	No mention of linting standards for code.
+1	outputs/intermediate-tsv/yaml/nature_communications.yaml	code_development:	20. Code Development	false		0:	No mention of standards for code development such as continuous integration.

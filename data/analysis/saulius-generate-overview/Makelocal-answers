@@ -6,7 +6,7 @@
 INPUT_DIR  ?= inputs
 OUTPUT_DIR ?= outputs
 
-INTERMEDIATE_TSV_DIR ?= ${OUTPUT_DIR}/intermediate-tsv/
+INTERMEDIATE_TSV_DIR ?= ${OUTPUT_DIR}/intermediate-tsv
 
 INPUT_YAMLS ?= $(shell find -L ${INPUT_DIR}/yaml/ -name '*.yaml')
 
