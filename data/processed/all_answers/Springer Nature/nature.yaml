@@ -1,5 +1,6 @@
 rdp_exist:
   text: 1. Existence of research data policy
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Research Data Policy (RDP) exists.
@@ -15,15 +16,13 @@ rdp_exist:
       reported in a research article.'
   1:
     text: Research Data Policy (RDP) exists.
-    explanation: "The data availability statement must make the conditions of access\
-      \ to the \u201Cminimum dataset\u201D that are necessary to interpret, verify\
-      \ and extend the research in the article, transparent to readers. This minimum\
-      \ dataset may be provided through deposition in public community/discipline-specific\
-      \ repositories"
+    explanation: none
   correct_answer: null
+  discrepancy_reason: null
 data_sharing:
   text: 3. Data sharing requirements in RDP
-  has_discrepancies: true
+  N. encoders: 2
+  has_discrepancies: false
   0:
     text: Public data sharing required only for specific types of data.
     explanation: 'We encourage authors to deposit their supporting data in publicly
@@ -34,14 +33,14 @@ data_sharing:
       For a number of data types, submission to a community-endorsed, public repository
       is mandatory. See our list of mandated data types.'
   1:
-    text: Data sharing encouraged but optional.
-    explanation: 'Mandatory deposition of data is required for certain data types;
-      see table below with recommended repositories. '
-  correct_answer: 0
-  discrepancy_reason: language understanding
+    text: Public data sharing required only for specific types of data.
+    explanation: Mandatory deposition of data is required for certain data types
+  correct_answer: null
+  discrepancy_reason: null
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public data sharing on a FAIR repository required only for specific types
@@ -58,23 +57,25 @@ data_fair:
     text: Public data sharing on a FAIR repository required only for specific types
       of data (e.g. genetic data has to be shared on a FAIR repository but no other
       data).
-    explanation: All published manuscripts reporting original research in Nature Portfolio
-      journals must include a data availability statement.
+    explanation: .nan
   correct_answer: null
+  discrepancy_reason: null
 data_availability:
   text: 2. Data availability statement
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Required according to the RDP.
     explanation: 1. All original articles must include a data availability statement
   1:
     text: Required according to the RDP.
-    explanation: Code should be deposited in a DOI-minting repository such as Zenodo
-      or Code Ocean and cited in the reference list following the guidelines described
-      here.
+    explanation: All published manuscripts reporting original research in Nature Portfolio
+      journals must include a data availability statement.
   correct_answer: null
+  discrepancy_reason: null
 data_citability:
   text: '5. Citability and findability of data '
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: DOIs or other persistent identifiers recommended for datasets or codes.
@@ -87,29 +88,27 @@ data_citability:
       \ mandatory]"
   1:
     text: DOIs or other persistent identifiers recommended for datasets or codes.
-    explanation: 'Upon publication, Nature Portfolio journals consider it best practice
-      to release custom computer code in a way that allows readers to repeat the published
-      results. '
+    explanation: .nan
   correct_answer: null
+  discrepancy_reason: null
 data_timing:
   text: 7. Timing of data release
+  N. encoders: 2
   has_discrepancies: true
   0:
-    text: Required data must be available prior to official publication.
+    text: Required data must be available after official publication.
     explanation: 2. We strongly encourage that all datasets supporting the analysis
       and conclusions of the paper are made publicly available at the time of publication,
       and we mandate the sharing of community-endorsed data types
   1:
     text: Timing of data availability not adressed in RDP.
-    explanation: 'This minimum dataset may be provided through deposition in public
-      community/discipline-specific repositories, custom proprietary repositories
-      for certain types of datasets, or general repositories like Figshare, Zenodo
-      and Dryad. Providing large datasets in supplementary information is strongly
-      discouraged and the preferred approach is to make data available in repositories.  '
+    explanation: Providing large datasets in supplementary information is strongly
+      discouraged and the preferred approach is to make data available in repositories.
   correct_answer: 0
-  discrepancy_reason: language understanding
+  discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public online repositories recommended in RDP.
@@ -122,12 +121,15 @@ data_sharing_method:
       is mandatory. See our list of mandated data types.'
   1:
     text: Public online repositories recommended in RDP.
-    explanation: 'Authors are encouraged to manage subsequent code versions and to
-      use a license approved by the open source initiative. '
+    explanation: 'Nature backs the Enabling FAIR Data initiative and requires authors
+      to deposit data in community repositories. Announcement: FAIR data in Earth
+      science.'
   correct_answer: null
+  discrepancy_reason: null
 data_licenses:
   text: 9. Recommended/required licenses
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Explicit mention of a certain license/license type in RDP.
     explanation: 'Authors are encouraged to manage subsequent code versions and to
@@ -138,11 +140,13 @@ data_licenses:
       [Note: again, this is from the additional Nature Portfolio document, not from
       the Springer-Nature RDP]'
   1:
-    text: Explicit mention of a certain license/license type in RDP.
+    text: Open access license required for shared data.
     explanation: .nan
-  correct_answer: null
+  correct_answer: 0
+  discrepancy_reason: Text not found
 data_referee:
   text: 10. Referee guidelines concerning research data
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Additional data or code referee (referee that solely confirms that code
@@ -164,46 +168,50 @@ data_referee:
       [among others]'
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
-    explanation: 'For the following types of data set, submission to a community-endorsed,
-      public repository is mandatory. '
+    explanation: .nan
   correct_answer: 0
-  discrepancy_reason: language understanding
+  discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: .nan
     explanation: ''
   1:
-    text: .nan
+    text: Protein sequences; DNA and RNA sequences; DNA and RNA sequencing data; Genetic
+      polymorphisms; Linked genotype and phenotype data; Macromolecular structure;
+      Gene expression data; Crystallographic data for small molecules; Proteomics
+      data; Earth, space & environmental sciences
     explanation: ''
   correct_answer: 0
+  discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
-    text: DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence
-      data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular
-      structure data; Gene expression data; Crystallographic data for small molecules
+    text: DNA sequence data,  RNA sequence data,  Genome assembly data,  Protein sequence
+      data,  Proteomics data,  Genetic variation data,  Functional genomics data,  Macromolecular
+      structure data,  Gene expression data,  Crystallographic data for small molecules
     explanation: ''
   1:
-    text: Protein sequences; DNA and RNA sequences; DNA and RNA sequencing data; Genetic
-      polymorphisms; Linked genotype and phenotype data; Macromolecular structure;
-      Gene expression data (must be MIAME compliant); Crystallographic data for small
-      molecules; Proteomics data; Earth, space & environmental sciences
+    text: ' see table below with recommended repositories. '
     explanation: ''
   correct_answer: 0
+  discrepancy_reason: Formatting inconsistent
 code_required:
   text: 13. Code sharing requirements
-  has_discrepancies: true
+  N. encoders: 2
+  has_discrepancies: false
   0:
     text: Code sharing encouraged but optional.
     explanation: "The focus of this policy framework is on data rather than software\
@@ -224,14 +232,15 @@ code_required:
       \nPapers in Nature Portfolio journals should make computer code accessible where\
       \ possible.\n\n[From Nature Portfolio additional policies: https://www.nature.com/nature/editorial-policies/reporting-standards]"
   1:
-    text: Code sharing required.
-    explanation: 'Authors must make available upon request, to editors and reviewers,
-      any previously unreported custom computer code or algorithm used to generate
-      results that are reported in the paper and central to its main claims. '
-  correct_answer: 1
-  discrepancy_reason: difficulty in matching information and question
+    text: Code sharing encouraged but optional.
+    explanation: 'Authors are encouraged to manage subsequent code versions and to
+      use a license approved by the open source initiative. (MT NOTE: not required
+      but encouraged).'
+  correct_answer: null
+  discrepancy_reason: null
 code_reproducibility:
   text: 14. Code Reproducibility
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of dependencies for research code.
@@ -239,12 +248,12 @@ code_reproducibility:
       point 1.
   1:
     text: No mention of dependencies for research code.
-    explanation: ' Code should be deposited in a DOI-minting repository such as Zenodo
-      or Code Ocean and cited in the reference list following the guidelines described
-      here. '
+    explanation: .nan
   correct_answer: null
+  discrepancy_reason: null
 code_versioning:
   text: 15. Versioning and persistent identifiers
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Journal policies encourage/recommend a persistent identifier or specifying
@@ -255,10 +264,14 @@ code_versioning:
   1:
     text: Journal policies encourage/recommend a persistent identifier or specifying
       a version of developed code.
-    explanation: .nan
+    explanation: Code should be deposited in a DOI-minting repository such as Zenodo
+      or Code Ocean and cited in the reference list following the guidelines described
+      here.
   correct_answer: null
+  discrepancy_reason: null
 code_quality:
   text: 16. Code Quality Standards
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: The journal policies require code of articles to fulfill certain standards.
@@ -267,11 +280,14 @@ code_quality:
       in Nature Portfolio document, not in RDP]'
   1:
     text: The journal policies do not mention any code quality standards.
-    explanation: .nan
+    explanation: 'Code should be deposited in a DOI-minting repository such as Zenodo
+      or Code Ocean and cited in the reference list following the guidelines described
+      here. '
   correct_answer: 0
-  discrepancy_reason: language understanding
+  discrepancy_reason: Text not found
 code_autotest:
   text: 17. Automatic Testing
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of automatic testing to verify code functionality.
@@ -280,8 +296,10 @@ code_autotest:
     text: No mention of automatic testing to verify code functionality.
     explanation: .nan
   correct_answer: null
+  discrepancy_reason: null
 code_docs:
   text: 18. Code Documentation
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: The journal policies encourage/recommend standards for code documentation.
@@ -292,19 +310,22 @@ code_docs:
     text: No mention of standards for code documentation.
     explanation: .nan
   correct_answer: 0
-  discrepancy_reason: language understanding
+  discrepancy_reason: Text not found
 code_linting:
   text: 19. Linting Standards
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of linting standards for code.
     explanation: '-'
   1:
     text: No mention of linting standards for code.
-    explanation: .nan
+    explanation: n.a.
   correct_answer: null
+  discrepancy_reason: null
 code_development:
   text: 20. Code Development
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of standards for code development such as continuous integration.
@@ -314,5 +335,6 @@ code_development:
       Ocean and cited in the reference list following the guidelines described here."
   1:
     text: No mention of standards for code development such as continuous integration.
-    explanation: .nan
+    explanation: 'MT: there is no multiple choice question below.'
   correct_answer: null
+  discrepancy_reason: null
