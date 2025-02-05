@@ -19,7 +19,7 @@ TEST_TTSV_DIFFS ?= ${TEST_TTSV_CASES:${TEST_CASE_DIR}/%.ttsv=${TEST_OUTP_DIR}/%.
 
 TEST_DIFFS ?= ${TEST_YAML_DIFFS} ${TEST_TTSV_DIFFS}
 
-.PHONY: all test tests
+.PHONY: all test tests clean
 
 all:
 
@@ -36,3 +36,5 @@ ${TEST_OUTP_DIR}/%.diff: ${TEST_CASE_DIR}/%.ttsv ${TEST_OUTP_DIR}/%.out
 
 test-answers-clean:
 	rm -f ${TEST_DIFFS}
+
+clean: test-answers-clean
