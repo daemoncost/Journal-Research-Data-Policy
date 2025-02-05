@@ -9,13 +9,13 @@ TEST_CASE_DIR ?= ${TEST_DIR}/cases
 TEST_OUTP_DIR ?= ${TEST_DIR}/outputs
 
 TEST_YAML_CASES ?= $(wildcard ${TEST_CASE_DIR}/*.yaml)
-TEST_TTSV_CASES ?= $(wildcard ${TEST_CASE_DIR}/*.ttsv)
+TEST_TTSV_CASES ?= $(wildcard ${TEST_CASE_DIR}/*.tsv)
 
 TEST_YAML_OUPUTS ?= ${TEST_YAML_CASES:${TEST_CASE_DIR}/%.yaml=${TEST_OUTP_DIR}/%.out}
-TEST_TTSV_OUPUTS ?= ${TEST_TTSV_CASES:${TEST_CASE_DIR}/%.ttsv=${TEST_OUTP_DIR}/%.out}
+TEST_TTSV_OUPUTS ?= ${TEST_TTSV_CASES:${TEST_CASE_DIR}/%.tsv=${TEST_OUTP_DIR}/%.out}
 
 TEST_YAML_DIFFS ?= ${TEST_YAML_CASES:${TEST_CASE_DIR}/%.yaml=${TEST_OUTP_DIR}/%.diff}
-TEST_TTSV_DIFFS ?= ${TEST_TTSV_CASES:${TEST_CASE_DIR}/%.ttsv=${TEST_OUTP_DIR}/%.diff}
+TEST_TTSV_DIFFS ?= $(subst all-answers,selected-answer,${TEST_TTSV_CASES:${TEST_CASE_DIR}/%.tsv=${TEST_OUTP_DIR}/%.diff})
 
 TEST_DIFFS ?= ${TEST_YAML_DIFFS} ${TEST_TTSV_DIFFS}
 
@@ -30,6 +30,11 @@ test tests: test-answers
 test-answers: ${TEST_DIFFS}
 
 ${TEST_OUTP_DIR}/%.diff: ${TEST_CASE_DIR}/%.ttsv ${TEST_OUTP_DIR}/%.out
+	@printf "%-30s: " $*
+	@diff -I '^#' ${word 1,$^}  ${word 2,$^} > $@; \
+	if [ $$? -eq 0 ]; then echo "PASSED"; else echo "FAILED"; cat $@; fi
+
+${TEST_OUTP_DIR}/%.diff: ${TEST_CASE_DIR}/%.tsv ${TEST_OUTP_DIR}/%.out
 	@printf "%-30s: " $*
 	@diff -I '^#' ${word 1,$^}  ${word 2,$^} > $@; \
 	if [ $$? -eq 0 ]; then echo "PASSED"; else echo "FAILED"; cat $@; fi
