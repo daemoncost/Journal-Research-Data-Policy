@@ -70,6 +70,8 @@ ${OUTPUT_ALL_ANSWERS_TSV}: $(sort ${CONVERTED_TSV})
 # table:
 
 ${OUTPUT_SELECTED_ANSWER_TSV}: ${OUTPUT_ALL_ANSWERS_TSV}
+
+%$(notdir ${OUTPUT_SELECTED_ANSWER_TSV}): %$(notdir ${OUTPUT_ALL_ANSWERS_TSV})
 	date +"# %F %T %Z" > $@
 	tail -n +2 $< \
 	| awk -F'\t' ' \
