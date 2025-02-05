@@ -43,7 +43,7 @@ ${INTERMEDIATE_TSV_DIR}/%.yaml: ${INPUT_DIR}/%.yaml
 
 ${OUTPUT_ALL_ANSWERS_TSV}: $(sort ${CONVERTED_TSV})
 	date +"# %F %T %Z" > $@
-	head -n 1 $< >> $@
+	head -n 2 $< | tail -n 1 >> $@
 	tail -q -n +3 $^ \
 	| sed 's:${INTERMEDIATE_TSV_DIR}:${INPUT_DIR}:' >> $@
 
