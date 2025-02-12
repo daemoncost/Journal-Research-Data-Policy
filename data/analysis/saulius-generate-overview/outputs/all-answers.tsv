@@ -1,4 +1,4 @@
-# 2025-02-03 17:35:12 EET
+# 2025-02-05 13:45:55 EET
 NAnsw	File	Key	Quest	Discrepancies?	IdxCorrect	AnsKeys	Answer1	Answer2	Answer3	Other Answers...
 2	inputs/yaml/2d_materials.yaml	rdp_exist:	1. Existence of research data policy	false		0:,1:	Research Data Policy (RDP) exists.	Research Data Policy (RDP) exists.
 2	inputs/yaml/2d_materials.yaml	data_sharing:	3. Data sharing requirements in RDP	false		0:,1:	Data sharing encouraged but optional.	Data sharing encouraged but optional.
