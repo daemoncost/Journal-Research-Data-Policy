@@ -7,7 +7,12 @@ def clean_question_text(question_text):
 
 # Normalize text
 def normalize_text(text):
-    replacements = {"not available": "na", "no text": "na", "n/a": "na", "na": "na"}
+    replacements = {
+        "not available": "na",
+        "no text": "na",
+        "n/a": "na",
+        "na": "na",
+    }
     if isinstance(text, str):
         text = text.strip().lower()
         return replacements.get(text, text)
@@ -25,6 +30,7 @@ def normalize_publisher(name):
         "acs": "ACS",
         "aip publishing": "AIP",
         "aip": "AIP",
+        "aip publishers": "AIP",
         "american chemical society (acs)": "ACS",
         "aps": "APS",
         "american physical society (aps)": "APS",
@@ -37,6 +43,7 @@ def normalize_publisher(name):
         "ieee": "IEEE",
         "iop": "IOP",
         "iop publishing": "IOP",
+        "the electrochemical society": "IOP",
         "iucr": "IUCr",
         "mdpi": "MDPI",
         "mdpi all mdpi have the same instructions for authors": "MDPI",
@@ -64,7 +71,8 @@ def normalize_journal(name):
             "accounts_of_materials_research_-_acc_mater_res"
         ): "accounts_of_materials_research",
         (
-            "acs_applied_materials_and_interfaces_-_" "acs_appl_mater_interfaces"
+            "acs_applied_materials_and_interfaces_-_"
+            "acs_appl_mater_interfaces"
         ): "applied_materials_and_interfaces",
         (
             "environmental_science_and_technology_-_environ_sci_technol"
