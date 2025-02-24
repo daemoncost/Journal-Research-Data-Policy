@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Any, Dict, List, Union
 
 import pandas as pd
 
@@ -51,7 +51,7 @@ class Publisher:
                 else:
                     final_data[question_text] = "Unknown"
 
-            # Instantiate the Journal using the final answers
+            # Instantiate the Journal using the final answers.
             publisher.add_journal(journal_name, pd.Series(final_data))
 
         return publisher
