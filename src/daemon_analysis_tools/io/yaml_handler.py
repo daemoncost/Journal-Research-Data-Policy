@@ -1,9 +1,11 @@
-from daemon_analysis_tools.datamodels.question import Question
-import pandas as pd
-import yaml
-from typing import Dict, List, Optional
-from glob import glob
 import os
+from glob import glob
+from typing import Dict, List, Optional
+
+import yaml
+
+from daemon_analysis_tools.datamodels.question import Question
+
 
 # Function to save answers to YAML files grouped by question
 def save_answers_to_yaml(

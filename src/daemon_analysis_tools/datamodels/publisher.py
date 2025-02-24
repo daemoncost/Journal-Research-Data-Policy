@@ -2,7 +2,7 @@ from typing import Dict, List
 
 import pandas as pd
 
-from daemon_analysis_tools.datamodels.journal import Journal
+from .journal import Journal
 
 
 class Publisher:

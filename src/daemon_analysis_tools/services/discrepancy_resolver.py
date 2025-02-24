@@ -1,8 +1,11 @@
 from typing import Optional, Union
-from daemon_analysis_tools.datamodels.question import Question, Answer
+
+from daemon_analysis_tools.datamodels.question import Answer, Question
 
 
-def _select_correct_answer(question: Question, correct_answer: Union[str, int]) -> tuple[Answer, int]:
+def _select_correct_answer(
+    question: Question, correct_answer: Union[str, int]
+) -> tuple[Answer, int]:
     """
     Select the correct answer from the available answers.
 
@@ -19,12 +22,16 @@ def _select_correct_answer(question: Question, correct_answer: Union[str, int]) 
                 selected_answer = answer
                 correct_index = idx
                 break
-    elif isinstance(correct_answer, int) and 0 <= correct_answer < len(question.answers):
+    elif isinstance(correct_answer, int) and 0 <= correct_answer < len(
+        question.answers
+    ):
         selected_answer = question.answers[correct_answer]
         correct_index = correct_answer
 
     if selected_answer is None:
-        raise ValueError("Provided `correct_answer` does not match any available answers.")
+        raise ValueError(
+            "Provided `correct_answer` does not match any available answers."
+        )
 
     return selected_answer, correct_index
 
@@ -66,7 +73,8 @@ def resolve_discrepancy(
     :param question: The Question object.
     :param correct_answer: The correct answer (string or index).
     :param discrepancy_reason: The reason for the discrepancy.
-    :param interactive: If True, prompts user for input when `correct_answer` is not provided.
+    :param interactive: If True, prompts user for input when `correct_answer` is not
+        provided.
     """
     if not question.has_discrepancies():
         question._set_correct_answer(question.answers[0], "No discrepancies detected.")
@@ -79,7 +87,8 @@ def resolve_discrepancy(
     selected_answer, correct_index = _select_correct_answer(question, correct_answer)
 
     if discrepancy_reason is None:
-        raise ValueError("You must provide `discrepancy_reason` to resolve discrepancies.")
+        raise ValueError(
+            "You must provide `discrepancy_reason` to resolve discrepancies."
+        )
 
     question.set_correct_answer(selected_answer, discrepancy_reason, correct_index)
-

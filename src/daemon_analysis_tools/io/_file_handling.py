@@ -5,8 +5,8 @@ from typing import Dict, List, Optional
 import pandas as pd
 import yaml
 
-from daemon_analysis_tools.datamodels.question import Question
-from daemon_analysis_tools.processing.normalizer import normalize_journal, normalize_publisher
+from ..datamodels.question import Question
+from ..processing.normalizer import normalize_journal, normalize_publisher
 
 
 def load_and_process_csv(file_path: str) -> pd.DataFrame:

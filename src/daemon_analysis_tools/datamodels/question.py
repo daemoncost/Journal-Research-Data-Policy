@@ -1,6 +1,6 @@
 from typing import Optional, Union
 
-from daemon_analysis_tools.services.scoring import jaccard_similarity
+from ..services.scoring import jaccard_similarity
 
 
 class Answer:
@@ -33,7 +33,9 @@ class Question:
         self.correct_answer_encoder_id = None
         self.discrepancy_reason = None
 
-    def _set_correct_answer(self, correct_answer: Answer, reason: str, encoder_id: Optional[int] = None) -> None:
+    def _set_correct_answer(
+        self, correct_answer: Answer, reason: str, encoder_id: Optional[int] = None
+    ) -> None:
         """Set the correct answer after resolving discrepancies."""
         self.correct_answer = correct_answer
         self.correct_answer_encoder_id = encoder_id
@@ -57,8 +59,8 @@ class Question:
         if self.discrepancy_reason is not None:
             return True
         else:
-            if len(self.answers)<2:
-                print('Warning: This question has a single answer')
+            if len(self.answers) < 2:
+                print("Warning: This question has a single answer")
             answer_texts = [answer.text for answer in self.answers]
             if not self.is_open:
                 return len(set(answer_texts)) > 1
@@ -109,7 +111,6 @@ class Question:
             self.correct_answer_encoder_id = 0
             self.correct_answer = self.answers[0]
             self.discrepancy_reason = discrepancy_reason
-    
 
     def get_final_answer(self) -> Union[Answer, None]:
         """
