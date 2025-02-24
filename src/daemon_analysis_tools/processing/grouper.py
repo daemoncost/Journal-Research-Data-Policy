@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 from typing import Dict, Optional
 
 import pandas as pd
@@ -77,6 +78,13 @@ def _initialize_question(
     :param journal: The journal name.
     :param q_num: The question number.
     :param column: The column name containing the question text.
+=======
+    grouped_questions: dict, publisher: str, journal: str, q_num: int, column: str
+):
+    """
+    Initializes a Question object in the grouped_questions dictionary if not already
+    present.
+>>>>>>> bb5b81c... Run pre-commit
     """
     question_types_dict = _load_question_types()
     if q_num not in grouped_questions[publisher][journal]:

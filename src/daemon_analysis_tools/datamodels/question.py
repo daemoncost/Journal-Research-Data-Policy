@@ -39,6 +39,7 @@ class Question:
         :param is_open: Flag indicating whether the question accepts open-text answers.
         """
 
+<<<<<<< HEAD
         self.question_id: str = question_id
         self.text: str = text
         self.answers: List[Answer] = []
@@ -91,6 +92,7 @@ class Question:
         if not self.is_open:
             return len(set(answer_texts)) > 1
         else:
+<<<<<<< HEAD
             return jaccard_similarity(answer_texts) > 0.55
 
     def resolve_discrepancy(
