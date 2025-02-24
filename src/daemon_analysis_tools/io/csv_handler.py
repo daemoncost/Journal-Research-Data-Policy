@@ -7,11 +7,31 @@ from daemon_analysis_tools.processing.normalizer import (
 
 
 def _load_csv(file_path: str) -> pd.DataFrame:
-    """Loads a CSV file into a Pandas DataFrame."""
+    """
+    Load a CSV file into a Pandas DataFrame.
+
+    :param file_path: Path to the CSV file.
+    :type file_path: str
+    :return: A DataFrame containing the CSV data.
+    :rtype: pd.DataFrame
+    """
     return pd.read_csv(file_path)
 
 
 def _remove_sensitive_columns(data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Remove sensitive columns from the DataFrame.
+
+    This function checks whether all e-mail addresses in the "E-Mail-Adresse" column are
+    NaN.
+    If any e-mail addresses are found, a warning is printed. It then drops the columns
+    "Zeitstempel", "E-Mail-Adresse", and "Punkte", and removes the first three rows.
+
+    :param data: The DataFrame from which sensitive columns should be removed.
+    :type data: pd.DataFrame
+    :return: The DataFrame with sensitive columns removed.
+    :rtype: pd.DataFrame
+    """
     try:
         emails_are_nan = data["E-Mail-Adresse"].isna().all()
         if not emails_are_nan:
@@ -19,44 +39,94 @@ def _remove_sensitive_columns(data: pd.DataFrame) -> pd.DataFrame:
         data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
         data.drop([0, 1, 2], axis=0, inplace=True)
     except KeyError:
+        # The DataFrame has already been preprocessed to remove e-mail addresses.
         pass
-        # Already preprocessed to remove E-mail addresses
     return data
 
 
 def _rename_columns(data: pd.DataFrame) -> pd.DataFrame:
-    """Renames specific columns for consistency."""
+    """
+    Rename specific columns in the DataFrame for consistency.
+
+    :param data: The DataFrame with original column names.
+    :type data: pd.DataFrame
+    :return: A DataFrame with renamed columns.
+    :rtype: pd.DataFrame
+    """
     rename_mapping = {
-        "Journal name or names, in case these replies apply "
-        "to multiple journals (please separate the names by comma):": "journal"
+        (
+            "Journal name or names, in case these replies apply to multiple journals "
+            "(please separate the names by comma):"
+        ): "journal"
     }
     return data.rename(columns=rename_mapping)
 
 
 def _split_and_expand_journal_names(data: pd.DataFrame) -> pd.DataFrame:
-    """Splits journal names by commas and expands them into multiple rows."""
+    """
+    Split journal names by commas and expand them into multiple rows.
+
+    The 'journal' column is expected to contain comma-separated values. This function
+    splits these values into lists and then expands the lists into separate rows.
+
+    :param data: The DataFrame containing the 'journal' column.
+    :type data: pd.DataFrame
+    :return: A DataFrame with expanded journal names.
+    :rtype: pd.DataFrame
+    """
     data["journal"] = data["journal"].str.split(r"\s*,\s*")
     return data.explode("journal").reset_index(drop=True)
 
 
 def _normalize_columns(data: pd.DataFrame) -> pd.DataFrame:
-    """Normalizes journal and publisher names."""
+    """
+    Normalize journal and publisher names in the DataFrame.
+
+    If the 'Publisher Name' column is present, its values are normalized using the
+    _normalize_publisher function. Likewise, the 'journal' column values are normalized
+    using the _normalize_journal function.
+
+    :param data: The DataFrame with columns to be normalized.
+    :type data: pd.DataFrame
+    :return: A DataFrame with normalized journal and publisher names.
+    :rtype: pd.DataFrame
+    """
     if "Publisher Name" in data.columns:
         data["Publisher Name"] = data["Publisher Name"].apply(_normalize_publisher)
-
     if "journal" in data.columns:
         data["journal"] = data["journal"].apply(_normalize_journal)
-
     return data
 
 
 def _remove_unnamed_columns(data: pd.DataFrame) -> pd.DataFrame:
-    """Removes automatically generated unnamed columns."""
+    """
+    Remove automatically generated unnamed columns from the DataFrame.
+
+    :param data: The DataFrame from which to remove unnamed columns.
+    :type data: pd.DataFrame
+    :return: A DataFrame with unnamed columns removed.
+    :rtype: pd.DataFrame
+    """
     return data.loc[:, ~data.columns.str.contains("^Unnamed:")]
 
 
 def load_and_process_csv(file_path: str) -> pd.DataFrame:
-    """Loads and processes a CSV file step by step."""
+    """
+    Load and process a CSV file step by step.
+
+    This function executes several data processing steps:
+      1. Load the CSV into a DataFrame.
+      2. Remove sensitive columns.
+      3. Rename specific columns.
+      4. Split and expand journal names.
+      5. Normalize journal and publisher names.
+      6. Remove automatically generated unnamed columns.
+
+    :param file_path: Path to the CSV file.
+    :type file_path: str
+    :return: A processed DataFrame.
+    :rtype: pd.DataFrame
+    """
     data = _load_csv(file_path)
     data = _remove_sensitive_columns(data)
     data = _rename_columns(data)
