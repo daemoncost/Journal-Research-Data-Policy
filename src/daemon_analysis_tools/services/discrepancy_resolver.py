@@ -1,4 +1,5 @@
 from typing import Optional, Union
+<<<<<<< HEAD
 
 from daemon_analysis_tools.datamodels.question import Answer, Question
 

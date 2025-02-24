@@ -1,6 +1,6 @@
-from typing import List, Optional, Union
+from typing import Optional, Union
 
-from ..services.scoring import jaccard_similarity
+from daemon_analysis_tools.services.scoring import jaccard_similarity
 
 
 class Answer:

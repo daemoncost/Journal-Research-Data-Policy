@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from typing import Dict, Optional
 
 import pandas as pd
@@ -83,6 +84,7 @@ def _initialize_question(
         question.is_open = question_types_dict[q_num]
         grouped_questions[publisher][journal][q_num] = question
 
+<<<<<<< HEAD
 
 def _process_group(
     group: pd.DataFrame,

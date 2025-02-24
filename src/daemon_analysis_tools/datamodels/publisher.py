@@ -1,8 +1,8 @@
-from typing import Any, Dict, List, Union
+from typing import Dict, List
 
 import pandas as pd
 
-from .journal import Journal
+from daemon_analysis_tools.datamodels.journal import Journal
 
 
 class Publisher:
@@ -51,7 +51,7 @@ class Publisher:
                 else:
                     final_data[question_text] = "Unknown"
 
-            # Instantiate the Journal using the final answers.
+            # Instantiate the Journal using the final answers
             publisher.add_journal(journal_name, pd.Series(final_data))
 
         return publisher
