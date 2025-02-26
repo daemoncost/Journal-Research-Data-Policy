@@ -91,4 +91,4 @@ def resolve_discrepancy(
             "You must provide `discrepancy_reason` to resolve discrepancies."
         )
 
-    question.set_correct_answer(selected_answer, discrepancy_reason, correct_index)
+    question._set_correct_answer(selected_answer, discrepancy_reason, correct_index)
