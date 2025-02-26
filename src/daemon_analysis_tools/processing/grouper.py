@@ -1,5 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import importlib.resources as pkg_resources
+>>>>>>> 50d9aad... Update docs and type hints in grouper.py
 from typing import Dict, Optional
 
 import pandas as pd
@@ -82,7 +86,7 @@ def _initialize_question(
     grouped_questions: dict, publisher: str, journal: str, q_num: int, column: str
 ):
     """
-    Initializes a Question object in the grouped_questions dictionary if not already
+    Initialize a Question object in the grouped_questions dictionary if not already
     present.
 >>>>>>> bb5b81c... Run pre-commit
     """
