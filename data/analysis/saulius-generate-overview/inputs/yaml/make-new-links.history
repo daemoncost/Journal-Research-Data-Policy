@@ -1,0 +1,1 @@
+  659  find ../processed/ -type f -name '*.yaml' | xargs -i sh -c 'F=$(basename "{}"); if ! [ -f "$F" ]; then ln -vs "{}" "$F"; fi'

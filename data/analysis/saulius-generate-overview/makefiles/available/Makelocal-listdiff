@@ -1,0 +1,16 @@
+#---*- Makefile -*-------------------------------------------------------
+#$Author: saulius $
+#$Date: 2020-10-02 09:04:40 +0300 (Fri, 02 Oct 2020) $
+#$Revision: 255 $
+#$URL: svn+ssh://saulius-grazulis.lt/home/saulius/svn-repositories/makefiles/multiscript-testing/Makelocal-multiscript-testing $
+#------------------------------------------------------------------------
+
+# List failed tests
+
+OUTP_DIR ?= tests/outputs
+DIFF_EXT ?= diff
+
+.PHONY: failed listdiff
+
+failed listdiff: ## test
+	@-find ${OUTP_DIR} -type f -name '*.${DIFF_EXT}' -size +0 | sort -u

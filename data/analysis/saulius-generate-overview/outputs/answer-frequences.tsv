@@ -1,0 +1,71 @@
+# 2025-02-14 11:10:40 EET
+Count	Quest	Text
+89	code_autotest:	No mention of automatic testing to verify code functionality.
+89	code_development:	No mention of standards for code development such as continuous integration.
+86	code_docs:	No mention of standards for code documentation.
+3	code_docs:	The journal policies encourage/recommend standards for code documentation.
+89	code_linting:	No mention of linting standards for code.
+75	code_quality:	The journal policies do not mention any code quality standards.
+7	code_quality:	The journal policies encourage/recommend certain standards for code.
+4	code_quality:	Not mention any code quality standards.
+3	code_quality:	The journal policies require code of articles to fulfill certain standards.
+88	code_reproducibility:	No mention of dependencies for research code.
+1	code_reproducibility:	Journal policies require stating all dependencies and their versions that were used to run computational experiments.
+61	code_required:	Code sharing encouraged but optional.
+23	code_required:	Code sharing not mentioned.
+4	code_required:	Code sharing required.
+1	code_required:	 Code sharing encouraged but optional.
+62	code_versioning:	No mention of a persistent identifier or specifying a version of developed code.
+27	code_versioning:	Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
+61	data_availability:	Required according to the RDP.
+25	data_availability:	Mentioned in the RDP but optional.
+3	data_availability:	Not mentioned in the RDP.
+84	data_citability:	DOIs or other persistent identifiers recommended for datasets or codes.
+3	data_citability:	No mention of DOIs or other persistent identifiers for datasets or codes.
+2	data_citability:	DOIs or other persistent identifiers required for datasets or codes.
+42	data_fair:	Public data sharing on a FAIR repository encouraged.
+29	data_fair:	Public data sharing on a FAIR repository not mentioned in RDP.
+18	data_fair:	Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data).
+77	data_licenses:	No mention of data/code licenses in RDP.
+12	data_licenses:	Explicit mention of a certain license/license type in RDP.
+32	data_recommended:	.nan
+28	data_recommended:	no text
+9	data_recommended:	no text.
+8	data_recommended:	Crystal structure (organic / organometallic / metal organic); Crystal structure (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM; bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates; Input/configuration files and program output; Materials simulation data including electronic structure and molecular dynamics; Computational materials science; Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral data for small chemical molecules, metabolomics, exposomics; Electrophoretic gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages, multidimensional life sciences image data (cell and tissue); Materials (Various); Materials simulation data including electronic structure and molecular dynamics; Computational materials science; All proteomics data; Proteomics mass spectrometry; Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp), e.g.single-base nucleotide substitutions, small-scale deletion or insertions; Human genomic structural variation data (>50bp), e.g. insertions, deletions, translocations; Gene expression data, array- and sequence-based; High-throughput functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions; miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric and earth observation research, environmental data; Environmental and ecological data; Geochemical, geochronological, and petrological data; Climate or Earth system research, climate model data; Functional enzymology data (kinetic and experimental data); Flow cytometry data; Protein circular dichroism and protein synchrotron radiation circular dichroism ; Intermolecular and supramolecular interactions of molecular systems, binding, assembly, and interaction phenomena; Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials; Computational studies and modelling; Electrophoretic gels and blots;Fluorescence sensors; Inorganic and organometallic compounds; Macromolecular structure and sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers and macromolecules; Synthetic procedures; System models
+7	data_recommended:	Authors are encouraged to consider deposition in public, community-supported repositories of the data-types listed below. Protein-protein interaction data; Metabolite and metabolome profiling data; Small-molecule screening data; chemical compound data; Flow cytometry data; Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data; Enzymology and biocatalysis data
+4	data_recommended:	none
+1	data_recommended:	Crystal structure (organic / organometallic / metal organic); Crystal structure (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM; bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates; Input/configuration files and program output; Materials simulation data including electronic structure and molecular dynamics; Computational materials science; Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral data for small chemical molecules, metabolomics, exposomics; Electrophoretic gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages, multidimensional life sciences image data (cell and tissue); Materials (Various); Materials simulation data including electronic structure and molecular dynamics; Computational materials science; All proteomics data; Proteomics mass spectrometry; Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp), e.g.single-base nucleotide substitutions, small-scale deletion or insertions; Human genomic structural variation data (>50bp), e.g. insertions, deletions, translocations; Gene expression data, array- and sequence-based; High-throughput functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions; miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric and earth observation research, environmental data; Environmental and ecological data; Geochemical, geochronological, and petrological data; Climate or Earth system research, climate model data; Functional enzymology data (kinetic and experimental data); Flow cytometry data; Protein circular dichroism and protein synchrotron radiation circular dichroism ; Intermolecular and supramolecular interactions of molecular systems, binding, assembly, and interaction phenomena; Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials; Computational studies and modelling; Electrophoretic gels and blots;Fluorescence sensors; Inorganic and organometallic compounds; Macromolecular structure and sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers and macromolecules; Synthetic procedures; System models;Batteries
+54	data_referee:	Data sharing policy not mentioned in refereeing guidelines.
+31	data_referee:	Data sharing policy mentioned in refereeing guidelines.
+4	data_referee:	Additional data or code referee (referee that solely confirms that code and data are shared following the RDP).
+28	data_required:	no text
+11	data_required:	Nothing in particular about this
+9	data_required:	no text.
+9	data_required:	DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
+9	data_required:	.nan
+7	data_required:	Authors are required to deposit the following mandatory data types in public, community-supported repositories, such as those listed below, prior to publication of an associated Frontiers manuscript. Genetic and genomic sequence (DNA/RNA); Metagenomic sequence; DNA and RNA trace or short-read sequencing data; Genetic polymorphism data, including SNP and CNV data; Gene expression data; chromatin immunoprecipitation data (deep-sequencing or microarray); Data linking genotype to phenotype; Protein sequence data; Proteome profiling data; Small molecule, protein, protein complex data structural data; Taxonomy data
+4	data_required:	none
+3	data_required:	Batteries.Crystal structure (organic / organometallic / metal organic), nanomaterials
+3	data_required:	 reporting the efficiency of solar conversion devices;   reporting electrochemical data and setup of batteries.Crystal structure (organic / organometallic / metal organic) 
+1	data_required:	Structural Data Biological Macromolecules
+1	data_required:	Potential Energy Surfaces
+1	data_required:	Batteries; Crystal structure (organic / organometallic / metal organic); Computational results; Biomolecules (for example, enzymes, proteins, DNA/RNA, oligosaccharides, oligonucleotides); Nano-sized materials (such as quantum dots, nanoparticles, nanotubes, nanowires); Magnetic measurements; Inorganic and organometallic compounds; Polymers; Organic compounds 
+1	data_required:	Batteries.Crystal structure (organic / organometallic / metal organic), Inorganic and organometallic compounds
+1	data_required:	 Nothing in particular about this
+1	data_required:	 Crystal structure (organic / organometallic / metal organic); code; hardware
+59	data_sharing:	Data sharing encouraged but optional.
+18	data_sharing:	Public data sharing required only for specific types of data.
+8	data_sharing:	Data sharing required but not publicly (e.g. available upon request is allowed).
+3	data_sharing:	Data sharing only with editors and referees (no public sharing)
+1	data_sharing:	Public data sharing of all data required.
+52	data_sharing_method:	Public online repositories recommended in RDP.
+29	data_sharing_method:	Multiple data sharing methods equally recommended in RDP.
+4	data_sharing_method:	Data sharing in supplementary material or hosting by journal recommended in RDP.
+3	data_sharing_method:	No data sharing method recommended in RDP.
+1	data_sharing_method:	Data is shared upon request to authors in RDP.
+36	data_timing:	Required data must be available prior to review process.
+28	data_timing:	Required data must be available prior to official publication.
+17	data_timing:	Timing of data availability not adressed in RDP.
+8	data_timing:	Required data must be available after official publication.
+86	rdp_exist:	Research Data Policy (RDP) exists.
+3	rdp_exist:	Research Data Policy (RDP) does not exists.

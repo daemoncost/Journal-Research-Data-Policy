@@ -1,0 +1,12 @@
+nr	column_name	column_number	type	description	explanation
+1	NAnsw	1	integer	Number of answers	Number of answers that were encoded for this particular question
+2	File	2	string	A file name	The name of the original YAML file in which the answers to this question were recorded
+3	Key	3	string	The topic key	Gives a unique programmatic key for the topic; that key should not change even if the textual description of the topic is modified
+4	Quest	4	string	The question text	The question text from the original encoding YAML files where multiple answers to that question were collected
+5	Discrepancies?	5	boolean	were there discrepancies in the answers	Indicates, when ‘true’, that the encoded answers contradict each others. This involves semantic (human) judgment, so the value ‘false’ does NOT meant that all answers are textually identical.
+6	IdxCorrect	6	integer	Index of the correct answer’s column	Specifies which answer is judged to be correct in this encoding. The column of the correct answer is 8 + IdxCorrect value. Note that this file records only 3 answers do the original correct answer column might not be present in this file.
+7	AnsKeys	7	string	YAML/JSON keys of the answers	Lists what keys did the answers have, separated by commas. The software that produced this file may assume that the keys were all numbers, placed in order, so the AnsKeys for a question with 2 answers should be “0:,1:” and so on. The result MIGHT be incorrect of the keys do not follow this convention
+8	Answer1	8	string	The first answer	The first encoded answer from the YAML file
+9	Answer2	9	string	The second answer	The second encoded answer from the YAML file
+10	Answer3	10	string	The third answer	The third encoded answer from the YAML file
+11	Other	11	string	The remaining answers, if present	This is actually not a single column but potentially multiple columns (an array of columns?). They contain answer texts for the 4th, 5th and so on answers of those answers are present in the original YAML files. If there were no more than 3 answers, these columns MAY be missing. The column calculated from the IdxCorrect value as indicated in the description of IdxCorrect MUST be present, however. The file MUST contain as many asnwers as is indicated in the column NAnsw. The variable number of columns makes this file not actually a true CSV or TSV, but it will still be parsable by the corresponding parsers or line splitters, and the requirement that the IdxCorrect column always resolves, together with the NAnsw column, makes it unambuguously processable.

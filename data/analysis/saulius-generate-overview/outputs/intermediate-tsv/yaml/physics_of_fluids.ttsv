@@ -1,0 +1,21 @@
+# 2025-02-05 13:41:54 EET
+NAnsw	File	Key	Quest	Discrepancies?	IdxCorrect	AnsKeys	Answer1	Answer2	Answer3	Other Answers...
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	rdp_exist:	1. Existence of research data policy	false		0:	Research Data Policy (RDP) exists.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_sharing:	3. Data sharing requirements in RDP	false		0:	Data sharing encouraged but optional.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_fair:	4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)	false		0:	Public data sharing on a FAIR repository encouraged.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_availability:	2. Data availability statement	false		0:	Required according to the RDP.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_citability:	5. Citability and findability of data 	false		0:	DOIs or other persistent identifiers recommended for datasets or codes.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_timing:	7. Timing of data release	false		0:	Timing of data availability not adressed in RDP.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_sharing_method:	8. Recommended data sharing method	false		0:	Multiple data sharing methods equally recommended in RDP.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_licenses:	9. Recommended/required licenses	false		0:	No mention of data/code licenses in RDP.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_referee:	10. Referee guidelines concerning research data	false		0:	Data sharing policy not mentioned in refereeing guidelines.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_recommended:	11. Unique policies for data types Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:	.nan
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	data_required:	12. Unique policies for data types Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:	Nothing in particular about this
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_required:	13. Code sharing requirements	false		0:	Code sharing not mentioned.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_reproducibility:	14. Code Reproducibility	false		0:	No mention of dependencies for research code.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_versioning:	15. Versioning and persistent identifiers	false		0:	No mention of a persistent identifier or specifying a version of developed code.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_quality:	16. Code Quality Standards	false		0:	The journal policies do not mention any code quality standards.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_autotest:	17. Automatic Testing	false		0:	No mention of automatic testing to verify code functionality.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_docs:	18. Code Documentation	false		0:	No mention of standards for code documentation.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_linting:	19. Linting Standards	false		0:	No mention of linting standards for code.
+1	outputs/intermediate-tsv/yaml/physics_of_fluids.yaml	code_development:	20. Code Development	false		0:	No mention of standards for code development such as continuous integration.

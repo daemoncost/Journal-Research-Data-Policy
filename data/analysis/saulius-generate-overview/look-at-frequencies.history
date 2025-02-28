@@ -1,0 +1,1 @@
+  707  awk -F'\t' 'NR > 2 {OFS=FS; print $3, $8}' outputs/selected-answer.tsv | sort | uniq -c | sed 's/^ *\([0-9]*\) */\1\t/' | sort -nr -k1,1 | sort -s -t $'\t' -k2,2 | less

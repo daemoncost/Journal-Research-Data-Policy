@@ -1,0 +1,103 @@
+#!/bin/sh
+#!perl -w # --*- Perl -*--
+eval 'exec perl -x $0 ${1+"$@"}'
+    if 0;
+#------------------------------------------------------------------------------
+#$Author: saulius $
+#$Date: 2022-12-07 10:59:25 +0200 (Wed, 07 Dec 2022) $
+#$Revision: 816 $
+#$URL: svn://saulius.grazulis.lt/scripts/tab2csv $
+#------------------------------------------------------------------------------
+#*
+#
+# Convert a TSV file (TAB-separated column file) [1] into a CSV format
+# [2,3] file. Correctly escape commas and quotes in calues.
+#
+# Refs.:
+#
+# 1. Library of Congress. TSV, TAB-separated values
+#    (2021). https://www.loc.gov/preservation/digital/formats/fdd/fdd000533.shtml
+#    [accessed 2022-09-15T16:06+03:00]
+#
+# 2. RFC 4180. Common Format and MIME Type for Comma-Separated Values
+#    (CSV) Files. https://www.ietf.org/rfc/rfc4180.txt [accessed:
+#    2022-04-05T11:49+03:00]
+# 
+# 3. Library of Congress. CSV, Comma Separated Values (RFC
+#    4180). https://www.loc.gov/preservation/digital/formats/fdd/fdd000323.shtml
+#    [accessed: 2022-04-05T11:50+03:00]
+#
+# Usage:
+#     $0 --options
+#     $0 --options input*.tsv > output.csv
+#**
+
+use strict;
+use warnings;
+
+use Encode qw( decode );
+use File::Basename qw( basename );
+
+my $input_separator = "\t";
+
+my @files;
+
+my $i = 0;
+while( $i <= $#ARGV ) {
+    local $_ = $ARGV[$i];
+    if( /^(-s|--separator|--separato|--separat|--separa|
+           --separ|--sepa|--sep|--se|--s)$/x ) {
+        if( $i >= $#ARGV ) {
+            die "Option '$ARGV[$i]' ('--separator') needs " .
+                "one character argument"
+        } else {
+            $i ++;
+            $input_separator = $ARGV[$i];
+            next;
+        }
+    }
+    if( /^(-h|--help|--hel|--he|--h)$/ ) {
+        open(SELF, $0) or die;
+        local $\ = "\n";
+        while( <SELF> ) {
+            s/\$0/$0/g;
+            print $1 if (/^\#\*/../^\#\*\*/) && /^\#\*?\*?(.*)$/;
+        }
+        close(SELF);
+        exit
+    }
+    if( /^(--options|--option|--optio|--opti|--opt|--op|--o)$/ ) {
+        print STDERR "$0: option '--options' is a placeholder, please use " .
+            "\"$0 --help\" to get a list of available options\n";
+        exit(2);
+    }
+    if( /^--$/ ) {
+        @files = (@files, @ARGV[$i+1..$#ARGV]);
+        last;
+    }
+    if( /^-/ ) {
+        die "unknwon option '$_'";
+    } else {
+        push( @files, $_ );
+    }
+} continue {
+    $i++;
+}
+
+@ARGV = @files;
+
+binmode(STDIN,"utf8");
+binmode(STDOUT,"utf8");
+binmode(STDERR,"utf8");
+use open qw(:utf8);
+
+use Text::CSV;
+
+my $csv = Text::CSV->new ({ sep_char => "," });
+    
+while (<>) {
+    chomp;
+    my @line = split($input_separator, $_, -1);
+    $csv->print( *STDOUT, \@line );
+    print "\n";
+}
