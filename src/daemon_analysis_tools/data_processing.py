@@ -89,8 +89,10 @@ def normalize_journal(name):
         ),
         "acs_esandt_engineering": "acs_es_and_t_engineering",
         "applied_materials_and_interfaces": "acs_applied_materials_and_interfaces",
-        "applied_catalysis_b_environmental": "applied_catalysis_b_environment_and_energy",
-        "acs_applied_materials_and_interfaces": "applied_materials_and_interfaces",
+        (
+            "applied_catalysis_b_environmental"
+        ): "applied_catalysis_b_environment_and_energy",
+        ("acs_applied_materials_and_interfaces"): "applied_materials_and_interfaces",
     }
     return normalization_dict.get(name, name)
 
