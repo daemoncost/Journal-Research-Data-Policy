@@ -5,19 +5,18 @@ from typing import Dict, List, Optional
 import pandas as pd
 import yaml
 
-from daemon_analysis_tools.datamodels.question import Question
-from daemon_analysis_tools.processing.normalizer import (
-    normalize_journal,
-    normalize_publisher,
-)
+from ..datamodels.question import Question
+from ..processing.normalizer import normalize_journal, normalize_publisher
 
 
 def load_and_process_csv(file_path: str) -> pd.DataFrame:
     data = pd.read_csv(file_path)
     try:
+        emails_are_nan = data["E-Mail-Adresse"].isna().all()
+        if not emails_are_nan:
+            print(f"Warning: E-mail addresses found in {file_path}.")
         data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
         data.drop([0, 1, 2], axis=0, inplace=True)
-        print(f"Warning: E-mail addresses found in {file_path}.")
     except KeyError:
         pass
         # Already preprocessed to remove E-mail addresses
@@ -44,7 +43,9 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
     # with open("../data/journal_normalizer.yaml", "r") as file:
     # normalizazion_dict = yaml.safe_load(file)
     data_duplicated["journal"] = data_duplicated["journal"].apply(normalize_journal)
-
+    data_duplicated = data_duplicated.loc[
+        :, ~data_duplicated.columns.str.contains("^Unnamed:")
+    ]
     return data_duplicated
 
 
@@ -85,28 +86,22 @@ def save_answers_to_yaml(
                         "explanation": answer.explanation,
                     }
                 # Add empty line to fill with the correct answer
-                if question.correct_answer is None:
-                    dict_to_dump[question_number]["correct_answer"] = None
-                else:
-                    dict_to_dump[question_number]["correct_answer"] = {
-                        "text": question.correct_answer.text,
-                        "explanation": question.correct_answer.explanation,
-                    }
 
+                dict_to_dump[question_number][
+                    "correct_answer"
+                ] = question.correct_answer_encoder_id
                 dict_to_dump[question_number][
                     "discrepancy_reason"
                 ] = question.discrepancy_reason
-
             try:
                 with open(journal_file, "x") as file:
                     yaml.dump(dict_to_dump, file, sort_keys=False)
             except FileExistsError:
                 print(
                     (
-                        f"{publisher_name}/{journal_name}.yaml already exists "
-                        ". No data was written to prevent overwriting files "
-                        "modified by users. Manually delete these files if "
-                        "necessary."
+                        f"{publisher_name}/{journal_name}.yaml already exists. "
+                        "No data was written to prevent overwriting files modified "
+                        "by users. Manually delete these files if necessary."
                     )
                 )
             except Exception as e:
@@ -142,9 +137,8 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                         if correct_answer_id is None:
                             print(
                                 (
-                                    f"{publisher_name}/{journal_name}/"
-                                    f"{question_number}"
-                                    " has inconsistencies: skipped"
+                                    f"{publisher_name}/{journal_name}/{question_number} "
+                                    "has inconsistencies: skipped"
                                 )
                             )
                             del grouped_questions[publisher_name][journal_name][
@@ -152,25 +146,33 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                             ]
                         else:
                             assert isinstance(correct_answer_id, int), (
+                                f"{publisher_name}/{journal_name}/{question_number} "
                                 "`correct_answer` must be an integer "
                                 "(the number of the correct respondent)"
                             )
                             answer = question_dict[correct_answer_id]
-
                             question.add_answer(answer["text"], answer["explanation"])
-                            assert discrepancy_reason is not None, (
-                                "You must provide `discrepancy_reason` "
-                                "to resolve discrepancies."
-                            )
-                            question.resolve_discrepancy(
-                                correct_answer=0,
-                                discrepancy_reason=discrepancy_reason,
-                            )
+                            if discrepancy_reason is None:
+                                Warning(
+                                    f"You must provide `discrepancy_reason` "
+                                    f"to resolve discrepancies."
+                                    f"Question {question_number} in {journal_name}"
+                                    f"{publisher_name}"
+                                )
+                                del grouped_questions[publisher_name][journal_name][
+                                    question_number
+                                ]
+                            else:
+                                question.resolve_discrepancy(
+                                    correct_answer=0,
+                                    discrepancy_reason=discrepancy_reason,
+                                )
 
-                            assert question.get_final_answer() is not None
-                            grouped_questions[publisher_name][journal_name][
-                                question_number
-                            ] = question
+                                assert question.get_final_answer() is not None
+                                grouped_questions[publisher_name][journal_name][
+                                    question_number
+                                ] = question
+
                     else:
                         answer = question_dict[0]
                         question.add_answer(answer["text"], answer["explanation"])
