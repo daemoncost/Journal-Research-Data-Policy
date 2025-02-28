@@ -1,0 +1,242 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\nText from Publishers ACS Research\
+      \ Data Policy :\n\" Where ethically and legally feasible, all ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: "Not explicitly mentioned in the Journal Research Data Policy but\
+      \ mentioned in the Publishers (ACS) Research Data Policy. \n\nText from Publishers\
+      \ (ACS) Research Data Policy:\n\" ACS strongly endorses The FAIR Data Principles\
+      \ and believes that where ethically and legally feasible, all research data\
+      \ should be findable, accessible, interoperable, and reusable. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: "Not explicitly mentioned in the Journal Research Data Policy but\
+      \ mentioned in the Publishers (ACS) Research Data Policy. \n\nText from Publishers\
+      \ (ACS) Research Data Policy:\n(Level 1 Public data availability encouraged\
+      \ :) \" Authors are encouraged to provide a Data Availability Statement describing\
+      \ the public availability of the data supporting the article\u2019s conclusions.\
+      \ \" \n\nNOTE: the minimum is Level 1"
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: "Not mentioned in the Journal Research Data Policy but mentioned\
+      \ in the Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS)\
+      \ Research Data Policy: \n\" ACS strongly endorses The FAIR Data Principles\
+      \ and believes that where ethically and legally feasible, all research data\
+      \ should be findable, accessible, interoperable, and reusable. \" \n\nData Availability\
+      \ Statements\n\" ACS strongly encourages authors to select a repository that\
+      \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
+      \ \" "
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Required data must be available prior to official publication.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\nNOTE: At the time of publication\
+      \ interpreted as prior to official publication."
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: "Text from Journal Research Data Policy : \n\n\" All ACS journals\
+      \ strongly encourage authors to make the research data underlying their articles\
+      \ publicly available at the time of publication. \"\n\" Examples of sufficient\
+      \ descriptions: \u201CSupporting Information: 1H NMR spectra for all compounds\
+      \ (PDF)\u201D or \u201CAdditional experimental details, materials, and methods,\
+      \ including photographs of experimental setup (DOC)\u201D. \"\n\nText from Publishers\
+      \ (ACS) Research Data Policy: \n\" Although submission of data as part of an\
+      \ article\u2019s Supporting Information is acceptable, authors are encouraged\
+      \ to submit data in a format that can be most easily accessed and reused. ACS\
+      \ encourages authors to provide machine-readable data and to follow the FAIR\
+      \ Data Principles. \"\n\nstrongly encourage = recommended"
+  correct_answer: null
+  discrepancy_reason: null
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: "Not mentioned in the Journal Research Data Policy but mentioned\
+      \ in the Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS)\
+      \ Research Data Policy: \n\" To ensure data accessibility, we encourage the\
+      \ use of open licenses for reuse of data, such as Creative Commons CC BY. \"\
+      \n\nNOTE: Although mentioned in Publishers RDP but not in the Journals RDP.\
+      \ Chosen weaker statement."
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: "Not mentioned in the ACS general reviewers guidelines page. \n\n\
+      NOTE: I don't have access to the journal's specific referee guidelines apart\
+      \ from the ACS general reviewers guidelines."
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: no text.
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: crystal structures
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Code sharing required.
+    explanation: "Description of specific programs and versions. If the author\u2019\
+      s own or a modified version of a commercially available program is used, it\
+      \ is required that the program/code/modification be made available to the scientific\
+      \ community (QCPE, publication in a computational journal, commercially, etc.). "
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Journal policies require stating all dependencies and their versions that
+      were used to run computational experiments.
+    explanation: Details of the computations. The computed molecular model should
+      be described clearly, possibly with a ChemDraw figure. If the model is based
+      on an experimentally known complex/reaction, any modifications (such as truncations)
+      should be clearly described and justified. Final optimized coordinates and keywords
+      are to be provided. For DFT computations, the choice of functional must be justified,
+      or the validation of the functional provided. The choice of basis sets must
+      be explicitly discussed, including any deviation from standard basis sets. Convergence
+      criteria, integration parameters, active space definition in multireference
+      calculations, and, for open-shell systems, the way in which spin states are
+      handled should be mentioned explicitly. The exact definition of any applied
+      numerical or symmetry constraint should be indicated.  should be = required
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: "Description of specific programs and versions. If the author\u2019\
+      s own or a modified version of a commercially available program is used, it\
+      \ is required that the program/code/modification be made available to the scientific\
+      \ community (QCPE, publication in a computational journal, commercially, etc.). "
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
