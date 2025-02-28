@@ -28,13 +28,18 @@ class Answer:
 class Question:
     """A class representing a question and its associated answers."""
 
-    def __init__(self, text: str, is_open: Optional[bool] = False) -> None:
+    def __init__(
+        self, question_id: str, text: str, is_open: Optional[bool] = False
+    ) -> None:
         """
         Initialize a Question instance.
 
+        :param question_id: Unique identifier of the question.
         :param text: The text of the question.
         :param is_open: Flag indicating whether the question accepts open-text answers.
         """
+
+        self.question_id: str = question_id
         self.text: str = text
         self.answers: List[Answer] = []
         self.is_open: bool = is_open
@@ -177,4 +182,8 @@ class Question:
 
         :return: A string representation of the Question.
         """
-        return f"Question(text={self.text}, answers={self.answers})"
+        return (
+            f"Question(\n\tid={self.question_id},"
+            f"\n\ttext={self.text},"
+            f"\n\t answers={self.answers})"
+        )
