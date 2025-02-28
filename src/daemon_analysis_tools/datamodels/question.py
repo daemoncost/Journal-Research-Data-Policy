@@ -184,4 +184,12 @@ class Question:
 
         :return: A string representation of the Question.
         """
+<<<<<<< HEAD
         return f"Question(\n\tid='{self.question_id}'," f"\n\ttext='{self.text}',\n)"
+=======
+        return (
+            f"Question(\n\tid={self.question_id},"
+            f"\n\ttext={self.text},"
+            f"\n\t answers={self.answers})"
+        )
+>>>>>>> 3c89b3b... Add question_id to Question class
