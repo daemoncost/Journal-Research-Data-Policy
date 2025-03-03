@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import importlib.resources as pkg_resources
 >>>>>>> 50d9aad... Update docs and type hints in grouper.py
@@ -16,10 +17,17 @@ def _load_question_types(path: str) -> Dict[int, bool]:
     """
     Load question types from a YAML file.
 
+<<<<<<< HEAD
     Reads a YAML file and returns a dictionary mapping question numbers to a boolean
     value indicating whether the question is open.
 
     :return: Dictionary where keys are question numbers and values are True if the
+=======
+    Reads a YAML file and returns a dictionary mapping question numbers to a boolean 
+    value indicating whether the question is open.
+
+    :return: Dictionary where keys are question numbers and values are True if the 
+>>>>>>> a41e68c... Move metadata outside of the package
         question is open, False otherwise.
     """
     with open(path, "r") as file:
