@@ -1,4 +1,3 @@
-import importlib.resources as pkg_resources
 from typing import Dict, Optional
 
 import pandas as pd
@@ -7,23 +6,20 @@ import yaml
 from daemon_analysis_tools.datamodels.question import Question
 
 
-def _load_question_types() -> Dict[int, bool]:
+def _load_question_types(path: str) -> Dict[int, bool]:
     """
     Load question types from a YAML file.
 
-    Reads a YAML file located inside the package "daemon_analysis_tools.metadata"
-    (file: "question_type.yaml") and returns a dictionary mapping question numbers
-    to a boolean value indicating whether the question is open.
+    Reads a YAML file and returns a dictionary mapping question numbers to a boolean 
+    value indicating whether the question is open.
 
-    :return: Dictionary where keys are question numbers and values are True if
-             the question is open, False otherwise.
+    :return: Dictionary where keys are question numbers and values are True if the 
+        question is open, False otherwise.
     """
-    with pkg_resources.open_text(
-        "daemon_analysis_tools.metadata", "question_type.yaml"
-    ) as file:
+    with open(path, "r") as file:
         question_types = yaml.safe_load(file)
 
-    return {int(q_num): (q_type == "open") for q_num, q_type in question_types.items()}
+    return {q_id: (q_type == "open") for q_id, q_type in question_types.items()}
 
 
 def _is_question_column(column: str) -> bool:
