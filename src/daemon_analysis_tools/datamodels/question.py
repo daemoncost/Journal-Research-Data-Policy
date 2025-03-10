@@ -22,7 +22,7 @@ class Answer:
 
         :return: A string representation of the Answer.
         """
-        return f"Answer(text={self.text}, explanation={self.explanation})"
+        return f"Answer(\n\ttext='{self.text}',\n\texplanation={self.explanation}\n)"
 
 
 class Question:
@@ -183,7 +183,6 @@ class Question:
         :return: A string representation of the Question.
         """
         return (
-            f"Question(\n\tid={self.question_id},"
-            f"\n\ttext={self.text},"
-            f"\n\t answers={self.answers})"
+            f"Question(\n\tid='{self.question_id}',"
+            f"\n\ttext='{self.text}',\n)"
         )
