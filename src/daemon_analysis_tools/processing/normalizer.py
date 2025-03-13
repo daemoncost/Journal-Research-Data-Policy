@@ -7,7 +7,12 @@ def _clean_question_text(question_text):
 
 # Normalize text
 def _normalize_text(text):
-    replacements = {"not available": "na", "no text": "na", "n/a": "na", "na": "na"}
+    replacements = {
+        "not available": "na",
+        "no text": "na",
+        "n/a": "na",
+        "na": "na",
+    }
     if isinstance(text, str):
         text = text.strip().lower()
         return replacements.get(text, text)
@@ -66,8 +71,7 @@ def _normalize_journal(name):
             "accounts_of_materials_research_-_acc_mater_res"
         ): "accounts_of_materials_research",
         (
-            "acs_applied_materials_and_interfaces_-_"
-            "acs_appl_mater_interfaces"
+            "acs_applied_materials_and_interfaces_-_acs_appl_mater_interfaces"
         ): "applied_materials_and_interfaces",
         (
             "environmental_science_and_technology_-_environ_sci_technol"
@@ -95,7 +99,9 @@ def _normalize_journal(name):
         (
             "applied_catalysis_b_environmental"
         ): "applied_catalysis_b_environment_and_energy",
-        ("acs_applied_materials_and_interfaces"): "applied_materials_and_interfaces",
+        (
+            "acs_applied_materials_and_interfaces"
+        ): "applied_materials_and_interfaces",
     }
     return normalization_dict.get(name, name)
 
