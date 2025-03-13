@@ -91,9 +91,7 @@ def _normalize_journal(name):
         "ce/papers": "ce-papers",
         "journal_of_the_american_chemical_society_-_jacs": "jacs",
         "journal_of_chemical_physics_c": "the_journal_of_physical_chemistry_c",
-        "journal_of_the_american_society_for_mass_spectroscopy": (
-            "journal_of_the_" "american_society_for_mass_spectrometry"
-        ),
+        "journal_of_the_american_society_for_mass_spectroscopy": "journal_of_the_american_society_for_mass_spectrometry",
         "acs_esandt_engineering": "acs_es_and_t_engineering",
         "applied_materials_and_interfaces": "acs_applied_materials_and_interfaces",
         (
