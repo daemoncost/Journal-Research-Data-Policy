@@ -64,47 +64,48 @@ def _normalize_publisher(name):
 
 
 # Normalize journal names
-def _normalize_journal(name):
+def _normalize_journal(name: str) -> str | None:
+    """
+    Normalize journal names to a consistent format.
+
+    """
     name = _clean_journal_name(name)
+
     normalization_dict = {
-        (
-            "accounts_of_materials_research_-_acc_mater_res"
-        ): "accounts_of_materials_research",
-        (
-            "acs_applied_materials_and_interfaces_-_acs_appl_mater_interfaces"
-        ): "applied_materials_and_interfaces",
-        (
-            "environmental_science_and_technology_-_environ_sci_technol"
-        ): "environmental_science_and_technology",
-        (
-            "the_journal_of_physical_chemistry_c_-_j_phys_chem_c"
-        ): "the_journal_of_physical_chemistry_c",
-        (
-            "https//publishingaiporg/resources/researchers/"
-            "open-science/research-data-policy/"
-        ): None,
+        "accounts_of_materials_research_-_acc_mater_res": (
+            "accounts_of_materials_research"
+        ),
+        "acs_applied_materials_and_interfaces_-_acs_appl_mater_interfaces": (
+            "applied_materials_and_interfaces"
+        ),
+        "environmental_science_and_technology_-_environ_sci_technol": (
+            "environmental_science_and_technology"
+        ),
+        "the_journal_of_physical_chemistry_c_-_j_phys_chem_c": (
+            "the_journal_of_physical_chemistry_c"
+        ),
+        "https//publishingaiporg/resources/researchers/"
+        "open-science/research-data-policy/": None,
         "dalton-transactions": "dalton_transactions",
         "nanoscale-advances": "nanoscale_advances",
-        "nature_eniergy": "nature_energy",
+        "nature_energy": "nature_energy",
         "chemistry_-_a_european_journal": "chemistry_a_european_journal",
         "ce/paper": "ce-papers",
         "ce/papers": "ce-papers",
         "journal_of_the_american_chemical_society_-_jacs": "jacs",
         "journal_of_chemical_physics_c": "the_journal_of_physical_chemistry_c",
-        (
-            "journal_of_the_american_society_for_mass_spectroscopy"
-        ): "journal_of_the_american_society_for_mass_spectrometry",
+        "journal_of_the_american_society_for_mass_spectroscopy": (
+            "journal_of_the_american_society_for_mass_spectrometry"
+        ),
         "acs_esandt_engineering": "acs_es_and_t_engineering",
-        (
-            "applied_materials_and_interfaces"
-        ): "acs_applied_materials_and_interfaces",
-        (
-            "applied_catalysis_b_environmental"
-        ): "applied_catalysis_b_environment_and_energy",
-        (
+        "applied_materials_and_interfaces": (
             "acs_applied_materials_and_interfaces"
-        ): "applied_materials_and_interfaces",
+        ),
+        "applied_catalysis_b_environmental": (
+            "applied_catalysis_b_environment_and_energy"
+        ),
     }
+
     return normalization_dict.get(name, name)
 
 
