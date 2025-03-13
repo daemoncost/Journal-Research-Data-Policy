@@ -15,7 +15,9 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
         emails_are_nan = data["E-Mail-Adresse"].isna().all()
         if not emails_are_nan:
             print(f"Warning: E-mail addresses found in {file_path}.")
-        data.drop(["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True)
+        data.drop(
+            ["Zeitstempel", "E-Mail-Adresse", "Punkte"], axis=1, inplace=True
+        )
         data.drop([0, 1, 2], axis=0, inplace=True)
     except KeyError:
         pass
@@ -35,14 +37,16 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
     data_duplicated = data.explode("journal").reset_index(drop=True)
 
     # Normalize the publisher names
-    data_duplicated["Publisher Name"] = data_duplicated["Publisher Name"].apply(
-        normalize_publisher
-    )
+    data_duplicated["Publisher Name"] = data_duplicated[
+        "Publisher Name"
+    ].apply(normalize_publisher)
 
     # Normalize the journal names
     # with open("../data/journal_normalizer.yaml", "r") as file:
     # normalizazion_dict = yaml.safe_load(file)
-    data_duplicated["journal"] = data_duplicated["journal"].apply(normalize_journal)
+    data_duplicated["journal"] = data_duplicated["journal"].apply(
+        normalize_journal
+    )
     data_duplicated = data_duplicated.loc[
         :, ~data_duplicated.columns.str.contains("^Unnamed:")
     ]
@@ -99,9 +103,10 @@ def save_answers_to_yaml(
             except FileExistsError:
                 print(
                     (
-                        f"{publisher_name}/{journal_name}.yaml already exists. "
-                        "No data was written to prevent overwriting files modified "
-                        "by users. Manually delete these files if necessary."
+                        f"{publisher_name}/{journal_name}.yaml already exists"
+                        ". No data was written to prevent overwriting files "
+                        "modified by users. Manually delete these files if "
+                        "necessary."
                     )
                 )
             except Exception as e:
@@ -131,37 +136,44 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                     question = Question(text=question_dict["text"])
                     correct_answer_id = question_dict["correct_answer"]
                     has_discrepancies = question_dict["has_discrepancies"]
-                    discrepancy_reason = question_dict.get("discrepancy_reason", None)
+                    discrepancy_reason = question_dict.get(
+                        "discrepancy_reason", None
+                    )
 
                     if has_discrepancies:
                         if correct_answer_id is None:
                             print(
                                 (
-                                    f"{publisher_name}/{journal_name}/{question_number} "
+                                    f"{publisher_name}/{journal_name}/"
+                                    f"{question_number} "
                                     "has inconsistencies: skipped"
                                 )
                             )
-                            del grouped_questions[publisher_name][journal_name][
-                                question_number
-                            ]
+                            del grouped_questions[publisher_name][
+                                journal_name
+                            ][question_number]
                         else:
                             assert isinstance(correct_answer_id, int), (
-                                f"{publisher_name}/{journal_name}/{question_number} "
+                                f"{publisher_name}/{journal_name}/"
+                                f"{question_number} "
                                 "`correct_answer` must be an integer "
                                 "(the number of the correct respondent)"
                             )
                             answer = question_dict[correct_answer_id]
-                            question.add_answer(answer["text"], answer["explanation"])
+                            question.add_answer(
+                                answer["text"], answer["explanation"]
+                            )
                             if discrepancy_reason is None:
                                 Warning(
                                     f"You must provide `discrepancy_reason` "
                                     f"to resolve discrepancies."
-                                    f"Question {question_number} in {journal_name}"
+                                    f"Question {question_number} in "
+                                    f"{journal_name}"
                                     f"{publisher_name}"
                                 )
-                                del grouped_questions[publisher_name][journal_name][
-                                    question_number
-                                ]
+                                del grouped_questions[publisher_name][
+                                    journal_name
+                                ][question_number]
                             else:
                                 question.resolve_discrepancy(
                                     correct_answer=0,
@@ -169,13 +181,15 @@ def load_answers_from_yaml(parent_folder: str = ".") -> Dict:
                                 )
 
                                 assert question.get_final_answer() is not None
-                                grouped_questions[publisher_name][journal_name][
-                                    question_number
-                                ] = question
+                                grouped_questions[publisher_name][
+                                    journal_name
+                                ][question_number] = question
 
                     else:
                         answer = question_dict[0]
-                        question.add_answer(answer["text"], answer["explanation"])
+                        question.add_answer(
+                            answer["text"], answer["explanation"]
+                        )
                         question.resolve_discrepancy(correct_answer=0)
                         assert question.get_final_answer() is not None
                         grouped_questions[publisher_name][journal_name][
