@@ -89,6 +89,7 @@ def _normalize_journal(name: str) -> str | None:
         "dalton-transactions": "dalton_transactions",
         "nanoscale-advances": "nanoscale_advances",
         "nature_energy": "nature_energy",
+        "nature_eniergy": "nature_energy",
         "chemistry_-_a_european_journal": "chemistry_a_european_journal",
         "ce/paper": "ce-papers",
         "ce/papers": "ce-papers",
@@ -98,7 +99,7 @@ def _normalize_journal(name: str) -> str | None:
             "journal_of_the_american_society_for_mass_spectrometry"
         ),
         "acs_esandt_engineering": "acs_es_and_t_engineering",
-        "applied_materials_and_interfaces": ("acs_applied_materials_and_interfaces"),
+        "acs_applied_materials_and_interfaces": ("applied_materials_and_interfaces"),
         "applied_catalysis_b_environmental": (
             "applied_catalysis_b_environment_and_energy"
         ),

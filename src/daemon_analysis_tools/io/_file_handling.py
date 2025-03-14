@@ -6,7 +6,7 @@ import pandas as pd
 import yaml
 
 from ..datamodels.question import Question
-from ..processing.normalizer import normalize_journal, normalize_publisher
+from ..processing.normalizer import _normalize_journal, _normalize_publisher
 
 
 def load_and_process_csv(file_path: str) -> pd.DataFrame:
@@ -36,13 +36,13 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
 
     # Normalize the publisher names
     data_duplicated["Publisher Name"] = data_duplicated["Publisher Name"].apply(
-        normalize_publisher
+        _normalize_publisher
     )
 
     # Normalize the journal names
     # with open("../data/journal_normalizer.yaml", "r") as file:
     # normalizazion_dict = yaml.safe_load(file)
-    data_duplicated["journal"] = data_duplicated["journal"].apply(normalize_journal)
+    data_duplicated["journal"] = data_duplicated["journal"].apply(_normalize_journal)
     data_duplicated = data_duplicated.loc[
         :, ~data_duplicated.columns.str.contains("^Unnamed:")
     ]
