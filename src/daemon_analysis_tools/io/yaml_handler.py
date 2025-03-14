@@ -7,28 +7,75 @@ import yaml
 
 from daemon_analysis_tools.datamodels.question import Question
 
+def build_journal_dict(journal: Dict[int, 'Question']) -> Dict:
+    """
+    Build a dictionary from a journal's questions for YAML dumping.
+
+    :param journal: A dictionary mapping question numbers to Question objects.
+    :return: A dictionary with question IDs as keys and their details as values.
+    """
+    journal_dict = {}
+    for question_number, question in journal.items():
+        answers = question.answers
+        question_dict = {
+            "text": question.text,
+            "N. encoders": len(answers),
+            "has_discrepancies": question.has_discrepancies(),
+        }
+        # Add each respondent's answer
+        for respondent_number, answer in enumerate(answers):
+            question_dict[respondent_number] = {
+                "text": answer.text,
+                "explanation": answer.explanation,
+            }
+        # Add correct answer details if available
+        if question.correct_answer is None:
+            question_dict["correct_answer"] = None
+        else:
+            question_dict["correct_answer"] = {
+                "text": question.correct_answer.text,
+                "explanation": question.correct_answer.explanation,
+            }
+        # Always include discrepancy reason (could be None)
+        question_dict["discrepancy_reason"] = question.discrepancy_reason
+
+        journal_dict[question.question_id] = question_dict
+    return journal_dict
+
+
+def save_yaml_file(file_path: str, data: Dict) -> None:
+    """
+    Save a dictionary to a YAML file.
+
+    :param file_path: The file path where the YAML file will be saved.
+    :param data: The dictionary to dump into the YAML file.
+    """
+    try:
+        with open(file_path, "x") as file:
+            yaml.dump(data, file, sort_keys=False)
+    except FileExistsError:
+        print(
+            f"{file_path} already exists. No data was written to prevent overwriting files modified by users. "
+            "Manually delete this file if necessary."
+        )
+    except Exception as e:
+        print(f"Exception: {e} for file {file_path}")
+
 
 def save_answers_to_yaml(
-    grouped_questions: Dict[str, Dict[str, Dict[str, Question]]],
+    grouped_questions: Dict[str, Dict[str, Dict[int, 'Question']]],
     parent_folder: Optional[str] = ".",
     save_only: Optional[List[str]] = None,
 ) -> None:
     """
     Save answers to YAML files, grouping data by publisher and journal.
 
-    This function iterates over the provided grouped questions and creates a YAML
-    file for each journal. The YAML file contains question details including text,
-    the number of respondents, answer texts with explanations, discrepancy flags,
-    and the resolved correct answer (if available).
-
+    Iterates over grouped questions and creates a YAML file for each journal.
+    
     :param grouped_questions: A nested dictionary structured as:
         {publisher_name: {journal_name: {question_number: Question}}}.
-    :param parent_folder: The parent directory where YAML files will be saved.
-        Defaults to the current directory.
-    :param save_only: An optional list of publisher names to be processed.
-        If provided, only publishers whose names are in this list will be saved.
-    :raises Exception: Propagates exceptions encountered during file writing,
-        except for FileExistsError which is handled gracefully.
+    :param parent_folder: Parent directory for saving the YAML files.
+    :param save_only: Optional list of publisher names to be processed.
     """
     for publisher_name, publisher in grouped_questions.items():
         if save_only is not None and publisher_name not in save_only:
@@ -39,44 +86,8 @@ def save_answers_to_yaml(
 
         for journal_name, journal in publisher.items():
             journal_file = os.path.join(publisher_dir, f"{journal_name}.yaml")
-            dict_to_dump: Dict = {}
-
-            for question_number, question in journal.items():
-                answers = question.answers
-                dict_to_dump[question_number] = {
-                    "text": question.text,
-                    "N. encoders": len(answers),
-                    "has_discrepancies": question.has_discrepancies(),
-                }
-                for respondent_number, answer in enumerate(answers):
-                    dict_to_dump[question_number][respondent_number] = {
-                        "text": answer.text,
-                        "explanation": answer.explanation,
-                    }
-                if question.correct_answer is None:
-                    dict_to_dump[question_number]["correct_answer"] = None
-                else:
-                    dict_to_dump[question_number]["correct_answer"] = {
-                        "text": question.correct_answer.text,
-                        "explanation": question.correct_answer.explanation,
-                    }
-                dict_to_dump[question_number][
-                    "discrepancy_reason"
-                ] = question.discrepancy_reason
-
-            try:
-                with open(journal_file, "x") as file:
-                    yaml.dump(dict_to_dump, file, sort_keys=False)
-            except FileExistsError:
-                print(
-                    (
-                        f"{publisher_name}/{journal_name}.yaml already exists. "
-                        "No data was written to prevent overwriting files modified by "
-                        "users. Manually delete these files if necessary."
-                    )
-                )
-            except Exception as e:
-                print(f"Exception: {e} for journal {journal_name}")
+            journal_dict = build_journal_dict(journal)
+            save_yaml_file(journal_file, journal_dict)
 
 
 def load_answers_from_yaml(

@@ -13,10 +13,11 @@ import yaml
 from daemon_analysis_tools.datamodels.question import Question
 
 
-def _load_question_types(path: str) -> Dict[int, bool]:
+def _load_question_types(path: str) -> Dict[int, Dict]:
     """
-    Load question types from a YAML file.
+    Load question metadata from a YAML file.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     Reads a YAML file and returns a dictionary mapping question numbers to a boolean
     value indicating whether the question is open.
@@ -29,11 +30,16 @@ def _load_question_types(path: str) -> Dict[int, bool]:
     :return: Dictionary where keys are question numbers and values are True if the 
 >>>>>>> a41e68c... Move metadata outside of the package
         question is open, False otherwise.
+=======
+    Reads a YAML file and returns a dictionary mapping question numbers to question metadata.
+
+    :return: Dictionary where keys are question numbers and values are dictionary with metadata.
+>>>>>>> cd1b961... updated yaml saver
     """
     with open(path, "r") as file:
-        question_types = yaml.safe_load(file)
+        question_metadata = yaml.safe_load(file)
 
-    return {q_id: (q_type == "open") for q_id, q_type in question_types.items()}
+    return question_metadata
 
 
 def _is_question_column(column: str) -> bool:
@@ -75,6 +81,8 @@ def _initialize_question(
     journal: str,
     q_num: int,
     column: str,
+    open_or_not: bool,
+    question_id: str,
 ) -> None:
     """
     Initialize a Question object in the grouped_questions dictionary if not already
@@ -98,10 +106,11 @@ def _initialize_question(
     present.
 >>>>>>> bb5b81c... Run pre-commit
     """
-    question_types_dict = _load_question_types()
+
     if q_num not in grouped_questions[publisher][journal]:
-        question = Question(column)
-        question.is_open = question_types_dict[q_num]
+        open_or_not = open_or_not
+        question_id = question_id
+        question = Question(text = column, is_open=open_or_not,question_id=question_id )
         grouped_questions[publisher][journal][q_num] = question
 
 <<<<<<< HEAD
@@ -112,6 +121,7 @@ def _process_group(
     publisher: str,
     journal: str,
     data: pd.DataFrame,
+    question_metadata_dict: dict,
 ) -> None:
     """
     Process a single group of data (journal) and extract questions and answers.
@@ -131,7 +141,9 @@ def _process_group(
         if _is_question_column(column):
             q_num = int(column.split(".")[0])
             explanation_col = _get_explanation_column(data, i)
-            _initialize_question(grouped_questions, publisher, journal, q_num, column)
+            question_id = question_metadata_dict[q_num]['identifier']
+            open_or_not = question_metadata_dict[q_num]['type']=='open'
+            _initialize_question(grouped_questions, publisher, journal, q_num, column, open_or_not, question_id)
 
             for idx, answer in enumerate(group[column]):
                 explanation = (
@@ -146,6 +158,7 @@ def _process_group(
 
 def group_questions_by_journal(
     data: pd.DataFrame,
+    question_metadata_file: str,
 ) -> Dict[str, Dict[str, Dict[int, Question]]]:
     """
     Group questions by publisher and journal.
@@ -159,10 +172,11 @@ def group_questions_by_journal(
              {publisher: {journal: {question_number: Question}}}.
     """
     grouped_data = data.groupby(["Publisher Name", "journal"])
-    grouped_questions: Dict[str, Dict[str, Dict[int, Question]]] = {}
+    grouped_questions: Dict[str, Dict[str, Dict[str, Question]]] = {}
 
+    question_metadata_dict = _load_question_types(question_metadata_file)
     for (publisher, journal), group in grouped_data:
         grouped_questions.setdefault(publisher, {}).setdefault(journal, {})
-        _process_group(group, grouped_questions, publisher, journal, data)
+        _process_group(group, grouped_questions, publisher, journal, data, question_metadata_dict)
 
     return grouped_questions
