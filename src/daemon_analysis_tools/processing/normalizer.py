@@ -1,4 +1,5 @@
 import re
+from typing import Optional
 
 
 def _clean_question_text(question_text):
