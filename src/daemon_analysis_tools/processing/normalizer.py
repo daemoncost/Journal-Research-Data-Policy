@@ -64,7 +64,7 @@ def _normalize_publisher(name):
 
 
 # Normalize journal names
-def _normalize_journal(name: str) -> str | None:
+def _normalize_journal(name: str) -> Optional[str]:
     """
     Normalize journal names to a consistent format.
 
