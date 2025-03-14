@@ -1,0 +1,458 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.
+
+
+      Research data is defined as materials and information used in the experiments
+      that enable the validation of the conclusions drawn in the article, including
+      primary data produced by the authors for the study being reported, secondary
+      data reused or analyzed by the authors for the study, and any other materials
+      necessary to reproduce or replicate the results.
+
+
+      The ACS Research Data Policy provides additional information on Data Availability
+      Statements, Data Citation, and Data Repositories.'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: "Data Presentation\n\nData should be presented in a way that makes\
+      \ interpretation clear to the reader.\n\nFor more information on data presentation,\
+      \ see:\n\nQuantifying the Interactions between Biomolecules: Guidelines for\
+      \ Assay Design and Data Analysis\n\nBeyond Bar and Line Graphs: Time for a New\
+      \ Data Presentation Paradigm\n\nReporting standards and availability of data,\
+      \ materials, code and protocols.\n------->  LINK TO NATURE SPRINGER guidelines\n\
+      \nMIQE guidelines for ddPCR and QPCR by Bustin et al. 2009 and Hugget et al.\
+      \ 2020; EMMI guidelines by Borchardt et al. 2021\n\nBest practice for 16S Microbiome\
+      \ studies\n\n\nDatabase Deposition\n\nAdvancing scientific discoveries can be\
+      \ enhanced when data and materials are made available and readily exchanged.\
+      \ ES&T requires for all published articles that authors make materials, data,\
+      \ and protocols available to readers through deposition in a public database.\
+      \ A statement must appear in the submitted manuscript confirming submission\
+      \ of the data and indicating the data bank and any pertinent accession codes/ID.\n\
+      \nTo identify the repository that meets your particular needs, you may find\
+      \ FAIR Sharing Databases, Registry of Research Data Repositories, and Repository\
+      \ Finder helpful. Authors may also want to further investigate unstructured\
+      \ and/or large data repositories, such as Dryad Digital Repository, figshare,\
+      \ Open Science Framework, and Zenodo, or institutional repositories for depositing\
+      \ data. If there is no appropriate repository available, general publicly available\
+      \ repositories should be used.\n\nIn addition, ACS Publications\u2019 figshare\
+      \ houses all Supporting Information within the HTML presentation of the paper\
+      \ and at acs.figshare.com. Authors also agree to make available to interested\
+      \ academic researchers for their own use any materials reported in the manuscript\
+      \ that are not otherwise obtainable. Any restrictions to the availability of\
+      \ materials or information must be stated at the time of submission. The ACS\
+      \ Math Style Sheet and NMR Guidelines are available on the ACS Publishing Center.\n\
+      \n"
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: "Text from Publishers (ACS) Research Data Policy : \n\" ACS strongly\
+      \ endorses The FAIR Data Principles and believes that where ethically and legally\
+      \ feasible, all research data should be findable, accessible, interoperable,\
+      \ and reusable. \"\nAlso, no mention about the journal policy level, but the\
+      \ lowest among them, policy level 1, Encourages Data Sharing.\n\nText from Journal\
+      \ Research Data Policy : \n\" Database Deposition\n  Advancing scientific discoveries\
+      \ can be enhanced when data and materials are made available and readily exchanged.\
+      \ ... \n  To identify the repository that meets your particular needs, you may\
+      \ find FAIR Sharing Databases, Registry of Research Data Repositories, and Repository\
+      \ Finder helpful. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: "Database Deposition\n\nAdvancing scientific discoveries can be enhanced\
+      \ when data and materials are made available and readily exchanged. ES&T requires\
+      \ for all published articles that authors make materials, data, and protocols\
+      \ available to readers through deposition in a public database. A statement\
+      \ must appear in the submitted manuscript confirming submission of the data\
+      \ and indicating the data bank and any pertinent accession codes/ID.\n\nTo identify\
+      \ the repository that meets your particular needs, you may find FAIR Sharing\
+      \ Databases, Registry of Research Data Repositories, and Repository Finder helpful.\
+      \ Authors may also want to further investigate unstructured and/or large data\
+      \ repositories, such as Dryad Digital Repository, figshare, Open Science Framework,\
+      \ and Zenodo, or institutional repositories for depositing data. If there is\
+      \ no appropriate repository available, general publicly available repositories\
+      \ should be used.\n\nIn addition, ACS Publications\u2019 figshare houses all\
+      \ Supporting Information within the HTML presentation of the paper and at acs.figshare.com.\
+      \ Authors also agree to make available to interested academic researchers for\
+      \ their own use any materials reported in the manuscript that are not otherwise\
+      \ obtainable. Any restrictions to the availability of materials or information\
+      \ must be stated at the time of submission. The ACS Math Style Sheet and NMR\
+      \ Guidelines are available on the ACS Publishing Center."
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "Text from Publishers (ACS) Research Data Policy:\n\" ACS strongly\
+      \ endorses The FAIR Data Principles and believes that where ethically and legally\
+      \ feasible, all research data should be findable, accessible, interoperable,\
+      \ and reusable. \"\n\nText from Journal Research Data Policy : \n\" Database\
+      \ Deposition\n  Advancing scientific discoveries can be enhanced when data and\
+      \ materials are made available and readily exchanged. ... \n  To identify the\
+      \ repository that meets your particular needs, you may find FAIR Sharing Databases,\
+      \ Registry of Research Data Repositories, and Repository Finder helpful. \""
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Required according to the RDP.
+    explanation: "Advancing scientific discoveries can be enhanced when data and materials\
+      \ are made available and readily exchanged. ES&T requires for all published\
+      \ articles that authors make materials, data, and protocols available to readers\
+      \ through deposition in a public database. A statement must appear in the submitted\
+      \ manuscript confirming submission of the data and indicating the data bank\
+      \ and any pertinent accession codes/ID.\n\nTo identify the repository that meets\
+      \ your particular needs, you may find FAIR Sharing Databases, Registry of Research\
+      \ Data Repositories, and Repository Finder helpful. Authors may also want to\
+      \ further investigate unstructured and/or large data repositories, such as Dryad\
+      \ Digital Repository, figshare, Open Science Framework, and Zenodo, or institutional\
+      \ repositories for depositing data. If there is no appropriate repository available,\
+      \ general publicly available repositories should be used.\n\nIn addition, ACS\
+      \ Publications\u2019 figshare houses all Supporting Information within the HTML\
+      \ presentation of the paper and at acs.figshare.com. Authors also agree to make\
+      \ available to interested academic researchers for their own use any materials\
+      \ reported in the manuscript that are not otherwise obtainable. Any restrictions\
+      \ to the availability of materials or information must be stated at the time\
+      \ of submission. The ACS Math Style Sheet and NMR Guidelines are available on\
+      \ the ACS Publishing Center.\n\n"
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: "no text in the Journal Research Data Policy but referred to the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy:\n(Level 1 Public data availability encouraged :) \" Authors are\
+      \ encouraged to provide a Data Availability Statement describing the public\
+      \ availability of the data supporting the article\u2019s conclusions. \" "
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: na
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \" \n\nData Availability Statements\n\
+      \" ACS strongly encourages authors to select a repository that issues a persistent\
+      \ unique identifier, such as a DOI or an Accession Number. \" "
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Required data must be available after official publication.
+    explanation: "Database Deposition\n\nAdvancing scientific discoveries can be enhanced\
+      \ when data and materials are made available and readily exchanged. ES&T requires\
+      \ for all published articles that authors make materials, data, and protocols\
+      \ available to readers through deposition in a public database. A statement\
+      \ must appear in the submitted manuscript confirming submission of the data\
+      \ and indicating the data bank and any pertinent accession codes/ID.\n\nTo identify\
+      \ the repository that meets your particular needs, you may find FAIR Sharing\
+      \ Databases, Registry of Research Data Repositories, and Repository Finder helpful.\
+      \ Authors may also want to further investigate unstructured and/or large data\
+      \ repositories, such as Dryad Digital Repository, figshare, Open Science Framework,\
+      \ and Zenodo, or institutional repositories for depositing data. If there is\
+      \ no appropriate repository available, general publicly available repositories\
+      \ should be used.\n\nIn addition, ACS Publications\u2019 figshare houses all\
+      \ Supporting Information within the HTML presentation of the paper and at acs.figshare.com.\
+      \ Authors also agree to make available to interested academic researchers for\
+      \ their own use any materials reported in the manuscript that are not otherwise\
+      \ obtainable. Any restrictions to the availability of materials or information\
+      \ must be stated at the time of submission. The ACS Math Style Sheet and NMR\
+      \ Guidelines are available on the ACS Publishing Center.\n\n"
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\" This information is provided\
+      \ to the reviewers during the peer-review process (for Review Only) and is available\
+      \ to readers of the published work (for Publication). Supporting Information\
+      \ must be submitted at the same time as the manuscript. See the list of Acceptable\
+      \ Software by File Designation and confirm that your Supporting Information\
+      \ is viewable.\" \n\nNOTE: At the time of publication interpreted as prior to\
+      \ official publication."
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Advancing scientific discoveries can be enhanced when data and materials\
+      \ are made available and readily exchanged. ES&T requires for all published\
+      \ articles that authors make materials, data, and protocols available to readers\
+      \ through deposition in a public database. A statement must appear in the submitted\
+      \ manuscript confirming submission of the data and indicating the data bank\
+      \ and any pertinent accession codes/ID.\n\nTo identify the repository that meets\
+      \ your particular needs, you may find FAIR Sharing Databases, Registry of Research\
+      \ Data Repositories, and Repository Finder helpful. Authors may also want to\
+      \ further investigate unstructured and/or large data repositories, such as Dryad\
+      \ Digital Repository, figshare, Open Science Framework, and Zenodo, or institutional\
+      \ repositories for depositing data. If there is no appropriate repository available,\
+      \ general publicly available repositories should be used.\n\nIn addition, ACS\
+      \ Publications\u2019 figshare houses all Supporting Information within the HTML\
+      \ presentation of the paper and at acs.figshare.com. Authors also agree to make\
+      \ available to interested academic researchers for their own use any materials\
+      \ reported in the manuscript that are not otherwise obtainable. Any restrictions\
+      \ to the availability of materials or information must be stated at the time\
+      \ of submission. The ACS Math Style Sheet and NMR Guidelines are available on\
+      \ the ACS Publishing Center.\n\n"
+  1:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: "Text from Journal Research Data Policy : \n\" Computer Codes\n \
+      \ When computer codes are developed or used and are an essential part of a manuscript,\
+      \ sufficient detail must be given, either within the paper or in the SI. \"\n\
+      \n\" Database Deposition\n  Advancing scientific discoveries can be enhanced\
+      \ when data and materials are made available and readily exchanged. ... \n \
+      \ To identify the repository that meets your particular needs, you may find\
+      \ FAIR Sharing Databases, Registry of Research Data Repositories, and Repository\
+      \ Finder helpful. \"\n\nText from Publishers (ACS) Research Data Policy: \n\"\
+      \ Although submission of data as part of an article\u2019s Supporting Information\
+      \ is acceptable, authors are encouraged to submit data in a format that can\
+      \ be most easily accessed and reused. ACS encourages authors to provide machine-readable\
+      \ data and to follow the FAIR Data Principles. \""
+  correct_answer: 0
+  discrepancy_reason: Language understanding
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: na
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" To ensure data accessibility, we encourage the use of open\
+      \ licenses for reuse of data, such as Creative Commons CC BY. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: na
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: "Not mentioned in the ACS general reviewers guidelines page. \n\n\
+      NOTE: I don't have access to the journal's specific referee guidelines apart\
+      \ from the ACS general reviewers guidelines."
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Omics Data ; Materials
+    explanation: ''
+  1:
+    text: no text.
+    explanation: ''
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: nomenclature , Biological Assays ; Use of Human Subjects or Animals in Research
+      ; Research Involving Animals ; Research Involving Human Subjects ; Database
+      Deposition ; Sequence Data ; Proteomics Data ; Computer Codes ; Computational
+      Chemistry Calculations ;
+    explanation: ''
+  1:
+    text: Sequence Data, Omics Data, Proteomics Data
+    explanation: ''
+  correct_answer: 0
+  discrepancy_reason: Text not found
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Code sharing required.
+    explanation: Upon request, after appropriate material transfer agreements to restrict
+      the use of the materials so as to protect the legitimate interests of the authors,
+      codes and input data must be made available for others to validate the calculations.
+  1:
+    text: Code sharing not mentioned.
+    explanation: "Text from Journal Research Data Policy : \n\"Computer Codes\n\n\
+      When computer codes are developed or used and are an essential part of a manuscript,\
+      \ sufficient detail must be given, either within the paper or in the SI. Types\
+      \ of languages that are used in the computer codes, compiler/interpreter, and\
+      \ operating system with a specific version must be provided or properly cited.\
+      \ Upon request, after appropriate material transfer agreements to restrict the\
+      \ use of the materials so as to protect the legitimate interests of the authors,\
+      \ codes and input data must be made available for others to validate the calculations.\
+      \ Regardless of whether the source code is open or closed source, it must be\
+      \ properly cited in the References.\""
+  correct_answer: 0
+  discrepancy_reason: Text not found
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Journal policies require stating all dependencies and their versions that
+      were used to run computational experiments.
+    explanation: ypes of languages that are used in the computer codes, compiler/interpreter,
+      and operating system with a specific version must be provided or properly cited.
+  1:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: 'Text from Journal Research Data Policy :  "Computer Codes  When
+      computer codes are developed or used and are an essential part of a manuscript,
+      sufficient detail must be given, either within the paper or in the SI. Types
+      of languages that are used in the computer codes, compiler/interpreter, and
+      operating system with a specific version must be provided or properly cited.
+      Upon request, after appropriate material transfer agreements to restrict the
+      use of the materials so as to protect the legitimate interests of the authors,
+      codes and input data must be made available for others to validate the calculations.
+      Regardless of whether the source code is open or closed source, it must be properly
+      cited in the References."'
+  correct_answer: 0
+  discrepancy_reason: Text not found
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: ypes of languages that are used in the computer codes, compiler/interpreter,
+      and operating system with a specific version must be provided or properly cited.
+  1:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: 'Text from Journal Research Data Policy :  "Computer Codes  When
+      computer codes are developed or used and are an essential part of a manuscript,
+      sufficient detail must be given, either within the paper or in the SI. Types
+      of languages that are used in the computer codes, compiler/interpreter, and
+      operating system with a specific version must be provided or properly cited.
+      Upon request, after appropriate material transfer agreements to restrict the
+      use of the materials so as to protect the legitimate interests of the authors,
+      codes and input data must be made available for others to validate the calculations.
+      Regardless of whether the source code is open or closed source, it must be properly
+      cited in the References."'
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: "Computer Codes  When computer codes are developed or used and are\
+      \ an essential part of a manuscript, sufficient detail must be given, either\
+      \ within the paper or in the SI. Types of languages that are used in the computer\
+      \ codes, compiler/interpreter, and operating system with a specific version\
+      \ must be provided or properly cited. Upon request, after appropriate material\
+      \ transfer agreements to restrict the use of the materials so as to protect\
+      \ the legitimate interests of the authors, codes and input data must be made\
+      \ available for others to validate the calculations. Regardless of whether the\
+      \ source code is open or closed source, it must be properly cited in the References.\
+      \  Computational Chemistry Calculations  When computational chemistry calculations\
+      \ are performed, input data\u2014 including force field parameters, equations\
+      \ defining the model (or references to where such material is available in the\
+      \ open literature), methods and approaches, and basis sets\u2014must be given\
+      \ either within the paper or in the SI. If the software used for calculations\
+      \ is generally available, it must be properly cited in the References. References\
+      \ to the methods upon which the software is based must also be provided."
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text.
+  correct_answer: 0
+  discrepancy_reason: Text not found
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: na
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: na
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: na
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: na
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
