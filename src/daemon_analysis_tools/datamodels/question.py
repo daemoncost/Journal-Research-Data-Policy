@@ -29,7 +29,7 @@ class Question:
     """A class representing a question and its associated answers."""
 
     def __init__(
-        self, question_id: str, text: str, is_open: Optional[bool] = False
+        self, question_id: str, text: str, is_open: bool
     ) -> None:
         """
         Initialize a Question instance.
@@ -41,8 +41,8 @@ class Question:
 
         self.question_id: str = question_id
         self.text: str = text
-        self.answers: List[Answer] = []
         self.is_open: bool = is_open
+        self.answers: List[Answer] = []
         self.correct_answer: Optional[Answer] = None
         self.correct_answer_encoder_id: Optional[int] = None
         self.discrepancy_reason: Optional[str] = None
@@ -184,5 +184,6 @@ class Question:
         """
         return (
             f"Question(\n\tid='{self.question_id}',"
-            f"\n\ttext='{self.text}',\n)"
+            f"\n\ttext='{self.text}',"
+            f"\n\tis_open={self.is_open}\n)"
         )
