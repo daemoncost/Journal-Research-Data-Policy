@@ -182,7 +182,4 @@ class Question:
 
         :return: A string representation of the Question.
         """
-        return (
-            f"Question(\n\tid='{self.question_id}',"
-            f"\n\ttext='{self.text}',\n)"
-        )
+        return f"Question(\n\tid='{self.question_id}'," f"\n\ttext='{self.text}',\n)"

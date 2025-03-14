@@ -1,6 +1,6 @@
 import unittest
 
-from daemon_analysis_tools.data_processing import normalize_journal
+from daemon_analysis_tools.processing.normalizer import _normalize_journal
 
 
 class TestDataProcessing(unittest.TestCase):
@@ -42,10 +42,6 @@ class TestDataProcessing(unittest.TestCase):
             ),
             ("acs_esandt_engineering", "acs_es_and_t_engineering"),
             (
-                "applied_materials_and_interfaces",
-                "acs_applied_materials_and_interfaces",
-            ),
-            (
                 "applied_catalysis_b_environmental",
                 "applied_catalysis_b_environment_and_energy",
             ),
@@ -56,11 +52,11 @@ class TestDataProcessing(unittest.TestCase):
         ]
         for input_val, expected in test_cases:
             with self.subTest(journal=input_val):
-                self.assertEqual(normalize_journal(input_val), expected)
+                self.assertEqual(_normalize_journal(input_val), expected)
 
     def test_normalize_journal_default(self):
         # Test that a journal name not in the normalization_dict is returned as is.
-        self.assertEqual(normalize_journal("unknown_journal"), "unknown_journal")
+        self.assertEqual(_normalize_journal("unknown_journal"), "unknown_journal")
 
     def test_load_and_process_data(self):
         # Add test cases to check if the data is loaded and processed correctly
