@@ -1,4 +1,4 @@
-# 2025-03-14 11:59:23 EET
+# 2025-03-14 12:10:51 EET
 Count	Quest	Text
 170	code_autotest:	No mention of automatic testing to verify code functionality.
 168	code_development:	No mention of standards for code development such as continuous integration.
@@ -7,41 +7,41 @@ Count	Quest	Text
 5	code_docs:	The journal policies encourage/recommend standards for code documentation.
 169	code_linting:	No mention of linting standards for code.
 1	code_linting:	The journal policies encourage/recommend linting standards for code.
-152	code_quality:	The journal policies do not mention any code quality standards.
+150	code_quality:	The journal policies do not mention any code quality standards.
 11	code_quality:	The journal policies encourage/recommend certain standards for code.
-4	code_quality:	Not mention any code quality standards.
+6	code_quality:	Not mention any code quality standards.
 3	code_quality:	The journal policies require code of articles to fulfill certain standards.
 149	code_reproducibility:	No mention of dependencies for research code.
 18	code_reproducibility:	Journal policies encourage/recommend stating all dependencies and their versions that were used to run computational experiments.
 3	code_reproducibility:	Journal policies require stating all dependencies and their versions that were used to run computational experiments.
-117	code_required:	Code sharing encouraged but optional.
-46	code_required:	Code sharing not mentioned.
-6	code_required:	Code sharing required.
+120	code_required:	Code sharing encouraged but optional.
+45	code_required:	Code sharing not mentioned.
+4	code_required:	Code sharing required.
 1	code_required:	 Code sharing encouraged but optional.
 123	code_versioning:	No mention of a persistent identifier or specifying a version of developed code.
 47	code_versioning:	Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
-88	data_availability:	Required according to the RDP.
-74	data_availability:	Mentioned in the RDP but optional.
+89	data_availability:	Required according to the RDP.
+73	data_availability:	Mentioned in the RDP but optional.
 8	data_availability:	Not mentioned in the RDP.
-158	data_citability:	DOIs or other persistent identifiers recommended for datasets or codes.
+160	data_citability:	DOIs or other persistent identifiers recommended for datasets or codes.
 7	data_citability:	No mention of DOIs or other persistent identifiers for datasets or codes.
-5	data_citability:	DOIs or other persistent identifiers required for datasets or codes.
+3	data_citability:	DOIs or other persistent identifiers required for datasets or codes.
 91	data_fair:	Public data sharing on a FAIR repository encouraged.
 57	data_fair:	Public data sharing on a FAIR repository not mentioned in RDP.
 20	data_fair:	Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data).
 2	data_fair:	Public data sharing of all data on a FAIR repository required.
-133	data_licenses:	No mention of data/code licenses in RDP.
-33	data_licenses:	Explicit mention of a certain license/license type in RDP.
+132	data_licenses:	No mention of data/code licenses in RDP.
+34	data_licenses:	Explicit mention of a certain license/license type in RDP.
 4	data_licenses:	Open access license required for shared data.
 45	data_recommended:	.nan
-35	data_recommended:	no text
+33	data_recommended:	no text
 15	data_recommended:	not mentioned
 15	data_recommended:	no text.
 15	data_recommended:	Proteomics Data
 11	data_recommended:	n.a.
 8	data_recommended:	Crystal structure (organic / organometallic / metal organic); Crystal structure (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM; bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates; Input/configuration files and program output; Materials simulation data including electronic structure and molecular dynamics; Computational materials science; Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral data for small chemical molecules, metabolomics, exposomics; Electrophoretic gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages, multidimensional life sciences image data (cell and tissue); Materials (Various); Materials simulation data including electronic structure and molecular dynamics; Computational materials science; All proteomics data; Proteomics mass spectrometry; Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp), e.g.single-base nucleotide substitutions, small-scale deletion or insertions; Human genomic structural variation data (>50bp), e.g. insertions, deletions, translocations; Gene expression data, array- and sequence-based; High-throughput functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions; miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric and earth observation research, environmental data; Environmental and ecological data; Geochemical, geochronological, and petrological data; Climate or Earth system research, climate model data; Functional enzymology data (kinetic and experimental data); Flow cytometry data; Protein circular dichroism and protein synchrotron radiation circular dichroism ; Intermolecular and supramolecular interactions of molecular systems, binding, assembly, and interaction phenomena; Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials; Computational studies and modelling; Electrophoretic gels and blots;Fluorescence sensors; Inorganic and organometallic compounds; Macromolecular structure and sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers and macromolecules; Synthetic procedures; System models
+7	data_recommended:	none
 7	data_recommended:	Authors are encouraged to consider deposition in public, community-supported repositories of the data-types listed below. Protein-protein interaction data; Metabolite and metabolome profiling data; Small-molecule screening data; chemical compound data; Flow cytometry data; Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data; Enzymology and biocatalysis data
-5	data_recommended:	none
 3	data_recommended:	Supply all supplementary material in standard file formats. Specialized format such as .pdb (chemical), .wrl (VRML), .nb (Mathematica notebook), and .tex can also be supplied.
 1	data_recommended:	The Use of High Resolution Mass Spectral Data for Formula Confirmation: For publication of exact- mass data that are used to confirm identities of synthetic and natural products, report the uncertainty in the accurate-mass measurement used for formula verification along with the result. The acceptable uncertainty in a measurement by any analytical method must be adequate for the intended use of the data.  Evaluate the uncertainty of accurate mass measurement by any statistically valid method. Determine, for example, the precision and accuracy of replicate measurements or evaluate the performance characteristics of the mass spectrometer (see, for example, Sack, T. M., Lapp, R. L., Gross, M. L., and Kimble, B. J. Int. J. Mass Spectrom. Ion Proc. 1984, 61, 191-213).  Consider all candidates fitting the experimentally determined value and its reported uncertainty when the result of accurate mass measurement is used for formula confirmation. Do not set fixed acceptable error limits for exact mass measurement. Consider the following when using accurate mass data.  When valence rules and candidate compositions encompassing C0-100, H3-74, O0-4, and N0-4 are considered at nominal parent m/z of 118, there are no candidate formulae within 34 ppm of each other. When the ion is of m/z 750.4 and the formulae are in the range C0-100, H25-110, O0-15, and N0-15, there are 626 candidate formulae that are possible within 5 ppm. Thus, for a measurement at m/z 118, an error of only 34 ppm uniquely defines a particular formula, whereas at m/z 750, an error (and precision) of 0.018 ppm would be required to eliminate all extraneous possibilities.
 1	data_recommended:	Supply all supplementary material in standard file formats. Specialized format such as .pdb (chemical), .wrl (VRML), .nb (Mathematica notebook), and .tex can also be supplied. -XRD data are presented as the structural formula of a molecule with numbered atoms or as a crystal lattice and tables. Along with crystallographic data (cell parameters, space group, etc.), in the experimental part, authors should specify the device with which the measurements were performed and the methods (programs) used for decrypting structures and for calculations It is recommended to present spectroscopic data as follows:  - In electron spectra, wavelengths (in nm) or wavenumbers (in cm–1 ) are given on the abscissa in ascending order from left to right. The logarithm of the molar absorption coefficient or, if needed, molar absorption coefficient is presented on the ordinate axis. In the text and tables, the positions of extrema are designated as λmax and λmin  IR and Raman spectra themselves are usually not presented. They are described in order of decreasing wavenumbers. An example of such a description is as follows. IR spectrum, ν, cm –1 : 3350 br (NH, NOH), 2100 o.s (C≡N), 1700–1600 s (C=O, C=N). If the spectra are given, the wavenumbers (cm–1 ) (in descending order from left to right) or frequencies in accordance with the scale of the spectrometer are placed along the lower abscissa axis; the upper abscissa axis can reflect wavelength data (µm). The left ordinate axis presents transmittance (%) or absorbance (for IR spectra) or intensity (for Raman spectra)  In NMR spectra, millionths of a field (ppm) are given on the abscissa axis; the maximum signal of a solvent or a reference sample may be outside the graph field. It is recommended to present scaled-down photocopies of the experimental spectra. In describing spectra, signal types are indicated in abbreviated form: s, singlet; d, doublet; t, triplet; q, quartet; quint, quintet; and m, multiplet. Proton chemical shifts are given in the δ scale, for example, δ 5.24 m. Chemical shifts of nuclei 13C, 31P, etc., are given in accordance with IUPAC recommendations: a shift into the weak field with a “+;” and into a strong field, with a “–.” Signals are recorded in order of increasing δ values -Mass spectra are presented as numerical values m/z and relative intensities of ion currents in a row, in order of decreasing ion mass,  - In the case of GC, the brand and model of instrument, detector, and recording conditions, i.e., temperature, length and diameter of the column, column packing, solid inert carrier, and carrier gas, should be specified in the experimental part. For HPLC, it is necessary to indicate the brand and model of the instrument, the detector, temperature, length and diameter of the column, the brand and particle size of the sorbent, and the composition of the eluent. For TLC, the adsorbent, eluent, and developing reagent should be given. 
@@ -57,17 +57,18 @@ Count	Quest	Text
 104	data_referee:	Data sharing policy not mentioned in refereeing guidelines.
 62	data_referee:	Data sharing policy mentioned in refereeing guidelines.
 4	data_referee:	Additional data or code referee (referee that solely confirms that code and data are shared following the RDP).
-34	data_required:	no text
+32	data_required:	no text
 16	data_required:	.nan
 15	data_required:	nucleic acid sequences; high throughput sequencing (HTS) datasets (RNA-seq, ChIP-Seq, degradome analysis, …); microarray data; protein sequences; mass spectrometry raw proteomics data
 15	data_required:	not mentioned
 15	data_required:	no text.
 15	data_required:	n.a.
 11	data_required:	Nothing in particular about this
-9	data_required:	DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
+7	data_required:	none
 7	data_required:	Authors are required to deposit the following mandatory data types in public, community-supported repositories, such as those listed below, prior to publication of an associated Frontiers manuscript. Genetic and genomic sequence (DNA/RNA); Metagenomic sequence; DNA and RNA trace or short-read sequencing data; Genetic polymorphism data, including SNP and CNV data; Gene expression data; chromatin immunoprecipitation data (deep-sequencing or microarray); Data linking genotype to phenotype; Protein sequence data; Proteome profiling data; Small molecule, protein, protein complex data structural data; Taxonomy data
-5	data_required:	none
+6	data_required:	DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
 5	data_required:	N.A.
+3	data_required:	DNA sequence data,  RNA sequence data,  Genome assembly data,  Protein sequence data,  Proteomics data,  Genetic variation data,  Functional genomics data,  Macromolecular structure data,  Gene expression data,  Crystallographic data for small molecules
 3	data_required:	Batteries.Crystal structure (organic / organometallic / metal organic), nanomaterials
 3	data_required:	 reporting the efficiency of solar conversion devices;   reporting electrochemical data and setup of batteries.Crystal structure (organic / organometallic / metal organic) 
 2	data_required:	na
@@ -98,8 +99,8 @@ Count	Quest	Text
 1	data_sharing_method:	Data is shared upon request to authors in RDP.
 84	data_timing:	Timing of data availability not adressed in RDP.
 38	data_timing:	Required data must be available prior to review process.
-31	data_timing:	Required data must be available prior to official publication.
-14	data_timing:	Required data must be available after official publication.
+23	data_timing:	Required data must be available prior to official publication.
+22	data_timing:	Required data must be available after official publication.
 3	data_timing:	Required data must be available after an embargo period.
 166	rdp_exist:	Research Data Policy (RDP) exists.
 4	rdp_exist:	Research Data Policy (RDP) does not exists.

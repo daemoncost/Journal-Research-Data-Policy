@@ -1,4 +1,4 @@
-# 2025-02-05 13:41:51 EET
+# 2025-03-14 12:10:48 EET
 NAnsw	File	Key	Quest	Discrepancies?	IdxCorrect	AnsKeys	Answer1	Answer2	Answer3	Other Answers...
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	rdp_exist:	1. Existence of research data policy	false		0:,1:	Research Data Policy (RDP) does not exists.	Research Data Policy (RDP) does not exists.
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	data_sharing:	3. Data sharing requirements in RDP	false		0:,1:	Data sharing only with editors and referees (no public sharing)	Data sharing only with editors and referees (no public sharing)
@@ -11,7 +11,7 @@ NAnsw	File	Key	Quest	Discrepancies?	IdxCorrect	AnsKeys	Answer1	Answer2	Answer3	O
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	data_referee:	10. Referee guidelines concerning research data	false		0:,1:	Data sharing policy not mentioned in refereeing guidelines.	Data sharing policy not mentioned in refereeing guidelines.
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	data_recommended:	11. Unique policies for data types Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:,1:	no text	no text
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	data_required:	12. Unique policies for data types Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)	false		0:,1:	no text	no text
-2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	code_required:	13. Code sharing requirements	true		0:,1:	Code sharing not mentioned.	Code sharing encouraged but optional.
+2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	code_required:	13. Code sharing requirements	true	1	0:,1:	Code sharing not mentioned.	Code sharing encouraged but optional.
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	code_reproducibility:	14. Code Reproducibility	false		0:,1:	No mention of dependencies for research code.	No mention of dependencies for research code.
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	code_versioning:	15. Versioning and persistent identifiers	false		0:,1:	No mention of a persistent identifier or specifying a version of developed code.	No mention of a persistent identifier or specifying a version of developed code.
 2	outputs/intermediate-tsv/yaml/journal_of_asian_ceramic_societies.yaml	code_quality:	16. Code Quality Standards	false		0:,1:	The journal policies do not mention any code quality standards.	The journal policies do not mention any code quality standards.

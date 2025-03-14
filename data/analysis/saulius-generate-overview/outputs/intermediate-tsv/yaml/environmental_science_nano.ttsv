@@ -1,4 +1,4 @@
-# 2025-02-05 13:41:51 EET
+# 2025-03-14 12:10:47 EET
 NAnsw	File	Key	Quest	Discrepancies?	IdxCorrect	AnsKeys	Answer1	Answer2	Answer3	Other Answers...
 2	outputs/intermediate-tsv/yaml/environmental_science_nano.yaml	rdp_exist:	1. Existence of research data policy	false		0:,1:	Research Data Policy (RDP) exists.	Research Data Policy (RDP) exists.
 2	outputs/intermediate-tsv/yaml/environmental_science_nano.yaml	data_sharing:	3. Data sharing requirements in RDP	true	0	0:,1:	Public data sharing required only for specific types of data.	Public data sharing of all data required.

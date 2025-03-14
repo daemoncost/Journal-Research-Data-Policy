@@ -1,164 +1,204 @@
-# 2025-02-05 13:41:55 EET
+# 2025-03-14 12:10:51 EET
 
-     89 .rdp_exist: 1. Existence of research data policy
+    170 .rdp_exist: 1. Existence of research data policy
 
-      3 Research Data Policy (RDP) does not exists.
-     86 Research Data Policy (RDP) exists.
+      5 Research Data Policy (RDP) does not exists.
+    165 Research Data Policy (RDP) exists.
 
 ================================================================================
 
-     89 .data_sharing: 3. Data sharing requirements in RDP
+    170 .data_sharing: 3. Data sharing requirements in RDP
 
-     58 Data sharing encouraged but optional.
+    132 Data sharing encouraged but optional.
       3 Data sharing only with editors and referees (no public sharing)
-      1 Data sharing required but not publicly (e.g. available upon request is allowed).
-      8 Public data sharing of all data required.
-     19 Public data sharing required only for specific types of data.
+      3 Data sharing required but not publicly (e.g. available upon request is allowed).
+     12 Public data sharing of all data required.
+     20 Public data sharing required only for specific types of data.
 
 ================================================================================
 
-     89 .data_fair: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)
+    170 .data_fair: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR)
 
-     41 Public data sharing on a FAIR repository encouraged.
-     30 Public data sharing on a FAIR repository not mentioned in RDP.
-     18 Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data).
-
-================================================================================
-
-     89 .data_availability: 2. Data availability statement
-
-     25 Mentioned in the RDP but optional.
-      3 Not mentioned in the RDP.
-     61 Required according to the RDP.
+      2 Public data sharing of all data on a FAIR repository required.
+     86 Public data sharing on a FAIR repository encouraged.
+     62 Public data sharing on a FAIR repository not mentioned in RDP.
+     20 Public data sharing on a FAIR repository required only for specific types of data (e.g. genetic data has to be shared on a FAIR repository but no other data).
 
 ================================================================================
 
-     89 .data_citability: 5. Citability and findability of data 
+    170 .data_availability: 2. Data availability statement
 
-     80 DOIs or other persistent identifiers recommended for datasets or codes.
-      6 DOIs or other persistent identifiers required for datasets or codes.
-      3 No mention of DOIs or other persistent identifiers for datasets or codes.
-
-================================================================================
-
-     89 .data_timing: 7. Timing of data release
-
-      8 Required data must be available after official publication.
-     38 Required data must be available prior to official publication.
-     26 Required data must be available prior to review process.
-     17 Timing of data availability not adressed in RDP.
+     70 Mentioned in the RDP but optional.
+     14 Not mentioned in the RDP.
+     86 Required according to the RDP.
 
 ================================================================================
 
-     89 .data_sharing_method: 8. Recommended data sharing method
+    170 .data_citability: 5. Citability and findability of data 
 
-      9 Data sharing in supplementary material or hosting by journal recommended in RDP.
-     23 Multiple data sharing methods equally recommended in RDP.
-      3 No data sharing method recommended in RDP.
-     54 Public online repositories recommended in RDP.
-
-================================================================================
-
-     89 .data_licenses: 9. Recommended/required licenses
-
-     12 Explicit mention of a certain license/license type in RDP.
-     77 No mention of data/code licenses in RDP.
+    154 DOIs or other persistent identifiers recommended for datasets or codes.
+      8 DOIs or other persistent identifiers required for datasets or codes.
+      8 No mention of DOIs or other persistent identifiers for datasets or codes.
 
 ================================================================================
 
-     89 .data_referee: 10. Referee guidelines concerning research data
+    170 .data_timing: 7. Timing of data release
+
+     14 Required data must be available after an embargo period.
+     21 Required data must be available after official publication.
+     32 Required data must be available prior to official publication.
+     27 Required data must be available prior to review process.
+     76 Timing of data availability not adressed in RDP.
+
+================================================================================
+
+    170 .data_sharing_method: 8. Recommended data sharing method
+
+     13 Data sharing in supplementary material or hosting by journal recommended in RDP.
+     68 Multiple data sharing methods equally recommended in RDP.
+      5 No data sharing method recommended in RDP.
+     84 Public online repositories recommended in RDP.
+
+================================================================================
+
+    170 .data_licenses: 9. Recommended/required licenses
+
+     22 Explicit mention of a certain license/license type in RDP.
+    133 No mention of data/code licenses in RDP.
+     15 Open access license required for shared data.
+
+================================================================================
+
+    170 .data_referee: 10. Referee guidelines concerning research data
 
       4 Additional data or code referee (referee that solely confirms that code and data are shared following the RDP).
-     24 Data sharing policy mentioned in refereeing guidelines.
-     61 Data sharing policy not mentioned in refereeing guidelines.
+     54 Data sharing policy mentioned in refereeing guidelines.
+    112 Data sharing policy not mentioned in refereeing guidelines.
 
 ================================================================================
 
-     89 .data_recommended: 11. Unique policies for data types
-     89 Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
+    170 .data_recommended: 11. Unique policies for data types
+    170 Please name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
 
-     32 .nan
+     56 .nan
+      1 3. Purity of Tested Compounds. ; 4. Confirmation of Structure ; 6. Computational Chemistry; 7. QSAR/QSPR and Proprietary Data; 8. Statistical Criteria. 9. Software.; 10. Structural Data. ; 11. Compound Characterization Checklist. 
       7 Authors are encouraged to consider deposition in public, community-supported repositories of the data-types listed below. Protein-protein interaction data; Metabolite and metabolome profiling data; Small-molecule screening data; chemical compound data; Flow cytometry data; Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data; Enzymology and biocatalysis data
+      1 CIF 
+      1 Cell lines, If human cells are used, authors must declare in the manuscript: what cell lines were used by describing the source of the cell line, including when and from where it was obtained, whether the cell line has recently been authenticated and by what method.  It is recommended that authors check the NCBI database for misidentification and contamination of human cell lines.
+      1 Characterization of New Compounds ; (A) Crystal Structure Studies ; (1) Structure Reports in Articles ; CIF ; (B) Powder Diffraction Data ; Crystallographic Data (Powder); (C) Electron Diffraction; Computational Reports ; Magnetic measurements ; NMR Spectra ; Electrochemistry Data ; Biological Data ; Electrophoretic Gels and Blots ;  
+      1 Characterization of New Substances ; Guidelines for Characterization of Organometallic and Inorganic Compounds ; Characterization Data (a) Routine Compounds ; (b) Novel or Unexpected Compounds ; (c) Solid State Materials ; (d) Compounds that have not been isolated ; Guidelines for Characterization of Organic Compounds ; Spectra ; Kinetic and Equilibrium Data ; Reporting and Stewardship of NMR ; Data Nuclear Magnetic Resonance Pulse Sequences ; Structural and Chemical Shift Data for Proteins and Nucleic Acids ; Single Crystal Diffraction Data ; CIF Submission Instructions ; Powder Diffraction Data ; Magnetic Measurements ; Computations  
+      1 Compound Characterization, Experimental, and Computational Data ; Guidelines for Characterization of Organometallic and Inorganic Compounds ; (a) Routine Compounds ; (b) Novel or Unexpected Compounds ; (c) Solid State Materials ; (d) Compounds That Have Not Been Isolated ; Guidelines for Characterization of Organic Compounds ; Guidelines for Reporting Biological Data ; Statistics ; Biological Specimens ; a. Antibodies: ; b. Cell Lines and Microorganisms ; e. Biological Assays ; f. Kinetic and Equilibrium Data ; Reporting and Stewardship of NMR Data ; Biomolecule Structures: ; Single Crystal Diffraction Data ; CIF Submission Instructions ; Powder Diffraction Data ; Magnetic Measurements ; computations
       8 Crystal structure (organic / organometallic / metal organic); Crystal structure (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM; bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates; Input/configuration files and program output; Materials simulation data including electronic structure and molecular dynamics; Computational materials science; Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral data for small chemical molecules, metabolomics, exposomics; Electrophoretic gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages, multidimensional life sciences image data (cell and tissue); Materials (Various); Materials simulation data including electronic structure and molecular dynamics; Computational materials science; All proteomics data; Proteomics mass spectrometry; Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp), e.g.single-base nucleotide substitutions, small-scale deletion or insertions; Human genomic structural variation data (>50bp), e.g. insertions, deletions, translocations; Gene expression data, array- and sequence-based; High-throughput functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions; miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric and earth observation research, environmental data; Environmental and ecological data; Geochemical, geochronological, and petrological data; Climate or Earth system research, climate model data; Functional enzymology data (kinetic and experimental data); Flow cytometry data; Protein circular dichroism and protein synchrotron radiation circular dichroism ; Intermolecular and supramolecular interactions of molecular systems, binding, assembly, and interaction phenomena; Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials; Computational studies and modelling; Electrophoretic gels and blots;Fluorescence sensors; Inorganic and organometallic compounds; Macromolecular structure and sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers and macromolecules; Synthetic procedures; System models
       1 Crystal structure (organic / organometallic / metal organic); Crystal structure (biological); Crystal structure (inorganic);Crystal structure (powder); CryoEM; bio-NMR, Software / code; Models of biochemical reaction networks; Atomic coordinates; Input/configuration files and program output; Materials simulation data including electronic structure and molecular dynamics; Computational materials science; Computational chemistry files; NMR; IR / Raman; UV-vis; EPR; bio-NMR; Mass spectral data for small chemical molecules, metabolomics, exposomics; Electrophoretic gels and blots; Microscopy (e.g. SEM, TEM, STM); Coherent X-ray images; Bioimages, multidimensional life sciences image data (cell and tissue); Materials (Various); Materials simulation data including electronic structure and molecular dynamics; Computational materials science; All proteomics data; Proteomics mass spectrometry; Human geno- and phenotype data, epigenetics; Human genetic variation data (<=50bp), e.g.single-base nucleotide substitutions, small-scale deletion or insertions; Human genomic structural variation data (>50bp), e.g. insertions, deletions, translocations; Gene expression data, array- and sequence-based; High-throughput functional genomics data; Protein-protein, protein-DNA/RNA and molecular interactions; miRNA sequences and annotation; Metabolomics; Metabolomics; DNA & RNA sequence data; Genome sequence data; Metagenomics sequence data; Protein sequences;Atmospheric and earth observation research, environmental data; Environmental and ecological data; Geochemical, geochronological, and petrological data; Climate or Earth system research, climate model data; Functional enzymology data (kinetic and experimental data); Flow cytometry data; Protein circular dichroism and protein synchrotron radiation circular dichroism ; Intermolecular and supramolecular interactions of molecular systems, binding, assembly, and interaction phenomena; Batteries; Biomolecules; Catalysts; Characterisation of compounds and materials; Computational studies and modelling; Electrophoretic gels and blots;Fluorescence sensors; Inorganic and organometallic compounds; Macromolecular structure and sequence data; Magnetic measurements; Nanomaterials; Organic compounds; Polymers and macromolecules; Synthetic procedures; System models;Batteries
-     32 no text
-      9 no text.
+      1 Guidelines for Experiments Authors are expected to provide sufficient detail to enable a trained professional to reproduce routine measurements and synthetic procedures. Authors are required to provide crystallographic or surface structure data as Supporting Information in crystallographic information file (CIF) format. For quantitative optical measurements, the specifics and usable range of the photodetector should be reported.  Teams of ACS editors have identified best practices in certain fields to guide authors in the reporting of experimental results. Please refer to them, as needed:  Best Practices for the Reporting of Colloidal Inorganic Nanomaterials (http://pubs.acs.org/doi/abs/10.1021/acs.chemmater.5b02323) Best Practices for Reporting on Heterogeneous Photocatalysis (http://pubs.acs.org/doi/abs/10.1021/am504389z) Best Practices in Perovskite Solar Cell Efficiency Measurements. Avoiding the Error of Making Bad Cells Look Good (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00289) Best Practices for Reporting on Energy Storage (http://pubs.acs.org/doi/abs/10.1021/acsami.5b06029) Best Practice in Photocatalysis: Comparing Rates of Apparent Quantum Yields? (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00521) 
+      1 Na
+      1 No explicit mention, links to the following items are available   Best Practices in Reporting Experimental Results  Teams of ACS editors have identified best practices in certain fields to guide Authors in the reporting of experimental results. Please refer to them, as needed: Best Practices for the Reporting of Colloidal Inorganic Nanomaterials Best Practices for Reporting on Energy Storage Best Practices in Perovskite Solar Cell Efficiency Measurements. Avoiding the Error of Making Bad Cells Look Good Best Practices for Reporting on Heterogeneous Photocatalysis Best Practice in Photocatalysis: Comparing Rates or Apparent Quantum Yields? How to Submit a Previously Rejected Manuscript to ACS Energy Letters 
+      5 No unique polices; some data types available as preselect when submitting the manuscript
+      1 Nomenclature ; Database Deposition ; Use of Human Subjects or Animals in Research
+      1 Omics Data ; Materials
+      1 Research Resource Identifiers (RRID) are persistent unique identifiers (effectively similar to a DOI) for research resources. This journal encourages authors to adopt RRIDs when reporting key biological resources (antibodies, cell lines, model organisms and tools) in their manuscripts. Supply all supplementary material in standard file formats. Specialized format such as .pdb (chemical), .wrl (VRML), .nb (Mathematica notebook), and .tex can also be supplied.
+      7 Supply all supplementary material in standard file formats. Specialized format such as .pdb (chemical), .wrl (VRML), .nb (Mathematica notebook), and .tex can also be supplied.
+      1 Supply all supplementary material in standard file formats. Specialized format such as .pdb (chemical), .wrl (VRML), .nb (Mathematica notebook), and .tex can also be supplied. -XRD data are presented as the structural formula of a molecule with numbered atoms or as a crystal lattice and tables. Along with crystallographic data (cell parameters, space group, etc.), in the experimental part, authors should specify the device with which the measurements were performed and the methods (programs) used for decrypting structures and for calculations It is recommended to present spectroscopic data as follows:  - In electron spectra, wavelengths (in nm) or wavenumbers (in cm–1 ) are given on the abscissa in ascending order from left to right. The logarithm of the molar absorption coefficient or, if needed, molar absorption coefficient is presented on the ordinate axis. In the text and tables, the positions of extrema are designated as λmax and λmin  IR and Raman spectra themselves are usually not presented. They are described in order of decreasing wavenumbers. An example of such a description is as follows. IR spectrum, ν, cm –1 : 3350 br (NH, NOH), 2100 o.s (C≡N), 1700–1600 s (C=O, C=N). If the spectra are given, the wavenumbers (cm–1 ) (in descending order from left to right) or frequencies in accordance with the scale of the spectrometer are placed along the lower abscissa axis; the upper abscissa axis can reflect wavelength data (µm). The left ordinate axis presents transmittance (%) or absorbance (for IR spectra) or intensity (for Raman spectra)  In NMR spectra, millionths of a field (ppm) are given on the abscissa axis; the maximum signal of a solvent or a reference sample may be outside the graph field. It is recommended to present scaled-down photocopies of the experimental spectra. In describing spectra, signal types are indicated in abbreviated form: s, singlet; d, doublet; t, triplet; q, quartet; quint, quintet; and m, multiplet. Proton chemical shifts are given in the δ scale, for example, δ 5.24 m. Chemical shifts of nuclei 13C, 31P, etc., are given in accordance with IUPAC recommendations: a shift into the weak field with a “+;” and into a strong field, with a “–.” Signals are recorded in order of increasing δ values -Mass spectra are presented as numerical values m/z and relative intensities of ion currents in a row, in order of decreasing ion mass,  - In the case of GC, the brand and model of instrument, detector, and recording conditions, i.e., temperature, length and diameter of the column, column packing, solid inert carrier, and carrier gas, should be specified in the experimental part. For HPLC, it is necessary to indicate the brand and model of the instrument, the detector, temperature, length and diameter of the column, the brand and particle size of the sorbent, and the composition of the eluent. For TLC, the adsorbent, eluent, and developing reagent should be given. 
+      1 The Use of High Resolution Mass Spectral Data for Formula Confirmation: For publication of exact- mass data that are used to confirm identities of synthetic and natural products, report the uncertainty in the accurate-mass measurement used for formula verification along with the result. The acceptable uncertainty in a measurement by any analytical method must be adequate for the intended use of the data.  Evaluate the uncertainty of accurate mass measurement by any statistically valid method. Determine, for example, the precision and accuracy of replicate measurements or evaluate the performance characteristics of the mass spectrometer (see, for example, Sack, T. M., Lapp, R. L., Gross, M. L., and Kimble, B. J. Int. J. Mass Spectrom. Ion Proc. 1984, 61, 191-213).  Consider all candidates fitting the experimentally determined value and its reported uncertainty when the result of accurate mass measurement is used for formula confirmation. Do not set fixed acceptable error limits for exact mass measurement. Consider the following when using accurate mass data.  When valence rules and candidate compositions encompassing C0-100, H3-74, O0-4, and N0-4 are considered at nominal parent m/z of 118, there are no candidate formulae within 34 ppm of each other. When the ion is of m/z 750.4 and the formulae are in the range C0-100, H25-110, O0-15, and N0-15, there are 626 candidate formulae that are possible within 5 ppm. Thus, for a measurement at m/z 118, an error of only 34 ppm uniquely defines a particular formula, whereas at m/z 750, an error (and precision) of 0.018 ppm would be required to eliminate all extraneous possibilities.
+      8 n.a.
+      3 na
+     34 no text
+     12 no text.
+     15 not mentioned
 
 ================================================================================
 
-     89 .data_required: 12. Unique policies for data types
-     89 Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
+    170 .data_required: 12. Unique policies for data types
+    170 Please name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon, e.g. crystal structures; Protein sequence)
 
       1  Crystal structure (organic / organometallic / metal organic); code; hardware
       1  Nothing in particular about this
       3  reporting the efficiency of solar conversion devices;   reporting electrochemical data and setup of batteries.Crystal structure (organic / organometallic / metal organic) 
-      9 .nan
+      1 " Data Requirements Characterization of New Substances. Adequate evidence to firmly establish both identity and purity should be provided. Recommended criteria vary according to substance categories. A summary of the detailed criteria may be found below.  Guidelines for Characterization of Organometallic and Inorganic Compounds Authors are required to provide sufficient information (as described in more detail below) to establish the identity of a new compound, its purity, and its yield. Sufficient experimental details must also be included to allow another researcher to reproduce the synthesis. Characterization data and experimental details must be included in either the paper or the Supporting Information. It must be emphasized that the following is only a general guideline and authors are encouraged to present as much data as possible to support their structure assignments. In some cases, a reviewer or Editor may require authors to submit additional data to satisfy themselves of the validity of a proposed formulation.  Characterization Data  (a) Routine Compounds  Compounds in this category are those that have either literature precedents or are obtained by a logical synthesis in close to quantitative yield. Because of potential misidentification of atoms, an X-ray diffraction structure alone will not typically be considered to provide sufficient characterization for these molecules. Diamagnetic compounds must also be characterized by NMR spectroscopy, preferably for at least two different nuclei. In addition, at least one other characterization technique must be used to support the proposed formulation. Preferably, this would be a technique that provides definitive identification of a key functional group or chromophore. For example, IR spectroscopy may be used to support the presence of carbonyl, acyl, dinitrogen, carbonyl, and hydride moieties.  Paramagnetic compounds of this category present a further complication if NMR spectroscopy does not furnish clear evidence for the proposed formulation (note that NMR spectroscopy of paramagnetic complexes can be useful if sufficiently large sweep widths are used). In many cases, X-ray diffraction may provide the most unambiguous characterization of such complexes, but this will not suffice as the only means of characterization. In the absence of an X-ray structure determination, evidence for elemental constitution must be provided by elemental analysis (e.g., combustion analysis, microprobe analysis), or mass spectrometry. Magnetic moment and/or ESR spectroscopic data should also be given for paramagnetic compounds if it is considered that the spin state of the molecule is of especial interest.  (b) Novel or Unexpected Compounds  Compounds in this category are those that either (i) exhibit an unprecedented type of structure, or (ii) are obtained by unexpected reaction. Such compounds require more detailed characterization to ensure their validity. In select instances, a variety of definitive spectroscopic techniques may provide sufficient characterization (for example, if many of the nuclei are NMR active), but in the majority of cases evidence for elemental constitution must be provided by either elemental analysis (e.g. combustion analysis, microprobe analysis), or mass spectrometry. While an X-ray diffraction structure is not considered definitive proof of elemental composition, it is acceptable evidence for composition providing that the results of other physical methods concerning the characterization are conclusive.  (c) Solid State Materials  Compounds in this category are those that have no existence in solution. While X-ray diffraction may provide the most unambiguous characterization of such compounds, evidence for elemental constitution and homogeneity needs to be presented. Atom ratios as determined by, for example, microprobe analysis of selected elements may be sufficient for this purpose  (d) Compounds that have not been isolated  Compounds that have not been isolated in pure form (e.g. reaction intermediates or intractable mixtures, or unstable species) may be published. However, in these circumstances, an explicit statement must be given indicating that the compounds have not been isolated. Only in exceptional circumstances will a paper be published in which none of the new compounds reported has been isolated and fully characterized.  Purity and Yield  The yield and purity of all compounds must be reported, including the methods used to determine them. The yield of a compound obtained in an NMR tube reaction should be determined using an internal standard.  Guidelines for Characterization of Organic Compounds Sample Quality  For new substances, evidence of the homogeneity the purified sample should be included. Elemental analysis is sufficient. If no analysis was performed, then other evidence (for example, 1H NMR, 13C NMR, hplc, glpc, gel electrophoresis, etc.) should be included as figures in the Supporting Information.  Molecular Weight  Evidence of molecular weight should be provided, especially if elemental analysis was not performed. Low resolution MS data under conditions that minimize fragmentation are acceptable. If there is a specific need to distinguish alternative formulas with the same molecular mass (within one amu), then HRMS data are necessary.  Miscellaneous  Numerical listings of characteristic spectroscopic data should be included to support assigned structures, changes in functionality, unusual chromophores, properties, etc. Methods of purification used to prepare samples for characterization should be described. For crystalline samples, information about the method of crystallization should be included (solvents; mp; etc.). For non-racemic, chiral substances, data to allow correlation of absolute configuration should be given, preferably including [α]D values. If correlation data are provided based on hplc or glpc methods, then retention times for both enantiomers must be provided, together with solvent and flow rate information, and identification of the chiral support.  Intermediates on Solid Phase; Combinatorial Chemistry  Validation of methods and characterization of new substances in a statistically significant sampling should be provided. Resin-bound intermediates need not be characterized if acceptable end product quality (as defined in A-C above) is demonstrated.  Spectra. Reproductions of spectra, or the relevant segments thereof, will be published only if concise numerical summaries are inadequate for the purposes of the paper. Papers dealing primarily with interpretation of spectra and those in which band shape or fine structure needs to be illustrated may be published with such spectra included. Spectra will not be published merely as adjuncts to the characterization of compounds, however. See ‘Supporting Information’ below. Routine infrared, electronic, NMR, and mass spectra of new compounds should be numerically summarized, as appropriate, in the Experimental Section of an Article or in the Supporting Information of a Communication.  Kinetic and Equilibrium Data. For publication in the Journal of the American Chemical Society, the reporting of kinetic data and equilibrium binding data for proteins, nucleic acids, and other species should preferably include a description of the identity of the catalyst or binding molecule, its origin, purity of composition, and any modifications such as mutations, post-translational modifications, or other modifications made to facilitate expression and purification. The method of assay and the exact experimental conditions of the assay should be provided as a reference to previous work, with or without modifications, or fully described if a new assay. Conditions essential to reproduce the results such as the temperature, pH, and pressure (if other than atmospheric) of the assay should be included. Terms such as “not detectable” (ND) should be avoided. Instead, an estimate of the limit of detection based on the sensitivity and error analysis of the assay should be provided. Authors are referred to the STRENDA (Standards for Reporting Enzymology Data) Commission of the Beilstein Institut (http://www.beilstein-institut.de/en/projects/strenda/guidelines) for an example of detailed guidelines.  Reporting and Stewardship of NMR Data. New guidelines recommend a standard baseline for the submission of NMR data to ACS journals. They are intended to promote accuracy and consistency. The guidelines are divided into three sections: NMR text, which outlines the preferred format for NMR data included in the Experimental Section; NMR spectra, which outlines the preferred format for inclusion of hard copies of spectra in the Supporting Information; and primary NMR data files, which outlines the procedure for submitting FID files, acquisition data, and processing parameters to include in the Supporting Information. Authors are strongly encouraged to provide all three sets of data for all new and/or key compounds described in a manuscript submission.  In the Experimental Section, the compound must be clearly identified, for example in a header at the beginning of the synthetic procedure or the summary of spectroscopic data. List the nucleus being measured, any nucleus being broad-band decoupled, the solvent used (formula preferred, e.g. C6D6 over benzene-d6), the standard used, and the field strength. Field strength should be noted for each spectrum, not as a comment in the general Experimental Section. The standard(s) may be specified in the general Experimental Section; as an example, 1H NMR data recorded in C6D6 listed as “residual internal C6D5H (δ 7.15)”. Indicate solvent or peak suppression protocols used in collecting data. List the probe temperature when it is accurately known; ambient probe temperature is otherwise understood. Give 1H NMR chemical shifts to two digits after the decimal point. Include the number of protons represented by the signal, peak multiplicity, and coupling constants as needed (J italicized, reported with up to one digit after the decimal). The number of bonds through which the coupling is operative, xJ, may be specified by the author if known with a high degree of certainty. Accepted abbreviations for multiplicities and descriptors are s = singlet, d = doublet, t = triplet, q = quartet, quint = quintet, m = multiplet (denotes complex pattern), dd = doublet of doublets, dt = doublet of triplets, td = triplet of doublets, and br = broad signal.  Chemical shifts should be listed consistently in a single article, starting either from downfield to upfield or vice-versa. Assign peak identities under the following circumstances: non-decoupled or equivalent spectra have been collected (13C, 31P, etc.); 2-D experiments have been performed; or unambiguous assignment is possible without additional experiments, such as in the case of an organometallic metal-hydride 1H signal, PF6 vs MPPh3 31P signal, etc. Give 13C chemical shifts to one digit after the decimal point, unless an additional digit will help distinguish overlapping peaks. Include peak multiplicities for 1H-coupled 13C NMR spectra or for signals in 1H-decoupled spectra that are coupled to other magnetically active nuclei. A 13C NMR signal will be considered a singlet if the multiplicity is not assigned. Only rarely is a true multiplet observed in a 13C{1H} NMR spectrum. However, a certain region may contain a group of unresolved peaks or signals. Mention of unobserved resonances is encouraged.  Submission of spectra (.doc, .docx, .txt, .pdf, .tif) is strongly recommended for all new and/or key compounds, following these guidelines:  A caption should be included on the spectrum, noting the nucleus being measured, the solvent (formula preferred, e.g. C6D6  over benzene-d6) and the field strength. A representation of the compound should be included on the spectrum—please use ChemDraw or a related program. The compound identifier used in the manuscript should be included. The largest peak in the 1H NMR spectrum should normally arise from the compound, not the solvent. All peaks in the 1H NMR spectrum should be integrated. Chemical shift values should be included. The solvent peak should be clearly labeled on the spectrum. All peaks should be visible on the spectrum. Insets are encouraged to show expanded regions. At minimum, the spectral window should be ‒1 ppm to 9 ppm for 1H NMR and ‒10 ppm to 180 ppm for 13C NMR. Font should be clear and large enough to read (minimum of 10 point). Horizontal orientation is preferred for spectra. Submission of primary NMR data files (FID files, acquisition data, processing parameters) is encouraged for all new and/or key compounds. When submitting these files, please consider the following guidelines:  One folder should be created for each compound. The folder should be named clearly, using the compound name (if available) and compound identifier, as referenced in the Experimental Section or Supporting Information. Include the FID files, acquisition data, and processing parameters for each experiment. Name each spectrum according to the type of nucleus measured. 1H, 13C, DEPT, COSY, etc. NMR files should be compressed into zip files—please use multiple zip files if necessary. Files must be submitted in their native format. In a text document, include the name of the manufacturer of the spectrometer used to collect the data, the acquisition software and processing programs used to analyze the data, and the field strength used to measure each nucleus (i.e., 300 MHz 1H or 50 MHz 13C). Include a structure file that shows the structure and compound identifier for each provided dataset. MolFile is the recommended format and is strongly preferred. Nuclear Magnetic Resonance Pulse Sequences. For manuscripts that present new NMR pulse sequences, authors are requested to supply as “Supporting Information for Publication” a file that includes the original working pulse sequence information required to record data. This will typically include the pulse sequence code, parameter set, and other associated files, such as tables of gradient or pulse shapes.  Structural and Chemical Shift Data for Proteins and Nucleic Acids. Any set of atomic coordinates referred to in the manuscript, including atomic coordinates and structure factors for proteins determined by X-ray crystallography and coordinates determined by NMR, should be deposited with the Protein Data Bank, Research Collaboratory for Structural Bioinformatics at Rutgers University whenever appropriate. (Theoretical model depositions are no longer accepted for inclusion in the PDB archive.) If the coordinate files are not deposited in the PDB, or if the PDB files are on hold until publication, then the coordinate files must be included in the Supporting Information submitted concurrently with the manuscript. Requirements are similar for structures of nucleic acids, which should be deposited with the Nucleic Acid Database. A manuscript that does not provide coordinates at the time of submission will not be sent out for review. It is the responsibility of the author to obtain a file name (PDB ID or NDB ID) for the molecule; the file name must appear in the published manuscript. If a file name has not yet been obtained upon acceptance of a paper, it must be added in proof. Atomic coordinates and structure factors for all structures mentioned must be available immediately upon publication of the paper, either directly in the Supporting Information or as a data bank deposition. Similar requirements also apply to any chemical shifts referred to in the paper, whether they are only for assignment of resonances or used for any form of structure calculation. Those chemical shifts must be available to the reviewer at time of submission, either as an available entry in the Biological Magnetic Resonance Data Bank or included directly as Supporting Information.  Single Crystal Diffraction Data. Manuscripts reporting the determination of one or more structures by X-ray diffraction must adhere to the following requirements:  Abstract. The abstract may summarize geometric features of unusual interest but should not contain unit cell parameters.  Main Body of Manuscript. Tables of essential interatomic distances and angles are not required but may be submitted (metric information for standard  structural components should not be included).  For structures with anisotropically refined atoms, a figure displaying the thermal ellipsoids should ordinarily be presented; a spherical-atom representation may be substituted if necessary for clarity. If a spherical atom view is chosen for the manuscript, a thermal ellipsoid figure should be included in the Supporting Information. In cases where intermolecular interactions are relevant to the discussion, a view of the unit cell may be included.  An Article should list for each structure the formula, formula weight, crystal system, space group, color of crystal, unit cell parameters, temperature of data collection, and values of Z, R, and GOF; a brief description of data collection and solution and refinement of the structure should be placed in the Experimental Section. Tables of atom coordinates and thermal parameters will not be printed.  Structure factors (except for proteins and nucleic acids) should not be submitted as Supporting Information. However, one printed table of structure factors should be retained in case it is requested by the Editor for review purposes only.  CIF Submission Instructions: All Crystallographic Information Files (CIFs), structure factor tables, and CheckCIF reports must be submitted to the Cambridge Crystallographic Data Centre (CCDC) prior to manuscript submission. See Requirements for Depositing X-Ray Crystallographic Data [PDF] for complete details on submission of CIFs and a list of file types accommodated by CCDC.  Before being submitted to CCDC, CIFs should be checked using the free checkCIF data-validation utility on the CIF Validation site. Any reported syntax errors should be corrected. Authors are required to correct/defend/or respond to any A-level alerts. Comments may be inserted into the CIF file using a Validation Response Form or uploaded as a separate document as Supporting Information for Review Only. checkCIF output files (combined into one PDF file) should be uploaded at submission as Supporting Information for Review Only. Any subsequent revisions to the CIFs or structure factor tables should be deposited directly with the CCDC before resubmitting the manuscript in ACS Paragon Plus. Powder Diffraction Data. The presentation of X-ray powder diffraction data for new materials or for materials previously uncharacterized by this technique is encouraged. Data from X-ray powder measurements should be accompanied by details of the experimental technique: source of X-rays, the radiation, its wavelength, filters or monochromators, camera diameter, the type of X-ray recording, and the technique for measuring intensities. In cases of unindexed listing of the data, the d spacings of all observed lines should be listed in sequence, together with their relative intensities. In cases where filtered radiation is used, every effort should be made to identify residual β lines. Where resolution into α1-α2 doublets occurs, the identification of the d spacing for each line as dα1, dα2 gives a measure of the quality of the diffraction pattern. When an indexing of the data is offered, the observed and calculated 1/d2 values should be listed along with the observed relative intensities (it is superfluous to give d spacings in this instance). All calculated 1/d2 values should be listed (exclusive of systematic absences), to the limit of the data quoted. If possible, the crystal system should be specified. Possible space groups may also be listed if the data warrant it. Relevant information about the specimen used should be included.  Magnetic Measurements. Fits of magnetic data [χ(T), χ-1(T), χT(T), μ(T), M(H), etc.] to an analytical expression must include both the Hamiltonian from which the analytical expression is derived and the final analytical expression and fitting parameters. When the value of an exchange coupling constant, J, is given in the abstract, the form of the Hamiltonian must also be included. The expressions may be included in the manuscript or, if long and complex, as Supporting Information; if the latter method is used, it should be noted in the Supporting Information paragraph at the end of the manuscript. In addition, how the sample was measured (in a gelatin capsule, Teflon capsule, etc.) and the diamagnetic correction for the sample holder, as well as the diamagnetic correction for the material, must be provided and the manner in which it was calculated (Pascal’s constants) or measured must be stated.  Computations. When computational results are an essential part of a manuscript, sufficient detail must be given, either within the paper or in the Supporting Information, to enable readers to reproduce the calculations. This includes data such as force field parameters and equations defining the model (or references to where such material is available in the open literature). If the software used for calculations is generally available, it must be properly cited in the References and Footnotes. References to the methods upon which the software is based must also be provided. Results obtained from methods or parameters that are not adequately described in the manuscript or in the literature are not acceptable for publication. Authors who report the results of electronic structure calculations are requested to provide as Supporting Information the geometries (either as Cartesian coordinates or Z matrices) of all the stationary points whose relative energies are given in the manuscript. The absolute energies in hartrees that are computed at these geometries should not be given in the manuscript but should be included in the Supporting Information. Where applicable, the number of imaginary frequencies should be reported to identify stable structures and transition states."
+     23 .nan
+      1 1. Biological Data
       7 Authors are required to deposit the following mandatory data types in public, community-supported repositories, such as those listed below, prior to publication of an associated Frontiers manuscript. Genetic and genomic sequence (DNA/RNA); Metagenomic sequence; DNA and RNA trace or short-read sequencing data; Genetic polymorphism data, including SNP and CNV data; Gene expression data; chromatin immunoprecipitation data (deep-sequencing or microarray); Data linking genotype to phenotype; Protein sequence data; Proteome profiling data; Small molecule, protein, protein complex data structural data; Taxonomy data
       1 Batteries.Crystal structure (organic / organometallic / metal organic), Inorganic and organometallic compounds
       3 Batteries.Crystal structure (organic / organometallic / metal organic), nanomaterials
       1 Batteries; Crystal structure (organic / organometallic / metal organic); Computational results; Biomolecules (for example, enzymes, proteins, DNA/RNA, oligosaccharides, oligonucleotides); Nano-sized materials (such as quantum dots, nanoparticles, nanotubes, nanowires); Magnetic measurements; Inorganic and organometallic compounds; Polymers; Organic compounds 
-      9 DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
+      1 CIF  Guidelines for Computational Results Below are the general guidelines from Pure Appl. Chem. 1998, 70, No. 10, 2047–2049 (http://dx.doi.org/10.1351/pac199870102047) for manuscripts reporting the results of electronic structure calculations, force field parameters, and other potential energy surface information. Further details are listed in the guidelines authored by J. E. Boggs (Pure Appl. Chem. 1998, 70, No. 4, 1015–1018 (http://dx.doi.org/10.1351/pac199870041015). Both sets of guidelines can be viewed online at http://iupac.org/publications/pac/reports/year/1998/. While these papers refer to electronic structure and molecular dynamics calculations, the concepts stated below apply to all calculations.  If a paper mentions any calculations that are integral to the study (i.e., the precise quantitative results are central to the conclusions drawn) computational details must be described. Reproducibility of computations should be a defining goal in reporting computational results. Sufficient technical details should be provided to allow a reader to reproduce the results of any calculations. Of course, strict reproducibility of computations may be precluded by differences among computers (e.g., differences in operating systems, host-based algorithms, machine precision, etc.), software (e.g., installation procedures and programming modifications), and applications (e.g., for probabilistic methods such as Monte Carlo calculations). A description of the results of any published calculation must be available for scientific scrutiny by other investigators. Ordinarily this will best be achieved if the authors place full details of the calculation (e.g., structures, energies, frequencies, dynamical quantities, etc.) in a repository (such as Supporting Information to the paper) that is accessible via the Internet. Otherwise, it is the responsibility of the investigator to make such information available upon request. Depending on the specific circumstances, the appropriate data to be deposited might be final output structure(s) or the input structure(s) that would allow another investigator to replicate the computational experiment. Electronically deposited structures should be written in a format that is machine readable by readily available modelling or translating programs. An adequate specification of the computer program used to carry out the calculations is essential. If the calculations were carried out with commercially available software, the investigator must list the source, version number, and force field employed. Any program modifications and any differences from the published version (including changes in parameters) must be fully described or available to other investigators upon request. Changes in parameters, program options (e.g., dielectric constant, nonbonded cutoffs, etc.) affecting reproducibility of the calculation, and program constraints must be fully described in the article. If the program is not available, commercially or otherwise, the authors must specify sufficient detail that the calculation could be reproduced. The issue of convergence must be adequately addressed. An iterative calculation is considered to have converged when further iterations will not significantly alter the results. Convergence criteria should be reported (e.g., energy change per iteration or energy gradient for geometry optimization of a single structure).  
+      1 CIF, PDB, #### double check if more ####
+      3 DNA sequence data,  RNA sequence data,  Genome assembly data,  Protein sequence data,  Proteomics data,  Genetic variation data,  Functional genomics data,  Macromolecular structure data,  Gene expression data,  Crystallographic data for small molecules
+      6 DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence data; Proteomics data; Genetic variation data; Functional genomics data; Macromolecular structure data; Gene expression data; Crystallographic data for small molecules
+      1 For all newly synthesized compounds, the elemental analysis data or high-resolution mass spectra should be provided
+     10 N.A.
      11 Nothing in particular about this
       1 Potential Energy Surfaces
       1 Structural Data Biological Macromolecules
-     32 no text
-      9 no text.
+      3 all data
+      1 all results data
+      1 cif
+      1 crystal structures
+     21 n.a.
+      4 na
+     34 no text
+     12 no text.
+      1 nomenclature , Biological Assays ; Use of Human Subjects or Animals in Research ; Research Involving Animals ; Research Involving Human Subjects ; Database Deposition ; Sequence Data ; Proteomics Data ; Computer Codes ; Computational Chemistry Calculations ;
+     15 not mentioned
 
 ================================================================================
 
-     89 .code_required: 13. Code sharing requirements
+    170 .code_required: 13. Code sharing requirements
 
       1  Code sharing encouraged but optional.
-     61 Code sharing encouraged but optional.
-     25 Code sharing not mentioned.
-      2 Code sharing required.
+    109 Code sharing encouraged but optional.
+     52 Code sharing not mentioned.
+      8 Code sharing required.
 
 ================================================================================
 
-     89 .code_reproducibility: 14. Code Reproducibility
+    170 .code_reproducibility: 14. Code Reproducibility
 
-      1 Journal policies require stating all dependencies and their versions that were used to run computational experiments.
-     88 No mention of dependencies for research code.
-
-================================================================================
-
-     89 .code_versioning: 15. Versioning and persistent identifiers
-
-     27 Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
-     62 No mention of a persistent identifier or specifying a version of developed code.
+     20 Journal policies encourage/recommend stating all dependencies and their versions that were used to run computational experiments.
+      7 Journal policies require stating all dependencies and their versions that were used to run computational experiments.
+    143 No mention of dependencies for research code.
 
 ================================================================================
 
-     89 .code_quality: 16. Code Quality Standards
+    170 .code_versioning: 15. Versioning and persistent identifiers
 
-     79 The journal policies do not mention any code quality standards.
-      7 The journal policies encourage/recommend certain standards for code.
+     56 Journal policies encourage/recommend a persistent identifier or specifying a version of developed code.
+    114 No mention of a persistent identifier or specifying a version of developed code.
+
+================================================================================
+
+    170 .code_quality: 16. Code Quality Standards
+
+    135 The journal policies do not mention any code quality standards.
+     32 The journal policies encourage/recommend certain standards for code.
       3 The journal policies require code of articles to fulfill certain standards.
 
 ================================================================================
 
-     89 .code_autotest: 17. Automatic Testing
+    170 .code_autotest: 17. Automatic Testing
 
-     89 No mention of automatic testing to verify code functionality.
-
-================================================================================
-
-     89 .code_docs: 18. Code Documentation
-
-     86 No mention of standards for code documentation.
-      3 The journal policies encourage/recommend standards for code documentation.
+    170 No mention of automatic testing to verify code functionality.
 
 ================================================================================
 
-     89 .code_linting: 19. Linting Standards
+    170 .code_docs: 18. Code Documentation
 
-     89 No mention of linting standards for code.
+    152 No mention of standards for code documentation.
+     18 The journal policies encourage/recommend standards for code documentation.
 
 ================================================================================
 
-     89 .code_development: 20. Code Development
+    170 .code_linting: 19. Linting Standards
 
-     82 No mention of standards for code development such as continuous integration.
-      7 The journal policies encourage/recommend standards for code development such as continuous integration.
+    169 No mention of linting standards for code.
+      1 The journal policies encourage/recommend linting standards for code.
+
+================================================================================
+
+    170 .code_development: 20. Code Development
+
+    148 No mention of standards for code development such as continuous integration.
+     21 The journal policies encourage/recommend standards for code development such as continuous integration.
+      1 The journal policies require standards for code development such as continuous integration.
 
 ================================================================================

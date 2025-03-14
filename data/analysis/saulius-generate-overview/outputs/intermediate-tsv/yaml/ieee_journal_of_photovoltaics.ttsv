@@ -1,4 +1,4 @@
-# 2025-03-14 11:59:22 EET
+# 2025-03-14 12:10:48 EET
 NAnsw	File	Key	Quest	Discrepancies?	IdxCorrect	AnsKeys	Answer1	Answer2	Answer3	Other Answers...
 2	outputs/intermediate-tsv/yaml/ieee_journal_of_photovoltaics.yaml	rdp_exist:	1. Existence of research data policy	false		0:,1:	Research Data Policy (RDP) exists.	Research Data Policy (RDP) exists.
 2	outputs/intermediate-tsv/yaml/ieee_journal_of_photovoltaics.yaml	data_sharing:	3. Data sharing requirements in RDP	false		0:,1:	Data sharing encouraged but optional.	Data sharing encouraged but optional.
