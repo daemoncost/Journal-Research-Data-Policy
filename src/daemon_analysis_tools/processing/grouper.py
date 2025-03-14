@@ -10,10 +10,10 @@ def _load_question_types(path: str) -> Dict[int, bool]:
     """
     Load question types from a YAML file.
 
-    Reads a YAML file and returns a dictionary mapping question numbers to a boolean 
+    Reads a YAML file and returns a dictionary mapping question numbers to a boolean
     value indicating whether the question is open.
 
-    :return: Dictionary where keys are question numbers and values are True if the 
+    :return: Dictionary where keys are question numbers and values are True if the
         question is open, False otherwise.
     """
     with open(path, "r") as file:

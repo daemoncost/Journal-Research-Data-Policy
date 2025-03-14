@@ -15,9 +15,7 @@ for pub in all_pubs:
     for j in all_journals:
         # Define the destination path in the backup directory
         backup_dir = pub.replace("all_answers", "all_answers_backup")
-        os.makedirs(
-            backup_dir, exist_ok=True
-        )  # Ensure the backup directory exists
+        os.makedirs(backup_dir, exist_ok=True)  # Ensure the backup directory exists
 
         # Define the target path for the backup file
         target_path = os.path.join(backup_dir, os.path.basename(j))

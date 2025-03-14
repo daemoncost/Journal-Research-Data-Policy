@@ -98,9 +98,7 @@ def _normalize_journal(name: str) -> str | None:
             "journal_of_the_american_society_for_mass_spectrometry"
         ),
         "acs_esandt_engineering": "acs_es_and_t_engineering",
-        "applied_materials_and_interfaces": (
-            "acs_applied_materials_and_interfaces"
-        ),
+        "applied_materials_and_interfaces": ("acs_applied_materials_and_interfaces"),
         "applied_catalysis_b_environmental": (
             "applied_catalysis_b_environment_and_energy"
         ),
