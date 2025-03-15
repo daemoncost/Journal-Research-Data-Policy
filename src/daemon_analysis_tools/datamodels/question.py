@@ -1,10 +1,6 @@
 from typing import List, Optional
 
-<<<<<<< HEAD
 from daemon_analysis_tools.services.scoring import jaccard_similarity
-=======
-from ..services.scoring import jaccard_similarity
->>>>>>> 669e4d34ac64ffbc93057940e7693ff7ed637dba
 
 
 class Answer:

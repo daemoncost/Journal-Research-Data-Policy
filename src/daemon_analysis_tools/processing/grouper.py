@@ -52,6 +52,7 @@ def _get_explanation_column(data: pd.DataFrame, index: int) -> Optional[str]:
         return next_column
     return None
 
+
 def _process_group(
     group: pd.DataFrame,
     question_metadata_dict: dict,
