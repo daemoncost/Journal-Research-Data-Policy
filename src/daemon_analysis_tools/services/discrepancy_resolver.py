@@ -6,8 +6,7 @@ from daemon_analysis_tools.datamodels.question import Answer, Question
 def _select_correct_answer(
     question: Question, correct_answer: Union[str, int]
 ) -> tuple[Answer, int]:
-    """
-    Select the correct answer from the available answers.
+    """Select the correct answer from the available answers.
 
     :param question: The Question object.
     :param correct_answer: The correct answer (either text or index).
@@ -37,8 +36,7 @@ def _select_correct_answer(
 
 
 def _prompt_for_resolution(question: Question) -> tuple[int, str]:
-    """
-    Prompt the user to manually resolve discrepancies.
+    """Prompt the user to manually resolve discrepancies.
 
     :param question: The Question object.
     :return: Tuple (correct_answer_index, discrepancy_reason)
@@ -67,8 +65,7 @@ def resolve_discrepancy(
     discrepancy_reason: Optional[str] = None,
     interactive: bool = False,
 ) -> None:
-    """
-    Resolve discrepancies in the question by selecting the correct answer.
+    """Resolve discrepancies in the question by selecting the correct answer.
 
     :param question: The Question object.
     :param correct_answer: The correct answer (string or index).

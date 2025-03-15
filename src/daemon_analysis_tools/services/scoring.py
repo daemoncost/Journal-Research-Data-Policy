@@ -27,9 +27,7 @@ def sentence_to_words(sentence: str) -> Set[str]:
 
 
 def jaccard_similarity(sentences: List[str]) -> float:
-    """
-    Compute the Jaccard similarity coefficient between two sentences.
-    """
+    """Compute the Jaccard similarity coefficient between two sentences."""
     word_sets = [sentence_to_words(s) for s in sentences]
     intersection = set.intersection(*word_sets)
     union = set.union(*word_sets)
@@ -38,9 +36,7 @@ def jaccard_similarity(sentences: List[str]) -> float:
 
 # Function to check if all open text answers are similar above a threshold
 def all_similar(series, threshold=0.8):
-    """
-    Check if all open-text answers are similar above a threshold.
-    """
+    """Check if all open-text answers are similar above a threshold."""
 
     series = _normalize_series(series)
     texts = series.dropna().unique()

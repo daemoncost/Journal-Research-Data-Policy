@@ -1,4 +1,4 @@
-from typing import List, Optional, Union
+from typing import List, Optional
 
 from ..services.scoring import jaccard_similarity
 
@@ -7,8 +7,7 @@ class Answer:
     """A class representing an answer with an optional explanation."""
 
     def __init__(self, text: str, explanation: str = "") -> None:
-        """
-        Initialize an Answer instance.
+        """Initialize an Answer instance.
 
         :param text: The text of the answer.
         :param explanation: The explanation text provided by the respondent (optional).
@@ -17,8 +16,7 @@ class Answer:
         self.explanation: str = explanation
 
     def __repr__(self) -> str:
-        """
-        Return the string representation of the Answer instance.
+        """Return the string representation of the Answer instance.
 
         :return: A string representation of the Answer.
         """
@@ -28,11 +26,8 @@ class Answer:
 class Question:
     """A class representing a question and its associated answers."""
 
-    def __init__(
-        self, question_id: str, text: str, is_open: bool
-    ) -> None:
-        """
-        Initialize a Question instance.
+    def __init__(self, question_id: str, text: str, is_open: bool) -> None:
+        """Initialize a Question instance.
 
         :param question_id: Unique identifier of the question.
         :param text: The text of the question.
@@ -50,8 +45,7 @@ class Question:
     def _set_correct_answer(
         self, correct_answer: Answer, reason: str, encoder_id: Optional[int] = None
     ) -> None:
-        """
-        Set the correct answer after resolving discrepancies.
+        """Set the correct answer after resolving discrepancies.
 
         :param correct_answer: The correct Answer object.
         :param reason: The reason for choosing this answer.
@@ -62,8 +56,7 @@ class Question:
         self.discrepancy_reason = reason
 
     def _add_answer(self, answer: str, explanation: str = "") -> None:
-        """
-        Add a respondent's answer along with an optional explanation.
+        """Add a respondent's answer along with an optional explanation.
 
         :param answer: The answer provided by a respondent.
         :param explanation: Additional explanation text provided by the respondent
@@ -72,12 +65,10 @@ class Question:
         self.answers.append(Answer(answer, explanation))
 
     def has_discrepancies(self) -> bool:
-        """
-        Determine whether discrepancies exist among the answers.
+        """Determine whether discrepancies exist among the answers.
 
         If the question is not open-text, discrepancies exist if there is more than one
-        unique answer.
-        For open-text questions, a jaccard similarity threshold is used.
+        unique answer. For open-text questions, a jaccard similarity threshold is used.
 
         :return: True if discrepancies exist; otherwise, False.
         """
@@ -94,8 +85,7 @@ class Question:
             return jaccard_similarity(answer_texts) > 0.55
 
     def get_final_answer(self) -> Answer:
-        """
-        Retrieve the final resolved answer.
+        """Retrieve the final resolved answer.
 
         :return: The resolved Answer object.
         :raises ValueError: If the correct answer has not been determined.
@@ -107,9 +97,8 @@ class Question:
         return self.correct_answer
 
     def print_qa(self) -> None:
-        """
-        Print the question along with each of the respondent's answers and explanations.
-        """
+        """Print the question along with each of the respondent's answers and
+        explanations."""
         print(self.text)
         for i, answer in enumerate(self.answers):
             print(f"  Resp. {i}:")
@@ -117,8 +106,7 @@ class Question:
             print(f"    Explanation: {answer.explanation}")
 
     def __repr__(self) -> str:
-        """
-        Return the string representation of the Question instance.
+        """Return the string representation of the Question instance.
 
         :return: A string representation of the Question.
         """

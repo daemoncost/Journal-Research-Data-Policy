@@ -6,9 +6,9 @@ import yaml
 
 from daemon_analysis_tools.datamodels.question import Question
 
-def build_journal_dict(journal: Dict[int, 'Question']) -> Dict:
-    """
-    Build a dictionary from a journal's questions for YAML dumping.
+
+def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
+    """Build a dictionary from a journal's questions for YAML dumping.
 
     :param journal: A dictionary mapping question numbers to Question objects.
     :return: A dictionary with question IDs as keys and their details as values.
@@ -43,8 +43,7 @@ def build_journal_dict(journal: Dict[int, 'Question']) -> Dict:
 
 
 def save_yaml_file(file_path: str, data: Dict) -> None:
-    """
-    Save a dictionary to a YAML file.
+    """Save a dictionary to a YAML file.
 
     :param file_path: The file path where the YAML file will be saved.
     :param data: The dictionary to dump into the YAML file.
@@ -54,25 +53,26 @@ def save_yaml_file(file_path: str, data: Dict) -> None:
             yaml.dump(data, file, sort_keys=False)
     except FileExistsError:
         print(
-            f"{file_path} already exists. No data was written to prevent overwriting files modified by users. "
+            f"{file_path} already exists. No data was written to prevent overwriting "
+            "files modified by users. "
             "Manually delete this file if necessary."
         )
+
     except Exception as e:
         print(f"Exception: {e} for file {file_path}")
 
 
 def save_answers_to_yaml(
-    grouped_questions: Dict[str, Dict[str, Dict[int, 'Question']]],
+    grouped_questions: Dict[str, Dict[str, Dict[int, "Question"]]],
     parent_folder: Optional[str] = ".",
     save_only: Optional[List[str]] = None,
 ) -> None:
-    """
-    Save answers to YAML files, grouping data by publisher and journal.
+    """Save answers to YAML files, grouping data by publisher and journal.
 
     Iterates over grouped questions and creates a YAML file for each journal.
-    
-    :param grouped_questions: A nested dictionary structured as:
-        {publisher_name: {journal_name: {question_number: Question}}}.
+
+    :param grouped_questions: A nested dictionary structured as: {publisher_name:
+        {journal_name: {question_number: Question}}}.
     :param parent_folder: Parent directory for saving the YAML files.
     :param save_only: Optional list of publisher names to be processed.
     """
@@ -92,17 +92,16 @@ def save_answers_to_yaml(
 def load_answers_from_yaml(
     parent_folder: str = ".",
 ) -> Dict[str, Dict[str, Dict[str, Question]]]:
-    """
-    Load answers from YAML files and reconstruct grouped questions.
+    """Load answers from YAML files and reconstruct grouped questions.
 
     The function searches for publisher directories under the provided parent folder,
     loads each YAML file corresponding to a journal, and reconstructs the Question
     objects with their associated answers and discrepancy resolutions.
 
     :param parent_folder: The directory containing publisher folders with YAML files.
-                          Defaults to the current directory.
-    :return: A nested dictionary structured as:
-             {publisher_name: {journal_name: {question_number: Question}}}.
+        Defaults to the current directory.
+    :return: A nested dictionary structured as: {publisher_name: {journal_name:
+        {question_number: Question}}}.
     """
     grouped_questions: Dict[str, Dict[str, Dict[str, Question]]] = {}
 

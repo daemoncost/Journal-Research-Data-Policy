@@ -55,9 +55,7 @@ def save_answers_to_yaml(
     parent_folder: Optional[str] = ".",
     save_only: Optional[List[str]] = None,
 ) -> None:
-    """
-    Save answers to yaml file to facilitate discrepancy resolution.
-    """
+    """Save answers to yaml file to facilitate discrepancy resolution."""
 
     for publisher_name, publisher in grouped_questions.items():
         if save_only is not None:
