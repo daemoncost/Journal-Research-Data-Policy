@@ -19,6 +19,7 @@ def _load_question_types(path: str) -> Dict[int, Dict]:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Reads a YAML file and returns a dictionary mapping question numbers to a boolean
     value indicating whether the question is open.
 
@@ -35,6 +36,13 @@ def _load_question_types(path: str) -> Dict[int, Dict]:
 
     :return: Dictionary where keys are question numbers and values are dictionary with metadata.
 >>>>>>> cd1b961... updated yaml saver
+=======
+    Reads a YAML file and returns a dictionary mapping question numbers to question
+    metadata.
+
+    :return: Dictionary where keys are question numbers and values are dictionary with
+        metadata.
+>>>>>>> 850ae13... linting
     """
     with open(path, "r") as file:
         question_metadata = yaml.safe_load(file)
@@ -122,26 +130,27 @@ def _process_group(
     group: pd.DataFrame,
     question_metadata_dict: dict,
 ) -> Dict[int, Question]:
-    """
-    Process a single group of data (journal) and extract questions and answers.
+    """Process a single group of data (journal) and extract questions and answers.
 
     Iterates over each column in the DataFrame and, if the column is identified as a
     question, initializes a corresponding Question object (if needed) and adds each
     answer along with its explanation to the question.
 
     :param group: A DataFrame representing a group of data for a specific journal.
-    :param question_metadata_dict: Dictionary mapping question numbers to their metadata (e.g., identifier and type).
-
+    :param question_metadata_dict: Dictionary mapping question numbers to their metadata
+        (e.g., identifier and type).
     """
     questions_dict = {}
-    for i, column in enumerate(group.columns): 
+    for i, column in enumerate(group.columns):
         if _is_question_column(column):
             q_num = int(column.split(".")[0])
             explanation_col = _get_explanation_column(group, i)
-            question_id = question_metadata_dict[q_num]['identifier']
-            open_or_not = question_metadata_dict[q_num]['type']=='open'
+            question_id = question_metadata_dict[q_num]["identifier"]
+            open_or_not = question_metadata_dict[q_num]["type"] == "open"
             if q_num not in questions_dict:
-                question = Question(text=column, is_open=open_or_not, question_id=question_id)
+                question = Question(
+                    text=column, is_open=open_or_not, question_id=question_id
+                )
                 questions_dict[q_num] = question
 
             for idx, answer in enumerate(group[column]):
@@ -150,9 +159,7 @@ def _process_group(
                     if explanation_col is not None and explanation_col in group.columns
                     else ""
                 )
-                questions_dict[q_num]._add_answer(
-                    answer, explanation
-                )
+                questions_dict[q_num]._add_answer(answer, explanation)
     return questions_dict
 
 
@@ -160,16 +167,15 @@ def group_questions_by_journal(
     data: pd.DataFrame,
     question_metadata_file: str,
 ) -> Dict[str, Dict[str, Dict[int, Question]]]:
-    """
-    Group questions by publisher and journal.
+    """Group questions by publisher and journal.
 
-    Groups the provided DataFrame by "Publisher Name" and "journal" columns,
-    then processes each group to extract questions and associated answers into a nested
+    Groups the provided DataFrame by "Publisher Name" and "journal" columns, then
+    processes each group to extract questions and associated answers into a nested
     dictionary.
 
     :param data: A DataFrame containing columns for publisher, journal, and questions.
-    :return: A nested dictionary structured as:
-             {publisher: {journal: {question_number: Question}}}.
+    :return: A nested dictionary structured as: {publisher: {journal: {question_number:
+        Question}}}.
     """
     grouped_data = data.groupby(["Publisher Name", "journal"])
     grouped_questions: Dict[str, Dict[str, Dict[int, Question]]] = {}
@@ -177,6 +183,8 @@ def group_questions_by_journal(
     question_metadata_dict = _load_question_types(question_metadata_file)
     for (publisher, journal), group in grouped_data:
         grouped_questions.setdefault(publisher, {}).setdefault(journal, {})
-        grouped_questions[publisher][journal] = _process_group(group, question_metadata_dict)
+        grouped_questions[publisher][journal] = _process_group(
+            group, question_metadata_dict
+        )
 
     return grouped_questions

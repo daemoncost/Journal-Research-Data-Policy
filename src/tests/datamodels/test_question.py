@@ -5,6 +5,7 @@ from unittest.mock import patch
 
 from daemon_analysis_tools.datamodels.question import Answer, Question
 
+
 # A dummy jaccard_similarity for testing open questions.
 def dummy_jaccard_similarity(answer_texts):
     # For testing purposes, if there are two different answers, return > 0.55,
@@ -12,6 +13,7 @@ def dummy_jaccard_similarity(answer_texts):
     if len(set(answer_texts)) > 1:
         return 0.6
     return 0.5
+
 
 class TestAnswer(unittest.TestCase):
     def test_answer_initialization_default_explanation(self):
@@ -30,10 +32,13 @@ class TestAnswer(unittest.TestCase):
         self.assertIn("Test answer", rep)
         self.assertIn("Some explanation", rep)
 
+
 class TestQuestion(unittest.TestCase):
     def setUp(self):
         # Create a basic Question for tests.
-        self.question = Question(question_id="Q1", text="What is the answer?", is_open=False)
+        self.question = Question(
+            question_id="Q1", text="What is the answer?", is_open=False
+        )
 
     def test_question_initialization(self):
         self.assertEqual(self.question.question_id, "Q1")
@@ -61,14 +66,17 @@ class TestQuestion(unittest.TestCase):
         q2._add_answer("A")
         self.assertFalse(q2.has_discrepancies())
 
-    @patch("daemon_analysis_tools.datamodels.question.jaccard_similarity", side_effect=dummy_jaccard_similarity)
+    @patch(
+        "daemon_analysis_tools.datamodels.question.jaccard_similarity",
+        side_effect=dummy_jaccard_similarity,
+    )
     def test_has_discrepancies_open(self, mock_jaccard):
         # For open question: use dummy_jaccard_similarity.
         open_question = Question(question_id="Q3", text="Open question?", is_open=True)
         # If only one answer, discrepancy should be False.
         open_question._add_answer("Answer")
         self.assertFalse(open_question.has_discrepancies())
-        # Two different answers => dummy returns 0.6 which is > 0.55 -> discrepancy True.
+        # Two different answers => dummy returns 0.6 which > 0.55 -> discrepancy True.
         open_question = Question(question_id="Q4", text="Open question?", is_open=True)
         open_question._add_answer("Answer1")
         open_question._add_answer("Answer2")

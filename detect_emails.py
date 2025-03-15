@@ -13,8 +13,7 @@ DIRECTORIES = [Path("data/raw"), Path("data/processed")]
 
 
 def check_for_emails_in_file(file_path: Path) -> bool:
-    """
-    Checks if a CSV file contains any email addresses.
+    """Checks if a CSV file contains any email addresses.
 
     Args:
         file_path (Path): The path to the CSV file.
@@ -36,8 +35,7 @@ def check_for_emails_in_file(file_path: Path) -> bool:
 
 
 def check_for_emails_in_directory(directories: List[Path]) -> bool:
-    """
-    Checks all CSV files in the given directories for email addresses.
+    """Checks all CSV files in the given directories for email addresses.
 
     Args:
         directories (List[Path]): A list of directories to check.
@@ -75,9 +73,7 @@ def check_for_emails_in_directory(directories: List[Path]) -> bool:
 
 
 def main() -> None:
-    """
-    Main function to execute the email detection in specified directories.
-    """
+    """Main function to execute the email detection in specified directories."""
     emails_found = check_for_emails_in_directory(DIRECTORIES)
     if emails_found:
         sys.exit(1)  # Exit with a non-zero status code to indicate failure

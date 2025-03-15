@@ -1,12 +1,14 @@
 import os
 import tempfile
 import unittest
-import yaml
-from io import StringIO
 from contextlib import redirect_stdout
+from io import StringIO
+
+import yaml
 
 # Import the functions to be tested.
-from daemon_analysis_tools.io.yaml_handler import save_yaml_file, build_journal_dict
+from daemon_analysis_tools.io.yaml_handler import build_journal_dict, save_yaml_file
+
 
 # Create dummy classes to simulate the Question and Answer behavior.
 class DummyAnswer:
@@ -52,7 +54,10 @@ class TestBuildJournalDict(unittest.TestCase):
             question_id="Q1",
             text="What is your favorite color?",
             is_open=False,
-            answers=[DummyAnswer("Blue", "I like blue"), DummyAnswer("Blue", "Blue is calming")],
+            answers=[
+                DummyAnswer("Blue", "I like blue"),
+                DummyAnswer("Blue", "Blue is calming"),
+            ],
             correct_answer=None,
             discrepancy_reason=None,
             has_discrepancies_val=False,
@@ -66,7 +71,7 @@ class TestBuildJournalDict(unittest.TestCase):
             answers=[
                 DummyAnswer("4", "Correct arithmetic"),
                 DummyAnswer("3", "Mistake"),
-                DummyAnswer("4", "Reiterated")
+                DummyAnswer("4", "Reiterated"),
             ],
             correct_answer=DummyAnswer("4", "Correct arithmetic"),
             discrepancy_reason="Multiple responses detected",
@@ -150,6 +155,4 @@ class TestSaveYAMLFile(unittest.TestCase):
             # Passing the directory path instead of a file path.
             save_yaml_file(str(self.temp_dir), self.data)
             output = buf.getvalue()
-        # The function should catch the exception and print a message containing "Exception:"
         assert "Exception:" in output or "already exists" in output
-

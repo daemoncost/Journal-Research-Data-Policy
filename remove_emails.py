@@ -10,8 +10,7 @@ EMAIL_PATTERN = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
 
 
 def create_backup(file_path: Path) -> Path:
-    """
-    Creates a backup of the specified file.
+    """Creates a backup of the specified file.
 
     Args:
         file_path (Path): The path to the file to back up.
@@ -33,8 +32,7 @@ def create_backup(file_path: Path) -> Path:
 
 
 def remove_emails_from_file(file_path: Path) -> None:
-    """
-    Removes emails from a CSV file and saves the result if any emails are found.
+    """Removes emails from a CSV file and saves the result if any emails are found.
 
     Args:
         file_path (Path): The path to the CSV file.
@@ -66,8 +64,7 @@ def remove_emails_from_file(file_path: Path) -> None:
 
 
 def remove_emails_from_directory(directory: Path) -> None:
-    """
-    Removes emails from all CSV files in a directory, skipping backup files.
+    """Removes emails from all CSV files in a directory, skipping backup files.
 
     Args:
         directory (Path): The path to the directory containing CSV files.
@@ -85,8 +82,7 @@ def remove_emails_from_directory(directory: Path) -> None:
 
 
 def parse_arguments() -> argparse.Namespace:
-    """
-    Parses command-line arguments.
+    """Parses command-line arguments.
 
     Returns:
         argparse.Namespace: The parsed arguments.
@@ -105,9 +101,8 @@ def parse_arguments() -> argparse.Namespace:
 
 
 def main() -> None:
-    """
-    Main function to execute the email removal process based on command-line arguments.
-    """
+    """Main function to execute the email removal process based on command-line
+    arguments."""
     args = parse_arguments()
 
     if args.file:

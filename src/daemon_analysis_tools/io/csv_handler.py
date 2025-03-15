@@ -7,8 +7,7 @@ from daemon_analysis_tools.processing.normalizer import (
 
 
 def _load_csv(file_path: str) -> pd.DataFrame:
-    """
-    Load a CSV file into a Pandas DataFrame.
+    """Load a CSV file into a Pandas DataFrame.
 
     :param file_path: Path to the CSV file.
     :type file_path: str
@@ -19,13 +18,12 @@ def _load_csv(file_path: str) -> pd.DataFrame:
 
 
 def _remove_sensitive_columns(data: pd.DataFrame) -> pd.DataFrame:
-    """
-    Remove sensitive columns from the DataFrame.
+    """Remove sensitive columns from the DataFrame.
 
     This function checks whether all e-mail addresses in the "E-Mail-Adresse" column are
-    NaN.
-    If any e-mail addresses are found, a warning is printed. It then drops the columns
-    "Zeitstempel", "E-Mail-Adresse", and "Punkte", and removes the first three rows.
+    NaN. If any e-mail addresses are found, a warning is printed. It then drops the
+    columns "Zeitstempel", "E-Mail-Adresse", and "Punkte", and removes the first three
+    rows.
 
     :param data: The DataFrame from which sensitive columns should be removed.
     :type data: pd.DataFrame
@@ -45,8 +43,7 @@ def _remove_sensitive_columns(data: pd.DataFrame) -> pd.DataFrame:
 
 
 def _rename_columns(data: pd.DataFrame) -> pd.DataFrame:
-    """
-    Rename specific columns in the DataFrame for consistency.
+    """Rename specific columns in the DataFrame for consistency.
 
     :param data: The DataFrame with original column names.
     :type data: pd.DataFrame
@@ -63,8 +60,7 @@ def _rename_columns(data: pd.DataFrame) -> pd.DataFrame:
 
 
 def _split_and_expand_journal_names(data: pd.DataFrame) -> pd.DataFrame:
-    """
-    Split journal names by commas and expand them into multiple rows.
+    """Split journal names by commas and expand them into multiple rows.
 
     The 'journal' column is expected to contain comma-separated values. This function
     splits these values into lists and then expands the lists into separate rows.
@@ -79,8 +75,7 @@ def _split_and_expand_journal_names(data: pd.DataFrame) -> pd.DataFrame:
 
 
 def _normalize_columns(data: pd.DataFrame) -> pd.DataFrame:
-    """
-    Normalize journal and publisher names in the DataFrame.
+    """Normalize journal and publisher names in the DataFrame.
 
     If the 'Publisher Name' column is present, its values are normalized using the
     _normalize_publisher function. Likewise, the 'journal' column values are normalized
@@ -99,8 +94,7 @@ def _normalize_columns(data: pd.DataFrame) -> pd.DataFrame:
 
 
 def _remove_unnamed_columns(data: pd.DataFrame) -> pd.DataFrame:
-    """
-    Remove automatically generated unnamed columns from the DataFrame.
+    """Remove automatically generated unnamed columns from the DataFrame.
 
     :param data: The DataFrame from which to remove unnamed columns.
     :type data: pd.DataFrame
@@ -111,8 +105,7 @@ def _remove_unnamed_columns(data: pd.DataFrame) -> pd.DataFrame:
 
 
 def load_and_process_csv(file_path: str) -> pd.DataFrame:
-    """
-    Load and process a CSV file step by step.
+    """Load and process a CSV file step by step.
 
     This function executes several data processing steps:
       1. Load the CSV into a DataFrame.
