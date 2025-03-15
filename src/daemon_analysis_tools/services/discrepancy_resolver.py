@@ -74,7 +74,7 @@ def resolve_discrepancy(
         provided.
     """
     if not question.has_discrepancies():
-        question._set_correct_answer(question.answers[0], "No discrepancies detected.")
+        question._set_correct_answer(question.answers[0])
         print("No discrepancies detected.")
         return
 

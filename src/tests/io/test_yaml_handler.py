@@ -7,8 +7,9 @@ from io import StringIO
 import yaml
 
 # Import the functions to be tested.
-from daemon_analysis_tools.io.yaml_handler import build_journal_dict, save_yaml_file
-
+from daemon_analysis_tools.io.yaml_handler import build_journal_dict, save_yaml_file, save_answers_to_yaml
+from daemon_analysis_tools.datamodels.question import Question
+from daemon_analysis_tools.services.discrepancy_resolver import resolve_discrepancy
 
 # Create dummy classes to simulate the Question and Answer behavior.
 class DummyAnswer:
@@ -44,6 +45,41 @@ class DummyQuestion:
 
     def _add_answer(self, answer_text: str, explanation: str = "") -> None:
         self.answers.append(DummyAnswer(answer_text, explanation))
+
+def create_dummy_grouped_questions():
+    # Publisher1 with one journal having two questions.
+    q1 = DummyQuestion(
+        question_id="Q1",
+        text="What is your favorite color?",
+        is_open=False,
+        answers=[],
+    )
+    q1._add_answer("Blue", "I like blue")
+    q1._add_answer("Blue", "Blue is calming")
+    
+    q2 = DummyQuestion(
+        question_id="Q2",
+        text="What is 2+2?",
+        is_open=False,
+        answers=[],
+    )
+    q2._add_answer("4", "Correct arithmetic")
+    q2._add_answer("3", "Mistake")
+    q2._add_answer("4", "Reiterated")
+    
+    publisher1 = {"JournalA": {1: q1, 2: q2}}
+
+    # Publisher2 with one journal having one question.
+    q3 = DummyQuestion(
+        question_id="Q3",
+        text="What is the capital of France?",
+        is_open=False,
+        answers=[],
+    )
+    q3._add_answer("Paris", "Correct")
+    publisher2 = {"JournalB": {1: q3}}
+
+    return {"Publisher1": publisher1, "Publisher2": publisher2}
 
 
 class TestBuildJournalDict(unittest.TestCase):
@@ -155,4 +191,139 @@ class TestSaveYAMLFile(unittest.TestCase):
             # Passing the directory path instead of a file path.
             save_yaml_file(str(self.temp_dir), self.data)
             output = buf.getvalue()
+        # The function should catch the exception and print a message containing "Exception:"
         assert "Exception:" in output or "already exists" in output
+
+class TestSaveAnswersToYaml(unittest.TestCase):
+    def setUp(self):
+        # Create a temporary directory to save YAML files.
+        self.temp_dir_obj = tempfile.TemporaryDirectory()
+        self.temp_dir = self.temp_dir_obj.name
+        self.grouped_questions = create_dummy_grouped_questions()
+
+    def tearDown(self):
+        self.temp_dir_obj.cleanup()
+
+    def test_save_answers_to_yaml_creates_files(self):
+        # Call the function.
+        save_answers_to_yaml(self.grouped_questions, parent_folder=self.temp_dir)
+
+        # Check that directories for each publisher are created.
+        pub1_dir = os.path.join(self.temp_dir, "Publisher1")
+        pub2_dir = os.path.join(self.temp_dir, "Publisher2")
+        self.assertTrue(os.path.isdir(pub1_dir))
+        self.assertTrue(os.path.isdir(pub2_dir))
+
+        # Check that each journal file is created.
+        journalA_file = os.path.join(pub1_dir, "JournalA.yaml")
+        journalB_file = os.path.join(pub2_dir, "JournalB.yaml")
+        self.assertTrue(os.path.isfile(journalA_file))
+        self.assertTrue(os.path.isfile(journalB_file))
+
+        # Load and verify content for JournalA.
+        with open(journalA_file, "r") as f:
+            journalA_data = yaml.safe_load(f)
+        # Expecting two keys corresponding to question IDs "Q1" and "Q2".
+        self.assertIn("Q1", journalA_data)
+        self.assertIn("Q2", journalA_data)
+        # Verify one field, e.g., text.
+        self.assertEqual(journalA_data["Q1"]["text"], "What is your favorite color?")
+        self.assertEqual(journalA_data["Q2"]["text"], "What is 2+2?")
+
+        # Load and verify content for JournalB.
+        with open(journalB_file, "r") as f:
+            journalB_data = yaml.safe_load(f)
+        self.assertIn("Q3", journalB_data)
+        self.assertEqual(journalB_data["Q3"]["text"], "What is the capital of France?")
+
+    def test_save_only_parameter(self):
+        # Call the function with save_only for Publisher1.
+        save_answers_to_yaml(self.grouped_questions, parent_folder=self.temp_dir, save_only=["Publisher1"])
+
+        pub1_dir = os.path.join(self.temp_dir, "Publisher1")
+        pub2_dir = os.path.join(self.temp_dir, "Publisher2")
+        self.assertTrue(os.path.isdir(pub1_dir))
+        # Publisher2 should not be created.
+        self.assertFalse(os.path.isdir(pub2_dir))
+
+    def test_save_yaml_file_warning(self):
+        # Test behavior when the YAML file already exists.
+        # First, create a file manually.
+        publisher_dir = os.path.join(self.temp_dir, "Publisher1")
+        os.makedirs(publisher_dir, exist_ok=True)
+        journal_file = os.path.join(publisher_dir, "JournalA.yaml")
+        with open(journal_file, "w") as f:
+            f.write("Existing content")
+
+        # Capture printed output.
+        with StringIO() as buf, redirect_stdout(buf):
+            save_answers_to_yaml(self.grouped_questions, parent_folder=self.temp_dir, save_only=["Publisher1"])
+            output = buf.getvalue()
+        # Check that the warning message indicates that the file already exists.
+        self.assertIn("already exists", output)
+
+class TestBuildJournalDictEndToEnd(unittest.TestCase):
+    def test_end_to_end_build_journal_dict(self):
+        # Create Question 1 (no discrepancy)
+        q1 = Question(question_id="Q1", text="What is your favorite color?", is_open=False)
+        q1._add_answer("Blue", "I like blue")
+        q1._add_answer("Blue", "I prefer blue")
+        # We resolve discrepancy to get the right answer assigned
+        resolve_discrepancy(q1)
+        
+        # Create Question 2 (with discrepancy)
+        q2 = Question(question_id="Q2", text="What is 2+2?", is_open=False)
+        q2._add_answer("3", "My father told me so")
+        q2._add_answer("4", "I learnt at school")
+        q2._add_answer("5", "I feel like that")
+
+        # Create Question 3 (with unresolved discrepancy)
+        q3 = Question(question_id="Q3", text="Do you breath sometimes?", is_open=False)
+        q3._add_answer("Yes", "We all do.")
+        q3._add_answer("No", "Too expensive")
+
+        # Set correct answer using resolve_discrepancy:
+        resolve_discrepancy(q2, 1, "Correct arithmetic" )
+
+        # Assemble a journal dictionary mapping question numbers to questions.
+        journal = {1: q1, 2: q2, 3: q3}
+        
+        # Build the journal dictionary for YAML dumping.
+        result = build_journal_dict(journal)
+
+
+
+        # Verify that the keys are the question IDs.
+        self.assertIn("Q1", result)
+        self.assertIn("Q2", result)
+        self.assertIn("Q3", result)
+        
+        # Verify Question 1 details.
+        q1_dict = result["Q1"]
+        self.assertEqual(q1_dict["text"], "What is your favorite color?")
+        self.assertEqual(q1_dict["N. encoders"], 2)
+        self.assertFalse(q1_dict["has_discrepancies"])
+        self.assertEqual(q1_dict["correct_answer"], {'text': 'Blue', 'explanation': 'I like blue'})
+        self.assertIsNone(q1_dict["discrepancy_reason"])
+        # Check one respondent's answer.
+        self.assertEqual(q1_dict[0]["text"], "Blue")
+        self.assertEqual(q1_dict[0]["explanation"], "I like blue")
+        
+        # Verify Question 2 details.
+        q2_dict = result["Q2"]
+        self.assertEqual(q2_dict["text"], "What is 2+2?")
+        self.assertEqual(q2_dict["N. encoders"], 3)
+        self.assertTrue(q2_dict["has_discrepancies"])
+        # Correct answer details should be a dict with the proper text and explanation.
+        self.assertIsInstance(q2_dict["correct_answer"], dict)
+        self.assertEqual(q2_dict["correct_answer"]["text"], "4")
+        self.assertEqual(q2_dict["correct_answer"]["explanation"], "I learnt at school")
+        self.assertEqual(q2_dict["discrepancy_reason"], "Correct arithmetic")
+
+        # Verify Question 3 details.
+        q3_dict = result["Q3"]
+        self.assertEqual(q3_dict["text"], "Do you breath sometimes?")
+        self.assertEqual(q3_dict["N. encoders"], 2)
+        self.assertTrue(q3_dict["has_discrepancies"])
+        self.assertIsNone(q3_dict["correct_answer"])
+        self.assertIsNone(q3_dict["discrepancy_reason"])
