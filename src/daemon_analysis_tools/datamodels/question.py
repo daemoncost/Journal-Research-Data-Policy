@@ -44,7 +44,10 @@ class Question:
         self.discrepancy_reason: Optional[str] = None
 
     def _set_correct_answer(
-        self, correct_answer: Answer, reason: Optional[str] = None, encoder_id: Optional[int] = None
+        self,
+        correct_answer: Answer,
+        reason: Optional[str] = None,
+        encoder_id: Optional[int] = None,
     ) -> None:
         """Set the correct answer after resolving discrepancies.
 
