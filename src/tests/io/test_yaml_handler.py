@@ -6,10 +6,16 @@ from io import StringIO
 
 import yaml
 
-# Import the functions to be tested.
-from daemon_analysis_tools.io.yaml_handler import build_journal_dict, save_yaml_file, save_answers_to_yaml
 from daemon_analysis_tools.datamodels.question import Question
+
+# Import the functions to be tested.
+from daemon_analysis_tools.io.yaml_handler import (
+    build_journal_dict,
+    save_answers_to_yaml,
+    save_yaml_file,
+)
 from daemon_analysis_tools.services.discrepancy_resolver import resolve_discrepancy
+
 
 # Create dummy classes to simulate the Question and Answer behavior.
 class DummyAnswer:
@@ -46,6 +52,7 @@ class DummyQuestion:
     def _add_answer(self, answer_text: str, explanation: str = "") -> None:
         self.answers.append(DummyAnswer(answer_text, explanation))
 
+
 def create_dummy_grouped_questions():
     # Publisher1 with one journal having two questions.
     q1 = DummyQuestion(
@@ -56,7 +63,7 @@ def create_dummy_grouped_questions():
     )
     q1._add_answer("Blue", "I like blue")
     q1._add_answer("Blue", "Blue is calming")
-    
+
     q2 = DummyQuestion(
         question_id="Q2",
         text="What is 2+2?",
@@ -66,7 +73,7 @@ def create_dummy_grouped_questions():
     q2._add_answer("4", "Correct arithmetic")
     q2._add_answer("3", "Mistake")
     q2._add_answer("4", "Reiterated")
-    
+
     publisher1 = {"JournalA": {1: q1, 2: q2}}
 
     # Publisher2 with one journal having one question.
@@ -191,8 +198,10 @@ class TestSaveYAMLFile(unittest.TestCase):
             # Passing the directory path instead of a file path.
             save_yaml_file(str(self.temp_dir), self.data)
             output = buf.getvalue()
-        # The function should catch the exception and print a message containing "Exception:"
+        # The function should catch the exception and
+        # print a message containing "Exception:"
         assert "Exception:" in output or "already exists" in output
+
 
 class TestSaveAnswersToYaml(unittest.TestCase):
     def setUp(self):
@@ -238,7 +247,11 @@ class TestSaveAnswersToYaml(unittest.TestCase):
 
     def test_save_only_parameter(self):
         # Call the function with save_only for Publisher1.
-        save_answers_to_yaml(self.grouped_questions, parent_folder=self.temp_dir, save_only=["Publisher1"])
+        save_answers_to_yaml(
+            self.grouped_questions,
+            parent_folder=self.temp_dir,
+            save_only=["Publisher1"],
+        )
 
         pub1_dir = os.path.join(self.temp_dir, "Publisher1")
         pub2_dir = os.path.join(self.temp_dir, "Publisher2")
@@ -257,20 +270,27 @@ class TestSaveAnswersToYaml(unittest.TestCase):
 
         # Capture printed output.
         with StringIO() as buf, redirect_stdout(buf):
-            save_answers_to_yaml(self.grouped_questions, parent_folder=self.temp_dir, save_only=["Publisher1"])
+            save_answers_to_yaml(
+                self.grouped_questions,
+                parent_folder=self.temp_dir,
+                save_only=["Publisher1"],
+            )
             output = buf.getvalue()
         # Check that the warning message indicates that the file already exists.
         self.assertIn("already exists", output)
 
+
 class TestBuildJournalDictEndToEnd(unittest.TestCase):
     def test_end_to_end_build_journal_dict(self):
         # Create Question 1 (no discrepancy)
-        q1 = Question(question_id="Q1", text="What is your favorite color?", is_open=False)
+        q1 = Question(
+            question_id="Q1", text="What is your favorite color?", is_open=False
+        )
         q1._add_answer("Blue", "I like blue")
         q1._add_answer("Blue", "I prefer blue")
         # We resolve discrepancy to get the right answer assigned
         resolve_discrepancy(q1)
-        
+
         # Create Question 2 (with discrepancy)
         q2 = Question(question_id="Q2", text="What is 2+2?", is_open=False)
         q2._add_answer("3", "My father told me so")
@@ -283,32 +303,32 @@ class TestBuildJournalDictEndToEnd(unittest.TestCase):
         q3._add_answer("No", "Too expensive")
 
         # Set correct answer using resolve_discrepancy:
-        resolve_discrepancy(q2, 1, "Correct arithmetic" )
+        resolve_discrepancy(q2, 1, "Correct arithmetic")
 
         # Assemble a journal dictionary mapping question numbers to questions.
         journal = {1: q1, 2: q2, 3: q3}
-        
+
         # Build the journal dictionary for YAML dumping.
         result = build_journal_dict(journal)
-
-
 
         # Verify that the keys are the question IDs.
         self.assertIn("Q1", result)
         self.assertIn("Q2", result)
         self.assertIn("Q3", result)
-        
+
         # Verify Question 1 details.
         q1_dict = result["Q1"]
         self.assertEqual(q1_dict["text"], "What is your favorite color?")
         self.assertEqual(q1_dict["N. encoders"], 2)
         self.assertFalse(q1_dict["has_discrepancies"])
-        self.assertEqual(q1_dict["correct_answer"], {'text': 'Blue', 'explanation': 'I like blue'})
+        self.assertEqual(
+            q1_dict["correct_answer"], {"text": "Blue", "explanation": "I like blue"}
+        )
         self.assertIsNone(q1_dict["discrepancy_reason"])
         # Check one respondent's answer.
         self.assertEqual(q1_dict[0]["text"], "Blue")
         self.assertEqual(q1_dict[0]["explanation"], "I like blue")
-        
+
         # Verify Question 2 details.
         q2_dict = result["Q2"]
         self.assertEqual(q2_dict["text"], "What is 2+2?")
