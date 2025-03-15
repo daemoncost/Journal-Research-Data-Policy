@@ -1,6 +1,10 @@
 from typing import List, Optional
 
+<<<<<<< HEAD
 from daemon_analysis_tools.services.scoring import jaccard_similarity
+=======
+from ..services.scoring import jaccard_similarity
+>>>>>>> 669e4d34ac64ffbc93057940e7693ff7ed637dba
 
 
 class Answer:
@@ -85,7 +89,6 @@ class Question:
         if not self.is_open:
             return len(set(answer_texts)) > 1
         else:
-
             return jaccard_similarity(answer_texts) > 0.55
 
     def get_final_answer(self) -> Answer:

@@ -1,4 +1,3 @@
-import importlib.resources as pkg_resources
 from typing import Dict, Optional
 
 import pandas as pd
@@ -13,7 +12,7 @@ def _load_question_types(path: str) -> Dict[int, Dict]:
     metadata.
 
     :return: Dictionary where keys are question numbers and values are dictionary with
-        metadata. 
+        metadata.
     """
     with open(path, "r") as file:
         question_metadata = yaml.safe_load(file)
