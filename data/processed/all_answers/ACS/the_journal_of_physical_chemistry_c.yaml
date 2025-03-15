@@ -1,0 +1,499 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.
+
+
+      Research data is defined as materials and information used in the experiments
+      that enable the validation of the conclusions drawn in the article, including
+      primary data produced by the authors for the study being reported, secondary
+      data reused or analyzed by the authors for the study, and any other materials
+      necessary to reproduce or replicate the results.
+
+
+      The ACS Research Data Policy provides additional information on Data Availability
+      Statements, Data Citation, and Data Repositories.'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: 'Data Requirements
+
+      Reproducibility of Results
+
+      It is essential that papers provide enough information so that calculations
+      and experiments can be reproduced by others. We encourage authors to use Supporting
+      Information for this purpose, which is publicly available free of charge on
+      the internet upon publication, regardless of whether or not the accompanying
+      article is made open access.'
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: "no text in the Journal Research Data Policy but referred to the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy : \n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \"\nAlso, no mention about the journal\
+      \ policy level, but the lowest among them, policy level 1, Encourages Data Sharing.\n\
+      \n\" Data Requirements\nParticular attention should be given to ensuring that\
+      \ experimental procedures are reported in sufficient detail to allow full understanding\
+      \ by the expert reader to the extent that would allow ready reproduction of\
+      \ the experiments. \nAs part of the Supporting Information, authors must provide\
+      \ an electronic copy of the structural data as a Crystallographic Information\
+      \ File (CIF) and must clearly notify the Editor in the cover letter that the\
+      \ manuscript contains structural data.\nAuthors must confirm that the data in\
+      \ the CIF file correspond to the structures reported in the manuscript. During\
+      \ the review process, the CIFs will be available only to the reviewers of the\
+      \ manuscript and will remain confidential.\""
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: na
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "Text from Journal Research Data Policy : \n\" Data Requirements\n\
+      Reproducibility of Results\nIt is essential that papers provide enough information\
+      \ so that calculations and experiments can be reproduced by others. We encourage\
+      \ authors to use Supporting Information for this purpose, which is publicly\
+      \ available free of charge on the internet upon publication, regardless of whether\
+      \ or not the accompanying article is made open access.\"\n\nText from Publishers\
+      \ (ACS) Research Data Policy:\n\" ACS strongly endorses The FAIR Data Principles\
+      \ and believes that where ethically and legally feasible, all research data\
+      \ should be findable, accessible, interoperable, and reusable. \""
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: The ACS Research Data Policy provides additional information on Data
+      Availability Statements, Data Citation, and Data Repositories.
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Journal Research Data\
+      \ Policy : \n\" Data Requirements\nReproducibility of Results\nIt is essential\
+      \ that papers provide enough information so that calculations and experiments\
+      \ can be reproduced by others. We encourage authors to use Supporting Information\
+      \ for this purpose, which is publicly available free of charge on the internet\
+      \ upon publication, regardless of whether or not the accompanying article is\
+      \ made open access.\"\n\nText from Publishers (ACS) Research Data Policy:\n\
+      (Level 1 Public data availability encouraged :) \" Authors are encouraged to\
+      \ provide a Data Availability Statement describing the public availability of\
+      \ the data supporting the article\u2019s conclusions. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: na
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \" \n\nData Availability Statements\n\
+      \" ACS strongly encourages authors to select a repository that issues a persistent\
+      \ unique identifier, such as a DOI or an Accession Number. \" "
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: na
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\" This information is provided\
+      \ to the reviewers during the peer-review process (for Review Only) and is available\
+      \ to readers of the published work (for Publication). Supporting Information\
+      \ must be submitted at the same time as the manuscript. See the list of Acceptable\
+      \ Software by File Designation and confirm that your Supporting Information\
+      \ is viewable.\" \n\" When including supporting information for review only,\
+      \ include copies of references that are unpublished or in-press. These files\
+      \ are available only to editors and reviewers.\"\n\" Authors are required to\
+      \ provide crystallographic or surface structure data as Supporting Information\
+      \ in crystallographic information file (CIF) format. \"\n\n#NOTE: At the time\
+      \ of publication interpreted as prior to official publication."
+  correct_answer: 0
+  discrepancy_reason: Language understanding
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Guidelines for Computational Results\nBelow are the general guidelines\
+      \ from Pure Appl. Chem. 1998, 70, No. 10, 2047\u20132049 (http://dx.doi.org/10.1351/pac199870102047)\
+      \ for manuscripts reporting the results of electronic structure calculations,\
+      \ force field parameters, and other potential energy surface information. Further\
+      \ details are listed in the guidelines authored by J. E. Boggs (Pure Appl. Chem.\
+      \ 1998, 70, No. 4, 1015\u20131018 (http://dx.doi.org/10.1351/pac199870041015).\
+      \ Both sets of guidelines can be viewed online at http://iupac.org/publications/pac/reports/year/1998/.\
+      \ While these papers refer to electronic structure and molecular dynamics calculations,\
+      \ the concepts stated below apply to all calculations.\n\nIf a paper mentions\
+      \ any calculations that are integral to the study (i.e., the precise quantitative\
+      \ results are central to the conclusions drawn) computational details must be\
+      \ described.\nReproducibility of computations should be a defining goal in reporting\
+      \ computational results. Sufficient technical details should be provided to\
+      \ allow a reader to reproduce the results of any calculations. Of course, strict\
+      \ reproducibility of computations may be precluded by differences among computers\
+      \ (e.g., differences in operating systems, host-based algorithms, machine precision,\
+      \ etc.), software (e.g., installation procedures and programming modifications),\
+      \ and applications (e.g., for probabilistic methods such as Monte Carlo calculations).\n\
+      A description of the results of any published calculation must be available\
+      \ for scientific scrutiny by other investigators. Ordinarily this will best\
+      \ be achieved if the authors place full details of the calculation (e.g., structures,\
+      \ energies, frequencies, dynamical quantities, etc.) in a repository (such as\
+      \ Supporting Information to the paper) that is accessible via the Internet.\
+      \ Otherwise, it is the responsibility of the investigator to make such information\
+      \ available upon request. Depending on the specific circumstances, the appropriate\
+      \ data to be deposited might be final output structure(s) or the input structure(s)\
+      \ that would allow another investigator to replicate the computational experiment.\n\
+      Electronically deposited structures should be written in a format that is machine\
+      \ readable by readily available modelling or translating programs.\nAn adequate\
+      \ specification of the computer program used to carry out the calculations is\
+      \ essential. If the calculations were carried out with commercially available\
+      \ software, the investigator must list the source, version number, and force\
+      \ field employed. Any program modifications and any differences from the published\
+      \ version (including changes in parameters) must be fully described or available\
+      \ to other investigators upon request. Changes in parameters, program options\
+      \ (e.g., dielectric constant, nonbonded cutoffs, etc.) affecting reproducibility\
+      \ of the calculation, and program constraints must be fully described in the\
+      \ article. If the program is not available, commercially or otherwise, the authors\
+      \ must specify sufficient detail that the calculation could be reproduced.\n\
+      The issue of convergence must be adequately addressed. An iterative calculation\
+      \ is considered to have converged when further iterations will not significantly\
+      \ alter the results. Convergence criteria should be reported (e.g., energy change\
+      \ per iteration or energy gradient for geometry optimization of a single structure).\
+      \ \n\nGuidelines for Experiments\nAuthors are expected to provide sufficient\
+      \ detail to enable a trained professional to reproduce routine measurements\
+      \ and synthetic procedures. Authors are required to provide crystallographic\
+      \ or surface structure data as Supporting Information in crystallographic information\
+      \ file (CIF) format. For quantitative optical measurements, the specifics and\
+      \ usable range of the photodetector should be reported.\n\nTeams of ACS editors\
+      \ have identified best practices in certain fields to guide authors in the reporting\
+      \ of experimental results. Please refer to them, as needed:\n\nBest Practices\
+      \ for the Reporting of Colloidal Inorganic Nanomaterials (http://pubs.acs.org/doi/abs/10.1021/acs.chemmater.5b02323)\n\
+      Best Practices for Reporting on Heterogeneous Photocatalysis (http://pubs.acs.org/doi/abs/10.1021/am504389z)\n\
+      Best Practices in Perovskite Solar Cell Efficiency Measurements. Avoiding the\
+      \ Error of Making Bad Cells Look Good (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00289)\n\
+      Best Practices for Reporting on Energy Storage (http://pubs.acs.org/doi/abs/10.1021/acsami.5b06029)\n\
+      Best Practice in Photocatalysis: Comparing Rates of Apparent Quantum Yields?\
+      \ (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00521)"
+  1:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: "Text from Journal Research Data Policy : \n\" If the manuscript\
+      \ is accompanied by any supporting information files for publication, these\
+      \ files will be made available free of charge to readers. \"\n\nText from Publishers\
+      \ (ACS) Research Data Policy: \n\" Although submission of data as part of an\
+      \ article\u2019s Supporting Information is acceptable, authors are encouraged\
+      \ to submit data in a format that can be most easily accessed and reused. ACS\
+      \ encourages authors to provide machine-readable data and to follow the FAIR\
+      \ Data Principles. \""
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: na
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" To ensure data accessibility, we encourage the use of open\
+      \ licenses for reuse of data, such as Creative Commons CC BY. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: na
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: "Not mentioned in the ACS general reviewers guidelines page. \n\n\
+      NOTE: I don't have access to the journal's specific referee guidelines apart\
+      \ from the ACS general reviewers guidelines."
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: 'Guidelines for Experiments
+
+      Authors are expected to provide sufficient detail to enable a trained professional
+      to reproduce routine measurements and synthetic procedures. Authors are required
+      to provide crystallographic or surface structure data as Supporting Information
+      in crystallographic information file (CIF) format. For quantitative optical
+      measurements, the specifics and usable range of the photodetector should be
+      reported.
+
+
+      Teams of ACS editors have identified best practices in certain fields to guide
+      authors in the reporting of experimental results. Please refer to them, as needed:
+
+
+      Best Practices for the Reporting of Colloidal Inorganic Nanomaterials (http://pubs.acs.org/doi/abs/10.1021/acs.chemmater.5b02323)
+
+      Best Practices for Reporting on Heterogeneous Photocatalysis (http://pubs.acs.org/doi/abs/10.1021/am504389z)
+
+      Best Practices in Perovskite Solar Cell Efficiency Measurements. Avoiding the
+      Error of Making Bad Cells Look Good (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00289)
+
+      Best Practices for Reporting on Energy Storage (http://pubs.acs.org/doi/abs/10.1021/acsami.5b06029)
+
+      Best Practice in Photocatalysis: Comparing Rates of Apparent Quantum Yields?
+      (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00521)
+
+      '
+    explanation: ''
+  1:
+    text: no text.
+    explanation: ''
+  correct_answer: 0
+  discrepancy_reason: Text not found
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: "CIF\n\nGuidelines for Computational Results\nBelow are the general guidelines\
+      \ from Pure Appl. Chem. 1998, 70, No. 10, 2047\u20132049 (http://dx.doi.org/10.1351/pac199870102047)\
+      \ for manuscripts reporting the results of electronic structure calculations,\
+      \ force field parameters, and other potential energy surface information. Further\
+      \ details are listed in the guidelines authored by J. E. Boggs (Pure Appl. Chem.\
+      \ 1998, 70, No. 4, 1015\u20131018 (http://dx.doi.org/10.1351/pac199870041015).\
+      \ Both sets of guidelines can be viewed online at http://iupac.org/publications/pac/reports/year/1998/.\
+      \ While these papers refer to electronic structure and molecular dynamics calculations,\
+      \ the concepts stated below apply to all calculations.\n\nIf a paper mentions\
+      \ any calculations that are integral to the study (i.e., the precise quantitative\
+      \ results are central to the conclusions drawn) computational details must be\
+      \ described.\nReproducibility of computations should be a defining goal in reporting\
+      \ computational results. Sufficient technical details should be provided to\
+      \ allow a reader to reproduce the results of any calculations. Of course, strict\
+      \ reproducibility of computations may be precluded by differences among computers\
+      \ (e.g., differences in operating systems, host-based algorithms, machine precision,\
+      \ etc.), software (e.g., installation procedures and programming modifications),\
+      \ and applications (e.g., for probabilistic methods such as Monte Carlo calculations).\n\
+      A description of the results of any published calculation must be available\
+      \ for scientific scrutiny by other investigators. Ordinarily this will best\
+      \ be achieved if the authors place full details of the calculation (e.g., structures,\
+      \ energies, frequencies, dynamical quantities, etc.) in a repository (such as\
+      \ Supporting Information to the paper) that is accessible via the Internet.\
+      \ Otherwise, it is the responsibility of the investigator to make such information\
+      \ available upon request. Depending on the specific circumstances, the appropriate\
+      \ data to be deposited might be final output structure(s) or the input structure(s)\
+      \ that would allow another investigator to replicate the computational experiment.\n\
+      Electronically deposited structures should be written in a format that is machine\
+      \ readable by readily available modelling or translating programs.\nAn adequate\
+      \ specification of the computer program used to carry out the calculations is\
+      \ essential. If the calculations were carried out with commercially available\
+      \ software, the investigator must list the source, version number, and force\
+      \ field employed. Any program modifications and any differences from the published\
+      \ version (including changes in parameters) must be fully described or available\
+      \ to other investigators upon request. Changes in parameters, program options\
+      \ (e.g., dielectric constant, nonbonded cutoffs, etc.) affecting reproducibility\
+      \ of the calculation, and program constraints must be fully described in the\
+      \ article. If the program is not available, commercially or otherwise, the authors\
+      \ must specify sufficient detail that the calculation could be reproduced.\n\
+      The issue of convergence must be adequately addressed. An iterative calculation\
+      \ is considered to have converged when further iterations will not significantly\
+      \ alter the results. Convergence criteria should be reported (e.g., energy change\
+      \ per iteration or energy gradient for geometry optimization of a single structure).\n\
+      \n"
+    explanation: ''
+  1:
+    text: no text.
+    explanation: ''
+  correct_answer: 0
+  discrepancy_reason: Text not found
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: "Guidelines for Computational Results\nBelow are the general guidelines\
+      \ from Pure Appl. Chem. 1998, 70, No. 10, 2047\u20132049 (http://dx.doi.org/10.1351/pac199870102047)\
+      \ for manuscripts reporting the results of electronic structure calculations,\
+      \ force field parameters, and other potential energy surface information. Further\
+      \ details are listed in the guidelines authored by J. E. Boggs (Pure Appl. Chem.\
+      \ 1998, 70, No. 4, 1015\u20131018 (http://dx.doi.org/10.1351/pac199870041015).\
+      \ Both sets of guidelines can be viewed online at http://iupac.org/publications/pac/reports/year/1998/.\
+      \ While these papers refer to electronic structure and molecular dynamics calculations,\
+      \ the concepts stated below apply to all calculations.\n\nOf course, strict\
+      \ reproducibility of computations may be precluded by differences among computers\
+      \ (e.g., differences in operating systems, host-based algorithms, machine precision,\
+      \ etc.), software (e.g., installation procedures and programming modifications),\
+      \ and applications (e.g., for probabilistic methods such as Monte Carlo calculations)."
+  1:
+    text: Code sharing not mentioned.
+    explanation: "Text from Journal Research Data Policy : \n\" An adequate specification\
+      \ of the computer program used to carry out the calculations is essential. If\
+      \ the calculations were carried out with commercially available software, the\
+      \ investigator must list the source, version number, and force field employed.\
+      \ Any program modifications and any differences from the published version (including\
+      \ changes in parameters) must be fully described or available to other investigators\
+      \ upon request. Changes in parameters, program options (e.g., dielectric constant,\
+      \ nonbonded cutoffs, etc.) affecting reproducibility of the calculation, and\
+      \ program constraints must be fully described in the article. If the program\
+      \ is not available, commercially or otherwise, the authors must specify sufficient\
+      \ detail that the calculation could be reproduced. \""
+  correct_answer: 0
+  discrepancy_reason: Text not found
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: Of course, strict reproducibility of computations may be precluded
+      by differences among computers (e.g., differences in operating systems, host-based
+      algorithms, machine precision, etc.), software (e.g., installation procedures
+      and programming modifications), and applications (e.g., for probabilistic methods
+      such as Monte Carlo calculations).
+  1:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: 'Text from Journal Research Data Policy :  " Reproducibility of computations
+      should be a defining goal in reporting computational results. Sufficient technical
+      details should be provided to allow a reader to reproduce the results of any
+      calculations. Of course, strict reproducibility of computations may be precluded
+      by differences among computers (e.g., differences in operating systems, host-based
+      algorithms, machine precision, etc.), software (e.g., installation procedures
+      and programming modifications), and applications (e.g., for probabilistic methods
+      such as Monte Carlo calculations)." " An adequate specification of the computer
+      program used to carry out the calculations is essential. If the calculations
+      were carried out with commercially available software, the investigator must
+      list the source, version number, and force field employed. Any program modifications
+      and any differences from the published version (including changes in parameters)
+      must be fully described or available to other investigators upon request. Changes
+      in parameters, program options (e.g., dielectric constant, nonbonded cutoffs,
+      etc.) affecting reproducibility of the calculation, and program constraints
+      must be fully described in the article. If the program is not available, commercially
+      or otherwise, the authors must specify sufficient detail that the calculation
+      could be reproduced. "'
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: na
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: na
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: na
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: na
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: na
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: na
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null

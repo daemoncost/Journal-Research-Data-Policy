@@ -1,9 +1,0 @@
--- In what sense "discrepancies == true" are used when there is only
-   one answer?
-
--- what is the meaning of '.nan'? How is it different from 'no text'?
-   Maybe we should use the pseudo-value #NA or N/A (Not Available)?
-
--- What is "none"? Why, when there are both "none" and "no text" in
-   different answers, sometimes "none", and sometimes "no text" is
-   selected?

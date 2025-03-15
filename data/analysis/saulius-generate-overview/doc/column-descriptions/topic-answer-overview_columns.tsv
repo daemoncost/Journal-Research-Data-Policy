@@ -1,5 +1,0 @@
-nr	column_name	column_number	type	enum	description	explanation
-1	kind	1	string	topic,answers	Kind of the recorded count	Specifies whether the ‘count’ column indicates the count of instances the specific topic, or of the specific answer to the preceding topic
-2	count	2	integer		Number of occurrences	Shows how many times the specified topic or answer has occurred in the YAML answer list
-3	key	3	string		The topic key	Gives a unique programmatic key for the topic; that key should not change even if the textual description of the topic is modified
-4	text	4	string		A description of a topic or an answer to the question of the topic	For topics, contain a human readable description indicating what question the answers to this topic should address. For answers, contains the answer text

@@ -151,8 +151,8 @@ code_required:
   1:
     text: Code sharing encouraged but optional.
     explanation: .nan
-  correct_answer: null
-  discrepancy_reason: null
+  correct_answer: 1
+  discrepancy_reason: Difficulty in matching information and question
 code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 2

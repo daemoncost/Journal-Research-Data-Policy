@@ -1,0 +1,230 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Before submitting research datasets as Supplementary Information,\
+      \ authors should read the\njournal\u2019s Research data policy. We encourage\
+      \ research data to be archived in data repositories wherever possible."
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: "Before submitting research datasets as Supplementary Information,\
+      \ authors should read the\njournal\u2019s Research data policy. We encourage\
+      \ research data to be archived in data repositories wherever possible."
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: "Before submitting research datasets as Supplementary Information,\
+      \ authors should read the\njournal\u2019s Research data policy. We encourage\
+      \ research data to be archived in data repositories wherever possible."
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Research Resource Identifiers (RRID)
+
+      Research Resource Identifiers (RRID) are persistent unique identifiers (effectively
+      similar to a DOI) for research resources. This journal encourages authors to
+      adopt RRIDs when reporting key biological resources (antibodies, cell lines,
+      model organisms and tools) in their manuscripts.'
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: 'Data transparency
+
+      All authors are requested to make sure that all data and materials as well as
+      software
+
+      application or custom code support their published claims and comply with field
+      standards.
+
+      Please note that journals may have individual policies on (sharing) research
+      data in
+
+      concordance with disciplinary norms and expectations'
+  correct_answer: null
+  discrepancy_reason: null
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'Statements and Declarations
+
+      Include the following standard sections for Statements and Declarations. Please
+      follow the link for details.
+
+
+      - OPEN ACCESS. This section is included if the article is published in open
+      access mode. In that case, the Creative Commons license should be indicated.'
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: 'Cell lines, If human cells are used, authors must declare in the manuscript:
+      what cell lines were used by
+
+      describing the source of the cell line, including when and from where it was
+      obtained, whether
+
+      the cell line has recently been authenticated and by what method.
+
+
+      It is recommended that authors check the NCBI database for misidentification
+      and
+
+      contamination of human cell lines.'
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: no text.
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: "All authors are requested to make sure that all data and materials\
+      \ as well as software\napplication or custom code support their published claims\
+      \ and comply with field standards.\n\nSummary of requirements:\nThe above should\
+      \ be summarized in a statement and placed in a \u2018Declarations\u2019 section\
+      \ before the reference list under a heading of \u2018Consent to participate\u2019\
+      \ and/or \u2018Consent to publish\u2019. Other declarations include Funding,\
+      \ Competing interests, Ethics approval, Consent, Data and/or Code availability\
+      \ and Authors\u2019 contribution statements."
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null

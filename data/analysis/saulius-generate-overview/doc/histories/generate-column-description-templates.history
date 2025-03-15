@@ -1,1 +1,0 @@
-  551  for i in outputs/*.tsv; do (B=$(basename $i .tsv); F=doc/${B}_columns.tsv; head -2 $i | tail -1 | tr '\t' '\n' | cat -n | awk 'BEGIN {OFS="\t"; print "nr", "column_name", "column_number", "type", "description", "explanation"} {print $1, $2, $1, "", "", ""}' > $F; echo "=== $F") done
