@@ -93,66 +93,6 @@ class Question:
         else:
             return jaccard_similarity(answer_texts) > 0.55
 
-    def resolve_discrepancy(
-        self,
-        correct_answer: Optional[Union[str, int]] = None,
-        discrepancy_reason: Optional[str] = None,
-    ) -> None:
-        """
-        Resolve discrepancies by choosing the correct answer.
-
-        If the correct answer is provided as a string, the method searches for the
-        matching answer text.
-        If provided as an integer, it is treated as an index corresponding to the
-        respondent's answer.
-        A discrepancy reason must be provided to record why the discrepancy occurred.
-
-        :param correct_answer: The correct answer, either as a string (matching answer
-            text) or an integer (index).
-        :param discrepancy_reason: The reason for the discrepancy. For example:
-                                   "Text missing", "Language understanding",
-                                   "Difficulty in matching information and question",
-                                   or "Other: free text".
-        :raises ValueError: If the correct_answer or discrepancy_reason is not provided
-            or is invalid.
-        """
-        if self.has_discrepancies():
-            if correct_answer is not None:
-                if isinstance(correct_answer, str):
-                    for answer in self.answers:
-                        if answer.text == correct_answer:
-                            self.correct_answer = answer
-                            break
-                elif isinstance(correct_answer, int):
-                    if not (0 <= correct_answer < len(self.answers)):
-                        raise ValueError(
-                            (
-                                "If `correct_answer` is an int, it must be a valid "
-                                "respondent index as reported in `print_qa()`."
-                            )
-                        )
-                    self.correct_answer_encoder_id = correct_answer
-                    self.correct_answer = self.answers[correct_answer]
-            else:
-                raise ValueError(
-                    "You must provide `correct_answer` to resolve discrepancies."
-                )
-
-            if discrepancy_reason is not None:
-                print(discrepancy_reason)
-                self.discrepancy_reason = discrepancy_reason
-            else:
-                raise ValueError(
-                    "You must provide `discrepancy_reason` to resolve discrepancies."
-                )
-        else:
-            self.correct_answer_encoder_id = 0
-            if self.answers:
-                self.correct_answer = self.answers[0]
-            else:
-                raise ValueError("No answers available to resolve.")
-            self.discrepancy_reason = discrepancy_reason
-
     def get_final_answer(self) -> Answer:
         """
         Retrieve the final resolved answer.
