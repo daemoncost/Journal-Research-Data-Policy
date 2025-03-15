@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import importlib.resources as pkg_resources
->>>>>>> 50d9aad... Update docs and type hints in grouper.py
 from typing import Dict, Optional
 
 import pandas as pd
@@ -15,34 +9,11 @@ from daemon_analysis_tools.datamodels.question import Question
 
 def _load_question_types(path: str) -> Dict[int, Dict]:
     """
-    Load question metadata from a YAML file.
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Reads a YAML file and returns a dictionary mapping question numbers to a boolean
-    value indicating whether the question is open.
-
-    :return: Dictionary where keys are question numbers and values are True if the
-=======
-    Reads a YAML file and returns a dictionary mapping question numbers to a boolean 
-    value indicating whether the question is open.
-
-    :return: Dictionary where keys are question numbers and values are True if the 
->>>>>>> a41e68c... Move metadata outside of the package
-        question is open, False otherwise.
-=======
-    Reads a YAML file and returns a dictionary mapping question numbers to question metadata.
-
-    :return: Dictionary where keys are question numbers and values are dictionary with metadata.
->>>>>>> cd1b961... updated yaml saver
-=======
     Reads a YAML file and returns a dictionary mapping question numbers to question
     metadata.
 
     :return: Dictionary where keys are question numbers and values are dictionary with
-        metadata.
->>>>>>> 850ae13... linting
+        metadata. 
     """
     with open(path, "r") as file:
         question_metadata = yaml.safe_load(file)
@@ -82,50 +53,6 @@ def _get_explanation_column(data: pd.DataFrame, index: int) -> Optional[str]:
         return next_column
     return None
 
-
-<<<<<<< HEAD
-def _initialize_question(
-    grouped_questions: Dict[str, Dict[str, Dict[int, Question]]],
-    publisher: str,
-    journal: str,
-    q_num: int,
-    column: str,
-    open_or_not: bool,
-    question_id: str,
-) -> None:
-    """
-    Initialize a Question object in the grouped_questions dictionary if not already
-    present.
-
-    The function loads question types from configuration and, if a question identified
-    by q_num does not already exist for the specified publisher and journal, creates a
-    new Question instance with its 'is_open' property set accordingly.
-
-    :param grouped_questions: Nested dictionary structured as:
-                              {publisher: {journal: {question_number: Question}}}.
-    :param publisher: The publisher name.
-    :param journal: The journal name.
-    :param q_num: The question number.
-    :param column: The column name containing the question text.
-=======
-    grouped_questions: dict, publisher: str, journal: str, q_num: int, column: str
-):
-    """
-    Initialize a Question object in the grouped_questions dictionary if not already
-    present.
->>>>>>> bb5b81c... Run pre-commit
-    """
-
-    if q_num not in grouped_questions[publisher][journal]:
-        open_or_not = open_or_not
-        question_id = question_id
-        question = Question(text = column, is_open=open_or_not,question_id=question_id )
-        grouped_questions[publisher][journal][q_num] = question
-
-<<<<<<< HEAD
-
-=======
->>>>>>> d3d7633... added more tests and fixed grouper
 def _process_group(
     group: pd.DataFrame,
     question_metadata_dict: dict,

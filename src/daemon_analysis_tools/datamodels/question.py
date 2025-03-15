@@ -34,7 +34,6 @@ class Question:
         :param is_open: Flag indicating whether the question accepts open-text answers.
         """
 
-<<<<<<< HEAD
         self.question_id: str = question_id
         self.text: str = text
         self.is_open: bool = is_open
@@ -86,7 +85,7 @@ class Question:
         if not self.is_open:
             return len(set(answer_texts)) > 1
         else:
-<<<<<<< HEAD
+
             return jaccard_similarity(answer_texts) > 0.55
 
     def get_final_answer(self) -> Answer:
@@ -115,12 +114,11 @@ class Question:
 
         :return: A string representation of the Question.
         """
-<<<<<<< HEAD
+
         return f"Question(\n\tid='{self.question_id}'," f"\n\ttext='{self.text}',\n)"
-=======
+
         return (
             f"Question(\n\tid='{self.question_id}',"
             f"\n\ttext='{self.text}',"
             f"\n\tis_open={self.is_open}\n)"
         )
->>>>>>> 3c89b3b... Add question_id to Question class
