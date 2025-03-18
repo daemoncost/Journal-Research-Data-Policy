@@ -4,13 +4,10 @@ import pandas as pd
 
 
 class Journal:
-    """
-    A class representing a journal and its associated data attributes.
-    """
+    """A class representing a journal and its associated data attributes."""
 
     def __init__(self, name: str, data: Union[pd.Series, Dict[str, Any]]) -> None:
-        """
-        Initialize a Journal instance.
+        """Initialize a Journal instance.
 
         :param name: The name of the journal.
         :param data: A dictionary or pandas Series containing the data for the journal.
@@ -26,8 +23,7 @@ class Journal:
         )
 
     def __repr__(self) -> str:
-        """
-        Return the string representation of the Journal instance.
+        """Return the string representation of the Journal instance.
 
         :return: A string representation of the Journal.
         """
@@ -40,8 +36,7 @@ class Journal:
         )
 
     def _parse_rdp(self, data: Union[pd.Series, Dict[str, Any]]) -> bool:
-        """
-        Parse the research data policy (RDP) status from the provided data.
+        """Parse the research data policy (RDP) status from the provided data.
 
         :param data: The data source containing RDP information.
         :return: True if the Research Data Policy exists, otherwise False.
@@ -55,8 +50,7 @@ class Journal:
     def _parse_data_sharing_requirements(
         self, data: Union[pd.Series, Dict[str, Any]]
     ) -> str:
-        """
-        Parse the data sharing requirements from the provided data.
+        """Parse the data sharing requirements from the provided data.
 
         :param data: The data source containing data sharing requirements.
         :return: A string representing the data sharing requirement status.
@@ -80,8 +74,7 @@ class Journal:
             raise ValueError("Data sharing requirements information not present")
 
     def _parse_fair_data_sharing(self, data: Union[pd.Series, Dict[str, Any]]) -> str:
-        """
-        Parse the FAIR data sharing information from the provided data.
+        """Parse the FAIR data sharing information from the provided data.
 
         :param data: The data source containing FAIR data sharing information.
         :return: A string representing the FAIR data sharing status.
@@ -112,8 +105,7 @@ class Journal:
     def _parse_data_availability_statement(
         self, data: Union[pd.Series, Dict[str, Any]]
     ) -> str:
-        """
-        Parse the data availability statement from the provided data.
+        """Parse the data availability statement from the provided data.
 
         :param data: The data source containing the data availability statement.
         :return: A string representing the data availability statement status.

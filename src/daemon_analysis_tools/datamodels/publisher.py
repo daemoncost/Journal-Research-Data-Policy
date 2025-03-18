@@ -9,8 +9,7 @@ class Publisher:
     """A class representing a publisher with associated journals."""
 
     def __init__(self, name: str) -> None:
-        """
-        Initialize a Publisher instance.
+        """Initialize a Publisher instance.
 
         :param name: The name of the publisher.
         """
@@ -18,8 +17,7 @@ class Publisher:
         self.journals: Dict[str, Journal] = {}
 
     def __repr__(self) -> str:
-        """
-        Return the string representation of the Publisher instance.
+        """Return the string representation of the Publisher instance.
 
         :return: A string representation of the Publisher.
         """
@@ -29,8 +27,8 @@ class Publisher:
     def from_questions(
         cls, publisher_name: str, journals_data: Dict[str, Dict[str, Any]]
     ) -> "Publisher":
-        """
-        Create a Publisher instance from a dictionary of questions grouped by journal.
+        """Create a Publisher instance from a dictionary of questions grouped by
+        journal.
 
         :param publisher_name: The name of the publisher.
         :param journals_data: A dictionary mapping each journal name to a dictionary of
@@ -59,8 +57,7 @@ class Publisher:
     def add_journal(
         self, journal_name: str, journal_data: Union[pd.Series, Dict[str, Any]]
     ) -> None:
-        """
-        Add a journal to the publisher.
+        """Add a journal to the publisher.
 
         :param journal_name: The name of the journal.
         :param journal_data: A pandas Series or dictionary containing the data for the
@@ -70,8 +67,7 @@ class Publisher:
             self.journals[journal_name] = Journal(journal_name, journal_data)
 
     def get_journal(self, journal_name: str) -> Union[Journal, None]:
-        """
-        Retrieve a journal instance by its name.
+        """Retrieve a journal instance by its name.
 
         :param journal_name: The name of the journal.
         :return: An instance of the Journal class if found, otherwise None.
@@ -79,8 +75,7 @@ class Publisher:
         return self.journals.get(journal_name)
 
     def list_journals(self) -> List[str]:
-        """
-        List all journal names associated with this publisher.
+        """List all journal names associated with this publisher.
 
         :return: A list of journal names.
         """
