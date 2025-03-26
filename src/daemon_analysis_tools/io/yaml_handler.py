@@ -172,11 +172,23 @@ def load_answers_from_yaml(
                                         "text"
                                     ]
 
-                                resolve_discrepancy(
-                                    question,
-                                    correct_answer=correct_answer_id,
-                                    discrepancy_reason=discrepancy_reason,
-                                )
+                                try:
+                                    resolve_discrepancy(
+                                        question,
+                                        correct_answer=correct_answer_id,
+                                        discrepancy_reason=discrepancy_reason,
+                                    )
+                                except ValueError:
+                                    print(
+                                        (
+                                            "correct_answer_id = "
+                                            f"{correct_answer_id} "
+                                            f"Question {question_number} in "
+                                            f"{journal_name}/{publisher_name}"
+                                        )
+                                    )
+                                    raise
+
                                 assert question.get_final_answer() is not None
                                 grouped_questions[publisher_name][
                                     journal_name
