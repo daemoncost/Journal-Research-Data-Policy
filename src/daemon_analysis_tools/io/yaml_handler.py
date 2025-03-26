@@ -5,6 +5,9 @@ from typing import Dict, List, Optional
 import yaml
 
 from daemon_analysis_tools.datamodels.question import Question
+from daemon_analysis_tools.services.discrepancy_resolver import (
+    resolve_discrepancy,
+)
 
 
 def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
@@ -109,7 +112,9 @@ def load_answers_from_yaml(
     for publisher_dir in publisher_dirs:
         publisher_name = publisher_dir.split("/")[-1]
         grouped_questions[publisher_name] = {}
-        journal_files: List[str] = glob(f"{parent_folder}/{publisher_name}/*.yaml")
+        journal_files: List[str] = glob(
+            f"{parent_folder}/{publisher_name}/*.yaml"
+        )
 
         for journal_file in journal_files:
             journal_name = os.path.splitext(os.path.basename(journal_file))[0]
@@ -118,11 +123,26 @@ def load_answers_from_yaml(
             with open(journal_file, "r") as file:
                 yaml_data = yaml.safe_load(file)
                 for question_number, question_dict in yaml_data.items():
+
                     # Initialize the question for reconstruction.
-                    question = Question(text=question_dict["text"])
+                    question = Question(
+                        question_id=question_number,
+                        text=question_dict["text"],
+                        is_open=False,  # TODO: False is a quick fix here
+                    )
                     correct_answer_id = question_dict["correct_answer"]
                     has_discrepancies = question_dict["has_discrepancies"]
-                    discrepancy_reason = question_dict.get("discrepancy_reason", None)
+                    discrepancy_reason = question_dict.get(
+                        "discrepancy_reason", None
+                    )
+
+                    # add all answers
+                    for answer_id, answer in question_dict.items():
+                        if isinstance(answer_id, int):
+                            answer = question_dict[answer_id]
+                            question._add_answer(
+                                answer["text"], answer["explanation"]
+                            )
 
                     if has_discrepancies:
                         if correct_answer_id is None:
@@ -136,12 +156,6 @@ def load_answers_from_yaml(
                             # missing.
                             continue
                         else:
-                            assert isinstance(correct_answer_id, int), (
-                                "`correct_answer` must be an integer "
-                                "(the number of the correct respondent)"
-                            )
-                            answer = question_dict[correct_answer_id]
-                            question.add_answer(answer["text"], answer["explanation"])
                             if discrepancy_reason is None:
                                 print(
                                     (
@@ -153,18 +167,22 @@ def load_answers_from_yaml(
                                 )
                                 continue
                             else:
-                                question.resolve_discrepancy(
-                                    correct_answer=0,
+                                if isinstance(correct_answer_id, dict):
+                                    correct_answer_id = correct_answer_id[
+                                        "text"
+                                    ]
+
+                                resolve_discrepancy(
+                                    question,
+                                    correct_answer=correct_answer_id,
                                     discrepancy_reason=discrepancy_reason,
                                 )
                                 assert question.get_final_answer() is not None
-                                grouped_questions[publisher_name][journal_name][
-                                    question_number
-                                ] = question
+                                grouped_questions[publisher_name][
+                                    journal_name
+                                ][question_number] = question
                     else:
-                        answer = question_dict[0]
-                        question.add_answer(answer["text"], answer["explanation"])
-                        question.resolve_discrepancy(correct_answer=0)
+                        question._set_correct_answer(0)
                         assert question.get_final_answer() is not None
                         grouped_questions[publisher_name][journal_name][
                             question_number

@@ -67,6 +67,9 @@ class Question:
         """
         self.answers.append(Answer(answer, explanation))
 
+    def has_multiple_answers(self) -> bool:
+        return len(self.answers) > 1
+
     def has_discrepancies(self) -> bool:
         """Determine whether discrepancies exist among the answers.
 
