@@ -142,7 +142,32 @@ data_citability:
       \ Statements\n\" ACS strongly encourages authors to select a repository that\
       \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
       \ \" "
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: '####### THIS IS AN ACS GENERAL POLICY, MY BAD, NEED TO CORRECT PREVIOUS
+      SUBMISSIONS ######
+
+
+      Data repositories supporting peer-reviewed publications generally should meet
+      the following criteria:
+
+
+      Ensure long-term persistence and preservation of datasets (minimum of 5 years
+      after publication)
+
+
+      Be supported by a research community or research institution
+
+
+      Provide deposited datasets with stable and persistent identifiers, e.g., Digital
+      Object Identifiers (DOIs)
+
+
+      Allow access to data without restrictions
+
+
+      Provide clear terms of data use and data access (or license) on each dataset
+      landing page'
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -157,7 +182,12 @@ data_timing:
       \ encourage authors to make the research data underlying their articles publicly\
       \ available at the time of publication. \"\n\nNOTE: At the time of publication\
       \ interpreted as prior to official publication."
-  correct_answer: 1
+  correct_answer:
+    text: Required data must be available prior to official publication.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\nNOTE: At the time of publication\
+      \ interpreted as prior to official publication."
   discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -191,7 +221,23 @@ data_sharing_method:
       \ to submit data in a format that can be most easily accessed and reused. ACS\
       \ encourages authors to provide machine-readable data and to follow the FAIR\
       \ Data Principles. \""
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.
+
+
+      Research data is defined as materials and information used in the experiments
+      that enable the validation of the conclusions drawn in the article, including
+      primary data produced by the authors for the study being reported, secondary
+      data reused or analyzed by the authors for the study, and any other materials
+      necessary to reproduce or replicate the results.
+
+
+      The ACS Research Data Policy provides additional information on Data Availability
+      Statements, Data Citation, and Data Repositories.'
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -224,7 +270,25 @@ data_licenses:
       \ use of open licenses for reuse of data, such as Creative Commons CC BY. \"\
       \n\nNOTE: Although mentioned in Publishers RDP but not in the Journals RDP.\
       \ Chosen weaker statement."
-  correct_answer: 0
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: '####### THIS IS AN ACS GENERAL POLICY, MY BAD, NEED TO CORRECT PREVIOUS
+      SUBMISSIONS ######
+
+
+      ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.'
   discrepancy_reason: Text not found
 data_referee:
   text: 10. Referee guidelines concerning research data
@@ -258,7 +322,13 @@ data_recommended:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: "Characterization of New Compounds ; (A) Crystal Structure Studies ; (1)\
+      \ Structure Reports in Articles ; CIF ; (B) Powder Diffraction Data ; Crystallographic\
+      \ Data (Powder); (C) Electron Diffraction; Computational Reports ; Magnetic\
+      \ measurements ; NMR Spectra ; Electrochemistry Data ; Biological Data ; Electrophoretic\
+      \ Gels and Blots ; \n"
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -274,7 +344,9 @@ data_required:
   1:
     text: crystal structures
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: na
+    explanation: ''
   discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements
@@ -335,7 +407,58 @@ code_required:
   1:
     text: Code sharing not mentioned.
     explanation: no text.
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "Authors should supply enough Supporting Information to reproduce\
+      \ the calculations or to make the results utilizable without repeating the calculations.\
+      \ Computational manuscripts should include at least the following Supporting\
+      \ Information:\n\nDescription of specific programs and the release or version.\
+      \ Authors should check and comply with citation requests of the program packages\
+      \ used. If the author\u2019s own or a modified version of a commercially available\
+      \ program is used, it is required that the program/code/modification be made\
+      \ available to the scientific community (QCPE, publication in a computational\
+      \ journal, commercially, etc.), if the license permits. Policies in this regard\
+      \ are identical with those of several other ACS journals, as summarized in J.\
+      \ Chem. Inf. Model. 2006, 46, 937.A clear exposition of any nonstandard equations\
+      \ and algorithms used and, where feasible, tests of the codes in various limiting\
+      \ cases should also be provided. \nDetails of the computations. The computed\
+      \ molecular model should be described clearly, possibly with a ChemDraw figure.\
+      \ If the model is based on an experimentally known complex/reaction, any modifications\
+      \ (such as truncations) should be clearly described and justified. Final optimized\
+      \ coordinates and keywords are to be provided. For DFT computations, the choice\
+      \ of functional must be justified, or the validation of the functional provided.\
+      \ The choice of basis sets must be explicitly discussed including any deviation\
+      \ from standard basis sets. Convergence criteria, integration parameters, active\
+      \ space definition in multireference calculations, and, for open-shell systems,\
+      \ the way in which spin states are handled should be mentioned explicitly. The\
+      \ exact definition of any applied numerical or symmetry constraint should be\
+      \ indicated.\nDetails of the computational results. When relevant to the results\
+      \ of the study, data such as absolute energies, gross orbital populations, atomic\
+      \ spin densities, etc., should be supplied. Where feasible, critical checkpoint/restart\
+      \ files should be saved and made available upon request.\nCartesian Coordinates.\
+      \ Cartesian coordinates of all molecules, intermediates, transition states,\
+      \ etc. that are part of the manuscript must be uploaded in a single file that\
+      \ is formatted for convenient viewing with widely available molecular modeling\
+      \ packages. The .xyz and .mol formats are accepted at this time. The .xyz format\
+      \ is the most basic and easily prepared from computational output. More information\
+      \ on the .xyz file format is available at http://openbabel.sourceforge.net/wiki/XYZ.\n\
+      \nThe first line of the .xyz format file denotes the number of atoms in the\
+      \ molecule.\n\nThe second line of the file is a comments line, and should begin\
+      \ with a descriptive name of the molecule/structure consistent with the designation\
+      \ in the manuscript, and any other pertinent information selected by the author,\
+      \ such as total energy.\n\nNext follow lines for each element in the molecule.\
+      \ Each line contains the element symbol followed by the x, y, and z coordinates\
+      \ in angstroms (\xC5) separated by spaces in free-field format (i.e. precise\
+      \ formatting not required).\n\nMultiple structures are placed directly end-to-end\
+      \ in the file. The file name should have the extension \u201C.xyz\u201D.\n\n\
+      It is strongly recommended that authors view the structures in the file with\
+      \ a modeling program before uploading the file. The program Mercury (version\
+      \ 3.3 or later) is recommended for viewing and manipulating the multiple structures.\
+      \ The Cambridge Crystallographic Data Centre (CCDC) offers Mercury at no cost.\
+      \ Include the phrase \u201Ca text file of all computed molecule Cartesian coordinates\
+      \ in a format for convenient visualization\u201D in the Supporting Information\
+      \ statement.\n\nFor additional guidance, see the ACS Simulations, Machine Learning,\
+      \ Computational Data guidelines."
   discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility
@@ -389,7 +512,22 @@ code_versioning:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: no text.
-  correct_answer: 0
+  correct_answer:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: "Authors should supply enough Supporting Information to reproduce\
+      \ the calculations or to make the results utilizable without repeating the calculations.\
+      \ Computational manuscripts should include at least the following Supporting\
+      \ Information:  Description of specific programs and the release or version.\
+      \ Authors should check and comply with citation requests of the program packages\
+      \ used. If the author\u2019s own or a modified version of a commercially available\
+      \ program is used, it is required that the program/code/modification be made\
+      \ available to the scientific community (QCPE, publication in a computational\
+      \ journal, commercially, etc.), if the license permits. Policies in this regard\
+      \ are identical with those of several other ACS journals, as summarized in J.\
+      \ Chem. Inf. Model. 2006, 46, 937.A clear exposition of any nonstandard equations\
+      \ and algorithms used and, where feasible, tests of the codes in various limiting\
+      \ cases should also be provided. "
   discrepancy_reason: Text not found
 code_quality:
   text: 16. Code Quality Standards
@@ -413,7 +551,21 @@ code_quality:
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: no text.
-  correct_answer: 0
+  correct_answer:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: "Authors should supply enough Supporting Information to reproduce\
+      \ the calculations or to make the results utilizable without repeating the calculations.\
+      \ Computational manuscripts should include at least the following Supporting\
+      \ Information:  Description of specific programs and the release or version.\
+      \ Authors should check and comply with citation requests of the program packages\
+      \ used. If the author\u2019s own or a modified version of a commercially available\
+      \ program is used, it is required that the program/code/modification be made\
+      \ available to the scientific community (QCPE, publication in a computational\
+      \ journal, commercially, etc.), if the license permits. Policies in this regard\
+      \ are identical with those of several other ACS journals, as summarized in J.\
+      \ Chem. Inf. Model. 2006, 46, 937.A clear exposition of any nonstandard equations\
+      \ and algorithms used and, where feasible, tests of the codes in various limiting\
+      \ cases should also be provided. "
   discrepancy_reason: Text not found
 code_autotest:
   text: 17. Automatic Testing

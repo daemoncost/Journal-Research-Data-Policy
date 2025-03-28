@@ -153,7 +153,30 @@ data_fair:
       \ endorses The FAIR Data Principles and believes that where ethically and legally\
       \ feasible, all research data should be findable, accessible, interoperable,\
       \ and reusable. \"\n\nText from Journal Research Data Policy : \nno text."
-  correct_answer: 1
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'Choosing an Appropriate Data Repository
+
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.
+
+      '
   discrepancy_reason: Language understanding
 data_availability:
   text: 2. Data availability statement
@@ -318,7 +341,34 @@ data_timing:
       \ encourage authors to make the research data underlying their articles publicly\
       \ available at the time of publication. \"\n\nNOTE: At the time of publication\
       \ interpreted as prior to official publication."
-  correct_answer: 1
+  correct_answer:
+    text: Required data must be available after an embargo period.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.
+
+
+      ...
+
+
+      Exceptions
+
+      Exceptions to data availability requirements or embargoes delaying data release
+      are available where legal or ethical issues prevent immediate public sharing.
+      This includes data that may reveal personal information of research subjects,
+      data where informed consent for public sharing was not granted, and other legitimate
+      restrictions. In such cases, please contact the relevant journal editorial office
+      to disclose the rationale and request an exception.'
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -377,7 +427,29 @@ data_sharing_method:
       \ is acceptable, authors are encouraged to submit data in a format that can\
       \ be most easily accessed and reused. ACS encourages authors to provide machine-readable\
       \ data and to follow the FAIR Data Principles. \""
-  correct_answer: 1
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.
+
+      '
   discrepancy_reason: Language understanding
 data_licenses:
   text: 9. Recommended/required licenses
@@ -470,7 +542,46 @@ data_licenses:
       \ Data Policy: \n\" To ensure data accessibility, we encourage the use of open\
       \ licenses for reuse of data, such as Creative Commons CC BY. \"\n\nNOTE: I\
       \ have chosen the weaker statement among journal and publisher. "
-  correct_answer: 1
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.
+
+
+      ...
+
+
+      Data repositories supporting peer-reviewed publications generally should meet
+      the following criteria:
+
+
+      Ensure long-term persistence and preservation of datasets (minimum of 5 years
+      after publication)
+
+
+      Be supported by a research community or research institution
+
+
+      Provide deposited datasets with stable and persistent identifiers, e.g., Digital
+      Object Identifiers (DOIs)
+
+
+      Allow access to data without restrictions
+
+
+      Provide clear terms of data use and data access (or license) on each dataset
+      landing pag'
   discrepancy_reason: Language understanding
 data_referee:
   text: 10. Referee guidelines concerning research data
@@ -512,7 +623,9 @@ data_recommended:
   2:
     text: no text.
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: none
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -531,7 +644,9 @@ data_required:
   2:
     text: no text.
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: none
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements

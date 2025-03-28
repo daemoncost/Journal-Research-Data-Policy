@@ -90,7 +90,27 @@ data_fair:
       \ (ACS) Research Data Policy:\n\" ACS strongly endorses The FAIR Data Principles\
       \ and believes that where ethically and legally feasible, all research data\
       \ should be findable, accessible, interoperable, and reusable. \""
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.'
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -157,7 +177,19 @@ data_citability:
       \ Statements\n\" ACS strongly encourages authors to select a repository that\
       \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
       \ \" "
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "Data Availability Statements\nA Data Availability Statement should\
+      \ describe the availability of the data underlying the conclusions drawn in\
+      \ the research article and provide a means of access, where applicable, by linking\
+      \ to the data, preferably through the use of a persistent identifier such as\
+      \ a DOI or an Accession Number assigned by a data repository. The Data Availability\
+      \ Statement should be included in the manuscript under the Associated Content\
+      \ heading with the Supporting Information.\n\nAlthough submission of data as\
+      \ part of an article\u2019s Supporting Information is acceptable, authors are\
+      \ encouraged to submit data in a format that can be most easily accessed and\
+      \ reused. ACS encourages authors to provide machine-readable data and to follow\
+      \ the FAIR Data Principles."
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -168,16 +200,19 @@ data_timing:
     explanation: 'Research Data Policy
 
       All ACS journals strongly encourage authors to make the research data underlying
-      their articles publicly available at the time of publication.
-
-      '
+      their articles publicly available at the time of publication.'
   1:
     text: Required data must be available prior to official publication.
     explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
       \ encourage authors to make the research data underlying their articles publicly\
       \ available at the time of publication. \"\n\nNOTE: At the time of publication\
       \ interpreted as prior to official publication."
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.'
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -202,7 +237,13 @@ data_sharing_method:
       \ acceptable, authors are encouraged to submit data in a format that can be\
       \ most easily accessed and reused. ACS encourages authors to provide machine-readable\
       \ data and to follow the FAIR Data Principles. \"\n\nstrongly encourage = recommended"
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'The ACS Research Data Policy provides additional information on
+      Data Availability Statements, Data Citation, and Data Repositories.
+
+
+      Data Requirements also suggests alternatives'
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -256,14 +297,18 @@ data_recommended:
   N. encoders: 2
   has_discrepancies: true
   0:
-    text: '3. Purity of Tested Compounds. ; 4. Confirmation of Structure ; 6. Computational
+    text: 3. Purity of Tested Compounds. ; 4. Confirmation of Structure ; 6. Computational
       Chemistry; 7. QSAR/QSPR and Proprietary Data; 8. Statistical Criteria. 9. Software.;
-      10. Structural Data. ; 11. Compound Characterization Checklist. '
+      10. Structural Data. ; 11. Compound Characterization Checklist.
     explanation: ''
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 3. Purity of Tested Compounds. ; 4. Confirmation of Structure ; 6. Computational
+      Chemistry; 7. QSAR/QSPR and Proprietary Data; 8. Statistical Criteria. 9. Software.;
+      10. Structural Data. ; 11. Compound Characterization Checklist.
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -279,7 +324,9 @@ data_required:
   1:
     text: Biological Data, 1H NMR [qHNMR]
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 1. Biological Data
+    explanation: ''
   discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements
@@ -332,7 +379,7 @@ code_required:
       \ are already available.\nVirtual screening hits must be filtered for Pan Assay\
       \ Interference Compounds (PAINS; Baell and Holloway, J. Med. Chem. 2010, 53,\
       \ 2719-2740) and the results must be reported in the manuscript (exemplary online\
-      \ filter:  http://zinc15.docking.org/patterns/home/).\nFor virtual screens that\
+      \ filter: http://zinc15.docking.org/patterns/home/).\nFor virtual screens that\
       \ produce compound rankings, provide as Supporting Information for Publication\
       \ the total number of compounds that were screened and the ranks of identified\
       \ hits before application of any further manual or other subjective selection\
@@ -384,8 +431,8 @@ code_required:
       activity relationships/quantitative structure\u2013property relationships (QSAR/QSPR)\
       \ study being reported.\nIf a new method/theory is reported, it should be compared\
       \ to and \u201Cvalidated\u201D against at least one other common method that\
-      \ is widely used in the field.\n   All data and molecular structures used to\
-      \ carry out a QSAR/QSPR study are to be reported in the paper and/or as Supporting\
+      \ is widely used in the field.\nAll data and molecular structures used to carry\
+      \ out a QSAR/QSPR study are to be reported in the paper and/or as Supporting\
       \ Information for Publication. The use of proprietary data is generally not\
       \ acceptable.\nStandard QSAR/QSPR studies are considered only if the predictions\
       \ are experimentally tested and if the experimental data are novel and significant.\
@@ -398,7 +445,7 @@ code_required:
       \ is equally important for experimental and computational studies in medicinal\
       \ chemistry. Reported results generally require statistical validation such\
       \ as the use of the probability value (p-value) used to identify significance\
-      \ (generally p < 0.05).  Statistical analyses of compound data are also frequently\
+      \ (generally p < 0.05). Statistical analyses of compound data are also frequently\
       \ presented, which must adhere to acceptable statistical and scientific standards.\
       \ Specifically:\n\nA clear and comprehensive description of experimental data\
       \ or computed data underlying the analysis is required.\nStatistical methods\
@@ -425,7 +472,143 @@ code_required:
   1:
     text: Code sharing not mentioned.
     explanation: no text.
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "9. Software. Software used as a part of computer-aided drug design\
+      \ should be readily available from reliable sources, and the authors should\
+      \ specify where the software can be obtained.\n\n6. Computational Chemistry.\n\
+      \n6.1 Manuscript Categories. When computational chemistry is a major component\
+      \ of a study, manuscripts must fall into one or more of the following categories:\n\
+      \n(A) Practical applications of existing computational methods combined with\
+      \ original experimental data. Manuscripts that report prospective computational\
+      \ design, synthesis, and experimental evaluation of new chemical entities are\
+      \ highly encouraged.\n\nApplications of existing computational methods are not\
+      \ considered without original experimental data that assess the computational\
+      \ predictions. QSAR modeling is acceptable only if a significant number of new\
+      \ compounds is predicted, prepared, and tested. Avoid overinterpretation of\
+      \ computational predictions and conclusions drawn from molecular models as if\
+      \ they represent experimental data.\n\n(B) Substantially novel methods along\
+      \ with evidence for utility in medicinal chemistry with significant potential\
+      \ for advancing the field.\n\nClearly describe computational methods to be accessible\
+      \ to a general medicinal chemistry audience and clarify the relevance of the\
+      \ new method to medicinal chemistry. Present sufficient information to allow\
+      \ the method to be reproduced and tested in other laboratories.\n\n(C) Statistical\
+      \ analysis or mining of publicly available databases or data sets that provide\
+      \ unprecedented insights into the advancement of medicinal chemistry problems.\n\
+      \nSuch investigations must be based upon large data sets. Small series of compounds\
+      \ whose properties are reinvestigated using computational methods do not qualify\
+      \ for this category.\n\n6.2 Proprietary Data. Normally, the use of proprietary\
+      \ data for computational modeling or analysis is not acceptable because it is\
+      \ inconsistent with the ACS Ethical Guidelines. All experimental data and molecular\
+      \ structures used to generate and/or validate computational models must be reported\
+      \ in the paper, reported as supporting information, or readily available without\
+      \ infringements or restrictions. The Editors may choose to waive the data deposition\
+      \ requirement for proprietary data in rare cases where studies based on large\
+      \ corporate data sets provide compelling insight unobtainable otherwise.\n\n\
+      6.3 Virtual Screening Studies. Prospective virtual screen studies must meet\
+      \ the following acceptance criteria.\n\nIn order to validate virtual screening\
+      \ hits obtained from any source, provide proof of dose-response behavior, confirmation\
+      \ of IC50 or Ki values, and controls for nonspecific or artificial inhibition\
+      \ (i.e., proof of reversibility, detergent controls). Submit structure confirmation\
+      \ (1H NMR and MS; see section 4) for active compounds.\nFor target-directed\
+      \ virtual screens, evidence for direct binding/inhibition must be provided;\
+      \ the exclusive use of cell-based/functional/reporter gene assays is insufficient.\n\
+      Include explicit support for the significance of experimental findings. Identifying\
+      \ weakly potent compounds for a given target is not considered a significant\
+      \ advance if many potent compounds acting by the same or a similar mechanism\
+      \ are already available.\nVirtual screening hits must be filtered for Pan Assay\
+      \ Interference Compounds (PAINS; Baell and Holloway, J. Med. Chem. 2010, 53,\
+      \ 2719-2740) and the results must be reported in the manuscript (exemplary online\
+      \ filter: http://zinc15.docking.org/patterns/home/).\nFor virtual screens that\
+      \ produce compound rankings, provide as Supporting Information for Publication\
+      \ the total number of compounds that were screened and the ranks of identified\
+      \ hits before application of any further manual or other subjective selection\
+      \ steps.\nComplex virtual screening protocols are not validated by identifying\
+      \ a few active compounds. Evidence must be provided that much simpler approaches\
+      \ would not have yielded comparable results (e.g., 2D similarity or substructure\
+      \ searching).\nReported calculations must be limited to those that were essential\
+      \ for the identification of novel active compounds. In virtual screening studies,\
+      \ retrospective computational studies such as benchmarking or similar in silico\
+      \ validation attempts should not be reported. All computational studies that\
+      \ do not directly contribute to the identification of novel active compounds\
+      \ must be omitted.\nFor virtual screening studies, computational models of targets\
+      \ (e.g. homology models) and ligand/target complexes such as docked/modeled\
+      \ complexes of active compounds must be made freely available as PDB coordinate\
+      \ files as Supporting Information for Publication (see also 6.7).\n6.4 Retrospective\
+      \ Use of Computational Methods. Manuscripts that contain experimental studies\
+      \ with a retrospective computational component will be considered only under\
+      \ the following conditions:\n\nComputational work must lead to a clearly stated\
+      \ message, either an improved understanding of the experimental work or a well-defined\
+      \ experimentally testable hypothesis.\nClearly distinguish models and hypothetical\
+      \ statements from experimental observations both in the text and in figure captions.\n\
+      Describe computational methods in sufficient detail for the reader to reproduce\
+      \ the results.\nDraw conclusions from modeling with an appropriate amount of\
+      \ caution in light of assumptions made and within the accuracy limitations of\
+      \ the applied computational methods. The overall amount of space (text and figures)\
+      \ devoted to retrospective computational work must be proportionate to its significance.\n\
+      6.5 Predicted Compound Binding Modes. The prediction of compound binding modes\
+      \ by docking is a frequent computational application submitted to the Journal\
+      \ in combination with experimental data. Provide PBD IDs of crystal structures\
+      \ used as starting points for molecular modeling in the legends of figures depicting\
+      \ the resulting molecular models. In the absence of supporting structural information\
+      \ demonstrate that putative binding modes are consistent with structure-activity\
+      \ relationships for a series of analogues.\n\nQSAR, pseudo-receptor, or machine\
+      \ learning models that are occasionally applied retrospectively to analyze biological\
+      \ activities observed in the context of experimental SAR studies are acceptable\
+      \ only when used to illustrate a point of central relevance for a manuscript.\n\
+      \n6.6 Benchmark Calculations. Benchmark investigations, such as comparisons\
+      \ of virtual screening algorithms, are considered only if they provide particularly\
+      \ clear and generally relevant conclusions that set new standards in the field.\
+      \ General relevance and new standards must be clearly stated.\n\n6.7 PDB Coordinates\
+      \ for Computational Models. If three-dimensional computational models of targets,\
+      \ binding sites, or target-ligand complexes are reported, PDB coordinates of\
+      \ hydrogen-suppressed atomic models must be included as Supporting Information\
+      \ for Publication at submission to ensure reproducibility of calculations and\
+      \ reported findings.\n\n7. QSAR/QSPR and Proprietary Data. The following are\
+      \ general requirements for manuscripts reporting work done in this area:\n\n\
+      Authors should explicitly state in the abstract, introduction, and/or results\
+      \ sections of the paper what is novel about the quantitative structure\u2013\
+      activity relationships/quantitative structure\u2013property relationships (QSAR/QSPR)\
+      \ study being reported.\nIf a new method/theory is reported, it should be compared\
+      \ to and \u201Cvalidated\u201D against at least one other common method that\
+      \ is widely used in the field.\nAll data and molecular structures used to carry\
+      \ out a QSAR/QSPR study are to be reported in the paper and/or as Supporting\
+      \ Information for Publication. The use of proprietary data is generally not\
+      \ acceptable.\nStandard QSAR/QSPR studies are considered only if the predictions\
+      \ are experimentally tested and if the experimental data are novel and significant.\
+      \ Only QSAR/QSPR analyses that provide new insights into the activity are considered.\n\
+      Specifically discouraged are (i) QSAR and QSPR modeling for data sets that have\
+      \ already been extensively modeled, (ii) model development featuring high ratios\
+      \ of descriptors to data points, and (iii) reports of new descriptors without\
+      \ clear evidence for their superiority in QSAR/QSPR modeling to existing, commonly\
+      \ used alternatives.\n\n8. Statistical Criteria. Appropriate statistical assessment\
+      \ is equally important for experimental and computational studies in medicinal\
+      \ chemistry. Reported results generally require statistical validation such\
+      \ as the use of the probability value (p-value) used to identify significance\
+      \ (generally p < 0.05). Statistical analyses of compound data are also frequently\
+      \ presented, which must adhere to acceptable statistical and scientific standards.\
+      \ Specifically:\n\nA clear and comprehensive description of experimental data\
+      \ or computed data underlying the analysis is required.\nStatistical methods\
+      \ used must be clearly identified. Non-standard statistical methods should be\
+      \ described in sufficient detail or precisely referenced.\nUnderlying assumptions\
+      \ of statistical methods should be specified. For example, many statistical\
+      \ tests assume the presence of normal data distributions, which is often an\
+      \ approximation in practice.\nDepending on the type of experiments reported,\
+      \ either confidence limits (CL), standard deviations (SD), or standard errors\
+      \ of the mean (SEM) must accompany a mean value provided in either graphical\
+      \ or tabular form. The experimental section for each in vitro and in vivo assay\
+      \ performed should indicate the number of independent experiments as well as\
+      \ the statistical method used for data analysis. For example, assay curves must\
+      \ contain errors bars derived from multiple measurements.\nFor regression curves,\
+      \ their uncertainty must be assessed by plotting the original data along the\
+      \ curve or by establishing experimental or calculation confidence limits.\n\
+      If average values are reported from computational analysis, their variance must\
+      \ be documented. This can be accomplished by providing the number of times calculations\
+      \ have been repeated, mean values, and standard deviations (or standard errors).\
+      \ Alternatively, median values and percentile ranges can be provided. Data might\
+      \ also be summarized in scatter plots or box plots.\nReporting averages of data\
+      \ assigned to pre-defined value ranges and \u2018averages of average values\u2019\
+      \ must be avoided."
   discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility

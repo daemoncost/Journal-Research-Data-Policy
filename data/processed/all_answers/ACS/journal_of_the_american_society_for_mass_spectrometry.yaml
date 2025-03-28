@@ -90,7 +90,27 @@ data_fair:
       \ (ACS) Research Data Policy:\n\" ACS strongly endorses The FAIR Data Principles\
       \ and believes that where ethically and legally feasible, all research data\
       \ should be findable, accessible, interoperable, and reusable. \""
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.'
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -163,7 +183,16 @@ data_citability:
       \ Statements\n\" ACS strongly encourages authors to select a repository that\
       \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
       \ \" "
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Data Availability Statements
+
+      A Data Availability Statement should describe the availability of the data underlying
+      the conclusions drawn in the research article and provide a means of access,
+      where applicable, by linking to the data, preferably through the use of a persistent
+      identifier such as a DOI or an Accession Number assigned by a data repository.
+      The Data Availability Statement should be included in the manuscript under the
+      Associated Content heading with the Supporting Information'
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -181,7 +210,12 @@ data_timing:
       \ encourage authors to make the research data underlying their articles publicly\
       \ available at the time of publication. \"\n\nNOTE: At the time of publication\
       \ interpreted as prior to official publication."
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.'
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -211,7 +245,14 @@ data_sharing_method:
       \ be most easily accessed and reused. ACS encourages authors to provide machine-readable\
       \ data and to follow the FAIR Data Principles. \"\n\nNOTE: No explicit mention\
       \ in Journal RDP"
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.'
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -235,7 +276,21 @@ data_licenses:
   1:
     text: No mention of data/code licenses in RDP.
     explanation: no text.
-  correct_answer: 0
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.'
   discrepancy_reason: Text not found
 data_referee:
   text: 10. Referee guidelines concerning research data
@@ -293,7 +348,37 @@ data_recommended:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 'The Use of High Resolution Mass Spectral Data for Formula Confirmation:
+      For publication of exact- mass data that are used to confirm identities of synthetic
+      and natural products, report the uncertainty in the accurate-mass measurement
+      used for formula verification along with the result. The acceptable uncertainty
+      in a measurement by any analytical method must be adequate for the intended
+      use of the data.
+
+
+      Evaluate the uncertainty of accurate mass measurement by any statistically valid
+      method. Determine, for example, the precision and accuracy of replicate measurements
+      or evaluate the performance characteristics of the mass spectrometer (see, for
+      example, Sack, T. M., Lapp, R. L., Gross, M. L., and Kimble, B. J. Int. J. Mass
+      Spectrom. Ion Proc. 1984, 61, 191-213).
+
+
+      Consider all candidates fitting the experimentally determined value and its
+      reported uncertainty when the result of accurate mass measurement is used for
+      formula confirmation. Do not set fixed acceptable error limits for exact mass
+      measurement. Consider the following when using accurate mass data.
+
+
+      When valence rules and candidate compositions encompassing C0-100, H3-74, O0-4,
+      and N0-4 are considered at nominal parent m/z of 118, there are no candidate
+      formulae within 34 ppm of each other. When the ion is of m/z 750.4 and the formulae
+      are in the range C0-100, H25-110, O0-15, and N0-15, there are 626 candidate
+      formulae that are possible within 5 ppm. Thus, for a measurement at m/z 118,
+      an error of only 34 ppm uniquely defines a particular formula, whereas at m/z
+      750, an error (and precision) of 0.018 ppm would be required to eliminate all
+      extraneous possibilities.'
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -309,7 +394,9 @@ data_required:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: na
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements
