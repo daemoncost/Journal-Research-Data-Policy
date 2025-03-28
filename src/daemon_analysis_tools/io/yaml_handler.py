@@ -144,7 +144,16 @@ def load_answers_from_yaml(
                                 answer["text"], answer["explanation"]
                             )
 
-                    if has_discrepancies:
+                    if not has_discrepancies == question.has_discrepancies():
+                        print(
+                            (
+                                f"{publisher_name}/{journal_name}/{question_number} "
+                                "Mismatch between discrapency entry in yaml file and questions: "
+                                f"{has_discrepancies}, {question.has_discrepancies()}"
+                            )
+                        )
+
+                    if question.has_discrepancies():
                         if correct_answer_id is None:
                             print(
                                 (
@@ -194,7 +203,7 @@ def load_answers_from_yaml(
                                     journal_name
                                 ][question_number] = question
                     else:
-                        question._set_correct_answer(0)
+                        resolve_discrepancy(question)
                         assert question.get_final_answer() is not None
                         grouped_questions[publisher_name][journal_name][
                             question_number
