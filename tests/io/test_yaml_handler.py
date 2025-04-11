@@ -379,7 +379,6 @@ class TestYAMLHandlerFunctions(unittest.TestCase):
         self.temp_dir.cleanup()
 
     def test_build_question(self):
-        from daemon_analysis_tools.io.yaml_handler import _build_question
 
         question = _build_question("Q1", self.yaml_content["Q1"])
         self.assertEqual(question.text, "What is 2+2?")
@@ -388,7 +387,6 @@ class TestYAMLHandlerFunctions(unittest.TestCase):
 
     @unittest.mock.patch("daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies", return_value=False)
     def test__load_questions_from_file(self, mock_has_disc):
-        from daemon_analysis_tools.io.yaml_handler import _load_questions_from_file
 
         questions = _load_questions_from_file(
             self.yaml_path, self.publisher, self.journal
@@ -404,7 +402,6 @@ class TestYAMLHandlerFunctions(unittest.TestCase):
 
     @unittest.mock.patch("daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies", return_value=False)
     def test_load_answers_from_yaml(self, mock_has_disc):
-        from daemon_analysis_tools.io.yaml_handler import load_answers_from_yaml
 
         result = load_answers_from_yaml(self.temp_dir.name)
 
