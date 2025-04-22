@@ -3,6 +3,8 @@ from typing import List, Set
 
 from daemon_analysis_tools.processing.normalizer import _normalize_series
 
+from daemon_analysis_tools.io.yaml_base_handler import load_yaml
+
 
 # Function to check if all elements in a series are the same and return differences
 def all_equal(series):
@@ -88,3 +90,49 @@ def normalize_scores(average_scores):
         average_scores["total_score"] - min_score
     ) / (max_score - min_score)
     return average_scores
+
+
+def _get_question_type_lookup(multiple_choice_scores):
+    question_number_lookup = {}
+
+    for key, value in multiple_choice_scores.items():
+        question_number_lookup[value["identifier"]] = key
+
+    return question_number_lookup
+
+
+def get_question_score(
+    question,
+    answer,
+    multiple_choice_scores,
+    question_type,
+    question_number_lookup,
+):
+    if question_type[question] == "open":
+        return 0.0
+
+    answer_text = answer.correct_answer.text.lower()
+
+    question_number = question_number_lookup[question]
+    return multiple_choice_scores[question_number]["answers"][answer_text]
+
+
+def get_journal_score(journal):
+
+    multiple_choice_scores = load_yaml(
+        "../../data/metadata/question_metadata_score.yaml"
+    )
+    question_type = load_yaml("../../data/metadata/question_type.yaml")
+    question_number_lookup = _get_question_type_lookup(multiple_choice_scores)
+
+    score = 0
+    for question, answer in journal.items():
+        score += get_question_score(
+            question,
+            answer,
+            multiple_choice_scores,
+            question_type,
+            question_number_lookup,
+        )
+
+    return score

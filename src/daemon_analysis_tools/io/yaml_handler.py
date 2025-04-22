@@ -8,6 +8,7 @@ from daemon_analysis_tools.datamodels.question import Question
 from daemon_analysis_tools.services.discrepancy_resolver import (
     resolve_discrepancy,
 )
+from daemon_analysis_tools.io.yaml_base_handler import save_yaml_file
 
 
 def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
@@ -43,26 +44,6 @@ def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
 
         journal_dict[question.question_id] = question_dict
     return journal_dict
-
-
-def save_yaml_file(file_path: str, data: Dict) -> None:
-    """Save a dictionary to a YAML file.
-
-    :param file_path: The file path where the YAML file will be saved.
-    :param data: The dictionary to dump into the YAML file.
-    """
-    try:
-        with open(file_path, "x") as file:
-            yaml.dump(data, file, sort_keys=False)
-    except FileExistsError:
-        print(
-            f"{file_path} already exists. No data was written to prevent overwriting "
-            "files modified by users. "
-            "Manually delete this file if necessary."
-        )
-
-    except Exception as e:
-        print(f"Exception: {e} for file {file_path}")
 
 
 def save_answers_to_yaml(
@@ -112,10 +93,14 @@ def load_answers_from_yaml(
 
         for journal_file in journal_files:
             journal_name = os.path.splitext(os.path.basename(journal_file))[0]
-            questions = _load_questions_from_file(journal_file, publisher_name, journal_name)
+            questions = _load_questions_from_file(
+                journal_file, publisher_name, journal_name
+            )
 
             if questions:
-                grouped_questions.setdefault(publisher_name, {})[journal_name] = questions
+                grouped_questions.setdefault(publisher_name, {})[
+                    journal_name
+                ] = questions
 
         if not grouped_questions.get(publisher_name):
             grouped_questions.pop(publisher_name, None)
@@ -124,9 +109,7 @@ def load_answers_from_yaml(
 
 
 def _load_questions_from_file(
-    file_path: str,
-    publisher: str,
-    journal: str
+    file_path: str, publisher: str, journal: str
 ) -> Dict[str, Question]:
     """Helper to load and process questions from a single YAML file."""
     questions: Dict[str, Question] = {}
@@ -141,21 +124,33 @@ def _load_questions_from_file(
         discrepancy_reason = q_dict.get("discrepancy_reason")
 
         if has_discrepancies != question.has_discrepancies():
-            print(f"{publisher}/{journal}/{q_number} Mismatch in discrepancy flags: {has_discrepancies}, {question.has_discrepancies()}")
+            print(
+                f"{publisher}/{journal}/{q_number} Mismatch in discrepancy flags: {has_discrepancies}, {question.has_discrepancies()}"
+            )
 
         if question.has_discrepancies():
             if correct_answer_id is None:
-                print(f"{publisher}/{journal}/{q_number} has inconsistencies: skipped")
+                print(
+                    f"{publisher}/{journal}/{q_number} has inconsistencies: skipped"
+                )
                 continue
             if discrepancy_reason is None:
-                print(f"Missing discrepancy_reason for {q_number} in {journal}/{publisher}")
+                print(
+                    f"Missing discrepancy_reason for {q_number} in {journal}/{publisher}"
+                )
                 continue
             if isinstance(correct_answer_id, dict):
                 correct_answer_id = correct_answer_id["text"]
             try:
-                resolve_discrepancy(question, correct_answer=correct_answer_id, discrepancy_reason=discrepancy_reason)
+                resolve_discrepancy(
+                    question,
+                    correct_answer=correct_answer_id,
+                    discrepancy_reason=discrepancy_reason,
+                )
             except ValueError:
-                print(f"correct_answer_id = {correct_answer_id} in {q_number} of {journal}/{publisher}")
+                print(
+                    f"correct_answer_id = {correct_answer_id} in {q_number} of {journal}/{publisher}"
+                )
                 raise
         else:
             resolve_discrepancy(question)
@@ -171,7 +166,7 @@ def _build_question(question_number: str, data: dict) -> Question:
     question = Question(
         question_id=question_number,
         text=data["text"],
-        is_open=False  # TODO: false is a placeholder fix
+        is_open=False,  # TODO: false is a placeholder fix
     )
 
     for answer_id, answer in data.items():
