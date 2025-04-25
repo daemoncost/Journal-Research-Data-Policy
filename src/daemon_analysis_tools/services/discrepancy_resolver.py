@@ -1,4 +1,3 @@
-import numpy as np
 from typing import Optional, Union
 
 from daemon_analysis_tools.datamodels.question import Answer, Question
@@ -56,9 +55,7 @@ def _prompt_for_resolution(question: Question) -> tuple[int, str]:
         except ValueError:
             print("Please enter a number.")
 
-    discrepancy_reason = input(
-        "Enter the reason for selecting this answer: "
-    ).strip()
+    discrepancy_reason = input("Enter the reason for selecting this answer: ").strip()
     return correct_index, discrepancy_reason
 
 
@@ -84,15 +81,11 @@ def resolve_discrepancy(
     if interactive and correct_answer is None:
         correct_answer, discrepancy_reason = _prompt_for_resolution(question)
 
-    selected_answer, correct_index = _select_correct_answer(
-        question, correct_answer
-    )
+    selected_answer, correct_index = _select_correct_answer(question, correct_answer)
 
     if discrepancy_reason is None:
         raise ValueError(
             "You must provide `discrepancy_reason` to resolve discrepancies."
         )
 
-    question._set_correct_answer(
-        selected_answer, discrepancy_reason, correct_index
-    )
+    question._set_correct_answer(selected_answer, discrepancy_reason, correct_index)

@@ -5,10 +5,8 @@ from typing import Dict, List, Optional
 import yaml
 
 from daemon_analysis_tools.datamodels.question import Question
-from daemon_analysis_tools.services.discrepancy_resolver import (
-    resolve_discrepancy,
-)
 from daemon_analysis_tools.io.yaml_base_handler import save_yaml_file
+from daemon_analysis_tools.services.discrepancy_resolver import resolve_discrepancy
 
 
 def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
@@ -109,7 +107,9 @@ def load_answers_from_yaml(
 
 
 def _load_questions_from_file(
-    file_path: str, publisher: str, journal: str
+    file_path: str,
+    publisher: str,
+    journal: str,
 ) -> Dict[str, Question]:
     """Helper to load and process questions from a single YAML file."""
     questions: Dict[str, Question] = {}
@@ -119,37 +119,44 @@ def _load_questions_from_file(
 
     for q_number, q_dict in yaml_data.items():
         question = _build_question(q_number, q_dict)
-        correct_answer_id = q_dict["correct_answer"]
-        has_discrepancies = q_dict["has_discrepancies"]
-        discrepancy_reason = q_dict.get("discrepancy_reason")
+        correct_id = q_dict["correct_answer"]
+        has_disc = q_dict["has_discrepancies"]
+        reason = q_dict.get("discrepancy_reason")
 
-        if has_discrepancies != question.has_discrepancies():
+        if has_disc != question.has_discrepancies():
             print(
-                f"{publisher}/{journal}/{q_number} Mismatch in discrepancy flags: {has_discrepancies}, {question.has_discrepancies()}"
+                f"{publisher}/{journal}/{q_number} "
+                f"Mismatch in discrepancy flags: {has_disc}, "
+                f"{question.has_discrepancies()}"
             )
 
         if question.has_discrepancies():
-            if correct_answer_id is None:
+            if correct_id is None:
                 print(
-                    f"{publisher}/{journal}/{q_number} has inconsistencies: skipped"
+                    f"{publisher}/{journal}/{q_number} " "has inconsistencies: skipped"
                 )
                 continue
-            if discrepancy_reason is None:
+
+            if reason is None:
                 print(
-                    f"Missing discrepancy_reason for {q_number} in {journal}/{publisher}"
+                    f"Missing discrepancy_reason for {q_number} "
+                    f"in {journal}/{publisher}"
                 )
                 continue
-            if isinstance(correct_answer_id, dict):
-                correct_answer_id = correct_answer_id["text"]
+
+            if isinstance(correct_id, dict):
+                correct_id = correct_id["text"]
+
             try:
                 resolve_discrepancy(
                     question,
-                    correct_answer=correct_answer_id,
-                    discrepancy_reason=discrepancy_reason,
+                    correct_answer=correct_id,
+                    discrepancy_reason=reason,
                 )
             except ValueError:
                 print(
-                    f"correct_answer_id = {correct_answer_id} in {q_number} of {journal}/{publisher}"
+                    f"correct_answer_id = {correct_id} "
+                    f"in {q_number} of {journal}/{publisher}"
                 )
                 raise
         else:

@@ -1,9 +1,8 @@
 import string
 from typing import List, Set
 
-from daemon_analysis_tools.processing.normalizer import _normalize_series
-
 from daemon_analysis_tools.io.yaml_base_handler import load_yaml
+from daemon_analysis_tools.processing.normalizer import _normalize_series
 
 
 # Function to check if all elements in a series are the same and return differences
@@ -65,20 +64,13 @@ def assign_score(question_num, answer, multiple_choice_scores):
     return 0
 
 
-def calculate_scores(
-    data_duplicated, question_num_to_text, multiple_choice_scores
-):
+def calculate_scores(data_duplicated, question_num_to_text, multiple_choice_scores):
     for question_num, question_text in question_num_to_text.items():
         data_duplicated[question_text + "_score"] = data_duplicated[
             question_text
-        ].apply(
-            lambda x: assign_score(question_num, x, multiple_choice_scores)
-        )
+        ].apply(lambda x: assign_score(question_num, x, multiple_choice_scores))
     data_duplicated["total_score"] = data_duplicated[
-        [
-            question_text + "_score"
-            for question_text in question_num_to_text.values()
-        ]
+        [question_text + "_score" for question_text in question_num_to_text.values()]
     ].sum(axis=1)
     return data_duplicated
 
@@ -86,9 +78,9 @@ def calculate_scores(
 def normalize_scores(average_scores):
     min_score = average_scores["total_score"].min()
     max_score = average_scores["total_score"].max()
-    average_scores["normalized_score"] = (
-        average_scores["total_score"] - min_score
-    ) / (max_score - min_score)
+    average_scores["normalized_score"] = (average_scores["total_score"] - min_score) / (
+        max_score - min_score
+    )
     return average_scores
 
 
@@ -118,7 +110,6 @@ def get_question_score(
 
 
 def get_journal_score(journal):
-
     multiple_choice_scores = load_yaml(
         "../../data/metadata/question_metadata_score.yaml"
     )

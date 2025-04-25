@@ -10,12 +10,12 @@ from daemon_analysis_tools.datamodels.question import Question
 
 # Import the functions to be tested.
 from daemon_analysis_tools.io.yaml_handler import (
+    _build_question,
+    _load_questions_from_file,
     build_journal_dict,
+    load_answers_from_yaml,
     save_answers_to_yaml,
     save_yaml_file,
-    load_answers_from_yaml,
-    _load_questions_from_file,
-    _build_question
 )
 from daemon_analysis_tools.services.discrepancy_resolver import resolve_discrepancy
 
@@ -379,15 +379,16 @@ class TestYAMLHandlerFunctions(unittest.TestCase):
         self.temp_dir.cleanup()
 
     def test_build_question(self):
-
         question = _build_question("Q1", self.yaml_content["Q1"])
         self.assertEqual(question.text, "What is 2+2?")
         self.assertEqual(len(question.answers), 2)
         self.assertEqual(question.answers[0].text, "4")
 
-    @unittest.mock.patch("daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies", return_value=False)
+    @unittest.mock.patch(
+        "daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies",
+        return_value=False,
+    )
     def test__load_questions_from_file(self, mock_has_disc):
-
         questions = _load_questions_from_file(
             self.yaml_path, self.publisher, self.journal
         )
@@ -398,15 +399,14 @@ class TestYAMLHandlerFunctions(unittest.TestCase):
         self.assertEqual(len(q.answers), 2)
         self.assertIsNotNone(q.correct_answer)  # Optional: validate it was resolved
 
-
-
-    @unittest.mock.patch("daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies", return_value=False)
+    @unittest.mock.patch(
+        "daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies",
+        return_value=False,
+    )
     def test_load_answers_from_yaml(self, mock_has_disc):
-
         result = load_answers_from_yaml(self.temp_dir.name)
 
         self.assertIn(self.publisher, result)
         self.assertIn(self.journal, result[self.publisher])
         self.assertIn("Q1", result[self.publisher][self.journal])
         self.assertIsNotNone(result[self.publisher][self.journal]["Q1"].correct_answer)
-
