@@ -1,3 +1,4 @@
+
 *~
 *__*cache__*
 *.pyc
@@ -7,3 +8,4 @@
 .coverage
 *test_coverage_html_report
 *build
+*.ipynb_checkpoints*
