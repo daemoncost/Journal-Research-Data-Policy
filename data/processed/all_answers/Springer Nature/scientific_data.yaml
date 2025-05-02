@@ -1,0 +1,192 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: "\u201CScientific Data is an open-access, peer-reviewed journal for\
+      \ descriptions of scientifically valuable datasets\u2026 All manuscripts must\
+      \ include a Data Availability Statement.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public data sharing of all data required.
+    explanation: "\u201CAll datasets must be made publicly available and accessible.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Public data sharing of all data on a FAIR repository required.
+    explanation: "\u201CWe support the FAIR Data Principles, encouraging the use of\
+      \ open, community-recognised repositories.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: "\u201CAll manuscripts must include a Data Availability Statement,\
+      \ describing how readers can access the data underlying the study.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: "\u201CDatasets must be cited with DOIs or permanent accession numbers.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Required data must be available prior to official publication.
+    explanation: "\u201CData must be publicly available at the time of peer review.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Only FAIR repositories recommended in RDP.
+    explanation: "\u201CAuthors are encouraged to deposit their data in community-recognised,\
+      \ open repositories that support FAIR principles.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Open access license required for shared data.
+    explanation: "\u201CWe recommend licensing data under Creative Commons (CC0 or\
+      \ CC-BY).\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Confirmation of shared data or code by referee required.
+    explanation: "\u201CReferees are expected to verify that the data supporting the\
+      \ conclusions are publicly available.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Genetic data; Clinical trial data; Geospatial data
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Genetic data; Clinical trial data
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: "\u201CAuthors are encouraged to make code openly available in repositories\
+      \ such as GitHub or Zenodo.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: "\u201CWe recommend including information on software versions and\
+      \ dependencies to aid reproducibility.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: "\u201CAuthors are encouraged to cite software using versioned DOIs.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: "\u201CWe encourage best practices in software development and documentation.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: Not mentioned
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: "\u201CAuthors should provide adequate documentation to support code\
+      \ reuse.\u201D"
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: Not mentioned
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 1
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: Not mentioned
+  correct_answer: null
+  discrepancy_reason: null
