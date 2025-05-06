@@ -1,8 +1,6 @@
 import string
 from typing import List, Set
-
 from daemon_analysis_tools.processing.normalizer import _normalize_series
-
 from daemon_analysis_tools.io.yaml_base_handler import load_yaml
 
 
@@ -101,6 +99,10 @@ def _get_question_type_lookup(multiple_choice_scores):
     return question_number_lookup
 
 
+def _get_maximum_possible_score(multiple_choice_scores):
+    return len(list(multiple_choice_scores.keys()))
+
+
 def get_question_score(
     question,
     answer,
@@ -125,6 +127,8 @@ def get_journal_score(journal):
     question_type = load_yaml("../../data/metadata/question_type.yaml")
     question_number_lookup = _get_question_type_lookup(multiple_choice_scores)
 
+    score_norm = _get_maximum_possible_score(multiple_choice_scores)
+
     score = 0
     for question, answer in journal.items():
         score += get_question_score(
@@ -135,4 +139,4 @@ def get_journal_score(journal):
             question_number_lookup,
         )
 
-    return score
+    return score / score_norm
