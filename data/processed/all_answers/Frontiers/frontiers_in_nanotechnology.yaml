@@ -1,5 +1,6 @@
 rdp_exist:
   text: 1. Existence of research data policy
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Research Data Policy (RDP) exists.
@@ -17,8 +18,10 @@ rdp_exist:
     explanation: Frontiers is committed to open science and open data; we require
       that authors make available all data relevant to the conclusions of the manuscript.
   correct_answer: null
+  discrepancy_reason: null
 data_sharing:
   text: 3. Data sharing requirements in RDP
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Public data sharing of all data required.
@@ -31,11 +34,17 @@ data_sharing:
     explanation: Frontiers requires that authors make the "minimal data set" underlying
       the findings described and used to reach the conclusions of the manuscript,
       available to any qualified researchers.
-  correct_answer: 1
-  discrepancy_reason: language understanding
+  correct_answer:
+    text: Public data sharing of all data required.
+    explanation: Frontiers requires that authors make the "minimal data set" underlying
+      the findings described and used to reach the conclusions of the manuscript,
+      available to any qualified researchers. However, exceptions are granted if data
+      cannot be made publicly available for legal or ethical reasons.
+  discrepancy_reason: Language understanding
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public data sharing on a FAIR repository encouraged.
@@ -48,8 +57,10 @@ data_fair:
       \ However, exceptions are granted if data cannot be made publicly available\
       \ for legal or ethical reasons."
   correct_answer: null
+  discrepancy_reason: null
 data_availability:
   text: 2. Data availability statement
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Required according to the RDP.
@@ -64,8 +75,10 @@ data_availability:
     explanation: Data availability statements are required for all articles published
       with Frontiers.
   correct_answer: null
+  discrepancy_reason: null
 data_citability:
   text: '5. Citability and findability of data '
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: DOIs or other persistent identifiers recommended for datasets or codes.
@@ -89,10 +102,21 @@ data_citability:
 
       [DATASET] Author names. (year) Data Title. Repository name. Version. Persistent
       identifier'
-  correct_answer: 0
-  discrepancy_reason: language understanding
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Authors are encouraged to cite all datasets generated or analyzed
+      in the study. Where datasets are cited, they should be included in the references
+      list to maximize future usability.
+
+
+      The following format should be used:
+
+      [DATASET] Author names. (year) Data Title. Repository name. Version. Persistent
+      identifier.'
+  discrepancy_reason: Language understanding
 data_timing:
   text: 7. Timing of data release
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Required data must be available after official publication.
@@ -100,8 +124,8 @@ data_timing:
       are required to make certain types of data available to readers at the time
       of publication in specific, stable, community-supported repositories such as
       those listed below. Authors are encouraged to contact our data availability
-      office at datapolicy@frontiersin.org prior to submission with any queries concerning
-      data reporting.
+      office at datapolicy [at] frontiersin.org prior to submission with any queries
+      concerning data reporting.
   1:
     text: Required data must be available prior to official publication.
     explanation: 'Only for mandatory data:
@@ -110,10 +134,18 @@ data_timing:
       "Authors are required to deposit the following mandatory data types in public,
       community-supported repositories, such as those listed below, prior to publication
       of an associated Frontiers manuscript."'
-  correct_answer: 0
-  discrepancy_reason: language understanding
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: To comply with best practice in their field of research, authors
+      are required to make certain types of data available to readers at the time
+      of publication in specific, stable, community-supported repositories such as
+      those listed below. Authors are encouraged to contact our data availability
+      office at datapolicy [at] frontiersin.org prior to submission with any queries
+      concerning data reporting.
+  discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Public online repositories recommended in RDP.
@@ -124,10 +156,16 @@ data_sharing_method:
   1:
     text: No data sharing method recommended in RDP.
     explanation: no text
-  correct_answer: 0
-  discrepancy_reason: difficulty in matching information and question
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: 'To comply with best practice in their field of research, authors
+      are required to make certain types of data available to readers at the time
+      of publication in specific, stable, community-supported repositories such as
+      those listed below. '
+  discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of data/code licenses in RDP.
@@ -136,8 +174,10 @@ data_licenses:
     text: No mention of data/code licenses in RDP.
     explanation: no text
   correct_answer: null
+  discrepancy_reason: null
 data_referee:
   text: 10. Referee guidelines concerning research data
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Data sharing policy not mentioned in refereeing guidelines.
@@ -149,14 +189,17 @@ data_referee:
       scientific quality, rigor, and validity. They evaluate the methodology of a
       study for solidity and rigor, and ensure the research provides valid conclusions
       and is supported by sufficient data.
-  correct_answer: 1
-  discrepancy_reason: difficulty in matching information and question
+  correct_answer:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text
+  discrepancy_reason: Language understanding
 data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: 'Authors are encouraged to consider deposition in public, community-supported
@@ -173,13 +216,15 @@ data_recommended:
       Brain imaging data; neuroimaging data; Trait data; Phenology data; Any data;
       Enzymology and biocatalysis data
     explanation: ''
-  correct_answer: 0
+  correct_answer: null
+  discrepancy_reason: null
 data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: 'Authors are required to deposit the following mandatory data types in public,
@@ -201,9 +246,11 @@ data_required:
       profiling data; Small molecule, protein, protein complex data structural data;
       Taxonomy data
     explanation: ''
-  correct_answer: 0
+  correct_answer: null
+  discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Code sharing encouraged but optional.
@@ -217,10 +264,15 @@ code_required:
     explanation: Frontiers is committed to open science and open data; we require
       that authors make available all code used to conduct their research available
       to other researchers.
-  correct_answer: 0
-  discrepancy_reason: language understanding
+  correct_answer:
+    text: Code sharing required.
+    explanation: Frontiers is committed to open science and open data; we require
+      that authors make available all code used to conduct their research available
+      to other researchers.
+  discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of dependencies for research code.
@@ -229,8 +281,10 @@ code_reproducibility:
     text: No mention of dependencies for research code.
     explanation: no text
   correct_answer: null
+  discrepancy_reason: null
 code_versioning:
   text: 15. Versioning and persistent identifiers
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Journal policies encourage/recommend a persistent identifier or specifying
@@ -243,10 +297,17 @@ code_versioning:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: no text
-  correct_answer: 0
-  discrepancy_reason: difficulty in matching information and question
+  correct_answer:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: Code necessary to enable the reproduction of an experiment should
+      be clearly indicated in the Materials and Methods section, and where possible
+      code should be uploaded to an online repository (such as github.com or code
+      ocean) providing a global persistent link/identifier.
+  discrepancy_reason: Text not found
 code_quality:
   text: 16. Code Quality Standards
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: The journal policies encourage/recommend certain standards for code.
@@ -257,10 +318,16 @@ code_quality:
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: no text
-  correct_answer: 0
-  discrepancy_reason: difficulty in matching information and question
+  correct_answer:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: Our policies on code availability are informed by community-driven
+      standards, which Frontiers endorses, such as the Transparency and Openness (TOP)
+      guidelines and the joint declaration of data citation principles produced by
+      FORCE11.
+  discrepancy_reason: Text not found
 code_autotest:
   text: 17. Automatic Testing
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of automatic testing to verify code functionality.
@@ -269,8 +336,10 @@ code_autotest:
     text: No mention of automatic testing to verify code functionality.
     explanation: no text
   correct_answer: null
+  discrepancy_reason: null
 code_docs:
   text: 18. Code Documentation
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of standards for code documentation.
@@ -279,8 +348,10 @@ code_docs:
     text: No mention of standards for code documentation.
     explanation: no text
   correct_answer: null
+  discrepancy_reason: null
 code_linting:
   text: 19. Linting Standards
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of linting standards for code.
@@ -289,8 +360,10 @@ code_linting:
     text: No mention of linting standards for code.
     explanation: no text
   correct_answer: null
+  discrepancy_reason: null
 code_development:
   text: 20. Code Development
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of standards for code development such as continuous integration.
@@ -299,3 +372,4 @@ code_development:
     text: No mention of standards for code development such as continuous integration.
     explanation: no text
   correct_answer: null
+  discrepancy_reason: null

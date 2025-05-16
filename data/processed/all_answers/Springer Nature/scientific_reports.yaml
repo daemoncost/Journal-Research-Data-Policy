@@ -66,7 +66,37 @@ data_sharing:
     explanation: The journal strongly encourages that all datasets on which the conclusions
       of the paper rely should be available to readers. (options 2 and 4 are both
       true)
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing required only for specific types of data.
+    explanation: 'For a number of data types, submission to a community-endorsed,
+      public repository is
+
+      mandatory. See our list of mandated data types.
+
+      [from Springer Nature generic RDP]
+
+
+      ---------------------
+
+      SPECIAL NOTE CONCERNING SCIENTIFIC REPORTS:
+
+
+      Sharing datasets
+
+      A condition of publication in Scientific Reports is that authors make materials,
+      data and associated protocols promptly available to others without preconditions.
+
+
+      Datasets must be made freely available to readers from the date of publication
+      and must be provided to Editorial Board Members and referees at submission,
+      for the purposes of evaluating the manuscript.
+
+      -----------------------
+
+      NONETHELESS, A POSSIBLE DATA AVAILABILITY STATEMENT THAT IS ALLOWED READS:
+
+      "The datasets generated during and/or analysed during the current study are
+      available from the corresponding author on reasonable request."'
   discrepancy_reason: Text not found
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -88,7 +118,17 @@ data_fair:
     text: Public data sharing on a FAIR repository encouraged.
     explanation: We encourage authors to ensure that their datasets are either deposited
       in publicly available repositories (where available and appropriate)
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: "For the following data types submission to a community-endorsed,\
+      \ public repository is\nmandatory. Persistent identifiers (DOIs and accession\
+      \ numbers) assigned to the data by the\nrepository must be appropriately cited\
+      \ and referenced in the published article.\n\nCrystallographic data for small\
+      \ molecules \u2192 Cambridge Structural Database (CSD/CCDC)\n\n[Note: CCDC supports\
+      \ FAIR Data principles: see:\nhttps://www.ccdc.cam.ac.uk/solutions/about-the-csd/fair-data-principles/\n\
+      https://www.ccdc.cam.ac.uk/discover/blog/our-approach-to-the-fair-data-principles/]"
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -187,7 +227,18 @@ data_licenses:
   1:
     text: No mention of data/code licenses in RDP.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'Authors are encouraged to manage subsequent code versions and to
+      use a license [link to:
+
+      https://opensource.org/licenses] approved by the open source initiative.
+
+
+      [Note: again, this is from the additional Nature Portfolio document, not from
+      the Springer-
+
+      Nature RDP]'
   discrepancy_reason: Text not found
 data_referee:
   text: 10. Referee guidelines concerning research data
@@ -241,12 +292,19 @@ data_required:
       structure data; Gene expression data; Crystallographic data for small molecules'
     explanation: ''
   1:
-    text: Protein sequences;  DNA and RNA sequences;  DNA and RNA sequencing data;  Genetic
-      polymorphisms;  Deep sequencing data; Linked genotype and phenotype data;  Macromolecular
-      structure; Microarray data; Crystallographic data for small molecules; Proteomics
-      data
+    text: 'Protein sequences; DNA and RNA sequences; DNA and RNA sequencing data;
+      Genetic polymorphisms; Linked genotype and phenotype data; Deep sequencing data;
+      Macromolecular structure; Microarray data; Crystallographic data for small molecules;
+      Proteomics data; '
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 'DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence
+      data;
+
+      Proteomics data; Genetic variation data; Functional genomics data; Macromolecular
+
+      structure data; Gene expression data; Crystallographic data for small molecules'
+    explanation: ''
   discrepancy_reason: Formatting inconsistent
 code_required:
   text: 13. Code sharing requirements
@@ -266,7 +324,15 @@ code_required:
     explanation: Authors must make available upon request, to editors and reviewers,
       any previously unreported custom computer code or algorithm used to generate
       results that are reported in the paper and central to its main claims.
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing required.
+    explanation: 'For all studies using custom code or mathematical algorithm that
+      is central to the conclusions, authors must provide any previously unreported
+      custom computer code or algorithm used to generate results upon editor or reviewer
+      request. We reserve the right to decline the manuscript if important code is
+      unavailable.
+
+      [from Scientific Reports Editorial Policies]'
   discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility
@@ -295,9 +361,9 @@ code_versioning:
   1:
     text: Journal policies encourage/recommend a persistent identifier or specifying
       a version of developed code.
-    explanation: ' Code should be deposited in a DOI-minting repository such as Zenodo
+    explanation: Code should be deposited in a DOI-minting repository such as Zenodo
       or Code Ocean and cited in the reference list following the guidelines described
-      here.'
+      here.
   correct_answer: null
   discrepancy_reason: null
 code_quality:

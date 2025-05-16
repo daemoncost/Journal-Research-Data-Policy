@@ -23,6 +23,9 @@ dynamic = [
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+"daemon_analysis_tools" = ["metadata/*.yaml"]
+
 [tool.setuptools.dynamic]
 dependencies = {file = "requirements.txt"}
 description = {file = "description.txt"}

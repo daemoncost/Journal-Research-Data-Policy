@@ -1,6 +1,6 @@
 1:
   identifier: rdp_exist
-  text: "1. Existence of research data policy1. Existence of research data policy"
+  text: "1. Existence of research data policy"
   type: multiple_choice
 3:
   identifier: data_sharing

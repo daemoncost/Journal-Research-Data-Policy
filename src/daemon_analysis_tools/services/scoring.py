@@ -1,5 +1,6 @@
+import os
 import string
-from typing import List, Set
+from typing import Dict, List, Set
 
 from daemon_analysis_tools.io.yaml_base_handler import load_yaml
 from daemon_analysis_tools.processing.normalizer import _normalize_series
@@ -93,17 +94,56 @@ def _get_question_type_lookup(multiple_choice_scores):
     return question_number_lookup
 
 
-def _get_maximum_possible_score(multiple_choice_scores):
+def _get_maximum_possible_score(multiple_choice_scores: Dict) -> float:
+    """
+    Returns the maximum score a journal can reach, which is the number of all
+    multiple choice questions.
+
+    Parameters
+    ----------
+    multiple_choice_scores : TYPE
+        Lookup dictionary for type of question.
+
+    Returns
+    -------
+    float
+        Maximum possible score.
+
+    """
+
     return len(list(multiple_choice_scores.keys()))
 
 
 def get_question_score(
-    question,
-    answer,
-    multiple_choice_scores,
-    question_type,
-    question_number_lookup,
-):
+    question: str,
+    answer: str,
+    multiple_choice_scores: Dict,
+    question_type: Dict,
+    question_number_lookup: Dict,
+) -> float:
+    """
+    Returns a numerical value the reflects how strict the RDP is on a given
+    question.
+
+    Parameters
+    ----------
+    question : str
+        Handle text of the question.
+    answer : str
+        Text of the answer.
+    multiple_choice_scores : Dict
+        Lookup dictionary for type of question.
+    question_type : Dict
+        Type of question: multiple choice/text answer.
+    question_number_lookup : Dict
+        Lookup of which number the question is.
+
+    Returns
+    -------
+    float
+        Sore of a singel question. Float between 0 and 1.
+
+    """
     if question_type[question] == "open":
         return 0.0
 
@@ -113,11 +153,28 @@ def get_question_score(
     return multiple_choice_scores[question_number]["answers"][answer_text]
 
 
-def get_journal_score(journal):
+def get_journal_score(journal: Dict) -> float:
+    """
+    Returns a numerical value the reflects how strict the RDP of a journal is.
+
+    Parameters
+    ----------
+    journal : dict
+        Dictionary containing the rdp encoding of a specific journal.
+
+    Returns
+    -------
+    float
+        Score of the journal normalised by the maximum possible score.
+
+    """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(base_dir, "..", "metadata")
+
     multiple_choice_scores = load_yaml(
-        "../../data/metadata/question_metadata_score.yaml"
+        os.path.join(data_dir, "question_metadata_score.yaml")
     )
-    question_type = load_yaml("../../data/metadata/question_type.yaml")
+    question_type = load_yaml(os.path.join(data_dir, "question_type.yaml"))
     question_number_lookup = _get_question_type_lookup(multiple_choice_scores)
 
     score_norm = _get_maximum_possible_score(multiple_choice_scores)

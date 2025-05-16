@@ -157,7 +157,16 @@ data_sharing_method:
       Availability Statement. Please note that data should only be shared if it is
       ethically correct to do so, where this does not violate the protection of human
       subjects, or other valid ethical, privacy, or security concerns.
-  correct_answer: 1
+  correct_answer:
+    text: Data is shared upon request to authors in RDP.
+    explanation: This journal applies the Taylor & Francis share upon reasonable request
+      data sharing policy. Authors agree to make data and materials supporting the
+      results or analyses presented in their paper available upon reasonable request.
+      It is up to the author to determine whether a request is reasonable. Authors
+      are required to cite any data sets referenced in the article and provide a Data
+      Availability Statement. Please note that data should only be shared if it is
+      ethically correct to do so, where this does not violate the protection of human
+      subjects, or other valid ethical, privacy, or security concerns.
   discrepancy_reason: Difficulty in matching information and question
 data_licenses:
   text: 9. Recommended/required licenses
@@ -183,7 +192,11 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: https://editorresources.taylorandfrancis.com/reviewer-guidelines/
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Peer reviewers and editors will be considering a manuscript\u2019\
+      s data availability statement and whether the authors have complied with the\
+      \ journal\u2019s data sharing policy."
   discrepancy_reason: Difficulty in matching information and question
 data_recommended:
   text: '11. Unique policies for data types
@@ -231,7 +244,13 @@ code_required:
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer: 1
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "You may have created new code during your research; perhaps as a\
+      \ direct output of your work or as a tool to help you analyze the data you\u2019\
+      ve collected. You should also consider including this in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results."
   discrepancy_reason: Difficulty in matching information and question
 code_reproducibility:
   text: 14. Code Reproducibility

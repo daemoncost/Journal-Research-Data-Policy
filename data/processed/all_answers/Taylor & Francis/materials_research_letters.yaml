@@ -138,7 +138,14 @@ data_timing:
       with the data set(s). If you have selected to provide a pre-registered DOI,
       please be prepared to share the reviewer URL associated with your data deposit,
       upon request by reviewers.
-  correct_answer: 1
+  correct_answer:
+    text: Required data must be available prior to review process.
+    explanation: At the point of submission, you will be asked if there is a data
+      set associated with the paper. If you reply yes, you will be asked to provide
+      the DOI, pre-registered DOI, hyperlink, or other persistent identifier associated
+      with the data set(s). If you have selected to provide a pre-registered DOI,
+      please be prepared to share the reviewer URL associated with your data deposit,
+      upon request by reviewers.
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method

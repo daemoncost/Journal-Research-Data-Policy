@@ -12,7 +12,13 @@ rdp_exist:
   1:
     text: Research Data Policy (RDP) does not exists.
     explanation: Some papers contain share upon request statements, some don't.
-  correct_answer: 0
+  correct_answer:
+    text: Research Data Policy (RDP) exists.
+    explanation: This journal supports Open Science Badges. The Open Science Badges
+      program was designed by the Center for Open Science (COS) to acknowledge open
+      science practices. Badges are offered as incentives for researchers to share
+      data, materials, or to preregister, and are a signal to the reader that the
+      content of the study has been made available in perpetuity
   discrepancy_reason: Language understanding
 data_sharing:
   text: 3. Data sharing requirements in RDP
@@ -25,7 +31,10 @@ data_sharing:
   1:
     text: Data sharing only with editors and referees (no public sharing)
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing of all data required.
+    explanation: The Open Data badge is earned for making publicly available the digitally-shareable
+      data necessary to reproduce the reported results.
   discrepancy_reason: Language understanding
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -39,7 +48,10 @@ data_fair:
   1:
     text: Public data sharing on a FAIR repository not mentioned in RDP.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: We highly encourage researchers to consider the FAIR Data Principles
+      when depositing data.
   discrepancy_reason: Language understanding
 data_availability:
   text: 2. Data availability statement
@@ -54,7 +66,10 @@ data_availability:
     explanation: 'Author instructions do not contain a data sharing policy: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=gmcl20
 
       The responses hereafter are based on looking through some papers in that journal.'
-  correct_answer: 0
+  correct_answer:
+    text: Required according to the RDP.
+    explanation: Authors are required to provide a data availability statement, detailing
+      where data associated with a paper can be found and how it can be accessed
   discrepancy_reason: Language understanding
 data_citability:
   text: '5. Citability and findability of data '
@@ -67,7 +82,10 @@ data_citability:
   1:
     text: No mention of DOIs or other persistent identifiers for datasets or codes.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: We recommend choosing a repository that can mint a persistent digital
+      identifier, such as a digital object identifier (DOI).
   discrepancy_reason: Language understanding
 data_timing:
   text: 7. Timing of data release
@@ -81,7 +99,11 @@ data_timing:
   1:
     text: Timing of data availability not adressed in RDP.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available prior to review process.
+    explanation: At the point of submission, you will be asked to provide the DOI,
+      pre-registered DOI, hyperlink, or other persistent identifier associated with
+      the data set(s).
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -94,20 +116,25 @@ data_sharing_method:
   1:
     text: No data sharing method recommended in RDP.
     explanation: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=gfer20
-  correct_answer: 0
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: We recommend authors deposit data in a recognized data repository
+      before submission
   discrepancy_reason: Language understanding
 data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: No mention of data/code licenses in RDP.
     explanation: no text
   1:
     text: No mention of data/code licenses in RDP.
     explanation: https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=gfer20
-  correct_answer: 0
-  discrepancy_reason: Language understanding
+  correct_answer:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text
+  discrepancy_reason: null
 data_referee:
   text: 10. Referee guidelines concerning research data
   N. encoders: 2
@@ -120,7 +147,11 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: https://editorresources.taylorandfrancis.com/reviewer-guidelines/
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Peer reviewers and editors will be considering a manuscript\u2019\
+      s data availability statement and whether the authors have complied with the\
+      \ journal\u2019s data sharing policy."
   discrepancy_reason: Language understanding
 data_recommended:
   text: '11. Unique policies for data types
@@ -129,15 +160,17 @@ data_recommended:
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: no text
     explanation: ''
   1:
     text: no text
     explanation: ''
-  correct_answer: 0
-  discrepancy_reason: Language understanding
+  correct_answer:
+    text: no text
+    explanation: ''
+  discrepancy_reason: null
 data_required:
   text: '12. Unique policies for data types
 
@@ -145,15 +178,17 @@ data_required:
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: no text
     explanation: ''
   1:
     text: no text
     explanation: ''
-  correct_answer: 0
-  discrepancy_reason: Language understanding
+  correct_answer:
+    text: no text
+    explanation: ''
+  discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
@@ -164,7 +199,9 @@ code_required:
   1:
     text: Code sharing encouraged but optional.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing not mentioned.
+    explanation: no text
   discrepancy_reason: Language understanding
 code_reproducibility:
   text: 14. Code Reproducibility

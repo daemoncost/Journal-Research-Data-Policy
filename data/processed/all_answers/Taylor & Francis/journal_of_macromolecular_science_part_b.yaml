@@ -138,7 +138,14 @@ data_timing:
       with the data set(s). If you have selected to provide a pre-registered DOI,
       please be prepared to share the reviewer URL associated with your data deposit,
       upon request by reviewers.
-  correct_answer: 1
+  correct_answer:
+    text: Required data must be available prior to review process.
+    explanation: At the point of submission, you will be asked if there is a data
+      set associated with the paper. If you reply yes, you will be asked to provide
+      the DOI, pre-registered DOI, hyperlink, or other persistent identifier associated
+      with the data set(s). If you have selected to provide a pre-registered DOI,
+      please be prepared to share the reviewer URL associated with your data deposit,
+      upon request by reviewers.
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -229,7 +236,7 @@ data_required:
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: Code sharing encouraged but optional.
     explanation: "You should also consider including code in your data sharing plan,\
@@ -242,8 +249,12 @@ code_required:
       ve collected. You should also consider including this in your data sharing plan,\
       \ especially if the code you\u2019ve created is required for others to validate\
       \ your results."
-  correct_answer: 0
-  discrepancy_reason: Language understanding
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "You should also consider including code in your data sharing plan,\
+      \ especially if the code you\u2019ve created is required for others to validate\
+      \ your results.  "
+  discrepancy_reason: null
 code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 2

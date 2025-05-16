@@ -1,5 +1,6 @@
 rdp_exist:
   text: 1. Existence of research data policy
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Research Data Policy (RDP) exists.
@@ -10,9 +11,15 @@ rdp_exist:
     text: Research Data Policy (RDP) exists.
     explanation: "2D Materials has adopted IOP Publishing\u2019s research data policy.\
       \ Please check that your article complies with the policy before submission."
-  correct_answer: null
+  correct_answer:
+    text: Research Data Policy (RDP) exists.
+    explanation: IOP Publishing recognises the incredible potential of the open science.
+      Our Journals have adopted progressive data policies and we include data availability
+      statement in all our articles.
+  discrepancy_reason: null
 data_sharing:
   text: 3. Data sharing requirements in RDP
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Data sharing encouraged but optional.
@@ -32,10 +39,14 @@ data_sharing:
       \ data must be made available upon request. So I seleced the weaker option \"\
       Data sharing encouraged but optional\", even though the third option could also\
       \ fit."
-  correct_answer: null
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: Authors are encouraged to share their data but not required to.
+  discrepancy_reason: null
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public data sharing on a FAIR repository encouraged.
@@ -50,9 +61,18 @@ data_fair:
     explanation: The journal encourages authors to share research data using data
       formats and standards recognised by their research community. Please see www.FAIRsharing.org
       for more information on established data sharing formats and standards.
-  correct_answer: null
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "Sharing research data via an established data repository is more\
+      \ likely to mean that data is findable, accessible, interoperable and reusable\
+      \ (\u2018FAIR\u2019).\n\n[...]\n\nThe journal encourages authors to share research\
+      \ data using data formats and standards recognised by their research community.\
+      \ Please see www.FAIRsharing.org for more information on established data sharing\
+      \ formats and standards."
+  discrepancy_reason: null
 data_availability:
   text: 2. Data availability statement
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Required according to the RDP.
@@ -64,9 +84,15 @@ data_availability:
     explanation: The journal requires authors to include a data availability statement
       in their article. The provision of a data availability statement will be verified
       as a condition of publication.
-  correct_answer: null
+  correct_answer:
+    text: Required according to the RDP.
+    explanation: The journal requires authors to include a data availability statement
+      in their article. The provision of a data availability statement will be verified
+      as a condition of publication.
+  discrepancy_reason: null
 data_citability:
   text: '5. Citability and findability of data '
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: DOIs or other persistent identifiers recommended for datasets or codes.
@@ -87,9 +113,23 @@ data_citability:
       that you deposit a copy in a repository that issues a Digital Object Identifier
       (DOI). The DOI provides a permanent reference point and supports future citation
       of your software and code.
-  correct_answer: null
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'If you share associated software and code via GitHub then we recommend
+      that you deposit a copy in a repository that issues a Digital Object Identifier
+      (DOI). The DOI provides a permanent reference point and supports future citation
+      of your software and code.
+
+
+      [...]
+
+
+      Sharing research data as supplementary information files is permitted but discouraged
+      because it will not receive a unique and citable identifier.'
+  discrepancy_reason: null
 data_timing:
   text: 7. Timing of data release
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: Required data must be available prior to official publication.
@@ -101,10 +141,15 @@ data_timing:
     explanation: "\"Authors must agree to make any data required to support or replicate\
       \ claims made in an article available privately to the journal\u2019s editors,\
       \ reviewers and readers without undue restriction or delay if requested.\""
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available prior to official publication.
+    explanation: Authors must specify the reason why they are unable to make their
+      research data publicly available at the point of publication and this reason
+      will be included in the published article.
   discrepancy_reason: language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public online repositories recommended in RDP.
@@ -132,9 +177,30 @@ data_sharing_method:
       Authors are encouraged to deposit their research data in a repository that has
       been widely adopted within their research community but, if none is available,
       authors may use a general data repository.
-  correct_answer: null
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: 'The preferred mechanism for sharing research data is via data repositories.
+      Authors are encouraged to deposit their research data in a repository that has
+      been widely adopted within their research community but, if none is available,
+      authors may use a general data repository.
+
+
+      Examples of general data repositories include:
+
+
+      Dryad (www.datadryad.org)
+
+      Figshare (www.figshare.com)
+
+      Harvard Dataverse (http://dataverse.harvard.edu/)
+
+      OSF (https://osf.io/)
+
+      Zenodo (www.zenodo.org)'
+  discrepancy_reason: null
 data_licenses:
   text: 9. Recommended/required licenses
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Explicit mention of a certain license/license type in RDP.
@@ -151,9 +217,18 @@ data_licenses:
       licenses for research data, where research data are deposited in third party
       repositories. The publisher of the journal does not claim copyright in research
       data.
-  correct_answer: null
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'Data licensing
+
+      The journal encourages research data to be made available under open licences
+      that permit reuse freely (eg CC0). The journal does not enforce particular licenses
+      for research data, where research data are deposited in third party repositories.
+      The publisher of the journal does not claim copyright in research data.'
+  discrepancy_reason: null
 data_referee:
   text: 10. Referee guidelines concerning research data
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Data sharing policy not mentioned in refereeing guidelines.
@@ -164,37 +239,16 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: no text
-  correct_answer: null
-data_recommended:
-  text: '11. Unique policies for data types
-
-    Please name all data types for which unique policies are recommended according
-    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
-    Protein sequence)'
-  has_discrepancies: false
-  0:
-    text: .nan
-    explanation: ''
-  1:
-    text: no text
-    explanation: ''
-  correct_answer: 0
-data_required:
-  text: '12. Unique policies for data types
-
-    Please name all data types for which unique policies are required according to
-    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
-    Protein sequence)'
-  has_discrepancies: false
-  0:
-    text: .nan
-    explanation: ''
-  1:
-    text: no text
-    explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: "I haven't found any mention in https://publishingsupport.iopscience.iop.org/publishing-support/reviewers/becoming-a-journal-reviewer/\n\
+      \nIn RDP I found:\nAuthors must agree to make any data required to support or\
+      \ replicate claims made in an article available privately to the journal\u2019\
+      s editors, reviewers and readers without undue restriction or delay if requested."
+  discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Code sharing encouraged but optional.
@@ -217,9 +271,25 @@ code_required:
       that you deposit a copy in a repository that issues a Digital Object Identifier
       (DOI). The DOI provides a permanent reference point and supports future citation
       of your software and code.
-  correct_answer: null
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: 'We encourage you to cite any data referred to in your article (including
+      your own) in your reference list.
+
+      [...]
+
+      This policy applies to the research data that would be required to verify or
+      replicate the results of research reported in articles published in the journal.
+
+      [...]
+
+      Research data includes any recorded factual material that are used to produce
+      the results in digital and non-digital form. This includes tabular data, code,
+      software, images, audio, documents, video, maps, raw and/or processed data.'
+  discrepancy_reason: null
 code_reproducibility:
   text: 14. Code Reproducibility
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of dependencies for research code.
@@ -227,9 +297,13 @@ code_reproducibility:
   1:
     text: No mention of dependencies for research code.
     explanation: no text
-  correct_answer: null
+  correct_answer:
+    text: No mention of dependencies for research code.
+    explanation: No explicit mention
+  discrepancy_reason: null
 code_versioning:
   text: 15. Versioning and persistent identifiers
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Journal policies encourage/recommend a persistent identifier or specifying
@@ -246,9 +320,18 @@ code_versioning:
       that you deposit a copy in a repository that issues a Digital Object Identifier
       (DOI). The DOI provides a permanent reference point and supports future citation
       of your software and code.
-  correct_answer: null
+  correct_answer:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: "It may also be desirable to include information about two optional\
+      \ properties, Version and Resource Type (such as \u2018dataset\u2019 or \u2018\
+      software\u2019). If so, the recommended form is as follows:   Author/Creator\
+      \ (Publication Year). Title. Version. Repository/Archive Name. Resource Type.\
+      \ Identifier "
+  discrepancy_reason: null
 code_quality:
   text: 16. Code Quality Standards
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: The journal policies do not mention any code quality standards.
@@ -256,9 +339,13 @@ code_quality:
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: no text
-  correct_answer: null
+  correct_answer:
+    text: The journal policies do not mention any code quality standards.
+    explanation: No explicit mention
+  discrepancy_reason: null
 code_autotest:
   text: 17. Automatic Testing
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of automatic testing to verify code functionality.
@@ -266,9 +353,13 @@ code_autotest:
   1:
     text: No mention of automatic testing to verify code functionality.
     explanation: no text
-  correct_answer: null
+  correct_answer:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: No explicit mention
+  discrepancy_reason: null
 code_docs:
   text: 18. Code Documentation
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of standards for code documentation.
@@ -276,9 +367,13 @@ code_docs:
   1:
     text: No mention of standards for code documentation.
     explanation: no text
-  correct_answer: null
+  correct_answer:
+    text: No mention of standards for code documentation.
+    explanation: No explicit mention
+  discrepancy_reason: null
 code_linting:
   text: 19. Linting Standards
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of linting standards for code.
@@ -286,9 +381,13 @@ code_linting:
   1:
     text: No mention of linting standards for code.
     explanation: no text
-  correct_answer: null
+  correct_answer:
+    text: No mention of linting standards for code.
+    explanation: No mention
+  discrepancy_reason: null
 code_development:
   text: 20. Code Development
+  N. encoders: 2
   has_discrepancies: true
   0:
     text: The journal policies encourage/recommend standards for code development
@@ -301,5 +400,7 @@ code_development:
   1:
     text: No mention of standards for code development such as continuous integration.
     explanation: no text
-  correct_answer: 1
+  correct_answer:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
   discrepancy_reason: language understanding
