@@ -61,7 +61,17 @@ data_sharing:
 
       If this is not possible, make a statement explaining why research data cannot
       be shared.'
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: "For this journal, the following instructions from our research data\
+      \ guidelines apply.\nOption C: Research data deposit, citation and linking\n\
+      You are required to:\n\u2022 Deposit your research data in a relevant data repository.\n\
+      \u2022 Cite and link to this dataset in your article.\n\u2022 If this is not\
+      \ possible, make a statement explaining why research data cannot be shared.\n\
+      \np.s. data statements such as: \u201EThe data that has been used is confidential.\u201D\
+      \ are found in articles. (Only options D and E from research data guidelines\
+      \ are actually requiring data, and option C which is relevant here states require\
+      \ but offers alternative)"
   discrepancy_reason: Text not found
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -162,7 +172,11 @@ data_sharing_method:
     explanation: 'Standard Elsevier RDP:
 
       https://www.elsevier.com/researcher/author/tools-and-resources/research-data/data-base-linking'
-  correct_answer: 1
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Standard Elsevier RDP:
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data/data-base-linking'
   discrepancy_reason: Language understanding
 data_licenses:
   text: 9. Recommended/required licenses
@@ -209,7 +223,9 @@ data_recommended:
   1:
     text: .nan
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: .nan
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -225,7 +241,9 @@ data_required:
   1:
     text: .nan
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: .nan
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements
@@ -264,7 +282,9 @@ code_reproducibility:
   1:
     text: No mention of dependencies for research code.
     explanation: .nan
-  correct_answer: 1
+  correct_answer:
+    text: No mention of dependencies for research code.
+    explanation: .nan
   discrepancy_reason: Language understanding
 code_versioning:
   text: 15. Versioning and persistent identifiers
@@ -279,7 +299,10 @@ code_versioning:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: .nan
-  correct_answer: 1
+  correct_answer:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: .nan
   discrepancy_reason: Language understanding
 code_quality:
   text: 16. Code Quality Standards

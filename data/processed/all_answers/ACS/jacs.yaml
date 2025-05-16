@@ -92,9 +92,7 @@ data_fair:
       offered.
 
 
-      ...
-
-      '
+      ...'
   1:
     text: Public data sharing on a FAIR repository encouraged.
     explanation: 'Text from Publishers (ACS) Research Data Policy:
@@ -168,7 +166,16 @@ data_citability:
       \ Statements\n\" ACS strongly encourages authors to select a repository that\
       \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
       \ \" "
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Data Availability Statements
+
+      A Data Availability Statement should describe the availability of the data underlying
+      the conclusions drawn in the research article and provide a means of access,
+      where applicable, by linking to the data, preferably through the use of a persistent
+      identifier such as a DOI or an Accession Number assigned by a data repository.
+      The Data Availability Statement should be included in the manuscript under the
+      Associated Content heading with the Supporting Information.'
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -201,16 +208,41 @@ data_timing:
       This includes data that may reveal personal information of research subjects,
       data where informed consent for public sharing was not granted, and other legitimate
       restrictions. In such cases, please contact the relevant journal editorial office
-      to disclose the rationale and request an exception.
-
-      '
+      to disclose the rationale and request an exception.'
   1:
     text: Required data must be available prior to official publication.
     explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
       \ encourage authors to make the research data underlying their articles publicly\
       \ available at the time of publication. \"\n\nNOTE: At the time of publication\
       \ interpreted as prior to official publication."
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available after an embargo period.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.
+
+
+      ...
+
+
+      Exceptions
+
+      Exceptions to data availability requirements or embargoes delaying data release
+      are available where legal or ethical issues prevent immediate public sharing.
+      This includes data that may reveal personal information of research subjects,
+      data where informed consent for public sharing was not granted, and other legitimate
+      restrictions. In such cases, please contact the relevant journal editorial office
+      to disclose the rationale and request an exception.'
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -253,7 +285,27 @@ data_sharing_method:
       \ to submit data in a format that can be most easily accessed and reused. ACS\
       \ encourages authors to provide machine-readable data and to follow the FAIR\
       \ Data Principles. \""
-  correct_answer: 0
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.'
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -307,7 +359,46 @@ data_licenses:
       \ use of open licenses for reuse of data, such as Creative Commons CC BY. \"\
       \n\nNOTE: Although mentioned in Publishers RDP but not in the Journals RDP.\
       \ Chosen weaker statement."
-  correct_answer: 0
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.
+
+
+      ...
+
+
+      Data repositories supporting peer-reviewed publications generally should meet
+      the following criteria:
+
+
+      Ensure long-term persistence and preservation of datasets (minimum of 5 years
+      after publication)
+
+
+      Be supported by a research community or research institution
+
+
+      Provide deposited datasets with stable and persistent identifiers, e.g., Digital
+      Object Identifiers (DOIs)
+
+
+      Allow access to data without restrictions
+
+
+      Provide clear terms of data use and data access (or license) on each dataset
+      landing page'
   discrepancy_reason: Text not found
 data_referee:
   text: 10. Referee guidelines concerning research data
@@ -343,12 +434,22 @@ data_recommended:
       ; Data Nuclear Magnetic Resonance Pulse Sequences ; Structural and Chemical
       Shift Data for Proteins and Nucleic Acids ; Single Crystal Diffraction Data
       ; CIF Submission Instructions ; Powder Diffraction Data ; Magnetic Measurements
-      ; Computations  '
+      ; Computations '
     explanation: ''
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 'Characterization of New Substances ; Guidelines for Characterization of
+      Organometallic and Inorganic Compounds ; Characterization Data (a) Routine Compounds
+      ; (b) Novel or Unexpected Compounds ; (c) Solid State Materials ; (d) Compounds
+      that have not been isolated ; Guidelines for Characterization of Organic Compounds
+      ; Spectra ; Kinetic and Equilibrium Data ; Reporting and Stewardship of NMR
+      ; Data Nuclear Magnetic Resonance Pulse Sequences ; Structural and Chemical
+      Shift Data for Proteins and Nucleic Acids ; Single Crystal Diffraction Data
+      ; CIF Submission Instructions ; Powder Diffraction Data ; Magnetic Measurements
+      ; Computations '
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -359,11 +460,11 @@ data_required:
   N. encoders: 2
   has_discrepancies: true
   0:
-    text: "\" Data Requirements Characterization of New Substances. Adequate evidence\
+    text: "Data Requirements\nCharacterization of New Substances. Adequate evidence\
       \ to firmly establish both identity and purity should be provided. Recommended\
       \ criteria vary according to substance categories. A summary of the detailed\
-      \ criteria may be found below.  Guidelines for Characterization of Organometallic\
-      \ and Inorganic Compounds Authors are required to provide sufficient information\
+      \ criteria may be found below.\n\nGuidelines for Characterization of Organometallic\
+      \ and Inorganic Compounds\nAuthors are required to provide sufficient information\
       \ (as described in more detail below) to establish the identity of a new compound,\
       \ its purity, and its yield. Sufficient experimental details must also be included\
       \ to allow another researcher to reproduce the synthesis. Characterization data\
@@ -372,118 +473,118 @@ data_required:
       \ and authors are encouraged to present as much data as possible to support\
       \ their structure assignments. In some cases, a reviewer or Editor may require\
       \ authors to submit additional data to satisfy themselves of the validity of\
-      \ a proposed formulation.  Characterization Data  (a) Routine Compounds  Compounds\
-      \ in this category are those that have either literature precedents or are obtained\
-      \ by a logical synthesis in close to quantitative yield. Because of potential\
-      \ misidentification of atoms, an X-ray diffraction structure alone will not\
-      \ typically be considered to provide sufficient characterization for these molecules.\
-      \ Diamagnetic compounds must also be characterized by NMR spectroscopy, preferably\
-      \ for at least two different nuclei. In addition, at least one other characterization\
-      \ technique must be used to support the proposed formulation. Preferably, this\
-      \ would be a technique that provides definitive identification of a key functional\
-      \ group or chromophore. For example, IR spectroscopy may be used to support\
-      \ the presence of carbonyl, acyl, dinitrogen, carbonyl, and hydride moieties.\
-      \  Paramagnetic compounds of this category present a further complication if\
-      \ NMR spectroscopy does not furnish clear evidence for the proposed formulation\
-      \ (note that NMR spectroscopy of paramagnetic complexes can be useful if sufficiently\
-      \ large sweep widths are used). In many cases, X-ray diffraction may provide\
-      \ the most unambiguous characterization of such complexes, but this will not\
-      \ suffice as the only means of characterization. In the absence of an X-ray\
-      \ structure determination, evidence for elemental constitution must be provided\
-      \ by elemental analysis (e.g., combustion analysis, microprobe analysis), or\
-      \ mass spectrometry. Magnetic moment and/or ESR spectroscopic data should also\
-      \ be given for paramagnetic compounds if it is considered that the spin state\
-      \ of the molecule is of especial interest.  (b) Novel or Unexpected Compounds\
-      \  Compounds in this category are those that either (i) exhibit an unprecedented\
-      \ type of structure, or (ii) are obtained by unexpected reaction. Such compounds\
-      \ require more detailed characterization to ensure their validity. In select\
-      \ instances, a variety of definitive spectroscopic techniques may provide sufficient\
-      \ characterization (for example, if many of the nuclei are NMR active), but\
-      \ in the majority of cases evidence for elemental constitution must be provided\
-      \ by either elemental analysis (e.g. combustion analysis, microprobe analysis),\
-      \ or mass spectrometry. While an X-ray diffraction structure is not considered\
-      \ definitive proof of elemental composition, it is acceptable evidence for composition\
-      \ providing that the results of other physical methods concerning the characterization\
-      \ are conclusive.  (c) Solid State Materials  Compounds in this category are\
-      \ those that have no existence in solution. While X-ray diffraction may provide\
-      \ the most unambiguous characterization of such compounds, evidence for elemental\
-      \ constitution and homogeneity needs to be presented. Atom ratios as determined\
-      \ by, for example, microprobe analysis of selected elements may be sufficient\
-      \ for this purpose  (d) Compounds that have not been isolated  Compounds that\
-      \ have not been isolated in pure form (e.g. reaction intermediates or intractable\
-      \ mixtures, or unstable species) may be published. However, in these circumstances,\
-      \ an explicit statement must be given indicating that the compounds have not\
-      \ been isolated. Only in exceptional circumstances will a paper be published\
-      \ in which none of the new compounds reported has been isolated and fully characterized.\
-      \  Purity and Yield  The yield and purity of all compounds must be reported,\
-      \ including the methods used to determine them. The yield of a compound obtained\
-      \ in an NMR tube reaction should be determined using an internal standard. \
-      \ Guidelines for Characterization of Organic Compounds Sample Quality  For new\
-      \ substances, evidence of the homogeneity the purified sample should be included.\
-      \ Elemental analysis is sufficient. If no analysis was performed, then other\
-      \ evidence (for example, 1H NMR, 13C NMR, hplc, glpc, gel electrophoresis, etc.)\
-      \ should be included as figures in the Supporting Information.  Molecular Weight\
-      \  Evidence of molecular weight should be provided, especially if elemental\
-      \ analysis was not performed. Low resolution MS data under conditions that minimize\
-      \ fragmentation are acceptable. If there is a specific need to distinguish alternative\
-      \ formulas with the same molecular mass (within one amu), then HRMS data are\
-      \ necessary.  Miscellaneous  Numerical listings of characteristic spectroscopic\
-      \ data should be included to support assigned structures, changes in functionality,\
-      \ unusual chromophores, properties, etc. Methods of purification used to prepare\
-      \ samples for characterization should be described. For crystalline samples,\
-      \ information about the method of crystallization should be included (solvents;\
-      \ mp; etc.). For non-racemic, chiral substances, data to allow correlation of\
-      \ absolute configuration should be given, preferably including [\u03B1]D values.\
-      \ If correlation data are provided based on hplc or glpc methods, then retention\
-      \ times for both enantiomers must be provided, together with solvent and flow\
-      \ rate information, and identification of the chiral support.  Intermediates\
-      \ on Solid Phase; Combinatorial Chemistry  Validation of methods and characterization\
-      \ of new substances in a statistically significant sampling should be provided.\
-      \ Resin-bound intermediates need not be characterized if acceptable end product\
-      \ quality (as defined in A-C above) is demonstrated.  Spectra. Reproductions\
-      \ of spectra, or the relevant segments thereof, will be published only if concise\
-      \ numerical summaries are inadequate for the purposes of the paper. Papers dealing\
-      \ primarily with interpretation of spectra and those in which band shape or\
-      \ fine structure needs to be illustrated may be published with such spectra\
-      \ included. Spectra will not be published merely as adjuncts to the characterization\
-      \ of compounds, however. See \u2018Supporting Information\u2019 below. Routine\
-      \ infrared, electronic, NMR, and mass spectra of new compounds should be numerically\
-      \ summarized, as appropriate, in the Experimental Section of an Article or in\
-      \ the Supporting Information of a Communication.  Kinetic and Equilibrium Data.\
-      \ For publication in the Journal of the American Chemical Society, the reporting\
-      \ of kinetic data and equilibrium binding data for proteins, nucleic acids,\
-      \ and other species should preferably include a description of the identity\
-      \ of the catalyst or binding molecule, its origin, purity of composition, and\
-      \ any modifications such as mutations, post-translational modifications, or\
-      \ other modifications made to facilitate expression and purification. The method\
-      \ of assay and the exact experimental conditions of the assay should be provided\
-      \ as a reference to previous work, with or without modifications, or fully described\
-      \ if a new assay. Conditions essential to reproduce the results such as the\
-      \ temperature, pH, and pressure (if other than atmospheric) of the assay should\
-      \ be included. Terms such as \u201Cnot detectable\u201D (ND) should be avoided.\
-      \ Instead, an estimate of the limit of detection based on the sensitivity and\
-      \ error analysis of the assay should be provided. Authors are referred to the\
-      \ STRENDA (Standards for Reporting Enzymology Data) Commission of the Beilstein\
-      \ Institut (http://www.beilstein-institut.de/en/projects/strenda/guidelines)\
-      \ for an example of detailed guidelines.  Reporting and Stewardship of NMR Data.\
-      \ New guidelines recommend a standard baseline for the submission of NMR data\
-      \ to ACS journals. They are intended to promote accuracy and consistency. The\
-      \ guidelines are divided into three sections: NMR text, which outlines the preferred\
-      \ format for NMR data included in the Experimental Section; NMR spectra, which\
-      \ outlines the preferred format for inclusion of hard copies of spectra in the\
-      \ Supporting Information; and primary NMR data files, which outlines the procedure\
-      \ for submitting FID files, acquisition data, and processing parameters to include\
-      \ in the Supporting Information. Authors are strongly encouraged to provide\
-      \ all three sets of data for all new and/or key compounds described in a manuscript\
-      \ submission.  In the Experimental Section, the compound must be clearly identified,\
-      \ for example in a header at the beginning of the synthetic procedure or the\
-      \ summary of spectroscopic data. List the nucleus being measured, any nucleus\
-      \ being broad-band decoupled, the solvent used (formula preferred, e.g. C6D6\
-      \ over benzene-d6), the standard used, and the field strength. Field strength\
-      \ should be noted for each spectrum, not as a comment in the general Experimental\
-      \ Section. The standard(s) may be specified in the general Experimental Section;\
-      \ as an example, 1H NMR data recorded in C6D6 listed as \u201Cresidual internal\
-      \ C6D5H (\u03B4 7.15)\u201D. Indicate solvent or peak suppression protocols\
+      \ a proposed formulation.\n\nCharacterization Data\n\n(a) Routine Compounds\n\
+      \nCompounds in this category are those that have either literature precedents\
+      \ or are obtained by a logical synthesis in close to quantitative yield. Because\
+      \ of potential misidentification of atoms, an X-ray diffraction structure alone\
+      \ will not typically be considered to provide sufficient characterization for\
+      \ these molecules. Diamagnetic compounds must also be characterized by NMR spectroscopy,\
+      \ preferably for at least two different nuclei. In addition, at least one other\
+      \ characterization technique must be used to support the proposed formulation.\
+      \ Preferably, this would be a technique that provides definitive identification\
+      \ of a key functional group or chromophore. For example, IR spectroscopy may\
+      \ be used to support the presence of carbonyl, acyl, dinitrogen, carbonyl, and\
+      \ hydride moieties.\n\nParamagnetic compounds of this category present a further\
+      \ complication if NMR spectroscopy does not furnish clear evidence for the proposed\
+      \ formulation (note that NMR spectroscopy of paramagnetic complexes can be useful\
+      \ if sufficiently large sweep widths are used). In many cases, X-ray diffraction\
+      \ may provide the most unambiguous characterization of such complexes, but this\
+      \ will not suffice as the only means of characterization. In the absence of\
+      \ an X-ray structure determination, evidence for elemental constitution must\
+      \ be provided by elemental analysis (e.g., combustion analysis, microprobe analysis),\
+      \ or mass spectrometry. Magnetic moment and/or ESR spectroscopic data should\
+      \ also be given for paramagnetic compounds if it is considered that the spin\
+      \ state of the molecule is of especial interest.\n\n(b) Novel or Unexpected\
+      \ Compounds\n\nCompounds in this category are those that either (i) exhibit\
+      \ an unprecedented type of structure, or (ii) are obtained by unexpected reaction.\
+      \ Such compounds require more detailed characterization to ensure their validity.\
+      \ In select instances, a variety of definitive spectroscopic techniques may\
+      \ provide sufficient characterization (for example, if many of the nuclei are\
+      \ NMR active), but in the majority of cases evidence for elemental constitution\
+      \ must be provided by either elemental analysis (e.g. combustion analysis, microprobe\
+      \ analysis), or mass spectrometry. While an X-ray diffraction structure is not\
+      \ considered definitive proof of elemental composition, it is acceptable evidence\
+      \ for composition providing that the results of other physical methods concerning\
+      \ the characterization are conclusive.\n\n(c) Solid State Materials\n\nCompounds\
+      \ in this category are those that have no existence in solution. While X-ray\
+      \ diffraction may provide the most unambiguous characterization of such compounds,\
+      \ evidence for elemental constitution and homogeneity needs to be presented.\
+      \ Atom ratios as determined by, for example, microprobe analysis of selected\
+      \ elements may be sufficient for this purpose\n\n(d) Compounds that have not\
+      \ been isolated\n\nCompounds that have not been isolated in pure form (e.g.\
+      \ reaction intermediates or intractable mixtures, or unstable species) may be\
+      \ published. However, in these circumstances, an explicit statement must be\
+      \ given indicating that the compounds have not been isolated. Only in exceptional\
+      \ circumstances will a paper be published in which none of the new compounds\
+      \ reported has been isolated and fully characterized.\n\nPurity and Yield\n\n\
+      The yield and purity of all compounds must be reported, including the methods\
+      \ used to determine them. The yield of a compound obtained in an NMR tube reaction\
+      \ should be determined using an internal standard.\n\nGuidelines for Characterization\
+      \ of Organic Compounds\nSample Quality\n\nFor new substances, evidence of the\
+      \ homogeneity the purified sample should be included. Elemental analysis is\
+      \ sufficient. If no analysis was performed, then other evidence (for example,\
+      \ 1H NMR, 13C NMR, hplc, glpc, gel electrophoresis, etc.) should be included\
+      \ as figures in the Supporting Information.\n\nMolecular Weight\n\nEvidence\
+      \ of molecular weight should be provided, especially if elemental analysis was\
+      \ not performed. Low resolution MS data under conditions that minimize fragmentation\
+      \ are acceptable. If there is a specific need to distinguish alternative formulas\
+      \ with the same molecular mass (within one amu), then HRMS data are necessary.\n\
+      \nMiscellaneous\n\nNumerical listings of characteristic spectroscopic data should\
+      \ be included to support assigned structures, changes in functionality, unusual\
+      \ chromophores, properties, etc. Methods of purification used to prepare samples\
+      \ for characterization should be described. For crystalline samples, information\
+      \ about the method of crystallization should be included (solvents; mp; etc.).\
+      \ For non-racemic, chiral substances, data to allow correlation of absolute\
+      \ configuration should be given, preferably including [\u03B1]D values. If correlation\
+      \ data are provided based on hplc or glpc methods, then retention times for\
+      \ both enantiomers must be provided, together with solvent and flow rate information,\
+      \ and identification of the chiral support.\n\nIntermediates on Solid Phase;\
+      \ Combinatorial Chemistry\n\nValidation of methods and characterization of new\
+      \ substances in a statistically significant sampling should be provided. Resin-bound\
+      \ intermediates need not be characterized if acceptable end product quality\
+      \ (as defined in A-C above) is demonstrated.\n\nSpectra. Reproductions of spectra,\
+      \ or the relevant segments thereof, will be published only if concise numerical\
+      \ summaries are inadequate for the purposes of the paper. Papers dealing primarily\
+      \ with interpretation of spectra and those in which band shape or fine structure\
+      \ needs to be illustrated may be published with such spectra included. Spectra\
+      \ will not be published merely as adjuncts to the characterization of compounds,\
+      \ however. See \u2018Supporting Information\u2019 below. Routine infrared, electronic,\
+      \ NMR, and mass spectra of new compounds should be numerically summarized, as\
+      \ appropriate, in the Experimental Section of an Article or in the Supporting\
+      \ Information of a Communication.\n\nKinetic and Equilibrium Data. For publication\
+      \ in the Journal of the American Chemical Society, the reporting of kinetic\
+      \ data and equilibrium binding data for proteins, nucleic acids, and other species\
+      \ should preferably include a description of the identity of the catalyst or\
+      \ binding molecule, its origin, purity of composition, and any modifications\
+      \ such as mutations, post-translational modifications, or other modifications\
+      \ made to facilitate expression and purification. The method of assay and the\
+      \ exact experimental conditions of the assay should be provided as a reference\
+      \ to previous work, with or without modifications, or fully described if a new\
+      \ assay. Conditions essential to reproduce the results such as the temperature,\
+      \ pH, and pressure (if other than atmospheric) of the assay should be included.\
+      \ Terms such as \u201Cnot detectable\u201D (ND) should be avoided. Instead,\
+      \ an estimate of the limit of detection based on the sensitivity and error analysis\
+      \ of the assay should be provided. Authors are referred to the STRENDA (Standards\
+      \ for Reporting Enzymology Data) Commission of the Beilstein Institut (http://www.beilstein-institut.de/en/projects/strenda/guidelines)\
+      \ for an example of detailed guidelines.\n\nReporting and Stewardship of NMR\
+      \ Data. New guidelines recommend a standard baseline for the submission of NMR\
+      \ data to ACS journals. They are intended to promote accuracy and consistency.\
+      \ The guidelines are divided into three sections: NMR text, which outlines the\
+      \ preferred format for NMR data included in the Experimental Section; NMR spectra,\
+      \ which outlines the preferred format for inclusion of hard copies of spectra\
+      \ in the Supporting Information; and primary NMR data files, which outlines\
+      \ the procedure for submitting FID files, acquisition data, and processing parameters\
+      \ to include in the Supporting Information. Authors are strongly encouraged\
+      \ to provide all three sets of data for all new and/or key compounds described\
+      \ in a manuscript submission.\n\nIn the Experimental Section, the compound must\
+      \ be clearly identified, for example in a header at the beginning of the synthetic\
+      \ procedure or the summary of spectroscopic data. List the nucleus being measured,\
+      \ any nucleus being broad-band decoupled, the solvent used (formula preferred,\
+      \ e.g. C6D6 over benzene-d6), the standard used, and the field strength. Field\
+      \ strength should be noted for each spectrum, not as a comment in the general\
+      \ Experimental Section. The standard(s) may be specified in the general Experimental\
+      \ Section; as an example, 1H NMR data recorded in C6D6 listed as \u201Cresidual\
+      \ internal C6D5H (\u03B4 7.15)\u201D. Indicate solvent or peak suppression protocols\
       \ used in collecting data. List the probe temperature when it is accurately\
       \ known; ambient probe temperature is otherwise understood. Give 1H NMR chemical\
       \ shifts to two digits after the decimal point. Include the number of protons\
@@ -494,12 +595,12 @@ data_required:
       \ for multiplicities and descriptors are s = singlet, d = doublet, t = triplet,\
       \ q = quartet, quint = quintet, m = multiplet (denotes complex pattern), dd\
       \ = doublet of doublets, dt = doublet of triplets, td = triplet of doublets,\
-      \ and br = broad signal.  Chemical shifts should be listed consistently in a\
-      \ single article, starting either from downfield to upfield or vice-versa. Assign\
-      \ peak identities under the following circumstances: non-decoupled or equivalent\
-      \ spectra have been collected (13C, 31P, etc.); 2-D experiments have been performed;\
-      \ or unambiguous assignment is possible without additional experiments, such\
-      \ as in the case of an organometallic metal-hydride 1H signal, PF6 vs MPPh3\
+      \ and br = broad signal.\n\nChemical shifts should be listed consistently in\
+      \ a single article, starting either from downfield to upfield or vice-versa.\
+      \ Assign peak identities under the following circumstances: non-decoupled or\
+      \ equivalent spectra have been collected (13C, 31P, etc.); 2-D experiments have\
+      \ been performed; or unambiguous assignment is possible without additional experiments,\
+      \ such as in the case of an organometallic metal-hydride 1H signal, PF6 vs MPPh3\
       \ 31P signal, etc. Give 13C chemical shifts to one digit after the decimal point,\
       \ unless an additional digit will help distinguish overlapping peaks. Include\
       \ peak multiplicities for 1H-coupled 13C NMR spectra or for signals in 1H-decoupled\
@@ -507,51 +608,51 @@ data_required:
       \ will be considered a singlet if the multiplicity is not assigned. Only rarely\
       \ is a true multiplet observed in a 13C{1H} NMR spectrum. However, a certain\
       \ region may contain a group of unresolved peaks or signals. Mention of unobserved\
-      \ resonances is encouraged.  Submission of spectra (.doc, .docx, .txt, .pdf,\
+      \ resonances is encouraged.\n\nSubmission of spectra (.doc, .docx, .txt, .pdf,\
       \ .tif) is strongly recommended for all new and/or key compounds, following\
-      \ these guidelines:  A caption should be included on the spectrum, noting the\
-      \ nucleus being measured, the solvent (formula preferred, e.g. C6D6  over benzene-d6)\
-      \ and the field strength. A representation of the compound should be included\
-      \ on the spectrum\u2014please use ChemDraw or a related program. The compound\
-      \ identifier used in the manuscript should be included. The largest peak in\
-      \ the 1H NMR spectrum should normally arise from the compound, not the solvent.\
-      \ All peaks in the 1H NMR spectrum should be integrated. Chemical shift values\
-      \ should be included. The solvent peak should be clearly labeled on the spectrum.\
-      \ All peaks should be visible on the spectrum. Insets are encouraged to show\
-      \ expanded regions. At minimum, the spectral window should be \u20121 ppm to\
-      \ 9 ppm for 1H NMR and \u201210 ppm to 180 ppm for 13C NMR. Font should be clear\
-      \ and large enough to read (minimum of 10 point). Horizontal orientation is\
-      \ preferred for spectra. Submission of primary NMR data files (FID files, acquisition\
-      \ data, processing parameters) is encouraged for all new and/or key compounds.\
-      \ When submitting these files, please consider the following guidelines:  One\
-      \ folder should be created for each compound. The folder should be named clearly,\
-      \ using the compound name (if available) and compound identifier, as referenced\
-      \ in the Experimental Section or Supporting Information. Include the FID files,\
-      \ acquisition data, and processing parameters for each experiment. Name each\
-      \ spectrum according to the type of nucleus measured. 1H, 13C, DEPT, COSY, etc.\
-      \ NMR files should be compressed into zip files\u2014please use multiple zip\
-      \ files if necessary. Files must be submitted in their native format. In a text\
-      \ document, include the name of the manufacturer of the spectrometer used to\
-      \ collect the data, the acquisition software and processing programs used to\
-      \ analyze the data, and the field strength used to measure each nucleus (i.e.,\
-      \ 300 MHz 1H or 50 MHz 13C). Include a structure file that shows the structure\
-      \ and compound identifier for each provided dataset. MolFile is the recommended\
-      \ format and is strongly preferred. Nuclear Magnetic Resonance Pulse Sequences.\
-      \ For manuscripts that present new NMR pulse sequences, authors are requested\
-      \ to supply as \u201CSupporting Information for Publication\u201D a file that\
-      \ includes the original working pulse sequence information required to record\
-      \ data. This will typically include the pulse sequence code, parameter set,\
-      \ and other associated files, such as tables of gradient or pulse shapes.  Structural\
-      \ and Chemical Shift Data for Proteins and Nucleic Acids. Any set of atomic\
-      \ coordinates referred to in the manuscript, including atomic coordinates and\
-      \ structure factors for proteins determined by X-ray crystallography and coordinates\
-      \ determined by NMR, should be deposited with the Protein Data Bank, Research\
-      \ Collaboratory for Structural Bioinformatics at Rutgers University whenever\
-      \ appropriate. (Theoretical model depositions are no longer accepted for inclusion\
-      \ in the PDB archive.) If the coordinate files are not deposited in the PDB,\
-      \ or if the PDB files are on hold until publication, then the coordinate files\
-      \ must be included in the Supporting Information submitted concurrently with\
-      \ the manuscript. Requirements are similar for structures of nucleic acids,\
+      \ these guidelines:\n\nA caption should be included on the spectrum, noting\
+      \ the nucleus being measured, the solvent (formula preferred, e.g. C6D6 over\
+      \ benzene-d6) and the field strength.\nA representation of the compound should\
+      \ be included on the spectrum\u2014please use ChemDraw or a related program.\
+      \ The compound identifier used in the manuscript should be included.\nThe largest\
+      \ peak in the 1H NMR spectrum should normally arise from the compound, not the\
+      \ solvent.\nAll peaks in the 1H NMR spectrum should be integrated. Chemical\
+      \ shift values should be included.\nThe solvent peak should be clearly labeled\
+      \ on the spectrum.\nAll peaks should be visible on the spectrum. Insets are\
+      \ encouraged to show expanded regions. At minimum, the spectral window should\
+      \ be \u20121 ppm to 9 ppm for 1H NMR and \u201210 ppm to 180 ppm for 13C NMR.\n\
+      Font should be clear and large enough to read (minimum of 10 point). Horizontal\
+      \ orientation is preferred for spectra.\nSubmission of primary NMR data files\
+      \ (FID files, acquisition data, processing parameters) is encouraged for all\
+      \ new and/or key compounds. When submitting these files, please consider the\
+      \ following guidelines:\n\nOne folder should be created for each compound. The\
+      \ folder should be named clearly, using the compound name (if available) and\
+      \ compound identifier, as referenced in the Experimental Section or Supporting\
+      \ Information. Include the FID files, acquisition data, and processing parameters\
+      \ for each experiment.\nName each spectrum according to the type of nucleus\
+      \ measured. 1H, 13C, DEPT, COSY, etc. NMR files should be compressed into zip\
+      \ files\u2014please use multiple zip files if necessary. Files must be submitted\
+      \ in their native format. In a text document, include the name of the manufacturer\
+      \ of the spectrometer used to collect the data, the acquisition software and\
+      \ processing programs used to analyze the data, and the field strength used\
+      \ to measure each nucleus (i.e., 300 MHz 1H or 50 MHz 13C). Include a structure\
+      \ file that shows the structure and compound identifier for each provided dataset.\
+      \ MolFile is the recommended format and is strongly preferred.\nNuclear Magnetic\
+      \ Resonance Pulse Sequences. For manuscripts that present new NMR pulse sequences,\
+      \ authors are requested to supply as \u201CSupporting Information for Publication\u201D\
+      \ a file that includes the original working pulse sequence information required\
+      \ to record data. This will typically include the pulse sequence code, parameter\
+      \ set, and other associated files, such as tables of gradient or pulse shapes.\n\
+      \nStructural and Chemical Shift Data for Proteins and Nucleic Acids. Any set\
+      \ of atomic coordinates referred to in the manuscript, including atomic coordinates\
+      \ and structure factors for proteins determined by X-ray crystallography and\
+      \ coordinates determined by NMR, should be deposited with the Protein Data Bank,\
+      \ Research Collaboratory for Structural Bioinformatics at Rutgers University\
+      \ whenever appropriate. (Theoretical model depositions are no longer accepted\
+      \ for inclusion in the PDB archive.) If the coordinate files are not deposited\
+      \ in the PDB, or if the PDB files are on hold until publication, then the coordinate\
+      \ files must be included in the Supporting Information submitted concurrently\
+      \ with the manuscript. Requirements are similar for structures of nucleic acids,\
       \ which should be deposited with the Nucleic Acid Database. A manuscript that\
       \ does not provide coordinates at the time of submission will not be sent out\
       \ for review. It is the responsibility of the author to obtain a file name (PDB\
@@ -565,92 +666,380 @@ data_required:
       \ for any form of structure calculation. Those chemical shifts must be available\
       \ to the reviewer at time of submission, either as an available entry in the\
       \ Biological Magnetic Resonance Data Bank or included directly as Supporting\
-      \ Information.  Single Crystal Diffraction Data. Manuscripts reporting the determination\
-      \ of one or more structures by X-ray diffraction must adhere to the following\
-      \ requirements:  Abstract. The abstract may summarize geometric features of\
-      \ unusual interest but should not contain unit cell parameters.  Main Body of\
-      \ Manuscript. Tables of essential interatomic distances and angles are not required\
-      \ but may be submitted (metric information for standard \nstructural components\
-      \ should not be included).  For structures with anisotropically refined atoms,\
-      \ a figure displaying the thermal ellipsoids should ordinarily be presented;\
-      \ a spherical-atom representation may be substituted if necessary for clarity.\
-      \ If a spherical atom view is chosen for the manuscript, a thermal ellipsoid\
-      \ figure should be included in the Supporting Information. In cases where intermolecular\
-      \ interactions are relevant to the discussion, a view of the unit cell may be\
-      \ included.  An Article should list for each structure the formula, formula\
-      \ weight, crystal system, space group, color of crystal, unit cell parameters,\
-      \ temperature of data collection, and values of Z, R, and GOF; a brief description\
-      \ of data collection and solution and refinement of the structure should be\
-      \ placed in the Experimental Section. Tables of atom coordinates and thermal\
-      \ parameters will not be printed.  Structure factors (except for proteins and\
-      \ nucleic acids) should not be submitted as Supporting Information. However,\
-      \ one printed table of structure factors should be retained in case it is requested\
-      \ by the Editor for review purposes only.  CIF Submission Instructions: All\
-      \ Crystallographic Information Files (CIFs), structure factor tables, and CheckCIF\
-      \ reports must be submitted to the Cambridge Crystallographic Data Centre (CCDC)\
-      \ prior to manuscript submission. See Requirements for Depositing X-Ray Crystallographic\
-      \ Data [PDF] for complete details on submission of CIFs and a list of file types\
-      \ accommodated by CCDC.  Before being submitted to CCDC, CIFs should be checked\
-      \ using the free checkCIF data-validation utility on the CIF Validation site.\
-      \ Any reported syntax errors should be corrected. Authors are required to correct/defend/or\
-      \ respond to any A-level alerts. Comments may be inserted into the CIF file\
-      \ using a Validation Response Form or uploaded as a separate document as Supporting\
-      \ Information for Review Only. checkCIF output files (combined into one PDF\
-      \ file) should be uploaded at submission as Supporting Information for Review\
-      \ Only. Any subsequent revisions to the CIFs or structure factor tables should\
-      \ be deposited directly with the CCDC before resubmitting the manuscript in\
-      \ ACS Paragon Plus. Powder Diffraction Data. The presentation of X-ray powder\
-      \ diffraction data for new materials or for materials previously uncharacterized\
-      \ by this technique is encouraged. Data from X-ray powder measurements should\
-      \ be accompanied by details of the experimental technique: source of X-rays,\
-      \ the radiation, its wavelength, filters or monochromators, camera diameter,\
-      \ the type of X-ray recording, and the technique for measuring intensities.\
-      \ In cases of unindexed listing of the data, the d spacings of all observed\
-      \ lines should be listed in sequence, together with their relative intensities.\
-      \ In cases where filtered radiation is used, every effort should be made to\
-      \ identify residual \u03B2 lines. Where resolution into \u03B11-\u03B12 doublets\
-      \ occurs, the identification of the d spacing for each line as d\u03B11, d\u03B1\
-      2 gives a measure of the quality of the diffraction pattern. When an indexing\
-      \ of the data is offered, the observed and calculated 1/d2 values should be\
-      \ listed along with the observed relative intensities (it is superfluous to\
-      \ give d spacings in this instance). All calculated 1/d2 values should be listed\
-      \ (exclusive of systematic absences), to the limit of the data quoted. If possible,\
-      \ the crystal system should be specified. Possible space groups may also be\
-      \ listed if the data warrant it. Relevant information about the specimen used\
-      \ should be included.  Magnetic Measurements. Fits of magnetic data [\u03C7\
-      (T), \u03C7-1(T), \u03C7T(T), \u03BC(T), M(H), etc.] to an analytical expression\
-      \ must include both the Hamiltonian from which the analytical expression is\
-      \ derived and the final analytical expression and fitting parameters. When the\
-      \ value of an exchange coupling constant, J, is given in the abstract, the form\
-      \ of the Hamiltonian must also be included. The expressions may be included\
-      \ in the manuscript or, if long and complex, as Supporting Information; if the\
-      \ latter method is used, it should be noted in the Supporting Information paragraph\
-      \ at the end of the manuscript. In addition, how the sample was measured (in\
-      \ a gelatin capsule, Teflon capsule, etc.) and the diamagnetic correction for\
-      \ the sample holder, as well as the diamagnetic correction for the material,\
+      \ Information.\n\nSingle Crystal Diffraction Data. Manuscripts reporting the\
+      \ determination of one or more structures by X-ray diffraction must adhere to\
+      \ the following requirements:\n\nAbstract. The abstract may summarize geometric\
+      \ features of unusual interest but should not contain unit cell parameters.\n\
+      \nMain Body of Manuscript. Tables of essential interatomic distances and angles\
+      \ are not required but may be submitted (metric information for standard structural\
+      \ components should not be included).\n\nFor structures with anisotropically\
+      \ refined atoms, a figure displaying the thermal ellipsoids should ordinarily\
+      \ be presented; a spherical-atom representation may be substituted if necessary\
+      \ for clarity. If a spherical atom view is chosen for the manuscript, a thermal\
+      \ ellipsoid figure should be included in the Supporting Information. In cases\
+      \ where intermolecular interactions are relevant to the discussion, a view of\
+      \ the unit cell may be included.\n\nAn Article should list for each structure\
+      \ the formula, formula weight, crystal system, space group, color of crystal,\
+      \ unit cell parameters, temperature of data collection, and values of Z, R,\
+      \ and GOF; a brief description of data collection and solution and refinement\
+      \ of the structure should be placed in the Experimental Section. Tables of atom\
+      \ coordinates and thermal parameters will not be printed.\n\nStructure factors\
+      \ (except for proteins and nucleic acids) should not be submitted as Supporting\
+      \ Information. However, one printed table of structure factors should be retained\
+      \ in case it is requested by the Editor for review purposes only.\n\nCIF Submission\
+      \ Instructions:\nAll Crystallographic Information Files (CIFs), structure factor\
+      \ tables, and CheckCIF reports must be submitted to the Cambridge Crystallographic\
+      \ Data Centre (CCDC) prior to manuscript submission. See Requirements for Depositing\
+      \ X-Ray Crystallographic Data [PDF] for complete details on submission of CIFs\
+      \ and a list of file types accommodated by CCDC.\n\nBefore being submitted to\
+      \ CCDC, CIFs should be checked using the free checkCIF data-validation utility\
+      \ on the CIF Validation site.\nAny reported syntax errors should be corrected.\
+      \ Authors are required to correct/defend/or respond to any A-level alerts. Comments\
+      \ may be inserted into the CIF file using a Validation Response Form or uploaded\
+      \ as a separate document as Supporting Information for Review Only.\ncheckCIF\
+      \ output files (combined into one PDF file) should be uploaded at submission\
+      \ as Supporting Information for Review Only.\nAny subsequent revisions to the\
+      \ CIFs or structure factor tables should be deposited directly with the CCDC\
+      \ before resubmitting the manuscript in ACS Paragon Plus.\nPowder Diffraction\
+      \ Data. The presentation of X-ray powder diffraction data for new materials\
+      \ or for materials previously uncharacterized by this technique is encouraged.\
+      \ Data from X-ray powder measurements should be accompanied by details of the\
+      \ experimental technique: source of X-rays, the radiation, its wavelength, filters\
+      \ or monochromators, camera diameter, the type of X-ray recording, and the technique\
+      \ for measuring intensities. In cases of unindexed listing of the data, the\
+      \ d spacings of all observed lines should be listed in sequence, together with\
+      \ their relative intensities. In cases where filtered radiation is used, every\
+      \ effort should be made to identify residual \u03B2 lines. Where resolution\
+      \ into \u03B11-\u03B12 doublets occurs, the identification of the d spacing\
+      \ for each line as d\u03B11, d\u03B12 gives a measure of the quality of the\
+      \ diffraction pattern. When an indexing of the data is offered, the observed\
+      \ and calculated 1/d2 values should be listed along with the observed relative\
+      \ intensities (it is superfluous to give d spacings in this instance). All calculated\
+      \ 1/d2 values should be listed (exclusive of systematic absences), to the limit\
+      \ of the data quoted. If possible, the crystal system should be specified. Possible\
+      \ space groups may also be listed if the data warrant it. Relevant information\
+      \ about the specimen used should be included.\n\nMagnetic Measurements. Fits\
+      \ of magnetic data [\u03C7(T), \u03C7-1(T), \u03C7T(T), \u03BC(T), M(H), etc.]\
+      \ to an analytical expression must include both the Hamiltonian from which the\
+      \ analytical expression is derived and the final analytical expression and fitting\
+      \ parameters. When the value of an exchange coupling constant, J, is given in\
+      \ the abstract, the form of the Hamiltonian must also be included. The expressions\
+      \ may be included in the manuscript or, if long and complex, as Supporting Information;\
+      \ if the latter method is used, it should be noted in the Supporting Information\
+      \ paragraph at the end of the manuscript. In addition, how the sample was measured\
+      \ (in a gelatin capsule, Teflon capsule, etc.) and the diamagnetic correction\
+      \ for the sample holder, as well as the diamagnetic correction for the material,\
       \ must be provided and the manner in which it was calculated (Pascal\u2019s\
-      \ constants) or measured must be stated.  Computations. When computational results\
-      \ are an essential part of a manuscript, sufficient detail must be given, either\
-      \ within the paper or in the Supporting Information, to enable readers to reproduce\
-      \ the calculations. This includes data such as force field parameters and equations\
-      \ defining the model (or references to where such material is available in the\
-      \ open literature). If the software used for calculations is generally available,\
-      \ it must be properly cited in the References and Footnotes. References to the\
-      \ methods upon which the software is based must also be provided. Results obtained\
-      \ from methods or parameters that are not adequately described in the manuscript\
-      \ or in the literature are not acceptable for publication. Authors who report\
-      \ the results of electronic structure calculations are requested to provide\
-      \ as Supporting Information the geometries (either as Cartesian coordinates\
+      \ constants) or measured must be stated.\n\nComputations. When computational\
+      \ results are an essential part of a manuscript, sufficient detail must be given,\
+      \ either within the paper or in the Supporting Information, to enable readers\
+      \ to reproduce the calculations. This includes data such as force field parameters\
+      \ and equations defining the model (or references to where such material is\
+      \ available in the open literature). If the software used for calculations is\
+      \ generally available, it must be properly cited in the References and Footnotes.\
+      \ References to the methods upon which the software is based must also be provided.\
+      \ Results obtained from methods or parameters that are not adequately described\
+      \ in the manuscript or in the literature are not acceptable for publication.\
+      \ Authors who report the results of electronic structure calculations are requested\
+      \ to provide as Supporting Information the geometries (either as Cartesian coordinates\
       \ or Z matrices) of all the stationary points whose relative energies are given\
       \ in the manuscript. The absolute energies in hartrees that are computed at\
       \ these geometries should not be given in the manuscript but should be included\
       \ in the Supporting Information. Where applicable, the number of imaginary frequencies\
-      \ should be reported to identify stable structures and transition states.\""
+      \ should be reported to identify stable structures and transition states."
     explanation: ''
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: "Data Requirements\nCharacterization of New Substances. Adequate evidence\
+      \ to firmly establish both identity and purity should be provided. Recommended\
+      \ criteria vary according to substance categories. A summary of the detailed\
+      \ criteria may be found below.\n\nGuidelines for Characterization of Organometallic\
+      \ and Inorganic Compounds\nAuthors are required to provide sufficient information\
+      \ (as described in more detail below) to establish the identity of a new compound,\
+      \ its purity, and its yield. Sufficient experimental details must also be included\
+      \ to allow another researcher to reproduce the synthesis. Characterization data\
+      \ and experimental details must be included in either the paper or the Supporting\
+      \ Information. It must be emphasized that the following is only a general guideline\
+      \ and authors are encouraged to present as much data as possible to support\
+      \ their structure assignments. In some cases, a reviewer or Editor may require\
+      \ authors to submit additional data to satisfy themselves of the validity of\
+      \ a proposed formulation.\n\nCharacterization Data\n\n(a) Routine Compounds\n\
+      \nCompounds in this category are those that have either literature precedents\
+      \ or are obtained by a logical synthesis in close to quantitative yield. Because\
+      \ of potential misidentification of atoms, an X-ray diffraction structure alone\
+      \ will not typically be considered to provide sufficient characterization for\
+      \ these molecules. Diamagnetic compounds must also be characterized by NMR spectroscopy,\
+      \ preferably for at least two different nuclei. In addition, at least one other\
+      \ characterization technique must be used to support the proposed formulation.\
+      \ Preferably, this would be a technique that provides definitive identification\
+      \ of a key functional group or chromophore. For example, IR spectroscopy may\
+      \ be used to support the presence of carbonyl, acyl, dinitrogen, carbonyl, and\
+      \ hydride moieties.\n\nParamagnetic compounds of this category present a further\
+      \ complication if NMR spectroscopy does not furnish clear evidence for the proposed\
+      \ formulation (note that NMR spectroscopy of paramagnetic complexes can be useful\
+      \ if sufficiently large sweep widths are used). In many cases, X-ray diffraction\
+      \ may provide the most unambiguous characterization of such complexes, but this\
+      \ will not suffice as the only means of characterization. In the absence of\
+      \ an X-ray structure determination, evidence for elemental constitution must\
+      \ be provided by elemental analysis (e.g., combustion analysis, microprobe analysis),\
+      \ or mass spectrometry. Magnetic moment and/or ESR spectroscopic data should\
+      \ also be given for paramagnetic compounds if it is considered that the spin\
+      \ state of the molecule is of especial interest.\n\n(b) Novel or Unexpected\
+      \ Compounds\n\nCompounds in this category are those that either (i) exhibit\
+      \ an unprecedented type of structure, or (ii) are obtained by unexpected reaction.\
+      \ Such compounds require more detailed characterization to ensure their validity.\
+      \ In select instances, a variety of definitive spectroscopic techniques may\
+      \ provide sufficient characterization (for example, if many of the nuclei are\
+      \ NMR active), but in the majority of cases evidence for elemental constitution\
+      \ must be provided by either elemental analysis (e.g. combustion analysis, microprobe\
+      \ analysis), or mass spectrometry. While an X-ray diffraction structure is not\
+      \ considered definitive proof of elemental composition, it is acceptable evidence\
+      \ for composition providing that the results of other physical methods concerning\
+      \ the characterization are conclusive.\n\n(c) Solid State Materials\n\nCompounds\
+      \ in this category are those that have no existence in solution. While X-ray\
+      \ diffraction may provide the most unambiguous characterization of such compounds,\
+      \ evidence for elemental constitution and homogeneity needs to be presented.\
+      \ Atom ratios as determined by, for example, microprobe analysis of selected\
+      \ elements may be sufficient for this purpose\n\n(d) Compounds that have not\
+      \ been isolated\n\nCompounds that have not been isolated in pure form (e.g.\
+      \ reaction intermediates or intractable mixtures, or unstable species) may be\
+      \ published. However, in these circumstances, an explicit statement must be\
+      \ given indicating that the compounds have not been isolated. Only in exceptional\
+      \ circumstances will a paper be published in which none of the new compounds\
+      \ reported has been isolated and fully characterized.\n\nPurity and Yield\n\n\
+      The yield and purity of all compounds must be reported, including the methods\
+      \ used to determine them. The yield of a compound obtained in an NMR tube reaction\
+      \ should be determined using an internal standard.\n\nGuidelines for Characterization\
+      \ of Organic Compounds\nSample Quality\n\nFor new substances, evidence of the\
+      \ homogeneity the purified sample should be included. Elemental analysis is\
+      \ sufficient. If no analysis was performed, then other evidence (for example,\
+      \ 1H NMR, 13C NMR, hplc, glpc, gel electrophoresis, etc.) should be included\
+      \ as figures in the Supporting Information.\n\nMolecular Weight\n\nEvidence\
+      \ of molecular weight should be provided, especially if elemental analysis was\
+      \ not performed. Low resolution MS data under conditions that minimize fragmentation\
+      \ are acceptable. If there is a specific need to distinguish alternative formulas\
+      \ with the same molecular mass (within one amu), then HRMS data are necessary.\n\
+      \nMiscellaneous\n\nNumerical listings of characteristic spectroscopic data should\
+      \ be included to support assigned structures, changes in functionality, unusual\
+      \ chromophores, properties, etc. Methods of purification used to prepare samples\
+      \ for characterization should be described. For crystalline samples, information\
+      \ about the method of crystallization should be included (solvents; mp; etc.).\
+      \ For non-racemic, chiral substances, data to allow correlation of absolute\
+      \ configuration should be given, preferably including [\u03B1]D values. If correlation\
+      \ data are provided based on hplc or glpc methods, then retention times for\
+      \ both enantiomers must be provided, together with solvent and flow rate information,\
+      \ and identification of the chiral support.\n\nIntermediates on Solid Phase;\
+      \ Combinatorial Chemistry\n\nValidation of methods and characterization of new\
+      \ substances in a statistically significant sampling should be provided. Resin-bound\
+      \ intermediates need not be characterized if acceptable end product quality\
+      \ (as defined in A-C above) is demonstrated.\n\nSpectra. Reproductions of spectra,\
+      \ or the relevant segments thereof, will be published only if concise numerical\
+      \ summaries are inadequate for the purposes of the paper. Papers dealing primarily\
+      \ with interpretation of spectra and those in which band shape or fine structure\
+      \ needs to be illustrated may be published with such spectra included. Spectra\
+      \ will not be published merely as adjuncts to the characterization of compounds,\
+      \ however. See \u2018Supporting Information\u2019 below. Routine infrared, electronic,\
+      \ NMR, and mass spectra of new compounds should be numerically summarized, as\
+      \ appropriate, in the Experimental Section of an Article or in the Supporting\
+      \ Information of a Communication.\n\nKinetic and Equilibrium Data. For publication\
+      \ in the Journal of the American Chemical Society, the reporting of kinetic\
+      \ data and equilibrium binding data for proteins, nucleic acids, and other species\
+      \ should preferably include a description of the identity of the catalyst or\
+      \ binding molecule, its origin, purity of composition, and any modifications\
+      \ such as mutations, post-translational modifications, or other modifications\
+      \ made to facilitate expression and purification. The method of assay and the\
+      \ exact experimental conditions of the assay should be provided as a reference\
+      \ to previous work, with or without modifications, or fully described if a new\
+      \ assay. Conditions essential to reproduce the results such as the temperature,\
+      \ pH, and pressure (if other than atmospheric) of the assay should be included.\
+      \ Terms such as \u201Cnot detectable\u201D (ND) should be avoided. Instead,\
+      \ an estimate of the limit of detection based on the sensitivity and error analysis\
+      \ of the assay should be provided. Authors are referred to the STRENDA (Standards\
+      \ for Reporting Enzymology Data) Commission of the Beilstein Institut (http://www.beilstein-institut.de/en/projects/strenda/guidelines)\
+      \ for an example of detailed guidelines.\n\nReporting and Stewardship of NMR\
+      \ Data. New guidelines recommend a standard baseline for the submission of NMR\
+      \ data to ACS journals. They are intended to promote accuracy and consistency.\
+      \ The guidelines are divided into three sections: NMR text, which outlines the\
+      \ preferred format for NMR data included in the Experimental Section; NMR spectra,\
+      \ which outlines the preferred format for inclusion of hard copies of spectra\
+      \ in the Supporting Information; and primary NMR data files, which outlines\
+      \ the procedure for submitting FID files, acquisition data, and processing parameters\
+      \ to include in the Supporting Information. Authors are strongly encouraged\
+      \ to provide all three sets of data for all new and/or key compounds described\
+      \ in a manuscript submission.\n\nIn the Experimental Section, the compound must\
+      \ be clearly identified, for example in a header at the beginning of the synthetic\
+      \ procedure or the summary of spectroscopic data. List the nucleus being measured,\
+      \ any nucleus being broad-band decoupled, the solvent used (formula preferred,\
+      \ e.g. C6D6 over benzene-d6), the standard used, and the field strength. Field\
+      \ strength should be noted for each spectrum, not as a comment in the general\
+      \ Experimental Section. The standard(s) may be specified in the general Experimental\
+      \ Section; as an example, 1H NMR data recorded in C6D6 listed as \u201Cresidual\
+      \ internal C6D5H (\u03B4 7.15)\u201D. Indicate solvent or peak suppression protocols\
+      \ used in collecting data. List the probe temperature when it is accurately\
+      \ known; ambient probe temperature is otherwise understood. Give 1H NMR chemical\
+      \ shifts to two digits after the decimal point. Include the number of protons\
+      \ represented by the signal, peak multiplicity, and coupling constants as needed\
+      \ (J italicized, reported with up to one digit after the decimal). The number\
+      \ of bonds through which the coupling is operative, xJ, may be specified by\
+      \ the author if known with a high degree of certainty. Accepted abbreviations\
+      \ for multiplicities and descriptors are s = singlet, d = doublet, t = triplet,\
+      \ q = quartet, quint = quintet, m = multiplet (denotes complex pattern), dd\
+      \ = doublet of doublets, dt = doublet of triplets, td = triplet of doublets,\
+      \ and br = broad signal.\n\nChemical shifts should be listed consistently in\
+      \ a single article, starting either from downfield to upfield or vice-versa.\
+      \ Assign peak identities under the following circumstances: non-decoupled or\
+      \ equivalent spectra have been collected (13C, 31P, etc.); 2-D experiments have\
+      \ been performed; or unambiguous assignment is possible without additional experiments,\
+      \ such as in the case of an organometallic metal-hydride 1H signal, PF6 vs MPPh3\
+      \ 31P signal, etc. Give 13C chemical shifts to one digit after the decimal point,\
+      \ unless an additional digit will help distinguish overlapping peaks. Include\
+      \ peak multiplicities for 1H-coupled 13C NMR spectra or for signals in 1H-decoupled\
+      \ spectra that are coupled to other magnetically active nuclei. A 13C NMR signal\
+      \ will be considered a singlet if the multiplicity is not assigned. Only rarely\
+      \ is a true multiplet observed in a 13C{1H} NMR spectrum. However, a certain\
+      \ region may contain a group of unresolved peaks or signals. Mention of unobserved\
+      \ resonances is encouraged.\n\nSubmission of spectra (.doc, .docx, .txt, .pdf,\
+      \ .tif) is strongly recommended for all new and/or key compounds, following\
+      \ these guidelines:\n\nA caption should be included on the spectrum, noting\
+      \ the nucleus being measured, the solvent (formula preferred, e.g. C6D6 over\
+      \ benzene-d6) and the field strength.\nA representation of the compound should\
+      \ be included on the spectrum\u2014please use ChemDraw or a related program.\
+      \ The compound identifier used in the manuscript should be included.\nThe largest\
+      \ peak in the 1H NMR spectrum should normally arise from the compound, not the\
+      \ solvent.\nAll peaks in the 1H NMR spectrum should be integrated. Chemical\
+      \ shift values should be included.\nThe solvent peak should be clearly labeled\
+      \ on the spectrum.\nAll peaks should be visible on the spectrum. Insets are\
+      \ encouraged to show expanded regions. At minimum, the spectral window should\
+      \ be \u20121 ppm to 9 ppm for 1H NMR and \u201210 ppm to 180 ppm for 13C NMR.\n\
+      Font should be clear and large enough to read (minimum of 10 point). Horizontal\
+      \ orientation is preferred for spectra.\nSubmission of primary NMR data files\
+      \ (FID files, acquisition data, processing parameters) is encouraged for all\
+      \ new and/or key compounds. When submitting these files, please consider the\
+      \ following guidelines:\n\nOne folder should be created for each compound. The\
+      \ folder should be named clearly, using the compound name (if available) and\
+      \ compound identifier, as referenced in the Experimental Section or Supporting\
+      \ Information. Include the FID files, acquisition data, and processing parameters\
+      \ for each experiment.\nName each spectrum according to the type of nucleus\
+      \ measured. 1H, 13C, DEPT, COSY, etc. NMR files should be compressed into zip\
+      \ files\u2014please use multiple zip files if necessary. Files must be submitted\
+      \ in their native format. In a text document, include the name of the manufacturer\
+      \ of the spectrometer used to collect the data, the acquisition software and\
+      \ processing programs used to analyze the data, and the field strength used\
+      \ to measure each nucleus (i.e., 300 MHz 1H or 50 MHz 13C). Include a structure\
+      \ file that shows the structure and compound identifier for each provided dataset.\
+      \ MolFile is the recommended format and is strongly preferred.\nNuclear Magnetic\
+      \ Resonance Pulse Sequences. For manuscripts that present new NMR pulse sequences,\
+      \ authors are requested to supply as \u201CSupporting Information for Publication\u201D\
+      \ a file that includes the original working pulse sequence information required\
+      \ to record data. This will typically include the pulse sequence code, parameter\
+      \ set, and other associated files, such as tables of gradient or pulse shapes.\n\
+      \nStructural and Chemical Shift Data for Proteins and Nucleic Acids. Any set\
+      \ of atomic coordinates referred to in the manuscript, including atomic coordinates\
+      \ and structure factors for proteins determined by X-ray crystallography and\
+      \ coordinates determined by NMR, should be deposited with the Protein Data Bank,\
+      \ Research Collaboratory for Structural Bioinformatics at Rutgers University\
+      \ whenever appropriate. (Theoretical model depositions are no longer accepted\
+      \ for inclusion in the PDB archive.) If the coordinate files are not deposited\
+      \ in the PDB, or if the PDB files are on hold until publication, then the coordinate\
+      \ files must be included in the Supporting Information submitted concurrently\
+      \ with the manuscript. Requirements are similar for structures of nucleic acids,\
+      \ which should be deposited with the Nucleic Acid Database. A manuscript that\
+      \ does not provide coordinates at the time of submission will not be sent out\
+      \ for review. It is the responsibility of the author to obtain a file name (PDB\
+      \ ID or NDB ID) for the molecule; the file name must appear in the published\
+      \ manuscript. If a file name has not yet been obtained upon acceptance of a\
+      \ paper, it must be added in proof. Atomic coordinates and structure factors\
+      \ for all structures mentioned must be available immediately upon publication\
+      \ of the paper, either directly in the Supporting Information or as a data bank\
+      \ deposition. Similar requirements also apply to any chemical shifts referred\
+      \ to in the paper, whether they are only for assignment of resonances or used\
+      \ for any form of structure calculation. Those chemical shifts must be available\
+      \ to the reviewer at time of submission, either as an available entry in the\
+      \ Biological Magnetic Resonance Data Bank or included directly as Supporting\
+      \ Information.\n\nSingle Crystal Diffraction Data. Manuscripts reporting the\
+      \ determination of one or more structures by X-ray diffraction must adhere to\
+      \ the following requirements:\n\nAbstract. The abstract may summarize geometric\
+      \ features of unusual interest but should not contain unit cell parameters.\n\
+      \nMain Body of Manuscript. Tables of essential interatomic distances and angles\
+      \ are not required but may be submitted (metric information for standard structural\
+      \ components should not be included).\n\nFor structures with anisotropically\
+      \ refined atoms, a figure displaying the thermal ellipsoids should ordinarily\
+      \ be presented; a spherical-atom representation may be substituted if necessary\
+      \ for clarity. If a spherical atom view is chosen for the manuscript, a thermal\
+      \ ellipsoid figure should be included in the Supporting Information. In cases\
+      \ where intermolecular interactions are relevant to the discussion, a view of\
+      \ the unit cell may be included.\n\nAn Article should list for each structure\
+      \ the formula, formula weight, crystal system, space group, color of crystal,\
+      \ unit cell parameters, temperature of data collection, and values of Z, R,\
+      \ and GOF; a brief description of data collection and solution and refinement\
+      \ of the structure should be placed in the Experimental Section. Tables of atom\
+      \ coordinates and thermal parameters will not be printed.\n\nStructure factors\
+      \ (except for proteins and nucleic acids) should not be submitted as Supporting\
+      \ Information. However, one printed table of structure factors should be retained\
+      \ in case it is requested by the Editor for review purposes only.\n\nCIF Submission\
+      \ Instructions:\nAll Crystallographic Information Files (CIFs), structure factor\
+      \ tables, and CheckCIF reports must be submitted to the Cambridge Crystallographic\
+      \ Data Centre (CCDC) prior to manuscript submission. See Requirements for Depositing\
+      \ X-Ray Crystallographic Data [PDF] for complete details on submission of CIFs\
+      \ and a list of file types accommodated by CCDC.\n\nBefore being submitted to\
+      \ CCDC, CIFs should be checked using the free checkCIF data-validation utility\
+      \ on the CIF Validation site.\nAny reported syntax errors should be corrected.\
+      \ Authors are required to correct/defend/or respond to any A-level alerts. Comments\
+      \ may be inserted into the CIF file using a Validation Response Form or uploaded\
+      \ as a separate document as Supporting Information for Review Only.\ncheckCIF\
+      \ output files (combined into one PDF file) should be uploaded at submission\
+      \ as Supporting Information for Review Only.\nAny subsequent revisions to the\
+      \ CIFs or structure factor tables should be deposited directly with the CCDC\
+      \ before resubmitting the manuscript in ACS Paragon Plus.\nPowder Diffraction\
+      \ Data. The presentation of X-ray powder diffraction data for new materials\
+      \ or for materials previously uncharacterized by this technique is encouraged.\
+      \ Data from X-ray powder measurements should be accompanied by details of the\
+      \ experimental technique: source of X-rays, the radiation, its wavelength, filters\
+      \ or monochromators, camera diameter, the type of X-ray recording, and the technique\
+      \ for measuring intensities. In cases of unindexed listing of the data, the\
+      \ d spacings of all observed lines should be listed in sequence, together with\
+      \ their relative intensities. In cases where filtered radiation is used, every\
+      \ effort should be made to identify residual \u03B2 lines. Where resolution\
+      \ into \u03B11-\u03B12 doublets occurs, the identification of the d spacing\
+      \ for each line as d\u03B11, d\u03B12 gives a measure of the quality of the\
+      \ diffraction pattern. When an indexing of the data is offered, the observed\
+      \ and calculated 1/d2 values should be listed along with the observed relative\
+      \ intensities (it is superfluous to give d spacings in this instance). All calculated\
+      \ 1/d2 values should be listed (exclusive of systematic absences), to the limit\
+      \ of the data quoted. If possible, the crystal system should be specified. Possible\
+      \ space groups may also be listed if the data warrant it. Relevant information\
+      \ about the specimen used should be included.\n\nMagnetic Measurements. Fits\
+      \ of magnetic data [\u03C7(T), \u03C7-1(T), \u03C7T(T), \u03BC(T), M(H), etc.]\
+      \ to an analytical expression must include both the Hamiltonian from which the\
+      \ analytical expression is derived and the final analytical expression and fitting\
+      \ parameters. When the value of an exchange coupling constant, J, is given in\
+      \ the abstract, the form of the Hamiltonian must also be included. The expressions\
+      \ may be included in the manuscript or, if long and complex, as Supporting Information;\
+      \ if the latter method is used, it should be noted in the Supporting Information\
+      \ paragraph at the end of the manuscript. In addition, how the sample was measured\
+      \ (in a gelatin capsule, Teflon capsule, etc.) and the diamagnetic correction\
+      \ for the sample holder, as well as the diamagnetic correction for the material,\
+      \ must be provided and the manner in which it was calculated (Pascal\u2019s\
+      \ constants) or measured must be stated.\n\nComputations. When computational\
+      \ results are an essential part of a manuscript, sufficient detail must be given,\
+      \ either within the paper or in the Supporting Information, to enable readers\
+      \ to reproduce the calculations. This includes data such as force field parameters\
+      \ and equations defining the model (or references to where such material is\
+      \ available in the open literature). If the software used for calculations is\
+      \ generally available, it must be properly cited in the References and Footnotes.\
+      \ References to the methods upon which the software is based must also be provided.\
+      \ Results obtained from methods or parameters that are not adequately described\
+      \ in the manuscript or in the literature are not acceptable for publication.\
+      \ Authors who report the results of electronic structure calculations are requested\
+      \ to provide as Supporting Information the geometries (either as Cartesian coordinates\
+      \ or Z matrices) of all the stationary points whose relative energies are given\
+      \ in the manuscript. The absolute energies in hartrees that are computed at\
+      \ these geometries should not be given in the manuscript but should be included\
+      \ in the Supporting Information. Where applicable, the number of imaginary frequencies\
+      \ should be reported to identify stable structures and transition states."
+    explanation: ''
   discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements

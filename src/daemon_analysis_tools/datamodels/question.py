@@ -67,6 +67,9 @@ class Question:
         """
         self.answers.append(Answer(answer, explanation))
 
+    def has_multiple_answers(self) -> bool:
+        return len(self.answers) > 1
+
     def has_discrepancies(self) -> bool:
         """Determine whether discrepancies exist among the answers.
 
@@ -85,7 +88,7 @@ class Question:
         if not self.is_open:
             return len(set(answer_texts)) > 1
         else:
-            return jaccard_similarity(answer_texts) > 0.55
+            return jaccard_similarity(answer_texts) < 0.55
 
     def get_final_answer(self) -> Answer:
         """Retrieve the final resolved answer.

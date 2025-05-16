@@ -175,7 +175,40 @@ data_citability:
       \ Statements\n\" ACS strongly encourages authors to select a repository that\
       \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
       \ \" "
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'What information is needed in the Data Availability Statement?
+
+      At a minimum, the statement should indicate that all data underlying the study
+      are available in the published article or its Supporting Information. If additional
+      data are available and not included with the article, authors should indicate
+      how to access the data, for example, by including the names and hyperlinks to
+      repositories where the data may be found, such as a discipline-specific or community-recognized
+      repository, or generalist repository when no other resource is available. See
+      examples of Data Availability Statements, as well as guidance on selecting a
+      repository.
+
+
+      Data repositories supporting peer-reviewed publications generally should meet
+      the following criteria:
+
+
+      Ensure long-term persistence and preservation of datasets (minimum of 5 years
+      after publication)
+
+
+      Be supported by a research community or research institution
+
+
+      Provide deposited datasets with stable and persistent identifiers, e.g., Digital
+      Object Identifiers (DOIs)
+
+
+      Allow access to data without restrictions
+
+
+      Provide clear terms of data use and data access (or license) on each dataset
+      landing page'
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -194,7 +227,13 @@ data_timing:
       \ encourage authors to make the research data underlying their articles publicly\
       \ available at the time of publication. \"\n\nNOTE: At the time of publication\
       \ interpreted as prior to official publication."
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication'
   discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -229,7 +268,25 @@ data_sharing_method:
       \ authors are encouraged to submit data in a format that can be most easily\
       \ accessed and reused. ACS encourages authors to provide machine-readable data\
       \ and to follow the FAIR Data Principles. \"\n\nencouraged = recommended"
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: '
+
+      Protein Structures: The atomic coordinates and related experimental data associated
+      with a structure reported in ACS journals must be deposited at a member site
+      of the Worldwide Protein Data Bank: RCSB PDB, PDBe, PDBj, or BMRB. The PDB ID
+      should be included in the manuscript. Authors must upload map density files,
+      PDB files and PDB validation reports as Supporting Information for Review only.
+      Authors must agree to release the atomic coordinates and experimental data when
+      the associated article is published. A manuscript will be accepted only after
+      receipt from the submitting author of a written statement that the coordinates
+      have been deposited. Coordinates must be released immediately upon publication.
+
+      X-Ray Crystallographic Structures of Small Molecules: Crystallographic data
+      on nucleosides, nucleotides, and other small molecules should be submitted upon
+      publication to the Cambridge Structural Database. Crystal structures of nucleic
+      acids should be deposited with the Nucleic Acid Database (NDB) at Nucleic Acid
+      Database (NDB) or with the RCSB PDB at RCSB Protein Data Bank - RCSB PDB.'
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -258,7 +315,21 @@ data_licenses:
       \ use of open licenses for reuse of data, such as Creative Commons CC BY. \"\
       \n\nNOTE: Although mentioned in Publishers RDP but not in the Journals RDP.\
       \ Chosen weaker statement."
-  correct_answer: 0
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.'
   discrepancy_reason: Text not found
 data_referee:
   text: 10. Referee guidelines concerning research data
@@ -297,7 +368,18 @@ data_recommended:
   1:
     text: Protein Structures, X-Ray Crystallographic Structures of Small Molecules
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 'Compound Characterization, Experimental, and Computational Data ; Guidelines
+      for Characterization of Organometallic and Inorganic Compounds ; (a) Routine
+      Compounds ; (b) Novel or Unexpected Compounds ; (c) Solid State Materials ;
+      (d) Compounds That Have Not Been Isolated ; Guidelines for Characterization
+      of Organic Compounds ; Guidelines for Reporting Biological Data ; Statistics
+      ; Biological Specimens ; a. Antibodies: ; b. Cell Lines and Microorganisms ;
+      e. Biological Assays ; f. Kinetic and Equilibrium Data ; Reporting and Stewardship
+      of NMR Data ; Biomolecule Structures: ; Single Crystal Diffraction Data ; CIF
+      Submission Instructions ; Powder Diffraction Data ; Magnetic Measurements ;
+      computations'
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -313,7 +395,9 @@ data_required:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 'CIF, PDB, #### double check if more ####'
+    explanation: ''
   discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements

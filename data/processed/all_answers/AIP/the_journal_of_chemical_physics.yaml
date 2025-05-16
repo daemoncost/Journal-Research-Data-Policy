@@ -1,8 +1,41 @@
 rdp_exist:
   text: 1. Existence of research data policy
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
+    text: Research Data Policy (RDP) exists.
+    explanation: "AIP Publishing believes that all datasets underlying the conclusions\
+      \ of the paper should be available to readers. We encourage authors to deposit\
+      \ their datasets in publicly available repositories (where available and appropriate)\
+      \ or present them in the main manuscript.\n\nWhat is a data availability statement?\n\
+      \nA data availability statements tells the reader where the data associated\
+      \ with a paper is available, and where applicable, includes links to the data\
+      \ set.\n\nWhat counts as data?\n\nBy data we mean the minimal dataset that would\
+      \ be necessary to interpret, replicate, and build upon the findings reported\
+      \ in the article. Some communities may have more specific standards and definition\
+      \ of data.\n\nWhich journals does this policy apply to?\n\nData availability\
+      \ statements are required for research published in all AIP Publishing journals.\n\
+      \nHow should I write a data availability statement?\n\nAIP Publishing has prepared\
+      \ a set of standard templates that you can use or adapt. Please review the author\
+      \ guidelines for examples.\n\nWhy should I use a data repository?\n\nData repositories\
+      \ make data more accessible and discoverable than sharing data via supplementary\
+      \ information files. Public repositories generally assign a Digital Object Identifier\
+      \ (DOI) to datasets which allows them to be cited in reference lists. Repositories\
+      \ also support domain-specific data reporting standards and provide standardized\
+      \ ways of structuring and identifying data.\n\nHow do I choose a data repository?\n\
+      \nSome research communities are served by specific data repositories; your institutional\
+      \ librarian, funder, or journal editor may make a recommendation. Researchers\
+      \ can also use a general repository \u2013 such as Zenodo, figshare or Dryad\
+      \ \u2013 that accept data from all disciplines. Certified repositories can also\
+      \ be found through the Registry of Research Data Repositories (re3data.org),\
+      \ FAIRsharing.org, or CoreTrustSeal.\n\nCan institutional repositories be used\
+      \ for data?\n\nAIP Publishing authors may host their data in their institutional\
+      \ or project specific repository."
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: In accordance with our Data Sharing Policy, all datasets supporting
+      the conclusion of your paper need to be available to readers.
+  2:
     text: Research Data Policy (RDP) exists.
     explanation: In accordance with our Data Sharing Policy, all datasets supporting
       the conclusion of your paper need to be available to readers.
@@ -10,45 +43,145 @@ rdp_exist:
   discrepancy_reason: null
 data_sharing:
   text: 3. Data sharing requirements in RDP
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 3
+  has_discrepancies: true
   0:
+    text: Data sharing required but not publicly (e.g. available upon request is allowed).
+    explanation: "Below is a list of standard templates for the text that will appear\
+      \ in the \u201CData Availability Statement\u201D portion of your article.  When\
+      \ multiple data sets are being described, please provide information regarding\
+      \ the data type for the benefit of the reader.\n\nDownload Data Availability\
+      \ Statement Templates\nAvailability of data \tTemplate for data availability\
+      \ statement\nData available on request from the authors \tThe data that support\
+      \ the findings of this study are available from the corresponding author upon\
+      \ reasonable request.\nData available in article or supplementary material \t\
+      The data that supports the findings of this study are available within the article\
+      \ [and its supplementary material].\nData openly available in a public repository\
+      \ that issues datasets with DOIs \tThe data that support the findings of this\
+      \ study are openly available in [repository name] at http://doi.org/[doi], reference\
+      \ number [reference number].\nData openly available in a public repository that\
+      \ does not issue DOIs \tThe data that support the findings of this study are\
+      \ openly available in [repository name], reference number [reference number].\n\
+      Data sharing not applicable \u2013 no new data generated \tData sharing is not\
+      \ applicable to this article as no new data were created or analyzed in this\
+      \ study.\nData generated at a central, large scale facility \tRaw data were\
+      \ generated at the [facility name] large scale facility.  Derived data supporting\
+      \ the findings of this study are available from the corresponding author upon\
+      \ reasonable request.\nEmbargo on data due to commercial restrictions \tThe\
+      \ data that support the findings will be available in [repository name] at [DOI\
+      \ link] following an embargo from the date of publication to allow for commercialization\
+      \ of research findings.\nData available on request due to privacy/ethical restrictions\
+      \ \tThe data that support the findings of this study are available on request\
+      \ from the corresponding author. The data are not publicly available due [state\
+      \ restrictions such as privacy or ethical restrictions].\nData subject to third\
+      \ party restrictions \tThe data that support the findings of this study are\
+      \ available from [third party]. Restrictions apply to the availability of these\
+      \ data, which were used under license for this study. Data are available from\
+      \ the authors upon reasonable request and with the permission of [third party]."
+  1:
     text: Data sharing encouraged but optional.
     explanation: AIP Publishing believes that all datasets underlying the conclusions
       of the paper should be available to readers. We encourage authors to deposit
       their datasets in publicly available repositories (where available and appropriate)
       or present them in the main manuscript.
-  correct_answer: null
-  discrepancy_reason: null
+  2:
+    text: Data sharing required but not publicly (e.g. available upon request is allowed).
+    explanation: 'The data should include the minimal dataset needed to interpret,
+      replicate, and build upon your findings.
+
+      You can either deposit your datasets in a publicly available repository (where
+      available or appropriate) or you can present them in the manuscript.
+
+      To inform readers of where your data can be found, all manuscripts need to contain
+      a data availability statement. Upon request and after permission of the third
+      party'
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: AIP Publishing believes that all datasets underlying the conclusions
+      of the paper should be available to readers. We encourage authors to deposit
+      their datasets in publicly available repositories (where available and appropriate)
+      or present them in the main manuscript.
+  discrepancy_reason: Language understanding
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: Public data sharing on a FAIR repository encouraged.
+    explanation: "Why should I use a data repository?\n\nData repositories make data\
+      \ more accessible and discoverable than sharing data via supplementary information\
+      \ files. Public repositories generally assign a Digital Object Identifier (DOI)\
+      \ to datasets which allows them to be cited in reference lists. Repositories\
+      \ also support domain-specific data reporting standards and provide standardized\
+      \ ways of structuring and identifying data.\n\nHow do I choose a data repository?\n\
+      \nSome research communities are served by specific data repositories; your institutional\
+      \ librarian, funder, or journal editor may make a recommendation. Researchers\
+      \ can also use a general repository \u2013 such as Zenodo, figshare or Dryad\
+      \ \u2013 that accept data from all disciplines. Certified repositories can also\
+      \ be found through the Registry of Research Data Repositories (re3data.org),\
+      \ FAIRsharing.org, or CoreTrustSeal.\n\nCan institutional repositories be used\
+      \ for data?\n\nAIP Publishing authors may host their data in their institutional\
+      \ or project specific repository."
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
     explanation: Certified repositories can also be found through the Registry of
       Research Data Repositories (re3data.org), FAIRsharing.org, or CoreTrustSeal.
+  2:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "Some research communities are served by specific data repositories;\
+      \ your institutional librarian, funder, or journal editor may make a recommendation.\
+      \ Researchers can also use a general repository \u2013 such as Zenodo, figshare\
+      \ or Dryad \u2013 that accept data from all disciplines. Certified repositories\
+      \ can also be found through the Registry of Research Data Repositories (re3data.org),\
+      \ FAIRsharing.org, or CoreTrustSeal."
   correct_answer: null
   discrepancy_reason: null
 data_availability:
   text: 2. Data availability statement
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
+    text: Required according to the RDP.
+    explanation: "If you\u2019re submitting your paper to an AIP Publishing journal,\
+      \ you\u2019ll be asked to provide a data availability statement with your submission,\
+      \ informing readers where the data can be found. Please be aware that some journals\
+      \ in the portfolio may require that new data be made available at the time of\
+      \ manuscript submission. Please check the journal\u2019s Editorial Policies\
+      \ for further information."
+  1:
     text: Required according to the RDP.
     explanation: "If you\u2019re submitting your paper to an AIP Publishing journal,\
       \ you\u2019ll be asked to provide a data availability statement with your submission,\
       \ informing readers where the data can be found.\n\nTo inform readers of where\
       \ your data can be found, all manuscripts need to contain a data availability\
       \ statement."
+  2:
+    text: Required according to the RDP.
+    explanation: "If you\u2019re submitting your paper to an AIP Publishing journal,\
+      \ you\u2019ll be asked to provide a data availability statement with your submission,\
+      \ informing readers where the data can be found."
   correct_answer: null
   discrepancy_reason: null
 data_citability:
   text: '5. Citability and findability of data '
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "Why should I use a data repository?\n\nData repositories make data\
+      \ more accessible and discoverable than sharing data via supplementary information\
+      \ files. Public repositories generally assign a Digital Object Identifier (DOI)\
+      \ to datasets which allows them to be cited in reference lists. Repositories\
+      \ also support domain-specific data reporting standards and provide standardized\
+      \ ways of structuring and identifying data.\n\nHow do I choose a data repository?\n\
+      \nSome research communities are served by specific data repositories; your institutional\
+      \ librarian, funder, or journal editor may make a recommendation. Researchers\
+      \ can also use a general repository \u2013 such as Zenodo, figshare or Dryad\
+      \ \u2013 that accept data from all disciplines. Certified repositories can also\
+      \ be found through the Registry of Research Data Repositories (re3data.org),\
+      \ FAIRsharing.org, or CoreTrustSeal."
+  1:
     text: DOIs or other persistent identifiers recommended for datasets or codes.
     explanation: 'We encourage datasets to be formally cited in references lists when
       the dataset is hosted in a public repository that assigns Digital Object Identifier
@@ -57,22 +190,37 @@ data_citability:
 
       Identifier: DOIs should be displayed as linkable, permanent URLs, including
       the https://doi.org prefix.'
+  2:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'We encourage datasets to be formally cited in references lists when
+      the dataset is hosted in a public repository that assigns Digital Object Identifier
+      (DOI) to datasets:'
   correct_answer: null
   discrepancy_reason: null
 data_timing:
   text: 7. Timing of data release
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: Timing of data availability not adressed in RDP.
+    explanation: N.A.
+  1:
+    text: Timing of data availability not adressed in RDP.
     explanation: It depends on the type of the data and their potential availability.
+  2:
+    text: Timing of data availability not adressed in RDP.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null
 data_sharing_method:
   text: 8. Recommended data sharing method
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: We encourage authors to deposit their datasets in publicly available
+      repositories (where available and appropriate) or present them in the main manuscript.
+  1:
     text: Multiple data sharing methods equally recommended in RDP.
     explanation: "Some research communities are served by specific data repositories;\
       \ your institutional librarian, funder, or journal editor may make a recommendation.\
@@ -84,36 +232,65 @@ data_sharing_method:
       \ tables and/or text that are too long or may be of limited interest to readers\
       \ can be included as \u201Csupplementary material,\u201D which can aid the reviewer\
       \ and be accessed by readers online after publication.\n"
+  2:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'You can either deposit your datasets in a publicly available repository
+      (where available or appropriate) or you can present them in the manuscript.
+
+      Some research communities are served by specific data repositories; your institutional
+      librarian, funder, or journal editor may make a recommendation. AIP Publishing
+      authors may host their data in their institutional or project specific repository.'
   correct_answer: null
   discrepancy_reason: null
 data_licenses:
   text: 9. Recommended/required licenses
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: No mention of data/code licenses in RDP.
+    explanation: N.A.
+  1:
+    text: No mention of data/code licenses in RDP.
     explanation: No particular comment about this
+  2:
+    text: No mention of data/code licenses in RDP.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null
 data_referee:
   text: 10. Referee guidelines concerning research data
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 3
+  has_discrepancies: true
   0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: N.A.
+  1:
     text: Data sharing policy mentioned in refereeing guidelines.
     explanation: 'For new Potential Energy Surfaces (PES): The PES.tar file will be
       made available to the referees to give them the option to examine it.'
-  correct_answer: null
-  discrepancy_reason: null
+  2:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: none
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: 'For new Potential Energy Surfaces (PES): The PES.tar file will be
+      made available to the referees to give them the option to examine it.'
+  discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
+    text: N.A.
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  2:
     text: .nan
     explanation: ''
   correct_answer: null
@@ -124,18 +301,27 @@ data_required:
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
+    text: N.A.
+    explanation: ''
+  1:
     text: Potential Energy Surfaces
+    explanation: ''
+  2:
+    text: none
     explanation: ''
   correct_answer: null
   discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 3
+  has_discrepancies: true
   0:
+    text: Code sharing not mentioned.
+    explanation: N.A.
+  1:
     text: Code sharing required.
     explanation: All papers on new potential energy surfaces need to be accompanied
       by a tape archive (e.g., PES.tar) file. The PES.tar (tape archive file) should
@@ -143,73 +329,124 @@ code_required:
       also its forces for use in classical trajectory calculations. If the manuscript
       is accepted for publication, the PES.tar file will be published as supplementary
       material.
-  correct_answer: null
-  discrepancy_reason: null
+  2:
+    text: Code sharing not mentioned.
+    explanation: none
+  correct_answer:
+    text: Code sharing not mentioned.
+    explanation: N.A.
+  discrepancy_reason: Language understanding
 code_reproducibility:
   text: 14. Code Reproducibility
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 3
+  has_discrepancies: true
   0:
+    text: No mention of dependencies for research code.
+    explanation: N.A.
+  1:
     text: Journal policies require stating all dependencies and their versions that
       were used to run computational experiments.
     explanation: The computer program can be written in any modern computer language,
       but the compiler that the authors used (including its version number) needs
       to be specified, and the program needs to be accompanied by example input and
       output files that reproduce some of the key results presented in the paper.
-  correct_answer: null
-  discrepancy_reason: null
+  2:
+    text: No mention of dependencies for research code.
+    explanation: none
+  correct_answer:
+    text: No mention of dependencies for research code.
+    explanation: N.A.
+  discrepancy_reason: Language understanding
 code_versioning:
   text: 15. Versioning and persistent identifiers
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
+    explanation: N.A.
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
     explanation: No comments about this
+  2:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null
 code_quality:
   text: 16. Code Quality Standards
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: The journal policies do not mention any code quality standards.
+    explanation: N.A.
+  1:
+    text: The journal policies do not mention any code quality standards.
     explanation: No comments about this
+  2:
+    text: The journal policies do not mention any code quality standards.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null
 code_autotest:
   text: 17. Automatic Testing
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: No mention of automatic testing to verify code functionality.
+    explanation: N.A.
+  1:
+    text: No mention of automatic testing to verify code functionality.
     explanation: No comments about this
+  2:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null
 code_docs:
   text: 18. Code Documentation
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: No mention of standards for code documentation.
+    explanation: N.A.
+  1:
+    text: No mention of standards for code documentation.
     explanation: No comments about this
+  2:
+    text: No mention of standards for code documentation.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null
 code_linting:
   text: 19. Linting Standards
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: No mention of linting standards for code.
+    explanation: N.A.
+  1:
+    text: No mention of linting standards for code.
     explanation: No comments about this
+  2:
+    text: No mention of linting standards for code.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null
 code_development:
   text: 20. Code Development
-  N. encoders: 1
+  N. encoders: 3
   has_discrepancies: false
   0:
     text: No mention of standards for code development such as continuous integration.
+    explanation: N.A.
+  1:
+    text: No mention of standards for code development such as continuous integration.
     explanation: No comments about this
+  2:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: none
   correct_answer: null
   discrepancy_reason: null

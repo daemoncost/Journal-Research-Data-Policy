@@ -15,9 +15,9 @@ def _select_correct_answer(
     selected_answer = None
     correct_index = None
 
-    if isinstance(correct_answer, str):
+    if not isinstance(correct_answer, int):
         for idx, answer in enumerate(question.answers):
-            if answer.text == correct_answer:
+            if str(answer.text) == str(correct_answer):
                 selected_answer = answer
                 correct_index = idx
                 break

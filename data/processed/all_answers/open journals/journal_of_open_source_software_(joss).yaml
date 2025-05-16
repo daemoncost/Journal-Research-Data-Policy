@@ -1,0 +1,324 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: "\u201CJOSS is a developer-friendly journal for research software\
+      \ packages\u2026 All submissions must include code and installation instructions.\u201D"
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'If any original data analysis results are provided within the submitted
+      work, such results have to be entirely reproducible by reviewers, including
+      accessing the data.
+
+
+      Submissions are, by definition, contained within one or multiple repositories,
+      which we require authors to archive before we accept the submission. Any data
+      contained within the software is made available accordingly.'
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing of all data required.
+    explanation: "\u201CCode and associated data must be made openly available.\u201D"
+  1:
+    text: Data sharing only with editors and referees (no public sharing)
+    explanation: '"If any original data analysis results are provided within the submitted
+      work, such results have to be entirely reproducible by reviewers, including
+      accessing the data."
+
+      "Submissions are, by definition, contained within one or multiple repositories,
+      which we require authors to archive before we accept the submission. Any data
+      contained within the software is made available accordingly."'
+  correct_answer:
+    text: Public data sharing of all data required.
+    explanation: "\u201CCode and associated data must be made openly available.\u201D"
+  discrepancy_reason: Text not found
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing of all data on a FAIR repository required.
+    explanation: "\u201CJOSS encourages the use of Zenodo and similar repositories\
+      \ with DOI assignment.\u201D"
+  1:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: '"If any original data analysis results are provided within the submitted
+      work, such results have to be entirely reproducible by reviewers, including
+      accessing the data."
+
+      "Submissions are, by definition, contained within one or multiple repositories,
+      which we require authors to archive before we accept the submission. Any data
+      contained within the software is made available accordingly."'
+  correct_answer:
+    text: Public data sharing of all data on a FAIR repository required.
+    explanation: "\u201CJOSS encourages the use of Zenodo and similar repositories\
+      \ with DOI assignment.\u201D"
+  discrepancy_reason: Text not found
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Required according to the RDP.
+    explanation: "\u201CAuthors must include information on how to access the data\
+      \ and code.\u201D"
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: '"Submissions are, by definition, contained within one or multiple
+      repositories, which we require authors to archive before we accept the submission."'
+  correct_answer:
+    text: Required according to the RDP.
+    explanation: "\u201CAuthors must include information on how to access the data\
+      \ and code.\u201D"
+  discrepancy_reason: Text not found
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: "\u201CSubmissions must include a DOI or other citation mechanism\
+      \ for the software repository.\u201D"
+  1:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: '"Upon successful completion of the review, authors will make a tagged
+      release of the software, and deposit a copy of the repository with a data-archiving
+      service such as Zenodo or figshare, get a DOI for the archive, and update the
+      review issue thread with the version number and DOI."'
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Required data must be available prior to review process.
+    explanation: "\u201CThe software must be available publicly at the time of submission.\u201D"
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: '"Upon successful completion of the review, authors will make a tagged
+      release of the software, and deposit a copy of the repository with a data-archiving
+      service such as Zenodo or figshare, get a DOI for the archive, and update the
+      review issue thread with the version number and DOI."'
+  correct_answer:
+    text: Required data must be available prior to review process.
+    explanation: "\u201CThe software must be available publicly at the time of submission.\u201D"
+  discrepancy_reason: Text not found
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: "\u201CSoftware must be hosted in a public Git repository such as\
+      \ GitHub or GitLab.\u201D"
+  1:
+    text: Public online repositories recommended in RDP.
+    explanation: '"Make your software available in an open repository (GitHub, Bitbucket,
+      etc.) and include an OSI approved open source license."'
+  correct_answer: null
+  discrepancy_reason: null
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Open access license required for shared data.
+    explanation: "\u201CSubmissions must be released under an OSI-approved open source\
+      \ license.\u201D"
+  1:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: '"The software must be open source as per the OSI definition."'
+  correct_answer:
+    text: Open access license required for shared data.
+    explanation: "\u201CSubmissions must be released under an OSI-approved open source\
+      \ license.\u201D"
+  discrepancy_reason: Text not found
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Confirmation of shared data or code by referee required.
+    explanation: "\u201CReviewers must confirm that the software is accessible and\
+      \ functional.\u201D"
+  1:
+    text: Confirmation of shared data or code by referee required.
+    explanation: '"A JOSS review involves checking submissions against a checklist
+      of essential software features and details in the submitted paper."'
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Not mentioned
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer:
+    text: Not mentioned
+    explanation: ''
+  discrepancy_reason: Formatting
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer:
+    text: .nan
+    explanation: ''
+  discrepancy_reason: Formatting
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing required.
+    explanation: "\u201CAll submissions must include open source code.\u201D"
+  1:
+    text: Code sharing required.
+    explanation: '"The software must be open source as per the OSI definition."'
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Journal policies require stating all dependencies and their versions that
+      were used to run computational experiments.
+    explanation: "\u201CAuthors must include installation instructions and dependencies.\u201D"
+  1:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: '"Make sure that the software complies with the JOSS review criteria.
+      In particular, your software should be full-featured, well-documented, and contain
+      procedures (such as automated tests) for checking correctness."'
+  correct_answer:
+    text: Journal policies require stating all dependencies and their versions that
+      were used to run computational experiments.
+    explanation: "\u201CAuthors must include installation instructions and dependencies.\u201D"
+  discrepancy_reason: Language understanding
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Journal policies require a persistent identifier or specifying a version
+      of developed code.
+    explanation: "\u201CSoftware must be archived with a versioned DOI (e.g., via\
+      \ Zenodo).\u201D"
+  1:
+    text: Journal policies require a persistent identifier or specifying a version
+      of developed code.
+    explanation: 'Sometimes the version of the software changes as a consequence of
+      the review process. To update the version of the software do the following:'
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: The journal policies specify criteria for referees to asses the quality
+      of code.
+    explanation: "\u201CReviewers check for functionality, documentation, and tests\
+      \ as part of review.\u201D"
+  1:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: '"Your software should be a significant contribution to the available
+      open source software that either enables some new research challenges to be
+      addressed or makes addressing research challenges significantly better (e.g.,
+      faster, easier, simpler)."'
+  correct_answer:
+    text: The journal policies specify criteria for referees to asses the quality
+      of code.
+    explanation: "\u201CReviewers check for functionality, documentation, and tests\
+      \ as part of review.\u201D"
+  discrepancy_reason: Text not found
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend automatic testing to verify code
+      functionality.
+    explanation: "\u201CAutomated tests are highly encouraged and reviewed.\u201D"
+  1:
+    text: The journal policies require automatic testing to verify code functionality.
+    explanation: Make sure that the software complies with the JOSS review criteria.
+      In particular, your software should be full-featured, well-documented, and contain
+      procedures (such as automated tests) for checking correctness.
+  correct_answer:
+    text: The journal policies encourage/recommend automatic testing to verify code
+      functionality.
+    explanation: "\u201CAutomated tests are highly encouraged and reviewed.\u201D"
+  discrepancy_reason: Text not found
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies require documentation of code.
+    explanation: "\u201CDocumentation should include installation instructions and\
+      \ usage examples.\u201D"
+  1:
+    text: The journal policies require documentation of code.
+    explanation: Make sure that the software complies with the JOSS review criteria.
+      In particular, your software should be full-featured, well-documented, and contain
+      procedures (such as automated tests) for checking correctness.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend linting standards for code.
+    explanation: "\u201CCode style and readability are evaluated during review.\u201D"
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text
+  correct_answer:
+    text: The journal policies encourage/recommend linting standards for code.
+    explanation: "\u201CCode style and readability are evaluated during review.\u201D"
+  discrepancy_reason: Text not found
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies encourage/recommend standards for code development
+      such as continuous integration.
+    explanation: "\u201CBest practices including continuous integration are encouraged.\u201D"
+  1:
+    text: The journal policies encourage/recommend standards for code development
+      such as continuous integration.
+    explanation: 'Authors are strongly encouraged to include an automated test suite
+      covering the core functionality of their software. Good: An automated test suite
+      hooked up to continuous integration (GitHub Actions, Circle CI, or similar)'
+  correct_answer: null
+  discrepancy_reason: null
