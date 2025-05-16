@@ -7,7 +7,12 @@ rdp_exist:
     explanation: 'Data Availability Statement: Under this new policy, all authors
       must declare if and how any data that were generated or analyzed as part of
       the current study can be accessed.'
-  correct_answer: null
+  correct_answer:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Data Availability Statement: Under this new policy, all authors
+      must declare if and how any data that were generated or analyzed as part of
+      the current study can be accessed.'
+  discrepancy_reason: null
 data_sharing:
   text: 3. Data sharing requirements in RDP
   N. encoders: 1
@@ -17,7 +22,12 @@ data_sharing:
     explanation: We strongly encourage authors to make research data associated with
       their manuscripts publicly available where possible, and to use best practices
       when selecting data repositories and citing datasets.
-  correct_answer: null
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: We strongly encourage authors to make research data associated with
+      their manuscripts publicly available where possible, and to use best practices
+      when selecting data repositories and citing datasets.
+  discrepancy_reason: null
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
@@ -26,7 +36,10 @@ data_fair:
   0:
     text: Public data sharing on a FAIR repository not mentioned in RDP.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: no text.
+  discrepancy_reason: null
 data_availability:
   text: 2. Data availability statement
   N. encoders: 1
@@ -36,7 +49,12 @@ data_availability:
     explanation: Information about how to access the data underlying the results presented
       in a paper should be provided in a Data Availability Statement (DAS) and, where
       possible, datasets should be cited in the reference list.
-  correct_answer: null
+  correct_answer:
+    text: Required according to the RDP.
+    explanation: Information about how to access the data underlying the results presented
+      in a paper should be provided in a Data Availability Statement (DAS) and, where
+      possible, datasets should be cited in the reference list.
+  discrepancy_reason: null
 data_citability:
   text: '5. Citability and findability of data '
   N. encoders: 1
@@ -46,7 +64,12 @@ data_citability:
     explanation: '(link in the review-general-policies): You create Digital Object
       Identifiers (DOIs) to make your research outputs and resources discoverable
       and citable for the long term.'
-  correct_answer: null
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: '(link in the review-general-policies): You create Digital Object
+      Identifiers (DOIs) to make your research outputs and resources discoverable
+      and citable for the long term.'
+  discrepancy_reason: null
 data_timing:
   text: 7. Timing of data release
   N. encoders: 1
@@ -57,7 +80,13 @@ data_timing:
       as integral parts of a manuscript. Such materials are subject to peer-review
       procedures along with the rest of the paper and should be uploaded and described
       using Optica's Prism manuscript system.
-  correct_answer: null
+  correct_answer:
+    text: Required data must be available prior to review process.
+    explanation: Optica journals allow authors to include supplementary materials
+      as integral parts of a manuscript. Such materials are subject to peer-review
+      procedures along with the rest of the paper and should be uploaded and described
+      using Optica's Prism manuscript system.
+  discrepancy_reason: null
 data_sharing_method:
   text: 8. Recommended data sharing method
   N. encoders: 1
@@ -72,7 +101,17 @@ data_sharing_method:
       \ portal or be placed in an appropriate external repository. Original contributions\
       \ of large datasets should be placed in an open, archival database and cited\
       \ in the main reference section."
-  correct_answer: null
+  correct_answer:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: "Certain other supplementary materials\u2014such as videos and machine-readable\
+      \ data tables\u2014can be submitted as stand-alone files for hosting on OSA's\
+      \ Figshare portal. The material in figshare will not be publically accessible\
+      \ during peer review. Datasets and code may be uploaded to the Optica figshare\
+      \ portal or be placed in an appropriate external repository. Original contributions\
+      \ of large datasets should be placed in an open, archival database and cited\
+      \ in the main reference section."
+  discrepancy_reason: null
 data_licenses:
   text: 9. Recommended/required licenses
   N. encoders: 1
@@ -80,7 +119,10 @@ data_licenses:
   0:
     text: No mention of data/code licenses in RDP.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text.
+  discrepancy_reason: null
 data_referee:
   text: 10. Referee guidelines concerning research data
   N. encoders: 1
@@ -88,7 +130,10 @@ data_referee:
   0:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text.
+  discrepancy_reason: null
 data_recommended:
   text: '11. Unique policies for data types
 
@@ -100,7 +145,10 @@ data_recommended:
   0:
     text: no text.
     explanation: ''
-  correct_answer: null
+  correct_answer:
+    text: no text.
+    explanation: ''
+  discrepancy_reason: null
 data_required:
   text: '12. Unique policies for data types
 
@@ -112,7 +160,10 @@ data_required:
   0:
     text: no text.
     explanation: ''
-  correct_answer: null
+  correct_answer:
+    text: no text.
+    explanation: ''
+  discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 1
@@ -123,7 +174,13 @@ code_required:
       files are encouraged to place those items in OSA's Figshare portal or an appropriate
       archival repository and cite them as described in OSA's Author Guidelines for
       Supplementary Materials.
-  correct_answer: null
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: Authors who wish to include larger datasets, code files, or simulation
+      files are encouraged to place those items in OSA's Figshare portal or an appropriate
+      archival repository and cite them as described in OSA's Author Guidelines for
+      Supplementary Materials.
+  discrepancy_reason: null
 code_reproducibility:
   text: 14. Code Reproducibility
   N. encoders: 1
@@ -131,7 +188,10 @@ code_reproducibility:
   0:
     text: No mention of dependencies for research code.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: No mention of dependencies for research code.
+    explanation: no text.
+  discrepancy_reason: null
 code_versioning:
   text: 15. Versioning and persistent identifiers
   N. encoders: 1
@@ -140,7 +200,11 @@ code_versioning:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text.
+  discrepancy_reason: null
 code_quality:
   text: 16. Code Quality Standards
   N. encoders: 1
@@ -148,7 +212,10 @@ code_quality:
   0:
     text: The journal policies do not mention any code quality standards.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text.
+  discrepancy_reason: null
 code_autotest:
   text: 17. Automatic Testing
   N. encoders: 1
@@ -156,7 +223,10 @@ code_autotest:
   0:
     text: No mention of automatic testing to verify code functionality.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text.
+  discrepancy_reason: null
 code_docs:
   text: 18. Code Documentation
   N. encoders: 1
@@ -164,7 +234,10 @@ code_docs:
   0:
     text: No mention of standards for code documentation.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: No mention of standards for code documentation.
+    explanation: no text.
+  discrepancy_reason: null
 code_linting:
   text: 19. Linting Standards
   N. encoders: 1
@@ -172,7 +245,10 @@ code_linting:
   0:
     text: No mention of linting standards for code.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: No mention of linting standards for code.
+    explanation: no text.
+  discrepancy_reason: null
 code_development:
   text: 20. Code Development
   N. encoders: 1
@@ -180,4 +256,7 @@ code_development:
   0:
     text: No mention of standards for code development such as continuous integration.
     explanation: no text.
-  correct_answer: null
+  correct_answer:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text.
+  discrepancy_reason: null

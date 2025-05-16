@@ -81,7 +81,13 @@ data_citability:
   1:
     text: No mention of DOIs or other persistent identifiers for datasets or codes.
     explanation: no text
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "\u201CWe believe that all the content we publish should be easily\
+      \ identifiable and that there should be a persistent link to its location on\
+      \ the Internet.\nWe achieve this by assigning a DOI to every suitable piece\
+      \ of content and including the DOIs of referenced articles in the bibliographic\
+      \ reference lists.\u201D \n"
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -109,7 +115,10 @@ data_sharing_method:
     explanation: "\"Before submitting research datasets as Supplementary Information,\
       \ authors should read the journal\u2019s Research data policy. We encourage\
       \ research data to be archived in data repositories wherever possible.\""
-  correct_answer: 0
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: We encourage research data to be archived in data repositories wherever
+      possible.
   discrepancy_reason: Language understanding
 data_licenses:
   text: 9. Recommended/required licenses
@@ -143,7 +152,12 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: no text
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: Please note that we expect our reviewers to review all data, including
+      any extended data and supplementary information. Is the reporting of data and
+      methodology sufficiently detailed and transparent to enable reproducing the
+      results?
   discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
@@ -166,7 +180,9 @@ data_recommended:
   1:
     text: no text
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: no text
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -182,7 +198,9 @@ data_required:
   1:
     text: no text
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: no text
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements
@@ -196,7 +214,11 @@ code_required:
   1:
     text: Code sharing not mentioned.
     explanation: no text
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: All authors are requested to make sure that all data and materials
+      as well as software application or custom code support their published claims
+      and comply with field standards.
   discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility
@@ -226,7 +248,10 @@ code_versioning:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: no text
-  correct_answer: 1
+  correct_answer:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
   discrepancy_reason: Language understanding
 code_quality:
   text: 16. Code Quality Standards
@@ -240,7 +265,9 @@ code_quality:
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: no text
-  correct_answer: 1
+  correct_answer:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
   discrepancy_reason: Language understanding
 code_autotest:
   text: 17. Automatic Testing

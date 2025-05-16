@@ -160,7 +160,17 @@ data_sharing:
       artefacts used to generate the analyses presented in the paper should also be
       publicly archived. If sharing data compromises ethical standards or legal requirements
       then authors are not expected to share it.
-  correct_answer: 1
+  correct_answer:
+    text: Public data sharing required only for specific types of data.
+    explanation: The journal expects that data supporting the results in the paper
+      will be archived in an appropriate public repository. Authors are required to
+      provide a data availability statement to describe the availability or the absence
+      of shared data. When data have been shared, authors are required to include
+      in their data availability statement a link to the repository they have used,
+      and to cite the data they have shared. Whenever possible the scripts and other
+      artefacts used to generate the analyses presented in the paper should also be
+      publicly archived. If sharing data compromises ethical standards or legal requirements
+      then authors are not expected to share it.
   discrepancy_reason: Text not found
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -198,7 +208,19 @@ data_fair:
       artefacts used to generate the analyses presented in the paper should also be
       publicly archived. If sharing data compromises ethical standards or legal requirements
       then authors are not expected to share it.
-  correct_answer: 1
+  correct_answer:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: The journal expects that data supporting the results in the paper
+      will be archived in an appropriate public repository. Authors are required to
+      provide a data availability statement to describe the availability or the absence
+      of shared data. When data have been shared, authors are required to include
+      in their data availability statement a link to the repository they have used,
+      and to cite the data they have shared. Whenever possible the scripts and other
+      artefacts used to generate the analyses presented in the paper should also be
+      publicly archived. If sharing data compromises ethical standards or legal requirements
+      then authors are not expected to share it.
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -247,7 +269,11 @@ data_availability:
     explanation: "This journal expects data sharing. Review Wiley\u2019s Data Sharing\
       \ policy where you will be able to see and select the data availability statement\
       \ that is right for your submission."
-  correct_answer: 1
+  correct_answer:
+    text: Required according to the RDP.
+    explanation: "This journal expects data sharing. Review Wiley\u2019s Data Sharing\
+      \ policy where you will be able to see and select the data availability statement\
+      \ that is right for your submission."
   discrepancy_reason: Text not found
 data_citability:
   text: '5. Citability and findability of data '
@@ -293,7 +319,24 @@ data_citability:
       Add [dataset] immediately before the reference so we can properly identify it
       as a data reference. The [dataset] identifier will not appear in your published
       article.'
-  correct_answer: 1
+  correct_answer:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: 'Data citation is appropriate for data held within institutional,
+      subject focused, or more general data repositories. It is not intended to take
+      the place of community standards such as in-line citation of GenBank accession
+      codes. When citing or making claims based on data, authors should refer to the
+      data at the relevant place in the manuscript text and in addition provide a
+      formal citation in the reference list. We recommend the format proposed by the
+      Joint Declaration of Data Citation Principles:
+
+
+      [dataset] Authors; Year; Dataset title; Data repository or archive; Version
+      (if any); Persistent identifier (e.g. DOI)
+
+
+      Add [dataset] immediately before the reference so we can properly identify it
+      as a data reference. The [dataset] identifier will not appear in your published
+      article.'
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -306,7 +349,10 @@ data_timing:
     text: Required data must be available after official publication.
     explanation: Did not find anything to the contrary, referee guidelines do not
       mention this explicitly
-  correct_answer: 1
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: Did not find anything to the contrary, referee guidelines do not
+      mention this explicitly
   discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -335,7 +381,11 @@ data_sharing_method:
     explanation: When data have been shared, authors are required to include in their
       data availability statement a link to the repository they have used, and to
       cite the data they have shared
-  correct_answer: 1
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: When data have been shared, authors are required to include in their
+      data availability statement a link to the repository they have used, and to
+      cite the data they have shared
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -375,7 +425,9 @@ data_recommended:
   1:
     text: All supporting the findings
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: not mentioned
+    explanation: ''
   discrepancy_reason: Language understanding
 data_required:
   text: '12. Unique policies for data types
@@ -391,7 +443,9 @@ data_required:
   1:
     text: All data supporting the findings
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: not mentioned
+    explanation: ''
   discrepancy_reason: Language understanding
 code_required:
   text: 13. Code sharing requirements

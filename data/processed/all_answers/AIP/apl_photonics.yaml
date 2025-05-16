@@ -276,7 +276,7 @@ data_recommended:
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
   N. encoders: 3
-  has_discrepancies: false
+  has_discrepancies: true
   0:
     text: N.A.
     explanation: ''
@@ -295,7 +295,7 @@ data_required:
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
   N. encoders: 3
-  has_discrepancies: false
+  has_discrepancies: true
   0:
     text: N.A.
     explanation: ''

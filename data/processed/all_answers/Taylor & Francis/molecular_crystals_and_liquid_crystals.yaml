@@ -151,7 +151,9 @@ code_required:
   1:
     text: Code sharing encouraged but optional.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing not mentioned.
+    explanation: no text
   discrepancy_reason: Language understanding
 code_reproducibility:
   text: 14. Code Reproducibility

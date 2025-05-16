@@ -192,7 +192,24 @@ data_fair:
       of a research paper into an easy-to-absorb form that can be accessed by reviewers
       and editors. These checklists were created by Wiley-VCH editors in collaboration
       with researchers specializing in the subject field of the checklist.
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "The journal encourages authors to share the data and other artefacts\
+      \ supporting the results in the paper by archiving it in an appropriate public\
+      \ repository. Authors may provide a data availability statement, including a\
+      \ link to the repository they have used, in order that this statement can be\
+      \ published in their paper. Shared data should be cited. All accepted manuscripts\
+      \ may elect to publish a data availability statement to confirm the presence\
+      \ or absence of shared data. For authors who have shared data: this statement\
+      \ will describe how the data can be accessed, and include a persistent identifier\
+      \ (e.g., a DOI for the data, or an accession number) from the repository where\
+      \ you shared the data. You may use the Standard Templates for Author Use or\
+      \ draft your own.\nHow to choose an appropriate data repository\n\nSee below\
+      \ for Wiley\u2019s recommended methods of choosing an appropriate data repository\
+      \ for your research:\n\n    Visit our Author Compliance Tool to check the data\
+      \ sharing policy of your chosen journal and/or funder before submitting your\
+      \ work\n    Visit re3data.org or fairsharing.org to help identify registered\
+      \ and certified data repositories relevant to your subject area\n"
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -241,7 +258,44 @@ data_availability:
     explanation: Please download and fill out the relevant data reporting checklist
       and include it with your manuscript files (as a Data Reporting Checklist) when
       you submit.
-  correct_answer: 0
+  correct_answer:
+    text: Mentioned in the RDP but optional.
+    explanation: "Standard Templates for Author Use\n\nBelow is a list of standard\
+      \ templates for the text that will appear in the \"Data Availability Statement\"\
+      \ portion of your article.. These statements adhere to guidelines set forth\
+      \ to comply with journals that have an \"Expects Data\" or \"Mandates Data\"\
+      \ policy.\n\nAvailability of data \tTemplate for data availability statement\n\
+      Data openly available in a public repository that issues datasets with DOIs\
+      \ \tThe data that support the findings of this study are openly available in\
+      \ [repository name e.g \u201Cfigshare\u201D] at http://doi.org/[doi], reference\
+      \ number [reference number].\nData openly available in a public repository that\
+      \ does not issue DOIs \tThe data that support the findings of this study are\
+      \ openly available in [repository name] at [URL], reference number [reference\
+      \ number].\nData derived from public domain resources \tThe data that support\
+      \ the findings of this study are available in [repository name] at [URL/DOI],\
+      \ reference number [reference number]. These data were derived from the following\
+      \ resources available in the public domain: [list resources and URLs]\nEmbargo\
+      \ on data due to commercial restrictions \tThe data that support the findings\
+      \ will be available in [repository name] at [URL / DOI link] following an embargo\
+      \ from the date of publication to allow for commercialization of research findings.\n\
+      Data available on request due to privacy/ethical restrictions \tThe data that\
+      \ support the findings of this study are available on request from the corresponding\
+      \ author. The data are not publicly available due to privacy or ethical restrictions.\n\
+      Data subject to third party restrictions \tThe data that support the findings\
+      \ of this study are available from [third party]. Restrictions apply to the\
+      \ availability of these data, which were used under license for this study.\
+      \ Data are available [from the authors / at URL] with the permission of [third\
+      \ party].\nData available on request from the authors \tThe data that support\
+      \ the findings of this study are available from the corresponding author upon\
+      \ reasonable request.\nData sharing not applicable \u2013 no new data generated\
+      \ \tData sharing is not applicable to this article as no new data were created\
+      \ or analyzed in this study.\nAuthor elects to not share data \tResearch data\
+      \ are not shared.\nData available in article supplementary material \tThe data\
+      \ that supports the findings of this study are available in the supplementary\
+      \ material of this article\nData sharing not applicable \u2013 no new data generated,\
+      \ or the article describes entirely theoretical research \tData sharing not\
+      \ applicable to this article as no datasets were generated or analysed during\
+      \ the current study\n"
   discrepancy_reason: Text not found
 data_citability:
   text: '5. Citability and findability of data '
@@ -272,7 +326,28 @@ data_citability:
   1:
     text: No mention of DOIs or other persistent identifiers for datasets or codes.
     explanation: For external databases, provide the access date and/or version number
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "When data is available and linked, authors will need to provide\
+      \ a citation of the data in their reference list.\n\nData citation:\n\n[dataset]Authors;\
+      \ Year; Dataset title; Data repository or archive; Version (if any); Persistent\
+      \ identifier (e.g. DOI)\nWiley\u2019s Data Citation Policy\n\nIn recognition\
+      \ of the significance of data as an output of research effort, Wiley has endorsed\
+      \ the FORCE11 Data Citation Principles. Data must be cited in the same way as\
+      \ article, book, and web citations and authors are required to include data\
+      \ citations as part of their reference list.\n\nData citation is appropriate\
+      \ for data held within institutional, subject focused, or more general data\
+      \ repositories. It is not intended to take the place of community standards\
+      \ such as in-line citation of GenBank accession codes. When citing or making\
+      \ claims based on data, authors should refer to the data at the relevant place\
+      \ in the manuscript text and in addition provide a formal citation in the reference\
+      \ list. We recommend the format proposed by the Joint Declaration of Data Citation\
+      \ Principles:\n\n[dataset] Authors; Year; Dataset title; Data repository or\
+      \ archive; Version (if any); Persistent identifier (e.g. DOI)\n\nAdd [dataset]\
+      \ immediately before the reference so we can properly identify it as a data\
+      \ reference. The [dataset] identifier will not appear in your published article.\n\
+      \nFor more information about Wiley's Data Citation Policy, visit our Frequently\
+      \ Asked Questions page."
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -286,7 +361,9 @@ data_timing:
     explanation: Please download and fill out the relevant data reporting checklist
       and include it with your manuscript files (as a Data Reporting Checklist) when
       you submit.
-  correct_answer: 0
+  correct_answer:
+    text: Timing of data availability not adressed in RDP.
+    explanation: not addressed
   discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -313,7 +390,24 @@ data_sharing_method:
   1:
     text: Public online repositories recommended in RDP.
     explanation: For external databases, provide the access date and/or version number
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Wiley\u2019s Data Citation Policy\n\nIn recognition of the significance\
+      \ of data as an output of research effort, Wiley has endorsed the FORCE11 Data\
+      \ Citation Principles. Data must be cited in the same way as article, book,\
+      \ and web citations and authors are required to include data citations as part\
+      \ of their reference list.\n\nData citation is appropriate for data held within\
+      \ institutional, subject focused, or more general data repositories. It is not\
+      \ intended to take the place of community standards such as in-line citation\
+      \ of GenBank accession codes. When citing or making claims based on data, authors\
+      \ should refer to the data at the relevant place in the manuscript text and\
+      \ in addition provide a formal citation in the reference list. We recommend\
+      \ the format proposed by the Joint Declaration of Data Citation Principles:\n\
+      \n[dataset] Authors; Year; Dataset title; Data repository or archive; Version\
+      \ (if any); Persistent identifier (e.g. DOI)\n\nAdd [dataset] immediately before\
+      \ the reference so we can properly identify it as a data reference. The [dataset]\
+      \ identifier will not appear in your published article.\n\nFor more information\
+      \ about Wiley's Data Citation Policy, visit our Frequently Asked Questions page."
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -357,7 +451,9 @@ data_referee:
       and qualitative data (number of independent experiments or trials, number of
       devices or replicates in the batch, minimum working area or cycling length for
       a device, etc.) satisfy the standard requirements of the subject field.'
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: not mentioned in any guideline
   discrepancy_reason: Language understanding
 data_recommended:
   text: '11. Unique policies for data types
@@ -373,7 +469,9 @@ data_recommended:
   1:
     text: All data supporting the findings
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: not mentioned
+    explanation: ''
   discrepancy_reason: Language understanding
 data_required:
   text: '12. Unique policies for data types
@@ -389,7 +487,9 @@ data_required:
   1:
     text: .nan
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: not mentioned
+    explanation: ''
   discrepancy_reason: Language understanding
 code_required:
   text: 13. Code sharing requirements
@@ -403,7 +503,11 @@ code_required:
     explanation: 'Code Availability and Benchmarking: indicate - The manuscript section
       in which a link to the code has been provided. If a link was not provided, please
       explain why not.'
-  correct_answer: 1
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: 'Code Availability and Benchmarking: indicate - The manuscript section
+      in which a link to the code has been provided. If a link was not provided, please
+      explain why not.'
   discrepancy_reason: Language understanding
 code_reproducibility:
   text: 14. Code Reproducibility

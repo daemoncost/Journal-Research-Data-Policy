@@ -27,8 +27,8 @@ rdp_exist:
   1:
     text: Research Data Policy (RDP) exists.
     explanation: 'Key areas for improving the reproducibility of your article include:
-      providing a detailed description of your research methodology; sharing your
-      data in an online data repository; and uploading your code to an online code
+      providing a detailed description of your research methodology,  sharing your
+      data in an online data repository,  and uploading your code to an online code
       repository.'
   correct_answer: null
   discrepancy_reason: null
@@ -87,7 +87,11 @@ data_availability:
     explanation: 'In research reproducibility: All IEEE authors are encouraged to
       share their data, code, and other research outputs to facilitate verification
       and reproducibility of experiments and their conclusions.'
-  correct_answer: 1
+  correct_answer:
+    text: Mentioned in the RDP but optional.
+    explanation: 'In research reproducibility: All IEEE authors are encouraged to
+      share their data, code, and other research outputs to facilitate verification
+      and reproducibility of experiments and their conclusions.'
   discrepancy_reason: Text not found
 data_citability:
   text: '5. Citability and findability of data '
@@ -143,7 +147,12 @@ data_sharing_method:
       \ data by hosting it in an easily accessible repository such as IEEE DataPort\u2122\
       , an online data repository of datasets and data analysis tools. [...] IEEE\
       \ also recommends figshare, Zenodo, and Dryad as alternative data repositories."
-  correct_answer: 1
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "In Research Reproducibility: Improve the discoverability of your\
+      \ data by hosting it in an easily accessible repository such as IEEE DataPort\u2122\
+      , an online data repository of datasets and data analysis tools. [...] IEEE\
+      \ also recommends figshare, Zenodo, and Dryad as alternative data repositories."
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -183,7 +192,9 @@ data_recommended:
   1:
     text: n.a.
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: n.a.
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -192,15 +203,17 @@ data_required:
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: N.A.
     explanation: ''
   1:
     text: n.a.
     explanation: ''
-  correct_answer: 1
-  discrepancy_reason: Formatting
+  correct_answer:
+    text: N.A.
+    explanation: ''
+  discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 2

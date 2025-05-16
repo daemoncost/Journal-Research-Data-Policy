@@ -47,7 +47,21 @@ data_sharing:
   1:
     text: Data sharing encouraged but optional.
     explanation: 'Sharing of all relevant research data is strongly encouraged '
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing required only for specific types of data.
+    explanation: 'We encourage authors to deposit their supporting data in publicly
+      available repositories, or
+
+      failing this within the manuscript or additional supporting files. See our repository
+      guidance
+
+      for more information.
+
+
+      For a number of data types, submission to a community-endorsed, public repository
+      is
+
+      mandatory. See our list of mandated data types.'
   discrepancy_reason: Text not found
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -70,7 +84,17 @@ data_fair:
     explanation: 'Authors are strongly encouraged to deposit their supporting data
       in a publicly available repository. (MT: I am unsure here - public repository
       is mentioned but not FAIR data). '
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository required only for specific types
+      of data (e.g. genetic data has to be shared on a FAIR repository but no other
+      data).
+    explanation: "For the following data types submission to a community-endorsed,\
+      \ public repository is\nmandatory. Persistent identifiers (DOIs and accession\
+      \ numbers) assigned to the data by the\nrepository must be appropriately cited\
+      \ and referenced in the published article.\n\nCrystallographic data for small\
+      \ molecules \u2192 Cambridge Structural Database (CSD/CCDC)\n\n[Note: CCDC supports\
+      \ FAIR Data principles: see:\nhttps://www.ccdc.cam.ac.uk/solutions/about-the-csd/fair-data-principles/\n\
+      https://www.ccdc.cam.ac.uk/discover/blog/our-approach-to-the-fair-data-principles/]"
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -113,7 +137,11 @@ data_timing:
   1:
     text: Timing of data availability not adressed in RDP.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: 2. We strongly encourage that all datasets supporting the analysis
+      and conclusions of the paper are made publicly available at the time of publication,
+      and we mandate the sharing of community-endorsed data types
   discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -163,7 +191,11 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: no referee guidelines found
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "3. Peer reviewers are entitled to request access to underlying data\
+      \ (and code) when needed to perform their evaluation of a manuscript. \n[from\
+      \ the Springer Nature general RDP]"
   discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
@@ -188,7 +220,7 @@ data_required:
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: 'DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence
       data;
@@ -204,8 +236,15 @@ data_required:
       data, Macromolecular structure data, Gene expression data, Crystallographic
       data for small molecules
     explanation: ''
-  correct_answer: 0
-  discrepancy_reason: Formatting inconsistent
+  correct_answer:
+    text: 'DNA sequence data; RNA sequence data; Genome assembly data; Protein sequence
+      data;
+
+      Proteomics data; Genetic variation data; Functional genomics data; Macromolecular
+
+      structure data; Gene expression data; Crystallographic data for small molecules'
+    explanation: ''
+  discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 2
@@ -221,7 +260,14 @@ code_required:
   1:
     text: Code sharing not mentioned.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "The focus of this policy framework is on data rather than software\
+      \ but the sharing of software alongside data is also important to support reproducibility\
+      \ and transparency. Many Springer Nature journals also support the use of Code\
+      \ Availability Statements. Please consult the journal\u2019s submission guidance\
+      \ or contact the journal directly for information on code sharing and code availability.\n\
+      [from FAQs of Springer-Nature general RDP]"
   discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility

@@ -5,9 +5,9 @@ rdp_exist:
   0:
     text: Research Data Policy (RDP) exists.
     explanation: 'Key areas for improving the reproducibility of your article include:
-      providing a detailed description of your research methodology; sharing your
-      data in an online data repository; and uploading your code to an online code
-      repository. '
+      providing a detailed description of your research methodology,  sharing your
+      data in an online data repository,  and uploading your code to an online code
+      repository.'
   1:
     text: Research Data Policy (RDP) exists.
     explanation: 'IEEE Open Research Statement
@@ -87,7 +87,9 @@ data_availability:
   1:
     text: Not mentioned in the RDP.
     explanation: N.A.
-  correct_answer: 1
+  correct_answer:
+    text: Not mentioned in the RDP.
+    explanation: N.A.
   discrepancy_reason: Text not found
 data_citability:
   text: '5. Citability and findability of data '
@@ -143,7 +145,17 @@ data_sharing_method:
       \ in IEEE DataPort will have a Code & Datasets tab where readers can link to\
       \ the dataset from the article.\n\nIEEE also recommends figshare, Zenodo, and\
       \ Dryad as alternative data repositories."
-  correct_answer: 1
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: "Improve the discoverability of your data by hosting it in an easily\
+      \ accessible repository such as IEEE DataPort\u2122, an online data repository\
+      \ of datasets and data analysis tools. IEEE DataPort accepts all types of datasets\
+      \ up to 2TB and provides a Digital Object Identifier (DOI) for easy citation.\
+      \ Standard (i.e., non-Open Access) datasets can be uploaded for free at IEEE\
+      \ DataPort. Articles in the IEEE Xplore\xAE Digital Library with linked data\
+      \ in IEEE DataPort will have a Code & Datasets tab where readers can link to\
+      \ the dataset from the article.\n\nIEEE also recommends figshare, Zenodo, and\
+      \ Dryad as alternative data repositories."
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -183,7 +195,9 @@ data_recommended:
   1:
     text: .nan
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: .nan
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -192,15 +206,17 @@ data_required:
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: n.a.
     explanation: ''
   1:
     text: N.A.
     explanation: ''
-  correct_answer: 1
-  discrepancy_reason: Formatting
+  correct_answer:
+    text: n.a.
+    explanation: ''
+  discrepancy_reason: null
 code_required:
   text: 13. Code sharing requirements
   N. encoders: 2

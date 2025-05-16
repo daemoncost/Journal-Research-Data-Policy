@@ -106,7 +106,11 @@ data_timing:
   1:
     text: Timing of data availability not adressed in RDP.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: 2. We strongly encourage that all datasets supporting the analysis
+      and conclusions of the paper are made publicly available at the time of publication,
+      and we mandate the sharing of community-endorsed data types
   discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -173,7 +177,24 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: Additional data or code referee (referee that solely confirms that code
+      and data are shared following the RDP).
+    explanation: 'Peer review of code/algorithm/software: A subset of Nature journals
+      (listed below) undertake peer review of custom code or mathematical algorithm,
+      and software, when it is central to the manuscript. For code/algorithm peer
+      review, we require release of code/algorithm during the peer review process,
+      verification by peer reviewers and release of code/algorithm at publication.
+
+
+      Nature
+
+      Nature Communications
+
+      Nature Energy
+
+
+      [among others]'
   discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
@@ -210,7 +231,11 @@ data_required:
       Gene expression data; Crystallographic data for small molecules; Proteomics
       data; Earth, space & environmental sciences
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: DNA sequence data,  RNA sequence data,  Genome assembly data,  Protein sequence
+      data,  Proteomics data,  Genetic variation data,  Functional genomics data,  Macromolecular
+      structure data,  Gene expression data,  Crystallographic data for small molecules
+    explanation: ''
   discrepancy_reason: Formatting inconsistent
 code_required:
   text: 13. Code sharing requirements
@@ -284,7 +309,11 @@ code_quality:
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: The journal policies require code of articles to fulfill certain standards.
+    explanation: '[For the listed journals] Authors must fill out a Code and Software
+      submission checklist [liks to https://www.nature.com/documents/nr-software-policy.pdf].   [Again,
+      in Nature Portfolio document, not in RDP]'
   discrepancy_reason: Text not found
 code_autotest:
   text: 17. Automatic Testing
@@ -310,7 +339,11 @@ code_docs:
   1:
     text: No mention of standards for code documentation.
     explanation: .nan
-  correct_answer: 0
+  correct_answer:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: Improving the integration of computational analysis into biology
+      will require better documentation, validation and accessibility of software
+      associated with papers
   discrepancy_reason: Text not found
 code_linting:
   text: 19. Linting Standards

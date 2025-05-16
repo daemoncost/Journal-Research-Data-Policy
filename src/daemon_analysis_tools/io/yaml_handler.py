@@ -6,7 +6,9 @@ import yaml
 
 from daemon_analysis_tools.datamodels.question import Question
 from daemon_analysis_tools.io.yaml_base_handler import save_yaml_file
-from daemon_analysis_tools.services.discrepancy_resolver import resolve_discrepancy
+from daemon_analysis_tools.services.discrepancy_resolver import (
+    resolve_discrepancy,
+)
 
 
 def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
@@ -85,6 +87,8 @@ def load_answers_from_yaml(
     grouped_questions: Dict[str, Dict[str, Dict[str, Question]]] = {}
     publisher_dirs = sorted(glob(f"{parent_folder}/*"))
 
+    print(publisher_dirs)
+
     for publisher_dir in publisher_dirs:
         publisher_name = os.path.basename(publisher_dir)
         journal_files = glob(os.path.join(publisher_dir, "*.yaml"))
@@ -129,7 +133,9 @@ def _load_questions_from_file(
 
         if question.has_discrepancies():
             if correct_answer_id is None:
-                print(f"{publisher}/{journal}/{q_number} has inconsistencies: skipped")
+                print(
+                    f"{publisher}/{journal}/{q_number} has inconsistencies: skipped"
+                )
                 continue
             if discrepancy_reason is None:
                 print(

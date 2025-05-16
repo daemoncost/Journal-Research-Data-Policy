@@ -392,7 +392,11 @@ code_required:
       identifier, preferably a DOI. If the data have a corresponding article published
       in a data journal, then the reference to the journal data should be included
       as well.'
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: Authors should, when possible, include a Data Availability Statement
+      in the paragraph before the Acknowledgments that indicates the availability
+      of data, software, code, and other materials
   discrepancy_reason: Language understanding
 code_reproducibility:
   text: 14. Code Reproducibility
