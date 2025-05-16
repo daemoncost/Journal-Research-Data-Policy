@@ -85,8 +85,6 @@ def load_answers_from_yaml(
     grouped_questions: Dict[str, Dict[str, Dict[str, Question]]] = {}
     publisher_dirs = sorted(glob(f"{parent_folder}/*"))
 
-    print(publisher_dirs)
-
     for publisher_dir in publisher_dirs:
         publisher_name = os.path.basename(publisher_dir)
         journal_files = glob(os.path.join(publisher_dir, "*.yaml"))
