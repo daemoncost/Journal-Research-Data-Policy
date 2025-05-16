@@ -1,3 +1,4 @@
+import os
 import unittest
 
 from daemon_analysis_tools.datamodels.question import Question
@@ -12,9 +13,12 @@ from daemon_analysis_tools.services.scoring import (
 
 class TestScoring(unittest.TestCase):
     def setUp(self):
-        self.question_type = load_yaml("../../data/metadata/question_type.yaml")
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(base_dir, "..", "..", "data", "metadata")
+
+        self.question_type = load_yaml(os.path.join(data_dir, "question_type.yaml"))
         self.multiple_choice_scores = load_yaml(
-            "../../data/metadata/question_metadata_score.yaml"
+            os.path.join(data_dir, "question_metadata_score.yaml")
         )
 
         # Create a dummy Question with one answer.
