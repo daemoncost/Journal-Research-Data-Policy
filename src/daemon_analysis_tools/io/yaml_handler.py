@@ -6,9 +6,7 @@ import yaml
 
 from daemon_analysis_tools.datamodels.question import Question
 from daemon_analysis_tools.io.yaml_base_handler import save_yaml_file
-from daemon_analysis_tools.services.discrepancy_resolver import (
-    resolve_discrepancy,
-)
+from daemon_analysis_tools.services.discrepancy_resolver import resolve_discrepancy
 
 
 def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
@@ -133,9 +131,7 @@ def _load_questions_from_file(
 
         if question.has_discrepancies():
             if correct_answer_id is None:
-                print(
-                    f"{publisher}/{journal}/{q_number} has inconsistencies: skipped"
-                )
+                print(f"{publisher}/{journal}/{q_number} has inconsistencies: skipped")
                 continue
             if discrepancy_reason is None:
                 print(
