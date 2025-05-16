@@ -1,3 +1,4 @@
+import os
 import string
 from typing import Dict, List, Set
 
@@ -167,10 +168,13 @@ def get_journal_score(journal: Dict) -> float:
         Score of the journal normalised by the maximum possible score.
 
     """
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(base_dir, "..", "metadata")
+
     multiple_choice_scores = load_yaml(
-        "../../data/metadata/question_metadata_score.yaml"
+        os.path.join(data_dir, "question_metadata_score.yaml")
     )
-    question_type = load_yaml("../../data/metadata/question_type.yaml")
+    question_type = load_yaml(os.path.join(data_dir, "question_type.yaml"))
     question_number_lookup = _get_question_type_lookup(multiple_choice_scores)
 
     score_norm = _get_maximum_possible_score(multiple_choice_scores)
