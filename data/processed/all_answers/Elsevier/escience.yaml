@@ -13,7 +13,14 @@ rdp_exist:
       or experimentation that validate research findings, which may also include software,
       code, models, algorithms, protocols, methods and other useful materials related
       to the project.
-  correct_answer: 1
+  correct_answer:
+    text: Research Data Policy (RDP) exists.
+    explanation: This journal encourages and enables you to share data that supports
+      your research publication where appropriate, and enables you to interlink the
+      data with your published articles. Research data refers to the results of observations
+      or experimentation that validate research findings, which may also include software,
+      code, models, algorithms, protocols, methods and other useful materials related
+      to the project.
   discrepancy_reason: Text not found
 data_sharing:
   text: 3. Data sharing requirements in RDP
@@ -49,7 +56,13 @@ data_fair:
       a number of repositories to link articles on ScienceDirect with relevant repositories,
       giving readers access to underlying data that gives them a better understanding
       of the research described.
-  correct_answer: 1
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: If you have made your research data available in a data repository,
+      you can link your article directly to the dataset. Elsevier collaborates with
+      a number of repositories to link articles on ScienceDirect with relevant repositories,
+      giving readers access to underlying data that gives them a better understanding
+      of the research described.
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -67,7 +80,15 @@ data_availability:
       \ statement allows you to clearly explain the data you\u2019ve used in the article\
       \ and the reasons why it might not be available. The statement will appear with\
       \ the article on ScienceDirect. "
-  correct_answer: 1
+  correct_answer:
+    text: Mentioned in the RDP but optional.
+    explanation: "Standard Elsevier Data Availability Statement:\n\nWe understand\
+      \ that there are times when the data is simply not available to post or there\
+      \ are good reasons why it shouldn\u2019t be shared. A number of Elsevier journals\
+      \ encourage authors to submit a data statement alongside their manuscript. This\
+      \ statement allows you to clearly explain the data you\u2019ve used in the article\
+      \ and the reasons why it might not be available. The statement will appear with\
+      \ the article on ScienceDirect. "
   discrepancy_reason: Text not found
 data_citability:
   text: '5. Citability and findability of data '
@@ -111,7 +132,11 @@ data_sharing_method:
     explanation: 'Standart Elsevier Data sharing
 
       https://www.elsevier.com/researcher/author/tools-and-resources/research-data'
-  correct_answer: 1
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Standart Elsevier Data sharing
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data'
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -139,7 +164,13 @@ data_referee:
       \ to the reference list. This ensures you are recognized for the data you shared\
       \ and/or used in your research. Read the References section in your chosen journal\u2019\
       s Guide for Authors for more information. "
-  correct_answer: 1
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Standard Elsevier RDP\nCite your research data\nGet credit for your\
+      \ work by citing your research data in your article and adding a data reference\
+      \ to the reference list. This ensures you are recognized for the data you shared\
+      \ and/or used in your research. Read the References section in your chosen journal\u2019\
+      s Guide for Authors for more information. "
   discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
@@ -155,7 +186,9 @@ data_recommended:
   1:
     text: .nan
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: .nan
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -171,7 +204,9 @@ data_required:
   1:
     text: .nan
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: .nan
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements

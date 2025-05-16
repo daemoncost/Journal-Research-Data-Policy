@@ -326,7 +326,7 @@ code_required:
   N. encoders: 2
   has_discrepancies: true
   0:
-    text: ' Code sharing encouraged but optional.'
+    text: 'Code sharing encouraged but optional.'
     explanation: If authors are unable to publicly share their code and data due to
       employer policies or previous arrangements they still need to release as much
       data and tools as possible (datasets, analysis scripts, etc.) and detail the

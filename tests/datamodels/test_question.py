@@ -71,16 +71,17 @@ class TestQuestion(unittest.TestCase):
         side_effect=dummy_jaccard_similarity,
     )
     def test_has_discrepancies_open(self, mock_jaccard):
-        # For open question: use dummy_jaccard_similarity.
         open_question = Question(question_id="Q3", text="Open question?", is_open=True)
-        # If only one answer, discrepancy should be False.
+
+        # One answer → expected to return True (insufficient for similarity comparison)
         open_question._add_answer("Answer")
-        self.assertFalse(open_question.has_discrepancies())
-        # Two different answers => dummy returns 0.6 which > 0.55 -> discrepancy True.
+        self.assertTrue(open_question.has_discrepancies())
+
+        # Two answers → dummy similarity = 0.6 > 0.55 → returns False
         open_question = Question(question_id="Q4", text="Open question?", is_open=True)
         open_question._add_answer("Answer1")
         open_question._add_answer("Answer2")
-        self.assertTrue(open_question.has_discrepancies())
+        self.assertFalse(open_question.has_discrepancies())
 
     def test_get_final_answer_raises(self):
         q = Question(question_id="Q10", text="Test question", is_open=False)

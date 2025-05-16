@@ -56,7 +56,24 @@ data_sharing:
       \ the CIF file correspond to the structures reported in the manuscript. During\
       \ the review process, the CIFs will be available only to the reviewers of the\
       \ manuscript and will remain confidential.\""
-  correct_answer: 1
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: "no text in the Journal Research Data Policy but referred to the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy : \n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \"\nAlso, no mention about the journal\
+      \ policy level, but the lowest among them, policy level 1, Encourages Data Sharing.\n\
+      \n\" Data Requirements\nParticular attention should be given to ensuring that\
+      \ experimental procedures are reported in sufficient detail to allow full understanding\
+      \ by the expert reader to the extent that would allow ready reproduction of\
+      \ the experiments. \nAs part of the Supporting Information, authors must provide\
+      \ an electronic copy of the structural data as a Crystallographic Information\
+      \ File (CIF) and must clearly notify the Editor in the cover letter that the\
+      \ manuscript contains structural data.\nAuthors must confirm that the data in\
+      \ the CIF file correspond to the structures reported in the manuscript. During\
+      \ the review process, the CIFs will be available only to the reviewers of the\
+      \ manuscript and will remain confidential.\""
   discrepancy_reason: Text not found
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -78,7 +95,13 @@ data_fair:
       \ Data Policy:\n\" ACS strongly endorses The FAIR Data Principles and believes\
       \ that where ethically and legally feasible, all research data should be findable,\
       \ accessible, interoperable, and reusable. \""
-  correct_answer: 1
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "no text in the Journal Research Data Policy but referred to the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy:\n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \""
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -121,7 +144,15 @@ data_citability:
       \ accessible, interoperable, and reusable. \" \n\nData Availability Statements\n\
       \" ACS strongly encourages authors to select a repository that issues a persistent\
       \ unique identifier, such as a DOI or an Accession Number. \" "
-  correct_answer: 1
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \" \n\nData Availability Statements\n\
+      \" ACS strongly encourages authors to select a repository that issues a persistent\
+      \ unique identifier, such as a DOI or an Accession Number. \" "
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -142,7 +173,18 @@ data_timing:
       \ is viewable.\" \n\" When including supporting information for review only,\
       \ include copies of references that are unpublished or in-press. These files\
       \ are available only to editors and reviewers.\""
-  correct_answer: 1
+  correct_answer:
+    text: Required data must be available prior to review process.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\" This information is provided\
+      \ to the reviewers during the peer-review process (for Review Only) and is available\
+      \ to readers of the published work (for Publication). Supporting Information\
+      \ must be submitted at the same time as the manuscript. See the list of Acceptable\
+      \ Software by File Designation and confirm that your Supporting Information\
+      \ is viewable.\" \n\" When including supporting information for review only,\
+      \ include copies of references that are unpublished or in-press. These files\
+      \ are available only to editors and reviewers.\""
   discrepancy_reason: Text not found
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -165,7 +207,12 @@ data_sharing_method:
       \ to submit data in a format that can be most easily accessed and reused. ACS\
       \ encourages authors to provide machine-readable data and to follow the FAIR\
       \ Data Principles. \""
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: Advancing scientific discoveries can be enhanced when data and materials
+      are made available and readily exchanged. ACS Omega requires that authors adhere
+      to the standards for reporting and characterization of data. It is also recommended
+      that authors deposit data in databases appropriate to their fields.
   discrepancy_reason: Language understanding
 data_licenses:
   text: 9. Recommended/required licenses
@@ -210,7 +257,9 @@ data_recommended:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: no text.
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -226,7 +275,9 @@ data_required:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: no text.
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements

@@ -10,7 +10,10 @@ from daemon_analysis_tools.datamodels.question import Question
 
 # Import the functions to be tested.
 from daemon_analysis_tools.io.yaml_handler import (
+    _build_question,
+    _load_questions_from_file,
     build_journal_dict,
+    load_answers_from_yaml,
     save_answers_to_yaml,
     save_yaml_file,
 )
@@ -347,3 +350,63 @@ class TestBuildJournalDictEndToEnd(unittest.TestCase):
         self.assertTrue(q3_dict["has_discrepancies"])
         self.assertIsNone(q3_dict["correct_answer"])
         self.assertIsNone(q3_dict["discrepancy_reason"])
+
+
+class TestYAMLHandlerFunctions(unittest.TestCase):
+    def setUp(self):
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.publisher = "TestPublisher"
+        self.journal = "TestJournal"
+        self.yaml_path = os.path.join(
+            self.temp_dir.name, self.publisher, f"{self.journal}.yaml"
+        )
+        os.makedirs(os.path.dirname(self.yaml_path), exist_ok=True)
+
+        self.yaml_content = {
+            "Q1": {
+                "text": "What is 2+2?",
+                "correct_answer": 1,
+                "has_discrepancies": False,
+                1: {"text": "4", "explanation": "Correct"},
+                2: {"text": "3", "explanation": "Incorrect"},
+            }
+        }
+
+        with open(self.yaml_path, "w") as f:
+            yaml.dump(self.yaml_content, f)
+
+    def tearDown(self):
+        self.temp_dir.cleanup()
+
+    def test_build_question(self):
+        question = _build_question("Q1", self.yaml_content["Q1"])
+        self.assertEqual(question.text, "What is 2+2?")
+        self.assertEqual(len(question.answers), 2)
+        self.assertEqual(question.answers[0].text, "4")
+
+    @unittest.mock.patch(
+        "daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies",
+        return_value=False,
+    )
+    def test__load_questions_from_file(self, mock_has_disc):
+        questions = _load_questions_from_file(
+            self.yaml_path, self.publisher, self.journal
+        )
+
+        self.assertIn("Q1", questions)
+        q = questions["Q1"]
+        self.assertEqual(q.text, "What is 2+2?")
+        self.assertEqual(len(q.answers), 2)
+        self.assertIsNotNone(q.correct_answer)  # Optional: validate it was resolved
+
+    @unittest.mock.patch(
+        "daemon_analysis_tools.io.yaml_handler.Question.has_discrepancies",
+        return_value=False,
+    )
+    def test_load_answers_from_yaml(self, mock_has_disc):
+        result = load_answers_from_yaml(self.temp_dir.name)
+
+        self.assertIn(self.publisher, result)
+        self.assertIn(self.journal, result[self.publisher])
+        self.assertIn("Q1", result[self.publisher][self.journal])
+        self.assertIsNotNone(result[self.publisher][self.journal]["Q1"].correct_answer)

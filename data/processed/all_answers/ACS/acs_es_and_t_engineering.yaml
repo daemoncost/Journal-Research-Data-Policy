@@ -90,7 +90,27 @@ data_fair:
       \ (ACS) Research Data Policy:\n\" ACS strongly endorses The FAIR Data Principles\
       \ and believes that where ethically and legally feasible, all research data\
       \ should be findable, accessible, interoperable, and reusable. \""
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.'
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -164,9 +184,7 @@ data_citability:
 
 
       Provide clear terms of data use and data access (or license) on each dataset
-      landing page
-
-      '
+      landing page'
   1:
     text: No mention of DOIs or other persistent identifiers for datasets or codes.
     explanation: "Not mentioned in the Journal Research Data Policy but mentioned\
@@ -177,7 +195,28 @@ data_citability:
       \ Statements\n\" ACS strongly encourages authors to select a repository that\
       \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
       \ \" "
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Data repositories supporting peer-reviewed publications generally
+      should meet the following criteria:
+
+
+      Ensure long-term persistence and preservation of datasets (minimum of 5 years
+      after publication)
+
+
+      Be supported by a research community or research institution
+
+
+      Provide deposited datasets with stable and persistent identifiers, e.g., Digital
+      Object Identifiers (DOIs)
+
+
+      Allow access to data without restrictions
+
+
+      Provide clear terms of data use and data access (or license) on each dataset
+      landing page'
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -204,7 +243,21 @@ data_timing:
       \ encourage authors to make the research data underlying their articles publicly\
       \ available at the time of publication. \"\n\nNOTE: At the time of publication\
       \ interpreted as prior to official publication."
-  correct_answer: 0
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.'
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -244,7 +297,26 @@ data_sharing_method:
       \ to submit data in a format that can be most easily accessed and reused. ACS\
       \ encourages authors to provide machine-readable data and to follow the FAIR\
       \ Data Principles. \"\n\nstrongly encourage = recommended"
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Data Requirements\nNomenclature.\n\nUse abbreviations and acronyms\
+      \ sparingly, and all usage should be defined at the first occurrence in the\
+      \ text. Whenever possible, use systematic nomenclature as recommended by IUPAC\
+      \ and IUBMB for chemical compounds and biomolecules. Names of organisms should\
+      \ comply with genetic conventions, with genus and species names written in italics\
+      \ and spelled out in full on first appearance.\n\nDatabase Deposition. \n\n\
+      Advancing scientific discoveries can be enhanced when data and materials are\
+      \ made available and readily exchanged. ACS ES&T Engineering requires for all\
+      \ published articles that authors make materials, data, and protocols available\
+      \ to readers through deposition in a public database. In addition, ACS Publications\u2019\
+      \ figshare houses all Supporting Information within the HTML presentation of\
+      \ the paper and at acs.figshare.com. Authors may want to further investigate\
+      \ Dryad or institutional repositories for depositing data. Authors also agree\
+      \ to make available to interested academic researchers for their own use any\
+      \ materials reported in the manuscript that are not otherwise obtainable. Any\
+      \ restrictions to the availability of materials or information must be stated\
+      \ at the time of submission. The ACS Math Style Sheet and NMR Guidelines are\
+      \ available on the ACS Publishing Center."
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -309,13 +381,15 @@ data_recommended:
   N. encoders: 2
   has_discrepancies: true
   0:
-    text: Nomenclature ; Database Deposition ; Use of Human Subjects or Animals in
-      Research
+    text: Nomenclature. ; Database Deposition ; Use of Human Subjects or Animals in
+      Research.
     explanation: ''
   1:
     text: no text.
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: no text.
+    explanation: ''
   discrepancy_reason: Formatting
 data_required:
   text: '12. Unique policies for data types
@@ -331,7 +405,9 @@ data_required:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: no text.
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements

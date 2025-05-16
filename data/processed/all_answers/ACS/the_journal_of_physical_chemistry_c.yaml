@@ -80,7 +80,9 @@ data_fair:
       \ (ACS) Research Data Policy:\n\" ACS strongly endorses The FAIR Data Principles\
       \ and believes that where ethically and legally feasible, all research data\
       \ should be findable, accessible, interoperable, and reusable. \""
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: na
   discrepancy_reason: Text not found
 data_availability:
   text: 2. Data availability statement
@@ -121,7 +123,9 @@ data_citability:
       \ accessible, interoperable, and reusable. \" \n\nData Availability Statements\n\
       \" ACS strongly encourages authors to select a repository that issues a persistent\
       \ unique identifier, such as a DOI or an Accession Number. \" "
-  correct_answer: 0
+  correct_answer:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: na
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -145,7 +149,9 @@ data_timing:
       \ provide crystallographic or surface structure data as Supporting Information\
       \ in crystallographic information file (CIF) format. \"\n\n#NOTE: At the time\
       \ of publication interpreted as prior to official publication."
-  correct_answer: 0
+  correct_answer:
+    text: Timing of data availability not adressed in RDP.
+    explanation: na
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -222,7 +228,66 @@ data_sharing_method:
       \ to submit data in a format that can be most easily accessed and reused. ACS\
       \ encourages authors to provide machine-readable data and to follow the FAIR\
       \ Data Principles. \""
-  correct_answer: 0
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "Guidelines for Computational Results\nBelow are the general guidelines\
+      \ from Pure Appl. Chem. 1998, 70, No. 10, 2047\u20132049 (http://dx.doi.org/10.1351/pac199870102047)\
+      \ for manuscripts reporting the results of electronic structure calculations,\
+      \ force field parameters, and other potential energy surface information. Further\
+      \ details are listed in the guidelines authored by J. E. Boggs (Pure Appl. Chem.\
+      \ 1998, 70, No. 4, 1015\u20131018 (http://dx.doi.org/10.1351/pac199870041015).\
+      \ Both sets of guidelines can be viewed online at http://iupac.org/publications/pac/reports/year/1998/.\
+      \ While these papers refer to electronic structure and molecular dynamics calculations,\
+      \ the concepts stated below apply to all calculations.\n\nIf a paper mentions\
+      \ any calculations that are integral to the study (i.e., the precise quantitative\
+      \ results are central to the conclusions drawn) computational details must be\
+      \ described.\nReproducibility of computations should be a defining goal in reporting\
+      \ computational results. Sufficient technical details should be provided to\
+      \ allow a reader to reproduce the results of any calculations. Of course, strict\
+      \ reproducibility of computations may be precluded by differences among computers\
+      \ (e.g., differences in operating systems, host-based algorithms, machine precision,\
+      \ etc.), software (e.g., installation procedures and programming modifications),\
+      \ and applications (e.g., for probabilistic methods such as Monte Carlo calculations).\n\
+      A description of the results of any published calculation must be available\
+      \ for scientific scrutiny by other investigators. Ordinarily this will best\
+      \ be achieved if the authors place full details of the calculation (e.g., structures,\
+      \ energies, frequencies, dynamical quantities, etc.) in a repository (such as\
+      \ Supporting Information to the paper) that is accessible via the Internet.\
+      \ Otherwise, it is the responsibility of the investigator to make such information\
+      \ available upon request. Depending on the specific circumstances, the appropriate\
+      \ data to be deposited might be final output structure(s) or the input structure(s)\
+      \ that would allow another investigator to replicate the computational experiment.\n\
+      Electronically deposited structures should be written in a format that is machine\
+      \ readable by readily available modelling or translating programs.\nAn adequate\
+      \ specification of the computer program used to carry out the calculations is\
+      \ essential. If the calculations were carried out with commercially available\
+      \ software, the investigator must list the source, version number, and force\
+      \ field employed. Any program modifications and any differences from the published\
+      \ version (including changes in parameters) must be fully described or available\
+      \ to other investigators upon request. Changes in parameters, program options\
+      \ (e.g., dielectric constant, nonbonded cutoffs, etc.) affecting reproducibility\
+      \ of the calculation, and program constraints must be fully described in the\
+      \ article. If the program is not available, commercially or otherwise, the authors\
+      \ must specify sufficient detail that the calculation could be reproduced.\n\
+      The issue of convergence must be adequately addressed. An iterative calculation\
+      \ is considered to have converged when further iterations will not significantly\
+      \ alter the results. Convergence criteria should be reported (e.g., energy change\
+      \ per iteration or energy gradient for geometry optimization of a single structure).\
+      \ \n\nGuidelines for Experiments\nAuthors are expected to provide sufficient\
+      \ detail to enable a trained professional to reproduce routine measurements\
+      \ and synthetic procedures. Authors are required to provide crystallographic\
+      \ or surface structure data as Supporting Information in crystallographic information\
+      \ file (CIF) format. For quantitative optical measurements, the specifics and\
+      \ usable range of the photodetector should be reported.\n\nTeams of ACS editors\
+      \ have identified best practices in certain fields to guide authors in the reporting\
+      \ of experimental results. Please refer to them, as needed:\n\nBest Practices\
+      \ for the Reporting of Colloidal Inorganic Nanomaterials (http://pubs.acs.org/doi/abs/10.1021/acs.chemmater.5b02323)\n\
+      Best Practices for Reporting on Heterogeneous Photocatalysis (http://pubs.acs.org/doi/abs/10.1021/am504389z)\n\
+      Best Practices in Perovskite Solar Cell Efficiency Measurements. Avoiding the\
+      \ Error of Making Bad Cells Look Good (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00289)\n\
+      Best Practices for Reporting on Energy Storage (http://pubs.acs.org/doi/abs/10.1021/acsami.5b06029)\n\
+      Best Practice in Photocatalysis: Comparing Rates of Apparent Quantum Yields?\
+      \ (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00521)"
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -293,7 +358,35 @@ data_recommended:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: 'Guidelines for Experiments
+
+      Authors are expected to provide sufficient detail to enable a trained professional
+      to reproduce routine measurements and synthetic procedures. Authors are required
+      to provide crystallographic or surface structure data as Supporting Information
+      in crystallographic information file (CIF) format. For quantitative optical
+      measurements, the specifics and usable range of the photodetector should be
+      reported.
+
+
+      Teams of ACS editors have identified best practices in certain fields to guide
+      authors in the reporting of experimental results. Please refer to them, as needed:
+
+
+      Best Practices for the Reporting of Colloidal Inorganic Nanomaterials (http://pubs.acs.org/doi/abs/10.1021/acs.chemmater.5b02323)
+
+      Best Practices for Reporting on Heterogeneous Photocatalysis (http://pubs.acs.org/doi/abs/10.1021/am504389z)
+
+      Best Practices in Perovskite Solar Cell Efficiency Measurements. Avoiding the
+      Error of Making Bad Cells Look Good (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00289)
+
+      Best Practices for Reporting on Energy Storage (http://pubs.acs.org/doi/abs/10.1021/acsami.5b06029)
+
+      Best Practice in Photocatalysis: Comparing Rates of Apparent Quantum Yields?
+      (http://pubs.acs.org/doi/abs/10.1021/acs.jpclett.5b00521)
+
+      '
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -352,7 +445,52 @@ data_required:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: "CIF\n\nGuidelines for Computational Results\nBelow are the general guidelines\
+      \ from Pure Appl. Chem. 1998, 70, No. 10, 2047\u20132049 (http://dx.doi.org/10.1351/pac199870102047)\
+      \ for manuscripts reporting the results of electronic structure calculations,\
+      \ force field parameters, and other potential energy surface information. Further\
+      \ details are listed in the guidelines authored by J. E. Boggs (Pure Appl. Chem.\
+      \ 1998, 70, No. 4, 1015\u20131018 (http://dx.doi.org/10.1351/pac199870041015).\
+      \ Both sets of guidelines can be viewed online at http://iupac.org/publications/pac/reports/year/1998/.\
+      \ While these papers refer to electronic structure and molecular dynamics calculations,\
+      \ the concepts stated below apply to all calculations.\n\nIf a paper mentions\
+      \ any calculations that are integral to the study (i.e., the precise quantitative\
+      \ results are central to the conclusions drawn) computational details must be\
+      \ described.\nReproducibility of computations should be a defining goal in reporting\
+      \ computational results. Sufficient technical details should be provided to\
+      \ allow a reader to reproduce the results of any calculations. Of course, strict\
+      \ reproducibility of computations may be precluded by differences among computers\
+      \ (e.g., differences in operating systems, host-based algorithms, machine precision,\
+      \ etc.), software (e.g., installation procedures and programming modifications),\
+      \ and applications (e.g., for probabilistic methods such as Monte Carlo calculations).\n\
+      A description of the results of any published calculation must be available\
+      \ for scientific scrutiny by other investigators. Ordinarily this will best\
+      \ be achieved if the authors place full details of the calculation (e.g., structures,\
+      \ energies, frequencies, dynamical quantities, etc.) in a repository (such as\
+      \ Supporting Information to the paper) that is accessible via the Internet.\
+      \ Otherwise, it is the responsibility of the investigator to make such information\
+      \ available upon request. Depending on the specific circumstances, the appropriate\
+      \ data to be deposited might be final output structure(s) or the input structure(s)\
+      \ that would allow another investigator to replicate the computational experiment.\n\
+      Electronically deposited structures should be written in a format that is machine\
+      \ readable by readily available modelling or translating programs.\nAn adequate\
+      \ specification of the computer program used to carry out the calculations is\
+      \ essential. If the calculations were carried out with commercially available\
+      \ software, the investigator must list the source, version number, and force\
+      \ field employed. Any program modifications and any differences from the published\
+      \ version (including changes in parameters) must be fully described or available\
+      \ to other investigators upon request. Changes in parameters, program options\
+      \ (e.g., dielectric constant, nonbonded cutoffs, etc.) affecting reproducibility\
+      \ of the calculation, and program constraints must be fully described in the\
+      \ article. If the program is not available, commercially or otherwise, the authors\
+      \ must specify sufficient detail that the calculation could be reproduced.\n\
+      The issue of convergence must be adequately addressed. An iterative calculation\
+      \ is considered to have converged when further iterations will not significantly\
+      \ alter the results. Convergence criteria should be reported (e.g., energy change\
+      \ per iteration or energy gradient for geometry optimization of a single structure).\n\
+      \n"
+    explanation: ''
   discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements
@@ -386,7 +524,21 @@ code_required:
       \ program constraints must be fully described in the article. If the program\
       \ is not available, commercially or otherwise, the authors must specify sufficient\
       \ detail that the calculation could be reproduced. \""
-  correct_answer: 0
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "Guidelines for Computational Results\nBelow are the general guidelines\
+      \ from Pure Appl. Chem. 1998, 70, No. 10, 2047\u20132049 (http://dx.doi.org/10.1351/pac199870102047)\
+      \ for manuscripts reporting the results of electronic structure calculations,\
+      \ force field parameters, and other potential energy surface information. Further\
+      \ details are listed in the guidelines authored by J. E. Boggs (Pure Appl. Chem.\
+      \ 1998, 70, No. 4, 1015\u20131018 (http://dx.doi.org/10.1351/pac199870041015).\
+      \ Both sets of guidelines can be viewed online at http://iupac.org/publications/pac/reports/year/1998/.\
+      \ While these papers refer to electronic structure and molecular dynamics calculations,\
+      \ the concepts stated below apply to all calculations.\n\nOf course, strict\
+      \ reproducibility of computations may be precluded by differences among computers\
+      \ (e.g., differences in operating systems, host-based algorithms, machine precision,\
+      \ etc.), software (e.g., installation procedures and programming modifications),\
+      \ and applications (e.g., for probabilistic methods such as Monte Carlo calculations)."
   discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility

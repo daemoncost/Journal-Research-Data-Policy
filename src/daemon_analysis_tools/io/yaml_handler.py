@@ -5,6 +5,8 @@ from typing import Dict, List, Optional
 import yaml
 
 from daemon_analysis_tools.datamodels.question import Question
+from daemon_analysis_tools.io.yaml_base_handler import save_yaml_file
+from daemon_analysis_tools.services.discrepancy_resolver import resolve_discrepancy
 
 
 def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
@@ -42,26 +44,6 @@ def build_journal_dict(journal: Dict[int, "Question"]) -> Dict:
     return journal_dict
 
 
-def save_yaml_file(file_path: str, data: Dict) -> None:
-    """Save a dictionary to a YAML file.
-
-    :param file_path: The file path where the YAML file will be saved.
-    :param data: The dictionary to dump into the YAML file.
-    """
-    try:
-        with open(file_path, "x") as file:
-            yaml.dump(data, file, sort_keys=False)
-    except FileExistsError:
-        print(
-            f"{file_path} already exists. No data was written to prevent overwriting "
-            "files modified by users. "
-            "Manually delete this file if necessary."
-        )
-
-    except Exception as e:
-        print(f"Exception: {e} for file {file_path}")
-
-
 def save_answers_to_yaml(
     grouped_questions: Dict[str, Dict[str, Dict[int, "Question"]]],
     parent_folder: Optional[str] = ".",
@@ -94,88 +76,100 @@ def load_answers_from_yaml(
 ) -> Dict[str, Dict[str, Dict[str, Question]]]:
     """Load answers from YAML files and reconstruct grouped questions.
 
-    The function searches for publisher directories under the provided parent folder,
-    loads each YAML file corresponding to a journal, and reconstructs the Question
-    objects with their associated answers and discrepancy resolutions.
+    Searches for YAML files in publisher/journal directories and reconstructs
+    Question objects with answers and resolution metadata.
 
-    :param parent_folder: The directory containing publisher folders with YAML files.
-        Defaults to the current directory.
-    :return: A nested dictionary structured as: {publisher_name: {journal_name:
-        {question_number: Question}}}.
+    :param parent_folder: Directory containing publisher folders with YAML files.
+    :return: Nested dict: {publisher: {journal: {question_number: Question}}}
     """
     grouped_questions: Dict[str, Dict[str, Dict[str, Question]]] = {}
+    publisher_dirs = sorted(glob(f"{parent_folder}/*"))
 
-    publisher_dirs: List[str] = sorted(glob(f"{parent_folder}/*"))
     for publisher_dir in publisher_dirs:
-        publisher_name = publisher_dir.split("/")[-1]
-        grouped_questions[publisher_name] = {}
-        journal_files: List[str] = glob(f"{parent_folder}/{publisher_name}/*.yaml")
+        publisher_name = os.path.basename(publisher_dir)
+        journal_files = glob(os.path.join(publisher_dir, "*.yaml"))
 
         for journal_file in journal_files:
             journal_name = os.path.splitext(os.path.basename(journal_file))[0]
-            grouped_questions[publisher_name][journal_name] = {}
+            questions = _load_questions_from_file(
+                journal_file, publisher_name, journal_name
+            )
 
-            with open(journal_file, "r") as file:
-                yaml_data = yaml.safe_load(file)
-                for question_number, question_dict in yaml_data.items():
-                    # Initialize the question for reconstruction.
-                    question = Question(text=question_dict["text"])
-                    correct_answer_id = question_dict["correct_answer"]
-                    has_discrepancies = question_dict["has_discrepancies"]
-                    discrepancy_reason = question_dict.get("discrepancy_reason", None)
+            if questions:
+                grouped_questions.setdefault(publisher_name, {})[
+                    journal_name
+                ] = questions
 
-                    if has_discrepancies:
-                        if correct_answer_id is None:
-                            print(
-                                (
-                                    f"{publisher_name}/{journal_name}/{question_number}"
-                                    " has inconsistencies: skipped"
-                                )
-                            )
-                            # Skip the question if discrepancy resolution info is
-                            # missing.
-                            continue
-                        else:
-                            assert isinstance(correct_answer_id, int), (
-                                "`correct_answer` must be an integer "
-                                "(the number of the correct respondent)"
-                            )
-                            answer = question_dict[correct_answer_id]
-                            question.add_answer(answer["text"], answer["explanation"])
-                            if discrepancy_reason is None:
-                                print(
-                                    (
-                                        "You must provide `discrepancy_reason` to "
-                                        "resolve discrepancies. "
-                                        f"Question {question_number} in "
-                                        f"{journal_name}/{publisher_name}"
-                                    )
-                                )
-                                continue
-                            else:
-                                question.resolve_discrepancy(
-                                    correct_answer=0,
-                                    discrepancy_reason=discrepancy_reason,
-                                )
-                                assert question.get_final_answer() is not None
-                                grouped_questions[publisher_name][journal_name][
-                                    question_number
-                                ] = question
-                    else:
-                        answer = question_dict[0]
-                        question.add_answer(answer["text"], answer["explanation"])
-                        question.resolve_discrepancy(correct_answer=0)
-                        assert question.get_final_answer() is not None
-                        grouped_questions[publisher_name][journal_name][
-                            question_number
-                        ] = question
-
-            # Remove journal if no questions were successfully loaded.
-            if not grouped_questions[publisher_name][journal_name]:
-                del grouped_questions[publisher_name][journal_name]
-
-        # Remove publisher if no journals were successfully loaded.
-        if not grouped_questions[publisher_name]:
-            del grouped_questions[publisher_name]
+        if not grouped_questions.get(publisher_name):
+            grouped_questions.pop(publisher_name, None)
 
     return grouped_questions
+
+
+def _load_questions_from_file(
+    file_path: str, publisher: str, journal: str
+) -> Dict[str, Question]:
+    """Helper to load and process questions from a single YAML file."""
+    questions: Dict[str, Question] = {}
+
+    with open(file_path, "r") as file:
+        yaml_data = yaml.safe_load(file)
+
+    for q_number, q_dict in yaml_data.items():
+        question = _build_question(q_number, q_dict)
+        correct_answer_id = q_dict["correct_answer"]
+        has_discrepancies = q_dict["has_discrepancies"]
+        discrepancy_reason = q_dict.get("discrepancy_reason")
+
+        if has_discrepancies != question.has_discrepancies():
+            print(
+                f"{publisher}/{journal}/{q_number} Mismatch in discrepancy "
+                + f"flags: {has_discrepancies}, {question.has_discrepancies()}"
+            )
+
+        if question.has_discrepancies():
+            if correct_answer_id is None:
+                print(f"{publisher}/{journal}/{q_number} has inconsistencies: skipped")
+                continue
+            if discrepancy_reason is None:
+                print(
+                    f"Missing discrepancy_reason for {q_number} "
+                    + f"in {journal}/{publisher}"
+                )
+                continue
+            if isinstance(correct_answer_id, dict):
+                correct_answer_id = correct_answer_id["text"]
+            try:
+                resolve_discrepancy(
+                    question,
+                    correct_answer=correct_answer_id,
+                    discrepancy_reason=discrepancy_reason,
+                )
+            except ValueError:
+                print(
+                    f"correct_answer_id = {correct_answer_id} in {q_number} of"
+                    + f" {journal}/{publisher}"
+                )
+                raise
+        else:
+            resolve_discrepancy(question)
+
+        assert question.get_final_answer() is not None
+        questions[q_number] = question
+
+    return questions
+
+
+def _build_question(question_number: str, data: dict) -> Question:
+    """Helper to initialize Question object and add its answers."""
+    question = Question(
+        question_id=question_number,
+        text=data["text"],
+        is_open=False,  # TODO: false is a placeholder fix
+    )
+
+    for answer_id, answer in data.items():
+        if isinstance(answer_id, int):
+            question._add_answer(answer["text"], answer["explanation"])
+
+    return question
