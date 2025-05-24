@@ -1,16 +1,7 @@
 from pathlib import Path
-from typing import Dict, Optional
 
 import pandas as pd
 
-from daemon_analysis_tools.datamodels.question import Question
-from daemon_analysis_tools.io.utilities import (
-    _create_table_from_grouped_questions,
-    _merge_answers_metadata,
-    _merge_single_layer,
-    _read_double_layer_metadata,
-    _read_single_layer_metadata,
-)
 from daemon_analysis_tools.processing.normalizer import (
     _normalize_journal,
     _normalize_publisher,

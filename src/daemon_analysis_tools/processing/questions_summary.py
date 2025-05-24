@@ -12,6 +12,7 @@ from daemon_analysis_tools.io.utilities import (
     _read_single_layer_metadata,
 )
 
+
 def create_answers_summary_with_metadata(
     grouped_question: Dict[str, Dict[str, Dict[str, Question]]],
     publishers_metadata_yaml: Optional[str | Path] = None,

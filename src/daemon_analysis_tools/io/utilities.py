@@ -1,15 +1,15 @@
 from __future__ import annotations
 
-import yaml
+import re
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, MutableMapping, Optional
 
-import pandas as pd
-from daemon_analysis_tools.datamodels.question import Question
-import re
-
-from rapidfuzz import process, fuzz
 import numpy as np
+import pandas as pd
+import yaml
+from rapidfuzz import fuzz, process
+
+from daemon_analysis_tools.datamodels.question import Question
 
 
 def _read_yaml(path: Optional[Path | str]) -> Dict[str, Any]:
@@ -27,7 +27,9 @@ def _read_yaml(path: Optional[Path | str]) -> Dict[str, Any]:
     return dict(data)  # make it mutable
 
 
-def _read_single_layer_metadata(path: Optional[Path | str]) -> Dict[str, Dict[str, Any]]:
+def _read_single_layer_metadata(
+    path: Optional[Path | str],
+) -> Dict[str, Dict[str, Any]]:
     """
     Format: <key>: {prop: value, …}
     Example keys → publisher names, journal names, question_id.
@@ -45,8 +47,6 @@ def _read_double_layer_metadata(
                 prop: value
     """
     return _read_yaml(path)
-
-
 
 
 def _create_table_from_grouped_questions(
@@ -84,7 +84,6 @@ def _create_table_from_grouped_questions(
     return pd.DataFrame(rows)
 
 
-
 def _merge_single_layer(
     df: pd.DataFrame, metadata: Dict[str, Dict[str, Any]], key: str
 ) -> pd.DataFrame:
@@ -103,10 +102,11 @@ def _normalize(txt: Any) -> str | None:
     Lower-case, trim, collapse whitespace, strip trailing period.
     Returns None if *txt* is not a real string.
     """
-    if not isinstance(txt, str):          # ← handles NaN / floats / None
+    if not isinstance(txt, str):  # ← handles NaN / floats / None
         return None
     txt = re.sub(r"\s+", " ", txt).strip().casefold()
     return txt.rstrip(".")
+
 
 def _merge_answers_metadata(
     df: pd.DataFrame,
@@ -144,17 +144,15 @@ def _merge_answers_metadata(
     df = df.copy()
     df["final_answer_norm"] = df["final_answer"].apply(_normalize)
 
-    merged = (
-        df.merge(                       # ← join on normalised keys
-            meta_df,
-            on=["question_id", "final_answer_norm"],
-            how="left",
-            validate="m:1",             # optional: safety check
-        )
-        .drop(columns="final_answer_norm")   # tidy up helper column
-    )
+    merged = df.merge(  # ← join on normalised keys
+        meta_df,
+        on=["question_id", "final_answer_norm"],
+        how="left",
+        validate="m:1",  # optional: safety check
+    ).drop(
+        columns="final_answer_norm"
+    )  # tidy up helper column
     return merged
-
 
 
 def _fill_answer_metadata_fuzzy(
@@ -179,16 +177,14 @@ def _fill_answer_metadata_fuzzy(
         qid = row["question_id"]
         ans_norm = _normalize(row["final_answer"])
         if ans_norm is None:
-            continue                                   # NaN / n.a.
+            continue  # NaN / n.a.
 
         # --- build {norm_key: (original_key, props)} for this question ----
         yaml_answers = answers_meta.get(qid, {})
         if not yaml_answers:
-            continue                                   # open question
+            continue  # open question
 
-        norm_lookup = {
-            _normalize(a): (a, props) for a, props in yaml_answers.items()
-        }
+        norm_lookup = {_normalize(a): (a, props) for a, props in yaml_answers.items()}
 
         best_norm, sim, _ = process.extractOne(
             ans_norm,
@@ -196,7 +192,7 @@ def _fill_answer_metadata_fuzzy(
             scorer=fuzz.token_sort_ratio,
         )
         if best_norm is None or sim < threshold:
-            continue                                   # no confident hit
+            continue  # no confident hit
 
         _, props = norm_lookup[best_norm]
 
