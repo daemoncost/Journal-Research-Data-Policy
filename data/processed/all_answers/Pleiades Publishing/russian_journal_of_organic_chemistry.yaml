@@ -56,7 +56,9 @@ data_fair:
 
       Please note that journals may have individual policies on (sharing) research
       data in concordance with disciplinary norms and expectations."'
-  correct_answer: 0
+  correct_answer:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: n.a.
   discrepancy_reason: Language understanding
 data_availability:
   text: 2. Data availability statement
@@ -72,7 +74,11 @@ data_availability:
     explanation: '"All authors are requested to make sure that all data and materials
       as well as software application or custom code support their published claims
       and comply with field standards."'
-  correct_answer: 0
+  correct_answer:
+    text: Required according to the RDP.
+    explanation: Corresponding author is responsible for making sure disclosures,
+      declarations and transparency on data statements from all authors are included
+      in the manuscript as appropriate
   discrepancy_reason: Text not found
 data_citability:
   text: '5. Citability and findability of data '
@@ -90,7 +96,13 @@ data_citability:
     explanation: '"All authors are requested to make sure that all data and materials
       as well as software application or custom code support their published claims
       and comply with field standards."'
-  correct_answer: 0
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "\u201CWe believe that all the content we publish should be easily\
+      \ identifiable and that there should be a persistent link to its location on\
+      \ the Internet.\nWe achieve this by assigning a DOI to every suitable piece\
+      \ of content and including the DOIs of referenced articles in the bibliographic\
+      \ reference lists.\u201D "
   discrepancy_reason: Text not found
 data_timing:
   text: 7. Timing of data release
@@ -120,7 +132,12 @@ data_sharing_method:
     explanation: '"All authors are requested to make sure that all data and materials
       as well as software application or custom code support their published claims
       and comply with field standards."'
-  correct_answer: 0
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: 'We encourage research data to be archived in data repositories wherever
+      possible.
+
+      '
   discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
@@ -208,7 +225,48 @@ data_recommended:
       adopt RRIDs when reporting key biological resources (antibodies, cell lines,
       model organisms and tools) in their manuscripts.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: "Supply all supplementary material in standard file formats. Specialized\
+      \ format such as .pdb (chemical), .wrl (VRML), .nb (Mathematica notebook), and\
+      \ .tex can also be supplied.\n-XRD data are presented as the structural formula\
+      \ of a molecule with numbered atoms or as a crystal lattice and tables. Along\
+      \ with crystallographic data (cell parameters, space group, etc.), in the experimental\
+      \ part, authors should specify the device with which the measurements were performed\
+      \ and the methods (programs) used for decrypting structures and for calculations\n\
+      It is recommended to present spectroscopic data as follows: \n- In electron\
+      \ spectra, wavelengths (in nm) or wavenumbers (in cm\u20131 ) are given on the\
+      \ abscissa in ascending order from left to right. The logarithm of the molar\
+      \ absorption coefficient or, if needed, molar absorption coefficient is presented\
+      \ on the ordinate axis. In the text and tables, the positions of extrema are\
+      \ designated as \u03BBmax and \u03BBmin \uF02D IR and Raman spectra themselves\
+      \ are usually not presented. They are described in order of decreasing wavenumbers.\
+      \ An example of such a description is as follows. IR spectrum, \u03BD, cm \u2013\
+      1 : 3350 br (NH, NOH), 2100 o.s (C\u2261N), 1700\u20131600 s (C=O, C=N). If\
+      \ the spectra are given, the wavenumbers (cm\u20131 ) (in descending order from\
+      \ left to right) or frequencies in accordance with the scale of the spectrometer\
+      \ are placed along the lower abscissa axis; the upper abscissa axis can reflect\
+      \ wavelength data (\xB5m). The left ordinate axis presents transmittance (%)\
+      \ or absorbance (for IR spectra) or intensity (for Raman spectra) \uF02D In\
+      \ NMR spectra, millionths of a field (ppm) are given on the abscissa axis; the\
+      \ maximum signal of a solvent or a reference sample may be outside the graph\
+      \ field. It is recommended to present scaled-down photocopies of the experimental\
+      \ spectra. In describing spectra, signal types are indicated in abbreviated\
+      \ form: s, singlet; d, doublet; t, triplet; q, quartet; quint, quintet; and\
+      \ m, multiplet. Proton chemical shifts are given in the \u03B4 scale, for example,\
+      \ \u03B4 5.24 m. Chemical shifts of nuclei 13C, 31P, etc., are given in accordance\
+      \ with IUPAC recommendations: a shift into the weak field with a \u201C+;\u201D\
+      \ and into a strong field, with a \u201C\u2013.\u201D Signals are recorded in\
+      \ order of increasing \u03B4 values\n-Mass spectra are presented as numerical\
+      \ values m/z and relative intensities of ion currents in a row, in order of\
+      \ decreasing ion mass, \n- In the case of GC, the brand and model of instrument,\
+      \ detector, and recording conditions, i.e., temperature, length and diameter\
+      \ of the column, column packing, solid inert carrier, and carrier gas, should\
+      \ be specified in the experimental part. For HPLC, it is necessary to indicate\
+      \ the brand and model of the instrument, the detector, temperature, length and\
+      \ diameter of the column, the brand and particle size of the sorbent, and the\
+      \ composition of the eluent. For TLC, the adsorbent, eluent, and developing\
+      \ reagent should be given.\n"
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -225,7 +283,10 @@ data_required:
   1:
     text: no text
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: For all newly synthesized compounds, the elemental analysis data or high-resolution
+      mass spectra should be provided
+    explanation: ''
   discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements
@@ -241,7 +302,11 @@ code_required:
     explanation: '"All authors are requested to make sure that all data and materials
       as well as software application or custom code support their published claims
       and comply with field standards."'
-  correct_answer: 1
+  correct_answer:
+    text: Code sharing not mentioned.
+    explanation: '"All authors are requested to make sure that all data and materials
+      as well as software application or custom code support their published claims
+      and comply with field standards."'
   discrepancy_reason: Language understanding
 code_reproducibility:
   text: 14. Code Reproducibility
@@ -258,7 +323,11 @@ code_reproducibility:
     explanation: '"All authors are requested to make sure that all data and materials
       as well as software application or custom code support their published claims
       and comply with field standards."'
-  correct_answer: 1
+  correct_answer:
+    text: No mention of dependencies for research code.
+    explanation: '"All authors are requested to make sure that all data and materials
+      as well as software application or custom code support their published claims
+      and comply with field standards."'
   discrepancy_reason: Language understanding
 code_versioning:
   text: 15. Versioning and persistent identifiers
@@ -276,20 +345,25 @@ code_versioning:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: no text
-  correct_answer: 1
+  correct_answer:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
   discrepancy_reason: Language understanding
 code_quality:
   text: 16. Code Quality Standards
   N. encoders: 2
-  has_discrepancies: true
+  has_discrepancies: false
   0:
     text: The journal policies do not mention any code quality standards.
     explanation: n.a.
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: no text
-  correct_answer: 0
-  discrepancy_reason: Language understanding
+  correct_answer:
+    text: The journal policies do not mention any code quality standards.
+    explanation: n.a.
+  discrepancy_reason: null
 code_autotest:
   text: 17. Automatic Testing
   N. encoders: 2

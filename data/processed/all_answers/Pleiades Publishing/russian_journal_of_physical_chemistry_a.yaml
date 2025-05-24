@@ -74,7 +74,13 @@ data_availability:
       \ of \u2018Consent to participate\u2019 and/or \u2018Consent to publish\u2019\
       . Other declarations include Funding, Competing interests, Ethics approval,\
       \ Consent, Data and/or Code availability and Authors\u2019 contribution statements.\""
-  correct_answer: 1
+  correct_answer:
+    text: Required according to the RDP.
+    explanation: "\"The above should be summarized in a statement and placed in a\
+      \ \u2018Declarations\u2019 section before the reference list under a heading\
+      \ of \u2018Consent to participate\u2019 and/or \u2018Consent to publish\u2019\
+      . Other declarations include Funding, Competing interests, Ethics approval,\
+      \ Consent, Data and/or Code availability and Authors\u2019 contribution statements.\""
   discrepancy_reason: Text not found
 data_citability:
   text: '5. Citability and findability of data '
@@ -133,7 +139,15 @@ data_sharing_method:
 
       Comment: Data availability is encouraged but does not specify how authors should
       share their data.'
-  correct_answer: 1
+  correct_answer:
+    text: No data sharing method recommended in RDP.
+    explanation: '"All authors are requested to make sure that all data and materials
+      as well as software application or custom code support their published claims
+      and comply with field standards."
+
+
+      Comment: Data availability is encouraged but does not specify how authors should
+      share their data.'
   discrepancy_reason: Language understanding
 data_licenses:
   text: 9. Recommended/required licenses
@@ -168,7 +182,12 @@ data_referee:
     explanation: '"The journal follows the Springer Nature Peer Review Policy, Process
       and Guidance, Springer Nature Journal Editors'' Code of Conduct, and COPE''s
       Ethical Guidelines for Peer-reviewers."'
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: Please note that we expect our reviewers to review all data, including
+      any extended data and supplementary information. Is the reporting of data and
+      methodology sufficiently detailed and transparent to enable reproducing the
+      results?
   discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
@@ -186,7 +205,11 @@ data_recommended:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: Supply all supplementary material in standard file formats. Specialized
+      format such as .pdb (chemical), .wrl (VRML), .nb (Mathematica notebook), and
+      .tex can also be supplied.
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -202,7 +225,9 @@ data_required:
   1:
     text: no text.
     explanation: ''
-  correct_answer: 0
+  correct_answer:
+    text: n.a.
+    explanation: ''
   discrepancy_reason: Formatting
 code_required:
   text: 13. Code sharing requirements
@@ -248,7 +273,10 @@ code_versioning:
     text: No mention of a persistent identifier or specifying a version of developed
       code.
     explanation: no text
-  correct_answer: 1
+  correct_answer:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text
   discrepancy_reason: Language understanding
 code_quality:
   text: 16. Code Quality Standards
@@ -262,7 +290,9 @@ code_quality:
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: no text
-  correct_answer: 1
+  correct_answer:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
   discrepancy_reason: Language understanding
 code_autotest:
   text: 17. Automatic Testing

@@ -233,7 +233,43 @@ data_timing:
       \ we encourage the authors to archive their research data through appropriate\
       \ data repositories or provide us with minimal datasets within Supplementary\
       \ Material."
-  correct_answer: 1
+  correct_answer:
+    text: Timing of data availability not adressed in RDP.
+    explanation: "MDPI Research Data Policies\n\nMDPI is committed to supporting open\
+      \ scientific exchange and enabling our authors to achieve best practices in\
+      \ sharing and archiving research data. We encourage all authors of articles\
+      \ published in MDPI journals to share their research data including, but not\
+      \ limited to protocols, analytic methods, raw data, processed data, code, software,\
+      \ algorithms, and study material. The data should be FAIR \u2013 findable, accessible,\
+      \ interoperable, and reusable \u2013 so that other researchers can locate and\
+      \ use the data.\n\nWe recommend that data and code should be deposited in a\
+      \ trusted repository that will allow for maximum reuse (see the Data Preservation\
+      \ section below). If this is not possible, authors are encouraged to share the\
+      \ specific reason in the Data Availability Statement and make this material\
+      \ available upon request to interested researchers. In addition, research materials\
+      \ necessary to enable the reproduction of an experiment should be indicated\
+      \ in the Materials and Methods section. Individual journal guidelines can be\
+      \ found at the journal \u2018Instructions for Authors\u2019 page. Data sharing\
+      \ policies concern the minimal dataset that supports the central findings of\
+      \ a published study. Generated data should be publicly available and cited in\
+      \ accordance with journal guidelines.\n\nMDPI data policies are informed by\
+      \ TOP Guidelines.\n\nWhere ethical, legal, or privacy issues are present, data\
+      \ should not be shared. The authors should clarify the availability status of\
+      \ the data upon submission and make any limitations or exceptions clear in the\
+      \ Data Availability Statement. Authors should ensure that the data shared is\
+      \ in accordance with consent provided by participants on the use of confidential\
+      \ data. Authors should ensure that the publication of such data does not compromise\
+      \ the anonymity of the participants or breach local data protection laws.\n\n\
+      In situations where access is restricted to protect confidential or proprietary\
+      \ information, authors will be requested to clearly explain the restrictions\
+      \ on the dataset and make the data available upon request, with permission for\
+      \ the purposes of peer review.\n\nMDPI recognizes that some institutions and\
+      \ funding agencies only require the retention of research data for a finite\
+      \ period after a project\u2019s completion or publication. However, there are\
+      \ no such limits specified within the MDPI Data Availability Policy and, therefore,\
+      \ we encourage the authors to archive their research data through appropriate\
+      \ data repositories or provide us with minimal datasets within Supplementary\
+      \ Material."
   discrepancy_reason: Language understanding
 data_sharing_method:
   text: 8. Recommended data sharing method
@@ -267,7 +303,16 @@ data_sharing_method:
       \ to host authors\u2019 data as long as the repository can mint DataCite DOIs,\
       \ and allows for data to be shared under open terms of use (for example the\
       \ CC0 waiver)."
-  correct_answer: 1
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: "MDPI encourages the submission of data to community-recognized data\
+      \ repositories where possible. We recommend the authors visit re3data.org or\
+      \ fairsharing.org to help identify registered and certified data repositories\
+      \ relevant to their subject area if no community resource is available. If the\
+      \ authors\u2019 institution has its generalist data repository this can be used\
+      \ to host authors\u2019 data as long as the repository can mint DataCite DOIs,\
+      \ and allows for data to be shared under open terms of use (for example the\
+      \ CC0 waiver)."
   discrepancy_reason: Language understanding
 data_licenses:
   text: 9. Recommended/required licenses
@@ -304,7 +349,27 @@ data_licenses:
 
       Provide confidential review of submitted datasets without the requirement for
       reviewers to provide identifying information.'
-  correct_answer: 1
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'Data repository criteria
+
+
+      The following criteria should be considered when selecting an appropriate repository,
+      ensuring that platforms:
+
+
+      Ensure long-term persistence and preservation of datasets in their published
+      form;
+
+      Provide stable identifiers for submitted datasets (DOIs in most cases);
+
+      Allow public access to data without barriers, such as logins or paywalls;
+
+      Support open licenses (CC0 and CC-BY, or their equivalents, are required in
+      most cases);
+
+      Provide confidential review of submitted datasets without the requirement for
+      reviewers to provide identifying information.'
   discrepancy_reason: Language understanding
 data_referee:
   text: 10. Referee guidelines concerning research data
@@ -345,7 +410,9 @@ data_recommended:
   1:
     text: Proteomics Data
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: Proteomics Data
+    explanation: ''
   discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
@@ -363,7 +430,11 @@ data_required:
       \ ChIP-Seq, degradome analysis, \u2026); microarray data; protein sequences;\
       \ mass spectrometry raw proteomics data"
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: "nucleic acid sequences; high throughput sequencing (HTS) datasets (RNA-seq,\
+      \ ChIP-Seq, degradome analysis, \u2026); microarray data; protein sequences;\
+      \ mass spectrometry raw proteomics data"
+    explanation: ''
   discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements
@@ -482,7 +553,9 @@ code_quality:
   1:
     text: The journal policies do not mention any code quality standards.
     explanation: N.A.
-  correct_answer: 1
+  correct_answer:
+    text: The journal policies do not mention any code quality standards.
+    explanation: N.A.
   discrepancy_reason: Language understanding
 code_autotest:
   text: 17. Automatic Testing
@@ -515,7 +588,9 @@ code_docs:
   1:
     text: No mention of standards for code documentation.
     explanation: N.A.
-  correct_answer: 1
+  correct_answer:
+    text: No mention of standards for code documentation.
+    explanation: N.A.
   discrepancy_reason: Language understanding
 code_linting:
   text: 19. Linting Standards
@@ -543,5 +618,7 @@ code_development:
   1:
     text: No mention of standards for code development such as continuous integration.
     explanation: N.A.
-  correct_answer: 1
+  correct_answer:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: N.A.
   discrepancy_reason: Language understanding

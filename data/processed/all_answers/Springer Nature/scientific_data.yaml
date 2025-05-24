@@ -1,192 +1,328 @@
 rdp_exist:
   text: 1. Existence of research data policy
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Research Data Policy (RDP) exists.
     explanation: "\u201CScientific Data is an open-access, peer-reviewed journal for\
       \ descriptions of scientifically valuable datasets\u2026 All manuscripts must\
       \ include a Data Availability Statement.\u201D"
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Scientific Data\u2019s data policies are compatible with the standardised\
+      \ research data policies set out by Springer Nature, and the requirements of\
+      \ the Data Policy Standardisation and Implementation Interest Group of the Research\
+      \ Data Alliance."
   correct_answer: null
   discrepancy_reason: null
 data_sharing:
   text: 3. Data sharing requirements in RDP
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public data sharing of all data required.
     explanation: "\u201CAll datasets must be made publicly available and accessible.\u201D"
+  1:
+    text: Public data sharing of all data required.
+    explanation: 'Datasets described in Data Descriptors must be made available to
+      editors and referees at the time of submission, and must be shared with the
+      scientific community as a condition of publication. '
   correct_answer: null
   discrepancy_reason: null
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
     of FAIR)
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Public data sharing of all data on a FAIR repository required.
     explanation: "\u201CWe support the FAIR Data Principles, encouraging the use of\
       \ open, community-recognised repositories.\u201D"
+  1:
+    text: Public data sharing of all data on a FAIR repository required.
+    explanation: 'https://www.nature.com/sdata/aims-and-scope
+
+
+      These principles are designed to align with and support the FAIR Principles
+      for scientific data management and stewardship, which declare that research
+      data should be Findable, Accessible, Interoperable and Reusable.'
   correct_answer: null
   discrepancy_reason: null
 data_availability:
   text: 2. Data availability statement
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Required according to the RDP.
     explanation: "\u201CAll manuscripts must include a Data Availability Statement,\
       \ describing how readers can access the data underlying the study.\u201D"
+  1:
+    text: Required according to the RDP.
+    explanation: Scientific Data mandates authors submit datasets to an appropriate
+      public data repository. Data should be submitted to discipline-specific, community-recognised
+      service where available or a generalist repository if not.
   correct_answer: null
   discrepancy_reason: null
 data_citability:
   text: '5. Citability and findability of data '
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: DOIs or other persistent identifiers required for datasets or codes.
     explanation: "\u201CDatasets must be cited with DOIs or permanent accession numbers.\u201D"
+  1:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: 'Authors are required to formally cite any datasets stored in external
+      repositories that are mentioned within their manuscript, including the main
+      datasets that are the focus of the submission, as well as any other datasets
+      that have been used in the work. '
   correct_answer: null
   discrepancy_reason: null
 data_timing:
   text: 7. Timing of data release
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Required data must be available prior to official publication.
     explanation: "\u201CData must be publicly available at the time of peer review.\u201D"
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: 'Data Repository Guidance
+
+
+      Scientific Data mandates authors submit datasets to an appropriate public data
+      repository. Data should be submitted to discipline-specific, community-recognised
+      service where available or a generalist repository if not.
+
+
+      Deposition is required from the second round of peer review onwards to allow
+      us to check policy compliance and prepare the paper for publication. While it
+      is also recommended for the first round of review, we accept informal methods
+      of sharing at the start if authors wish to delay this. This can include sharing
+      URLs to private cloud storage as long as the method of download is seamless
+      and anonymous. '
   correct_answer: null
   discrepancy_reason: null
 data_sharing_method:
   text: 8. Recommended data sharing method
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Only FAIR repositories recommended in RDP.
     explanation: "\u201CAuthors are encouraged to deposit their data in community-recognised,\
       \ open repositories that support FAIR principles.\u201D"
-  correct_answer: null
-  discrepancy_reason: null
+  1:
+    text: Public online repositories recommended in RDP.
+    explanation: Scientific Data mandates authors submit datasets to an appropriate
+      public data repository. Data should be submitted to discipline-specific, community-recognised
+      service where available or a generalist repository if not.
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: Scientific Data mandates authors submit datasets to an appropriate
+      public data repository. Data should be submitted to discipline-specific, community-recognised
+      service where available or a generalist repository if not.
+  discrepancy_reason: Text not found
 data_licenses:
   text: 9. Recommended/required licenses
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Open access license required for shared data.
     explanation: "\u201CWe recommend licensing data under Creative Commons (CC0 or\
       \ CC-BY).\u201D"
+  1:
+    text: Open access license required for shared data.
+    explanation: Scientific Data articles are published open access under a CC BY-NC-ND
+      (Creative Commons Attribution Non-Commercial No Derivatives 4.0 International
+      licence) or CC BY (Creative Commons Attribution 4.0 International licence) licence.
   correct_answer: null
   discrepancy_reason: null
 data_referee:
   text: 10. Referee guidelines concerning research data
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Confirmation of shared data or code by referee required.
     explanation: "\u201CReferees are expected to verify that the data supporting the\
       \ conclusions are publicly available.\u201D"
-  correct_answer: null
-  discrepancy_reason: null
+  1:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: 'Authors are required to provide referees with access to all data
+      (complete as per the description in the manuscript), and full public release
+      of the research data through a trusted community data repository is required
+      before publication (please see our data deposition policies). '
+  correct_answer:
+    text: Confirmation of shared data or code by referee required.
+    explanation: "\u201CReferees are expected to verify that the data supporting the\
+      \ conclusions are publicly available.\u201D"
+  discrepancy_reason: Text not found
 data_recommended:
   text: '11. Unique policies for data types
 
     Please name all data types for which unique policies are recommended according
     to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Genetic data; Clinical trial data; Geospatial data
     explanation: ''
-  correct_answer: null
-  discrepancy_reason: null
+  1:
+    text: 'human data
+
+
+      The journal strongly recommends that promises made to patients/participants
+      regarding limitations on use are restricted to uses that cause specific harms,
+      such as data disclosure or identification. Beyond that, we recommend that patients/participants
+      are asked to consent to any legitimate, safe, internal use within an academic
+      or commercial research setting.'
+    explanation: ''
+  correct_answer:
+    text: Genetic data; Clinical trial data; Geospatial data
+    explanation: ''
+  discrepancy_reason: Text not found
 data_required:
   text: '12. Unique policies for data types
 
     Please name all data types for which unique policies are required according to
     the RDP (Please separate all data types be semicolon, e.g. crystal structures;
     Protein sequence)'
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Genetic data; Clinical trial data
     explanation: ''
-  correct_answer: null
-  discrepancy_reason: null
+  1:
+    text: no text
+    explanation: ''
+  correct_answer:
+    text: Genetic data; Clinical trial data
+    explanation: ''
+  discrepancy_reason: Text not found
 code_required:
   text: 13. Code sharing requirements
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: Code sharing encouraged but optional.
     explanation: "\u201CAuthors are encouraged to make code openly available in repositories\
       \ such as GitHub or Zenodo.\u201D"
-  correct_answer: null
-  discrepancy_reason: null
+  1:
+    text: Code sharing required.
+    explanation: 'Code availability
+
+
+      Authors must make available, to editors, reviewers, and eventual readers, any
+      previously unreported custom computer code or algorithm used to generate or
+      process the data presented in the manuscript. We recommend sharing your software
+      with GitHub in combination with a DOI providing repository to provide permanent
+      access to a usable instance of code (how to archive GitHub code with Zenodo;
+      how to archive GitHub code with figshare). Code with an assigned DOI may be
+      formally cited and listed in the References section of the manuscript'
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "\u201CAuthors are encouraged to make code openly available in repositories\
+      \ such as GitHub or Zenodo.\u201D"
+  discrepancy_reason: Text not found
 code_reproducibility:
   text: 14. Code Reproducibility
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Journal policies encourage/recommend stating all dependencies and their
       versions that were used to run computational experiments.
     explanation: "\u201CWe recommend including information on software versions and\
       \ dependencies to aid reproducibility.\u201D"
+  1:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: We recommend sharing your software with GitHub in combination with
+      a DOI providing repository to provide permanent access to a usable instance
+      of code (how to archive GitHub code with Zenodo; how to archive GitHub code
+      with figshare). Code with an assigned DOI may be formally cited and listed in
+      the References section of the manuscript
   correct_answer: null
   discrepancy_reason: null
 code_versioning:
   text: 15. Versioning and persistent identifiers
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: Journal policies encourage/recommend a persistent identifier or specifying
       a version of developed code.
     explanation: "\u201CAuthors are encouraged to cite software using versioned DOIs.\u201D"
+  1:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: Code with an assigned DOI may be formally cited and listed in the
+      References section of the manuscript
   correct_answer: null
   discrepancy_reason: null
 code_quality:
   text: 16. Code Quality Standards
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: The journal policies encourage/recommend certain standards for code.
     explanation: "\u201CWe encourage best practices in software development and documentation.\u201D"
-  correct_answer: null
-  discrepancy_reason: null
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: We recommend sharing your software with GitHub in combination with
+      a DOI providing repository to provide permanent access to a usable instance
+      of code.
+  correct_answer:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: "\u201CWe encourage best practices in software development and documentation.\u201D"
+  discrepancy_reason: Text not found
 code_autotest:
   text: 17. Automatic Testing
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of automatic testing to verify code functionality.
     explanation: Not mentioned
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
   correct_answer: null
   discrepancy_reason: null
 code_docs:
   text: 18. Code Documentation
-  N. encoders: 1
-  has_discrepancies: false
+  N. encoders: 2
+  has_discrepancies: true
   0:
     text: The journal policies encourage/recommend standards for code documentation.
     explanation: "\u201CAuthors should provide adequate documentation to support code\
       \ reuse.\u201D"
-  correct_answer: null
-  discrepancy_reason: null
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  correct_answer:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: "\u201CAuthors should provide adequate documentation to support code\
+      \ reuse.\u201D"
+  discrepancy_reason: Text not found
 code_linting:
   text: 19. Linting Standards
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of linting standards for code.
     explanation: Not mentioned
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text
   correct_answer: null
   discrepancy_reason: null
 code_development:
   text: 20. Code Development
-  N. encoders: 1
+  N. encoders: 2
   has_discrepancies: false
   0:
     text: No mention of standards for code development such as continuous integration.
     explanation: Not mentioned
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
   correct_answer: null
   discrepancy_reason: null

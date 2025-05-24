@@ -1,0 +1,383 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Reproducibility
+
+      Open Data
+
+
+      The journal strongly encourages authors to make all data associated with their
+      submission openly available, according to the FAIR principles (Findable, Accessible,
+      Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      . If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. Data obtained from other sources must be appropriately credited. (https://datascience.codata.org/about/submissions#author-guidelines)'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      . If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. Data obtained from other sources must be appropriately credited.
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. (https://datascience.codata.org/about/reproducibility)
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      . If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. Data obtained from other sources must be appropriately credited.
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). '
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      . If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. Data obtained from other sources must be appropriately credited.
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: 'If data, structured methods or code used in the research project
+      have been made openly available, a statement should be added to inform the reader
+      how/where to access these files. This should include the repository location
+      and the DOI linking to it. Read our reproducibility guide for more information
+      on best practice and maximising the impact of your open data.
+
+
+      If data used in the research project has not been made available, a statement
+      confirming this should be added, along with reasoning why. (https://datascience.codata.org/about/submissions#author-guidelines)'
+  1:
+    text: Required according to the RDP.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      . If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. Data obtained from other sources must be appropriately credited.
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: If data, structured methods or code used in the research project
+      have been made openly available, a statement should be added to inform the reader
+      how/where to access these files. This should include the repository location
+      and the DOI linking to it. (https://datascience.codata.org/about/submissions#author-guidelines)
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Required data must be available after official publication.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. (https://datascience.codata.org/about/reproducibility)
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+  correct_answer:
+    text: Required data must be available after official publication.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. (https://datascience.codata.org/about/reproducibility)
+  discrepancy_reason: Language understanding
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: 'When depositing data for a submission, the below should be considered:
+
+
+      - The repository the data is deposited in must be suitable for this subject
+      and have a sustainability model.
+
+      ...
+
+      A list of data repositories is available at http://oad.simmons.edu/oadwiki/Data_repositories.
+      (https://datascience.codata.org/about/reproducibility)'
+  1:
+    text: Public online repositories recommended in RDP.
+    explanation: The journal strongly encourages authors to make all data associated
+      with their submission openly available, according to the FAIR principles (Findable,
+      Accessible, Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+  correct_answer: null
+  discrepancy_reason: null
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: The data must be deposited under an open license that permits unrestricted
+      access (e.g. CC0, CC-BY). More restrictive licenses should only be used if a
+      valid reason (e.g. legal) is present. (https://datascience.codata.org/about/reproducibility)
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: no text
+  correct_answer:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: The data must be deposited under an open license that permits unrestricted
+      access (e.g. CC0, CC-BY). More restrictive licenses should only be used if a
+      valid reason (e.g. legal) is present. (https://datascience.codata.org/about/reproducibility)
+  discrepancy_reason: Text not found
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Confirmation of shared data or code by referee required.
+    explanation: 'Reproducibility
+
+      Open Data
+
+
+      The journal strongly encourages authors to make all data associated with their
+      submission openly available, according to the FAIR principles (Findable, Accessible,
+      Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      . If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. Data obtained from other sources must be appropriately credited. (https://datascience.codata.org/about/editorialpolicies#reviewer-guidelines)'
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: no text
+  correct_answer:
+    text: Confirmation of shared data or code by referee required.
+    explanation: 'Reproducibility
+
+      Open Data
+
+
+      The journal strongly encourages authors to make all data associated with their
+      submission openly available, according to the FAIR principles (Findable, Accessible,
+      Interoperable, Reusable). This should be linked to from a Data Accessibility
+      Statement within the submitted paper, which will be made public upon publication.
+      . If data is not being made available with the journal publication then ideally
+      a statement from the author should be provided within the submission to explain
+      why. Data obtained from other sources must be appropriately credited. (https://datascience.codata.org/about/editorialpolicies#reviewer-guidelines)'
+  discrepancy_reason: Text not found
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: A list of data repositories is available at http://oad.simmons.edu/oadwiki/Data_repositories.
+      (https://datascience.codata.org/about/reproducibility)
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer:
+    text: A list of data repositories is available at http://oad.simmons.edu/oadwiki/Data_repositories.
+      (https://datascience.codata.org/about/reproducibility)
+    explanation: ''
+  discrepancy_reason: Formatting
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: not mentioned
+    explanation: ''
+  1:
+    text: no text
+    explanation: ''
+  correct_answer:
+    text: not mentioned
+    explanation: ''
+  discrepancy_reason: Formatting
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: 'Open Code
+
+
+      If research includes code, statistical analyses, or algorithms, we recommend
+      that authors upload a working instance of their code and data to Code Ocean.
+      Code Ocean is an online computational reproducibility platform that provides
+      researchers with an easy way to share, validate, and discover code published
+      in academic journals. (https://datascience.codata.org/about/reproducibility)'
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: 'Open Code
+
+
+      If research includes the use of software code, statistical analysis or algorithms
+      then we also recommend that authors upload the code into Code Ocean, where it
+      will be hosted on an open, cloud-based computational reproducibility platform,
+      providing researchers and developers with an easy way to share, validate and
+      discover code published in academic journals.'
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: If research includes code, statistical analyses, or algorithms, we
+      recommend that authors upload a working instance of their code and data to Code
+      Ocean. (https://datascience.codata.org/about/reproducibility). Code Ocean offers
+      "automated Dockerfile generation" (https://codeocean.com/product/compute-capsules)
+  1:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: We also recommend that authors upload the code into Code Ocean, where
+      it will be hosted on an open, cloud-based computational reproducibility platform
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: Code Ocean will mint a DOI for the submitted code, thereby allowing
+      for attribution and citation tracking. (https://datascience.codata.org/about/reproducibility)
+  1:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: We also recommend that authors upload the code into Code Ocean, where
+      it will be hosted on an open, cloud-based computational reproducibility platform
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: https://datascience.codata.org/about/reproducibility
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: https://datascience.codata.org/about/reproducibility
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: https://datascience.codata.org/about/reproducibility
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: https://datascience.codata.org/about/reproducibility
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: https://datascience.codata.org/about/reproducibility
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text
+  correct_answer: null
+  discrepancy_reason: null

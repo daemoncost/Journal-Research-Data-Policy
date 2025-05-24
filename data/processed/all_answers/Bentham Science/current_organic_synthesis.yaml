@@ -27,7 +27,10 @@ data_sharing:
       accessible to reviewers and readers, according to the journal's rules. Prior
       to peer review, authors must either deposit their datasets in publicly accessible
       repositories or provide them as supplementary materials with their submission.
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: Bentham Science encourages authors to share the source of data and
+      materials in the manuscript, in support of the findings.
   discrepancy_reason: Selected answer is better interpretation of RDP.
 data_fair:
   text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
@@ -82,7 +85,17 @@ data_citability:
       Example: Name of author(s), the title of data set, data repository, document
       version (e.g., most recent updated version), Digital Object Identifier (DOI),
       and Bentham Science reference style should be included in data citations.'
-  correct_answer: 1
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Whether the data was developed by the author(s) or researcher(s),
+      all publicly available data referenced in the preparation of an article should
+      be cited in the text and reference list. The references relating to the data
+      availability should be presented in the following format:
+
+
+      Example: Name of author(s), the title of data set, data repository, document
+      version (e.g., most recent updated version), Digital Object Identifier (DOI),
+      and Bentham Science reference style should be included in data citations.'
   discrepancy_reason: Selected answer is better interpretation of RDP.
 data_timing:
   text: 7. Timing of data release
@@ -116,7 +129,10 @@ data_sharing_method:
       accessible to reviewers and readers, according to the journal's rules. Prior
       to peer review, authors must either deposit their datasets in publicly accessible
       repositories or provide them as supplementary materials with their submission.
-  correct_answer: 0
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: Wherever appropriate and possible, the journal encourages authors
+      to publish data to support their research findings in a public repository.
   discrepancy_reason: Selected answer is better interpretation of RDP.
 data_licenses:
   text: 9. Recommended/required licenses
@@ -143,7 +159,12 @@ data_referee:
   1:
     text: Data sharing policy not mentioned in refereeing guidelines.
     explanation: none
-  correct_answer: 0
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: The manuscript should adhere to suitable reporting guidelines and
+      community standards for data availability. Bentham Science seeks to disseminate
+      research and therefore stipulates that the public deposition of data is as per
+      the followed standards
   discrepancy_reason: Missed text.
 data_recommended:
   text: '11. Unique policies for data types
@@ -159,7 +180,9 @@ data_recommended:
   1:
     text: none
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: none
+    explanation: ''
   discrepancy_reason: Same answer but different wording.
 data_required:
   text: '12. Unique policies for data types
@@ -175,7 +198,9 @@ data_required:
   1:
     text: none
     explanation: ''
-  correct_answer: 1
+  correct_answer:
+    text: none
+    explanation: ''
   discrepancy_reason: Same answer but different wording.
 code_required:
   text: 13. Code sharing requirements
@@ -225,7 +250,9 @@ code_quality:
   1:
     text: Not mention any code quality standards.
     explanation: none
-  correct_answer: 1
+  correct_answer:
+    text: Not mention any code quality standards.
+    explanation: none
   discrepancy_reason: Same answer but different wording.
 code_autotest:
   text: 17. Automatic Testing
