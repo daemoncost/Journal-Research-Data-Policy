@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Dict, Optional, Union
 
 import pandas as pd
 
@@ -15,10 +15,10 @@ from daemon_analysis_tools.io.utilities import (
 
 def create_answers_summary_with_metadata(
     grouped_question: Dict[str, Dict[str, Dict[str, Question]]],
-    publishers_metadata_yaml: Optional[str | Path] = None,
-    journals_metadata_yaml: Optional[str | Path] = None,
-    questions_metadata_yaml: Optional[str | Path] = None,
-    answers_metadata_yaml: Optional[str | Path] = None,
+    publishers_metadata_yaml: Optional[Union[str, Path]] = None,
+    journals_metadata_yaml: Optional[Union[str, Path]] = None,
+    questions_metadata_yaml: Optional[Union[str, Path]] = None,
+    answers_metadata_yaml: Optional[Union[str, Path]] = None,
 ) -> pd.DataFrame:
     """
     Build a summary table, enrich with optional metadata, and write to CSV.

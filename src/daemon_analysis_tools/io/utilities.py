@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Mapping, MutableMapping, Optional
+from typing import Any, Dict, List, Mapping, MutableMapping, Optional, Union
 
 import numpy as np
 import pandas as pd
@@ -12,7 +12,7 @@ from rapidfuzz import fuzz, process
 from daemon_analysis_tools.datamodels.question import Question
 
 
-def _read_yaml(path: Optional[Path | str]) -> Dict[str, Any]:
+def _read_yaml(path: Optional[Union[Path, str]]) -> Dict[str, Any]:
     """Load *one* YAML document. Return {} if path is None or file is missing."""
     if path is None:
         return {}
@@ -28,7 +28,7 @@ def _read_yaml(path: Optional[Path | str]) -> Dict[str, Any]:
 
 
 def _read_single_layer_metadata(
-    path: Optional[Path | str],
+    path: Optional[Union[Path, str]],
 ) -> Dict[str, Dict[str, Any]]:
     """
     Format: <key>: {prop: value, …}
@@ -38,7 +38,7 @@ def _read_single_layer_metadata(
 
 
 def _read_double_layer_metadata(
-    path: Optional[Path | str],
+    path: Optional[Union[Path, str]],
 ) -> Dict[str, Dict[str, Dict[str, Any]]]:
     """
     Format:
@@ -97,7 +97,7 @@ def _merge_single_layer(
     return merged
 
 
-def _normalize(txt: Any) -> str | None:
+def _normalize(txt: Any) -> Union[str, None]:
     """
     Lower-case, trim, collapse whitespace, strip trailing period.
     Returns None if *txt* is not a real string.

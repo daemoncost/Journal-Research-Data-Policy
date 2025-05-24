@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Union
 
 import pandas as pd
 
@@ -8,7 +9,7 @@ from daemon_analysis_tools.processing.normalizer import (
 )
 
 
-def _load_csv(path: Path | str) -> pd.DataFrame:
+def _load_csv(path: Union[Path, str]) -> pd.DataFrame:
     path = Path(path)
 
     if not path.exists():
@@ -131,7 +132,7 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
     return data
 
 
-def save_summary_table_to_csv(df: pd.DataFrame, path: Path | str) -> None:
+def save_summary_table_to_csv(df: pd.DataFrame, path: Union[Path, str]) -> None:
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -149,5 +150,5 @@ def save_summary_table_to_csv(df: pd.DataFrame, path: Path | str) -> None:
     print(f"[info] CSV written → {path}")
 
 
-def load_summary_table_from_csv(path: Path | str) -> pd.DataFrame:
+def load_summary_table_from_csv(path: Union[Path, str]) -> pd.DataFrame:
     return _load_csv(path)
