@@ -287,7 +287,9 @@ class TestBuildJournalDictEndToEnd(unittest.TestCase):
     def test_end_to_end_build_journal_dict(self):
         # Create Question 1 (no discrepancy)
         q1 = Question(
-            question_id="Q1", text="What is your favorite color?", is_open=False
+            question_id="Q1",
+            text="What is your favorite color?",
+            is_open=False,
         )
         q1._add_answer("Blue", "I like blue")
         q1._add_answer("Blue", "I prefer blue")
@@ -325,7 +327,8 @@ class TestBuildJournalDictEndToEnd(unittest.TestCase):
         self.assertEqual(q1_dict["N. encoders"], 2)
         self.assertFalse(q1_dict["has_discrepancies"])
         self.assertEqual(
-            q1_dict["correct_answer"], {"text": "Blue", "explanation": "I like blue"}
+            q1_dict["correct_answer"],
+            {"text": "Blue", "explanation": "I like blue"},
         )
         self.assertIsNone(q1_dict["discrepancy_reason"])
         # Check one respondent's answer.
