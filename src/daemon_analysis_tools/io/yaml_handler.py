@@ -80,7 +80,7 @@ def load_answers_from_yaml(
     Question objects with answers and resolution metadata.
 
     :param parent_folder: Directory containing publisher folders with YAML files.
-    :return: Nested dict: {publisher: {journal: {question_number: Question}}}
+    :return: Nested dict: {publisher: {journal: {question_id: Question}}}
     """
     grouped_questions: Dict[str, Dict[str, Dict[str, Question]]] = {}
     publisher_dirs = sorted(glob(f"{parent_folder}/*"))

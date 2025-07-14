@@ -1,3 +1,6 @@
+from pathlib import Path
+from typing import Union
+
 import pandas as pd
 
 from daemon_analysis_tools.processing.normalizer import (
@@ -6,15 +9,15 @@ from daemon_analysis_tools.processing.normalizer import (
 )
 
 
-def _load_csv(file_path: str) -> pd.DataFrame:
-    """Load a CSV file into a Pandas DataFrame.
+def _load_csv(path: Union[Path, str]) -> pd.DataFrame:
+    path = Path(path)
 
-    :param file_path: Path to the CSV file.
-    :type file_path: str
-    :return: A DataFrame containing the CSV data.
-    :rtype: pd.DataFrame
-    """
-    return pd.read_csv(file_path)
+    if not path.exists():
+        raise FileNotFoundError(f"[error] File not found: {path}")
+
+    df = pd.read_csv(path)
+    print(f"[info] CSV loaded ← {path}")
+    return df
 
 
 def _remove_sensitive_columns(data: pd.DataFrame) -> pd.DataFrame:
@@ -127,3 +130,25 @@ def load_and_process_csv(file_path: str) -> pd.DataFrame:
     data = _normalize_columns(data)
     data = _remove_unnamed_columns(data)
     return data
+
+
+def save_summary_table_to_csv(df: pd.DataFrame, path: Union[Path, str]) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    if path.exists():
+        response = (
+            input(f"[warning] File '{path}' already exists. Overwrite? [y/N]: ")
+            .strip()
+            .lower()
+        )
+        if response not in {"y", "yes"}:
+            print("[info] Aborted saving.")
+            return
+
+    df.to_csv(path, index=False)
+    print(f"[info] CSV written → {path}")
+
+
+def load_summary_table_from_csv(path: Union[Path, str]) -> pd.DataFrame:
+    return _load_csv(path)

@@ -1,0 +1,162 @@
+rdp_exist:
+  "research data policy (rdp) exists.":
+    score: 1.0
+  "research data policy (rdp) does not exist.":
+    score: 0.0
+
+data_sharing:
+  "data sharing encouraged but optional.":
+    score: 0.0
+  "data sharing only with editors and referees (no public sharing)":
+    score: 0.25
+  "data sharing required but not publicly (e.g. available upon request is allowed).":
+    score: 0.5
+  "public data sharing required only for specific types of data.":
+    score: 0.75
+  "public data sharing of all data required.":
+    score: 1.0
+
+data_fair:
+  "public data sharing on a fair repository not mentioned in rdp.":
+    score: 0.0
+  "public data sharing on a fair repository encouraged.":
+    score: 0.33
+  "public data sharing on a fair repository required only for specific types of data (e.g. genetic data has to be shared on a fair repository but no other data).":
+    score: 0.66
+  "public data sharing of all data on a fair repository required.":
+    score: 1.0
+
+data_availability:
+  "required according to the rdp.":
+    score: 1.0
+  "mentioned in the rdp but optional.":
+    score: 0.5
+  "not mentioned in the rdp.":
+    score: 0.0
+
+data_citability:
+  "no mention of DOIs or other persistent identifiers for datasets or codes.":
+    score: 0.0
+  "DOIs or other persistent identifiers recommended for datasets or codes.":
+    score: 0.5
+  "DOIs or other persistent identifiers required for datasets or codes.":
+    score: 1.0
+
+data_timing:
+  "timing of data availability not addressed in rdp.":
+    score: 0.0
+  "required data must be available after an embargo period.":
+    score: 0.25
+  "required data must be available after official publication.":
+    score: 0.5
+  "required data must be available prior to official publication.":
+    score: 0.75
+  "required data must be available prior to review process.":
+    score: 1.0
+
+data_sharing_method:
+  "no data sharing method recommended in rdp.":
+    score: 0.0
+  "data is shared upon request to authors in rdp.":
+    score: 0.2
+  "multiple data sharing methods equally recommended in rdp.":
+    score: 0.4
+  "data sharing in supplementary material or hosting by journal recommended in rdp.":
+    score: 0.6
+  "public online repositories recommended in rdp.":
+    score: 0.8
+  "only fair repositories recommended in rdp.":
+    score: 1.0
+
+data_licenses:
+  "no mention of data/code licenses in rdp.":
+    score: 0.0
+  "explicit mention of a certain license or license type in rdp.":
+    score: 0.5
+  "open-access license required for shared data.":
+    score: 1.0
+
+data_referee:
+  "data sharing policy not mentioned in refereeing guidelines.":
+    score: 0.0
+  "data sharing policy mentioned in refereeing guidelines.":
+    score: 0.33
+  "confirmation of shared data or code by referee required.":
+    score: 0.66
+  "additional data or code referee (referee that solely confirms that code and data are shared following the rdp).":
+    score: 1.0
+
+data_recommended: {}   # open question – no predefined answers
+data_required: {}      # open question – no predefined answers
+
+code_required:
+  "code sharing not mentioned.":
+    score: 0.0
+  "code sharing encouraged but optional.":
+    score: 0.5
+  "code sharing required.":
+    score: 1.0
+
+code_reproducibility:
+  "no mention of dependencies for research code.":
+    score: 0.0
+  "journal policies encourage/recommend stating all dependencies and their versions that were used to run computational experiments.":
+    score: 0.25
+  "journal policies require stating all dependencies and their versions that were used to run computational experiments.":
+    score: 0.5
+  "journal policies require a working container or installation script for code written for computational experiments.":
+    score: 0.75
+  "journal policies require a working container or installation script for code written for computational experiments and a script that reproduces all figures and/or tables in the article.":
+    score: 1.0
+
+code_versioning:
+  "no mention of a persistent identifier or specifying a version of developed code.":
+    score: 0.0
+  "journal policies encourage/recommend a persistent identifier or specifying a version of developed code.":
+    score: 0.5
+  "journal policies require a persistent identifier or specifying a version of developed code.":
+    score: 1.0
+
+code_quality:
+  "the journal policies do not mention any code quality standards.":
+    score: 0.0
+  "not mention any code quality standards.":
+    score: 0.0
+  "the journal policies encourage/recommend certain standards for code.":
+    score: 0.33
+  "the journal policies require code of articles to fulfil certain standards.":
+    score: 0.66
+  "the journal policies specify criteria for referees to assess the quality of code.":
+    score: 1.0
+
+code_autotest:
+  "no mention of automatic testing to verify code functionality.":
+    score: 0.0
+  "the journal policies encourage/recommend automatic testing to verify code functionality.":
+    score: 0.5
+  "the journal policies require automatic testing to verify code functionality.":
+    score: 1.0
+
+code_docs:
+  "no mention of standards for code documentation.":
+    score: 0.0
+  "the journal policies encourage/recommend standards for code documentation.":
+    score: 0.5
+  "the journal policies require documentation of code.":
+    score: 1.0
+
+code_linting:
+  "no mention of linting standards for code.":
+    score: 0.0
+  "the journal policies encourage/recommend linting standards for code.":
+    score: 0.5
+  "the journal policies require certain standards for linting of code.":
+    score: 1.0
+
+code_development:
+  "no mention of standards for code development such as continuous integration.":
+    score: 0.0
+  "the journal policies encourage/recommend standards for code development such as continuous integration.":
+    score: 0.5
+  "the journal policies require standards for code development such as continuous integration.":
+    score: 1.0
