@@ -1,0 +1,10 @@
+* Notes for development
+- Add `unittest` as testing suite?
+- Add `nbmake` as automated execution test of notebooks (https://github.com/treebeardtech/nbmake)
+-
+
+** IDs for questions
+- Create a mapping (unique) from an identifier to the question
+
+** Test for data consistency
+- Yes: likely also useful in the future
