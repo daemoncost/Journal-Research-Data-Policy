@@ -19,7 +19,12 @@ from daemon_analysis_tools.io.utilities import (
 
 class DummyQuestion:
     def __init__(
-        self, question_id, text, answers, correct_answer=None, discrepancy_reason=None
+        self,
+        question_id,
+        text,
+        answers,
+        correct_answer=None,
+        discrepancy_reason=None,
     ):
         self.question_id = question_id
         self.text = text
@@ -83,9 +88,8 @@ class TestUtilities(unittest.TestCase):
         df = _create_table_from_grouped_questions(grouped)
         self.assertEqual(df.shape[0], 2)
         self.assertIn("final_answer", df.columns)
-        self.assertEqual(
-            df.loc[df["question_id"] == "q1", "final_answer"].values[0], None
-        )
+        val = df.loc[df["question_id"] == "q1", "final_answer"].values[0]
+        self.assertTrue(pd.isna(val))
         self.assertEqual(
             df.loc[df["question_id"] == "q2", "final_answer"].values[0], "Yes"
         )
