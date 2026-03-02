@@ -122,7 +122,9 @@ class TestCSVProcessing(unittest.TestCase):
         # Check that the long journal column has been renamed.
         self.assertIn("journal", df.columns)
         # Ensure that the 'journal' column contains strings.
-        self.assertTrue(pd.api.types.is_object_dtype(df["journal"]))
+        # print(f"DEBUG: Journal column dtype is {df['journal'].dtype}")
+        # self.assertTrue(pd.api.types.is_object_dtype(df["journal"]))
+        self.assertEqual(df["journal"].dtype.kind, "O")
         # Ensure that no automatically generated unnamed columns remain.
         self.assertFalse(any(df.columns.str.contains("^Unnamed:")))
 
