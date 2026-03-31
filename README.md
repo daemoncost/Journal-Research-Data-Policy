@@ -74,4 +74,8 @@ For any questions or concerns regarding this project, please contact us via emai
 
 ## Acknowledgments
 
-This work was supported by the European project .. .
+This article is a result of joint work in
+COST Action CA22154 - Data-driven Applications to-
+wards the Engineering of functional Materials: an Open
+Network (DAEMON) supported by COST (European
+Cooperation in Science and Technology)
