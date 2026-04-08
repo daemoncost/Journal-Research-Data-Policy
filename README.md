@@ -68,10 +68,6 @@ If you would like to contribute, please reach out to the maintainers or submit a
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## Contact
-
-For any questions or concerns regarding this project, please contact us via email at [123@gmail.com](mailto:123@gmail.com).
-
 ## Acknowledgments
 
 This article is a result of joint work in
