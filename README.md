@@ -52,17 +52,6 @@ The [notebooks/fix_inconsistencies/](notebooks/fix_inconsistencies/) directory c
 | `fix_[publisher].ipynb` (14 notebooks) | Manually resolves encoding conflicts for each publisher by comparing answers from two independent encoders and documenting the reason for each discrepancy |
 | [update_format.ipynb](notebooks/fix_inconsistencies/update_format.ipynb) | Reformats processed data files after schema changes |
 
-## Contributing
-
-Contributions are welcome from anyone. The current contributors to this project are:
-- Jonathan Schmidt
-- Nataliya Lopanitsyna
-- Paolo Pegolo
-- Other
-- People
-- Add
-
-If you would like to contribute, please reach out to the maintainers or submit a pull request.
 
 ## License
 
