@@ -1,0 +1,386 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.
+
+
+      Research data is defined as materials and information used in the experiments
+      that enable the validation of the conclusions drawn in the article, including
+      primary data produced by the authors for the study being reported, secondary
+      data reused or analyzed by the authors for the study, and any other materials
+      necessary to reproduce or replicate the results.
+
+
+      The ACS Research Data Policy provides additional information on Data Availability
+      Statements, Data Citation, and Data Repositories.
+
+
+      '
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: 'Data Requirements
+
+      Particular attention should be given to ensuring that experimental procedures
+      are reported in sufficient detail to allow full understanding by the expert
+      reader to the extent that would allow ready reproduction of the experiments.
+      (References to methods used in previous publications may be used, provided the
+      details are very similar.) Technical details that are not essential, but would
+      nevertheless be useful to anyone wanting to fully understand the experiments,
+      may be included as Supporting Information. Rigorous attention to the control
+      and measurement of experimental parameters should be described, including considerations
+      of possible sources of systematic and statistical errors, such that the conclusions
+      of the article may be fully justified. Careful consideration of significant
+      figures (the number of digits that carry meaning relevant to the resolution
+      of the measurement) should be given when reporting data in the abstract, text,
+      and tables. It is especially important when describing device characterization
+      to indicate how many devices were characterized and to differentiate between
+      average, typical, and best-case results. The Virtual Issue on best practices
+      for reporting the properties of materials and devices (http://pubs.acs.org/page/vi/best-practices.html
+      ) provides useful guidance.
+
+
+      As part of the Supporting Information, authors must provide an electronic copy
+      of the structural data as a Crystallographic Information File (CIF) and must
+      clearly notify the Editor in the cover letter that the manuscript contains structural
+      data. (See the journal homepage for further instructions.) A checkcif file for
+      each structure should also be uploaded as supporting information for review
+      (https://checkcif.iucr.org).  Authors must confirm that the data in the CIF
+      file correspond to the structures reported in the manuscript. During the review
+      process, the CIFs will be available only to the reviewers of the manuscript
+      and will remain confidential.  Authors should note that the ACS does not forward
+      coordinates to crystallographic databases such as the Fachinformationszentrum
+      Karlsruhe (FIZ) or the Cambridge Structural Database (CSD). This is the responsibility
+      of the author.
+
+
+      '
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: "Text from Publishers (ACS) Research Data Policy : \n\" ACS strongly\
+      \ endorses The FAIR Data Principles and believes that where ethically and legally\
+      \ feasible, all research data should be findable, accessible, interoperable,\
+      \ and reusable. \"\nAlso, no mention about the journal policy level, but the\
+      \ lowest among them, policy level 1, Encourages Data Sharing.\n\n\" Data Requirements\n\
+      Particular attention should be given to ensuring that experimental procedures\
+      \ are reported in sufficient detail to allow full understanding by the expert\
+      \ reader to the extent that would allow ready reproduction of the experiments.\
+      \ \nAs part of the Supporting Information, authors must provide an electronic\
+      \ copy of the structural data as a Crystallographic Information File (CIF) and\
+      \ must clearly notify the Editor in the cover letter that the manuscript contains\
+      \ structural data.\nAuthors must confirm that the data in the CIF file correspond\
+      \ to the structures reported in the manuscript. During the review process, the\
+      \ CIFs will be available only to the reviewers of the manuscript and will remain\
+      \ confidential.\""
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: na
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "no text in the Journal Research Data Policy but referred to the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy:\n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \""
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "no text in the Journal Research Data Policy but referred to the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy:\n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \""
+  discrepancy_reason: Text not found
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: see ACS RDP
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: "no text in the Journal Research Data Policy but referred to the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy:\n(Level 1 Public data availability encouraged :) \" Authors are\
+      \ encouraged to provide a Data Availability Statement describing the public\
+      \ availability of the data supporting the article\u2019s conclusions. \" "
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: No mention of DOIs or other persistent identifiers for datasets or codes.
+    explanation: na
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \" \n\nData Availability Statements\n\
+      \" ACS strongly encourages authors to select a repository that issues a persistent\
+      \ unique identifier, such as a DOI or an Accession Number. \" "
+  correct_answer:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" ACS strongly endorses The FAIR Data Principles and believes\
+      \ that where ethically and legally feasible, all research data should be findable,\
+      \ accessible, interoperable, and reusable. \" \n\nData Availability Statements\n\
+      \" ACS strongly encourages authors to select a repository that issues a persistent\
+      \ unique identifier, such as a DOI or an Accession Number. \" "
+  discrepancy_reason: Text not found
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: na
+  1:
+    text: Required data must be available prior to review process.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\" This information is provided\
+      \ to the reviewers during the peer-review process (for Review Only) and is available\
+      \ to readers of the published work (for Publication). Supporting Information\
+      \ must be submitted at the same time as the manuscript. See the list of Acceptable\
+      \ Software by File Designation and confirm that your Supporting Information\
+      \ is viewable.\" "
+  correct_answer:
+    text: Required data must be available prior to review process.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\" This information is provided\
+      \ to the reviewers during the peer-review process (for Review Only) and is available\
+      \ to readers of the published work (for Publication). Supporting Information\
+      \ must be submitted at the same time as the manuscript. See the list of Acceptable\
+      \ Software by File Designation and confirm that your Supporting Information\
+      \ is viewable.\" "
+  discrepancy_reason: Text not found
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: No data sharing method recommended in RDP.
+    explanation: na
+  1:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: "Text from Journal Research Data Policy : \n\" If the manuscript\
+      \ is accompanied by any supporting information files for publication, these\
+      \ files will be made available free of charge to readers. \"\n\" As part of\
+      \ the Supporting Information, authors must provide an electronic copy of the\
+      \ structural data as a Crystallographic Information File (CIF) and must clearly\
+      \ notify the Editor in the cover letter that the manuscript contains structural\
+      \ data. \"\n\" Authors should note that the ACS does not forward coordinates\
+      \ to crystallographic databases such as the Fachinformationszentrum Karlsruhe\
+      \ (FIZ) or the Cambridge Structural Database (CSD). \"\n\nText from Publishers\
+      \ (ACS) Research Data Policy: \n\" Although submission of data as part of an\
+      \ article\u2019s Supporting Information is acceptable, authors are encouraged\
+      \ to submit data in a format that can be most easily accessed and reused. ACS\
+      \ encourages authors to provide machine-readable data and to follow the FAIR\
+      \ Data Principles. \""
+  correct_answer:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: "Text from Journal Research Data Policy : \n\" If the manuscript\
+      \ is accompanied by any supporting information files for publication, these\
+      \ files will be made available free of charge to readers. \"\n\" As part of\
+      \ the Supporting Information, authors must provide an electronic copy of the\
+      \ structural data as a Crystallographic Information File (CIF) and must clearly\
+      \ notify the Editor in the cover letter that the manuscript contains structural\
+      \ data. \"\n\" Authors should note that the ACS does not forward coordinates\
+      \ to crystallographic databases such as the Fachinformationszentrum Karlsruhe\
+      \ (FIZ) or the Cambridge Structural Database (CSD). \"\n\nText from Publishers\
+      \ (ACS) Research Data Policy: \n\" Although submission of data as part of an\
+      \ article\u2019s Supporting Information is acceptable, authors are encouraged\
+      \ to submit data in a format that can be most easily accessed and reused. ACS\
+      \ encourages authors to provide machine-readable data and to follow the FAIR\
+      \ Data Principles. \""
+  discrepancy_reason: Text not found
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: na
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: "no text in the Journal Research Data Policy but mentioned in the\
+      \ Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS) Research\
+      \ Data Policy: \n\" To ensure data accessibility, we encourage the use of open\
+      \ licenses for reuse of data, such as Creative Commons CC BY. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: na
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: "Not mentioned in the ACS general reviewers guidelines page. \n\n\
+      NOTE: I don't have access to the journal's specific referee guidelines apart\
+      \ from the ACS general reviewers guidelines."
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: no text.
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: cif
+    explanation: ''
+  1:
+    text: no text.
+    explanation: ''
+  correct_answer: null
+  discrepancy_reason: null
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing not mentioned.
+    explanation: na
+  1:
+    text: Code sharing not mentioned.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: na
+  1:
+    text: No mention of dependencies for research code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: na
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: na
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: na
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: na
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: na
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: na
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null

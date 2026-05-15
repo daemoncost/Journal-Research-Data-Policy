@@ -1,0 +1,363 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'RDP for publisher: "At Elsevier we believe there are 10 aspects
+      of highly effective data and which can function as a roadmap for the development
+      of better data management processes and systems throughout the data lifecycle.
+      These are detailed below: Stored, Preserved, Accessible, Discoverable, Citable,
+      Comprehensible, Reviewed, Reproducible, Reusable, Integrated"'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Standard Elsevier RDP
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data/data-guidelines'
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: "For this journal, the following instructions from our research data\
+      \ guidelines apply.\nOption C: Research data deposit, citation and linking\n\
+      You are required to:\n\u2022 Deposit your research data in a relevant data repository.\n\
+      \u2022 Cite and link to this dataset in your article.\n\u2022 If this is not\
+      \ possible, make a statement explaining why research data cannot be shared.\n\
+      \np.s. data statements such as: \u201EThe data that has been used is confidential.\u201D\
+      \ are found in articles. (Only options D and E from research data guidelines\
+      \ are actually requiring data, and option C which is relevant here states require\
+      \ but offers alternative)"
+  1:
+    text: Data sharing required but not publicly (e.g. available upon request is allowed).
+    explanation: 'You are required to:
+
+
+      Deposit your research data in a relevant data repository.
+
+
+      Cite and link to this dataset in your article.
+
+
+      If this is not possible, make a statement explaining why research data cannot
+      be shared.'
+  correct_answer:
+    text: Data sharing encouraged but optional.
+    explanation: "For this journal, the following instructions from our research data\
+      \ guidelines apply.\nOption C: Research data deposit, citation and linking\n\
+      You are required to:\n\u2022 Deposit your research data in a relevant data repository.\n\
+      \u2022 Cite and link to this dataset in your article.\n\u2022 If this is not\
+      \ possible, make a statement explaining why research data cannot be shared.\n\
+      \np.s. data statements such as: \u201EThe data that has been used is confidential.\u201D\
+      \ are found in articles. (Only options D and E from research data guidelines\
+      \ are actually requiring data, and option C which is relevant here states require\
+      \ but offers alternative)"
+  discrepancy_reason: Text not found
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: Elsevier collaborates with a number of repositories to link articles
+      on ScienceDirect with relevant repositories, giving readers access to underlying
+      data that gives them a better understanding of the research described.
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'Linking to the data underlying your work increases your exposure
+      and may lead to new collaborations. It also provides readers with a better understanding
+      of the described research.
+
+
+      If your research data has been made available in a data repository there are
+      a number of ways your article can be linked directly to the dataset:
+
+
+      Provide a link to your dataset when prompted during the online submission process.
+
+
+      For some data repositories, a repository banner will automatically appear next
+      to your published article on ScienceDirect.
+
+
+      You can also link relevant data or entities within the text of your article
+      through the use of identifiers. Use the following format: Database: 12345 (e.g.
+      TAIR: AT1G01020; CCDC: 734053; PDB: 1XFN).'
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: To foster transparency, we require you to state the availability
+      of your data in your submission if your data is unavailable to access or unsuitable
+      to post. This may also be a requirement of your funding body or institution.
+      You will have the opportunity to provide a data statement during the submission
+      process. The statement will appear with your published article on ScienceDirect.
+  1:
+    text: Required according to the RDP.
+    explanation: 'To foster transparency, you are required to state the availability
+      of any data at submission.
+
+
+      Ensuring data is available may be a requirement of your funding body or institution.
+      If your data is unavailable to access or unsuitable to post, you can state the
+      reason why (e.g., your research data includes sensitive or confidential information
+      such as patient data) during the submission process. This statement will appear
+      with your published article on ScienceDirect.
+
+
+      Read more about the importance and benefits of providing a data statement.'
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Data references should include the following elements: author name(s),
+      dataset title, data repository, version (where available), year, and global
+      persistent identifier. Add [dataset] immediately before the reference so we
+      can properly identify it as a data reference. The [dataset] identifier will
+      not appear in your published article.'
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Standard Elsevier Citing
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data/data-base-linking'
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: n.a.
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: 'If you have made your research data available in a data repository,
+      you can link your article directly to the dataset. Elsevier collaborates with
+      a number of repositories to link articles on ScienceDirect with relevant repositories,
+      giving readers access to underlying data that gives them a better understanding
+      of the research described.
+
+      There are different ways to link your datasets to your article. When available,
+      you can directly link your dataset to your article by providing the relevant
+      information in the submission system. Below are a number of ways in which you
+      can associate data with your article or make a statement about the availability
+      of your data when submitting your manuscript. When sharing data in one of these
+      ways, you are expected to cite the data in your manuscript and reference list. '
+  1:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Standard Elsevier Data Sharing
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data'
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Standard Elsevier Data Sharing
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data'
+  discrepancy_reason: Language understanding
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: 'n.a. in RDP. Some options for Mendeley Data: We believe that researchers
+      are best placed to decide how their research data should be made available and
+      we, therefore, offer a choice of licenses within Mendeley Data to support this.
+      These include: CCo, CC BY, CC BY NC. For authors choosing to deposit in a domain-specific
+      repository, the choice of license will depend on the repository.'
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: n.a.
+  1:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: 'Standard Elsevier DSP:
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data/data-base-linking'
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: No unique polices; some data types available as preselect when submitting
+      the manuscript
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer:
+    text: .nan
+    explanation: ''
+  discrepancy_reason: Formatting
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: n.a.
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer:
+    text: .nan
+    explanation: ''
+  discrepancy_reason: Formatting
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: This journal requires and enables you to share data that supports
+      your research publication where appropriate, and enables you to interlink the
+      data with your published articles. Research data refers to the results of observations
+      or experimentation that validate research findings, which may also include software,
+      code, models, algorithms, protocols, methods and other useful materials related
+      to the project.
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: Research data refers to the results of observations or experimentation
+      that validate research findings, which may also include software, code, models,
+      algorithms, protocols, methods and other useful materials related to the project.
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: Data citations should facilitate access to the data themselves and
+      to such associated metadata, documentation, code, and other materials, as are
+      necessary for both humans and machines to make informed use of the referenced
+      data. Data citations should facilitate identification of, access to, and verification
+      of the specific data that support a claim. Citations or citation metadata should
+      include information about provenance and fixity sufficient to facilitate verifying
+      that the specific time-slice, version and/or granular portion of data retrieved
+      subsequently is the same as was originally cited.
+  1:
+    text: No mention of dependencies for research code.
+    explanation: .nan
+  correct_answer:
+    text: No mention of dependencies for research code.
+    explanation: .nan
+  discrepancy_reason: Language understanding
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: A data citation should include a persistent method for identification
+      that is machine actionable, globally unique, and widely used by a community.
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: .nan
+  correct_answer:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: .nan
+  discrepancy_reason: Language understanding
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: n.a.
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: n.a.
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: n.a.
+  1:
+    text: No mention of standards for code documentation.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: n.a.
+  1:
+    text: No mention of linting standards for code.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: n.a.
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null

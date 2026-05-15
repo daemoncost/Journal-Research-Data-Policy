@@ -1,0 +1,1 @@
+  814  ( set -x; directory-metadata; grep -P '^  *\d+:' patch_question_identifiers.py | sed 's/^  */s\/\^/; s/ "/\//; s/", *$/:\//' > patch_question_identifiers.sed ) 2>&1 | tee patch_question_identifiers.sed.log

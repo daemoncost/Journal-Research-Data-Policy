@@ -1,0 +1,318 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Research Data Policy (RDP) does not exists.
+    explanation: n.a.
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: This journal encourages and enables you to share data that supports
+      your research publication where appropriate, and enables you to interlink the
+      data with your published articles. Research data refers to the results of observations
+      or experimentation that validate research findings, which may also include software,
+      code, models, algorithms, protocols, methods and other useful materials related
+      to the project.
+  correct_answer:
+    text: Research Data Policy (RDP) exists.
+    explanation: This journal encourages and enables you to share data that supports
+      your research publication where appropriate, and enables you to interlink the
+      data with your published articles. Research data refers to the results of observations
+      or experimentation that validate research findings, which may also include software,
+      code, models, algorithms, protocols, methods and other useful materials related
+      to the project.
+  discrepancy_reason: Text not found
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: 'This journal encourages and enables you to share data that supports
+      your research publication where appropriate, and enables you to interlink the
+      data with your published articles. '
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: This journal encourages and enables you to share data that supports
+      your research publication where appropriate, and enables you to interlink the
+      data with your published articles. Research data refers to the results of observations
+      or experimentation that validate research findings, which may also include software,
+      code, models, algorithms, protocols, methods and other useful materials related
+      to the project.
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: n.a.
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: If you have made your research data available in a data repository,
+      you can link your article directly to the dataset. Elsevier collaborates with
+      a number of repositories to link articles on ScienceDirect with relevant repositories,
+      giving readers access to underlying data that gives them a better understanding
+      of the research described.
+  correct_answer:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: If you have made your research data available in a data repository,
+      you can link your article directly to the dataset. Elsevier collaborates with
+      a number of repositories to link articles on ScienceDirect with relevant repositories,
+      giving readers access to underlying data that gives them a better understanding
+      of the research described.
+  discrepancy_reason: Text not found
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Not mentioned in the RDP.
+    explanation: n.a.
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: "Standard Elsevier Data Availability Statement:\n\nWe understand\
+      \ that there are times when the data is simply not available to post or there\
+      \ are good reasons why it shouldn\u2019t be shared. A number of Elsevier journals\
+      \ encourage authors to submit a data statement alongside their manuscript. This\
+      \ statement allows you to clearly explain the data you\u2019ve used in the article\
+      \ and the reasons why it might not be available. The statement will appear with\
+      \ the article on ScienceDirect. "
+  correct_answer:
+    text: Mentioned in the RDP but optional.
+    explanation: "Standard Elsevier Data Availability Statement:\n\nWe understand\
+      \ that there are times when the data is simply not available to post or there\
+      \ are good reasons why it shouldn\u2019t be shared. A number of Elsevier journals\
+      \ encourage authors to submit a data statement alongside their manuscript. This\
+      \ statement allows you to clearly explain the data you\u2019ve used in the article\
+      \ and the reasons why it might not be available. The statement will appear with\
+      \ the article on ScienceDirect. "
+  discrepancy_reason: Text not found
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'This journal encourages you to cite underlying or relevant datasets
+      in your manuscript by citing them in your text and including a data reference
+      in your Reference List. Data references should include the following elements:
+      author name(s), dataset title, data repository, version (where available), year,
+      and global persistent identifier. '
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Elsevier encourages authors to deposit raw experimental data at
+      relevant data repositories. There are several ways in which we support interlinking
+      of articles and data:'
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: n.a.
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: No data sharing method recommended in RDP.
+    explanation: n.a.
+  1:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Standart Elsevier Data sharing
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data'
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Standart Elsevier Data sharing
+
+      https://www.elsevier.com/researcher/author/tools-and-resources/research-data'
+  discrepancy_reason: Text not found
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: n.a.
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: n.a.
+  1:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Standard Elsevier RDP\nCite your research data\nGet credit for your\
+      \ work by citing your research data in your article and adding a data reference\
+      \ to the reference list. This ensures you are recognized for the data you shared\
+      \ and/or used in your research. Read the References section in your chosen journal\u2019\
+      s Guide for Authors for more information. "
+  correct_answer:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Standard Elsevier RDP\nCite your research data\nGet credit for your\
+      \ work by citing your research data in your article and adding a data reference\
+      \ to the reference list. This ensures you are recognized for the data you shared\
+      \ and/or used in your research. Read the References section in your chosen journal\u2019\
+      s Guide for Authors for more information. "
+  discrepancy_reason: Text not found
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: n.a.
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer:
+    text: .nan
+    explanation: ''
+  discrepancy_reason: Formatting
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: n.a.
+    explanation: ''
+  1:
+    text: .nan
+    explanation: ''
+  correct_answer:
+    text: .nan
+    explanation: ''
+  discrepancy_reason: Formatting
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: This journal encourages and enables you to share data that supports
+      your research publication where appropriate, and enables you to interlink the
+      data with your published articles. Research data refers to the results of observations
+      or experimentation that validate research findings, which may also include software,
+      code, models, algorithms, protocols, methods and other useful materials related
+      to the project.
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: 'Standard Elsevier code sharing
+
+
+      Mendeley Data is a certified, free-to-use repository that hosts open data from
+      all disciplines, whatever its format (e.g. raw and processed data, tables, codes
+      and software). '
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: n.a.
+  1:
+    text: No mention of dependencies for research code.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: n.a.
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: n.a.
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: n.a.
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: n.a.
+  1:
+    text: No mention of standards for code documentation.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: n.a.
+  1:
+    text: No mention of linting standards for code.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: n.a.
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: .nan
+  correct_answer: null
+  discrepancy_reason: null

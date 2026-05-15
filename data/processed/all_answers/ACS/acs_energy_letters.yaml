@@ -1,0 +1,527 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.
+
+
+      Research data is defined as materials and information used in the experiments
+      that enable the validation of the conclusions drawn in the article, including
+      primary data produced by the authors for the study being reported, secondary
+      data reused or analyzed by the authors for the study, and any other materials
+      necessary to reproduce or replicate the results.
+
+
+      The ACS Research Data Policy provides additional information on Data Availability
+      Statements, Data Citation, and Data Repositories.'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\nText from Publishers ACS Research\
+      \ Data Policy :\n\" Where ethically and legally feasible, all ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: "Data Requirements\nAuthors are encouraged to report all data that\
+      \ are either necessary for reproduction of results or are reported in the manuscript\u2019\
+      s figures, charts, and tables as Supporting Information (SI). Per ACS policy,\
+      \ the SI is immediately publicly available free of charge on the internet upon\
+      \ publication, regardless of whether or not the accompanying article is made\
+      \ open access. Resources are available on the ACS Publishing Center, including\
+      \ the ACS Math Style Sheet and NMR Guidelines.\n\n"
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: "Text from Journal Research Data Policy : \n(Data Requirements) \n\
+      \" Authors are encouraged to report all data that are either necessary for reproduction\
+      \ of results or are reported in the manuscript\u2019s figures, charts, and tables\
+      \ as Supporting Information (SI). Per ACS policy, the SI is immediately publicly\
+      \ available free of charge on the internet upon publication, regardless of whether\
+      \ or not the accompanying article is made open access. \"\n\nText from Journal\
+      \ Research Data Policy : \n\" All ACS journals strongly encourage authors to\
+      \ make the research data underlying their articles publicly available at the\
+      \ time of publication. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'Choosing an Appropriate Data Repository
+
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.
+
+
+      ...'
+  1:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: 'Text from Publishers (ACS) Research Data Policy:
+
+      " ACS strongly endorses The FAIR Data Principles and believes that where ethically
+      and legally feasible, all research data should be findable, accessible, interoperable,
+      and reusable. "'
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Mentioned in the RDP but optional.
+    explanation: 'Is a Data Availability Statement required for publication?
+
+      ACS is conducting a Data Availability Statement pilot program with Organic Letters,
+      The Journal of Organic Chemistry, and ACS Organic & Inorganic Au. A Data Availability
+      Statement is required for these three journals during the pilot program for
+      all peer-reviewed articles. Manuscripts submitted to these journals prior to
+      September 15, 2022 will not be included in the pilot. A Data Availability Statement
+      is not required for other ACS journals at this time but is highly encouraged.
+      With results from the pilot program, ACS will decide on future requirements
+      for all its journals.
+
+
+      Is a Data Availability Statement required for every article?
+
+      A Data Availability Statement is required for all peer-reviewed articles in
+      Organic Letters, The Journal of Organic Chemistry, and ACS Organic & Inorganic
+      Au. A Data Availability Statement is not required for the following non-peer-reviewed
+      articles, but is encouraged if new data are being presented: Addition/Correction,
+      Editorial, Expression of Concern, or Retraction.
+
+      '
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: "Not explicitly mentioned in the Journal Research Data Policy but\
+      \ mentioned in the Publishers (ACS) Research Data Policy. \n\nText from Journal\
+      \ Research Data Policy (Comment: SI might have the data) : \nSI for Publication\
+      \ is described in a separate paragraph in the manuscript, placed immediately\
+      \ after Acknowledgments using the following template:\n    Supporting Information\
+      \ Available: Brief statement in non-sentence format listing the contents of\
+      \ the material supplied as Supporting Information\n\n\nText from Publishers\
+      \ (ACS) Research Data Policy:\n(Level 1 Public data availability encouraged\
+      \ :) \" Authors are encouraged to provide a Data Availability Statement describing\
+      \ the public availability of the data supporting the article\u2019s conclusions.\
+      \ \" "
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Data Availability Statements
+
+      A Data Availability Statement should describe the availability of the data underlying
+      the conclusions drawn in the research article and provide a means of access,
+      where applicable, by linking to the data, preferably through the use of a persistent
+      identifier such as a DOI or an Accession Number assigned by a data repository.
+      The Data Availability Statement should be included in the manuscript under the
+      Associated Content heading with the Supporting Information.
+
+      '
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "Not mentioned in the Journal Research Data Policy but mentioned\
+      \ in the Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS)\
+      \ Research Data Policy: \n\" ACS strongly endorses The FAIR Data Principles\
+      \ and believes that where ethically and legally feasible, all research data\
+      \ should be findable, accessible, interoperable, and reusable. \" \n\nData Availability\
+      \ Statements\n\" ACS strongly encourages authors to select a repository that\
+      \ issues a persistent unique identifier, such as a DOI or an Accession Number.\
+      \ \" "
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Required data must be available after an embargo period.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.
+
+
+      ...
+
+
+      ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.
+
+
+      ...
+
+
+      Exceptions
+
+      Exceptions to data availability requirements or embargoes delaying data release
+      are available where legal or ethical issues prevent immediate public sharing.
+      This includes data that may reveal personal information of research subjects,
+      data where informed consent for public sharing was not granted, and other legitimate
+      restrictions. In such cases, please contact the relevant journal editorial office
+      to disclose the rationale and request an exception.'
+  1:
+    text: Required data must be available prior to official publication.
+    explanation: "Text from Journal Research Data Policy : \n\" All ACS journals strongly\
+      \ encourage authors to make the research data underlying their articles publicly\
+      \ available at the time of publication. \"\n\nNOTE: At the time of publication\
+      \ interpreted as prior to official publication."
+  correct_answer:
+    text: Required data must be available after an embargo period.
+    explanation: 'Research Data Policy
+
+      All ACS journals strongly encourage authors to make the research data underlying
+      their articles publicly available at the time of publication.
+
+
+      ...
+
+
+      ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.
+
+
+      ...
+
+
+      Exceptions
+
+      Exceptions to data availability requirements or embargoes delaying data release
+      are available where legal or ethical issues prevent immediate public sharing.
+      This includes data that may reveal personal information of research subjects,
+      data where informed consent for public sharing was not granted, and other legitimate
+      restrictions. In such cases, please contact the relevant journal editorial office
+      to disclose the rationale and request an exception.'
+  discrepancy_reason: Text not found
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.
+
+      '
+  1:
+    text: Data sharing in supplementary material or hosting by journal recommended
+      in RDP.
+    explanation: "Text from Journal Research Data Policy : \n(Data Requirements )\n\
+      \" Authors are encouraged to report all data that are either necessary for reproduction\
+      \ of results or are reported in the manuscript\u2019s figures, charts, and tables\
+      \ as Supporting Information (SI). Per ACS policy, the SI is immediately publicly\
+      \ available free of charge on the internet upon publication, regardless of whether\
+      \ or not the accompanying article is made open access. \"\n\nText from Publishers\
+      \ (ACS) Research Data Policy: \n\" Although submission of data as part of an\
+      \ article\u2019s Supporting Information is acceptable, authors are encouraged\
+      \ to submit data in a format that can be most easily accessed and reused. ACS\
+      \ encourages authors to provide machine-readable data and to follow the FAIR\
+      \ Data Principles. \""
+  correct_answer:
+    text: Public online repositories recommended in RDP.
+    explanation: 'Choosing an Appropriate Data Repository
+
+      Where possible, ACS recommends authors deposit data in discipline-specific,
+      community-recognized repositories or in generalist repositories when no community
+      resource is available. Authors should consult the journal Author Guidelines
+      for specific repository recommendations or requirements for data types.
+
+
+      ACS strongly encourages authors to select a repository that issues a persistent
+      unique identifier, such as a DOI or an Accession Number. This will help facilitate
+      the discoverability and citation of deposited data. Repositories that focus
+      on research data, are managed by a sustainable institution (such as a professional
+      society or university), have a plan for long-term storage of and access to the
+      data, and provide clear information about terms of use of the data are preferred.
+
+
+      To find an appropriate repository, authors may refer to re3data.org and FAIRsharing.org
+      for information on available repositories, their certification status, and services
+      offered.
+
+      '
+  discrepancy_reason: Text not found
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'ACS Research Data Policy
+
+      Where ethically and legally feasible, all ACS journals strongly encourage authors
+      to make the research data underlying their articles publicly available at the
+      time of publication. For the purposes of this policy, research data is defined
+      as materials and information used in the experiments that enable the validation
+      of the conclusions drawn in the article. This includes primary data produced
+      by the authors for the study being reported, secondary data reused or analyzed
+      by the authors for the study, and any other materials necessary to reproduce
+      or replicate the results. To ensure data accessibility, we encourage the use
+      of open licenses for reuse of data, such as Creative Commons CC BY. You can
+      learn more about standard reuse licenses at the Open Access Licensing Options
+      page on the ACS Publications website.
+
+
+      ...
+
+
+      Data repositories supporting peer-reviewed publications generally should meet
+      the following criteria:
+
+
+      Ensure long-term persistence and preservation of datasets (minimum of 5 years
+      after publication)
+
+
+      Be supported by a research community or research institution
+
+
+      Provide deposited datasets with stable and persistent identifiers, e.g., Digital
+      Object Identifiers (DOIs)
+
+
+      Allow access to data without restrictions
+
+
+      Provide clear terms of data use and data access (or license) on each dataset
+      landing page
+
+      '
+  1:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: "Not mentioned in the Journal Research Data Policy but mentioned\
+      \ in the Publishers (ACS) Research Data Policy. \n\nText from Publishers (ACS)\
+      \ Research Data Policy: \n\" To ensure data accessibility, we encourage the\
+      \ use of open licenses for reuse of data, such as Creative Commons CC BY. \""
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: .nan
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: "Not mentioned in the ACS general reviewers guidelines page. \n\n\
+      NOTE: I don't have access to the journal's specific referee guidelines apart\
+      \ from the ACS general reviewers guidelines."
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: "No explicit mention, links to the following items are available \n\nBest\
+      \ Practices in Reporting Experimental Results\n\nTeams of ACS editors have identified\
+      \ best practices in certain fields to guide Authors in the reporting of experimental\
+      \ results. Please refer to them, as needed:\nBest Practices for the Reporting\
+      \ of Colloidal Inorganic Nanomaterials\nBest Practices for Reporting on Energy\
+      \ Storage\nBest Practices in Perovskite Solar Cell Efficiency Measurements.\
+      \ Avoiding the Error of Making Bad Cells Look Good\nBest Practices for Reporting\
+      \ on Heterogeneous Photocatalysis\nBest Practice in Photocatalysis: Comparing\
+      \ Rates or Apparent Quantum Yields?\nHow to Submit a Previously Rejected Manuscript\
+      \ to ACS Energy Letters\n"
+    explanation: ''
+  1:
+    text: no text.
+    explanation: ''
+  correct_answer:
+    text: no text.
+    explanation: ''
+  discrepancy_reason: Formatting
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: no text.
+    explanation: ''
+  correct_answer:
+    text: no text.
+    explanation: ''
+  discrepancy_reason: Formatting
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing not mentioned.
+    explanation: .nan
+  1:
+    text: Code sharing not mentioned.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: .nan
+  1:
+    text: No mention of dependencies for research code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: .nan
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: .nan
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: .nan
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: .nan
+  1:
+    text: No mention of standards for code documentation.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: .nan
+  1:
+    text: No mention of linting standards for code.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: .nan
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: no text.
+  correct_answer: null
+  discrepancy_reason: null

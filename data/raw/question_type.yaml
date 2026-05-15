@@ -1,0 +1,19 @@
+1. Existence of research data policy: multiple_choice
+3. Data sharing requirements in RDP: multiple_choice
+4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition of FAIR): multiple_choice
+2. Data availability statement: multiple_choice
+5. Citability and findability of data : multiple_choice
+7. Timing of data release: multiple_choice
+8. Recommended data sharing method: multiple_choice
+9. Recommended/required licenses: multiple_choice
+10. Referee guidelines concerning research data: multiple_choice
+13. Code sharing requirements: multiple_choice
+14. Code Reproducibility: multiple_choice
+15. Versioning and persistent identifiers: multiple_choice
+16. Code Quality Standards: multiple_choice
+17. Automatic Testing: multiple_choice
+18. Code Documentation: multiple_choice
+19. Linting Standards: multiple_choice
+20. Code Development: multiple_choice
+"11. Unique policies for data types\nPlease name all data types for which unique policies are recommended according to the RDP (Please separate all data types be semicolon:  e.g. crystal structures; Protein sequence)": open
+"12. Unique policies for data types\nPlease name all data types for which unique policies are required according to the RDP (Please separate all data types be semicolon:  e.g. crystal structures; Protein sequence)": open

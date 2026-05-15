@@ -1,0 +1,1279 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 4
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Research Data and supplementary materials: Note that publication
+      of your manuscript implies that you must make all materials, data, and protocols
+      associated with the publication available to readers. Disclose at the submission
+      stage any restrictions on the availability of materials or information. Read
+      the information about Supplementary Materials and Data Deposit for additional
+      guidelines.'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Research Data and supplementary materials: Note that publication
+      of your manuscript implies that you must make all materials, data, and protocols
+      associated with the publication available to readers. Disclose at the submission
+      stage any restrictions on the availability of materials or information. Read
+      the information about Supplementary Materials and Data Deposit for additional
+      guidelines.'
+  2:
+    text: Research Data Policy (RDP) exists.
+    explanation: "MDPI Research Data Policies\n\nMDPI is committed to supporting open\
+      \ scientific exchange and enabling our authors to achieve best practices in\
+      \ sharing and archiving research data. We encourage all authors of articles\
+      \ published in MDPI journals to share their research data including, but not\
+      \ limited to protocols, analytic methods, raw data, processed data, code, software,\
+      \ algorithms, and study material. The data should be FAIR \u2013 findable, accessible,\
+      \ interoperable, and reusable \u2013 so that other researchers can locate and\
+      \ use the data.\nWe recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines."
+  3:
+    text: Research Data Policy (RDP) exists.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data.\n\nWe recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines.\n\n\
+      MDPI data policies are informed by TOP Guidelines.\n\nWhere ethical, legal,\
+      \ or privacy issues are present, data should not be shared. The authors should\
+      \ clarify the availability status of the data upon submission and make any limitations\
+      \ or exceptions clear in the Data Availability Statement. Authors should ensure\
+      \ that the data shared is in accordance with consent provided by participants\
+      \ on the use of confidential data. Authors should ensure that the publication\
+      \ of such data does not compromise the anonymity of the participants or breach\
+      \ local data protection laws.\n\nIn situations where access is restricted to\
+      \ protect confidential or proprietary information, authors will be requested\
+      \ to clearly explain the restrictions on the dataset and make the data available\
+      \ upon request, with permission for the purposes of peer review.\n\nMDPI recognizes\
+      \ that some institutions and funding agencies only require the retention of\
+      \ research data for a finite period after a project\u2019s completion or publication.\
+      \ However, there are no such limits specified within the MDPI Data Availability\
+      \ Policy and, therefore, we encourage the authors to archive their research\
+      \ data through appropriate data repositories or provide us with minimal datasets\
+      \ within Supplementary Material.\n\nData availability statements\n\nData availability\
+      \ statements are required for all articles published with MDPI. During the peer-review\
+      \ and editorial decision process, authors can be asked to share existing datasets\
+      \ or raw data that have been analyzed in the manuscript, and whether they will\
+      \ be made available to other researchers following publication. Authors will\
+      \ also be asked for the details of any existing datasets that have been analyzed\
+      \ in the manuscript."
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Public data sharing of all data required.
+    explanation: "Supplementary Materials, Data Deposit and Software Source Code\n\
+      MDPI Research Data Policies\n\nMDPI is committed to supporting open scientific\
+      \ exchange and enabling our authors to achieve best practices in sharing and\
+      \ archiving research data. We encourage all authors of articles published in\
+      \ MDPI journals to share their research data including, but not limited to protocols,\
+      \ analytic methods, raw data, processed data, code, software, algorithms, and\
+      \ study material. The data should be FAIR \u2013 findable, accessible, interoperable,\
+      \ and reusable \u2013 so that other researchers can locate and use the data.\n\
+      \nWe recommend that data and code should be deposited in a trusted repository\
+      \ that will allow for maximum reuse (see the Data Preservation section below).\
+      \ If this is not possible, authors are encouraged to share the specific reason\
+      \ in the Data Availability Statement and make this material available upon request\
+      \ to interested researchers. In addition, research materials necessary to enable\
+      \ the reproduction of an experiment should be indicated in the Materials and\
+      \ Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines.\n\
+      \nMDPI data policies are informed by TOP Guidelines.\n\nWhere ethical, legal,\
+      \ or privacy issues are present, data should not be shared. The authors should\
+      \ clarify the availability status of the data upon submission and make any limitations\
+      \ or exceptions clear in the Data Availability Statement. Authors should ensure\
+      \ that the data shared is in accordance with consent provided by participants\
+      \ on the use of confidential data. Authors should ensure that the publication\
+      \ of such data does not compromise the anonymity of the participants or breach\
+      \ local data protection laws.\n\nIn situations where access is restricted to\
+      \ protect confidential or proprietary information, authors will be requested\
+      \ to clearly explain the restrictions on the dataset and make the data available\
+      \ upon request, with permission for the purposes of peer review.\n\nMDPI recognizes\
+      \ that some institutions and funding agencies only require the retention of\
+      \ research data for a finite period after a project\u2019s completion or publication.\
+      \ However, there are no such limits specified within the MDPI Data Availability\
+      \ Policy and, therefore, we encourage the authors to archive their research\
+      \ data through appropriate data repositories or provide us with minimal datasets\
+      \ within Supplementary Material."
+  1:
+    text: Public data sharing of all data required.
+    explanation: 'Research Data and supplementary materials: Note that publication
+      of your manuscript implies that you must make all materials, data, and protocols
+      associated with the publication available to readers. Disclose at the submission
+      stage any restrictions on the availability of materials or information. Read
+      the information about Supplementary Materials and Data Deposit for additional
+      guidelines.'
+  2:
+    text: Data sharing encouraged but optional.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data.\n\n"
+  3:
+    text: Data sharing encouraged but optional.
+    explanation: "We encourage all authors of articles published in MDPI journals\
+      \ to share their research data including, but not limited to protocols, analytic\
+      \ methods, raw data, processed data, code, software, algorithms, and study material.\
+      \ The data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data."
+  correct_answer:
+    text: Public data sharing of all data required.
+    explanation: 'Research Data and supplementary materials: Note that publication
+      of your manuscript implies that you must make all materials, data, and protocols
+      associated with the publication available to readers. Disclose at the submission
+      stage any restrictions on the availability of materials or information. Read
+      the information about Supplementary Materials and Data Deposit for additional
+      guidelines.'
+  discrepancy_reason: Language understanding
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: 'not mentioned '
+  1:
+    text: Public data sharing of all data on a FAIR repository required.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data.\n\nWe recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines."
+  2:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data.\n\n"
+  3:
+    text: Public data sharing on a FAIR repository encouraged.
+    explanation: "We encourage all authors of articles published in MDPI journals\
+      \ to share their research data including, but not limited to protocols, analytic\
+      \ methods, raw data, processed data, code, software, algorithms, and study material.\
+      \ The data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data."
+  correct_answer:
+    text: Public data sharing of all data on a FAIR repository required.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data.\n\nWe recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines."
+  discrepancy_reason: Language understanding
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 4
+  has_discrepancies: false
+  0:
+    text: Required according to the RDP.
+    explanation: 'Data availability statements
+
+
+      Data availability statements are required for all articles published with MDPI.
+      During the peer review and editorial decision process, authors can be asked
+      to share existing datasets or raw data that have been analyzed in the manuscript,
+      and whether they will be made available to other researchers following publication.
+      Authors will also be asked for the details of any existing datasets that have
+      been analyzed in the manuscript.'
+  1:
+    text: Required according to the RDP.
+    explanation: Data availability statements are required for all articles published
+      with MDPI. During the peer review and editorial decision process, authors can
+      be asked to share existing datasets or raw data that have been analyzed in the
+      manuscript, and whether they will be made available to other researchers following
+      publication. Authors will also be asked for the details of any existing datasets
+      that have been analyzed in the manuscript.
+  2:
+    text: Required according to the RDP.
+    explanation: "Data availability statements\n\nData availability statements are\
+      \ required for all articles published with MDPI. During the peer review and\
+      \ editorial decision process, authors can be asked to share existing datasets\
+      \ or raw data that have been analyzed in the manuscript, and whether they will\
+      \ be made available to other researchers following publication. Authors will\
+      \ also be asked for the details of any existing datasets that have been analyzed\
+      \ in the manuscript.\n\nBelow are the recommended Data Availability Statements:\n\
+      \nData availability status\tRecommended Data Availability Statement\nData available\
+      \ in a publicly accessible repository\tThe original data presented in the study\
+      \ are openly available in [repository name, e.g., FigShare] at [DOI/URL] or\
+      \ [reference/accession number].\nData available on request due to restrictions\
+      \ (e.g., privacy, legal or ethical reasons)\tThe data presented in this study\
+      \ are available on request from the corresponding author due to (specify the\
+      \ reason for the restriction).\n3rd Party Data\tRestrictions apply to the availability\
+      \ of these data. Data were obtained from [third party] and are available [from\
+      \ the authors/at URL] with the permission of [third party].\nEmbargo on data\
+      \ due to commercial restrictions\tThe data that support the findings will be\
+      \ available in [repository name] at [URL / DOI link] following an embargo from\
+      \ the date of publication to allow for commercialization of research findings.\n\
+      Restrictions apply to the datasets\tThe datasets presented in this article are\
+      \ not readily available because [include reason, e.g., the data are part of\
+      \ an ongoing study or due to technical/ time limitations]. Requests to access\
+      \ the datasets should be directed to [text input].\nData derived from public\
+      \ domain resources\tThe data presented in this study are available in [repository\
+      \ name] at [URL/DOI], reference number [reference number]. These data were derived\
+      \ from the following resources available in the public domain: [list resources\
+      \ and URLs]\nData sharing is not applicable (only appropriate if no new data\
+      \ is generated or the article describes entirely theoretical research\tNo new\
+      \ data were created or analyzed in this study. Data sharing is not applicable\
+      \ to this article\nData is contained within the article or supplementary material\t\
+      The original contributions presented in the study are included in the article/supplementary\
+      \ material, further inquiries can be directed to the corresponding author/s.\n\
+      Dataset available on request from the authors\tThe raw data supporting the conclusions\
+      \ of this article will be made available by the authors on request."
+  3:
+    text: Required according to the RDP.
+    explanation: Data availability statements are required for all articles published
+      with MDPI. During the peer-review and editorial decision process, authors can
+      be asked to share existing datasets or raw data that have been analyzed in the
+      manuscript, and whether they will be made available to other researchers following
+      publication. Authors will also be asked for the details of any existing datasets
+      that have been analyzed in the manuscript.
+  correct_answer: null
+  discrepancy_reason: null
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'Data repository criteria
+
+
+      The following criteria should be considered when selecting an appropriate repository,
+      ensuring that platforms:
+
+
+      Ensure long-term persistence and preservation of datasets in their published
+      form;
+
+      Provide stable identifiers for submitted datasets (DOIs in most cases);
+
+      Allow public access to data without barriers, such as logins or paywalls;
+
+      Support open licenses (CC0 and CC-BY, or their equivalents, are required in
+      most cases);
+
+      Provide confidential review of submitted datasets without the requirement for
+      reviewers to provide identifying information.'
+  1:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: 'Data availability status Recommended Data Availability Statement
+
+      Data available in a publicly accessible repository The original data presented
+      in the study are openly available in [repository name, e.g., FigShare] at [DOI/URL]
+      or [reference/accession number].
+
+      Data available on request due to restrictions (e.g., privacy, legal or ethical
+      reasons) The data presented in this study are available on request from the
+      corresponding author due to (specify the reason for the restriction).
+
+      3rd Party Data Restrictions apply to the availability of these data. Data were
+      obtained from [third party] and are available [from the authors/at URL] with
+      the permission of [third party].
+
+      Embargo on data due to commercial restrictions The data that support the findings
+      will be available in [repository name] at [URL / DOI link] following an embargo
+      from the date of publication to allow for commercialization of research findings.
+
+      Restrictions apply to the datasets The datasets presented in this article are
+      not readily available because [include reason, e.g., the data are part of an
+      ongoing study or due to technical/ time limitations]. Requests to access the
+      datasets should be directed to [text input].
+
+      Data derived from public domain resources The data presented in this study are
+      available in [repository name] at [URL/DOI], reference number [reference number].
+      These data were derived from the following resources available in the public
+      domain: [list resources and URLs]
+
+      Data sharing is not applicable (only appropriate if no new data is generated
+      or the article describes entirely theoretical research No new data were created
+      or analyzed in this study. Data sharing is not applicable to this article
+
+      Data is contained within the article or supplementary material The original
+      contributions presented in the study are included in the article/supplementary
+      material, further inquiries can be directed to the corresponding author/s.
+
+      Dataset available on request from the authors The raw data supporting the conclusions
+      of this article will be made available by the authors on request.'
+  2:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'i the Recommended Data Availability Statements
+
+      '
+  3:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'The following criteria should be considered when selecting an appropriate
+      repository, ensuring that platforms:
+
+
+      Ensure long-term persistence and preservation of datasets in their published
+      form;
+
+      Provide stable identifiers for submitted datasets (DOIs in most cases);
+
+      Allow public access to data without barriers, such as logins or paywalls;
+
+      Support open licenses (CC0 and CC-BY, or their equivalents, are required in
+      most cases);
+
+      Provide confidential review of submitted datasets without the requirement for
+      reviewers to provide identifying information.'
+  correct_answer:
+    text: DOIs or other persistent identifiers required for datasets or codes.
+    explanation: 'Data availability status Recommended Data Availability Statement
+
+      Data available in a publicly accessible repository The original data presented
+      in the study are openly available in [repository name, e.g., FigShare] at [DOI/URL]
+      or [reference/accession number].
+
+      Data available on request due to restrictions (e.g., privacy, legal or ethical
+      reasons) The data presented in this study are available on request from the
+      corresponding author due to (specify the reason for the restriction).
+
+      3rd Party Data Restrictions apply to the availability of these data. Data were
+      obtained from [third party] and are available [from the authors/at URL] with
+      the permission of [third party].
+
+      Embargo on data due to commercial restrictions The data that support the findings
+      will be available in [repository name] at [URL / DOI link] following an embargo
+      from the date of publication to allow for commercialization of research findings.
+
+      Restrictions apply to the datasets The datasets presented in this article are
+      not readily available because [include reason, e.g., the data are part of an
+      ongoing study or due to technical/ time limitations]. Requests to access the
+      datasets should be directed to [text input].
+
+      Data derived from public domain resources The data presented in this study are
+      available in [repository name] at [URL/DOI], reference number [reference number].
+      These data were derived from the following resources available in the public
+      domain: [list resources and URLs]
+
+      Data sharing is not applicable (only appropriate if no new data is generated
+      or the article describes entirely theoretical research No new data were created
+      or analyzed in this study. Data sharing is not applicable to this article
+
+      Data is contained within the article or supplementary material The original
+      contributions presented in the study are included in the article/supplementary
+      material, further inquiries can be directed to the corresponding author/s.
+
+      Dataset available on request from the authors The raw data supporting the conclusions
+      of this article will be made available by the authors on request.'
+  discrepancy_reason: Language understanding
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: .nan
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: note mentioned
+  2:
+    text: Required data must be available after an embargo period.
+    explanation: in the Recommended Data Availability Statements
+  3:
+    text: Timing of data availability not adressed in RDP.
+    explanation: "MDPI Research Data Policies\n\nMDPI is committed to supporting open\
+      \ scientific exchange and enabling our authors to achieve best practices in\
+      \ sharing and archiving research data. We encourage all authors of articles\
+      \ published in MDPI journals to share their research data including, but not\
+      \ limited to protocols, analytic methods, raw data, processed data, code, software,\
+      \ algorithms, and study material. The data should be FAIR \u2013 findable, accessible,\
+      \ interoperable, and reusable \u2013 so that other researchers can locate and\
+      \ use the data.\n\nWe recommend that data and code should be deposited in a\
+      \ trusted repository that will allow for maximum reuse (see the Data Preservation\
+      \ section below). If this is not possible, authors are encouraged to share the\
+      \ specific reason in the Data Availability Statement and make this material\
+      \ available upon request to interested researchers. In addition, research materials\
+      \ necessary to enable the reproduction of an experiment should be indicated\
+      \ in the Materials and Methods section. Individual journal guidelines can be\
+      \ found at the journal \u2018Instructions for Authors\u2019 page. Data sharing\
+      \ policies concern the minimal dataset that supports the central findings of\
+      \ a published study. Generated data should be publicly available and cited in\
+      \ accordance with journal guidelines.\n\nMDPI data policies are informed by\
+      \ TOP Guidelines.\n\nWhere ethical, legal, or privacy issues are present, data\
+      \ should not be shared. The authors should clarify the availability status of\
+      \ the data upon submission and make any limitations or exceptions clear in the\
+      \ Data Availability Statement. Authors should ensure that the data shared is\
+      \ in accordance with consent provided by participants on the use of confidential\
+      \ data. Authors should ensure that the publication of such data does not compromise\
+      \ the anonymity of the participants or breach local data protection laws.\n\n\
+      In situations where access is restricted to protect confidential or proprietary\
+      \ information, authors will be requested to clearly explain the restrictions\
+      \ on the dataset and make the data available upon request, with permission for\
+      \ the purposes of peer review.\n\nMDPI recognizes that some institutions and\
+      \ funding agencies only require the retention of research data for a finite\
+      \ period after a project\u2019s completion or publication. However, there are\
+      \ no such limits specified within the MDPI Data Availability Policy and, therefore,\
+      \ we encourage the authors to archive their research data through appropriate\
+      \ data repositories or provide us with minimal datasets within Supplementary\
+      \ Material."
+  correct_answer:
+    text: Timing of data availability not adressed in RDP.
+    explanation: "MDPI Research Data Policies\n\nMDPI is committed to supporting open\
+      \ scientific exchange and enabling our authors to achieve best practices in\
+      \ sharing and archiving research data. We encourage all authors of articles\
+      \ published in MDPI journals to share their research data including, but not\
+      \ limited to protocols, analytic methods, raw data, processed data, code, software,\
+      \ algorithms, and study material. The data should be FAIR \u2013 findable, accessible,\
+      \ interoperable, and reusable \u2013 so that other researchers can locate and\
+      \ use the data.\n\nWe recommend that data and code should be deposited in a\
+      \ trusted repository that will allow for maximum reuse (see the Data Preservation\
+      \ section below). If this is not possible, authors are encouraged to share the\
+      \ specific reason in the Data Availability Statement and make this material\
+      \ available upon request to interested researchers. In addition, research materials\
+      \ necessary to enable the reproduction of an experiment should be indicated\
+      \ in the Materials and Methods section. Individual journal guidelines can be\
+      \ found at the journal \u2018Instructions for Authors\u2019 page. Data sharing\
+      \ policies concern the minimal dataset that supports the central findings of\
+      \ a published study. Generated data should be publicly available and cited in\
+      \ accordance with journal guidelines.\n\nMDPI data policies are informed by\
+      \ TOP Guidelines.\n\nWhere ethical, legal, or privacy issues are present, data\
+      \ should not be shared. The authors should clarify the availability status of\
+      \ the data upon submission and make any limitations or exceptions clear in the\
+      \ Data Availability Statement. Authors should ensure that the data shared is\
+      \ in accordance with consent provided by participants on the use of confidential\
+      \ data. Authors should ensure that the publication of such data does not compromise\
+      \ the anonymity of the participants or breach local data protection laws.\n\n\
+      In situations where access is restricted to protect confidential or proprietary\
+      \ information, authors will be requested to clearly explain the restrictions\
+      \ on the dataset and make the data available upon request, with permission for\
+      \ the purposes of peer review.\n\nMDPI recognizes that some institutions and\
+      \ funding agencies only require the retention of research data for a finite\
+      \ period after a project\u2019s completion or publication. However, there are\
+      \ no such limits specified within the MDPI Data Availability Policy and, therefore,\
+      \ we encourage the authors to archive their research data through appropriate\
+      \ data repositories or provide us with minimal datasets within Supplementary\
+      \ Material."
+  discrepancy_reason: Language understanding
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Data availability status Recommended Data Availability Statement
+
+      Data available in a publicly accessible repository The original data presented
+      in the study are openly available in [repository name, e.g., FigShare] at [DOI/URL]
+      or [reference/accession number].
+
+      Data available on request due to restrictions (e.g., privacy, legal or ethical
+      reasons) The data presented in this study are available on request from the
+      corresponding author due to (specify the reason for the restriction).
+
+      3rd Party Data Restrictions apply to the availability of these data. Data were
+      obtained from [third party] and are available [from the authors/at URL] with
+      the permission of [third party].
+
+      Embargo on data due to commercial restrictions The data that support the findings
+      will be available in [repository name] at [URL / DOI link] following an embargo
+      from the date of publication to allow for commercialization of research findings.
+
+      Restrictions apply to the datasets The datasets presented in this article are
+      not readily available because [include reason, e.g., the data are part of an
+      ongoing study or due to technical/ time limitations]. Requests to access the
+      datasets should be directed to [text input].
+
+      Data derived from public domain resources The data presented in this study are
+      available in [repository name] at [URL/DOI], reference number [reference number].
+      These data were derived from the following resources available in the public
+      domain: [list resources and URLs]
+
+      Data sharing is not applicable (only appropriate if no new data is generated
+      or the article describes entirely theoretical research No new data were created
+      or analyzed in this study. Data sharing is not applicable to this article
+
+      Data is contained within the article or supplementary material The original
+      contributions presented in the study are included in the article/supplementary
+      material, further inquiries can be directed to the corresponding author/s.
+
+      Dataset available on request from the authors The raw data supporting the conclusions
+      of this article will be made available by the authors on request.'
+  1:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Data availability status Recommended Data Availability Statement
+
+      Data available in a publicly accessible repository The original data presented
+      in the study are openly available in [repository name, e.g., FigShare] at [DOI/URL]
+      or [reference/accession number].
+
+      Data available on request due to restrictions (e.g., privacy, legal or ethical
+      reasons) The data presented in this study are available on request from the
+      corresponding author due to (specify the reason for the restriction).
+
+      3rd Party Data Restrictions apply to the availability of these data. Data were
+      obtained from [third party] and are available [from the authors/at URL] with
+      the permission of [third party].
+
+      Embargo on data due to commercial restrictions The data that support the findings
+      will be available in [repository name] at [URL / DOI link] following an embargo
+      from the date of publication to allow for commercialization of research findings.
+
+      Restrictions apply to the datasets The datasets presented in this article are
+      not readily available because [include reason, e.g., the data are part of an
+      ongoing study or due to technical/ time limitations]. Requests to access the
+      datasets should be directed to [text input].
+
+      Data derived from public domain resources The data presented in this study are
+      available in [repository name] at [URL/DOI], reference number [reference number].
+      These data were derived from the following resources available in the public
+      domain: [list resources and URLs]
+
+      Data sharing is not applicable (only appropriate if no new data is generated
+      or the article describes entirely theoretical research No new data were created
+      or analyzed in this study. Data sharing is not applicable to this article
+
+      Data is contained within the article or supplementary material The original
+      contributions presented in the study are included in the article/supplementary
+      material, further inquiries can be directed to the corresponding author/s.
+
+      Dataset available on request from the authors The raw data supporting the conclusions
+      of this article will be made available by the authors on request.'
+  2:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "How to choose an appropriate data repository\n\nMDPI encourages\
+      \ the submission of data to community-recognized data repositories where possible.\
+      \ We recommend the authors visit re3data.org or fairsharing.org to help identify\
+      \ registered and certified data repositories relevant to their subject area\
+      \ if no community resource is available. If the authors\u2019 institution has\
+      \ its generalist data repository this can be used to host authors\u2019 data\
+      \ as long as the repository can mint DataCite DOIs, and allows for data to be\
+      \ shared under open terms of use (for example the CC0 waiver).\n\nData repository\
+      \ criteria\n\nThe following criteria should be considered when selecting an\
+      \ appropriate repository, ensuring that platforms:\n\nEnsure long-term persistence\
+      \ and preservation of datasets in their published form;\nProvide stable identifiers\
+      \ for submitted datasets (DOIs in most cases);\nAllow public access to data\
+      \ without barriers, such as logins or paywalls;\nSupport open licenses (CC0\
+      \ and CC-BY, or their equivalents, are required in most cases);\nProvide confidential\
+      \ review of submitted datasets without the requirement for reviewers to provide\
+      \ identifying information."
+  3:
+    text: Public online repositories recommended in RDP.
+    explanation: "MDPI encourages the submission of data to community-recognized data\
+      \ repositories where possible. We recommend the authors visit re3data.org or\
+      \ fairsharing.org to help identify registered and certified data repositories\
+      \ relevant to their subject area if no community resource is available. If the\
+      \ authors\u2019 institution has its generalist data repository this can be used\
+      \ to host authors\u2019 data as long as the repository can mint DataCite DOIs,\
+      \ and allows for data to be shared under open terms of use (for example the\
+      \ CC0 waiver)."
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: 'Data availability status Recommended Data Availability Statement
+
+      Data available in a publicly accessible repository The original data presented
+      in the study are openly available in [repository name, e.g., FigShare] at [DOI/URL]
+      or [reference/accession number].
+
+      Data available on request due to restrictions (e.g., privacy, legal or ethical
+      reasons) The data presented in this study are available on request from the
+      corresponding author due to (specify the reason for the restriction).
+
+      3rd Party Data Restrictions apply to the availability of these data. Data were
+      obtained from [third party] and are available [from the authors/at URL] with
+      the permission of [third party].
+
+      Embargo on data due to commercial restrictions The data that support the findings
+      will be available in [repository name] at [URL / DOI link] following an embargo
+      from the date of publication to allow for commercialization of research findings.
+
+      Restrictions apply to the datasets The datasets presented in this article are
+      not readily available because [include reason, e.g., the data are part of an
+      ongoing study or due to technical/ time limitations]. Requests to access the
+      datasets should be directed to [text input].
+
+      Data derived from public domain resources The data presented in this study are
+      available in [repository name] at [URL/DOI], reference number [reference number].
+      These data were derived from the following resources available in the public
+      domain: [list resources and URLs]
+
+      Data sharing is not applicable (only appropriate if no new data is generated
+      or the article describes entirely theoretical research No new data were created
+      or analyzed in this study. Data sharing is not applicable to this article
+
+      Data is contained within the article or supplementary material The original
+      contributions presented in the study are included in the article/supplementary
+      material, further inquiries can be directed to the corresponding author/s.
+
+      Dataset available on request from the authors The raw data supporting the conclusions
+      of this article will be made available by the authors on request.'
+  discrepancy_reason: Language understanding
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Open access license required for shared data.
+    explanation: 'Data repository criteria
+
+
+      The following criteria should be considered when selecting an appropriate repository,
+      ensuring that platforms:
+
+
+      Ensure long-term persistence and preservation of datasets in their published
+      form;
+
+      Provide stable identifiers for submitted datasets (DOIs in most cases);
+
+      Allow public access to data without barriers, such as logins or paywalls;
+
+      Support open licenses (CC0 and CC-BY, or their equivalents, are required in
+      most cases);
+
+      Provide confidential review of submitted datasets without the requirement for
+      reviewers to provide identifying information.'
+  1:
+    text: Open access license required for shared data.
+    explanation: 'Data repository criteria
+
+
+      The following criteria should be considered when selecting an appropriate repository,
+      ensuring that platforms:
+
+
+      Ensure long-term persistence and preservation of datasets in their published
+      form;
+
+      Provide stable identifiers for submitted datasets (DOIs in most cases);
+
+      Allow public access to data without barriers, such as logins or paywalls;
+
+      Support open licenses (CC0 and CC-BY, or their equivalents, are required in
+      most cases);
+
+      Provide confidential review of submitted datasets without the requirement for
+      reviewers to provide identifying information.'
+  2:
+    text: Open access license required for shared data.
+    explanation: Data repository criteriaThe following criteria should be considered
+      when selecting an appropriate repository, ensuring that platforms:Ensure long-term
+      persistence and preservation of datasets in their published form;Provide stable
+      identifiers for submitted datasets (DOIs in most cases);Allow public access
+      to data without barriers, such as logins or paywalls;Support open licenses (CC0
+      and CC-BY, or their equivalents, are required in most cases);Provide confidential
+      review of submitted datasets without the requirement for reviewers to provide
+      identifying information.
+  3:
+    text: Explicit mention of a certain license/license type in RDP.
+    explanation: 'Data repository criteria
+
+
+      The following criteria should be considered when selecting an appropriate repository,
+      ensuring that platforms:
+
+
+      Ensure long-term persistence and preservation of datasets in their published
+      form;
+
+      Provide stable identifiers for submitted datasets (DOIs in most cases);
+
+      Allow public access to data without barriers, such as logins or paywalls;
+
+      Support open licenses (CC0 and CC-BY, or their equivalents, are required in
+      most cases);
+
+      Provide confidential review of submitted datasets without the requirement for
+      reviewers to provide identifying information.'
+  correct_answer:
+    text: Open access license required for shared data.
+    explanation: 'Data repository criteria
+
+
+      The following criteria should be considered when selecting an appropriate repository,
+      ensuring that platforms:
+
+
+      Ensure long-term persistence and preservation of datasets in their published
+      form;
+
+      Provide stable identifiers for submitted datasets (DOIs in most cases);
+
+      Allow public access to data without barriers, such as logins or paywalls;
+
+      Support open licenses (CC0 and CC-BY, or their equivalents, are required in
+      most cases);
+
+      Provide confidential review of submitted datasets without the requirement for
+      reviewers to provide identifying information.'
+  discrepancy_reason: Language understanding
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 4
+  has_discrepancies: false
+  0:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "General questions to help guide your review report for research\
+      \ articles:\n\nIs the manuscript clear, relevant for the field and presented\
+      \ in a well-structured manner? \nAre the cited references mostly recent publications\
+      \ (within the last 5 years) and relevant? Does it include an excessive number\
+      \ of self-citations?\nIs the manuscript scientifically sound and is the experimental\
+      \ design appropriate to test the hypothesis?\nAre the manuscript\u2019s results\
+      \ reproducible based on the details given in the methods section?\nAre the figures/tables/images/schemes\
+      \ appropriate? Do they properly show the data? Are they easy to interpret and\
+      \ understand? Is the data interpreted appropriately and consistently throughout\
+      \ the manuscript? Please include details regarding the statistical analysis\
+      \ or data acquired from specific databases.\nAre the conclusions consistent\
+      \ with the evidence and arguments presented?\nPlease evaluate the ethics statements\
+      \ and data availability statements to ensure they are adequate."
+  1:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "Is the manuscript clear, relevant for the field and presented in\
+      \ a well-structured manner? \nAre the cited references mostly recent publications\
+      \ (within the last 5 years) and relevant? Does it include an excessive number\
+      \ of self-citations?\nIs the manuscript scientifically sound and is the experimental\
+      \ design appropriate to test the hypothesis?\nAre the manuscript\u2019s results\
+      \ reproducible based on the details given in the methods section?\nAre the figures/tables/images/schemes\
+      \ appropriate? Do they properly show the data? Are they easy to interpret and\
+      \ understand? Is the data interpreted appropriately and consistently throughout\
+      \ the manuscript? Please include details regarding the statistical analysis\
+      \ or data acquired from specific databases.\nAre the conclusions consistent\
+      \ with the evidence and arguments presented?\nPlease evaluate the ethics statements\
+      \ and data availability statements to ensure they are adequate."
+  2:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: "General questions to help guide your review report for research\
+      \ articles:Is the manuscript clear, relevant for the field and presented in\
+      \ a well-structured manner? Are the cited references mostly recent publications\
+      \ (within the last 5 years) and relevant? Does it include an excessive number\
+      \ of self-citations?Is the manuscript scientifically sound and is the experimental\
+      \ design appropriate to test the hypothesis?Are the manuscript\u2019s results\
+      \ reproducible based on the details given in the methods section?Are the figures/tables/images/schemes\
+      \ appropriate? Do they properly show the data? Are they easy to interpret and\
+      \ understand? Is the data interpreted appropriately and consistently throughout\
+      \ the manuscript? Please include details regarding the statistical analysis\
+      \ or data acquired from specific databases.Are the conclusions consistent with\
+      \ the evidence and arguments presented?Please evaluate the ethics statements\
+      \ and data availability statements to ensure they are adequate."
+  3:
+    text: Data sharing policy mentioned in refereeing guidelines.
+    explanation: Please evaluate the ethics statements and data availability statements
+      to ensure they are adequate.
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Na
+    explanation: ''
+  1:
+    text: na
+    explanation: ''
+  2:
+    text: .nan
+    explanation: ''
+  3:
+    text: Proteomics Data
+    explanation: ''
+  correct_answer:
+    text: Proteomics Data
+    explanation: ''
+  discrepancy_reason: Text not found
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: all data
+    explanation: ''
+  1:
+    text: all data
+    explanation: ''
+  2:
+    text: .nan
+    explanation: ''
+  3:
+    text: "nucleic acid sequences; high throughput sequencing (HTS) datasets (RNA-seq,\
+      \ ChIP-Seq, degradome analysis, \u2026); microarray data; protein sequences;\
+      \ mass spectrometry raw proteomics data"
+    explanation: ''
+  correct_answer:
+    text: "nucleic acid sequences; high throughput sequencing (HTS) datasets (RNA-seq,\
+      \ ChIP-Seq, degradome analysis, \u2026); microarray data; protein sequences;\
+      \ mass spectrometry raw proteomics data"
+    explanation: ''
+  discrepancy_reason: Text not found
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Code sharing required.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data.\n\nWe recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines."
+  1:
+    text: Code sharing required.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data.\n\nWe recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines."
+  2:
+    text: Code sharing encouraged but optional.
+    explanation: "We recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines. "
+  3:
+    text: Code sharing encouraged but optional.
+    explanation: "MDPI Research Data Policies\n\nMDPI is committed to supporting open\
+      \ scientific exchange and enabling our authors to achieve best practices in\
+      \ sharing and archiving research data. We encourage all authors of articles\
+      \ published in MDPI journals to share their research data including, but not\
+      \ limited to protocols, analytic methods, raw data, processed data, code, software,\
+      \ algorithms, and study material. The data should be FAIR \u2013 findable, accessible,\
+      \ interoperable, and reusable \u2013 so that other researchers can locate and\
+      \ use the data.\n\nWe recommend that data and code should be deposited in a\
+      \ trusted repository that will allow for maximum reuse (see the Data Preservation\
+      \ section below). If this is not possible, authors are encouraged to share the\
+      \ specific reason in the Data Availability Statement and make this material\
+      \ available upon request to interested researchers. In addition, research materials\
+      \ necessary to enable the reproduction of an experiment should be indicated\
+      \ in the Materials and Methods section. Individual journal guidelines can be\
+      \ found at the journal \u2018Instructions for Authors\u2019 page. Data sharing\
+      \ policies concern the minimal dataset that supports the central findings of\
+      \ a published study. Generated data should be publicly available and cited in\
+      \ accordance with journal guidelines.\n\nMDPI data policies are informed by\
+      \ TOP Guidelines.\n\nWhere ethical, legal, or privacy issues are present, data\
+      \ should not be shared. The authors should clarify the availability status of\
+      \ the data upon submission and make any limitations or exceptions clear in the\
+      \ Data Availability Statement. Authors should ensure that the data shared is\
+      \ in accordance with consent provided by participants on the use of confidential\
+      \ data. Authors should ensure that the publication of such data does not compromise\
+      \ the anonymity of the participants or breach local data protection laws.\n\n\
+      In situations where access is restricted to protect confidential or proprietary\
+      \ information, authors will be requested to clearly explain the restrictions\
+      \ on the dataset and make the data available upon request, with permission for\
+      \ the purposes of peer review.\n\nMDPI recognizes that some institutions and\
+      \ funding agencies only require the retention of research data for a finite\
+      \ period after a project\u2019s completion or publication. However, there are\
+      \ no such limits specified within the MDPI Data Availability Policy and, therefore,\
+      \ we encourage the authors to archive their research data through appropriate\
+      \ data repositories or provide us with minimal datasets within Supplementary\
+      \ Material.\n\nComputer Code and Software\n\nFor work where novel computer code\
+      \ was developed, authors should release the code either by depositing in a recognized,\
+      \ public repository such as GitHub or uploading as supplementary information\
+      \ to the publication. The name, version, corporation and location information\
+      \ for all software used should be clearly indicated. Please include all the\
+      \ parameters used to run software/programs analyses."
+  correct_answer:
+    text: Code sharing encouraged but optional.
+    explanation: "MDPI Research Data Policies\n\nMDPI is committed to supporting open\
+      \ scientific exchange and enabling our authors to achieve best practices in\
+      \ sharing and archiving research data. We encourage all authors of articles\
+      \ published in MDPI journals to share their research data including, but not\
+      \ limited to protocols, analytic methods, raw data, processed data, code, software,\
+      \ algorithms, and study material. The data should be FAIR \u2013 findable, accessible,\
+      \ interoperable, and reusable \u2013 so that other researchers can locate and\
+      \ use the data.\n\nWe recommend that data and code should be deposited in a\
+      \ trusted repository that will allow for maximum reuse (see the Data Preservation\
+      \ section below). If this is not possible, authors are encouraged to share the\
+      \ specific reason in the Data Availability Statement and make this material\
+      \ available upon request to interested researchers. In addition, research materials\
+      \ necessary to enable the reproduction of an experiment should be indicated\
+      \ in the Materials and Methods section. Individual journal guidelines can be\
+      \ found at the journal \u2018Instructions for Authors\u2019 page. Data sharing\
+      \ policies concern the minimal dataset that supports the central findings of\
+      \ a published study. Generated data should be publicly available and cited in\
+      \ accordance with journal guidelines.\n\nMDPI data policies are informed by\
+      \ TOP Guidelines.\n\nWhere ethical, legal, or privacy issues are present, data\
+      \ should not be shared. The authors should clarify the availability status of\
+      \ the data upon submission and make any limitations or exceptions clear in the\
+      \ Data Availability Statement. Authors should ensure that the data shared is\
+      \ in accordance with consent provided by participants on the use of confidential\
+      \ data. Authors should ensure that the publication of such data does not compromise\
+      \ the anonymity of the participants or breach local data protection laws.\n\n\
+      In situations where access is restricted to protect confidential or proprietary\
+      \ information, authors will be requested to clearly explain the restrictions\
+      \ on the dataset and make the data available upon request, with permission for\
+      \ the purposes of peer review.\n\nMDPI recognizes that some institutions and\
+      \ funding agencies only require the retention of research data for a finite\
+      \ period after a project\u2019s completion or publication. However, there are\
+      \ no such limits specified within the MDPI Data Availability Policy and, therefore,\
+      \ we encourage the authors to archive their research data through appropriate\
+      \ data repositories or provide us with minimal datasets within Supplementary\
+      \ Material.\n\nComputer Code and Software\n\nFor work where novel computer code\
+      \ was developed, authors should release the code either by depositing in a recognized,\
+      \ public repository such as GitHub or uploading as supplementary information\
+      \ to the publication. The name, version, corporation and location information\
+      \ for all software used should be clearly indicated. Please include all the\
+      \ parameters used to run software/programs analyses."
+  discrepancy_reason: Language understanding
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: Journal policies require stating all dependencies and their versions that
+      were used to run computational experiments.
+    explanation: "We recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines."
+  1:
+    text: Journal policies require stating all dependencies and their versions that
+      were used to run computational experiments.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data. We recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines."
+  2:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: Computer Code and Software  For work where novel computer code was
+      developed, authors should release the code either by depositing in a recognized,
+      public repository or uploading as supplementary information to the publication.
+      The name and version of all software used should be clearly indicated.
+  3:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: The name, version, corporation and location information for all software
+      used should be clearly indicated. Please include all the parameters used to
+      run software/programs analyses.
+  correct_answer:
+    text: Journal policies encourage/recommend stating all dependencies and their
+      versions that were used to run computational experiments.
+    explanation: The name, version, corporation and location information for all software
+      used should be clearly indicated. Please include all the parameters used to
+      run software/programs analyses.
+  discrepancy_reason: Language understanding
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: na
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: na
+  2:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: Computer Code and Software  For work where novel computer code was
+      developed, authors should release the code either by depositing in a recognized,
+      public repository or uploading as supplementary information to the publication.
+      The name and version of all software used should be clearly indicated.
+  3:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: The name, version, corporation and location information for all software
+      used should be clearly indicated. Please include all the parameters used to
+      run software/programs analyses.
+  correct_answer:
+    text: Journal policies encourage/recommend a persistent identifier or specifying
+      a version of developed code.
+    explanation: The name, version, corporation and location information for all software
+      used should be clearly indicated. Please include all the parameters used to
+      run software/programs analyses.
+  discrepancy_reason: Language understanding
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: "We recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines."
+  1:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data. We recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines."
+  2:
+    text: The journal policies encourage/recommend certain standards for code.
+    explanation: "We recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines."
+  3:
+    text: The journal policies do not mention any code quality standards.
+    explanation: N.A.
+  correct_answer:
+    text: The journal policies do not mention any code quality standards.
+    explanation: N.A.
+  discrepancy_reason: Language understanding
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 4
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: na
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: na
+  2:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: .nan
+  3:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: N.A.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: "We recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines."
+  1:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: "MDPI is committed to supporting open scientific exchange and enabling\
+      \ our authors to achieve best practices in sharing and archiving research data.\
+      \ We encourage all authors of articles published in MDPI journals to share their\
+      \ research data including, but not limited to protocols, analytic methods, raw\
+      \ data, processed data, code, software, algorithms, and study material. The\
+      \ data should be FAIR \u2013 findable, accessible, interoperable, and reusable\
+      \ \u2013 so that other researchers can locate and use the data. We recommend\
+      \ that data and code should be deposited in a trusted repository that will allow\
+      \ for maximum reuse (see the Data Preservation section below). If this is not\
+      \ possible, authors are encouraged to share the specific reason in the Data\
+      \ Availability Statement and make this material available upon request to interested\
+      \ researchers. In addition, research materials necessary to enable the reproduction\
+      \ of an experiment should be indicated in the Materials and Methods section.\
+      \ Individual journal guidelines can be found at the journal \u2018Instructions\
+      \ for Authors\u2019 page. Data sharing policies concern the minimal dataset\
+      \ that supports the central findings of a published study. Generated data should\
+      \ be publicly available and cited in accordance with journal guidelines."
+  2:
+    text: The journal policies encourage/recommend standards for code documentation.
+    explanation: "We recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines."
+  3:
+    text: No mention of standards for code documentation.
+    explanation: N.A.
+  correct_answer:
+    text: No mention of standards for code documentation.
+    explanation: N.A.
+  discrepancy_reason: Language understanding
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: The journal policies encourage/recommend linting standards for code.
+    explanation: "We recommend that data and code should be deposited in a trusted\
+      \ repository that will allow for maximum reuse (see the Data Preservation section\
+      \ below). If this is not possible, authors are encouraged to share the specific\
+      \ reason in the Data Availability Statement and make this material available\
+      \ upon request to interested researchers. In addition, research materials necessary\
+      \ to enable the reproduction of an experiment should be indicated in the Materials\
+      \ and Methods section. Individual journal guidelines can be found at the journal\
+      \ \u2018Instructions for Authors\u2019 page. Data sharing policies concern the\
+      \ minimal dataset that supports the central findings of a published study. Generated\
+      \ data should be publicly available and cited in accordance with journal guidelines."
+  1:
+    text: No mention of linting standards for code.
+    explanation: na
+  2:
+    text: No mention of linting standards for code.
+    explanation: .nan
+  3:
+    text: No mention of linting standards for code.
+    explanation: N.A.
+  correct_answer:
+    text: No mention of linting standards for code.
+    explanation: N.A.
+  discrepancy_reason: Formatting
+code_development:
+  text: 20. Code Development
+  N. encoders: 4
+  has_discrepancies: true
+  0:
+    text: The journal policies require standards for code development such as continuous
+      integration.
+    explanation: For work where novel computer code was developed, authors should
+      release the code either by depositing in a recognized, public repository or
+      uploading as supplementary information to the publication. The name and version
+      of all software used should be clearly indicated.
+  1:
+    text: The journal policies encourage/recommend standards for code development
+      such as continuous integration.
+    explanation: For work where novel computer code was developed, authors should
+      release the code either by depositing in a recognized, public repository or
+      uploading as supplementary information to the publication. The name and version
+      of all software used should be clearly indicated.
+  2:
+    text: The journal policies encourage/recommend standards for code development
+      such as continuous integration.
+    explanation: Computer Code and Software For work where novel computer code was
+      developed, authors should release the code either by depositing in a recognized,
+      public repository or uploading as supplementary information to the publication.
+      The name and version of all software used should be clearly indicated.
+  3:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: N.A.
+  correct_answer:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: N.A.
+  discrepancy_reason: Language understanding

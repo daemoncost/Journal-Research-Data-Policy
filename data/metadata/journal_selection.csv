@@ -1,0 +1,584 @@
+id,title,citations_avg,citations_median,citations_total,count,rcr_avg,publisher,choice
+jour.1422653,eScience,47.79047619047619,36.0,5018.0,105,0.0,Elsevier,citations_median
+jour.1039901,Applied Catalysis B Environmental,39.883688919476946,28.0,115902.0,2906,1.1299999952316284,Elsevier,citations_median
+jour.1149439,Energy Storage Materials,28.907997169143666,21.0,40847.0,1413,0.0,Elsevier,citations_median
+jour.1051417,Nano Energy,29.69001610305958,20.0,73750.0,2484,3.627499997615814,Elsevier,citations_median
+jour.1096852,Food Hydrocolloids,27.77777777777778,19.0,2750.0,99,0.0,Elsevier,citations_median
+jour.1422653,eScience,47.79047619047619,36.0,5018.0,105,0.0,Elsevier,citations_avg
+jour.1424672,Advanced Powder Materials,47.19642857142857,18.0,2643.0,56,0.0,Elsevier,citations_avg
+jour.1298442,Joule,43.5125348189415,18.0,15621.0,359,2.622500017285347,Elsevier,citations_avg
+jour.1039901,Applied Catalysis B Environmental,39.883688919476946,28.0,115902.0,2906,1.1299999952316284,Elsevier,citations_avg
+jour.1051417,Nano Energy,29.69001610305958,20.0,73750.0,2484,3.627499997615814,Elsevier,citations_avg
+jour.1276748,SSRN Electronic Journal,0.16647111277983762,0.0,3547.0,21307,0.0,Elsevier,number_of_articles
+jour.1052494,Materials Today Proceedings,5.190393518518518,2.0,71752.0,13824,1.1063636351150996,Elsevier,number_of_articles
+jour.1127675,Chemical Engineering Journal,21.943821038152464,14.0,303110.0,13813,3.9448889152871236,Elsevier,number_of_articles
+jour.1041821,Journal of Alloys and Compounds,10.656837506825806,7.0,136610.0,12819,0.0,Elsevier,number_of_articles
+jour.1051522,Ceramics International,8.925697674418604,6.0,76761.0,8600,0.0,Elsevier,number_of_articles
+jour.1053750,Bioactive Materials,22.83080808080808,16.25,9041.0,396,2.6691780841513855,Elsevier,random
+jour.1040906,Composites Part A Applied Science and Manufacturing,14.213085764809902,9.0,16075.0,1131,0.0,Elsevier,random
+jour.1038065,Materials Science and Engineering A,11.167504630854724,8.0,42202.0,3779,0.13999999687075615,Elsevier,random
+jour.1048035,Superlattices and Microstructures,9.127358490566039,6.0,1935.0,212,0.0,Elsevier,random
+jour.1430200,Materials Today Bio,8.105442176870747,6.0,2383.0,294,1.4218713526575886,Elsevier,random
+jour.1010127,Accounts of Chemical Research,29.071065989847718,17.0,17181.0,591,2.3665104164780737,American Chemical Society (ACS),citations_median
+jour.1150266,ACS Energy Letters,27.080745341614907,17.0,34880.0,1288,1.3937931178972638,American Chemical Society (ACS),citations_median
+jour.1081898,Journal of the American Chemical Society,24.594993581514764,14.833333333333332,153276.0,6232,2.063401219342175,American Chemical Society (ACS),citations_median
+jour.1391351,Accounts of Materials Research,23.995049504950494,13.0,4847.0,202,0.8250000178813934,American Chemical Society (ACS),citations_median
+jour.1012116,Environmental Science and Technology,23.765847347994825,12.166666666666666,18371.0,773,2.378778803424077,American Chemical Society (ACS),citations_median
+jour.1010127,Accounts of Chemical Research,29.071065989847718,17.0,17181.0,591,2.3665104164780737,American Chemical Society (ACS),citations_avg
+jour.1150266,ACS Energy Letters,27.080745341614907,17.0,34880.0,1288,1.3937931178972638,American Chemical Society (ACS),citations_avg
+jour.1081898,Journal of the American Chemical Society,24.594993581514764,14.833333333333332,153276.0,6232,2.063401219342175,American Chemical Society (ACS),citations_avg
+jour.1391351,Accounts of Materials Research,23.995049504950494,13.0,4847.0,202,0.8250000178813934,American Chemical Society (ACS),citations_avg
+jour.1012116,Environmental Science and Technology,23.765847347994825,12.166666666666666,18371.0,773,2.378778803424077,American Chemical Society (ACS),citations_avg
+jour.1041450,ACS Applied Materials & Interfaces,13.925353218210361,9.0,177409.0,12740,0.8880506124989689,American Chemical Society (ACS),number_of_articles
+jour.1157000,ACS Omega,5.9904497098646035,3.0,49553.0,8272,0.9326755262055662,American Chemical Society (ACS),number_of_articles
+jour.1038386,The Journal of Physical Chemistry C,5.686519879613496,4.0,35899.0,6313,0.6955665017803901,American Chemical Society (ACS),number_of_articles
+jour.1358263,Inorganic Chemistry,7.102289098767408,4.0,44368.0,6247,0.802041678887161,American Chemical Society (ACS),number_of_articles
+jour.1081898,Journal of the American Chemical Society,24.594993581514764,14.833333333333332,153276.0,6232,2.063401219342175,American Chemical Society (ACS),number_of_articles
+jour.1345331,Analytical Chemistry,11.03329506314581,6.999999999999999,19220.0,1742,1.5198340997786566,American Chemical Society (ACS),random
+jour.1399870,JACS Au,11.965831435079727,6.999999999999999,5253.0,439,1.0311153842566105,American Chemical Society (ACS),random
+jour.1098325,Chemical Research in Toxicology,6.525,3.0,1044.0,160,1.3514851550802145,American Chemical Society (ACS),random
+jour.1125125,Organometallics,4.696213425129088,3.0,5457.0,1162,0.5871428567029181,American Chemical Society (ACS),random
+jour.1052526,ACS Sensors,13.248366013071895,7.0,4054.0,306,1.49624999971129,American Chemical Society (ACS),random
+jour.1044941,Advanced Energy Materials,27.289606035205363,15.884615384615383,65113.0,2386,0.0,Wiley,citations_median
+jour.1359299,InfoMat,23.204225352112676,15.5,3295.0,142,0.0,Wiley,citations_median
+jour.1377833,Carbon Energy,20.446700507614214,15.0,4028.0,197,0.0,Wiley,citations_median
+jour.1129018,Advanced Materials,32.28363384188627,14.999999999999998,139659.0,4326,2.338028516704647,Wiley,citations_median
+jour.1017044,Angewandte Chemie International Edition,23.992093324692156,13.0,185099.0,7715,1.7564234885302608,Wiley,citations_median
+jour.1129018,Advanced Materials,32.28363384188627,14.999999999999998,139659.0,4326,2.338028516704647,Wiley,citations_avg
+jour.1044941,Advanced Energy Materials,27.289606035205363,15.884615384615383,65113.0,2386,0.0,Wiley,citations_avg
+jour.1017044,Angewandte Chemie International Edition,23.992093324692156,13.0,185099.0,7715,1.7564234885302608,Wiley,citations_avg
+jour.1032876,Advanced Functional Materials,23.3282279314888,12.472222222222221,141649.0,6072,1.1953333159287771,Wiley,citations_avg
+jour.1359299,InfoMat,23.204225352112676,15.5,3295.0,142,0.0,Wiley,citations_avg
+jour.1023179,Angewandte Chemie,3.5598494353826853,1.0,28372.0,7970,0.0,Wiley,number_of_articles
+jour.1017044,Angewandte Chemie International Edition,23.992093324692156,13.0,185099.0,7715,1.7564234885302608,Wiley,number_of_articles
+jour.1032876,Advanced Functional Materials,23.3282279314888,12.472222222222221,141649.0,6072,1.1953333159287771,Wiley,number_of_articles
+jour.1034711,Small,12.596245059288538,6.0,63737.0,5060,1.1077589036422233,Wiley,number_of_articles
+jour.1114579,Chemistry - A European Journal,5.539434352724764,3.0,24091.0,4349,0.745757155343959,Wiley,number_of_articles
+jour.1040951,physica status solidi (RRL) - Rapid Research Letters,4.104273504273504,2.0,2401.0,585,0.0,Wiley,random
+jour.1095243,Microscopy Research and Technique,4.583333333333333,2.0,3300.0,720,1.5170320842395173,Wiley,random
+jour.1050175,Polymer Composites,6.439079169006177,4.0,11468.0,1781,2.75,Wiley,random
+jour.1034711,Small,12.596245059288538,6.0,63737.0,5060,1.1077589036422233,Wiley,random
+jour.1052000,SID Symposium Digest of Technical Papers,0.618925831202046,0.0,484.0,782,0.0,Wiley,random
+jour.1018957,Nature,87.27272727272727,47.0,56640.0,649,4.7656060504736475,Springer Nature,citations_median
+jour.1136447,Nature Energy,77.5829596412556,32.0,17301.0,223,11.194999694824219,Springer Nature,citations_median
+jour.1136349,Nano-Micro Letters,43.21308016877637,30.4,20483.0,474,2.2354248389358222,Springer Nature,citations_median
+jour.1037429,Nature Nanotechnology,47.48728813559322,27.0,11207.0,236,3.843199985265732,Springer Nature,citations_median
+jour.1299897,Nature Electronics,43.28947368421053,27.0,4935.0,114,1.9224999994039536,Springer Nature,citations_median
+jour.1018957,Nature,87.27272727272727,47.0,56640.0,649,4.7656060504736475,Springer Nature,citations_avg
+jour.1136447,Nature Energy,77.5829596412556,32.0,17301.0,223,11.194999694824219,Springer Nature,citations_avg
+jour.1299977,Nature Catalysis,52.45786516853933,25.0,18675.0,356,2.5773333261410394,Springer Nature,citations_avg
+jour.1037429,Nature Nanotechnology,47.48728813559322,27.0,11207.0,236,3.843199985265732,Springer Nature,citations_avg
+jour.1031408,Nature Materials,45.7624703087886,22.0,19266.0,421,3.6104347785529884,Springer Nature,citations_avg
+jour.1136825,Journal of Materials Science: Materials in Electronics,4.565750248426632,3.0,27568.0,6038,0.0,Springer Nature,number_of_articles
+jour.1043282,Nature Communications,32.55690210187465,18.0000000145625,171933.0,5281,2.069445466177593,Springer Nature,number_of_articles
+jour.1045337,Scientific Reports,8.15608720818059,4.0,42273.0,5183,0.9371475140642324,Springer Nature,number_of_articles
+jour.1053336,Optical and Quantum Electronics,5.626295105394784,2.0,15748.0,2799,0.9450000114738941,Springer Nature,number_of_articles
+jour.1022207,Applied Physics A,4.570089649551752,3.0,11215.0,2454,0.6049999917546908,Springer Nature,number_of_articles
+jour.1355072,Biochar,12.75438596491228,8.0,2181.0,171,0.5199999958276749,Springer Nature,random
+jour.1319375,Communications Physics,8.129533678756477,5.0,3138.0,386,0.0,Springer Nature,random
+jour.1031697,Wood Science and Technology,6.049180327868853,4.0,738.0,122,1.6450000405311584,Springer Nature,random
+jour.1005931,Journal of Applied Spectroscopy,1.0510204081632653,0.0,309.0,294,0.0,Springer Nature,random
+jour.1319511,Communications Chemistry,8.131506849315068,5.0,2968.0,365,0.8492746086395466,Springer Nature,random
+jour.1033643,Marine Drugs,6.788152610441767,5.0,6761.0,996,1.4599843787611462,MDPI,citations_median
+jour.1048545,Nanomaterials,6.228976936723832,4.0,52666.0,8455,0.9500775354604447,MDPI,citations_median
+jour.1044360,Polymers,5.90097588978186,4.0,41118.0,6968,1.1227922249506865,MDPI,citations_median
+jour.1050404,Actuators,5.724137931034483,4.0,332.0,58,0.0,MDPI,citations_median
+jour.1046361,Membranes,5.3420289855072465,4.0,1843.0,345,0.9305978263930782,MDPI,citations_median
+jour.1033643,Marine Drugs,6.788152610441767,5.0,6761.0,996,1.4599843787611462,MDPI,citations_avg
+jour.1387194,Electrochem,6.43859649122807,3.0,367.0,57,0.0,MDPI,citations_avg
+jour.1048545,Nanomaterials,6.228976936723832,4.0,52666.0,8455,0.9500775354604447,MDPI,citations_avg
+jour.1053077,Fibers,6.095541401273885,3.0,957.0,157,0.0,MDPI,citations_avg
+jour.1044360,Polymers,5.90097588978186,4.0,41118.0,6968,1.1227922249506865,MDPI,citations_avg
+jour.1312072,Molecules,5.338490739675601,3.0,92815.0,17386,1.1910561390613785,MDPI,number_of_articles
+jour.1044868,Materials,4.28808864265928,3.0,41796.0,9747,1.0170559998402993,MDPI,number_of_articles
+jour.1048545,Nanomaterials,6.228976936723832,4.0,52666.0,8455,0.9500775354604447,MDPI,number_of_articles
+jour.1044360,Polymers,5.90097588978186,4.0,41118.0,6968,1.1227922249506865,MDPI,number_of_articles
+jour.1327560,Crystals,3.6729032258064516,2.0,17079.0,4650,0.4699999988079071,MDPI,number_of_articles
+jour.1327560,Crystals,3.6729032258064516,2.0,17079.0,4650,0.4699999988079071,MDPI,random
+jour.1035172,Molbank,0.7917448405253283,0.0,422.0,533,0.0,MDPI,random
+jour.1387194,Electrochem,6.43859649122807,3.0,367.0,57,0.0,MDPI,random
+jour.1045788,Journal of Functional Biomaterials,3.4384787472035794,2.0,1537.0,447,1.6470469787416842,MDPI,random
+jour.1028874,International Journal of Molecular Sciences,4.096828046744574,3.0,7362.0,1797,0.9233872846888669,MDPI,random
+jour.1041992,Energy & Environmental Science,44.805352798053526,29.0,36830.0,822,1.7706666707992553,Royal Society of Chemistry (RSC),citations_median
+jour.1047721,Journal of Materials Chemistry A,15.891896581641506,10.0,91585.0,5763,0.7040909054604444,Royal Society of Chemistry (RSC),citations_median
+jour.1049604,Environmental Science Nano,11.155313351498638,8.0,4094.0,367,1.659999966621399,Royal Society of Chemistry (RSC),citations_median
+jour.1049529,Materials Horizons,14.303198887343532,8.0,10284.0,719,1.1704075211501421,Royal Society of Chemistry (RSC),citations_median
+jour.1044370,Chemical Science,11.98563794255177,8.0,35885.0,2994,1.0845929022124017,Royal Society of Chemistry (RSC),citations_median
+jour.1041992,Energy & Environmental Science,44.805352798053526,29.0,36830.0,822,1.7706666707992553,Royal Society of Chemistry (RSC),citations_avg
+jour.1047721,Journal of Materials Chemistry A,15.891896581641506,10.0,91585.0,5763,0.7040909054604444,Royal Society of Chemistry (RSC),citations_avg
+jour.1049529,Materials Horizons,14.303198887343532,8.0,10284.0,719,1.1704075211501421,Royal Society of Chemistry (RSC),citations_avg
+jour.1038683,Green Chemistry,12.70281690140845,8.0,18038.0,1420,1.1561111128992505,Royal Society of Chemistry (RSC),citations_avg
+jour.1044370,Chemical Science,11.98563794255177,8.0,35885.0,2994,1.0845929022124017,Royal Society of Chemistry (RSC),citations_avg
+jour.1100826,Physical Chemistry Chemical Physics,4.613301529395257,3.0,32879.0,7127,0.7168001214972781,Royal Society of Chemistry (RSC),number_of_articles
+jour.1047721,Journal of Materials Chemistry A,15.891896581641506,10.0,91585.0,5763,0.7040909054604444,Royal Society of Chemistry (RSC),number_of_articles
+jour.1297159,Chemical Communications,6.908847663217981,5.0,38731.0,5606,0.6551888845302688,Royal Society of Chemistry (RSC),number_of_articles
+jour.1027733,Dalton Transactions,5.538744672607517,3.0,28591.0,5162,0.6512753500206492,Royal Society of Chemistry (RSC),number_of_articles
+jour.1046724,RSC Advances,5.801310043668122,3.0,29227.0,5038,0.678811592761404,Royal Society of Chemistry (RSC),number_of_articles
+jour.1290833,Sustainable Energy & Fuels,7.440917107583775,5.0,8438.0,1134,0.4237500000745058,Royal Society of Chemistry (RSC),random
+jour.1041992,Energy & Environmental Science,44.805352798053526,29.0,36830.0,822,1.7706666707992553,Royal Society of Chemistry (RSC),random
+jour.1096405,Journal of Analytical Atomic Spectrometry,5.393762183235867,4.0,2767.0,513,0.4866666595141093,Royal Society of Chemistry (RSC),random
+jour.1027733,Dalton Transactions,5.538744672607517,3.0,28591.0,5162,0.6512753500206492,Royal Society of Chemistry (RSC),random
+jour.1049529,Materials Horizons,14.303198887343532,8.0,10284.0,719,1.1704075211501421,Royal Society of Chemistry (RSC),random
+jour.1143371,2D Materials,7.852813852813853,5.0,3628.0,462,2.8550000190734863,IOP Publishing,citations_median
+jour.1327590,Quantum Science and Technology,9.664335664335665,4.0,1382.0,143,0.0,IOP Publishing,citations_median
+jour.1359245,Journal of Physics Photonics,8.455555555555556,4.0,761.0,90,0.25,IOP Publishing,citations_median
+jour.1051195,Plasma Sources Science and Technology,5.4176,3.0,3386.0,625,0.0,IOP Publishing,citations_median
+jour.1038948,New Journal of Physics,4.943939393939394,3.0,3263.0,660,0.07000000029802322,IOP Publishing,citations_median
+jour.1327590,Quantum Science and Technology,9.664335664335665,4.0,1382.0,143,0.0,IOP Publishing,citations_avg
+jour.1359245,Journal of Physics Photonics,8.455555555555556,4.0,761.0,90,0.25,IOP Publishing,citations_avg
+jour.1143371,2D Materials,7.852813852813853,5.0,3628.0,462,2.8550000190734863,IOP Publishing,citations_avg
+jour.1136900,Chinese Physics Letters,6.838283828382838,2.0,2072.0,303,0.0,IOP Publishing,citations_avg
+jour.1359246,Journal of Physics Energy,5.852941176470588,3.0,597.0,102,0.0,IOP Publishing,citations_avg
+jour.1137008,IOP Conference Series Materials Science and Engineering,1.43401413982718,1.0,3651.0,2546,0.0,IOP Publishing,number_of_articles
+jour.1035078,Nanotechnology,4.937130801687764,3.0,11701.0,2370,0.48811634330359305,IOP Publishing,number_of_articles
+jour.1031859,Journal of Physics Condensed Matter,3.304745568896512,2.0,5780.0,1749,0.45581180686165484,IOP Publishing,number_of_articles
+jour.1138827,Materials Research Express,3.261465157832043,2.0,5476.0,1679,0.0,IOP Publishing,number_of_articles
+jour.1430170,Chinese Physics B,2.133630289532294,1.0,2874.0,1347,0.0,IOP Publishing,number_of_articles
+jour.1382379,Nano Express,4.140845070422535,2.0,588.0,142,0.0,IOP Publishing,random
+jour.1364024,Engineering Research Express,2.3741007194244603,1.0,330.0,139,0.7200000286102295,IOP Publishing,random
+jour.1044251,Journal of Optics,3.91324200913242,2.0,857.0,219,0.0,IOP Publishing,random
+jour.1053501,Surface Topography Metrology and Properties,4.481865284974093,2.0,865.0,193,0.0,IOP Publishing,random
+jour.1312269,Japanese Journal of Applied Physics,2.3511259382819016,1.0,2819.0,1199,0.0,IOP Publishing,random
+jour.1050420,Physical Review X,26.35820895522388,17.0,7064.0,268,0.0,American Physical Society (APS),citations_median
+jour.1392799,PRX Quantum,15.88663967611336,10.0,3924.0,247,0.0,American Physical Society (APS),citations_median
+jour.1018277,Physical Review Letters,15.199651264167393,8.999999999999998,34868.0,2294,0.7868441059052265,American Physical Society (APS),citations_median
+jour.1377324,Physical Review Research,7.875348189415042,5.0,11309.0,1436,0.33000001311302185,American Physical Society (APS),citations_median
+jour.1320490,Physical Review C,7.69811320754717,5.0,408.0,53,0.0,American Physical Society (APS),citations_median
+jour.1050420,Physical Review X,26.35820895522388,17.0,7064.0,268,0.0,American Physical Society (APS),citations_avg
+jour.1392799,PRX Quantum,15.88663967611336,10.0,3924.0,247,0.0,American Physical Society (APS),citations_avg
+jour.1018277,Physical Review Letters,15.199651264167393,8.999999999999998,34868.0,2294,0.7868441059052265,American Physical Society (APS),citations_avg
+jour.1377324,Physical Review Research,7.875348189415042,5.0,11309.0,1436,0.33000001311302185,American Physical Society (APS),citations_avg
+jour.1320490,Physical Review C,7.69811320754717,5.0,408.0,53,0.0,American Physical Society (APS),citations_avg
+jour.1320488,Physical Review B,6.177394338891043,3.0,63726.0,10316,0.5857142816696849,American Physical Society (APS),number_of_articles
+jour.1053349,Physical Review A,4.755200482363581,3.0,15773.0,3317,0.0,American Physical Society (APS),number_of_articles
+jour.1018277,Physical Review Letters,15.199651264167393,8.999999999999998,34868.0,2294,0.7868441059052265,American Physical Society (APS),number_of_articles
+jour.1298114,Physical Review Materials,5.591229020032485,2.9999999999999996,10327.0,1847,0.3199999928474426,American Physical Society (APS),number_of_articles
+jour.1377324,Physical Review Research,7.875348189415042,5.0,11309.0,1436,0.33000001311302185,American Physical Society (APS),number_of_articles
+jour.1392799,PRX Quantum,15.88663967611336,10.0,3924.0,247,0.0,American Physical Society (APS),random
+jour.1050249,Physical Review Applied,6.766201804757999,4.0,8248.0,1219,0.5200000107288361,American Physical Society (APS),random
+jour.1320488,Physical Review B,6.177394338891043,3.0,63726.0,10316,0.5857142816696849,American Physical Society (APS),random
+jour.1018277,Physical Review Letters,15.199651264167393,8.999999999999998,34868.0,2294,0.7868441059052265,American Physical Society (APS),random
+jour.1053349,Physical Review A,4.755200482363581,3.0,15773.0,3317,0.0,American Physical Society (APS),random
+jour.1036368,International Journal of Nanomedicine,11.678260869565218,7.0,1343.0,115,1.76951220086435,Taylor & Francis,citations_median
+jour.1053464,Materials Research Letters,9.021052631578947,6.0,1714.0,190,0.0,Taylor & Francis,citations_median
+jour.1039927,Green Chemistry Letters and Reviews,7.134328358208955,5.0,478.0,67,0.20000000298023224,Taylor & Francis,citations_median
+jour.1048844,Science and Technology of Advanced Materials,7.011627906976744,5.0,603.0,86,0.6963414564365293,Taylor & Francis,citations_median
+jour.1034522,Nanotoxicology,6.672413793103448,4.0,387.0,58,1.0128205101459453,Taylor & Francis,citations_median
+jour.1036368,International Journal of Nanomedicine,11.678260869565218,7.0,1343.0,115,1.76951220086435,Taylor & Francis,citations_avg
+jour.1046913,Virtual and Physical Prototyping,9.123287671232877,4.0,666.0,73,0.0,Taylor & Francis,citations_avg
+jour.1053464,Materials Research Letters,9.021052631578947,6.0,1714.0,190,0.0,Taylor & Francis,citations_avg
+jour.1039927,Green Chemistry Letters and Reviews,7.134328358208955,5.0,478.0,67,0.20000000298023224,Taylor & Francis,citations_avg
+jour.1048844,Science and Technology of Advanced Materials,7.011627906976744,5.0,603.0,86,0.6963414564365293,Taylor & Francis,citations_avg
+jour.1327892,Waves in Random and Complex Media,6.587433762301287,3.0,8702.0,1321,0.0,Taylor & Francis,number_of_articles
+jour.1101929,Polycyclic Aromatic Compounds,3.1716566866267466,2.0,3178.0,1002,0.0,Taylor & Francis,number_of_articles
+jour.1045310,Ferroelectrics,1.1703239289446186,0.0,1120.0,957,0.0,Taylor & Francis,number_of_articles
+jour.1120918,Molecular Physics,2.9434389140271495,1.0,2602.0,884,0.2849999964237213,Taylor & Francis,number_of_articles
+jour.1295881,Molecular Crystals and Liquid Crystals,1.0998509687034277,0.0,738.0,671,0.0,Taylor & Francis,number_of_articles
+jour.1137233,Journal of the Textile Institute,2.3786008230452675,1.0,578.0,243,0.0,Taylor & Francis,random
+jour.1120918,Molecular Physics,2.9434389140271495,1.0,2602.0,884,0.2849999964237213,Taylor & Francis,random
+jour.1295239,Energy Sources Part A Recovery Utilization and Environmental Effects,3.3945578231292517,2.0,499.0,147,0.0,Taylor & Francis,random
+jour.1053183,Physics and Chemistry of Liquids,2.099099099099099,1.0,233.0,111,0.0,Taylor & Francis,random
+jour.1137394,Phase Transitions,2.707920792079208,1.0,547.0,202,0.0,Taylor & Francis,random
+jour.1050263,Applied Physics Reviews,13.296511627906977,7.5,2287.0,172,0.0,AIP Publishing,citations_median
+jour.1154566,APL Photonics,8.926829268292684,5.0,2196.0,246,0.5479999989271164,AIP Publishing,citations_median
+jour.1125016,Applied Physics Letters,5.742513500245459,3.0,23395.0,4074,0.818571429167475,AIP Publishing,citations_median
+jour.1050929,APL Materials,7.020979020979021,3.0,4016.0,572,0.9999999925494194,AIP Publishing,citations_median
+jour.1319923,Physics of Fluids,5.160714285714286,3.0,578.0,112,1.7000000476837158,AIP Publishing,citations_median
+jour.1050263,Applied Physics Reviews,13.296511627906977,7.5,2287.0,172,0.0,AIP Publishing,citations_avg
+jour.1154566,APL Photonics,8.926829268292684,5.0,2196.0,246,0.5479999989271164,AIP Publishing,citations_avg
+jour.1050929,APL Materials,7.020979020979021,3.0,4016.0,572,0.9999999925494194,AIP Publishing,citations_avg
+jour.1125016,Applied Physics Letters,5.742513500245459,3.0,23395.0,4074,0.818571429167475,AIP Publishing,citations_avg
+jour.1017736,The Journal of Chemical Physics,5.367758784425451,2.9999999999999996,22609.0,4212,1.101099955761136,AIP Publishing,citations_avg
+jour.1017736,The Journal of Chemical Physics,5.367758784425451,2.9999999999999996,22609.0,4212,1.101099955761136,AIP Publishing,number_of_articles
+jour.1125016,Applied Physics Letters,5.742513500245459,3.0,23395.0,4074,0.818571429167475,AIP Publishing,number_of_articles
+jour.1077136,Journal of Applied Physics,4.009234320892651,2.0,10420.0,2599,0.1599999964237213,AIP Publishing,number_of_articles
+jour.1045519,AIP Advances,2.9929356357927785,1.0,3813.0,1274,0.0,AIP Publishing,number_of_articles
+jour.1018818,Review of Scientific Instruments,2.874233128834356,2.0,1874.0,652,0.6082272725687785,AIP Publishing,number_of_articles
+jour.1133657,Journal of Mathematical Physics,2.5535714285714284,1.0,143.0,56,0.0,AIP Publishing,random
+jour.1336447,Chinese Journal of Chemical Physics,1.6490683229813665,1.0,531.0,322,1.2400000095367432,AIP Publishing,random
+jour.1312263,Physics of Plasmas,3.352112676056338,2.0,476.0,142,0.0,AIP Publishing,random
+jour.1077136,Journal of Applied Physics,4.009234320892651,2.0,10420.0,2599,0.1599999964237213,AIP Publishing,random
+jour.1017736,The Journal of Chemical Physics,5.367758784425451,2.9999999999999996,22609.0,4212,1.101099955761136,AIP Publishing,random
+jour.1336376,Membranes and Membrane Technologies,3.328767123287671,2.0,243.0,73,0.0,Pleiades Publishing,citations_median
+jour.1004031,Russian Journal of Inorganic Chemistry,2.954022988505747,2.0,2313.0,783,0.0,Pleiades Publishing,citations_median
+jour.1430983,Physical Mesomechanics,2.676767676767677,2.0,265.0,99,0.0,Pleiades Publishing,citations_median
+jour.1359001,Colloid Journal,2.361788617886179,1.0,581.0,246,0.0,Pleiades Publishing,citations_median
+jour.1400109,"Polymer Science, Series B",1.4639639639639639,1.0,325.0,222,0.0,Pleiades Publishing,citations_median
+jour.1336376,Membranes and Membrane Technologies,3.328767123287671,2.0,243.0,73,0.0,Pleiades Publishing,citations_avg
+jour.1004031,Russian Journal of Inorganic Chemistry,2.954022988505747,2.0,2313.0,783,0.0,Pleiades Publishing,citations_avg
+jour.1430983,Physical Mesomechanics,2.676767676767677,2.0,265.0,99,0.0,Pleiades Publishing,citations_avg
+jour.1145270,"Polymer Science, Series C",2.6557377049180326,1.0,162.0,61,0.0,Pleiades Publishing,citations_avg
+jour.1359001,Colloid Journal,2.361788617886179,1.0,581.0,246,0.0,Pleiades Publishing,citations_avg
+jour.1327871,Russian Journal of Physical Chemistry A,1.0604870384917517,0.0,1350.0,1273,0.0,Pleiades Publishing,number_of_articles
+jour.1446214,Russian Journal of General Chemistry,1.3412526997840173,0.0,1242.0,926,0.726999993622303,Pleiades Publishing,number_of_articles
+jour.1004031,Russian Journal of Inorganic Chemistry,2.954022988505747,2.0,2313.0,783,0.0,Pleiades Publishing,number_of_articles
+jour.1136317,Russian Journal of Organic Chemistry,1.106060606060606,0.0,803.0,726,0.0,Pleiades Publishing,number_of_articles
+jour.1430958,Russian Metallurgy (Metally),0.7410296411856474,0.0,475.0,641,0.0,Pleiades Publishing,number_of_articles
+jour.1138481,Physics of Particles and Nuclei Letters,0.48854961832061067,0.0,64.0,131,0.0,Pleiades Publishing,random
+jour.1430748,"Polymer Science, Series A",1.5900383141762453,1.0,415.0,261,0.3400000035762787,Pleiades Publishing,random
+jour.1136100,Atmospheric and Oceanic Optics,0.9833333333333333,1.0,59.0,60,0.0,Pleiades Publishing,random
+jour.1083525,Doklady Physical Chemistry,1.5072463768115942,1.0,104.0,69,0.0,Pleiades Publishing,random
+jour.1136440,Bulletin of the Russian Academy of Sciences: Physics,0.01818181818181818,0.0,1.0,55,0.0,Pleiades Publishing,random
+jour.1380788,Research Square,0.33118264322178104,0.0,4671.0,14104,0.0,Research Square Platform LLC,all
+jour.1082768,Journal of The Electrochemical Society,5.147291196388262,3.0,18242.0,3544,0.9333333385487398,The Electrochemical Society,citations_median
+jour.1051697,ECS Journal of Solid State Science and Technology,3.4155381325730576,2.0,4792.0,1403,0.0,The Electrochemical Society,citations_median
+jour.1372016,Electrochemistry,2.662020905923345,2.0,764.0,287,0.0,The Electrochemical Society,citations_median
+jour.1427285,ECS Advances,1.6666666666666667,1.0,110.0,66,0.0,The Electrochemical Society,citations_median
+jour.1387079,ECS Meeting Abstracts,0.05760286225402504,0.0,322.0,5590,0.0,The Electrochemical Society,citations_median
+jour.1082768,Journal of The Electrochemical Society,5.147291196388262,3.0,18242.0,3544,0.9333333385487398,The Electrochemical Society,citations_avg
+jour.1051697,ECS Journal of Solid State Science and Technology,3.4155381325730576,2.0,4792.0,1403,0.0,The Electrochemical Society,citations_avg
+jour.1372016,Electrochemistry,2.662020905923345,2.0,764.0,287,0.0,The Electrochemical Society,citations_avg
+jour.1427285,ECS Advances,1.6666666666666667,1.0,110.0,66,0.0,The Electrochemical Society,citations_avg
+jour.1049082,ECS Transactions,1.0350427350427351,0.0,2422.0,2340,0.0,The Electrochemical Society,citations_avg
+jour.1387079,ECS Meeting Abstracts,0.05760286225402504,0.0,322.0,5590,0.0,The Electrochemical Society,number_of_articles
+jour.1082768,Journal of The Electrochemical Society,5.147291196388262,3.0,18242.0,3544,0.9333333385487398,The Electrochemical Society,number_of_articles
+jour.1049082,ECS Transactions,1.0350427350427351,0.0,2422.0,2340,0.0,The Electrochemical Society,number_of_articles
+jour.1051697,ECS Journal of Solid State Science and Technology,3.4155381325730576,2.0,4792.0,1403,0.0,The Electrochemical Society,number_of_articles
+jour.1372016,Electrochemistry,2.662020905923345,2.0,764.0,287,0.0,The Electrochemical Society,number_of_articles
+jour.1387079,ECS Meeting Abstracts,0.05760286225402504,0.0,322.0,5590,0.0,The Electrochemical Society,random
+jour.1372016,Electrochemistry,2.662020905923345,2.0,764.0,287,0.0,The Electrochemical Society,random
+jour.1082768,Journal of The Electrochemical Society,5.147291196388262,3.0,18242.0,3544,0.9333333385487398,The Electrochemical Society,random
+jour.1049082,ECS Transactions,1.0350427350427351,0.0,2422.0,2340,0.0,The Electrochemical Society,random
+jour.1427285,ECS Advances,1.6666666666666667,1.0,110.0,66,0.0,The Electrochemical Society,random
+jour.1050828,Optica,15.857908847184987,9.0,5915.0,373,1.8229411875500399,Optica Publishing Group,citations_median
+jour.1144301,Photonics Research,12.496699669966997,8.0,7573.0,606,0.28999999910593033,Optica Publishing Group,citations_median
+jour.1044173,Biomedical Optics Express,5.843835616438356,4.0,2133.0,365,1.011232873552466,Optica Publishing Group,citations_median
+jour.1087001,Optics Letters,5.471232876712329,3.0000000000000004,7988.0,1460,1.0079843750456348,Optica Publishing Group,citations_median
+jour.1030495,Optics Express,5.978206202849958,3.0,21396.0,3579,1.0133461057426143,Optica Publishing Group,citations_median
+jour.1050828,Optica,15.857908847184987,9.0,5915.0,373,1.8229411875500399,Optica Publishing Group,citations_avg
+jour.1144301,Photonics Research,12.496699669966997,8.0,7573.0,606,0.28999999910593033,Optica Publishing Group,citations_avg
+jour.1030495,Optics Express,5.978206202849958,3.0,21396.0,3579,1.0133461057426143,Optica Publishing Group,citations_avg
+jour.1044173,Biomedical Optics Express,5.843835616438356,4.0,2133.0,365,1.011232873552466,Optica Publishing Group,citations_avg
+jour.1087001,Optics Letters,5.471232876712329,3.0000000000000004,7988.0,1460,1.0079843750456348,Optica Publishing Group,citations_avg
+jour.1030495,Optics Express,5.978206202849958,3.0,21396.0,3579,1.0133461057426143,Optica Publishing Group,number_of_articles
+jour.1087001,Optics Letters,5.471232876712329,3.0000000000000004,7988.0,1460,1.0079843750456348,Optica Publishing Group,number_of_articles
+jour.1454932,Applied Optics,3.4877276326207443,2.0,4405.0,1263,1.0953935156058934,Optica Publishing Group,number_of_articles
+jour.1312240,Journal of the Optical Society of America B,4.065151515151515,2.0,2683.0,660,0.0,Optica Publishing Group,number_of_articles
+jour.1047218,Optical Materials Express,4.829984544049459,3.0,3125.0,647,0.23000000417232513,Optica Publishing Group,number_of_articles
+jour.1047218,Optical Materials Express,4.829984544049459,3.0,3125.0,647,0.23000000417232513,Optica Publishing Group,random
+jour.1312240,Journal of the Optical Society of America B,4.065151515151515,2.0,2683.0,660,0.0,Optica Publishing Group,random
+jour.1087001,Optics Letters,5.471232876712329,3.0000000000000004,7988.0,1460,1.0079843750456348,Optica Publishing Group,random
+jour.1144301,Photonics Research,12.496699669966997,8.0,7573.0,606,0.28999999910593033,Optica Publishing Group,random
+jour.1050828,Optica,15.857908847184987,9.0,5915.0,373,1.8229411875500399,Optica Publishing Group,random
+jour.1147637,IEEE Transactions on Transportation Electrification,11.317460317460318,7.0,713.0,63,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_median
+jour.1033601,IEEE Transactions on Industrial Electronics,17.703703703703702,6.0,956.0,54,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_median
+jour.1123507,IEEE Transactions on Ultrasonics Ferroelectrics and Frequency Control,7.0,5.0,497.0,71,0.7529411675298915,Institute of Electrical and Electronics Engineers (IEEE),citations_median
+jour.1313398,IEEE Robotics and Automation Letters,7.710843373493976,5.0,640.0,83,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_median
+jour.1033515,IEEE Transactions on Dielectrics and Electrical Insulation,5.059649122807017,4.0,1442.0,285,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_median
+jour.1033601,IEEE Transactions on Industrial Electronics,17.703703703703702,6.0,956.0,54,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_avg
+jour.1147637,IEEE Transactions on Transportation Electrification,11.317460317460318,7.0,713.0,63,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_avg
+jour.1019991,IEEE Transactions on Instrumentation and Measurement,8.014814814814814,4.0,1082.0,135,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_avg
+jour.1313398,IEEE Robotics and Automation Letters,7.710843373493976,5.0,640.0,83,0.0,Institute of Electrical and Electronics Engineers (IEEE),citations_avg
+jour.1033610,IEEE Electron Device Letters,7.340425531914893,4.0,5175.0,705,0.8199999928474426,Institute of Electrical and Electronics Engineers (IEEE),citations_avg
+jour.1019990,IEEE Transactions on Electron Devices,5.681429681429681,3.0,7312.0,1287,0.30000001192092896,Institute of Electrical and Electronics Engineers (IEEE),number_of_articles
+jour.1033572,IEEE Sensors Journal,5.949095022624435,3.0,5259.0,884,0.5566666734715303,Institute of Electrical and Electronics Engineers (IEEE),number_of_articles
+jour.1042305,IEEE Transactions on Applied Superconductivity,2.909310761789601,2.0,2406.0,827,0.6933333178361257,Institute of Electrical and Electronics Engineers (IEEE),number_of_articles
+jour.1033610,IEEE Electron Device Letters,7.340425531914893,4.0,5175.0,705,0.8199999928474426,Institute of Electrical and Electronics Engineers (IEEE),number_of_articles
+jour.1033607,Journal of Lightwave Technology,7.125498007968128,4.0,3577.0,502,0.0,Institute of Electrical and Electronics Engineers (IEEE),number_of_articles
+jour.1033610,IEEE Electron Device Letters,7.340425531914893,4.0,5175.0,705,0.8199999928474426,Institute of Electrical and Electronics Engineers (IEEE),random
+jour.1033572,IEEE Sensors Journal,5.949095022624435,3.0,5259.0,884,0.5566666734715303,Institute of Electrical and Electronics Engineers (IEEE),random
+jour.1033508,IEEE Transactions on Components Packaging and Manufacturing Technology,5.428571428571429,2.0,570.0,105,0.0,Institute of Electrical and Electronics Engineers (IEEE),random
+jour.1033319,IEEE Journal of Quantum Electronics,2.017391304347826,1.0,232.0,115,0.0,Institute of Electrical and Electronics Engineers (IEEE),random
+jour.1033526,IEEE Transactions on Nanotechnology,4.122137404580153,3.0,540.0,131,0.0,Institute of Electrical and Electronics Engineers (IEEE),random
+jour.1139309,International Journal of Damage Mechanics,5.363636363636363,4.0,295.0,55,0.0,SAGE Publications,citations_median
+jour.1138082,Science and Technology of Welding & Joining,3.7962962962962963,3.0,205.0,54,0.0,SAGE Publications,citations_median
+jour.1450470,Polymers and Polymer Composites,3.727272727272727,3.0,943.0,253,0.0,SAGE Publications,citations_median
+jour.1140620,Journal of Sandwich Structures & Materials,5.278350515463917,3.0,512.0,97,0.0,SAGE Publications,citations_median
+jour.1041779,Journal of Composite Materials,3.3865300146412882,2.0,2313.0,683,0.4899999797344208,SAGE Publications,citations_median
+jour.1139309,International Journal of Damage Mechanics,5.363636363636363,4.0,295.0,55,0.0,SAGE Publications,citations_avg
+jour.1140620,Journal of Sandwich Structures & Materials,5.278350515463917,3.0,512.0,97,0.0,SAGE Publications,citations_avg
+jour.1327859,Plastics Rubber and Composites,4.269662921348314,2.0,380.0,89,0.0,SAGE Publications,citations_avg
+jour.1045327,Journal of Engineered Fibers and Fabrics,4.261363636363637,2.0,375.0,88,0.0,SAGE Publications,citations_avg
+jour.1139807,Proceedings of the Institution of Mechanical Engineers Part L Journal of Materials Design and Applications,3.9442379182156135,2.0,1061.0,269,0.0,SAGE Publications,citations_avg
+jour.1041779,Journal of Composite Materials,3.3865300146412882,2.0,2313.0,683,0.4899999797344208,SAGE Publications,number_of_articles
+jour.1023018,Textile Research Journal,2.953271028037383,2.0,1896.0,642,0.0,SAGE Publications,number_of_articles
+jour.1327850,Materials Science and Technology,2.2142857142857144,1.0,868.0,392,0.0,SAGE Publications,number_of_articles
+jour.1138435,Journal of Industrial Textiles,3.279279279279279,2.0,1092.0,333,3.490000009536743,SAGE Publications,number_of_articles
+jour.1040219,Natural Product Communications,2.235294117647059,1.0,646.0,289,0.8449999988079071,SAGE Publications,number_of_articles
+jour.1137524,Surface Engineering,2.7804878048780486,2.0,342.0,123,0.0,SAGE Publications,random
+jour.1098766,Journal of Biomaterials Applications,3.9193548387096775,2.0,486.0,124,0.9851612900533984,SAGE Publications,random
+jour.1138082,Science and Technology of Welding & Joining,3.7962962962962963,3.0,205.0,54,0.0,SAGE Publications,random
+jour.1039812,Journal of Intelligent Material Systems and Structures,3.4615384615384617,2.0,225.0,65,0.0,SAGE Publications,random
+jour.1327859,Plastics Rubber and Composites,4.269662921348314,2.0,380.0,89,0.0,SAGE Publications,random
+jour.1048376,Nanophotonics,8.20888888888889,5.0,3694.0,450,0.6440000012516975,De Gruyter,citations_median
+jour.1051920,Nanotechnology Reviews,7.519337016574585,5.0,1361.0,181,0.0,De Gruyter,citations_median
+jour.1138298,e-Polymers,4.3375,2.6666666666666665,1041.0,240,0.0,De Gruyter,citations_median
+jour.1222899,REVIEWS ON ADVANCED MATERIALS SCIENCE,4.164835164835165,2.0,379.0,91,0.0,De Gruyter,citations_median
+jour.1140873,Green Processing and Synthesis,4.859205776173285,2.0,1346.0,277,0.0,De Gruyter,citations_median
+jour.1048376,Nanophotonics,8.20888888888889,5.0,3694.0,450,0.6440000012516975,De Gruyter,citations_avg
+jour.1051920,Nanotechnology Reviews,7.519337016574585,5.0,1361.0,181,0.0,De Gruyter,citations_avg
+jour.1140873,Green Processing and Synthesis,4.859205776173285,2.0,1346.0,277,0.0,De Gruyter,citations_avg
+jour.1138298,e-Polymers,4.3375,2.6666666666666665,1041.0,240,0.0,De Gruyter,citations_avg
+jour.1222899,REVIEWS ON ADVANCED MATERIALS SCIENCE,4.164835164835165,2.0,379.0,91,0.0,De Gruyter,citations_avg
+jour.1048376,Nanophotonics,8.20888888888889,5.0,3694.0,450,0.6440000012516975,De Gruyter,number_of_articles
+jour.1051546,Zeitschrift für Kristallographie - Crystalline Materials,1.1209302325581396,0.0,482.0,430,0.0,De Gruyter,number_of_articles
+jour.1140873,Green Processing and Synthesis,4.859205776173285,2.0,1346.0,277,0.0,De Gruyter,number_of_articles
+jour.1312379,Zeitschrift für Naturforschung B,1.46,1.0,365.0,250,0.0,De Gruyter,number_of_articles
+jour.1138298,e-Polymers,4.3375,2.6666666666666665,1041.0,240,0.0,De Gruyter,number_of_articles
+jour.1138040,High Temperature Materials and Processes,1.8444444444444446,1.0,166.0,90,0.0,De Gruyter,random
+jour.1312379,Zeitschrift für Naturforschung B,1.46,1.0,365.0,250,0.0,De Gruyter,random
+jour.1137941,International Polymer Processing,2.83,2.0,283.0,100,0.0,De Gruyter,random
+jour.1046368,Open Chemistry,2.693548387096774,1.0,167.0,62,0.0,De Gruyter,random
+jour.1137677,International Journal of Materials Research (formerly Zeitschrift fuer Metallkunde),1.303225806451613,1.0,202.0,155,0.0,De Gruyter,random
+jour.1137220,International Journal of Energy Research,8.219745222929935,5.9,7743.0,942,0.6600000262260437,Hindawi,citations_median
+jour.1033190,Bioinorganic Chemistry and Applications,8.359756097560975,4.5,1371.0,164,1.42433627965176,Hindawi,citations_median
+jour.1044288,International Journal of Polymer Science,4.015267175572519,4.0,526.0,131,0.0,Hindawi,citations_median
+jour.1138019,International Journal of Photoenergy,6.5476190476190474,3.0,1925.0,294,0.0,Hindawi,citations_median
+jour.1450333,Structural Control and Health Monitoring,5.866666666666666,3.0,528.0,90,0.0,Hindawi,citations_median
+jour.1033190,Bioinorganic Chemistry and Applications,8.359756097560975,4.5,1371.0,164,1.42433627965176,Hindawi,citations_avg
+jour.1137220,International Journal of Energy Research,8.219745222929935,5.9,7743.0,942,0.6600000262260437,Hindawi,citations_avg
+jour.1138019,International Journal of Photoenergy,6.5476190476190474,3.0,1925.0,294,0.0,Hindawi,citations_avg
+jour.1045180,Journal of Nanomaterials,6.122418879056047,2.9999999999999996,4151.0,678,0.0,Hindawi,citations_avg
+jour.1450333,Structural Control and Health Monitoring,5.866666666666666,3.0,528.0,90,0.0,Hindawi,citations_avg
+jour.1137220,International Journal of Energy Research,8.219745222929935,5.9,7743.0,942,0.6600000262260437,Hindawi,number_of_articles
+jour.1045180,Journal of Nanomaterials,6.122418879056047,2.9999999999999996,4151.0,678,0.0,Hindawi,number_of_articles
+jour.1431181,Advances in Materials Science and Engineering,4.491869918699187,2.0,2210.0,492,0.0,Hindawi,number_of_articles
+jour.1138019,International Journal of Photoenergy,6.5476190476190474,3.0,1925.0,294,0.0,Hindawi,number_of_articles
+jour.1047360,Journal of Chemistry,3.876470588235294,2.0,659.0,170,0.0,Hindawi,number_of_articles
+jour.1431181,Advances in Materials Science and Engineering,4.491869918699187,2.0,2210.0,492,0.0,Hindawi,random
+jour.1138019,International Journal of Photoenergy,6.5476190476190474,3.0,1925.0,294,0.0,Hindawi,random
+jour.1431180,Advances in Condensed Matter Physics,2.643835616438356,1.0,193.0,73,0.0,Hindawi,random
+jour.1138041,Advances in Polymer Technology,3.909090909090909,2.0,430.0,110,0.0,Hindawi,random
+jour.1044288,International Journal of Polymer Science,4.015267175572519,4.0,526.0,131,0.0,Hindawi,random
+jour.1136943,Solid State Phenomena,0.6815286624203821,0.0,428.0,628,0.0,Trans Tech Publications,all
+jour.1139687,Journal of Nano Research,1.5130434782608695,0.0,174.0,115,0.0,Trans Tech Publications,all
+jour.1284895,Nano Hybrids and Composites,1.106060606060606,1.0,73.0,66,0.0,Trans Tech Publications,all
+jour.1046162,International Journal of Applied Mechanics,4.090909090909091,2.5,270.0,66,0.0,World Scientific Publishing,citations_median
+jour.1040066,Journal of Innovative Optical Health Sciences,3.425806451612903,2.0,531.0,155,1.100000023841858,World Scientific Publishing,citations_median
+jour.1045170,Journal of Advanced Dielectrics,3.6580645161290324,2.0,567.0,155,0.0,World Scientific Publishing,citations_median
+jour.1134488,Journal of Porphyrins and Phthalocyanines,1.2387640449438202,1.0,441.0,356,0.0,World Scientific Publishing,citations_median
+jour.1037283,Nano,1.4567901234567902,1.0,472.0,324,0.0,World Scientific Publishing,citations_median
+jour.1046162,International Journal of Applied Mechanics,4.090909090909091,2.5,270.0,66,0.0,World Scientific Publishing,citations_avg
+jour.1045170,Journal of Advanced Dielectrics,3.6580645161290324,2.0,567.0,155,0.0,World Scientific Publishing,citations_avg
+jour.1040066,Journal of Innovative Optical Health Sciences,3.425806451612903,2.0,531.0,155,1.100000023841858,World Scientific Publishing,citations_avg
+jour.1412328,Journal of Computational Biophysics and Chemistry,3.368794326241135,1.0,475.0,141,1.4850000143051147,World Scientific Publishing,citations_avg
+jour.1138528,Journal of Nonlinear Optical Physics & Materials,3.1415929203539825,1.0,355.0,113,0.0,World Scientific Publishing,citations_avg
+jour.1134488,Journal of Porphyrins and Phthalocyanines,1.2387640449438202,1.0,441.0,356,0.0,World Scientific Publishing,number_of_articles
+jour.1037283,Nano,1.4567901234567902,1.0,472.0,324,0.0,World Scientific Publishing,number_of_articles
+jour.1137409,Surface Review and Letters,1.6524822695035462,1.0,466.0,282,0.0,World Scientific Publishing,number_of_articles
+jour.1139981,Functional Materials Letters,1.8195488721804511,1.0,484.0,266,0.0,World Scientific Publishing,number_of_articles
+jour.1049012,Modern Physics Letters B,1.2202643171806167,0.0,277.0,227,0.0,World Scientific Publishing,number_of_articles
+jour.1045170,Journal of Advanced Dielectrics,3.6580645161290324,2.0,567.0,155,0.0,World Scientific Publishing,random
+jour.1327427,International Journal of Nanoscience,1.3425414364640884,1.0,243.0,181,0.0,World Scientific Publishing,random
+jour.1412328,Journal of Computational Biophysics and Chemistry,3.368794326241135,1.0,475.0,141,1.4850000143051147,World Scientific Publishing,random
+jour.1051039,International Journal of Computational Materials Science and Engineering,1.3793103448275863,0.0,80.0,58,0.0,World Scientific Publishing,random
+jour.1037283,Nano,1.4567901234567902,1.0,472.0,324,0.0,World Scientific Publishing,random
+jour.1050133,Frontiers in Bioengineering and Biotechnology,6.852348993288591,4.0,1021.0,149,1.213999995920393,Frontiers,citations_median
+jour.1049812,Frontiers in Chemistry,4.344982078853047,3.0,4849.0,1116,0.6303741496981305,Frontiers,citations_median
+jour.1050577,Frontiers in Energy Research,5.596774193548387,3.0,1041.0,186,0.0,Frontiers,citations_median
+jour.1376725,Frontiers in Nanotechnology,5.578947368421052,3.0,424.0,76,0.0,Frontiers,citations_median
+jour.1378792,Frontiers in Chemical Engineering,3.6206896551724137,2.5,210.0,58,1.1399999856948853,Frontiers,citations_median
+jour.1050133,Frontiers in Bioengineering and Biotechnology,6.852348993288591,4.0,1021.0,149,1.213999995920393,Frontiers,citations_avg
+jour.1050577,Frontiers in Energy Research,5.596774193548387,3.0,1041.0,186,0.0,Frontiers,citations_avg
+jour.1376725,Frontiers in Nanotechnology,5.578947368421052,3.0,424.0,76,0.0,Frontiers,citations_avg
+jour.1049812,Frontiers in Chemistry,4.344982078853047,3.0,4849.0,1116,0.6303741496981305,Frontiers,citations_avg
+jour.1146208,Frontiers in Materials,3.6468531468531467,2.0,3129.0,858,1.0099999904632568,Frontiers,citations_avg
+jour.1049812,Frontiers in Chemistry,4.344982078853047,3.0,4849.0,1116,0.6303741496981305,Frontiers,number_of_articles
+jour.1146208,Frontiers in Materials,3.6468531468531467,2.0,3129.0,858,1.0099999904632568,Frontiers,number_of_articles
+jour.1049800,Frontiers in Physics,3.390625,2.0,868.0,256,0.0,Frontiers,number_of_articles
+jour.1050577,Frontiers in Energy Research,5.596774193548387,3.0,1041.0,186,0.0,Frontiers,number_of_articles
+jour.1050133,Frontiers in Bioengineering and Biotechnology,6.852348993288591,4.0,1021.0,149,1.213999995920393,Frontiers,number_of_articles
+jour.1378792,Frontiers in Chemical Engineering,3.6206896551724137,2.5,210.0,58,1.1399999856948853,Frontiers,random
+jour.1049812,Frontiers in Chemistry,4.344982078853047,3.0,4849.0,1116,0.6303741496981305,Frontiers,random
+jour.1146208,Frontiers in Materials,3.6468531468531467,2.0,3129.0,858,1.0099999904632568,Frontiers,random
+jour.1376725,Frontiers in Nanotechnology,5.578947368421052,3.0,424.0,76,0.0,Frontiers,random
+jour.1050133,Frontiers in Bioengineering and Biotechnology,6.852348993288591,4.0,1021.0,149,1.213999995920393,Frontiers,random
+jour.1053070,"Acta Crystallographica Section D, Structural Biology",6.159420289855072,4.0,425.0,69,1.0017073139911745,International Union of Crystallography (IUCr),citations_median
+jour.1132432,Journal of Synchrotron Radiation,5.654255319148936,3.0,2126.0,376,0.9840932628188108,International Union of Crystallography (IUCr),citations_median
+jour.1049481,IUCrJ,5.235042735042735,3.0,1225.0,234,0.7759090881851135,International Union of Crystallography (IUCr),citations_median
+jour.1120837,Journal of Applied Crystallography,9.555093555093555,2.0,4596.0,481,2.2837499637555863,International Union of Crystallography (IUCr),citations_median
+jour.1012038,Acta Crystallographica Section A: Foundations and advances,2.6578947368421053,1.5,404.0,152,0.5203448277095268,International Union of Crystallography (IUCr),citations_median
+jour.1120837,Journal of Applied Crystallography,9.555093555093555,2.0,4596.0,481,2.2837499637555863,International Union of Crystallography (IUCr),citations_avg
+jour.1053070,"Acta Crystallographica Section D, Structural Biology",6.159420289855072,4.0,425.0,69,1.0017073139911745,International Union of Crystallography (IUCr),citations_avg
+jour.1132432,Journal of Synchrotron Radiation,5.654255319148936,3.0,2126.0,376,0.9840932628188108,International Union of Crystallography (IUCr),citations_avg
+jour.1049481,IUCrJ,5.235042735042735,3.0,1225.0,234,0.7759090881851135,International Union of Crystallography (IUCr),citations_avg
+jour.1012038,Acta Crystallographica Section A: Foundations and advances,2.6578947368421053,1.5,404.0,152,0.5203448277095268,International Union of Crystallography (IUCr),citations_avg
+jour.1327126,Acta Crystallographica Section E: Crystallographic Communications,1.0505992010652463,0.0,789.0,751,1.0925973970201108,International Union of Crystallography (IUCr),number_of_articles
+jour.1120837,Journal of Applied Crystallography,9.555093555093555,2.0,4596.0,481,2.2837499637555863,International Union of Crystallography (IUCr),number_of_articles
+jour.1132432,Journal of Synchrotron Radiation,5.654255319148936,3.0,2126.0,376,0.9840932628188108,International Union of Crystallography (IUCr),number_of_articles
+jour.1320611,IUCrData,0.5080385852090032,0.0,158.0,311,0.4704081674619597,International Union of Crystallography (IUCr),number_of_articles
+jour.1358136,Acta Crystallographica Section C: Structural Chemistry,1.277992277992278,1.0,331.0,259,0.5301428537283625,International Union of Crystallography (IUCr),number_of_articles
+jour.1120837,Journal of Applied Crystallography,9.555093555093555,2.0,4596.0,481,2.2837499637555863,International Union of Crystallography (IUCr),random
+jour.1132432,Journal of Synchrotron Radiation,5.654255319148936,3.0,2126.0,376,0.9840932628188108,International Union of Crystallography (IUCr),random
+jour.1012038,Acta Crystallographica Section A: Foundations and advances,2.6578947368421053,1.5,404.0,152,0.5203448277095268,International Union of Crystallography (IUCr),random
+jour.1320611,IUCrData,0.5080385852090032,0.0,158.0,311,0.4704081674619597,International Union of Crystallography (IUCr),random
+jour.1312342,"Acta Crystallographica Section B: Structural Science, Crystal Engineering and Materials",2.5609756097560976,1.0,630.0,246,0.6534693873658473,International Union of Crystallography (IUCr),random
+jour.1026093,Astronomy & Astrophysics,8.603305785123966,5.0,1041.0,121,1.1350000048322337,EDP Sciences,citations_median
+jour.1052702,Journal of the European Optical Society-Rapid Publications,2.7777777777777777,1.0,200.0,72,0.0,EDP Sciences,citations_median
+jour.1146856,Metallurgical Research & Technology,1.323076923076923,1.0,86.0,65,0.0,EDP Sciences,citations_median
+jour.1141196,E3S Web of Conferences,0.9046639231824417,0.0,1319.0,1458,0.0,EDP Sciences,citations_median
+jour.1137312,MATEC Web of Conferences,0.41594827586206895,0.0,193.0,464,0.0,EDP Sciences,citations_median
+jour.1026093,Astronomy & Astrophysics,8.603305785123966,5.0,1041.0,121,1.1350000048322337,EDP Sciences,citations_avg
+jour.1052702,Journal of the European Optical Society-Rapid Publications,2.7777777777777777,1.0,200.0,72,0.0,EDP Sciences,citations_avg
+jour.1146856,Metallurgical Research & Technology,1.323076923076923,1.0,86.0,65,0.0,EDP Sciences,citations_avg
+jour.1141196,E3S Web of Conferences,0.9046639231824417,0.0,1319.0,1458,0.0,EDP Sciences,citations_avg
+jour.1137312,MATEC Web of Conferences,0.41594827586206895,0.0,193.0,464,0.0,EDP Sciences,citations_avg
+jour.1141196,E3S Web of Conferences,0.9046639231824417,0.0,1319.0,1458,0.0,EDP Sciences,number_of_articles
+jour.1137312,MATEC Web of Conferences,0.41594827586206895,0.0,193.0,464,0.0,EDP Sciences,number_of_articles
+jour.1026093,Astronomy & Astrophysics,8.603305785123966,5.0,1041.0,121,1.1350000048322337,EDP Sciences,number_of_articles
+jour.1136993,EPJ Web of Conferences,0.1095890410958904,0.0,8.0,73,0.0,EDP Sciences,number_of_articles
+jour.1052702,Journal of the European Optical Society-Rapid Publications,2.7777777777777777,1.0,200.0,72,0.0,EDP Sciences,number_of_articles
+jour.1137312,MATEC Web of Conferences,0.41594827586206895,0.0,193.0,464,0.0,EDP Sciences,random
+jour.1026093,Astronomy & Astrophysics,8.603305785123966,5.0,1041.0,121,1.1350000048322337,EDP Sciences,random
+jour.1136993,EPJ Web of Conferences,0.1095890410958904,0.0,8.0,73,0.0,EDP Sciences,random
+jour.1141196,E3S Web of Conferences,0.9046639231824417,0.0,1319.0,1458,0.0,EDP Sciences,random
+jour.1052702,Journal of the European Optical Society-Rapid Publications,2.7777777777777777,1.0,200.0,72,0.0,EDP Sciences,random
+jour.1004031,Russian Journal of Inorganic Chemistry,0.2735294117647059,0.0,93.0,340,0.0,The Russian Academy of Sciences,citations_median
+jour.1295066,Crystallography Reports,0.11330049261083744,0.0,23.0,203,0.0,The Russian Academy of Sciences,citations_median
+jour.1446214,Russian Journal of General Chemistry,0.011428571428571429,0.0,2.0,175,0.0,The Russian Academy of Sciences,citations_median
+jour.1294773,Russian Journal of Coordination Chemistry,0.1320754716981132,0.0,21.0,159,0.0,The Russian Academy of Sciences,citations_median
+jour.1295560,Журнал физической химии,0.0,0.0,0.0,151,0.0,The Russian Academy of Sciences,citations_median
+jour.1004031,Russian Journal of Inorganic Chemistry,0.2735294117647059,0.0,93.0,340,0.0,The Russian Academy of Sciences,citations_avg
+jour.1430950,Russian Journal of Electrochemistry,0.21212121212121213,0.0,14.0,66,0.0,The Russian Academy of Sciences,citations_avg
+jour.1295452,Physics of Metals and Metallography,0.1411764705882353,0.0,12.0,85,0.0,The Russian Academy of Sciences,citations_avg
+jour.1294773,Russian Journal of Coordination Chemistry,0.1320754716981132,0.0,21.0,159,0.0,The Russian Academy of Sciences,citations_avg
+jour.1005147,Radiochemistry,0.11764705882352941,0.0,12.0,102,0.0,The Russian Academy of Sciences,citations_avg
+jour.1004031,Russian Journal of Inorganic Chemistry,0.2735294117647059,0.0,93.0,340,0.0,The Russian Academy of Sciences,number_of_articles
+jour.1295066,Crystallography Reports,0.11330049261083744,0.0,23.0,203,0.0,The Russian Academy of Sciences,number_of_articles
+jour.1446214,Russian Journal of General Chemistry,0.011428571428571429,0.0,2.0,175,0.0,The Russian Academy of Sciences,number_of_articles
+jour.1294773,Russian Journal of Coordination Chemistry,0.1320754716981132,0.0,21.0,159,0.0,The Russian Academy of Sciences,number_of_articles
+jour.1295560,Журнал физической химии,0.0,0.0,0.0,151,0.0,The Russian Academy of Sciences,number_of_articles
+jour.1459604,Поверхность Рентгеновские синхротронные и нейтронные исследования,0.0,0.0,0.0,112,0.0,The Russian Academy of Sciences,random
+jour.1295066,Crystallography Reports,0.11330049261083744,0.0,23.0,203,0.0,The Russian Academy of Sciences,random
+jour.1446214,Russian Journal of General Chemistry,0.011428571428571429,0.0,2.0,175,0.0,The Russian Academy of Sciences,random
+jour.1295452,Physics of Metals and Metallography,0.1411764705882353,0.0,12.0,85,0.0,The Russian Academy of Sciences,random
+jour.1388082,Доклады Российской академии наук Химия науки о материалах,0.017241379310344827,0.0,1.0,58,0.0,The Russian Academy of Sciences,random
+jour.1050185,National Science Review,20.06046511627907,9.0,4313.0,215,1.2213934398576862,Oxford University Press (OUP),citations_median
+jour.1018982,Nucleic Acids Research,9.2125,5.0,737.0,80,1.2378431275194766,Oxford University Press (OUP),citations_median
+jour.1082610,Bulletin of the Chemical Society of Japan,4.555813953488372,3.0,1959.0,430,0.0,Oxford University Press (OUP),citations_median
+jour.1082997,Microscopy and Microanalysis,3.5452261306532664,2.0,1411.0,398,0.7275000020994672,Oxford University Press (OUP),citations_median
+jour.1022968,Monthly Notices of the Royal Astronomical Society,3.8375,2.0,614.0,160,0.7400000095367432,Oxford University Press (OUP),citations_median
+jour.1050185,National Science Review,20.06046511627907,9.0,4313.0,215,1.2213934398576862,Oxford University Press (OUP),citations_avg
+jour.1018982,Nucleic Acids Research,9.2125,5.0,737.0,80,1.2378431275194766,Oxford University Press (OUP),citations_avg
+jour.1082610,Bulletin of the Chemical Society of Japan,4.555813953488372,3.0,1959.0,430,0.0,Oxford University Press (OUP),citations_avg
+jour.1022968,Monthly Notices of the Royal Astronomical Society,3.8375,2.0,614.0,160,0.7400000095367432,Oxford University Press (OUP),citations_avg
+jour.1082997,Microscopy and Microanalysis,3.5452261306532664,2.0,1411.0,398,0.7275000020994672,Oxford University Press (OUP),citations_avg
+jour.1015179,Chemistry Letters,1.754416961130742,1.0,993.0,566,0.0,Oxford University Press (OUP),number_of_articles
+jour.1082610,Bulletin of the Chemical Society of Japan,4.555813953488372,3.0,1959.0,430,0.0,Oxford University Press (OUP),number_of_articles
+jour.1082997,Microscopy and Microanalysis,3.5452261306532664,2.0,1411.0,398,0.7275000020994672,Oxford University Press (OUP),number_of_articles
+jour.1050185,National Science Review,20.06046511627907,9.0,4313.0,215,1.2213934398576862,Oxford University Press (OUP),number_of_articles
+jour.1022968,Monthly Notices of the Royal Astronomical Society,3.8375,2.0,614.0,160,0.7400000095367432,Oxford University Press (OUP),number_of_articles
+jour.1022968,Monthly Notices of the Royal Astronomical Society,3.8375,2.0,614.0,160,0.7400000095367432,Oxford University Press (OUP),random
+jour.1018982,Nucleic Acids Research,9.2125,5.0,737.0,80,1.2378431275194766,Oxford University Press (OUP),random
+jour.1082610,Bulletin of the Chemical Society of Japan,4.555813953488372,3.0,1959.0,430,0.0,Oxford University Press (OUP),random
+jour.1040851,Microscopy Today,2.4367816091954024,0.0,212.0,87,0.0,Oxford University Press (OUP),random
+jour.1015179,Chemistry Letters,1.754416961130742,1.0,993.0,566,0.0,Oxford University Press (OUP),random
+jour.1051517,Science Advances,25.960570469798657,14.0,30945.0,1192,1.609553570459996,American Association for the Advancement of Science (AAAS),all
+jour.1346339,Science,83.21082089552239,48.61904761904762,44601.0,536,4.390739720467836,American Association for the Advancement of Science (AAAS),all
+jour.1358922,Research,12.33175355450237,8.0,2602.0,211,0.7937606798532681,American Association for the Advancement of Science (AAAS),all
+jour.1051319,Biomaterials Research,7.77906976744186,4.5,669.0,86,1.5326829207379644,American Association for the Advancement of Science (AAAS),all
+jour.1390913,Energy Material Advances,16.19736842105263,11.0,1231.0,76,0.0,American Association for the Advancement of Science (AAAS),all
+jour.1084019,Synthesis,2.398984771573604,1.0,2363.0,985,0.7199999966791698,Thieme,all
+jour.1102097,Synlett,2.4284263959390864,1.0,2392.0,985,0.5120000004768371,Thieme,all
+jour.1293065,SynOpen,2.4936708860759493,1.0,197.0,79,0.0,Thieme,all
+jour.1379625,Organic Materials,2.739130434782609,2.0,189.0,69,0.0,Thieme,all
+jour.1136513,Journal of Superhard Materials,1.4607843137254901,1.0,149.0,102,0.0,Allerton Press,citations_median
+jour.1430965,Russian Journal of Non-Ferrous Metals,1.9157894736842105,1.0,182.0,95,0.0,Allerton Press,citations_median
+jour.1136767,Physics of Wave Phenomena,2.3333333333333335,1.0,126.0,54,0.0,Allerton Press,citations_median
+jour.1136440,Bulletin of the Russian Academy of Sciences: Physics,0.8251928020565553,0.0,321.0,389,0.0,Allerton Press,citations_median
+jour.1430968,Surface Engineering and Applied Electrochemistry,1.325,0.0,318.0,240,0.0,Allerton Press,citations_median
+jour.1136767,Physics of Wave Phenomena,2.3333333333333335,1.0,126.0,54,0.0,Allerton Press,citations_avg
+jour.1430965,Russian Journal of Non-Ferrous Metals,1.9157894736842105,1.0,182.0,95,0.0,Allerton Press,citations_avg
+jour.1285904,Moscow University Chemistry Bulletin,1.5192307692307692,0.0,79.0,52,0.0,Allerton Press,citations_avg
+jour.1136513,Journal of Superhard Materials,1.4607843137254901,1.0,149.0,102,0.0,Allerton Press,citations_avg
+jour.1135991,Mechanics of Solids,1.3275862068965518,0.0,154.0,116,0.0,Allerton Press,citations_avg
+jour.1136440,Bulletin of the Russian Academy of Sciences: Physics,0.8251928020565553,0.0,321.0,389,0.0,Allerton Press,number_of_articles
+jour.1430968,Surface Engineering and Applied Electrochemistry,1.325,0.0,318.0,240,0.0,Allerton Press,number_of_articles
+jour.1430967,Steel in Translation,0.4589041095890411,0.0,67.0,146,0.0,Allerton Press,number_of_articles
+jour.1280524,Bulletin of the Lebedev Physics Institute,0.6590909090909091,0.0,87.0,132,0.0,Allerton Press,number_of_articles
+jour.1136446,Russian Engineering Research,0.609375,0.0,78.0,128,0.0,Allerton Press,number_of_articles
+jour.1430965,Russian Journal of Non-Ferrous Metals,1.9157894736842105,1.0,182.0,95,0.0,Allerton Press,random
+jour.1136446,Russian Engineering Research,0.609375,0.0,78.0,128,0.0,Allerton Press,random
+jour.1136036,Coke and Chemistry,0.29411764705882354,0.0,15.0,51,0.0,Allerton Press,random
+jour.1430967,Steel in Translation,0.4589041095890411,0.0,67.0,146,0.0,Allerton Press,random
+jour.1136513,Journal of Superhard Materials,1.4607843137254901,1.0,149.0,102,0.0,Allerton Press,random
+jour.1036858,Journal of Nanoelectronics and Optoelectronics,1.0443349753694582,0.0,636.0,609,0.0,American Scientific Publishers,all
+jour.1297328,Journal of Nanoscience and Nanotechnology,1.6777777777777778,1.0,755.0,450,0.3599999993402734,American Scientific Publishers,all
+jour.1047850,Science of Advanced Materials,1.8333333333333333,1.0,506.0,276,0.0,American Scientific Publishers,all
+jour.1047745,Materials Express,1.3076923076923077,0.0,187.0,143,0.0,American Scientific Publishers,all
+jour.1034406,Journal of Biomedical Nanotechnology,3.018867924528302,2.0,160.0,53,0.5219999980926514,American Scientific Publishers,all
+jour.1033415,Mini-Reviews in Organic Chemistry,3.0961538461538463,2.0,161.0,52,0.0,Bentham Science Publishers,citations_median
+jour.1117759,Current Organic Chemistry,2.242424242424242,1.0,296.0,132,0.0,Bentham Science Publishers,citations_median
+jour.1035020,Current Nanoscience,1.9844961240310077,1.0,256.0,129,0.0,Bentham Science Publishers,citations_median
+jour.1150213,Current Organocatalysis,1.2985074626865671,1.0,87.0,67,0.0,Bentham Science Publishers,citations_median
+jour.1033385,Letters in Organic Chemistry,1.1815384615384616,0.0,384.0,325,0.0,Bentham Science Publishers,citations_median
+jour.1033415,Mini-Reviews in Organic Chemistry,3.0961538461538463,2.0,161.0,52,0.0,Bentham Science Publishers,citations_avg
+jour.1117759,Current Organic Chemistry,2.242424242424242,1.0,296.0,132,0.0,Bentham Science Publishers,citations_avg
+jour.1035020,Current Nanoscience,1.9844961240310077,1.0,256.0,129,0.0,Bentham Science Publishers,citations_avg
+jour.1033425,Current Organic Synthesis,1.3541666666666667,0.0,130.0,96,0.39611110587914783,Bentham Science Publishers,citations_avg
+jour.1150213,Current Organocatalysis,1.2985074626865671,1.0,87.0,67,0.0,Bentham Science Publishers,citations_avg
+jour.1033385,Letters in Organic Chemistry,1.1815384615384616,0.0,384.0,325,0.0,Bentham Science Publishers,number_of_articles
+jour.1117759,Current Organic Chemistry,2.242424242424242,1.0,296.0,132,0.0,Bentham Science Publishers,number_of_articles
+jour.1035020,Current Nanoscience,1.9844961240310077,1.0,256.0,129,0.0,Bentham Science Publishers,number_of_articles
+jour.1033425,Current Organic Synthesis,1.3541666666666667,0.0,130.0,96,0.39611110587914783,Bentham Science Publishers,number_of_articles
+jour.1150213,Current Organocatalysis,1.2985074626865671,1.0,87.0,67,0.0,Bentham Science Publishers,number_of_articles
+jour.1035020,Current Nanoscience,1.9844961240310077,1.0,256.0,129,0.0,Bentham Science Publishers,random
+jour.1150213,Current Organocatalysis,1.2985074626865671,1.0,87.0,67,0.0,Bentham Science Publishers,random
+jour.1117759,Current Organic Chemistry,2.242424242424242,1.0,296.0,132,0.0,Bentham Science Publishers,random
+jour.1033385,Letters in Organic Chemistry,1.1815384615384616,0.0,384.0,325,0.0,Bentham Science Publishers,random
+jour.1033425,Current Organic Synthesis,1.3541666666666667,0.0,130.0,96,0.39611110587914783,Bentham Science Publishers,random
+jour.1293558,bioRxiv,1.1493370551290998,0.0,1647.0,1433,0.2800000086426735,Cold Spring Harbor Laboratory,all
+jour.1046372,Quantitative Imaging in Medicine and Surgery,3.4702702702702704,2.0,4494.0,1295,1.1943676219546373,AME Publishing Company,all
+jour.1430432,Acta Physica Sinica,0.9618196588139724,0.0,1184.0,1231,0.0,"Acta Physica Sinica, Chinese Physical Society and Institute of Physics, Chinese Academy of Sciences",all
+jour.1141560,Semiconductor Physics Quantum Electronics & Optoelectronics,1.5277777777777777,1.0,165.0,108,0.0,National Academy of Sciences of Ukraine,citations_median
+jour.1140506,Ukrainian Journal of Physics,0.6602870813397129,0.0,138.0,209,0.0,National Academy of Sciences of Ukraine,citations_median
+jour.1386191,Nanosistemi Nanomateriali Nanotehnologii,1.0142857142857142,0.0,142.0,140,0.0,National Academy of Sciences of Ukraine,citations_median
+jour.1142468,Functional Materials,0.30612244897959184,0.0,30.0,98,0.0,National Academy of Sciences of Ukraine,citations_median
+jour.1147139,Himia Fizika ta Tehnologia Poverhni,0.978494623655914,0.0,91.0,93,0.0,National Academy of Sciences of Ukraine,citations_median
+jour.1141560,Semiconductor Physics Quantum Electronics & Optoelectronics,1.5277777777777777,1.0,165.0,108,0.0,National Academy of Sciences of Ukraine,citations_avg
+jour.1386191,Nanosistemi Nanomateriali Nanotehnologii,1.0142857142857142,0.0,142.0,140,0.0,National Academy of Sciences of Ukraine,citations_avg
+jour.1149668,Металлофизика и новейшие технологии,0.9848484848484849,0.0,65.0,66,0.0,National Academy of Sciences of Ukraine,citations_avg
+jour.1147139,Himia Fizika ta Tehnologia Poverhni,0.978494623655914,0.0,91.0,93,0.0,National Academy of Sciences of Ukraine,citations_avg
+jour.1140506,Ukrainian Journal of Physics,0.6602870813397129,0.0,138.0,209,0.0,National Academy of Sciences of Ukraine,citations_avg
+jour.1140506,Ukrainian Journal of Physics,0.6602870813397129,0.0,138.0,209,0.0,National Academy of Sciences of Ukraine,number_of_articles
+jour.1386191,Nanosistemi Nanomateriali Nanotehnologii,1.0142857142857142,0.0,142.0,140,0.0,National Academy of Sciences of Ukraine,number_of_articles
+jour.1141560,Semiconductor Physics Quantum Electronics & Optoelectronics,1.5277777777777777,1.0,165.0,108,0.0,National Academy of Sciences of Ukraine,number_of_articles
+jour.1142468,Functional Materials,0.30612244897959184,0.0,30.0,98,0.0,National Academy of Sciences of Ukraine,number_of_articles
+jour.1147139,Himia Fizika ta Tehnologia Poverhni,0.978494623655914,0.0,91.0,93,0.0,National Academy of Sciences of Ukraine,number_of_articles
+jour.1149668,Металлофизика и новейшие технологии,0.9848484848484849,0.0,65.0,66,0.0,National Academy of Sciences of Ukraine,random
+jour.1142468,Functional Materials,0.30612244897959184,0.0,30.0,98,0.0,National Academy of Sciences of Ukraine,random
+jour.1386191,Nanosistemi Nanomateriali Nanotehnologii,1.0142857142857142,0.0,142.0,140,0.0,National Academy of Sciences of Ukraine,random
+jour.1439321,Polymer journal,0.2727272727272727,0.0,15.0,55,0.0,National Academy of Sciences of Ukraine,random
+jour.1141560,Semiconductor Physics Quantum Electronics & Optoelectronics,1.5277777777777777,1.0,165.0,108,0.0,National Academy of Sciences of Ukraine,random
+jour.1134073,Journal of Vacuum Science & Technology A Vacuum Surfaces and Films,2.997991967871486,1.0,1493.0,498,0.0,American Vacuum Society,all
+jour.1312349,Journal of Vacuum Science & Technology B Nanotechnology and Microelectronics Materials Processing Measurement and Phenomena,2.0935064935064935,1.0,806.0,385,1.1899999976158142,American Vacuum Society,all
+jour.1140236,Surface Science Spectra,1.4835164835164836,0.0,135.0,91,0.0,American Vacuum Society,all
+jour.1378896,AVS Quantum Science,4.637931034482759,2.0,269.0,58,0.3400000035762787,American Vacuum Society,all
+jour.1137022,Pigment & Resin Technology,2.205761316872428,1.0,536.0,243,0.0,Emerald,all
+jour.1137023,Anti-Corrosion Methods and Materials,3.27027027027027,2.0,484.0,148,0.0,Emerald,all
+jour.1139209,International Journal of Clothing Science and Technology,2.492063492063492,1.0,314.0,126,0.0,Emerald,all
+jour.1142292,World Journal of Engineering,6.084905660377358,3.0,645.0,106,0.0,Emerald,all
+jour.1082971,Proceedings of the National Academy of Sciences of the United States of America,16.686175580222,10.0,16536.0,991,1.4128617370842547,Proceedings of the National Academy of Sciences,all
+jour.1315496,ChemRxiv,0.17342657342657342,0.0,124.0,715,0.0,Cambridge University Press (CUP),all
+jour.1048340,Powder Diffraction,0.5454545454545454,0.0,54.0,99,0.0,Cambridge University Press (CUP),all
+jour.1050154,Digest Journal of Nanomaterials and Biostructures,1.3919308357348703,1.0,483.0,347,0.0,Virtual Company of Physics,all
+jour.1223422,Chalcogenide Letters,1.8677685950413223,1.0,452.0,242,0.0,Virtual Company of Physics,all
+jour.1439008,Journal of Ovonic Research,1.5520833333333333,1.0,298.0,192,0.0,Virtual Company of Physics,all
+jour.1137418,Journal of Materials in Civil Engineering,6.4319371727748695,4.0,2457.0,382,0.0,American Society of Civil Engineers (ASCE),all
+jour.1053136,Journal of Structural Engineering,9.53191489361702,6.0,2240.0,235,0.0,American Society of Civil Engineers (ASCE),all
+jour.1138365,Journal of Composites for Construction,5.0588235294117645,2.0,258.0,51,0.0,American Society of Civil Engineers (ASCE),all
+jour.1137082,Asian Journal of Chemistry,0.6190476190476191,0.0,442.0,714,0.0,Asian Journal of Chemistry,all
+jour.1156353,Asian Journal of Organic & Medicinal Chemistry,0.09090909090909091,0.0,5.0,55,0.0,Asian Journal of Chemistry,all
+jour.1437327,Journal of Electrochemical Energy Conversion and Storage,3.615894039735099,2.0,546.0,151,0.0,ASME International,all
+jour.1430769,Journal of Applied Mechanics,2.783505154639175,1.0,270.0,97,0.0,ASME International,all
+jour.1044571,Journal of Engineering Materials and Technology,2.9746835443037973,2.0,235.0,79,0.0,ASME International,all
+jour.1430361,Journal of Manufacturing Science and Engineering,4.745762711864407,3.0,280.0,59,0.0,ASME International,all
+jour.1035533,Beilstein Journal of Organic Chemistry,2.9429280397022333,2.0,1186.0,403,0.5355339797882779,Beilstein Institut,all
+jour.1044634,Beilstein Journal of Nanotechnology,2.7339055793991416,2.0,637.0,233,0.698089883652296,Beilstein Institut,all
+jour.1369458,Beilstein Archives,0.38202247191011235,0.0,34.0,89,0.0,Beilstein Institut,all
+jour.1136959,Materials Transactions,2.033980582524272,1.0,1257.0,618,0.0,Japan Institute of Metals,all
+jour.1137392,Journal of the Japan Institute of Metals and Materials,0.86,0.0,86.0,100,0.0,Japan Institute of Metals,all
+jour.1290619,International Journal for Research in Applied Science and Engineering Technology,0.07894736842105263,0.0,54.0,684,0.0,International Journal for Research in Applied Science and Engineering Technology (IJRASET),all
+jour.1381050,Authorea,0.13616398243045388,0.0,93.0,683,0.0,Authorea,all
+jour.1122763,Optical Engineering,1.7019230769230769,1.0,354.0,208,0.0,"SPIE, the international society for optics and photonics",all
+jour.1040364,Journal of Nanophotonics,2.0163934426229506,1.0,246.0,122,0.0,"SPIE, the international society for optics and photonics",all
+jour.1115330,Journal of Biomedical Optics,5.654205607476635,3.0,605.0,107,1.5364583348855376,"SPIE, the international society for optics and photonics",all
+jour.1359300,Advanced Photonics,14.461538461538462,6.5,1128.0,78,0.0,"SPIE, the international society for optics and photonics",all
+jour.1143046,Journal of Photonics for Energy,3.546875,2.0,227.0,64,0.0,"SPIE, the international society for optics and photonics",all
+jour.1312373,Materials Research,2.4126582278481012,1.0,953.0,395,0.0,FapUNIFESP (SciELO),all
+jour.1431395,Matéria (Rio de Janeiro),1.1830985915492958,1.0,84.0,71,0.0,FapUNIFESP (SciELO),all
+jour.1138332,Polímeros,1.7884615384615385,1.0,93.0,52,0.0,FapUNIFESP (SciELO),all
+jour.1138268,Chinese Journal of Organic Chemistry,2.127659574468085,1.0,1100.0,517,0.0,Shanghai Institute of Organic Chemistry,all
+jour.1285826,Acta Chimica Sinica,1.9223300970873787,1.0,198.0,103,0.0,Shanghai Institute of Organic Chemistry,all
+jour.1143379,Journal of Materials Science and Chemical Engineering,1.2,1.0,78.0,65,0.0,Scientific Research Publishing,all
+jour.1139382,Materials Sciences and Applications,1.3018867924528301,1.0,69.0,53,0.0,Scientific Research Publishing,all

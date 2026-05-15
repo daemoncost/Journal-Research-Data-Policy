@@ -1,0 +1,319 @@
+rdp_exist:
+  text: 1. Existence of research data policy
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'IEEE Open Research Statement
+
+
+      Consistent with its broad mission to advance technology for the benefit of humanity,
+      IEEE is committed to the principles of open science. IEEE strongly supports
+      the sharing of research processes, methods, data, code, and findings as openly
+      as possible to promote collaboration, accelerate innovation, and advance scientific
+      knowledge. IEEE likewise supports the transparent disclosure of peer review
+      activities to ensure the quality, validity, and reliability of its scientific
+      publications.
+
+
+      All IEEE authors are encouraged to share their data, code, and other research
+      outputs to facilitate verification and reproducibility of experiments and their
+      conclusions.
+
+
+      IEEE is committed to continuously improving the research infrastructure in its
+      fields of interest to enable, facilitate, and foster adoption of these open
+      science principles.'
+  1:
+    text: Research Data Policy (RDP) exists.
+    explanation: 'Key areas for improving the reproducibility of your article include:
+      providing a detailed description of your research methodology,  sharing your
+      data in an online data repository,  and uploading your code to an online code
+      repository.'
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing:
+  text: 3. Data sharing requirements in RDP
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing encouraged but optional.
+    explanation: All IEEE authors are encouraged to share their data, code, and other
+      research outputs to facilitate verification and reproducibility of experiments
+      and their conclusions.
+  1:
+    text: Data sharing encouraged but optional.
+    explanation: 'In publishing guideline section 8.2.1 B: "All data should be presented
+      upon request by an editor, to facilitate the review process."
+
+      In Research reproducibility:  IEEE strongly supports the sharing of research
+      processes, methods, data, code, and findings as openly as possible to promote
+      collaboration, accelerate innovation, and advance scientific knowledge.
+
+      In Tools for authors: Increase the impact of your work. Share your data and
+      code for others to view, build upon, and reuse. '
+  correct_answer: null
+  discrepancy_reason: null
+data_fair:
+  text: 4. FAIR data sharing (see https://www.go-fair.org/fair-principles/ for a definition
+    of FAIR)
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: "Improve the discoverability of your data by hosting it in an easily\
+      \ accessible repository such as IEEE DataPort\u2122, an online data repository\
+      \ of datasets and data analysis tools. IEEE DataPort accepts all types of datasets\
+      \ up to 2TB and provides a Digital Object Identifier (DOI) for easy citation.\
+      \ Standard (i.e., non-Open Access) datasets can be uploaded for free at IEEE\
+      \ DataPort. Articles in the IEEE Xplore\xAE Digital Library with linked data\
+      \ in IEEE DataPort will have a Code & Datasets tab where readers can link to\
+      \ the dataset from the article.\n\nIEEE also recommends figshare, Zenodo, and\
+      \ Dryad as alternative data repositories."
+  1:
+    text: Public data sharing on a FAIR repository not mentioned in RDP.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+data_availability:
+  text: 2. Data availability statement
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Not mentioned in the RDP.
+    explanation: N.A.
+  1:
+    text: Mentioned in the RDP but optional.
+    explanation: 'In research reproducibility: All IEEE authors are encouraged to
+      share their data, code, and other research outputs to facilitate verification
+      and reproducibility of experiments and their conclusions.'
+  correct_answer:
+    text: Mentioned in the RDP but optional.
+    explanation: 'In research reproducibility: All IEEE authors are encouraged to
+      share their data, code, and other research outputs to facilitate verification
+      and reproducibility of experiments and their conclusions.'
+  discrepancy_reason: Text not found
+data_citability:
+  text: '5. Citability and findability of data '
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: "Improve the discoverability of your data by hosting it in an easily\
+      \ accessible repository such as IEEE DataPort\u2122, an online data repository\
+      \ of datasets and data analysis tools. IEEE DataPort accepts all types of datasets\
+      \ up to 2TB and provides a Digital Object Identifier (DOI) for easy citation.\
+      \ Standard (i.e., non-Open Access) datasets can be uploaded for free at IEEE\
+      \ DataPort. Articles in the IEEE Xplore\xAE Digital Library with linked data\
+      \ in IEEE DataPort will have a Code & Datasets tab where readers can link to\
+      \ the dataset from the article.\n\nIEEE also recommends figshare, Zenodo, and\
+      \ Dryad as alternative data repositories."
+  1:
+    text: DOIs or other persistent identifiers recommended for datasets or codes.
+    explanation: 'In "About Sharing Your Data and Code": Making your data citable
+      with a unique Digital Object Identifier (DOI) for your dataset.'
+  correct_answer: null
+  discrepancy_reason: null
+data_timing:
+  text: 7. Timing of data release
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Timing of data availability not adressed in RDP.
+    explanation: N.A.
+  1:
+    text: Timing of data availability not adressed in RDP.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+data_sharing_method:
+  text: 8. Recommended data sharing method
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: Public online repositories recommended in RDP.
+    explanation: "Improve the discoverability of your data by hosting it in an easily\
+      \ accessible repository such as IEEE DataPort\u2122, an online data repository\
+      \ of datasets and data analysis tools. IEEE DataPort accepts all types of datasets\
+      \ up to 2TB and provides a Digital Object Identifier (DOI) for easy citation.\
+      \ Standard (i.e., non-Open Access) datasets can be uploaded for free at IEEE\
+      \ DataPort. Articles in the IEEE Xplore\xAE Digital Library with linked data\
+      \ in IEEE DataPort will have a Code & Datasets tab where readers can link to\
+      \ the dataset from the article.\n\nIEEE also recommends figshare, Zenodo, and\
+      \ Dryad as alternative data repositories."
+  1:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "In Research Reproducibility: Improve the discoverability of your\
+      \ data by hosting it in an easily accessible repository such as IEEE DataPort\u2122\
+      , an online data repository of datasets and data analysis tools. [...] IEEE\
+      \ also recommends figshare, Zenodo, and Dryad as alternative data repositories."
+  correct_answer:
+    text: Multiple data sharing methods equally recommended in RDP.
+    explanation: "In Research Reproducibility: Improve the discoverability of your\
+      \ data by hosting it in an easily accessible repository such as IEEE DataPort\u2122\
+      , an online data repository of datasets and data analysis tools. [...] IEEE\
+      \ also recommends figshare, Zenodo, and Dryad as alternative data repositories."
+  discrepancy_reason: Text not found
+data_licenses:
+  text: 9. Recommended/required licenses
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of data/code licenses in RDP.
+    explanation: N.A.
+  1:
+    text: No mention of data/code licenses in RDP.
+    explanation: n.<.
+  correct_answer: null
+  discrepancy_reason: null
+data_referee:
+  text: 10. Referee guidelines concerning research data
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: N.A.
+  1:
+    text: Data sharing policy not mentioned in refereeing guidelines.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+data_recommended:
+  text: '11. Unique policies for data types
+
+    Please name all data types for which unique policies are recommended according
+    to the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: true
+  0:
+    text: .nan
+    explanation: ''
+  1:
+    text: n.a.
+    explanation: ''
+  correct_answer:
+    text: n.a.
+    explanation: ''
+  discrepancy_reason: Formatting
+data_required:
+  text: '12. Unique policies for data types
+
+    Please name all data types for which unique policies are required according to
+    the RDP (Please separate all data types be semicolon, e.g. crystal structures;
+    Protein sequence)'
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: N.A.
+    explanation: ''
+  1:
+    text: n.a.
+    explanation: ''
+  correct_answer:
+    text: N.A.
+    explanation: ''
+  discrepancy_reason: null
+code_required:
+  text: 13. Code sharing requirements
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: Code sharing encouraged but optional.
+    explanation: Help other researchers view and run your code with Code Ocean, a
+      cloud-based computational reproducibility platform that allows code to be stored,
+      shared, and run in the cloud. Anyone can run code posted to Code Ocean, modify
+      it, and test the modifications, without changing the original code.
+  1:
+    text: Code sharing encouraged but optional.
+    explanation: 'In Research Reproducibility: Help other researchers view and run
+      your code with Code Ocean, a cloud-based computational reproducibility platform
+      that allows code to be stored, shared, and run in the cloud. '
+  correct_answer: null
+  discrepancy_reason: null
+code_reproducibility:
+  text: 14. Code Reproducibility
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of dependencies for research code.
+    explanation: N.A.
+  1:
+    text: No mention of dependencies for research code.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+code_versioning:
+  text: 15. Versioning and persistent identifiers
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: N.A.
+  1:
+    text: No mention of a persistent identifier or specifying a version of developed
+      code.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+code_quality:
+  text: 16. Code Quality Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: The journal policies do not mention any code quality standards.
+    explanation: N.A.
+  1:
+    text: The journal policies do not mention any code quality standards.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+code_autotest:
+  text: 17. Automatic Testing
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: N.A.
+  1:
+    text: No mention of automatic testing to verify code functionality.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+code_docs:
+  text: 18. Code Documentation
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code documentation.
+    explanation: N.A.
+  1:
+    text: No mention of standards for code documentation.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+code_linting:
+  text: 19. Linting Standards
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of linting standards for code.
+    explanation: N.A.
+  1:
+    text: No mention of linting standards for code.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null
+code_development:
+  text: 20. Code Development
+  N. encoders: 2
+  has_discrepancies: false
+  0:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: N.A.
+  1:
+    text: No mention of standards for code development such as continuous integration.
+    explanation: n.a.
+  correct_answer: null
+  discrepancy_reason: null

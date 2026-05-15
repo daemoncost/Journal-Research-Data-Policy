@@ -1,0 +1,56 @@
+rdp_exist:
+  question_type: multiple_choice
+
+data_sharing:
+  question_type: multiple_choice
+
+data_fair:
+  question_type: multiple_choice
+
+data_availability:
+  question_type: multiple_choice
+
+data_citability:
+  question_type: multiple_choice
+
+data_timing:
+  question_type: multiple_choice
+
+data_sharing_method:
+  question_type: multiple_choice
+
+data_licenses:
+  question_type: multiple_choice
+
+data_referee:
+  question_type: multiple_choice
+
+data_recommended:
+  question_type: open
+
+data_required:
+  question_type: open
+
+code_required:
+  question_type: multiple_choice
+
+code_reproducibility:
+  question_type: multiple_choice
+
+code_versioning:
+  question_type: multiple_choice
+
+code_quality:
+  question_type: multiple_choice
+
+code_autotest:
+  question_type: multiple_choice
+
+code_docs:
+  question_type: multiple_choice
+
+code_linting:
+  question_type: multiple_choice
+
+code_development:
+  question_type: multiple_choice

@@ -1,0 +1,120 @@
+1:
+  identifier: rdp_exist
+  answers:
+    research data policy (rdp) exists.: 1.0
+    research data policy (rdp) does not exists.: 0.0
+3:
+  identifier: data_sharing
+  answers:
+    data sharing encouraged but optional.: 0.0
+    data sharing only with editors and referees (no public sharing): 0.25
+    data sharing required but not publicly (e.g. available upon request is allowed).: 0.5
+    public data sharing required only for specific types of data.: 0.75
+    public data sharing of all data required.: 1.0
+4:
+  identifier: data_fair
+  answers:
+    public data sharing on a fair repository not mentioned in rdp.: 0.0
+    public data sharing on a fair repository encouraged.: 0.33
+    public data sharing on a fair repository required only for specific types of data (e.g. genetic data has to be shared on a fair repository but no other data).: 0.66
+    public data sharing of all data on a fair repository required.: 1.0
+2:
+  identifier: data_availability
+  answers:
+    required according to the rdp.: 1.0
+    mentioned in the rdp but optional.: 0.5
+    not mentioned in the rdp.: 0.0
+5:
+  identifier: data_citability
+  answers:
+    no mention of dois or other persistent identifiers for datasets or codes.: 0.0
+    dois or other persistent identifiers recommended for datasets or codes.: 0.5
+    dois or other persistent identifiers required for datasets or codes.: 1.0
+7:
+  identifier: data_timing
+  answers:
+    timing of data availability not adressed in rdp.: 0.0
+    required data must be available after an embargo period.: 0.25
+    required data must be available after official publication.: 0.5
+    required data must be available prior to official publication.: 0.75
+    required data must be available prior to review process.: 1.0
+8:
+  identifier: data_sharing_method
+  answers:
+    no data sharing method recommended in rdp.: 0.0
+    data is shared upon request to authors in rdp.: 0.2
+    multiple data sharing methods equally recommended in rdp.: 0.4
+    data sharing in supplementary material or hosting by journal recommended in rdp.: 0.6
+    public online repositories recommended in rdp.: 0.8
+    only fair repositories recommended in rdp.: 1.0
+9:
+  identifier: data_licenses
+  answers:
+    no mention of data/code licenses in rdp.: 0.0
+    explicit mention of a certain license/license type in rdp.: 0.5
+    open access license required for shared data.: 1.0
+10:
+  identifier: data_referee
+  answers:
+    data sharing policy not mentioned in refereeing guidelines.: 0.0
+    data sharing policy mentioned in refereeing guidelines.: 0.33
+    confirmation of shared data or code by referee required.: 0.66
+    additional data or code referee (referee that solely confirms that code and data are shared following the rdp).: 1.0
+11:
+  identifier: data_recommended
+  answers: open
+12:
+  identifier: data_required
+  answers: open
+13:
+  identifier: code_required
+  answers:
+    code sharing not mentioned.: 0.0
+    code sharing encouraged but optional.: 0.5
+    code sharing required.: 1.0
+14:
+  identifier: code_reproducibility
+  answers:
+    no mention of dependencies for research code.: 0.0
+    journal policies encourage/recommend stating all dependencies and their versions that were used to run computational experiments.: 0.25
+    journal policies require stating all dependencies and their versions that were used to run computational experiments.: 0.5
+    journal policies requirea working container or installation script for code written for computational experiments.: 0.75
+    journal policies requirea working container or installation script for code written for computational experiments and a script that reproduces all figures and/or tables in the article.: 1.0
+15:
+  identifier: code_versioning
+  answers:
+    no mention of a persistent identifier or specifying a version of developed code.: 0.0
+    journal policies encourage/recommend a persistent identifier or specifying a version of developed code.: 0.5
+    journal policies require a persistent identifier or specifying a version of developed code.: 1.0
+16:
+  identifier: code_quality
+  answers:
+    the journal policies do not mention any code quality standards.: 0.0
+    not mention any code quality standards.: 0.0
+    the journal policies encourage/recommend certain standards for code.: 0.33
+    the journal policies require code of articles to fulfill certain standards.: 0.66
+    the journal policies specify criteria for referees to asses the quality of code.: 1.0
+17:
+  identifier: code_autotest
+  answers:
+    no mention of automatic testing to verify code functionality.: 0.0
+    the journal policies encourage/recommend automatic testing to verify code functionality.: 0.5
+    the journal policies require automatic testing to verify code functionality.: 1.0
+18:
+  identifier: code_docs
+  answers:
+    no mention of standards for code documentation.: 0.0
+    the journal policies encourage/recommend standards for code documentation.: 0.5
+    the journal policies require documentation of code.: 1.0
+19:
+  identifier: code_linting
+  answers:
+    no mention of linting standards for code.: 0.0
+    the journal policies encourage/recommend linting standards for code.: 0.5
+    the journal policies require certain standards for linting of code.: 1.0
+20:
+  identifier: code_development
+  answers:
+    no mention of standards for code development such as continuous integration.: 0.0
+    the journal policies encourage/recommend standards for code development such as continuous integration.: 0.5
+    the journal policies require standards for code development such as continuous integration.: 1.0
